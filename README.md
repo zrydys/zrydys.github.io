@@ -1,2 +1,4 @@
-# zrydys.github.io
-zrydys.github.io
+# ZryDys 3Ds
+http://zrydys.github.io
+
+[[zrydys.png]]
