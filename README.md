@@ -1,4 +1,5 @@
 # ZryDys 3Ds
-http://zrydys.github.io
 
-[[zrydys.png]]
+Logo: [[zrydys.png]]
+URL: http://zrydys.github.io
+
