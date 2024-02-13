@@ -1,6 +1,6 @@
 # ZryDys ( pronounce 3Ds ) 
 
-fractals in js d3 ... ![logo](zrydys.png)
+fractals in js d3 ... ![logo](fractalgold.png) zrydys.github.io
 
 ## links
 
@@ -14,17 +14,18 @@ fractals in js d3 ... ![logo](zrydys.png)
 
 
 
-### OS
+### Coding examples
+
+The following a examples of commands you can use in linux to handle images:
 
 Sample command to reduce fractal size. (@ GitHub.com/ZryDys)
   
    (ГЭབད); convert ~/Downloads/3d_matlab_by_zrydys.png -adaptive-resize 210x105 ~/Downloads/zrydysML.png 
    
-   
+identify fractalgold.png   #% will give you the image dimensions
 
 
-TBD: minor support:  3d matlab  http://dribbble.com/zrydys   tbd -- dribble?  
-
+TBD: minor support:  3d matlab  http://dribbble.com/zrydys   
 
 
 ##### Table of Contents  
