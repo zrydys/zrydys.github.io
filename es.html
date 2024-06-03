@@ -233,7 +233,8 @@ const urlpa = `/es.html?sm&o=${o}&v1`;
 const urles = `/es.html?sm%26o=${o}%26v1`;
 const url = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${host}/${urles}&color=004&bgcolor=eef`;
 
- 	document.getElementById("qqr").innerHTML = url;
+	document.getElementById("qqr").src=url; // update image src not content !
+ 
 	document.getElementById("qrf").innerHTML = `CC-BY @2024  ZryDys.Github.io/ ${urlpa} &url`;
 
 	var uus = ` ${msg} ! <br/>\n Use ctrl+Print para imprimir en PDF o papel \n <br\> Este contenido se extrae de su enlace - Esta web no guarda los datos ni comprueba su veracidad.`;  
