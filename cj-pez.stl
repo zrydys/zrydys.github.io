@@ -1,0 +1,288 @@
+solid jc-pez.stl
+facet normal 4 0.0 0
+  outer loop
+    vertex -10  -10   0
+    vertex 10  10  0
+    vertex -10  10   0
+  endloop
+endfacet
+facet normal 0 4   0
+  outer loop
+    vertex -10  -10   20
+    vertex 10  10  20
+    vertex -10  10   20
+  endloop
+facet normal 0 40   0
+  outer loop
+    vertex -10  -10   10
+    vertex 10  10  10
+    vertex -10  10   10
+  endloop
+facet normal 0 40   0
+  outer loop
+    vertex -10  -10   -10
+    vertex 10  10  -10
+    vertex -10  10   -10
+  endloop
+ facet normal 0 4   0
+  outer loop
+    vertex -10  0   -10
+    vertex 10  20  -10
+    vertex -10  20   -10
+  endloop         
+endfacet
+ //cj zrydys
+facet normal 0 1 0  //cara 0
+  outer loop
+    vertex -1 20.0 0.0
+    vertex 1 0.0 20.0 
+    vertex -1 40.0 30.0  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 1
+  outer loop
+    vertex -1 19.54 5.21
+    vertex 1 5.21 19.54 
+    vertex -1 39.54 29.54  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 2
+  outer loop
+    vertex -1 18.19 10.26
+    vertex 1 10.26 18.19 
+    vertex -1 38.19 28.19  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 3
+  outer loop
+    vertex -1 15.98 15.0
+    vertex 1 15.0 15.98 
+    vertex -1 35.980000000000004 25.98  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 4
+  outer loop
+    vertex -1 12.98 19.28
+    vertex 1 19.28 12.98 
+    vertex -1 32.980000000000004 22.98  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 5
+  outer loop
+    vertex -1 9.280000000000001 22.98
+    vertex 1 22.98 9.280000000000001 
+    vertex -1 29.28 19.28  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 6
+  outer loop
+    vertex -1 5.0 25.98
+    vertex 1 25.98 5.0 
+    vertex -1 25.0 15.0  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 7
+  outer loop
+    vertex -1 0.2599999999999998 28.19
+    vertex 1 28.19 0.2599999999999998 
+    vertex -1 20.259999999999998 10.26  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 8
+  outer loop
+    vertex -1 -4.79 29.54
+    vertex 1 29.54 -4.79 
+    vertex -1 15.21 5.21  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 9
+  outer loop
+    vertex -1 -10.0 30.0
+    vertex 1 30.0 -10.0 
+    vertex -1 10.0 0.0  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 10
+  outer loop
+    vertex -1 -15.21 29.54
+    vertex 1 29.54 -15.21 
+    vertex -1 4.79 -5.21  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 11
+  outer loop
+    vertex -1 -20.259999999999998 28.19
+    vertex 1 28.19 -20.259999999999998 
+    vertex -1 -0.2599999999999998 -10.26  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 12
+  outer loop
+    vertex -1 -25.0 25.98
+    vertex 1 25.98 -25.0 
+    vertex -1 -5.0 -15.0  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 13
+  outer loop
+    vertex -1 -29.28 22.98
+    vertex 1 22.98 -29.28 
+    vertex -1 -9.280000000000001 -19.28  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 14
+  outer loop
+    vertex -1 -32.980000000000004 19.28
+    vertex 1 19.28 -32.980000000000004 
+    vertex -1 -12.98 -22.98  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 15
+  outer loop
+    vertex -1 -35.980000000000004 15.0
+    vertex 1 15.0 -35.980000000000004 
+    vertex -1 -15.98 -25.98  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 16
+  outer loop
+    vertex -1 -38.19 10.26
+    vertex 1 10.26 -38.19 
+    vertex -1 -18.19 -28.19  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 17
+  outer loop
+    vertex -1 -39.54 5.21
+    vertex 1 5.21 -39.54 
+    vertex -1 -19.54 -29.54  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 18
+  outer loop
+    vertex -1 -40.0 0.0
+    vertex 1 0.0 -40.0 
+    vertex -1 -20.0 -30.0  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 19
+  outer loop
+    vertex -1 -39.54 -5.21
+    vertex 1 -5.21 -39.54 
+    vertex -1 -19.54 -29.54  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 20
+  outer loop
+    vertex -1 -38.19 -10.26
+    vertex 1 -10.26 -38.19 
+    vertex -1 -18.19 -28.19  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 21
+  outer loop
+    vertex -1 -35.980000000000004 -15.0
+    vertex 1 -15.0 -35.980000000000004 
+    vertex -1 -15.98 -25.98  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 22
+  outer loop
+    vertex -1 -32.980000000000004 -19.28
+    vertex 1 -19.28 -32.980000000000004 
+    vertex -1 -12.98 -22.98  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 23
+  outer loop
+    vertex -1 -29.28 -22.98
+    vertex 1 -22.98 -29.28 
+    vertex -1 -9.280000000000001 -19.28  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 24
+  outer loop
+    vertex -1 -25.0 -25.98
+    vertex 1 -25.98 -25.0 
+    vertex -1 -5.0 -15.0  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 25
+  outer loop
+    vertex -1 -20.259999999999998 -28.19
+    vertex 1 -28.19 -20.259999999999998 
+    vertex -1 -0.2599999999999998 -10.26  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 26
+  outer loop
+    vertex -1 -15.21 -29.54
+    vertex 1 -29.54 -15.21 
+    vertex -1 4.79 -5.21  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 27
+  outer loop
+    vertex -1 -10.0 -30.0
+    vertex 1 -30.0 -10.0 
+    vertex -1 10.0 -0.0  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 28
+  outer loop
+    vertex -1 -4.79 -29.54
+    vertex 1 -29.54 -4.79 
+    vertex -1 15.21 5.21  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 29
+  outer loop
+    vertex -1 0.2599999999999998 -28.19
+    vertex 1 -28.19 0.2599999999999998 
+    vertex -1 20.259999999999998 10.26  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 30
+  outer loop
+    vertex -1 5.0 -25.98
+    vertex 1 -25.98 5.0 
+    vertex -1 25.0 15.0  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 31
+  outer loop
+    vertex -1 9.280000000000001 -22.98
+    vertex 1 -22.98 9.280000000000001 
+    vertex -1 29.28 19.28  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 32
+  outer loop
+    vertex -1 12.98 -19.28
+    vertex 1 -19.28 12.98 
+    vertex -1 32.980000000000004 22.98  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 33
+  outer loop
+    vertex -1 15.98 -15.0
+    vertex 1 -15.0 15.98 
+    vertex -1 35.980000000000004 25.98  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 34
+  outer loop
+    vertex -1 18.19 -10.26
+    vertex 1 -10.26 18.19 
+    vertex -1 38.19 28.19  
+  endloop
+endfacet
+facet normal 0 1 0  //cara 35
+  outer loop
+    vertex -1 19.54 -5.21
+    vertex 1 -5.21 19.54 
+    vertex -1 39.54 29.54  
+  endloop
+endfacet
+endsolid jc-pez.stl  //jc tobleron
+// License Copyleft CC-BY ZryDys CjM 2024

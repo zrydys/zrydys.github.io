@@ -1,0 +1,1298 @@
+solid jc-demo.stl
+facet normal 1 1 0  //cara 0
+  outer loop
+    vertex 0 0 0
+    vertex 44 20.0 0.0 
+    vertex 44 20 0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 1
+  outer loop
+    vertex 0 0 0
+    vertex 44 19.7 3.47 
+    vertex 44 20.0 0.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 2
+  outer loop
+    vertex 0 0 0
+    vertex 44 18.79 6.84 
+    vertex 44 19.7 3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 3
+  outer loop
+    vertex 0 0 0
+    vertex 44 17.32 10.0 
+    vertex 44 18.79 6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 4
+  outer loop
+    vertex 0 0 0
+    vertex 44 15.32 12.86 
+    vertex 44 17.32 10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 5
+  outer loop
+    vertex 0 0 0
+    vertex 44 12.86 15.32 
+    vertex 44 15.32 12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 6
+  outer loop
+    vertex 0 0 0
+    vertex 44 10.0 17.32 
+    vertex 44 12.86 15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 7
+  outer loop
+    vertex 0 0 0
+    vertex 44 6.84 18.79 
+    vertex 44 10.0 17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 8
+  outer loop
+    vertex 0 0 0
+    vertex 44 3.47 19.7 
+    vertex 44 6.84 18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 9
+  outer loop
+    vertex 0 0 0
+    vertex 44 0.0 20.0 
+    vertex 44 3.47 19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 10
+  outer loop
+    vertex 0 0 0
+    vertex 44 -3.47 19.7 
+    vertex 44 0.0 20.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 11
+  outer loop
+    vertex 0 0 0
+    vertex 44 -6.84 18.79 
+    vertex 44 -3.47 19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 12
+  outer loop
+    vertex 0 0 0
+    vertex 44 -10.0 17.32 
+    vertex 44 -6.84 18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 13
+  outer loop
+    vertex 0 0 0
+    vertex 44 -12.86 15.32 
+    vertex 44 -10.0 17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 14
+  outer loop
+    vertex 0 0 0
+    vertex 44 -15.32 12.86 
+    vertex 44 -12.86 15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 15
+  outer loop
+    vertex 0 0 0
+    vertex 44 -17.32 10.0 
+    vertex 44 -15.32 12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 16
+  outer loop
+    vertex 0 0 0
+    vertex 44 -18.79 6.84 
+    vertex 44 -17.32 10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 17
+  outer loop
+    vertex 0 0 0
+    vertex 44 -19.7 3.47 
+    vertex 44 -18.79 6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 18
+  outer loop
+    vertex 0 0 0
+    vertex 44 -20.0 0.0 
+    vertex 44 -19.7 3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 19
+  outer loop
+    vertex 0 0 0
+    vertex 44 -19.7 -3.47 
+    vertex 44 -20.0 0.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 20
+  outer loop
+    vertex 0 0 0
+    vertex 44 -18.79 -6.84 
+    vertex 44 -19.7 -3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 21
+  outer loop
+    vertex 0 0 0
+    vertex 44 -17.32 -10.0 
+    vertex 44 -18.79 -6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 22
+  outer loop
+    vertex 0 0 0
+    vertex 44 -15.32 -12.86 
+    vertex 44 -17.32 -10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 23
+  outer loop
+    vertex 0 0 0
+    vertex 44 -12.86 -15.32 
+    vertex 44 -15.32 -12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 24
+  outer loop
+    vertex 0 0 0
+    vertex 44 -10.0 -17.32 
+    vertex 44 -12.86 -15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 25
+  outer loop
+    vertex 0 0 0
+    vertex 44 -6.84 -18.79 
+    vertex 44 -10.0 -17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 26
+  outer loop
+    vertex 0 0 0
+    vertex 44 -3.47 -19.7 
+    vertex 44 -6.84 -18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 27
+  outer loop
+    vertex 0 0 0
+    vertex 44 -0.0 -20.0 
+    vertex 44 -3.47 -19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 28
+  outer loop
+    vertex 0 0 0
+    vertex 44 3.47 -19.7 
+    vertex 44 -0.0 -20.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 29
+  outer loop
+    vertex 0 0 0
+    vertex 44 6.84 -18.79 
+    vertex 44 3.47 -19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 30
+  outer loop
+    vertex 0 0 0
+    vertex 44 10.0 -17.32 
+    vertex 44 6.84 -18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 31
+  outer loop
+    vertex 0 0 0
+    vertex 44 12.86 -15.32 
+    vertex 44 10.0 -17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 32
+  outer loop
+    vertex 0 0 0
+    vertex 44 15.32 -12.86 
+    vertex 44 12.86 -15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 33
+  outer loop
+    vertex 0 0 0
+    vertex 44 17.32 -10.0 
+    vertex 44 15.32 -12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 34
+  outer loop
+    vertex 0 0 0
+    vertex 44 18.79 -6.84 
+    vertex 44 17.32 -10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 35
+  outer loop
+    vertex 0 0 0
+    vertex 44 19.7 -3.47 
+    vertex 44 18.79 -6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara last
+  outer loop
+    vertex 0 0 0
+    vertex 44 20 0 
+    vertex 44 19.7 -3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 0
+  outer loop
+    vertex 0 0 0
+    vertex 37 20.0 0.0 
+    vertex 37 20 0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 1
+  outer loop
+    vertex 0 0 0
+    vertex 37 19.7 3.47 
+    vertex 37 20.0 0.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 2
+  outer loop
+    vertex 0 0 0
+    vertex 37 18.79 6.84 
+    vertex 37 19.7 3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 3
+  outer loop
+    vertex 0 0 0
+    vertex 37 17.32 10.0 
+    vertex 37 18.79 6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 4
+  outer loop
+    vertex 0 0 0
+    vertex 37 15.32 12.86 
+    vertex 37 17.32 10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 5
+  outer loop
+    vertex 0 0 0
+    vertex 37 12.86 15.32 
+    vertex 37 15.32 12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 6
+  outer loop
+    vertex 0 0 0
+    vertex 37 10.0 17.32 
+    vertex 37 12.86 15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 7
+  outer loop
+    vertex 0 0 0
+    vertex 37 6.84 18.79 
+    vertex 37 10.0 17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 8
+  outer loop
+    vertex 0 0 0
+    vertex 37 3.47 19.7 
+    vertex 37 6.84 18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 9
+  outer loop
+    vertex 0 0 0
+    vertex 37 0.0 20.0 
+    vertex 37 3.47 19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 10
+  outer loop
+    vertex 0 0 0
+    vertex 37 -3.47 19.7 
+    vertex 37 0.0 20.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 11
+  outer loop
+    vertex 0 0 0
+    vertex 37 -6.84 18.79 
+    vertex 37 -3.47 19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 12
+  outer loop
+    vertex 0 0 0
+    vertex 37 -10.0 17.32 
+    vertex 37 -6.84 18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 13
+  outer loop
+    vertex 0 0 0
+    vertex 37 -12.86 15.32 
+    vertex 37 -10.0 17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 14
+  outer loop
+    vertex 0 0 0
+    vertex 37 -15.32 12.86 
+    vertex 37 -12.86 15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 15
+  outer loop
+    vertex 0 0 0
+    vertex 37 -17.32 10.0 
+    vertex 37 -15.32 12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 16
+  outer loop
+    vertex 0 0 0
+    vertex 37 -18.79 6.84 
+    vertex 37 -17.32 10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 17
+  outer loop
+    vertex 0 0 0
+    vertex 37 -19.7 3.47 
+    vertex 37 -18.79 6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 18
+  outer loop
+    vertex 0 0 0
+    vertex 37 -20.0 0.0 
+    vertex 37 -19.7 3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 19
+  outer loop
+    vertex 0 0 0
+    vertex 37 -19.7 -3.47 
+    vertex 37 -20.0 0.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 20
+  outer loop
+    vertex 0 0 0
+    vertex 37 -18.79 -6.84 
+    vertex 37 -19.7 -3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 21
+  outer loop
+    vertex 0 0 0
+    vertex 37 -17.32 -10.0 
+    vertex 37 -18.79 -6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 22
+  outer loop
+    vertex 0 0 0
+    vertex 37 -15.32 -12.86 
+    vertex 37 -17.32 -10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 23
+  outer loop
+    vertex 0 0 0
+    vertex 37 -12.86 -15.32 
+    vertex 37 -15.32 -12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 24
+  outer loop
+    vertex 0 0 0
+    vertex 37 -10.0 -17.32 
+    vertex 37 -12.86 -15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 25
+  outer loop
+    vertex 0 0 0
+    vertex 37 -6.84 -18.79 
+    vertex 37 -10.0 -17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 26
+  outer loop
+    vertex 0 0 0
+    vertex 37 -3.47 -19.7 
+    vertex 37 -6.84 -18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 27
+  outer loop
+    vertex 0 0 0
+    vertex 37 -0.0 -20.0 
+    vertex 37 -3.47 -19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 28
+  outer loop
+    vertex 0 0 0
+    vertex 37 3.47 -19.7 
+    vertex 37 -0.0 -20.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 29
+  outer loop
+    vertex 0 0 0
+    vertex 37 6.84 -18.79 
+    vertex 37 3.47 -19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 30
+  outer loop
+    vertex 0 0 0
+    vertex 37 10.0 -17.32 
+    vertex 37 6.84 -18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 31
+  outer loop
+    vertex 0 0 0
+    vertex 37 12.86 -15.32 
+    vertex 37 10.0 -17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 32
+  outer loop
+    vertex 0 0 0
+    vertex 37 15.32 -12.86 
+    vertex 37 12.86 -15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 33
+  outer loop
+    vertex 0 0 0
+    vertex 37 17.32 -10.0 
+    vertex 37 15.32 -12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 34
+  outer loop
+    vertex 0 0 0
+    vertex 37 18.79 -6.84 
+    vertex 37 17.32 -10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 35
+  outer loop
+    vertex 0 0 0
+    vertex 37 19.7 -3.47 
+    vertex 37 18.79 -6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara last
+  outer loop
+    vertex 0 0 0
+    vertex 37 20 0 
+    vertex 37 19.7 -3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 0
+  outer loop
+    vertex 0 0 0
+    vertex 30 20.0 0.0 
+    vertex 30 20 0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 1
+  outer loop
+    vertex 0 0 0
+    vertex 30 19.7 3.47 
+    vertex 30 20.0 0.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 2
+  outer loop
+    vertex 0 0 0
+    vertex 30 18.79 6.84 
+    vertex 30 19.7 3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 3
+  outer loop
+    vertex 0 0 0
+    vertex 30 17.32 10.0 
+    vertex 30 18.79 6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 4
+  outer loop
+    vertex 0 0 0
+    vertex 30 15.32 12.86 
+    vertex 30 17.32 10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 5
+  outer loop
+    vertex 0 0 0
+    vertex 30 12.86 15.32 
+    vertex 30 15.32 12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 6
+  outer loop
+    vertex 0 0 0
+    vertex 30 10.0 17.32 
+    vertex 30 12.86 15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 7
+  outer loop
+    vertex 0 0 0
+    vertex 30 6.84 18.79 
+    vertex 30 10.0 17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 8
+  outer loop
+    vertex 0 0 0
+    vertex 30 3.47 19.7 
+    vertex 30 6.84 18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 9
+  outer loop
+    vertex 0 0 0
+    vertex 30 0.0 20.0 
+    vertex 30 3.47 19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 10
+  outer loop
+    vertex 0 0 0
+    vertex 30 -3.47 19.7 
+    vertex 30 0.0 20.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 11
+  outer loop
+    vertex 0 0 0
+    vertex 30 -6.84 18.79 
+    vertex 30 -3.47 19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 12
+  outer loop
+    vertex 0 0 0
+    vertex 30 -10.0 17.32 
+    vertex 30 -6.84 18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 13
+  outer loop
+    vertex 0 0 0
+    vertex 30 -12.86 15.32 
+    vertex 30 -10.0 17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 14
+  outer loop
+    vertex 0 0 0
+    vertex 30 -15.32 12.86 
+    vertex 30 -12.86 15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 15
+  outer loop
+    vertex 0 0 0
+    vertex 30 -17.32 10.0 
+    vertex 30 -15.32 12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 16
+  outer loop
+    vertex 0 0 0
+    vertex 30 -18.79 6.84 
+    vertex 30 -17.32 10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 17
+  outer loop
+    vertex 0 0 0
+    vertex 30 -19.7 3.47 
+    vertex 30 -18.79 6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 18
+  outer loop
+    vertex 0 0 0
+    vertex 30 -20.0 0.0 
+    vertex 30 -19.7 3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 19
+  outer loop
+    vertex 0 0 0
+    vertex 30 -19.7 -3.47 
+    vertex 30 -20.0 0.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 20
+  outer loop
+    vertex 0 0 0
+    vertex 30 -18.79 -6.84 
+    vertex 30 -19.7 -3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 21
+  outer loop
+    vertex 0 0 0
+    vertex 30 -17.32 -10.0 
+    vertex 30 -18.79 -6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 22
+  outer loop
+    vertex 0 0 0
+    vertex 30 -15.32 -12.86 
+    vertex 30 -17.32 -10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 23
+  outer loop
+    vertex 0 0 0
+    vertex 30 -12.86 -15.32 
+    vertex 30 -15.32 -12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 24
+  outer loop
+    vertex 0 0 0
+    vertex 30 -10.0 -17.32 
+    vertex 30 -12.86 -15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 25
+  outer loop
+    vertex 0 0 0
+    vertex 30 -6.84 -18.79 
+    vertex 30 -10.0 -17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 26
+  outer loop
+    vertex 0 0 0
+    vertex 30 -3.47 -19.7 
+    vertex 30 -6.84 -18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 27
+  outer loop
+    vertex 0 0 0
+    vertex 30 -0.0 -20.0 
+    vertex 30 -3.47 -19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 28
+  outer loop
+    vertex 0 0 0
+    vertex 30 3.47 -19.7 
+    vertex 30 -0.0 -20.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 29
+  outer loop
+    vertex 0 0 0
+    vertex 30 6.84 -18.79 
+    vertex 30 3.47 -19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 30
+  outer loop
+    vertex 0 0 0
+    vertex 30 10.0 -17.32 
+    vertex 30 6.84 -18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 31
+  outer loop
+    vertex 0 0 0
+    vertex 30 12.86 -15.32 
+    vertex 30 10.0 -17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 32
+  outer loop
+    vertex 0 0 0
+    vertex 30 15.32 -12.86 
+    vertex 30 12.86 -15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 33
+  outer loop
+    vertex 0 0 0
+    vertex 30 17.32 -10.0 
+    vertex 30 15.32 -12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 34
+  outer loop
+    vertex 0 0 0
+    vertex 30 18.79 -6.84 
+    vertex 30 17.32 -10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 35
+  outer loop
+    vertex 0 0 0
+    vertex 30 19.7 -3.47 
+    vertex 30 18.79 -6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara last
+  outer loop
+    vertex 0 0 0
+    vertex 30 20 0 
+    vertex 30 19.7 -3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 0
+  outer loop
+    vertex 0 0 0
+    vertex 14 20.0 0.0 
+    vertex 14 20 0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 1
+  outer loop
+    vertex 0 0 0
+    vertex 14 19.7 3.47 
+    vertex 14 20.0 0.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 2
+  outer loop
+    vertex 0 0 0
+    vertex 14 18.79 6.84 
+    vertex 14 19.7 3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 3
+  outer loop
+    vertex 0 0 0
+    vertex 14 17.32 10.0 
+    vertex 14 18.79 6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 4
+  outer loop
+    vertex 0 0 0
+    vertex 14 15.32 12.86 
+    vertex 14 17.32 10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 5
+  outer loop
+    vertex 0 0 0
+    vertex 14 12.86 15.32 
+    vertex 14 15.32 12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 6
+  outer loop
+    vertex 0 0 0
+    vertex 14 10.0 17.32 
+    vertex 14 12.86 15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 7
+  outer loop
+    vertex 0 0 0
+    vertex 14 6.84 18.79 
+    vertex 14 10.0 17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 8
+  outer loop
+    vertex 0 0 0
+    vertex 14 3.47 19.7 
+    vertex 14 6.84 18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 9
+  outer loop
+    vertex 0 0 0
+    vertex 14 0.0 20.0 
+    vertex 14 3.47 19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 10
+  outer loop
+    vertex 0 0 0
+    vertex 14 -3.47 19.7 
+    vertex 14 0.0 20.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 11
+  outer loop
+    vertex 0 0 0
+    vertex 14 -6.84 18.79 
+    vertex 14 -3.47 19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 12
+  outer loop
+    vertex 0 0 0
+    vertex 14 -10.0 17.32 
+    vertex 14 -6.84 18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 13
+  outer loop
+    vertex 0 0 0
+    vertex 14 -12.86 15.32 
+    vertex 14 -10.0 17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 14
+  outer loop
+    vertex 0 0 0
+    vertex 14 -15.32 12.86 
+    vertex 14 -12.86 15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 15
+  outer loop
+    vertex 0 0 0
+    vertex 14 -17.32 10.0 
+    vertex 14 -15.32 12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 16
+  outer loop
+    vertex 0 0 0
+    vertex 14 -18.79 6.84 
+    vertex 14 -17.32 10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 17
+  outer loop
+    vertex 0 0 0
+    vertex 14 -19.7 3.47 
+    vertex 14 -18.79 6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 18
+  outer loop
+    vertex 0 0 0
+    vertex 14 -20.0 0.0 
+    vertex 14 -19.7 3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 19
+  outer loop
+    vertex 0 0 0
+    vertex 14 -19.7 -3.47 
+    vertex 14 -20.0 0.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 20
+  outer loop
+    vertex 0 0 0
+    vertex 14 -18.79 -6.84 
+    vertex 14 -19.7 -3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 21
+  outer loop
+    vertex 0 0 0
+    vertex 14 -17.32 -10.0 
+    vertex 14 -18.79 -6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 22
+  outer loop
+    vertex 0 0 0
+    vertex 14 -15.32 -12.86 
+    vertex 14 -17.32 -10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 23
+  outer loop
+    vertex 0 0 0
+    vertex 14 -12.86 -15.32 
+    vertex 14 -15.32 -12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 24
+  outer loop
+    vertex 0 0 0
+    vertex 14 -10.0 -17.32 
+    vertex 14 -12.86 -15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 25
+  outer loop
+    vertex 0 0 0
+    vertex 14 -6.84 -18.79 
+    vertex 14 -10.0 -17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 26
+  outer loop
+    vertex 0 0 0
+    vertex 14 -3.47 -19.7 
+    vertex 14 -6.84 -18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 27
+  outer loop
+    vertex 0 0 0
+    vertex 14 -0.0 -20.0 
+    vertex 14 -3.47 -19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 28
+  outer loop
+    vertex 0 0 0
+    vertex 14 3.47 -19.7 
+    vertex 14 -0.0 -20.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 29
+  outer loop
+    vertex 0 0 0
+    vertex 14 6.84 -18.79 
+    vertex 14 3.47 -19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 30
+  outer loop
+    vertex 0 0 0
+    vertex 14 10.0 -17.32 
+    vertex 14 6.84 -18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 31
+  outer loop
+    vertex 0 0 0
+    vertex 14 12.86 -15.32 
+    vertex 14 10.0 -17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 32
+  outer loop
+    vertex 0 0 0
+    vertex 14 15.32 -12.86 
+    vertex 14 12.86 -15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 33
+  outer loop
+    vertex 0 0 0
+    vertex 14 17.32 -10.0 
+    vertex 14 15.32 -12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 34
+  outer loop
+    vertex 0 0 0
+    vertex 14 18.79 -6.84 
+    vertex 14 17.32 -10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 35
+  outer loop
+    vertex 0 0 0
+    vertex 14 19.7 -3.47 
+    vertex 14 18.79 -6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara last
+  outer loop
+    vertex 0 0 0
+    vertex 14 20 0 
+    vertex 14 19.7 -3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 0
+  outer loop
+    vertex 0 0 0
+    vertex 22 20.0 0.0 
+    vertex 22 20 0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 1
+  outer loop
+    vertex 0 0 0
+    vertex 22 19.7 3.47 
+    vertex 22 20.0 0.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 2
+  outer loop
+    vertex 0 0 0
+    vertex 22 18.79 6.84 
+    vertex 22 19.7 3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 3
+  outer loop
+    vertex 0 0 0
+    vertex 22 17.32 10.0 
+    vertex 22 18.79 6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 4
+  outer loop
+    vertex 0 0 0
+    vertex 22 15.32 12.86 
+    vertex 22 17.32 10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 5
+  outer loop
+    vertex 0 0 0
+    vertex 22 12.86 15.32 
+    vertex 22 15.32 12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 6
+  outer loop
+    vertex 0 0 0
+    vertex 22 10.0 17.32 
+    vertex 22 12.86 15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 7
+  outer loop
+    vertex 0 0 0
+    vertex 22 6.84 18.79 
+    vertex 22 10.0 17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 8
+  outer loop
+    vertex 0 0 0
+    vertex 22 3.47 19.7 
+    vertex 22 6.84 18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 9
+  outer loop
+    vertex 0 0 0
+    vertex 22 0.0 20.0 
+    vertex 22 3.47 19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 10
+  outer loop
+    vertex 0 0 0
+    vertex 22 -3.47 19.7 
+    vertex 22 0.0 20.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 11
+  outer loop
+    vertex 0 0 0
+    vertex 22 -6.84 18.79 
+    vertex 22 -3.47 19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 12
+  outer loop
+    vertex 0 0 0
+    vertex 22 -10.0 17.32 
+    vertex 22 -6.84 18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 13
+  outer loop
+    vertex 0 0 0
+    vertex 22 -12.86 15.32 
+    vertex 22 -10.0 17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 14
+  outer loop
+    vertex 0 0 0
+    vertex 22 -15.32 12.86 
+    vertex 22 -12.86 15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 15
+  outer loop
+    vertex 0 0 0
+    vertex 22 -17.32 10.0 
+    vertex 22 -15.32 12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 16
+  outer loop
+    vertex 0 0 0
+    vertex 22 -18.79 6.84 
+    vertex 22 -17.32 10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 17
+  outer loop
+    vertex 0 0 0
+    vertex 22 -19.7 3.47 
+    vertex 22 -18.79 6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 18
+  outer loop
+    vertex 0 0 0
+    vertex 22 -20.0 0.0 
+    vertex 22 -19.7 3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 19
+  outer loop
+    vertex 0 0 0
+    vertex 22 -19.7 -3.47 
+    vertex 22 -20.0 0.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 20
+  outer loop
+    vertex 0 0 0
+    vertex 22 -18.79 -6.84 
+    vertex 22 -19.7 -3.47  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 21
+  outer loop
+    vertex 0 0 0
+    vertex 22 -17.32 -10.0 
+    vertex 22 -18.79 -6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 22
+  outer loop
+    vertex 0 0 0
+    vertex 22 -15.32 -12.86 
+    vertex 22 -17.32 -10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 23
+  outer loop
+    vertex 0 0 0
+    vertex 22 -12.86 -15.32 
+    vertex 22 -15.32 -12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 24
+  outer loop
+    vertex 0 0 0
+    vertex 22 -10.0 -17.32 
+    vertex 22 -12.86 -15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 25
+  outer loop
+    vertex 0 0 0
+    vertex 22 -6.84 -18.79 
+    vertex 22 -10.0 -17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 26
+  outer loop
+    vertex 0 0 0
+    vertex 22 -3.47 -19.7 
+    vertex 22 -6.84 -18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 27
+  outer loop
+    vertex 0 0 0
+    vertex 22 -0.0 -20.0 
+    vertex 22 -3.47 -19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 28
+  outer loop
+    vertex 0 0 0
+    vertex 22 3.47 -19.7 
+    vertex 22 -0.0 -20.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 29
+  outer loop
+    vertex 0 0 0
+    vertex 22 6.84 -18.79 
+    vertex 22 3.47 -19.7  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 30
+  outer loop
+    vertex 0 0 0
+    vertex 22 10.0 -17.32 
+    vertex 22 6.84 -18.79  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 31
+  outer loop
+    vertex 0 0 0
+    vertex 22 12.86 -15.32 
+    vertex 22 10.0 -17.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 32
+  outer loop
+    vertex 0 0 0
+    vertex 22 15.32 -12.86 
+    vertex 22 12.86 -15.32  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 33
+  outer loop
+    vertex 0 0 0
+    vertex 22 17.32 -10.0 
+    vertex 22 15.32 -12.86  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 34
+  outer loop
+    vertex 0 0 0
+    vertex 22 18.79 -6.84 
+    vertex 22 17.32 -10.0  
+  endloop
+endfacet
+facet normal 1 1 0  //cara 35
+  outer loop
+    vertex 0 0 0
+    vertex 22 19.7 -3.47 
+    vertex 22 18.79 -6.84  
+  endloop
+endfacet
+facet normal 1 1 0  //cara last
+  outer loop
+    vertex 0 0 0
+    vertex 22 20 0 
+    vertex 22 19.7 -3.47  
+  endloop
+endfacet
+endsolid jc-demo.stl  //jc tobleron
+// License Copyleft CC-BY ZryDys CjM 2024
