@@ -35,15 +35,15 @@ Leverage disruptive technologies like **fractals, AI, and automated algorithms**
 
 ## **Who We Are**  
 
-- **Founder**: A telecom engineer with 15+ years of experience in coding, integration, and Agile project management across the US and Europe.  
-- **Team**: Currently a small, dedicated team with plans to grow through collaborations.  
+
+ Currently a small, dedicated team continuosly growing through collaborations at Polo Digital. Experiencience in coding, integration, and Agile project management 
 
 ---
 
 ## **Our Portfolio**  
 
-Discover our work:  
-- [Web on MCEscher Art](https://zrydys.github.io/esch4.html)
+- [Taking MCEscher Art to 3D](https://zrydys.github.io/esch4.html)   ![](EscherZryDys.jpg)
+- [Entering Fractal](https://zrydys.github.io/tofractal.html) 
 - [Behance](http://behance.net/zrydys)  
 - [Pinterest](http://pinterest.com/zrydys)  
 - [Dribbble](http://dribbble.com/zrydys)  
