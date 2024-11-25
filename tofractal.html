@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ES" xml:lang="ES">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta name="generator" content="cj.cvs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="ZryDys Cj " />
+    <meta name="copyright" content="CC-BY ZryDys Cj. M. 2024" />
+    <meta name="license" content="CC-BY ZryDys Cj. M. 2024" />
+    <meta name="date" content="2024-05-31" />
+    <title id=t1>cj 3d cubo</title>
+
+ 
+	<!-- sin paged el 3d va y la impresion pasable 
+	-->
+ 
+<style> 
+   
+   /* colors */
+   .sepia { filter: sepia(100%); }
+.huerotate { filter: hue-rotate(180deg); }
+
+   h2,    .css-3d-text {
+    font-size: 26px;
+    color: #07cdff;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(-1,197,247),
+                 1px 1px 0 rgb(-9,189,239),
+                 2px 2px 0 rgb(-18,180,230),
+                 4px 4px  0 rgb(-34,164,214),
+                 5px 5px 4px rgba(0,0,0,0.31),
+                 0px 0px 4px rgba(0,0,0,.2);
+ }
+
+</style> 
+    <script id="vertexShader" type="x-shader/x-vertex"> // cj for transforming the vertices.
+        void main() { // gl_Position = vec4( position, 1) ;  // faltaba rotat for non flat
+			 gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1) ; 
+			// gl_Position = projectionMatrix * modelViewMatrix * vec4(  projectionMatrix * modelViewMatrix * position, 1) ;
+			 }
+    </script>
+        <script id="fragmentShader" type="x-shader/x-fragment"> // cj all fragments color:
+		       uniform vec2 u_resolution;
+        uniform float u_time;
+
+ 		vec4  cjImage( in vec2 fragCoord ) // out  fragColor,
+		{
+			// Normalized pixel coordinates (from 0 to 1)
+			vec2 R = u_resolution.xy;
+			vec2 uv = (2.*fragCoord - R) / R.y;
+
+			// color as a vector of 3 components: red, green, blue.
+			vec3 col = vec3(uv.x, uv.y, 0.);
+
+			// draw crosshair
+			if(abs(uv.x) < 0.01 || abs(uv.y) < 0.01) col = vec3(.5);
+
+			// draw circle
+			if(dot(uv, uv) < 0.001) col = vec3(1);
+
+			return vec4(col,1.0);
+		}
+
+        void main() {
+            vec2 st = gl_FragCoord.xy/u_resolution.xy;
+			gl_FragColor = cjImage  (   gl_FragCoord.xy  );  //cjImag on absolut
+        }
+
+    </script>
+
+  </head>
+  <body>
+	  <center>
+ <a href="https://ZryDys.github.io"> ZryDys.github.io </a> - Computer-aided Artistic Creation:
+		  <!--li id="scene-container0" cj="for 3d canvas fine on li too but pagejs killed canvas"> </li-->
+			  </center>
+ "Entering a Fractal world" by ZryDys 2024. Licensed CC-BY-ND 4.0. 
+ 	  <div id="scene-container" cj="for 3d canvas fine on li too but pagejs killed canvas"  style="width: 300px; height: auto;" > </div>
+
+
+ <!-- 3d ========================================== img -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js">//ok</script>
+        <script src="/2act/a-goa/lib/three.min.js">console.debug("local3js")</script>
+        <script src="jsm/three.min.js">cjlocal3js</script>
+ <script>// cj: this rotating img 3D !
+ var camera, scene, renderer;
+ var geometry, material, mesh;
+ var  material2;
+ init(); animate();
+
+ function init() {
+
+    camera = new THREE. PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 10000); // cj: 
+    camera.position.z = 210;
+    
+    scene = new THREE. Scene(); // bkgd?
+     scene.background = new THREE.Color('lightcyan');
+      scene.fog = new THREE.Fog(0xeee, 0, 750);
+    
+    geometry = new THREE.BoxGeometry(100, 120, 150);
+    //antes:
+		  material = new THREE.MeshBasicMaterial({     color: 0xee0044 });
+
+            uniforms = {
+                u_time: { type: "f", value: 1.0 },
+                u_resolution: { type: "v2", value: new THREE.Vector2() },
+                u_mouse: { type: "v2", value: new THREE.Vector2() }
+            }; 
+
+            material2 = new THREE.ShaderMaterial( {  //undef?
+                uniforms: uniforms,
+                vertexShader: document.getElementById( 'vertexShader' ).textContent,
+                fragmentShader: document.getElementById( 'fragmentShader' ).textContent
+            } );
+
+const vertexShader = /*glsl*/`//el 2 necesitaba igual projec y model el matw y 3 ok
+void main() {
+  gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+}
+`;
+
+const fragmentShader = /*glsl*/` //el 2 y mat3 ok
+void main() {
+  gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+}
+`;
+
+const material3 = new THREE.ShaderMaterial({
+  fragmentShader: fragmentShader,
+  vertexShader: vertexShader
+});
+
+const vertexShader4 = /*glsl*/`//el 2 necesitaba igual projec y model el matw y 3 ok
+void main() {
+  gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+}
+`;
+
+const fragmentShader4 = /*glsl*/` //el 2 y mat3 ok
+
+			const float B=4. ;  // 			#define B=4. 
+			const float BB=B*B ;  // 			#define B=4. 
+			const float N=64. ;
+  			const vec2 R = vec2(1500,500) ;
+
+ 		vec4  cjImage2( in vec2 fragCoord ) // out  fragColor, fractal
+		{
+			vec2 uv = (2. * fragCoord - R - 1.) / R.y;
+			vec2 z = vec2(0), c = uv;
+			float oi;
+			for(float i=0.; i < N ; i++) { // fail if not float defi	
+				oi=i;
+				z = mat2(z, -z.y, z.x) * z + c;
+				if(dot(z, z) > BB) break;				
+				} 
+			if(oi==64.) { oi = 0.3; } // mark interior black
+			return vec4( oi/N, oi*oi/N/2., oi*oi/N/3. , 1.);  //#? colorFull blues
+
+		}	  
+ 
+        void main() {
+			//  gl_FragColor = vec4(0.5, 0.5, 0.0, 1.0);
+			gl_FragColor = cjImage2 (   gl_FragCoord.xy  );  //cjImag on absolut
+        }
+`;
+
+	const material4 = new THREE.ShaderMaterial({
+	  fragmentShader: fragmentShader4,
+	  vertexShader: vertexShader4,
+	});
+
+
+    mesh = new THREE.Mesh(geometry, material4 );
+
+    scene.add(mesh);
+    
+    renderer = new THREE.WebGLRenderer();
+    renderer.setSize(126, 124); //pequen
+   // renderer.setSize(326, 324); // medium
+    renderer.setSize(window.innerWidth/1.2, window.innerHeight/1.2); // fit
+    
+    // EITHER, OR document.body.appendChild(renderer.domElement);  //pon the created <canvas>
+    const container = document.querySelector('#scene-container'); // the container that will hold scene
+    container.append(renderer.domElement); // add the created <canvas> element to the cont
+
+            onWindowResize();
+            window.addEventListener( 'resize', onWindowResize, false ); //add onwind
+
+            document.onmousemove = function(e){
+              uniforms.u_mouse.value.x = e.pageX
+              uniforms.u_mouse.value.y = e.pageY
+            }
+
+ }
+
+ function animate() {
+    requestAnimationFrame(animate );
+    mesh.rotation.x += 0.01;
+    mesh.rotation.y += 0.02;
+//            uniforms.u_time.value += clock.getDelta(); //from otr
+    renderer.render(scene, camera);
+ } // cj: end of moving logo img 3D ==========================================
+
+         function onWindowResize( event ) {
+			  console.debug (uniforms , material, material2);
+		//	  console.debug (uniforms , material);
+            renderer.setSize( window.innerWidth, window.innerHeight );
+            uniforms.u_resolution.value.x = renderer.domElement.width;
+            uniforms.u_resolution.value.y = renderer.domElement.height;
+        }
+
+ </script>
+- This animation brought to web thanks to the Three.js library's developers and Ricardo Cabello, aka MrDoob.
+<br>- Most 3D demos published at ZryDys.Github.io were released CC-BY-SA-NC 4.0 except if stated otherwise 
+  </body>
+</html>
