@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<body>
+    <div id="container"></div>
+    <script src="jsm/three.min.js"></script>
+    <script id="vertexShader" type="x-shader/x-vertex">
+		// cj for transforming the vertices.
+		
+        //vTrans = projection * modelview * incomingVertex ; //syntax
+ //  	uniform mat4 gl_ModelViewMatrix;
+ //  	uniform mat4 gl_ProjectionMatrix;
+   //         	attribute vec4 gl_Vertex;
+        //   uniform vec2 u_resolution;
+	    varying vec2 vUv; 
+ 	uniform float u_time;
+
+        void main()
+		{
+	        vUv = uv; //trans to frag
+
+			//cjImage( tk, position ) ;
+			gl_Position = vec4( position, 1) ;  // = gl_ModelViewProjectionMatrix * gl_Vertex;  = ftransform();
+		//just interm bg & fract	gl_Position = projectionMatrix * modelViewMatrix * vec4(position+1.*tan(position+u_time), 1.0); //cool t 
+		}
+ 
+    </script>
+    <script id="fragmentShader" type="x-shader/x-fragment">
+		
+		// cj all fragments in a bluish color:
+		//  warning: extension `GL_ARB_gpu_shader5' unsupported in fragment shader
+		//0:2(12): warning: extension `GL_EXT_gpu_shader5' unsupported in fragment shader
+        uniform vec2 u_resolution;
+        uniform float u_time;
+        uniform sampler2D texture1; //for text no fract
+		        varying vec2 vUv;
+		//vec4 color1 = texture2D(texture1, vUv);
+		
+		 	vec2 iResolution = u_resolution;
+			const float B=4. ;  // 			#define B=4. 
+			const float BB=B*B ;  // 			#define B=4. 
+			const float N=64. ;
+    			//const vec2 R = vec2(1500,500) ;
+ 
+ 		vec4  cjImage2( in vec2 fragCoord ) // out  fragColor, fractal
+		{
+			float f,f2,f3;
+			f=(0.+sin(.1*u_time));  f2=(.0+sin(.5*u_time)); 	f3=(.0+sin(.3*u_time));
+
+			vec2 R = iResolution.xy;
+			vec2 uv = f*( 2. * fragCoord - R - 1. ) / R.y +vec2(-1.4,0.); // cool 
+		//	vec2 uv = 0.035 * (2. * fragCoord   - R) / R.y - vec2(1.39, -0.038);
+
+		//	vec2 uv = f*( 2. * fragCoord - R+f3  ) / R.y +f2; //    move and zoom
+		//	vec2 uv = ( 2. * fragCoord - R - 1. ) / R.y + vec2(f, f2); // cool   the vec2 is like move x,y
+		//	vec2 uv = ( 2. * fragCoord - R - 1. ) / R.y*sin(u_time); // cool zooms *sin(u_time)
+		//	vec2 uv = ( 7.*(sin(u_time)+1.09) * fragCoord - R - 1. ) / R.y;  //move with time like a zoom/tx
+			vec2 z = vec2(0), c = uv;
+			float oi;
+
+			//for(int ui = 0; ui < 64; ui++  ) { } // Do something  
+			for(float i=0.; i < N ; i++) { // fail if not float defi	
+				oi=i;
+				z = mat2(z, -z.y, z.x) * z + c;
+				if(dot(z, z) > BB) break;				
+				} 
+ 
+			if(oi==64.) { oi = 0.3; } // mark interior black
+			
+			//return vec4(vec3( float(ui)/64.), 1.);			
+			//return vec4(vec3(oi/N), 1.);  //# B/W
+							//return vec4( oi/N, oi /N/2., oi/N/1. , 1.);  //#? colorFull blues
+	
+			//	return vec4( oi/N, oi*oi/N/2., oi*oi*oi/N/3. , 1.);  //#? colorFull blues
+		return vec4( oi*oi*oi/N/6.+f, oi*oi/N/2.+f2, oi/N/3.+f3 , 1. );  //#? colorFull blues
+		//	return vec4( exp(oi*f/10.), oi*oi/N/2.+f2, oi/N/1.+f3 , 1. );  //#? colorFull big variety w/time
+		//	return vec4( exp(oi/N*f), exp(oi/N*f2), exp(oi/N*f3) , 1. );  //#? colorFull snowwhite
+
+			
+		//	return vec4( oi*oi*oi/N/6., oi*oi/N/2., oi/N/3. , 1.);  //#? colorFull blues
+
+			//return vec4( oi/N, oi*oi/N/2., sqrt(oi)/N/3. , 1.);  //#? colorFull blues
+			// return vec4( oi*oi/N*f,  oi*oi/N*f, oi/N*f , 1.);  //#? colorFull blues
+
+			//return vec4( oi/N, oi*oi/N/2., oi*oi*oi/N/3.*sin(u_time) , 1.);  //#? colorFull chg w/ time
+
+		}	  
+
+
+        void main() {
+            vec2 st = gl_FragCoord.xy/u_resolution.xy;
+            //gl_FragColor=vec4(st.x,st.y,0.0,1.0);
+            //gl_FragColor = vec4(0.4,0.4,0.8,1.0);
+            
+			gl_FragColor = cjImage2 (   gl_FragCoord.xy  ) ;  //cjImag on absolut
+			   //         gl_FragColor =  color1;
+
+        }
+        
+        
+    </script>
+    <script>
+        var container;
+        var camera, mesh, scene, renderer, clock;
+        var uniforms;
+        
+const loader = new THREE.TextureLoader();
+const texture1 = loader.load("esch4cc.jpg");  // 
+
+        init();
+        animate();
+
+        function init() {
+            container = document.getElementById( 'container' );
+
+            camera = new THREE.Camera();
+            camera.position.z = 1;
+
+            scene = new THREE.Scene();
+            clock = new THREE.Clock();
+
+            var geometry = new THREE.PlaneBufferGeometry( 2, 2 );
+
+            uniforms = {
+                u_time: { type: "f", value: 1.0 },
+                    texture1: { value: texture1 },
+				u_resolution: { type: "v2", value: new THREE.Vector2() },
+                u_mouse: { type: "v2", value: new THREE.Vector2() }
+            };
+
+            var material = new THREE.ShaderMaterial( {
+                uniforms: uniforms,
+                vertexShader: document.getElementById( 'vertexShader' ).textContent,
+                fragmentShader: document.getElementById( 'fragmentShader' ).textContent
+            } );
+
+              mesh = new THREE.Mesh( geometry, material );
+            scene.add( mesh );
+scene.background = texture1;
+scene.name = "ZryDys Fract";
+
+            renderer = new THREE.WebGLRenderer();
+            renderer.setPixelRatio( window.devicePixelRatio );
+
+            container.appendChild( renderer.domElement );
+
+            onWindowResize();
+            window.addEventListener( 'resize', onWindowResize, false );
+
+            document.onmousemove = function(e){
+              uniforms.u_mouse.value.x = e.pageX
+              uniforms.u_mouse.value.y = e.pageY
+            }
+        }
+
+        function onWindowResize( event ) {
+            renderer.setSize( window.innerWidth, window.innerHeight );
+            uniforms.u_resolution.value.x = renderer.domElement.width;
+            uniforms.u_resolution.value.y = renderer.domElement.height;
+        }
+
+        function animate() {
+			//    mesh.rotation.x += 0.007;   mesh.rotation.y += 0.003;  //no, seems like bg fract
+            uniforms.u_time.value += clock.getDelta(); //from otr
+
+            requestAnimationFrame( animate );
+            render();
+        }
+
+        function render() {
+            uniforms.u_time.value += clock.getDelta();
+            renderer.render( scene, camera );
+        }
+    </script>
+
+zrydys live generation of fractal bluish (formerly b/w    
+</body>

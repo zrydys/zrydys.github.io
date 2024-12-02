@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ES" xml:lang="ES">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta name="generator" content="cj.cvs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="ZryDys Cj " />
+    <meta name="copyright" content="CC-BY ZryDys Cj. M. 2024" />
+    <meta name="license" content="CC-BY ZryDys Cj. M. 2024" />
+    <meta name="date" content="2024-05-31" />
+    <title id=t1>MovePic (free) shows Images as Moving Scenes</title>
+
+<!-- sin paged el 3d va y la impresion pasable 
+	-->
+ 
+<style> 
+.abc,.ab {
+    display: none; /*no space*/
+    visibility: hidden;
+      opacity: 0;  /*transpa*/
+
+}
+
+#f:hover ~ .ab {
+    display: block;
+    visibility: visible;
+}
+
+#s:hover ~ .abc {
+    display: block;
+}
+
+#s:hover ~ .a,
+#f:hover ~ .a{
+    display: none;
+}	
+	
+background:rgb(24, 24, 24);
+	
+	
+	
+   /* colors */
+   .sepia { filter: sepia(100%); }
+.huerotate { filter: hue-rotate(180deg); }
+
+p {
+         color: black;
+        background: ##ffbada; 
+ }
+
+ .col {
+         color: #07cdff;
+          color: red; 
+        background-color: ##ffbada; 
+ }
+ 
+   h2,    .css-3d-text {
+    font-size: 26px;
+    color: #07cdff;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(-1,197,247),
+                 1px 1px 0 rgb(-9,189,239),
+                 2px 2px 0 rgb(-18,180,230),
+                 4px 4px  0 rgb(-34,164,214),
+                 5px 5px 4px rgba(0,0,0,0.31),
+                 0px 0px 4px rgba(0,0,0,.2);
+ }
+
+</style> 
+ 
+
+  </head>
+  <body>
+	  
+
+ 
+<h2 id="move-your-image-by-zrydys">MovePic (free) shows Images as Moving Scenes </h2>
+
+<p>This free tool at ZryDys.github.io/mvpc acted <strong>as moving Lens in this example</strong> </p>
+
+		  <!--li id="scene-container0" cj="for 3d canvas fine on li too but pagejs killed canvas"> </li-->
+		  <div id="scene-container" cj="for 3d canvas fine on li too but pagejs kills canvas"  style="width: 330px; height: auto;" > </div>
+	 
+<li>In the above example your browser shows moving effects on these source images: <span style="color: green;" id=bq></span>   <span style="color: green;" id=bbg>
+</li>
+<li> If your have the image rights, you can save this to video using a capturer like chrome plugin, thanks for mentioning ZryDys</li>
+
+<h2> 1. Try free on your own image </h2>
+
+Use MovePic tool as your "Lens" for moving effects on images. 
+
+Paste below the image URL including https://  then click the buttom below:
+
+<!-- FORM TO ENTER & Call oneself -->
+
+ <form class="theform" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="153284918" data-scoped-search-url="/Azure-Samples/active-directory-dotnetcore-console-up-v2/search" data-owner-scoped-search-url="/orgs/Azure-Samples/search" data-unscoped-search-url="/search" action="?uu=7&" accept-charset="UTF-8" method="get"  >
+      
+      
+      <label class="form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+Enter:
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1 header-search-key-slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
+          
+     
+        <input type="text"       name="q"
+        <!-- 
+          class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey=s,/
+        
+          data-test-selector="nav-search-input"
+          placeholder="your MAIN image as https://"
+          data-unscoped-placeholder="your image URL here with https://..."
+          data-scoped-placeholder="https://...your image URL"
+          autocapitalize="off"
+          role="combobox"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations"
+          spellcheck="false"
+          autocomplete="off" -->
+        >
+        
+        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="FqiiEGpjzJca+Of1SEbKVXwUCqwF4nqX9ji0g3/cMPkNxw8rxhiJYdcQjmUGQ67jDe/oI8+hvRi+ME0DOtPXBw==" />
+ 
+ +   <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo js-jump-to-octicon-repo d-none flex-shrink-0">
+    <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+</svg>
+        
+    <input type="text"
+          class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey=s,/
+          name="bg"
+          data-test-selector="nav-search-input"
+          placeholder="optional BAckGROUND image as https://"
+          data-unscoped-placeholder="your image URL here with https://..."
+          data-scoped-placeholder="https://...your image URL"
+          autocapitalize="off"
+          role="combobox"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations"
+          spellcheck="false"
+          autocomplete="off"
+        >
+ + (..) 
+        
+> <button class="col" type="submit"
+              aria-label="You must be signed in to make or propose changes" data-disable-with>
+           Click to Draw   <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-trash">
+       <path fill-rule="evenodd" d="M1.75 2.5h12.5a.25.25 0 01.25.25v7.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25v-7.5a.25.25 0 01.25-.25zM14.25 1H1.75A1.75 1.75 0 000 2.75v7.5C0 11.216.784 12 1.75 12h3.727c-.1 1.041-.52 1.872-1.292 2.757A.75.75 0 004.75 16h6.5a.75.75 0 00.565-1.243c-.772-.885-1.193-1.716-1.292-2.757h3.727A1.75 1.75 0 0016 10.25v-7.5A1.75 1.75 0 0014.25 1zM9.018 12H6.982a5.72 5.72 0 01-.765 2.5h3.566a5.72 5.72 0 01-.765-2.5z"></path>
+</svg>
+            </button>
+</form>  
+  (experimental) 
+  
+
+<h2> 2. See what effects users applied</h2>
+ 
+ Browse the Gallery how people created effects using ZryDys <a href=?a=0>MovePic</a>, Solidify, Fractalize... 
+  </form>    
+<ul>
+<li>showing moves on famous pictures: <a href=?a=1 >"Path of life II" by Escher 1958 </a> </li>
+ <li>  ... or <a href=?bg=../../2act/a-sl/wall/tofractal.jpg > with fractal background  </a>,
+ you can use  <a href=?bg=bluefrac.jpg>bluefrac.jpg </a>
+ </li> 
+ <li> only registered users with verified email   publish  in the gallery   </li>
+</ul> 
+
+<h2> 3. Next by ZryDys: Speeding up Creations ! </h2>
+
+Feel free to propose new effects:
+<strong>gmail</strong> to Zrydys your image or music for enhanced effects 
+<ul> <li>eg. Creation of long Videos combining your audio, pictures, and subtitles </li> 
+</ul> 
+<br/> <p id=cc ></p> 
+<hr/>
+
+<h3>Specifics of this particular rendering above:</h3>
+<ul>
+<li>the image URL provided was: <img src="esch4.jpg" id=iq alt="q" width=88/>    <span style="color: red;" id=eq></span> </li>
+<li>Background image provided: <img src="sail.jpeg" id=ibg alt="bg"  width=88/>  </span> </li>
+<li>First snapshot of the dynamic:	  <a href='javascript:save_scr()'> save-the-snapshot </a> <!--only first capt-->
+</li>
+</ul>
+
+ <!-- 3d ========================================== 
+
+    <iframe id="frameID" src="cubo.html">
+    </iframe>
+ 
+    <a href="#" onclick="getIframeContent('frameID');">
+        Get the content of Iframe
+    </a>
+ 
+    <script>
+        function getIframeContent(frameID) {
+            let frameObj =
+                document.getElementById(frameID);
+            let frameContent = frameObj
+                .contentWindow.document.body.innerHTML;
+ 
+            alert("frame content : " + frameContent);
+        } 
+    </script>
+
+ FULL EX:  -->
+
+
+
+
+
+ <!-- 3d ========================================== 
+	  
+ 2024Nov30
+
+ NOTES: Deforms/Moves with sin() vertex - Rotates with z animation - Captures 1st image - Has backgroud - Forms - Show params - iFrame check
+ 
+ Helping Everyone' Creativity
+ Discover your own Creativity
+      Helps you Create Faster
+  - where people explores their creativity
+  stories: Jane, I loved Escher and wanted to  had a 
+  Dar!
+    <a href="javascript:cj_params()" onclick="cj_params('frameID');">         chk      </a>	
+
+ 
+ img -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js">//ok</script>
+	<script src="/2act/a-goa/lib/three.min.js">need js  local3js</script>
+	<script src="jsm/three.min.js">need js cjlocal3js</script>
+ <script>// cj: this rotating img 3D !
+ 
+//main: 
+ var q,bg; //trans vars outside funct
+ var camera, scene, renderer;  //asi las paso 
+ var geometry, material, mesh;  //tengo mesh aqui pero no va dentro de callbak
+ var  material2,materialI, texture, uniforms;
+ const slow=10;
+ 
+//=============================================================
+  cj_params()  ;
+      
+ /*// cj: tis with start  */ 
+
+const loader = new THREE.TextureLoader();
+//const texture2 = loader.load(q);  //
+const texture2 = loader.load("zry0.png"); //"esch4cc.jpg"  // 
+//const textureb = loader.load("sail.jpeg");
+const textureb = loader.load(bg, t => {loading('loadimg') } );  //never called if not loaded !! need onErr
+//const texture2 = loader.load("https://i.imgur.com/UKBsvV0.jpg");
+
+var texQ, texBG; //
+//trying('mainimg'); //loading('loadimg');
+
+
+try {textureb.image.alt ;//defined
+	 console.debug("seqtxtbg1",textureb);
+}catch(e){ //undefided at Sequential time because didnt loaded yet
+	 console.debug("seqtxtbg0",textureb,e);
+};
+
+let texture1;  // window.open(dataURL, "image"); //[Violation] 'requestAnimationFrame' handler took 65ms
+cargaq(); /*loader.load(  q, // "esch4c.jpg"
+    (texture) => {
+        texture1 = texture;
+        start(); animate();
+        capt_scr()  ;           
+        escucha();
+    },
+    undefined, // onProgress 
+    (err) => { 
+        const ee="Please verify that URL ! using now a demo image since the URL threw error "+err ;
+        alert( ee ) ; document.getElementById("eq").innerHTML = ee;
+        texture1 =  texture2; start(); animate(); capt_scr()  ; escucha();
+     }
+);    //loader cool https://stackoverflow.com/questions/59448702/map-image-as-texture-to-plane-in-a-custom-shader-in-three-js
+*/
+
+//=============================================================
+function cargaq() { //cj CC-BY @2024  ZryDys & CrlHyn
+ 
+   loader.load(  q, // "esch4c.jpg"
+        (texture) => {
+            texture1 = texture;
+            start(); animate();
+            capt_scr()  ;           
+            escucha();
+        },
+        undefined, // onProgress 
+        (err) => { 
+            const ee="Please check if URL is reacheable: "+q ;
+            alert( ee ) ; document.getElementById("eq").innerHTML = ee;
+            q="esch4c.jpg";cargaq();
+         }
+    );    //loader cool 
+ 
+};
+
+var q,bg; //trans vars outside funct
+//=============================================================
+function cj_params() { //cj CC-BY @2024  ZryDys & CrlHyn
+
+    const params = new URLSearchParams(document.location.search);
+    q = params.get("q"); //if (q) { q= q.replace(/ /g,"+") } else {q='esch4cc.jpg'} ; // o
+    q = q? q.replace(/ /g,"+")  : 'esch4cc.jpg'  ;
+    bg = params.get("bg");if (bg) { } else {bg='sail.jpeg'} ; 
+    document.getElementById("bq").innerHTML = q; // <p id=bbg></p>
+    document.getElementById("bbg").innerHTML = bg;  
+    document.getElementById("iq").src=q; // update image src not content !
+    document.getElementById("ibg").src=bg; // update image src not content !  
+  const host = "https://zrydys.github.io"; 
+    const urlpa = `/mvpc.html?q=${q}&v1`;  //uses ${q} variable
+
+    const url = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=002&bgcolor=eff&data="+ encodeURIComponent(host+urlpa);
+
+    document.getElementById("cc").innerHTML = `Tool rights 2024 CC-BY-NC-SA ZryDys.Github.io/ ${urlpa} &url`;
+
+} //func cj params
+
+
+//=============================================================
+function trying(uu){ //cj 24 sw cc-by ZryDys // listen to xy to resize
+	
+	 try { //href = new URL(q).hash;
+		  //var texIMG = loader.load("sail4.jpeg"); //load always OK so must do onload
+		  var texIMG = loader.load(
+		       "sail4.jpeg" ,
+		       (t) => { loading(t) }
+		     ); //load always OK so chk onload
+
+          console.debug(" t1 ",uu ) 
+		 } 
+	 catch(er) { console.debug(" h2 ",uu,er) 
+        // const h2 = href.replace(/^#\/?/, ""); console.debug(" h2 ");
+         }
+     finally {
+        console.debug(" h3 ",uu,texIMG)
+     }
+ 
+};
+ 
+//=============================================================
+function loading(tx){ //cj 24 sw cc-by ZryDys // listen to xy to resize
+	
+	try {textureb.image.alt ;//defined
+	 console.debug("txtbg1",textureb);
+}catch(e){ //undef because didnt loaded yet
+	 console.debug("txtbg0",textureb,e);
+};
+	
+	
+	 try { 
+		 //,texIMG fail
+		 texQ = tx; //href = new URL(tx).hash;
+         console.debug(" lt1 ",tx ) //.image.alt ) 
+		 } 
+	 catch(er) { console.debug(" lh2 ",tx,er) 
+         // const h2 = href.replace(/^#\/?/, ""); console.debug(" h2 ");
+         }
+     finally {
+        console.debug(" lh3 ",tx)
+     }
+ 
+};
+
+//=============================================================
+function escucha(){ //cj 24 sw cc-by ZryDys // listen to xy to resize
+	window.addEventListener( 'resize', onWindowResize, false ); //add onwind
+	document.onmousemove = function(e){ 
+	  uniforms.u_mouse.value.x = e.pageX
+	  uniforms.u_mouse.value.y = e.pageY
+	}
+};
+
+
+var imURL; //transmit bw capt_scr save_scr
+//=============================================================
+const capt_scr = () => { //cj 24 constant funct
+//function capt_scr(){  //cj 24 sw cc-by ZryDys // captures only early before 100ms
+    imURL = renderer.domElement.toDataURL("image/png");  //toDataURL();
+	var img = new Image(  );  //{ width: 99 }
+	img.src = imURL;
+	console.debug ( "img,rend: ", renderer.domElement, img, uniforms.u_time.value  );
+    
+    // const xhr = new XMLHttpReqeust(); xhr.open('PUT', 'https://4.8.23.23/rt', true); xhr.send(dataURL); // Send it to some server via XHR
+    document.body.appendChild(img);
+    
+};
+
+var imURL; //transmit bw capt_scr save_scr
+//=============================================================
+function save_scr(){  //cj 24 sw cc-by ZryDys // saves last scr
+	        var anchor = document.createElement("a");
+            anchor.href = imURL;
+            anchor.download = "yourZryDys.png";
+            anchor.click();
+	
+	/*             anchor.remove();  //CLEAN
+            texture.dispose();
+            renderer.domElement.parentElement?.removeChild(renderer.domElement);
+            renderer.dispose();
+     */       
+}
+ 
+ /*  //cj 2024nov28 img load : no error pero : no se ve img cubo; ni en plano
+ const image = new Image();
+ image.onload = function() {  // prefix THREE Texture is not defined  at Image.image.onload 
+     console.debug ( "cj-img-load" ); // DoEndSharedImageAccessCHROMIUM: bound texture is not a shared image
+            texture = new THREE.Texture(image);   //no se ve img, pero plano con lado transpa
+      init(); animate();  
+ } //
+   image.src = 'cubeGL.jpg'; //image.src = 'esch4cc.jpg';
+*/ 
+  
+   //init(); //
+   
+
+   
+   
+// ====================================================
+//   import vertexShader from '../shaders/vertexShader.glsl'; also possible https://medium.com/@arashtad/how-to-create-and-use-custom-shaders-in-three-js-c51440b5a293
+
+const vertexShader = () => {
+ return `
+	varying vec2 vUv; 
+	uniform float u_time;
+
+	void main() {
+	  vUv = uv; 
+			//std::cout << "hey";
+			
+	  vec4 modelViewPosition = modelViewMatrix * vec4(position, 1.0);
+	  gl_Position = projectionMatrix * modelViewPosition; 
+	  // gl_Position = projectionMatrix * modelViewMatrix * vec4(position+1.*sin(position), 1.0); //deform 
+	  // gl_Position = projectionMatrix * modelViewMatrix * vec4(position+1.*sin(u_time), 1.0); //move by t
+	  gl_Position = projectionMatrix * modelViewMatrix * vec4(position+1.*sin(position+u_time), 1.0); //cool t  //awesome
+	//zoom pero se va  gl_Position = projectionMatrix * modelViewMatrix * vec4(position+1.*tan(position+u_time), 1.0); //cool t  //awesome
+
+	}
+ `;
+}
+
+const fragmentShader = () => {
+    return `
+        uniform sampler2D texture1; 
+        uniform sampler2D texture2; 
+        varying vec2 vUv;
+        uniform float u_time;
+
+        void main() {
+            vec4 color1 = texture2D(texture1, vUv);
+            vec4 color2 = texture2D(texture2, vUv);
+            //            vec4 fColor = mix(color1, color2, vUv.y);
+            vec4 fColor = mix(color1, color2, .07); //.1clear .7dark
+                   //     fColor.a = 1.0;  //no veo diff
+           //  fColor.a = sin(3.14+2.*u_time);  //mixing by time too
+         //   fColor.r = sin(3.*u_time );  // would change colors
+
+           //   gl_FragColor = color2;  // had forgot tex2 load!
+           gl_FragColor = fColor; //the mix makes it darker
+            //gl_FragColor = mix(color1, color2, vUv.y);
+
+        }
+    `;
+}
+
+
+
+//=============================================================
+function start() {
+  renderer = new THREE.WebGLRenderer();
+  
+  
+  //DONDE
+  //        // EITHER, OR document.body.appendChild(renderer.domElement);  //pon the created <canvas>
+    const container = document.querySelector('#scene-container'); // the container that will hold scene
+    container.append(renderer.domElement); // add the created <canvas> element to the cont
+
+  
+  //const para transmit
+  scene = new THREE.Scene();
+       clock = new THREE.Clock();  // for u_time
+
+  //const
+   camera = new THREE.Camera();
+    //  camera = new THREE. PerspectiveCamera(); // slightly differ on sin() cj: 
+   // camera = new THREE.OrthographicCamera( - 1, 1, 1, - 1, 0, 1 );  //sometimes doesnt catch
+ 
+  
+   uniforms = {
+      u_time: { type: "f", value: 1.0 },  //cj: type no longer needed
+      texture1: { value: texture1 },
+      texture2: { value: texture2 },  //or 1 if 1img
+       u_resolution: { value: new THREE.Vector2() },
+       u_mouse: { value: new THREE.Vector2() }, //cj: type no longer needed
+      
+  };
+
+
+   //const    planeGeometry = new THREE.PlaneBufferGeometry(1, 1); //ok img - sin() rotates different
+  //planeGeometry = new THREE.TorusKnotGeometry(0.5, 0.15, 100, 64); //Great Torus Knot
+  // planeGeometry = new THREE.TorusKnotGeometry(.2,.2, 22, 16); //Great Torus Knot effects, 4th =meshes
+
+//   
+ // const      planeGeometry = new THREE.BoxGeometry(100, 120, 150);  //cube
+  // planeGeometry = new THREE.PlaneGeometry(200, 210, 230, 230); //plane big mal
+ //  planeGeometry = new THREE.PlaneGeometry(10, 11, 13, 13); //plane 10 ok  //sin() deforms
+   //
+    //   //     const         planeGeometry = new THREE.BoxGeometry(2, 3, 3);  //cube /img ok aqui
+  // planeGeometry = new THREE.SphereGeometry( 2, 1, 1 ); // radius, segmentsWidth, segmentsHeight // so small is actually a tetrahed
+  //      planeGeometry = new THREE.SphereGeometry( 1.3, .062, .062 ); // radius, segmentsWidth, segmentsHeight SPHERE img OK
+  //     planeGeometry = new THREE.PlaneBufferGeometry(2, 3); //Good img - no .rot prop
+     planeGeometry = new THREE.PlaneGeometry(3, 3, 3, 3); //plane 10 Good  //sin() rotates different
+   // 
+
+  // MATERIAL
+  const material = new THREE.ShaderMaterial({
+	  
+    uniforms: uniforms,
+      fragmentShader: fragmentShader(),
+      vertexShader: vertexShader()
+    
+  });
+  
+material.metalness = 0.7;  //on THREE.MeshStandardMaterial(); instead of newnew THREE.MeshBasicMaterial();
+material.roughness = 0.2;
+material.color = new THREE.Color(0xff00ff);
+//material.wireframe = true;
+
+ //  const plane = new THREE.Mesh(planeGeometry, planeMaterial);
+  //   scene.add(plane);
+
+ //
+ mesh = new THREE.Mesh(planeGeometry, material);
+  
+  
+  //SCENE
+     scene.add(mesh);
+    //    scene.add(new THREE.AmbientLight("rgb(255,255,255)", 1));
+     scene.background = textureb;  //same as background instead of black bg
+     //      scene.fog = new THREE.Fog(0xeee, 0, 750);
+     scene.name = "ZryDys MovPic Fract";
+  //renderer.render(scene, camera);  //WORKS
+  requestAnimationFrame(therender);  //WORKS TOO
+    
+
+} //end start()
+
+//=============================================================
+function therender() {
+  renderer.render(scene, camera);
+  requestAnimationFrame(therender);
+  }
+
+//=============================================================
+ function animate() {
+    requestAnimationFrame(animate );
+ //   mesh.rotation.x += 0.01;
+  // 
+  //   mesh.rotation.y += 0.02;
+    mesh.rotation.z += 0.007;  //clockwise
+      //         if (uniforms.u_time.value < 1.1 ) {    capt_scr()  } ; //only captures first 100ms
+   uniforms.u_time.value += clock.getDelta(); //from otr
+       // black if (uniforms.u_time.value - 20*Math.round(uniforms.u_time.value / 20) < 1 ) {    capt_scr()  } ; 
+   renderer.render(scene, camera);
+ } // cj: end of moving logo img 3D ==========================================
+
+
+ function onWindowResize( event ) {
+            renderer.setSize( window.innerWidth, window.innerHeight );
+            uniforms.u_resolution.value.x = renderer.domElement.width;
+            uniforms.u_resolution.value.y = renderer.domElement.height;
+          // not, only capt 1st times 100ms      capt_scr()  ;   
+         //uniforms.uTexture.value = texture ; //img 
+                 uniforms.texture1.value = texture1 ; //img
+
+         console.debug (uniforms , material, uniforms);
+
+  }
+
+ </script>
+ <script>
+ //capt_scr()  ; //tooEarly </script>
+
+  </body>
+  
+</html>
+
