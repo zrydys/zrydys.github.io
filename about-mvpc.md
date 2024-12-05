@@ -2,6 +2,81 @@ about
 
 
 
+
+
+NNNNNNNNNN
+
+
+
+
+
+
+
+
+
+# github:
+
+\
+
+
+
+- what about [call funct](javascript:save_scr();) or also add  <a name="my-custom-anchor-point">anchors</a> and icons :+1:  with colons  :shipit: or ~~strik~~
+
+- The background color is `#ffffff` for light mode and `#000000` for dark mode.
+
+- @github/infchg What do you think about these updates?
+
+- A footnote can also have multiple lines[^2].  and [Link ro RefLinkText][RefLin1] or :smile:
+
+- or divisions <div style='color: red;'> in div </div> inside github?
+
+- 
+
+  [RefLin1]: hppt://Ref-Link-1
+
+  
+
+  [^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
+
+    This is a second line.
+
+  
+
+> [!NOTE] 
+>
+> Useful information that users should know, even when skimming content.
+
+
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions. 
+
+
+> [!ERROR]
+> Advises about risks or negative outcomes of certain actions. 
+
+
+
+Embed do-able in 2017 when using GitHub Pages and a Jekyll theme:
+
+
+
+- See https://gist.github.com/benbalter/5555251 from @benbalter
+ - Simple as: {% gist 123456789 %}
+
+
+
 ## MovePic (Free) – Turn Your Images into Moving Scenes
 
 **Transform static images into dynamic, moving clips** using this free tool here ZryDys.github.io/mvpc.html 
@@ -81,7 +156,7 @@ Tool rights: **2024 CC-BY-NC-SA**. For more information, visit: mvpc.html.
 
 - The image URL provided was: **url1**
 - The background image provided was: **url2**
-- First snapshot of the dynamic scene: <click to save the snapshot>
+- First snapshot of the dynamic scene:  click to save the snapshot
 
 
 
@@ -100,10 +175,13 @@ HEY
 Try it now at ZryDys.github.io/mvpc
 
 **Transform your still images into dynamic, moving clips** with MovePic, a free tool that applies stunning moving effects to your pictures, turning them into engaging, animated scenes. Here’s how it works:
-<THIS CLIP HERE>
+
+	THIS CLIP HERE
+
+	
 In this example, the images ("esch4cc.jpg" and "sail.jpeg") are enhanced with unique animation effects. If you have the rights to the images, you can save and share your creations using a video capturer tool like a Chrome plugin. Please mention ZryDys when sharing.
 
-------
+
 
 ### 1. Try It Free – Make Your Own Moving Clip
 
@@ -113,6 +191,7 @@ Simply upload your image and watch it come to life!
 - **Step 2**: Optionally, add a background image URL.
 - **Step 3**: Click “Draw” to apply moving effects (experimental).
   Start creating your own animated images with just a few clicks!
+
 
 ------
 
@@ -164,7 +243,7 @@ Tool rights: **2024 CC-BY-NC-SA**. For more information, visit: mvpc.html.
 
 - **Main Image URL**: url1
 - **Background Image URL**: url2
-- **First Snapshot**: <click to save the snapshot>
+- **First Snapshot**: click to save the snapshot
 
 ------
 
@@ -173,79 +252,4 @@ Tool rights: **2024 CC-BY-NC-SA**. For more information, visit: mvpc.html.
 
 
 https://chromewebstore.google.com/detail/canvas-capture/pnhaaddlgbpchligciolcdjgndcpelee
-
-
-
-
-
-NNNNNNNNNN
-
-
-
-
-
-
-
-
-
-# github:
-
-\
-
-
-
-- what about [call funct](javascript:save_scr();) or also add  <a name="my-custom-anchor-point">anchors</a> and icons :+1:  with colons  :shipit: or ~~strik~~
-
-- The background color is `#ffffff` for light mode and `#000000` for dark mode.
-
-- @github/infchg What do you think about these updates?
-
-- A footnote can also have multiple lines[^2].  and [Link ro RefLinkText][RefLin1] or :smile:
-
-- or divisions <div style='color: red;'> in div </div> inside github?
-
-- 
-
-  [RefLin1]: hppt://Ref-Link-1
-
-  
-
-  [^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.
-
-    This is a second line.
-
-  
-
-> [!NOTE] 
->
-> Useful information that users should know, even when skimming content.
-
-
-
-> [!TIP]
-> Helpful advice for doing things better or more easily.
-
-
-
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
-
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes of certain actions. 
-
-
-> [!ERROR]
-> Advises about risks or negative outcomes of certain actions. 
-
-
-
-Embed do-able in 2017 when using GitHub Pages and a Jekyll theme:
-
-
-
-- See https://gist.github.com/benbalter/5555251 from @benbalter
- - Simple as: {% gist 123456789 %}
 
