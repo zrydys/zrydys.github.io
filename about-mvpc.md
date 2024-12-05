@@ -7,7 +7,7 @@ about
 **Transform static images into dynamic, moving clips** using this free tool here ZryDys.github.io/mvpc.html 
 
 **MovePic** lets you apply moving effects to your images, making them come alive as if viewed through a "moving lens with effects." For example:
-   <THIS CLIP HERE>
+   THIS CLIP HERE
 In the above, the source images ("esch4cc.jpg" and "sail.jpeg") are animated by the ZryDys MovPic App’s effects. If you hold the source image rights, you can save your creation using a video capturer (e.g., Chrome plugin). Please mention ZryDys when sharing.
 
 ------
