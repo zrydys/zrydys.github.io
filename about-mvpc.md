@@ -18,7 +18,7 @@ NNNNNNNNNN
 
 \
 
-
+<span id=sp style='color: red;'> in spandiv </span>
 
 - what about [call funct](javascript:save_scr();) or also add  <a name="my-custom-anchor-point">anchors</a> and icons :+1:  with colons  :shipit: or ~~strik~~
 
