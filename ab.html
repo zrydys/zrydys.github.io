@@ -1,0 +1,24 @@
+<html>
+	<body>
+
+    <iframe id="frameID" src="about-mvpc.html">
+    </iframe>
+ 
+    <a href="#" onclick="getIframeContent('frameID');">
+        Get the content of Iframe
+    </a>
+ 
+    <script>
+        function getIframeContent(frameID) {
+            let frameObj =
+                document.getElementById(frameID);
+            let frameContent = frameObj
+                .contentWindow.document.body.innerHTML;
+ 
+            alert("frame content : " + frameContent);
+        } 
+    </script>
+	
+
+</body>
+
