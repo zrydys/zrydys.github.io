@@ -12,6 +12,8 @@ In the above, the source images ("esch4cc.jpg" and "sail.jpeg") are animated by 
 
 ------
 
+
+
 ### 1. Try MovePic Free – Apply Effects to Your Own Image
 
 Use MovePic as your "Lens" to apply moving effects to any image!
@@ -23,6 +25,8 @@ Use MovePic as your "Lens" to apply moving effects to any image!
 
 ------
 
+
+
 ### 2. Gallery of Registered Users
 
 Explore the **Gallery** to see how registered users have applied creative effects with MovePic and other ZryDys tools like Solidify and Fractalize. Discover famous images, such as Escher’s "Path of Life II" or artistic fractal backgrounds like "bluefrac.jpg."
@@ -31,6 +35,8 @@ Explore the **Gallery** to see how registered users have applied creative effect
 - **Email to ZryDys at Gmail to Register**: Unlock additional features with email registration.
 
 ------
+
+
 
 ### 3. Premium & Turnkey Services – Boost Your Creations
 
@@ -46,7 +52,7 @@ Additionally, ZryDys offers **turnkey art and data science projects**, tailored 
 
 
 
-------
+
 
 ### About ZryDys
 
@@ -58,11 +64,15 @@ This app is developed by **ZryDys**, where we also offer:
 
 ------
 
+
+
 ### Copyright & Rights
 
 Tool rights: **2024 CC-BY-NC-SA**. For more information, visit: mvpc.html.
 
 ------
+
+
 
 ### Example Rendering Details
 
@@ -103,6 +113,8 @@ Simply upload your image and watch it come to life!
 
 ------
 
+
+
 ### 2. Gallery – See What Other Users Are Creating
 
 Check out the **Gallery** to explore dynamic images shared by registered users. See how others are bringing iconic pictures like Escher's "Path of Life II" or fractal backgrounds to life with our tools.
@@ -110,6 +122,8 @@ Check out the **Gallery** to explore dynamic images shared by registered users. 
 - **Note**: Only verified email users can upload their creations to the Gallery.
 
 ------
+
+
 
 ### 3. Premium Features & Turnkey Solutions
 
@@ -121,6 +135,8 @@ Take your creations to the next level with **Premium** features.
 
 ------
 
+
+
 ### About ZryDys
 
 This app is developed by **ZryDys**, where we also offer:
@@ -131,11 +147,15 @@ This app is developed by **ZryDys**, where we also offer:
 
 ------
 
+
+
 ### Copyright & Rights
 
 Tool rights: **2024 CC-BY-NC-SA**. For more information, visit: mvpc.html.
 
 ------
+
+
 
 ### Example Rendering Details
 
@@ -167,6 +187,10 @@ NNNNNNNNNN
 
 # github:
 
+\
+
+
+
 - what about [call funct](javascript:save_scr();) or also add  <a name="my-custom-anchor-point">anchors</a> and icons :+1:  with colons  :shipit: or ~~strik~~
 
 - The background color is `#ffffff` for light mode and `#000000` for dark mode.
@@ -187,11 +211,18 @@ NNNNNNNNNN
 
     This is a second line.
 
-> [!NOTE]
+  
+
+> [!NOTE] 
+>
 > Useful information that users should know, even when skimming content.
+
+
 
 > [!TIP]
 > Helpful advice for doing things better or more easily.
+
+
 
 > [!IMPORTANT]
 > Key information users need to know to achieve their goal.
@@ -207,7 +238,10 @@ NNNNNNNNNN
 > Advises about risks or negative outcomes of certain actions. 
 
 
+
 Embed do-able in 2017 when using GitHub Pages and a Jekyll theme:
+
+
 
 - See https://gist.github.com/benbalter/5555251 from @benbalter
  - Simple as: {% gist 123456789 %}
