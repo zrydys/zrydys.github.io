@@ -58,16 +58,16 @@ p {
  
    h2,    .css-3d-text {
     font-size: 26px;
-   color: #075d9f;
+    color: #07cdff;
     font-family: "Arial Black", Gadget, sans-serif;
-    text-shadow: 
-        0px 0px 2px rgba(255, 255, 255,  0.6),  
-        1px 1px 3px rgba(255, 255, 255, 0.4),  /* White shadow */
-        2px 2px 5px rgba(122, 110, 239, 0.6),   /* Dark blue shadow */
-         5px 5px 10px rgba(122, 110, 239, 0.3);
-  
+    text-shadow: 0px 0px 0 rgb(-1,197,247),
+                 1px 1px 0 rgb(-9,189,239),
+                 2px 2px 0 rgb(-18,180,230),
+                 4px 4px  0 rgb(-34,164,214),
+                 5px 5px 4px rgba(0,0,0,0.31),
+                 0px 0px 4px rgba(0,0,0,.2);
  }
- img {  margin: 15px 0px;  border: 5px; height: 99px;  } 
+
 </style> 
  
 
@@ -76,161 +76,160 @@ p {
 	  
 
  
+<h2 id="move-your-image-by-zrydys">MovePic (free) shows Images as Moving Scenes </h2>
 
-<h2 id="movpic-free-transform-your-images-into-clips">MovPic (Free) – Transform your images into clips</h2>
-<p>In this clip below, <strong>MovePic</strong> acts a “magic lens” showing original images with moving effects :</p>
+<p>This free tool at ZryDys.github.io/mvpc acted <strong>as moving Lens in this example</strong> </p>
 
-		  <div id="scene-container" cj="for 3d canvas fine on li too but pagejs kills canvas"  style="width: 60%; height: auto;" > </div>
-		 
-		  
-<p>The above shows internet images (
- 
-“<span style="color: green;" id=bq>esch4cc.jpg</span>“ ,   “<span style="color: green;" id=bbg>sail.jpeg</span>“
-) through animated lenses.</p>
-<p>This MovPic effect is <strong>AI-free</strong>, keeping your creation authentic! simply shown in a Moving Clip</p>
-<ul>
-<li>Keep as Video? When you hold the source image rights, you could save your creation using a video tool like <a href="https://chromewebstore.google.com/detail/canvas-capture/pnhaaddlgbpchligciolcdjgndcpelee">chrome canvas-capture</a>. Please mention ZryDys when sharing.</li>
-</ul>
-<h3 id="try-movpic-free-here-at-zrydys.github-.iomvpc.html">1. Try MovPic – Free here at ZryDys.github .io/mvpc.html</h3>
-<p>Steps to apply moving effects to your desired image :</p>
-<ul>
- 
+		  <!--li id="scene-container0" cj="for 3d canvas fine on li too but pagejs killed canvas"> </li-->
+		  <div id="scene-container" cj="for 3d canvas fine on li too but pagejs kills canvas"  style="width: 330px; height: auto;" > </div>
+	 
+<li>In the above example your browser shows moving effects on these source images: <span style="color: green;" id=bq></span>   <span style="color: green;" id=bbg>
+</li>
+<li> If your have the image rights, you can save this to video using a capturer like chrome plugin, thanks for mentioning ZryDys</li>
+
+<h2> 1. Try free on your own image </h2>
+
+Use MovePic tool as your "Lens" for moving effects on images. 
+
+Paste below the image URL including https://  then click the buttom below:
+
+<!-- FORM TO ENTER & Call oneself -->
+
  <form class="theform" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="153284918" data-scoped-search-url="/Azure-Samples/active-directory-dotnetcore-console-up-v2/search" data-owner-scoped-search-url="/orgs/Azure-Samples/search" data-unscoped-search-url="/search" action="?uu=7&" accept-charset="UTF-8" method="get"  >
- 
+      
+      
       <label class="form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
- 
- <li><strong>Step 1</strong>: Paste the URL of your main image (including <code>https://</code>):
+Enter:
     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1 header-search-key-slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
-   
-       <input type="text"       name="q" >
- </li>       
-        <input type="hidden" data-csrf="true" class="js--csrf" value="F8+hvRi+ME0DOtPXBw==" />
+          
+     
+        <input type="text"       name="q"
+        <!-- 
+          class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey=s,/
+        
+          data-test-selector="nav-search-input"
+          placeholder="your MAIN image as https://"
+          data-unscoped-placeholder="your image URL here with https://..."
+          data-scoped-placeholder="https://...your image URL"
+          autocapitalize="off"
+          role="combobox"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations"
+          spellcheck="false"
+          autocomplete="off" -->
+        >
+        
+        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="FqiiEGpjzJca+Of1SEbKVXwUCqwF4nqX9ji0g3/cMPkNxw8rxhiJYdcQjmUGQ67jDe/oI8+hvRi+ME0DOtPXBw==" />
  
-<li><strong>Step 2</strong>: Optionally, add a background image URL:
-  <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo js-jump-to-octicon-repo d-none flex-shrink-0">
+ +   <svg title="Repository" aria-label="Repository" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo js-jump-to-octicon-repo d-none flex-shrink-0">
     <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
 </svg>
         
     <input type="text"
-          class="f ble"           data-hotkey=s,/            name="bg"
-          spellcheck="false"           autocomplete="off"
+          class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey=s,/
+          name="bg"
+          data-test-selector="nav-search-input"
+          placeholder="optional BAckGROUND image as https://"
+          data-unscoped-placeholder="your image URL here with https://..."
+          data-scoped-placeholder="https://...your image URL"
+          autocapitalize="off"
+          role="combobox"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations"
+          spellcheck="false"
+          autocomplete="off"
         >
- </li>
-  <li><strong>Step 3</strong>:   Click
-  <button class="col" type="submit"
+ + (..) 
+        
+> <button class="col" type="submit"
               aria-label="You must be signed in to make or propose changes" data-disable-with>
- “Draw” 
-  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-trash">
+           Click to Draw   <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-trash">
        <path fill-rule="evenodd" d="M1.75 2.5h12.5a.25.25 0 01.25.25v7.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25v-7.5a.25.25 0 01.25-.25zM14.25 1H1.75A1.75 1.75 0 000 2.75v7.5C0 11.216.784 12 1.75 12h3.727c-.1 1.041-.52 1.872-1.292 2.757A.75.75 0 004.75 16h6.5a.75.75 0 00.565-1.243c-.772-.885-1.193-1.716-1.292-2.757h3.727A1.75 1.75 0 0016 10.25v-7.5A1.75 1.75 0 0014.25 1zM9.018 12H6.982a5.72 5.72 0 01-.765 2.5h3.566a5.72 5.72 0 01-.765-2.5z"></path>
-</svg>   </button>
-to apply effects  </li>
+</svg>
+            </button>
 </form>  
-
-
-</ul>
-
-<p>Note: Free users can be limited to images from public-domain URLs like MediaWiki, .Edu, .Gov, Pictogram, YouTube,… to ensure rights to see such source pictures.</p>
-<ul>
-<li>loved it? feel free to Donate or Pay as a Coffee or share your inspirations or wishes</li>
-</ul>
-<hr />
-
-<p id=cc ></p> 
-<h3 id="by-zrydys---boosting-creativity-for-all">by ZryDys - Boosting Creativity for All !</h3>
-<p>This app brought to you by <strong>ZryDys</strong> (Helping people Create Faster), we also develop and offer:</p>
-<ol type="1">
-<li>Apps like <strong>Solidify</strong>, <strong>Fractalize</strong>, <strong>Cubify</strong> … free <strong>MovPic</strong> …</li>
-<li>A <strong>gallery</strong> showcasing the creative works by registered users.</li>
-<li>Premium &amp; <strong>Turnkey solutions</strong>: for industry, art, data science customers</li>
-</ol>
-<p>Free effect visitors see watermark &gt; registration is free &gt; premium lets you create more.</p>
-
-
-<h3 id="gallery-see-what-others-are-creating">2. Gallery – See What Others are Creating</h3>
-<p>Check out the <strong>Gallery</strong> to explore dynamic images shared by registered users. See how others applied creative effects with ZryDys tools like:</p>
-<p><strong>Fracting</strong> relies on few values to create fractals, and produced this : [^a=2]</p>
-<ul>
-<li>Dynamic <a href="glsl-fractal.html">fractals changing dimensions and colors</a> ..<br />
-</li>
-<li>static fractal backgrounds blue tones <img src="bluefrac.jpg" /></li>
-</ul>
-<p><strong>MovPic</strong> or MovePic shows Images as Moving Scenes by acting as moving Lens. [^a=1]</p>
-<ul>
-<li>see iconic pictures like <a href="mvpc.html">Escher’s “Path of Life II” through a Magic-Lens</a></li>
-<li>or your own picture brought to life dynamic</li>
-</ul>
-<p><strong>Alhambra</strong> tool uses maths to help us produce tiles &amp; tessellations:</p>
-<ul>
-<li>see moving <a href="tile.html">Tiles as in Alhambra</a></li>
-<li>make math education exciting <img src="tiles.jpg" /></li>
-</ul>
-<p><strong>Solidify</strong> into Artistic decorations: or print into a physical 3D piece: e.g. A keyring of your logo. (several 3D print shops available)</p>
-<ul>
-<li>Industry or Artistic solids, see <a href="escher3D.html">3D piezas</a> some ready to 3D print<br />
-</li>
-<li>See <a href="3stl3js.html">display</a> or print <a href="Tetrahedron.stl">STL models</a> ; or converting Logo images into keyrings</li>
-</ul>
-<p><strong>Cubify</strong> shows your image as a 3D dynamic creation ( or save to a rotating 3D videos If you have rights on the source image )</p>
-<ul>
-<li>A <a href="esch4.html">dynamic cube showing MCEscher artwork</a></li>
-</ul>
-<p>Other Dynamic Virtual creations:</p>
-<ul>
-<li><a href="https://zrydys.github.io/tofractal.html">Entering a Fractal world</a> . <img src="wall/tofractal.jpg" />дф</li>
-<li>navigating a <a href="orbitforest.html">virtual Forest</a> in the snow <img src="forest.jpg" /></li>
-</ul>
-<p><strong>Registered</strong> users can share creations in the Gallery or link it with their social networks.</p>
-<ul>
-<li>Register and Unlock additional features by writing ‘free register’ subject to ZryDys @ Gmail to Verify your email and accept you are the owner of your source images.</li>
-</ul>
-<h3 id="premium-boost-your-creations">3. Premium – Boost Your Creations</h3>
-<p><strong>Premium Users</strong> enjoy advanced effects, additional hints, or the option to receive 3D-printed pieces of creations!</p>
-<p>Take your creations to the next level with <strong>Premium</strong> features from ZryDys , for instance:</p>
-<ul>
-<li>Get enhanced video created from your images, music, and subtitles text</li>
-<li>Transform your logo into a 3D piece ready to 3D-print, or receive it printed</li>
-<li>taking your proposals for new effects to boost your creations, gamify it, …</li>
-<li>Workshops about Navigating 3D Data &amp; Models using VR &amp; AR Glasses</li>
-</ul>
-<h4 id="and-turnkey-solutions">and Turnkey Solutions</h4>
-<p>ZryDys offers <strong>turnkey solutions</strong> for business or creative needs. Get in touch for more information!</p>
-<p>Our experience from amateur Decoration to complex Industry and Data science projects:</p>
-<ul>
-<li>Decorations that used ceramic and imagination:<br />
-</li>
-<li>Remote Instruments control, Automate, and early-Warning:
-<ul>
-<li>In this joint collaboration we tracked remote status of complex QKD devices.</li>
-</ul></li>
-<li><a href="visual-plotly.html">Navigating 3D data</a> for Science, Business, Telecom, Cyber-security :
-<ul>
-<li><img src="wall/z-datsci.jpg" /></li>
-<li>in consulting projects the business add AI to Data Science using scikit-learn, pyTorch…</li>
-</ul></li>
-</ul>
-<h3 id="coming-next">Coming Next</h3>
-<p>To <strong>help everyone express their creativity easier</strong> … In ZryDys we already envision future tools :</p>
-<ul>
-<li>LifeTree - Showing hierarchy, connections, heredity,.. in 3D virtual or solids</li>
-<li>MagicMath - Mandala geometry, color I-Ching, austral serpent, Thanka art..</li>
-<li>SpaceShow - floating plane showcasing your creations, Hologram alike,…</li>
-<li>AudioVideo compositions - currently doing for premium and customers</li>
-<li>PhotoLab in VR AR glasses or Projections - links from/to Pictograms, Instagram facetime…</li>
-</ul>
-<h4 id="thanks-to-our-customers-partners-and-collaborators">Thanks to our customers, partners and collaborators:</h4>
-<hr />
-<h3 id="copyright-rights">Copyright &amp; Rights</h3>
-<p>Tool rights: <strong>2024 CC-BY-NC-SA</strong>. For more information, visit: mvpc.html.</p>
-<h3 id="this-examples-rendering-details">This Example’s Rendering Details:</h3>
-<ul>
-<li>The <strong>main image</strong> provided was:  <img src="esch4.jpg" id=iq alt="q" width=88/>    <span style="color: red;" id=eq></span><strong> </strong></li>
-<li>The <strong>background</strong> image provided was:  <img src="sail.jpeg" id=ibg alt="bg"  width=88/>  </span><strong> </strong></li>
-<li><strong>First snapshot</strong> of the dynamic scene:  <a href='javascript:save_scr()'> click to save the snapshot </a>  (or use <a href="https://chromewebstore.google.com/detail/canvas-capture/pnhaaddlgbpchligciolcdjgndcpelee">chrome capture</a> to save clip as a video</li>
-</ul>
- 
-
+  (experimental) 
   
+
+<h2> 2. See what effects users applied</h2>
+ 
+ Browse the Gallery how people created effects using ZryDys <a href=?a=0>MovePic</a>, Solidify, Fractalize... 
+  </form>    
+<ul>
+<li>showing moves on famous pictures: <a href=?a=1 >"Path of life II" by Escher 1958 </a> </li>
+ <li>  ... or <a href=?bg=../../2act/a-sl/wall/tofractal.jpg > with fractal background  </a>,
+ you can use  <a href=?bg=bluefrac.jpg>bluefrac.jpg </a>
+ </li> 
+ <li> only registered users with verified email   publish  in the gallery   </li>
+</ul> 
+
+<h2> 3. Next by ZryDys: Speeding up Creations ! </h2>
+
+Feel free to propose new effects:
+<strong>gmail</strong> to Zrydys your image or music for enhanced effects 
+<ul> <li>eg. Creation of long Videos combining your audio, pictures, and subtitles </li> 
+</ul> 
+<br/> <p id=cc ></p> 
+<hr/>
+
+<h3>Specifics of this particular rendering above:</h3>
+<ul>
+<li>the image URL provided was: <img src="esch4.jpg" id=iq alt="q" width=88/>    <span style="color: red;" id=eq></span> </li>
+<li>Background image provided: <img src="sail.jpeg" id=ibg alt="bg"  width=88/>  </span> </li>
+<li>First snapshot of the dynamic:	  <a href='javascript:save_scr()'> save-the-snapshot </a> <!--only first capt-->
+</li>
+</ul>
+
  <!-- 3d ========================================== 
+
+    <iframe id="frameID" src="cubo.html">
+    </iframe>
+ 
+    <a href="#" onclick="getIframeContent('frameID');">
+        Get the content of Iframe
+    </a>
+ 
+    <script>
+        function getIframeContent(frameID) {
+            let frameObj =
+                document.getElementById(frameID);
+            let frameContent = frameObj
+                .contentWindow.document.body.innerHTML;
+ 
+            alert("frame content : " + frameContent);
+        } 
+    </script>
+
+ FULL EX:  -->
+
+
+
+
+
+ <!-- 3d ========================================== 
+	  
+ 2024Nov30
+
+ NOTES: Deforms/Moves with sin() vertex - Rotates with z animation - Captures 1st image - Has backgroud - Forms - Show params - iFrame check
+ 
+ Helping Everyone' Creativity
+ Discover your own Creativity
+      Helps you Create Faster
+  - where people explores their creativity
+  stories: Jane, I loved Escher and wanted to  had a 
+  Dar!
+    <a href="javascript:cj_params()" onclick="cj_params('frameID');">         chk      </a>	
+
  
  img -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js">//ok</script>

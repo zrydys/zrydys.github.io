@@ -1,0 +1,189 @@
+<head>
+ 
+ <script src="../../2act/a-goa/lib/three.min.js"> local3js </script>
+<!--
+ fail as mod: <script type="module" src="jsm/loaders/STLLoader.js"></script>
+ fail too <script  src="jsm/loaders/STLLoader.js"></script>
+
+
+
+-->
+ <script  src="jsm/loaders/STLLoader-cj.js"> manip_lib to load </script>
+
+</head>
+
+<body>
+	Computer-aided Artistic Creation:
+	 a 3D example:	<div class=uu>.</div>
+
+ <!-- 2024jun ok con binary stl y patch ya entendido; antes aun no por: Uncaught SyntaxError: Cannot use import statement outside a module // Failed to resolve module specifier "three". Relative references must start with either "/", "./", or "../"   TypeError: THREE.TextDecoder is not a constructor
+ NEXT 2024nov si va con binary y a sumar stlviewer or orbit in navigate!!
+-->
+ 
+
+<script type="module">
+//   arriba import * as THREE from "/2prod/js3d/jsm/three.min.js"; 
+const uu=1;
+ 
+//import * as THREE from "/2prod/js3d/A Simple STL Viewer with Three.js_files/three.min.js"; 
+//https://cdn.skypack.dev/three@0.132.2";
+ // 'three';
+//import { OrbitControls } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js";
+//KK //import { OrbitControls } from "/2prod/js3d/jsm/controls/OrbitControls.js";
+//arriba 
+ //import Stats from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/libs/stats.module.js";
+
+//import Stats from "/2prod/js3d/jsm/libs/stats.module.js";
+
+const scene = new THREE.Scene();
+const light = new THREE.SpotLight();
+light.position.set(20, 20, 20);
+scene.add(light);
+     scene.background = new THREE.Color('lightcyan');
+
+const camera = new THREE.PerspectiveCamera(
+     75,
+     window.innerWidth / window.innerHeight,
+     0.1,
+     1000
+);
+
+camera.position.z =   3;
+camera.position.y =   3;
+
+camera.position.z = 53;
+camera.position.y = 52;
+
+
+//
+ camera.lookAt(scene.position); //cj
+
+const renderer = new THREE.WebGLRenderer();
+renderer.outputEncoding = THREE.sRGBEncoding;
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
+// const controls = new OrbitControls(camera,renderer.domElement);
+const material = new THREE.MeshStandardMaterial({
+     color: 0xee22ff,
+     metalness: 0.35,
+     roughness: 0.1,
+     opacity: 1.0,
+     transparent: true,
+     transmission: 0.99,
+     clearcoat: 1.0,
+     clearcoatRoughness: 0.25
+});
+const loader = new STLLoader();
+//cjJun2024  was OK la clave es solo binario no ascii like '/2prod/stl-jc/cj-demo.stl',
+loader.load(
+  //	 '/2prod/stl-jc/demoascii.stl',
+   //   'models/3DModel.stl',
+  "Tetrahedron.stl",  //4K binaries ok: /2act/a-sl/expor4h.stl" QR+tetra, tiny: /2prod/js3d/models/Menger_sponge_sample.stl",  coin /2prod/js3d/models/3DModel.stl", 
+  // '/2prod/stl-jc/jc-cube10.stl',
+    // '/2prod/stl-jc/Menger_sponge_sample.stl',
+     function (geometry) {
+          const mesh = new THREE.Mesh(geometry, material);
+          scene.add(mesh);                                console.log(mesh)
+          
+        var middle = new THREE.Vector3();  // compute middle OPTIONAL this +next  3
+        geometry.computeBoundingBox();
+        geometry.boundingBox.getCenter(middle);
+        mesh.geometry.applyMatrix(new THREE.Matrix4().makeTranslation( -middle.x, -middle.y, -middle.z ) ); //   // Center it
+                 
+     },
+     (xhr) => {
+          console.log((xhr.loaded / xhr.total) * 100 + '% loaded');
+     },
+     (error) => {
+          console.log(error);
+     }
+);
+
+//arriba jun2024 iba solo binario*/
+
+/* START cjNov2024 (new THREE.STLLoader())  verificado todo esta bien en 2prod/js3d/A Simple STL Viewer with Three.js_files/stlviewer.js
+// const model="/2prod/stl-jc/cj-demo.stl"; idem: STLLoader-cj.js:86 RangeError: Offset is outside the bounds of the DataView   at isBinary (STLLoader-cj.js:104) ..
+const model="/Tetrahedron.stl"; //CJ Nov2024 simple Only with Binary!
+// no porque controls not defined yet const elem=document.getElementsByClassName("uu")[0];
+loader.load(model, function (geometry) {
+    var material = new THREE.MeshPhongMaterial({ 
+        color: 0xff5533, 
+        specular: 100, 
+        shininess: 100 });
+    var mesh = new THREE.Mesh(geometry, material);
+        scene.add(mesh);
+
+        // Compute the middle
+        var middle = new THREE.Vector3();
+        geometry.computeBoundingBox();
+        geometry.boundingBox.getCenter(middle);
+
+        // Center it
+        mesh.geometry.applyMatrix(new THREE.Matrix4().makeTranslation( -middle.x, -middle.y, -middle.z ) );
+        
+        // Rotate, if desired
+        if(elem.getAttribute("data-rotate") == "x") 
+            mesh.rotation.x = -Math.PI/2
+
+        // Pull the camera away as needed
+        var largestDimension = Math.max(geometry.boundingBox.max.x,
+            geometry.boundingBox.max.y, geometry.boundingBox.max.z)
+        camera.position.z = largestDimension * elem.getAttribute("data-zdistance");
+
+
+        var animate = function () {
+            requestAnimationFrame(animate);
+            controls.update();
+            renderer.render(scene, camera);
+        }; animate();
+
+    });
+//FIN cjNov2024
+*/
+
+window.addEventListener('resize', onWindowResize, false);
+
+function onWindowResize() {
+     camera.aspect = window.innerWidth / window.innerHeight;
+     camera.updateProjectionMatrix();
+     renderer.setSize(window.innerWidth, window.innerHeight);
+     render();
+}
+
+//const stats = Stats();
+//document.body.appendChild(stats.dom);
+
+function animate() {
+	
+     requestAnimationFrame(animate);
+
+    //cj  controls.update();
+          camera.position.x -= .06;   // with -3 salta mucho
+     if (camera.position.x < -53) camera.position.x = 0;
+
+    camera.position.y -= .02;    if (camera.position.y < 3) camera.position.y = 53;
+
+     camera.position.z -= .07;    if (camera.position.z < 9) camera.position.z = 53;
+ //camera.rotation.order = 'YXZ';
+
+
+    //  renderer.render(scene, camera);  
+      render();
+    // stats.update();
+};
+
+function render() {
+ renderer.render(scene, camera);
+};
+
+    console.info (camera.position.x );
+
+    console.info (camera.position.y );
+    console.info (camera.position.z );
+
+animate();
+  //mesh.rotation.x += 0.01;
+    //   mesh.rotation.y += 0.02;   
+
+
+</script>

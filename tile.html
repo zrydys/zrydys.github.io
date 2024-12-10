@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ES" xml:lang="ES">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta name="generator" content="cj.cvs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="ZryDys Cj " />
+    <meta name="copyright" content="CC-BY ZryDys Cj. M. 2024" />
+    <meta name="license" content="CC-BY ZryDys Cj. M. 2024" />
+    <meta name="date" content="2024-05-31" />
+    <title id=t1>Alhambra Tool: math tiles tesellations</title>
+
+<style>
+body {     overflow: hidden;
+        background-color: lightcyan; 
+
+}
+
+#canvas {           width: 20%;  //height: 50%;  
+ }
+ 
+h2, .css-3d-text {
+    font-size: 26px;
+    color: #075d9f;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 
+        0px 0px 2px rgba(255, 255, 255,  0.6),  
+        1px 1px 3px rgba(255, 255, 255, 0.4),  /* White shadow */
+        2px 2px 5px rgba(122, 110, 239, 0.6),   /* Dark blue shadow */
+         5px 5px 10px rgba(122, 110, 239, 0.3);
+ }
+
+</style>
+	<!--broken script src="//cdn.rawgit.com/mrdoob/three.js/master/build/three.min.js"></scripti
+	<script src="refs/Reflection%20(Three.js)_files/Stats.js"></script>
+
+	<script src="refs/Reflection%20(Three.js)_files/OrbitControls.js">fail to orbit only zooms</script>
+	-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js">//ok</script>
+	<script src="../../2act/a-goa/lib/three.min.js">cg("local3js")</script>
+
+	<script  src="./jsm/orbitcontrols.min.js"> orbits well, module or not </script>
+<script src="https://unpkg.com/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
+
+  </head>
+
+<body>
+<h2 id="move-your-image-by-zrydys">Alhambra Tool: math tiles, tesellations </h2>
+
+<p>
+	<a href=https://ZryDys.github.io/tile.html>ZryDys.github.io/tile.html</a> plays with 3D boxes and maths to show tiles.
+  </p>
+
+<div id="scene-container"> 
+	<!-- Our <canvas> will be inserted here
+	 ( Orbit with your mousewheel to change distance/color )
+
+ <canvas id="canvas"></canvas>
+-->
+  </div>
+
+ 
+<script type=module>
+//import { OrbitControls } from './jsm/controls/Orbitcontrols.min.js'; // Cannot use import statement outside a module // and relative ./
+ const mod='arriba';
+</script>
+<script>
+// not inter scripts	console.debug(mod);  and this does not runs in Module
+	var camera, scene, renderer;
+var geometry, material, mesh;
+init();
+animate();
+
+function init() {
+	// SCENE
+	scene = new THREE.Scene();
+	// CAMERA
+    //camera = new THREE. PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 10000); // cj: 
+    //camera = new THREE. OrthographicCamera (  1600, -1310, 1100 ); //, 0, 0, 0 );  //  (333, 10, 2, 11) ; //OrthogonalCamera(); // cj: 
+    camera = new THREE. OrthographicCamera (  600, -831, 610 ); //, 0, 0, 0 );  //  (333, 10, 2, 11) ; //OrthogonalCamera(); // cj: 
+    camera = new THREE. OrthographicCamera ( ); //, 0, 0, 0 );  //  (333, 10, 2, 11) ; //OrthogonalCamera(); // cj: 
+    // camera.position.z = +300;
+   //   camera = new THREE. PerspectiveCamera(85, window.innerWidth / window.innerHeight , 11, 1000); // cj: 
+    camera = new THREE. OrthographicCamera (  -440, 440, 440, -440, 1, 1111 );  //  (333, 10, 2, 11) ; //OrthogonalCamera(); // cj: 
+    camera.position.z = 215
+//	camera.position.set(0,150,400);//
+	camera.lookAt(scene.position);	
+	
+   // Scene(); // bkgd?
+     scene.background = new THREE.Color('lightcyan');
+      scene.fog = new THREE.Fog(0xeee, 111, 750);
+    
+    geometry = new THREE.BoxGeometry(120,  120,  34  );
+    material = new THREE.MeshBasicMaterial({     color: 0xee0044 });
+    
+    mesh = new THREE.Mesh(geometry, material);
+    //cj, 100,111,111
+		scene.add(mesh);
+    g2 = new THREE.BoxGeometry(120, 120, 130);
+    mes2 = new THREE.Mesh(g2, material);
+	//
+		mes2.position.x = 0; //242;
+		mes2.rotation.z = 3.14159/2;
+		mes2.rotation.z = 3.14159/4;
+
+var a,mes=[];
+const R=260;
+for (var i in [1,1,1,1,2,2,2,2,1,4,7]) { 
+	//mes2.rotation.z =i/10  ;
+	mes[i] = new THREE.Mesh(g2, material);
+	mes[i+10] = new THREE.Mesh(g2, material);
+	a= i/10*2* 3.14159 ;
+	 		mes[i].position.x = R*Math.cos(a );
+	 		mes[i].position.y = R*Math.sin( a );
+	mes[i+10].position.x = mes[i].position.x ;
+	mes[i+10].position.y = mes[i].position.y ;
+
+	mes[i].rotation.z =  a;
+	mes[i+10].rotation.z =  a+3.14159/4;
+	//Math.sin(i/10*2*Math.pi);
+	//console.debug ( i,mes[i] );
+	    scene.add(mes[i] ); 
+	    scene.add(mes[i+10] ); 
+
+	};
+ 
+  //mes2.position= (488,188,-188);
+    scene.add(mes2); 
+    
+    renderer = new THREE.WebGLRenderer();
+    
+    renderer.setSize(window.innerWidth/6, window.innerHeight/4); //pequen
+        renderer.setSize(355, 355); //pequen
+        renderer.setSize(window.innerHeight*.8, window.innerHeight*.8); //pequen
+
+   //controls 
+  controls = new THREE.OrbitControls( camera, renderer.domElement );  //with trols.js
+  //controls = new OrbitControls( camera, renderer.domElement ); // not found in .min
+		controls.enableDamping = true;
+            controls.dampingFactor = 0.6;
+            controls.screenSpacePanning = true;
+            controls.maxPolarAngle = Math.PI / 2.02;
+            controls.update();
+// why 3js orbitcontrols does not rotate? Added non-passive event listener to a scroll-blocking 'mousewheel' event. Consider marking event handler as 'passive' to make the page more responsive. See https://www.chromestatus.com/feature/5745543795965952
+
+    // EITHER, OR  document.body.appendChild(renderer.domElement);  //pon the created <canvas>
+    const container = document.querySelector('#scene-container'); // Get a reference to the container element that will hold our scene
+    container.append(renderer.domElement); // add the created <canvas> element to the cont
+       
+	// STATS
+	// stats = new Stats();
+	// stats.domElement.style.position = 'absolute';
+	// stats.domElement.style.bottom = '0px';
+	// stats.domElement.style.zIndex = 100;
+	//	container.appendChild( stats.domElement );    
+ 
+ 	// LIGHT
+	var light = new THREE.PointLight(0xffffff);
+	light.position.set(0,250,0);
+	scene.add(light);
+	// FLOOR
+	var floorTexture = new THREE.ImageUtils.loadTexture( '../../zry.png' );
+	//floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping; 
+	//floorTexture.repeat.set( 1 , 11);
+	var floorMaterial = new THREE.MeshBasicMaterial( { map: floorTexture, side:THREE.BackSide } );//THREE.BackSide Front
+	var floorGeometry = new THREE.PlaneGeometry(1000, 1000, 10, 10);
+	var floor = new THREE.Mesh(floorGeometry, floorMaterial);
+	floor.position.y = -500;
+	floor.rotation.x =  Math.PI / 2;
+	scene.add(floor); 
+}
+
+function animate() {
+
+    requestAnimationFrame(animate);
+    
+    //mesh.rotation.x += 0.01;
+    //mesh.rotation.y += 0.02;
+//camera.rotation.x += 0.01;	//camera.lookAt(scene.position);	
+//
+camera.rotation.z += 0.01;   // or cam.rot or controls
+
+    renderer.render(scene, camera);
+	
+     	// or cam.rot or controls  : 	controls.update(); 
+   	 	//     mesh.geometry.attributes.position.needsUpdate = true;
+    //   camera.updateProjectionMatrix();
+	//stats.update();
+ 
+}
+</script>
