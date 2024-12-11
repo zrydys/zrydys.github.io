@@ -37,14 +37,25 @@ h2, .css-3d-text {
 	<script src="refs/Reflection%20(Three.js)_files/Stats.js"></script>
 
 	<script src="refs/Reflection%20(Three.js)_files/OrbitControls.js">fail to orbit only zooms</script>
+	OLD	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js">//ok</script>
+
+	Orbit controls showing error Uncaught TypeError: Cannot read property 'ROTATE' of undefined ==> version mismatch
+	but <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.170.0/three.module.js" integrity="sha512-9RRLK3OtM0oTVpDbmHZK2SdQRBMq92z7E+2rDsOuHchu1D0dJB/n0DZA1qXWiPgWnctdOcaVplC+X9EYbM8UQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> unexp erro THR not def 
+weberr y no loader<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js" integrity="sha512-vnmn/Qqn6aG0POAc9mIGzjq0IybrvxJXYDafNvp9JSnDGxeF3pbkSqLvf+YGd5ku63pT7sa/jxHn7/d0mU8+tA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+	, Three.js automatically logs vers number to the console whenever an instance of THREE.WebGLRenderer is initialised. Look near the top of the console for something like:
+  eg.   THREE.WebGLRenderer 84        three.min.js:154
+
 	-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js">//ok</script>
-	<script src="../../2act/a-goa/lib/three.min.js">cg("local3js")</script>
+￼		<script src="../../2act/a-goa/lib/three.min.js">cg("local3js")</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js" integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 	<script  src="./jsm/orbitcontrols.min.js"> orbits well, module or not </script>
 <script src="https://unpkg.com/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
-
-  </head>
+ 
+ 
+   </head>
 
 <body>
 <h2 id="move-your-image-by-zrydys">Alhambra Tool: math tiles, tesellations </h2>
@@ -160,8 +171,12 @@ for (var i in [1,1,1,1,2,2,2,2,1,4,7]) {
 	var light = new THREE.PointLight(0xffffff);
 	light.position.set(0,250,0);
 	scene.add(light);
+	
+	
 	// FLOOR
-	var floorTexture = new THREE.ImageUtils.loadTexture( '../../zry.png' );
+	const loader = new THREE.TextureLoader();
+
+	var floorTexture = loader.load("esch4.jpg");  //depr new THREE.ImageUtils.loadTexture( '../../zry.png' );
 	//floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping; 
 	//floorTexture.repeat.set( 1 , 11);
 	var floorMaterial = new THREE.MeshBasicMaterial( { map: floorTexture, side:THREE.BackSide } );//THREE.BackSide Front
