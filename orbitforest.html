@@ -15,20 +15,31 @@
   <script src="./refs/Reflection%20(Three.js)_files/OrbitControls.js"> NOorbit limited to zoom </script>
   <script type=module src="./refs/Reflection%20(Three.js)_files/OrbitControls.js"> NOorbit limited to zoom </script>
   failed <script type=module src="https://threejs.org/build/three.module.js"> will see if remote </script>
-  --> 
+ 
+ OLD  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js">//ok</script>
+ ERR   <script src="https://threejs.org/examples/jsm/controls/OrbitControls.js"> </script>THREE.OrbitControls is not a constructor
+ err <script src="https://threejs.org/examples/jsm/controls/OrbitControls.js"> </script>
+
+ 
+LOCA
   <script src="../../2act/a-goa/lib/three.min.js"> lib local3js</script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js">//ok</script>
-
 <script  src="./jsm/orbitcontrols.min.js"> orbits well, module or not </script>
-  <script src="https://threejs.org/examples/jsm/controls/OrbitControls.js"> </script>
 
+  --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js" integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ 
+
+
+to fix: Failed to resolve module specifier "three". Relative references must start with either "/", "./", or "../".
 
     <script type="module">
 
       //import * as THREE from 'https://threejs.org/build/three.module.js';
       //import * as THREE from './jsm/three.module.js'; //fine load as module
+import { OrbitControls } from "https://unpkg.com/three@0.112/examples/jsm/controls/OrbitControls.js";
 
-      //import { OrbitControls } from 'https://threejs.org/examples/jsm/controls/OrbitControls.js';
+      //      import { OrbitControls } from 'https://threejs.org/examples/jsm/controls/OrbitControls.js';
        // import { OrbitControls } from './jsm/controls/cjOrbitControls.js'; //does not def Orbit
       //import { OrbitControls } from './jsm/orbitcontrols.min.js'; // this mime err as file:// & later does not provide an export named 'OrbitControls'  with server
       //./jsm/controls/OrbitControls.js';
@@ -55,8 +66,9 @@
         camera.position.set( 400, 200, 0 );
 
         // controls
-        // original:  controls = new OrbitControls( camera, renderer.domElement );
-        controls = new THREE.OrbitControls( camera, renderer.domElement ); // OJO: CJ added THREE 
+        // original: with REMOT      
+            controls = new OrbitControls( camera, renderer.domElement );
+        // con LOCA         controls = new THREE.OrbitControls( camera, renderer.domElement ); // OJO: CJ added THREE 
         controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
         controls.dampingFactor = 0.05;
 
@@ -108,7 +120,10 @@
         scene.add( ambientLight );
 
         // FLOOR
-        var floorTexture = new THREE.ImageUtils.loadTexture( 'bluefrac.jpg' );
+        	const loader = new THREE.TextureLoader();
+
+        var floorTexture =  loader.load("bluefrac.jpg");   // depr new THREE.ImageUtils.loadTexture( 'bluefrac.jpg' );
+        
         floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping; 
         floorTexture.repeat.set( 1.2, 1  ); // with 1,1 fract //how many repeat
         var floorMaterial = new THREE.MeshBasicMaterial( { map: floorTexture, side:THREE.BackSide } );
