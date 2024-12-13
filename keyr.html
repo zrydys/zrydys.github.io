@@ -1,0 +1,80 @@
+<head>
+<style>
+div.stlviewer {
+    width: 100%;
+    height: 70%;
+  /* height: 250px;  */
+}
+
+</style> 
+<!--local OK
+
+ <script src="../../2act/a-goa/lib/three.min.js">need  3js >r127 ok for orbi & stl </script>
+<script src=./jsm/tn/stlloader.min.js></script>
+<script src=./jsm/tn/orbitcontrols.min.js></script>
+
+
+155raised Nocontext?webgl but r128 works! <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js" integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src=https://tonybox.net/plugins/stl/stlloader.min.js></script>
+
+<script src=https://tonybox.net/plugins/stl/orbitcontrols.min.js></script>
+
+</head>
+
+
+<body>
+<a href="https://ZryDys.github.io"> ZryDys.github.io </a> - Computer-aided Artistic Creation:
+	<a href="https://ZryDys.github.io/stl3.html"> demos: </a> 	 
+    <a href="https://ZryDys.github.io/escher3D.html"> MCEscher in 3D </a> 	 
+
+<!-- old script src=./refs/Reflection%20(Three.js)_files/Three.js> orbit no'LEFT' of undefined</script
+<script src="jsm/three.min.js"></script> stl raised THREE.FileLoader is not a constructor
+ tony came w/ 104dev pero se bajaba cosas de red, no iva
+ 
+ no need?<script src=./jsm/tn/webgl.min.js></script>
+ 
+python3 ~/Jua/2prod/stl-jc/img_to_stl.py ~/inkup.jpg ink.stl --scale 1 --base-height 1 --max-height 1 --invert  --threshold 144
+
+-->
+
+
+
+<!--div class=stlviewer data-src=https://tonybox.net//objects/keystone/keystone.stl data-rotate=x data-zdistance=12 -->
+ 
+<div id="cj" class=stlviewer dsrc=00 data-src=keyr.stl  data-rotate=c data-zdistance=2.2 style="width=70%">
+	<span id=cj2></span>
+</div>
+
+<p>
+- Above content from <a id=cj3 target=_new href=noceanous.com>noceanous.com</a> is shown here 3D with low resolution 
+( no much refining in free mode - email to ZryDys @gmail to check for fine quality )
+<br>
+- You are seeing internet content through our 3D lenses, please check the content's URL above for their image copyrights before saving/printing.  
+
+</p>
+<small>
+- This web visualisation is possible Thanks to Three.js (Ricardo Cabello aka MrDoob and team) and browsing code MIT licensed 2024 by Anthony Biondo, with CC-BY-SA 4.0 notes.
+</small> 
+
+
+
+<script>
+const mens={ 'ink' : 'inkup.io', 'noc': 'noceanous.com', 'keyring-noc': 'noceanous.com',  };
+    const params = new URLSearchParams(document.location.search);
+  let  q = params.get("q");    q = q? q.replace(/\+/g," ")  : 'ink'  ;  //cj or + esp
+  let  c = params.get("c");    c = c? c.replace(/\+/g," ")  : '0xaa55dd'  ;  //cj or + esp
+  let msg=mens[ q ]; msg = msg ? msg : "ZryDys.github.io" ;
+  
+var e= document.getElementById("cj2");
+e.innerHTML =q;
+e = document.getElementById("cj3");
+e.innerHTML =msg;
+e.href= 'https://'+msg;
+//console.debug(q,c,msg,mens['ink'],mens[q]); 
+//NEXT WILL VISUALISE
+</script>
+
+<script src=./jsm/stlviewer2.js></script>
