@@ -8,12 +8,12 @@
 
 // ==========================================
 function STLViewerEnable(classname) {
+	//const ModDIR o HTTP y 
     var models = document.getElementsByClassName(classname);
     for (var i = 0; i < models.length; i++) {
-      //  STLViewer(models[i], models[i].getAttribute("data-src"));
-                STLViewer(  models[i], document.getElementById('cj2').innerHTML+'.stl'   );
-
-        console.debug(" stlvie "+i + "  " + models[i] );
+      STLViewer(models[i], models[i].getAttribute("data-src"));
+            //cj debug    STLViewer( models[i],  './models/'+document.getElementById('cj2').innerHTML+'.stl'   );
+            //cj debug     console.debug(" stlvie "+i + "  " + models[i] );
     }
 }
 
