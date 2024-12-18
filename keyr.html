@@ -9,11 +9,12 @@ div.stlviewer {
 </style> 
 <!--local OK
 
+
+-->
  <script src="../../2act/a-goa/lib/three.min.js">need  3js >r127 ok for orbi & stl </script>
 <script src=./jsm/tn/stlloader.min.js></script>
 <script src=./jsm/tn/orbitcontrols.min.js></script>
-
-
+<!--
 155raised Nocontext?webgl but r128 works! <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js" integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 -->
@@ -68,8 +69,9 @@ const mens={ 'ink' : 'inkup.io', 'noc': 'noceanous.com', 'keyring-noc': 'noceano
   let  c = params.get("c");    c = c? c.replace(/\+/g," ")  : '0xaa55dd'  ;  //cj or + esp
   let msg=mens[ q ]; msg = msg ? msg : "ZryDys.github.io" ;
   
-var e= document.getElementById("cj2");
-e.innerHTML =q;
+var e= document.getElementById("cj");  //old cj2 e.innerHTML =q;
+e.setAttribute("data-src",  './models/'+q+'.stl'  );
+e.setAttribute("data-color",  c  );
 e = document.getElementById("cj3");
 e.innerHTML =msg;
 e.href= 'https://'+msg;
