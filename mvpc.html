@@ -250,7 +250,9 @@ to apply effects  </li>
       
  /*// cj: tis with start  */ 
 
-const loader = new THREE.TextureLoader();
+const loader = new THREE.TextureLoader();  
+loader.setCrossOrigin('anonymous'); //dec18 to check on cors issues detected  //ortry ''; //anoth
+
 //const texture2 = loader.load(q);  //
 const texture2 = loader.load("zry0.png"); //"esch4cc.jpg"  // 
 //const textureb = loader.load("sail.jpeg");
