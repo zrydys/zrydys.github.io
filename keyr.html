@@ -1,15 +1,37 @@
-<head>
+<html  xmlns="http://www.w3.org/1999/xhtml" lang="EN" xml:lang="EN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta name="generator" content="cj.cvs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="ZryDys Cj " />
+    <meta name="copyright" content="CC-BY ZryDys Cj. M. 2024" />
+    <meta name="license" content="CC-BY ZryDys Cj. M. 2024" />
+    <meta name="date" content="2024-05-31" />
+    <title id=t1>3D-Lens browse Images as 3D moving Scenes</title>
+ 
 <style>
 div.stlviewer {
     width: 100%;
     height: 70%;
   /* height: 250px;  */
 }
-
+   h2,    .css-3d-text {
+    font-size: 26px;
+   color: #075d9f;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 
+        0px 0px 2px rgba(255, 255, 255,  0.6),  
+        1px 1px 3px rgba(255, 255, 255, 0.4),  /* White shadow */
+        2px 2px 5px rgba(122, 110, 239, 0.6),   /* Dark blue shadow */
+         5px 5px 10px rgba(122, 110, 239, 0.3);
+  
+ }
 </style> 
 <!--local OK
 
-
+no loc <!DOCTYPE html>
 -->
  <script src="../../2act/a-goa/lib/three.min.js">need  3js >r127 ok for orbi & stl </script>
 <script src=./jsm/tn/stlloader.min.js></script>
@@ -26,12 +48,14 @@ div.stlviewer {
 </head>
 
 
-<body>
-<a href="https://ZryDys.github.io"> ZryDys.github.io </a> - Computer-aided Artistic Creation:
+<body><h2 id="movpic-free-transform-your-images-into-clips">3DLens – Transform your images into 3D objects - free by ZryDys</h2>
+<p>
+	Below, you are seeing internet content through our <b>3D-len</b>, a browsing with moving 3D effects :</p>
+<!--<a href="https://ZryDys.github.io"> ZryDys.github.io </a> - Computer-aided Artistic Creation:
 	<a href="https://ZryDys.github.io/stl3.html"> demos: </a> 	 
     <a href="https://ZryDys.github.io/escher3D.html"> MCEscher in 3D </a> 	 
 
-<!-- old script src=./refs/Reflection%20(Three.js)_files/Three.js> orbit no'LEFT' of undefined</script
+ old script src=./refs/Reflection%20(Three.js)_files/Three.js> orbit no'LEFT' of undefined</script
 <script src="jsm/three.min.js"></script> stl raised THREE.FileLoader is not a constructor
  tony came w/ 104dev pero se bajaba cosas de red, no iva
  
@@ -50,24 +74,27 @@ python3 ~/Jua/2prod/stl-jc/img_to_stl.py ~/inkup.jpg ink.stl --scale 1 --base-he
 </div>
 
 <p>
-- Above content from <a id=cj3 target=_new href=noceanous.com>noceanous.com</a> is shown here 3D with low resolution 
-( no much refining in free mode - email to ZryDys @gmail to check for fine quality )
-<br>
-- You are seeing internet content through our 3D lenses, please check the content's URL above for their image copyrights before saving/printing.  
-
-</p>
+Before saving to video or building, check the publisher <a id=cj3 target=_new href=noceanous.com>noceanous.com</a> copyrights.   
+ 
+ <p id=cj4>  </p>  
+ 
+ 
 <small>
+- The visualisation might have miss refining in free mode ; you can register or email to ZryDys @gmail to enquire about fine quality </br> 
 - This web visualisation is possible Thanks to Three.js (Ricardo Cabello aka MrDoob and team) and browsing code MIT licensed 2024 by Anthony Biondo, with CC-BY-SA 4.0 notes.
 </small> 
 
 
 
 <script>
-const mens={ 'ink' : 'inkup.io', 'noc': 'noceanous.com', 'keyring-noc': 'noceanous.com',  };
+const mens={ 'ink' : 'inkup.io', 'noc': 'noceanous.com', 'keyring-noc': 'noceanous.com', 'wingfoil': 'printables.com/social/141224' ,  };
+const lic={ 'ink' : 'inkup.io', 'noc': 'noceanous.com', 'keyring-noc': 'noceanous.com', 
+   'wingfoil': 'WingFoil belt Hook - CC NC SA BY Creavertor 2022 @Printables tested PETG infill 80% for less than 74Kg', 
+   'sch': 'Sailing Schooner - Artistic view CC SA NC BY ZryDys 2024', };
     const params = new URLSearchParams(document.location.search);
   let  q = params.get("q");    q = q? q.replace(/\+/g," ")  : 'ink'  ;  //cj or + esp
   let  c = params.get("c");    c = c? c.replace(/\+/g," ")  : '0xaa55dd'  ;  //cj or + esp
-  let msg=mens[ q ]; msg = msg ? msg : "ZryDys.github.io" ;
+  let msg=mens[ q ]; msg = msg ? msg : "ZryDys.github.io/keyr.html" ;  // ZryDys.github.io
   
 var e= document.getElementById("cj");  //old cj2 e.innerHTML =q;
 e.setAttribute("data-src",  './models/'+q+'.stl'  );
@@ -77,6 +104,11 @@ e.innerHTML =msg;
 e.href= 'https://'+msg;
 //console.debug(q,c,msg,mens['ink'],mens[q]); 
 //NEXT WILL VISUALISE
+
+  let li=lic[ q ]; 
+  if (li) { e= document.getElementById("cj4"); 
+	  e.innerHTML = 'Note by the publisher or author: ' +li;  } ;
+
 </script>
 
 <script src=./jsm/stlviewer2.js?v2></script>
