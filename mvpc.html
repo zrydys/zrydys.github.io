@@ -228,10 +228,11 @@ to apply effects  </li>
 <li><strong>First snapshot</strong> of the dynamic scene:  <a href='javascript:save_scr()'> click to save the snapshot </a>  (or use <a href="https://chromewebstore.google.com/detail/canvas-capture/pnhaaddlgbpchligciolcdjgndcpelee">chrome capture</a> to save clip as a video</li>
 </ul>
  
-
+..><canvas width="5%" height="5%" style="width: 5%; height: 5%;" id=cjcan><img src="sail.jpeg"></canvas>
   
  <!-- 3d ========================================== 
- 
+ ..><canvas width="222" height="222" style="width: 222px; height: 222px;" id=cjcan><img src="sail.jpeg"></canvas>
+
  img -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js">//ok</script>
 	<script src="/2act/a-goa/lib/three.min.js">need js  local3js</script>
@@ -586,8 +587,40 @@ function therender() {
 
          console.debug (uniforms , material, uniforms);
 
+	// testing data image  on resize! 5 lines
+	 cjImg2Dat( 'ibg', 'cjcan' ) ;
+    /*  var im=document.getElementById("iq"); //img no toDataURL() 
+    const objectURLs = []; 
+    var s=document.getElementById("cjcan"); //canvas has toDataURL() but does see img inside  
+    s.width=im.naturalWidth; //222 prints only those pixels not 100% pic
+    s.height=im.naturalHeight;
+    var ctx=s.getContext("2d");
+    ctx.drawImage(im,0,0);
+     // ok empty img: document.createElement("canvas").toDataURL("image/png"); ;
+     console.debug ("yyy:",s  ); //ee no () var imDat = URL.createObjectURL(ee); //no on img? Uncaught TypeError: Failed to execute 'createObjectURL' on 'URL': Overload resolution failed.
+    var imDat= s.toDataURL("image/png");  // only canvas?toDataURL();
+	var img2 = new Image(  );  //{ width: 99 }
+	img2.src = imDat;
+	console.debug ( "dat2: ",   img2  );
+    document.body.appendChild(img2); */
   }
 
+ function cjImg2Dat( idIm, idCv ) { // needs id of Img & Canvas
+    var im=document.getElementById( idIm ); //img no toDataURL() 
+    const objectURLs = []; 
+    var s=document.getElementById( idCv ); //canvas has toDataURL() but does see img inside  
+    s.width=im.naturalWidth; //222 prints only those pixels not 100% pic
+    s.height=im.naturalHeight;
+    var ctx=s.getContext("2d");
+    ctx.drawImage(im,0,0);
+     // ok empty img: document.createElement("canvas").toDataURL("image/png"); ;
+     console.debug ("yyy:",s  ); //ee no () var imDat = URL.createObjectURL(ee); //no on img? Uncaught TypeError: Failed to execute 'createObjectURL' on 'URL': Overload resolution failed.
+    var imDat= s.toDataURL("image/png");  // only canvas?toDataURL();
+	var img2 = new Image(  );  //{ width: 99 }
+	img2.src = imDat;
+	console.debug ( "dat2: ",   img2  );
+    document.body.appendChild(img2);  /* */
+  }
  </script>
  <script>
  //capt_scr()  ; //tooEarly </script>
