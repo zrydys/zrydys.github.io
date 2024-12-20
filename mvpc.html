@@ -223,12 +223,12 @@ to apply effects  </li>
 <p>Tool rights: <strong>2024 CC-BY-NC-SA</strong>. For more information, visit: mvpc.html.</p>
 <h3 id="this-examples-rendering-details">This Example’s Rendering Details:</h3>
 <ul>
-<li>The <strong>main image</strong> provided was:  <img src="esch4.jpg" id=iq alt="q" width=88/>    <span style="color: red;" id=eq></span><strong> </strong></li>
-<li>The <strong>background</strong> image provided was:  <img src="sail.jpeg" id=ibg alt="bg"  width=88/>  </span><strong> </strong></li>
+<li>The <strong>main image</strong> provided was:  <img src="esch4.jpg" id=iq alt="q" crossorigin='anonymous' width=88/>    <span style="color: red;" id=eq></span><strong> </strong></li>
+<li>The <strong>background</strong> image provided was:  <img src="sail.jpeg" id=ibg alt="bg" crossorigin='anonymous' width=88/>  </span><strong> </strong></li>
 <li><strong>First snapshot</strong> of the dynamic scene:  <a href='javascript:save_scr()'> click to save the snapshot </a>  (or use <a href="https://chromewebstore.google.com/detail/canvas-capture/pnhaaddlgbpchligciolcdjgndcpelee">chrome capture</a> to save clip as a video</li>
 </ul>
  
-..><canvas width="5%" height="5%" style="width: 5%; height: 5%;" id=cjcan><img src="sail.jpeg"></canvas>
+..><canvas width="5%" height="5%" style="width: 5%; height: 5%;" id=cjcan></canvas>
   
  <!-- 3d ========================================== 
  ..><canvas width="222" height="222" style="width: 222px; height: 222px;" id=cjcan><img src="sail.jpeg"></canvas>
@@ -611,6 +611,7 @@ function therender() {
     var s=document.getElementById( idCv ); //canvas has toDataURL() but does see img inside  
     s.width=im.naturalWidth; //222 prints only those pixels not 100% pic
     s.height=im.naturalHeight;
+    im.crossorigin='anonymous'; 
     var ctx=s.getContext("2d");
     ctx.drawImage(im,0,0);
      // ok empty img: document.createElement("canvas").toDataURL("image/png"); ;
