@@ -228,7 +228,7 @@ to apply effects  </li>
 <li><strong>First snapshot</strong> of the dynamic scene:  <a href='javascript:save_scr()'> click to save the snapshot </a>  (or use <a href="https://chromewebstore.google.com/detail/canvas-capture/pnhaaddlgbpchligciolcdjgndcpelee">chrome capture</a> to save clip as a video</li>
 </ul>
  
-..><canvas width="5%" height="5%" style="width: 5%; height: 5%;" id=cjcan></canvas>
+,<canvas width="5%" height="5%" style="width: 5%; height: 5%;" id=cjcan></canvas>
   
  <!-- 3d ========================================== 
  ..><canvas width="222" height="222" style="width: 222px; height: 222px;" id=cjcan><img src="sail.jpeg"></canvas>
@@ -300,6 +300,7 @@ function cargaq() { //cj CC-BY @2024  ZryDys & CrlHyn
         undefined, // onProgress 
         (err) => { 
             const ee="Please check if URL is reacheable: "+q ;
+            const ee="This free version allows only images from TuneTank UppBeat.io X(twimg.com) ArtList.io(imgix.net)  facebook(fbcdn.net) GettyImages.com Linkedin(licdn.com) WikiMedia.org Deezer FreeToUse.com pexels.com ... public domains"+q ;
             alert( ee ) ; document.getElementById("eq").innerHTML = ee;
             q="esch4c.jpg";cargaq();
          }
@@ -587,8 +588,7 @@ function therender() {
 
          console.debug (uniforms , material, uniforms);
 
-	// testing data image  on resize! 5 lines
-	 cjImg2Dat( 'ibg', 'cjcan' ) ;
+	// testing data image  on resize! 5 lines  ==>  cjImg2Dat( 'ibg', 'cjcan' ) ; //all deps on CORS!
     /*  var im=document.getElementById("iq"); //img no toDataURL() 
     const objectURLs = []; 
     var s=document.getElementById("cjcan"); //canvas has toDataURL() but does see img inside  
