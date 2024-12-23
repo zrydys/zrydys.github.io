@@ -44,6 +44,7 @@ function STLViewer(elem, model) {
     controls.autoRotateSpeed = 0.75;
     controls.autoRotateSpeed = 0.55; //cj slow down
 
+     //SCENE
     var scene = new THREE.Scene();
 
     scene.add(new THREE.HemisphereLight(0xffffff, 0x080820, 1.5));
@@ -56,9 +57,13 @@ function STLViewer(elem, model) {
     // helper = new THREE.CameraHelper( light.shadow.camera );
     //    scene.add( helper );  //this helps locate lines
         
-        
+    //Texture Img    
+        const loader = new THREE.TextureLoader();
+        const texture = loader.load( './models/marble.png' );//./bluef.png   
     (new THREE.STLLoader()).load(model, function (geometry) {  
-        var material = new THREE.MeshPhongMaterial({ color: 0xaa55ee, specular: 100, shininess: 100 });   //cj 0xff5533  to cyan
+        //var material = new THREE.MeshPhongMaterial({ color: 0xaa55ee, specular: 100, shininess: 100 , transmission:1 , map: texture, thicknes: .8 }); // obso THREE.ImageUtils.loadTexture //  color: 0xaa55ee, specular: 100, shininess: 100  cj 0xff5533  to cyan
+       // var material = new THREE.MeshLambertMaterial({ map: texture }); 
+        var material = new THREE.MeshPhysicalMaterial({ color: 0xaa55ee,  transmission:11 , map: texture, metalness: .8 , roughness: 0.4,  envMapIntensity: 0.5,side: THREE.DoubleSide }); 
         var mesh = new THREE.Mesh(geometry, material);
         scene.add(mesh);
 
@@ -81,6 +86,14 @@ function STLViewer(elem, model) {
             geometry.boundingBox.max.y, geometry.boundingBox.max.z)
         camera.position.z = largestDimension * elem.getAttribute("data-zdistance");
 
+      //ambien
+      var aLight = new THREE.AmbientLight(0x808080, 5);
+      scene.add(aLight);
+
+	// LIGHT FOR BRILLOS https://tympanus.net/codrops/2021/10/27/creating-the-effect-of-transparent-glass-and-plastic-in-three-js/
+	const dlight = new THREE.DirectionalLight(0xfff0dd, 1);  //direct to see metal
+	dlight.position.set(0, 25, 20);
+	scene.add(dlight);
 
         var animate = function () {
             requestAnimationFrame(animate);
