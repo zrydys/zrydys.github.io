@@ -161,8 +161,11 @@ to apply effects  </li>
 </ul>
 <p><strong>Alhambra</strong> tool uses maths to help us produce tiles &amp; tessellations:</p>
 <ul>
-<li>see moving <a href="tile.html">Tiles as in Alhambra</a></li>
-<li>make math education exciting <img src="tiles.jpg" /></li>
+<li>see moving  <a href=./tile.html> Math tiles</a> 
+	Or <a href=./tiles.html> Alhambra tesellations</a> </li>
+<li>make math education exciting  <a href=./tiles.html> <img src=./thumb/alhambra.jpg height=55px /> </a> .. <a href=./tile.html>   <img src=./thumb/tiles.jpg height=55px /> </a></li>
+ 
+
 </ul>
 <p><strong>Solidify</strong> into Artistic decorations: or print into a physical 3D piece: e.g. A keyring of your logo. (several 3D print shops available)</p>
 <ul>
@@ -588,7 +591,8 @@ function therender() {
 
          console.debug (uniforms , material, uniforms);
 
-	// testing data image  on resize! 5 lines  ==>  cjImg2Dat( 'ibg', 'cjcan' ) ; //all deps on CORS!
+	// testing data image  on resize! 5 lines  ==> 
+	 cjImg2Dat( 'ibg', 'cjcan' ) ; //all deps on CORS!
     /*  var im=document.getElementById("iq"); //img no toDataURL() 
     const objectURLs = []; 
     var s=document.getElementById("cjcan"); //canvas has toDataURL() but does see img inside  
@@ -605,6 +609,7 @@ function therender() {
     document.body.appendChild(img2); */
   }
 
+// ================================================================
  function cjImg2Dat( idIm, idCv ) { // needs id of Img & Canvas
     var im=document.getElementById( idIm ); //img no toDataURL() 
     const objectURLs = []; 
@@ -613,15 +618,16 @@ function therender() {
     s.height=im.naturalHeight;
     im.crossorigin='anonymous'; 
     var ctx=s.getContext("2d");
-    ctx.drawImage(im,0,0);
-     // ok empty img: document.createElement("canvas").toDataURL("image/png"); ;
+    ctx.drawImage(im,0,0);  // ok empty img: document.createElement("canvas").toDataURL("image/png"); ;
      console.debug ("yyy:",s  ); //ee no () var imDat = URL.createObjectURL(ee); //no on img? Uncaught TypeError: Failed to execute 'createObjectURL' on 'URL': Overload resolution failed.
-    var imDat= s.toDataURL("image/png");  // only canvas?toDataURL();
+     //TODO  de canva a noseque canvasData = ctx.getImageData(0, 0, 100, 100);
+    var imDat= s.toDataURL("image/png");  // only canvas?toDataURL(); ==> fail CORS
 	var img2 = new Image(  );  //{ width: 99 }
 	img2.src = imDat;
-	console.debug ( "dat2: ",   img2  );
+	console.debug ( "dat2: ",   img2 ,ctx.getImageData(0, 0, 100, 100) );
     document.body.appendChild(img2);  /* */
   }
+  
  </script>
  <script>
  //capt_scr()  ; //tooEarly </script>

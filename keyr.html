@@ -29,22 +29,31 @@ div.stlviewer {
   
  }
 </style> 
-<!--local OK
 
-no loc <!DOCTYPE html>
--->
- <script src="../../2act/a-goa/lib/three.min.js">need  3js >r127 ok for orbi & stl </script>
-<script src=./jsm/tn/stlloader.min.js></script>
-<script src=./jsm/tn/orbitcontrols.min.js></script>
 <!--
 155raised Nocontext?webgl but r128 works! <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js" integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+CDN 1st
 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js">ojo q pilla 128 de cache</script>
 <script src=https://tonybox.net/plugins/stl/stlloader.min.js></script>
-
 <script src=https://tonybox.net/plugins/stl/orbitcontrols.min.js></script>
 
+<!--local OK 2nd
+ <script src="./jsm/three.min.js"> noraise multi REV79 no tiene fileload  </script>
+<script src="./refs/Reflection%20(Three.js)_files/OrbitControls.js"></script>
+no loc <!DOCTYPE html>
+-->
+  <script src="../../2act/a-goa/lib/three.min.js">need  3js >r127 ok for orbi & stl but multivers</script>
+<script src=./jsm/tn/stlloader.min.js>  func o no? solo cach?</script>
+ <script src="./jsm/tn/orbitcontrols.min.js?what"> func o no? Uncaught TypeError: THREE.OrbitControls is not a constructor</script>
+
+
+<script> //este lo pilla pero del script no // THREE.OrbitControls=function(object,domElement){};
+ // console.log(   new THREE.OrbitControls()  ) ; //
+ 	        console.debug(" main" + THREE.REVISION );
+
+</script>
 </head>
 
 
@@ -111,4 +120,4 @@ e.href= 'https://'+msg;
 
 </script>
 
-<script src=./jsm/stlviewer2.js?v2></script>
+<script src=./jsm/stlviewer2.js?v24></script>

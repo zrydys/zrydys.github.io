@@ -47,23 +47,18 @@ weberr y no loader<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0
 
 	, Three.js automatically logs vers number to the console whenever an instance of THREE.WebGLRenderer is initialised. Look near the top of the console for something like:
   eg.   THREE.WebGLRenderer 84        three.min.js:154
-<script src="./refs/Reflection%20(Three.js)_files/Three.js"> vers no boxgeom</script>
-<script src="./A%20Simple%20STL%20Viewer%20with%20Three.js_files/three.min.js"> vers ok but no transm</script>
 
-	-->
-￼		<script src="../../2act/a-goa/lib/three.min.js">cg("local3js")</script>
-
+-->
+<script src="../../2act/a-goa/lib/three.min.js">cg("local3js")</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js" integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src=./jsm/tn/orbitcontrols.min.js> local orbit </script>
 	<!--script  src="./jsm/orbitcontrols.min.js"> orbits well, module or not -- cj2024 just moved it to tn/ thanks Tony</script-->
 <script src="https://unpkg.com/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
- <script src=https://unpkg.com/three@0.111.0/examples/js/loaders/SVGLoader.js> with3-79,104d,127 miss func THREE.SVGLoader.createShapes is not a function, with3js-128 canno cal new , ... need 3js same revis</script>
-
- </head>
-
+ 
+</head>
 <body>
-<h2 id="alhambra-by-zrydys">Alhambra: Play with maths to build tiles & 3D tesellations   </h2>
+ <h2 id="alhambra-by-zrydys">Alhambra: Play with maths to build tiles & 3D tesellations   </h2>
 
 <div id="scene-container" width=80% height=70%> 
 	<!-- Our <canvas> will be inserted here
@@ -72,8 +67,6 @@ weberr y no loader<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0
  <canvas id="canvas"></canvas>
 -->
   </div>
-
-
  
 <script type=module>
 //import { OrbitControls } from './jsm/controls/Orbitcontrols.min.js'; // Cannot use import statement outside a module // and relative ./
@@ -89,7 +82,6 @@ animate();
 function init() {
 	// SCENE
 	scene = new THREE.Scene();
-	
 	// CAMERA
     //camera = new THREE. PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 10000); // cj: 
     //camera = new THREE. OrthographicCamera (  1600, -1310, 1100 ); //, 0, 0, 0 );  //  (333, 10, 2, 11) ; //OrthogonalCamera(); // cj: 
@@ -97,61 +89,58 @@ function init() {
     camera = new THREE. OrthographicCamera ( ); //, 0, 0, 0 );  //  (333, 10, 2, 11) ; //OrthogonalCamera(); // cj: 
     // camera.position.z = +300;
    //   camera = new THREE. PerspectiveCamera(85, window.innerWidth / window.innerHeight , 11, 1000); // cj: 
-    camera = new THREE. OrthographicCamera (  -470, 470, 470, -470, 1, 1111 );  //  (333, 10, 2, 11) ; //OrthogonalCamera(); // cj: 
-    camera.position.z = 215
+    camera = new THREE. OrthographicCamera (  -440, 440, 440, -440, 1, 1111 );  //  (333, 10, 2, 11) ; //OrthogonalCamera(); // cj: 
+    camera.position.x = 215
 //	camera.position.set(0,150,400);//
 	camera.lookAt(scene.position);	
 	
-   // Scene(); //FOG
-        scene.fog = new THREE.Fog(0xeeeeee, 111, 750);
+   // Scene(); // bkgd?
+     scene.background = new THREE.Color('lightcyan');
+      scene.fog = new THREE.Fog(0xeee, 111, 750);
     
-    geometry = new THREE.BoxGeometry(120,  120,  34  );
-    // MeshPhysicalMaterial MeshBasicMaterial
-    material = new THREE.MeshPhysicalMaterial({  color: 0xee9044 ,  roughness: .3,   metalness: 0.7, 
-	  transmission: 1 , 	 thickness: 0.7, });//
+    geometry = new THREE.CylinderGeometry(120, 100, 200, 6);  //6  //BoxGeometry(120,  120,  34  );
+    material = new THREE.MeshBasicMaterial(  {color: 0xE3EEE4, map: THREE.ImageUtils.loadTexture(  './models/marble.png' ) } ) ;  //MeshBasicMaterial({     color: 0x33EE44 });
     
     mesh = new THREE.Mesh(geometry, material);
+    	 //	
+    	  mesh.rotation.z = Math.PI/2;
+
     //cj, 100,111,111
 		scene.add(mesh);
-    g2 = new THREE.BoxGeometry(120, 120, 130);
-    mes2 = new THREE.Mesh(g2, material);
-	//
-		mes2.position.x = 0; //242;
-		mes2.rotation.z = 3.14159/2;
-		mes2.rotation.z = 3.14159/4;
+    g2 = new THREE.CylinderGeometry(120, 100, 200, 6);  //6 EXAGON  BoxGeometry(120, 120, 130); 
+    //mes2 = new THREE.Mesh(g2, material);
+	//		mes2.position.x = 0; //242; 		mes2.rotation.z = 3.14159/2; 		mes2.rotation.z = 3.14159/4;
+
+    g3 = new THREE.CylinderGeometry(30, 30, 100, 3);  //3 TRIANG  
+    m3 = new THREE.MeshBasicMaterial(  {color: 0x63EE64  } ) ;  //MeshBasicMaterial({     color: 0x33EE44 });
 
 var a,mes=[];
 const R=260;
- 
-const shape = new THREE.Shape();
-shape.moveTo( -11,-11 );
-
-
-for (var i in [1,1,1,1,2,2,2,2,1,4,7]) { 
+for (var i in [1,1,1,1,2,2]) { 
 	//mes2.rotation.z =i/10  ;
 	mes[i] = new THREE.Mesh(g2, material);
-	mes[i+10] = new THREE.Mesh(g2, material);
-	a= i/10*2* 3.14159 ;
-	 		mes[i].position.x = R*Math.cos(a );
+	mes[i+10] = new THREE.Mesh(g3, m3);
+	a= i/6 * 2* Math.PI ;
+	 		mes[i].position.z = R*Math.cos(a );
 	 		mes[i].position.y = R*Math.sin( a );
-	mes[i+10].position.x = mes[i].position.x ;
-	mes[i+10].position.y = mes[i].position.y ;
+	 		mes[i].position.x = 10*a ; //spiral if not 0
+	 	// 
+	 	mes[i].rotation.z = Math.PI/2;
 
-shape.lineTo( -11, -11 );
-shape.lineTo( mes[i].position.x,  mes[i].position.y  );
-shape.lineTo( 11, 11 );
+	 mes[i+10].position.z = R*Math.cos(a +Math.PI/6)/1.73;
+	 	mes[i+10].position.y = R*Math.sin(a +Math.PI/6)/1.73;
+	  	 mes[i+10].rotation.z = Math.PI/2;
+	  	mes[i+10].rotation.x =  Math.PI/6 + a +  Math.PI/3; //
 
-	mes[i].rotation.z =  a;
-	mes[i+10].rotation.z =  a+3.14159/4;
-	//Math.sin(i/10*2*Math.pi);
+ 
 	//console.debug ( i,mes[i] );
 	    scene.add(mes[i] ); 
-	    scene.add(mes[i+10] ); 
+	     scene.add(mes[i+10] ); 
 
 	};
  
   //mes2.position= (488,188,-188);
-    scene.add(mes2); 
+  //  scene.add(mes2); 
     
     renderer = new THREE.WebGLRenderer();
     
@@ -189,57 +178,15 @@ shape.lineTo( 11, 11 );
 	// FLOOR
 	const loader = new THREE.TextureLoader();
 
-	var floorTexture = loader.load("bluef.png");  // esch4.jpg" depr new THREE.ImageUtils.loadTexture( '../../zry.png' );
+	var floorTexture = loader.load("esch4.jpg");  //depr new THREE.ImageUtils.loadTexture( '../../zry.png' );
 	//floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping; 
 	//floorTexture.repeat.set( 1 , 11);
-	var floorMaterial = new THREE.MeshBasicMaterial( { map: floorTexture, side: THREE.BackSide , color: 0xeee  } );//THREE.BackSide  DoubleSide, Front no se vwe
+	var floorMaterial = new THREE.MeshBasicMaterial( { map: floorTexture, side:THREE.BackSide } );//THREE.BackSide Front
 	var floorGeometry = new THREE.PlaneGeometry(1000, 1000, 10, 10);
 	var floor = new THREE.Mesh(floorGeometry, floorMaterial);
 	floor.position.y = -500;
 	floor.rotation.x =  Math.PI / 2;
 	scene.add(floor); 
-	
-	
-	//EXTRUDE      
-   const extrudeSettings = { 	steps: 4, 	depth: 16,
-	bevelEnabled: true, 	bevelThickness: 2, 	bevelSize: 2, 	bevelOffset: 0, 	bevelSegments: 1
-   };
-
-const gx = new THREE.ExtrudeGeometry( shape, extrudeSettings );
-const mt = new THREE.MeshPhysicalMaterial(  { color: 0xd06f00,  roughness: .3,   metalness: 0.7, 
-	  transmission: 1 , //transp en vez de opac o trsnpa
-	 thickness: 0.7, // Add refraction! 
-	 } );
-const mex = new THREE.Mesh( gx, mt ) ;
-scene.add( mex  );
-	
-	// LIGHT FOR BRILLOS https://tympanus.net/codrops/2021/10/27/creating-the-effect-of-transparent-glass-and-plastic-in-three-js/
-	const dlight = new THREE.DirectionalLight(0xfff0dd, 1);  //direct to see metal
-dlight.position.set(440, 525, 520);
- scene.add(dlight);
- 
-   //AMBIEN
-      var aLight = new THREE.AmbientLight(0x808080, 5);
-      scene.add(aLight);
-
-   //BG
-  // scene.background = 0x5577aa;
- const bgloader = new THREE.CubeTextureLoader();
-  const bgtexture = bgloader.load([ //NO WARN WITH 512X512 BUT BLACK
-    './bluef.png',
-    './bluef.png',
-    './bluef.png',
-    './bluef.png',
-    './bluef.png',
-    './bluef.png',
-  ]);
-   //  NOT apply bgtexture w ortographic camera  
- // bkgd?   scene.background = bgtexture; //dark  !! was dark in tile.ht but shows on dode..! REV127  
-
-      scene.background = new THREE.Color('lightcyan');
- 
- console.log( THREE.REVISION ,'do NOT apply bgtexture w ortographic camera');
- 
 }
 
 function animate() {
@@ -261,13 +208,14 @@ camera.rotation.z += 0.003;   // or cam.rot or controls  or auto rot or .01 fast
  
 }
 </script>
+
 <p>
 	
 ZryDys lets you play with 3D boxes & maths : 
 to see <a href=./tile.html> Math tiles</a> 
 	Or <a href=./tiles.html> Alhambra tesellations</a>
-  </p>   .. 
-	  <a href=./tiles.html> <img src=./thumb/alhambra.jpg height=55px> </a> .. <a href=./tile.html>   <img src=./thumb/tiles.jpg height=55px> </a>
+  </p>  <a href=./tile.html>   <img src=./thumb/tiles.jpg height=55px> </a>  .. 
+	  <a href=./tiles.html> <img src=./thumb/alhambra.jpg height=55px> </a>
 <hr>
 </body>
 </html>
