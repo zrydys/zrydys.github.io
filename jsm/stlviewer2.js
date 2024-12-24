@@ -6,6 +6,29 @@
  *
  */
 
+ // THREE DATA TEXTURE   RAW DATA TEXTURE ftexture =====================================================
+  function magicmatet () { //cj2024 texture
+	const width = 32, height = 32;
+	const size = width * height;
+	const data = new Uint8Array( 4 * size );
+	for ( let i = 0; i < size; i ++ ) {
+		const stride = i * 4,
+		a1 = i / size,
+		a2 = i % width / width;
+		// set r, g, b, and alpha data values
+		data[ stride ] = Math.floor(255 * a1);            // red
+		data[ stride + 1 ] = 255 - Math.floor(255 * a1);  // green
+		data[ stride + 2 ] = Math.floor(255 * a2);        // blue
+		data[ stride + 3 ] = 255;                         // alpha
+	}
+	const ftexture = new THREE.DataTexture( data, width, height );
+	ftexture.needsUpdate = true;
+	return ftexture;
+ };
+
+
+
+
 // ==========================================
 function STLViewerEnable(classname) {
 	//const ModDIR o HTTP y 
@@ -57,13 +80,17 @@ function STLViewer(elem, model) {
     // helper = new THREE.CameraHelper( light.shadow.camera );
     //    scene.add( helper );  //this helps locate lines
         
-    //Texture Img    
+    //Texture Img  or function magic -- forget it with STL seems take only monocolor monotext  
         const loader = new THREE.TextureLoader();
-        const texture = loader.load( './models/marble.png' );//./bluef.png   
+        const texture = loader.load( './models/marble.png' );//./bluef.png  
+         const ftexture = magicmatet(); //(ftexture)  map: ftexture, 
+ 
     (new THREE.STLLoader()).load(model, function (geometry) {  
         //var material = new THREE.MeshPhongMaterial({ color: 0xaa55ee, specular: 100, shininess: 100 , transmission:1 , map: texture, thicknes: .8 }); // obso THREE.ImageUtils.loadTexture //  color: 0xaa55ee, specular: 100, shininess: 100  cj 0xff5533  to cyan
        // var material = new THREE.MeshLambertMaterial({ map: texture }); 
-        var material = new THREE.MeshPhysicalMaterial({ color: 0xaa55ee,  transmission:11 , map: texture, metalness: .8 , roughness: 0.4,  envMapIntensity: 0.5,side: THREE.DoubleSide }); 
+        //   var material = new THREE.MeshPhysicalMaterial({ color: 0xaa55ee,  transmission:11 , metalness: .8 , roughness: 0.4,  envMapIntensity: 0.5,side: THREE.DoubleSide }); 
+      var material = new THREE.MeshNormalMaterial(  {map: ftexture, } );  //ftexture cool normal changes colors
+
         var mesh = new THREE.Mesh(geometry, material);
         scene.add(mesh);
 
@@ -92,9 +119,12 @@ function STLViewer(elem, model) {
 
 	// LIGHT FOR BRILLOS https://tympanus.net/codrops/2021/10/27/creating-the-effect-of-transparent-glass-and-plastic-in-three-js/
 	const dlight = new THREE.DirectionalLight(0xfff0dd, 1);  //direct to see metal
-	dlight.position.set(0, 25, 20);
+	dlight.position.set( 0, -15, -10);
 	scene.add(dlight);
-
+	const d2light = new THREE.DirectionalLight(0xfff0dd, 1);  //direct to see metal
+	d2light.position.set(0, 15, 10);
+	scene.add(d2light);
+	
         var animate = function () {
             requestAnimationFrame(animate);
             controls.update();
