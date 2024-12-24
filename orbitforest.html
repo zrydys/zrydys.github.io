@@ -23,21 +23,23 @@
  
 1ST CDN
   --> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js" integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js" integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA==" crossorigin="anonymous" referrerpolicy="no-referrer">  155 </script>
+ 
+ <script src="https://unpkg.com/three@0.112/examples/jsm/controls/OrbitControls.js"  >  112 orb let us see if  </script>
 
  <!-- LOCA 2nd -->
   <script src="../../2act/a-goa/lib/three.min.js"> lib local3js</script>
 <script  src="./jsm/tn/orbitcontrols.min.js"> orbits well, module or not </script>
-Forest over snow - by zrydys (customize with your photo soon)  - https://zrydys.github.io/orbitforest.html 
+ . . . . .  Forest over snow - by zrydys (customize with your photo soon)  - https://zrydys.github.io/orbitforest.html 
 
+<div id="infoButton" style="z-index: 2; background: none; opacity: 0.7; position: absolute; top: 4px; left: 4px;" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text"><img width="32" height="32" src="bluef.png"></span></div>
 
 
     <script type="module">
 
       //import * as THREE from 'https://threejs.org/build/three.module.js';
       //import * as THREE from './jsm/three.module.js'; //fine load as module
- //UNCOMM
-   import { OrbitControls } from "https://unpkg.com/three@0.112/examples/jsm/controls/OrbitControls.js"   ; //REM ok
+ //UNCOMM    import { OrbitControls } from "https://unpkg.com/three@0.112/examples/jsm/controls/OrbitControls.js"   ; //REM ok
 	   console.log	 ( THREE.REVISION, " after rem "); 
 	
 // scripok but no import { OrbitControls } from "./jsm/orbitcontrols.min.js"; //http only but does not export
@@ -72,12 +74,14 @@ Forest over snow - by zrydys (customize with your photo soon)  - https://zrydys.
         // controls
         // original: with REMOT IMPORT  works:     import { OrbitControls } from "https://unpkg.com/three@0.112/examples/jsm/controls/OrbitControls.js"   ; //REM ok
 
-            try{  controls = new OrbitControls( camera, renderer.domElement );
-            } catch(e) { console.log	 ( THREE.REVISION, " try catc "); 
-	             controls = new THREE.OrbitControls( camera, renderer.domElement );  
-           } ;  
-        // con LOCA & perhaps CDN Tony        controls = new THREE.OrbitControls( camera, renderer.domElement ); // OJO: CJ added THREE 
-        
+        try{  var deb=' orbit try: ';  // ORBIT W/ WO/ THREE imports
+			controls = new OrbitControls( camera, renderer.domElement ); 
+			deb+= 'just Orbit... with import -tbd with cdn-';
+        } catch(e) { console.log	 ( THREE.REVISION, " try catc "); 
+	        controls = new THREE.OrbitControls( camera, renderer.domElement ); 
+	        deb+= 'adding  THREE.orb... with LOCA & Tony ';
+        } ;  
+         console.log(deb);
         
         
         controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
@@ -145,6 +149,25 @@ Forest over snow - by zrydys (customize with your photo soon)  - https://zrydys.
         scene.add(floor);
 
         window.addEventListener( 'resize', onWindowResize );
+
+		//BG
+		 scene.background = 0x5577aa;
+		const bgloader = new THREE.CubeTextureLoader();
+		const bgtexture = bgloader.load([ //NO WARN WITH 512X512 BUT BLACK
+		// './thumb/nn.png',  //./thumb/n.png WebGL-0x64cc0d7df1b0]RENDER WARNING: texture bound to texture unit 0 is not renderable. It might be non-power-of-2 or have incompatible texture filtering (maybe)?
+		   './thumb/s.png',  //s must be 512x or more
+		   './thumb/nn.png', //n
+
+		   './kk.png',//z+- tech/floo
+ 		   './k.png',  //z+-
+
+		   './thumb/e.png', //e
+		'./thumb/w.png', //o
+		]); //
+		scene.background = bgtexture; // FUNCIONA !! was dark in tiles REV127
+ 
+		console.log( THREE.REVISION );
+
 
       }
 

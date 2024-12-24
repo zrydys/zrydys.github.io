@@ -47,10 +47,12 @@ weberr y no loader<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0
 
 	, Three.js automatically logs vers number to the console whenever an instance of THREE.WebGLRenderer is initialised. Look near the top of the console for something like:
   eg.   THREE.WebGLRenderer 84        three.min.js:154
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js" integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src=https://unpkg.com/three@0.141.0/build/three.js> local3js rev141 obsoleted-ImageUtils raisedWebGL1 </script>
 
 -->
-<script src="../../2act/a-goa/lib/three.min.js">cg("local3js")</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js" integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../../2act/a-goa/lib/three.min.js">cg("local3js" 127 resize textures no webgl1 err</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js">try 128 </script>
 
 <script src=./jsm/tn/orbitcontrols.min.js> local orbit </script>
 	<!--script  src="./jsm/orbitcontrols.min.js"> orbits well, module or not -- cj2024 just moved it to tn/ thanks Tony</script-->
@@ -82,6 +84,10 @@ animate();
 function init() {
 	// SCENE
 	scene = new THREE.Scene();
+	//LOAD
+		const tloader = new THREE.TextureLoader();
+	console.log (THREE.REVISION, 'cc cj 2024');
+	
 	// CAMERA
     //camera = new THREE. PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 10000); // cj: 
     //camera = new THREE. OrthographicCamera (  1600, -1310, 1100 ); //, 0, 0, 0 );  //  (333, 10, 2, 11) ; //OrthogonalCamera(); // cj: 
@@ -99,7 +105,9 @@ function init() {
       scene.fog = new THREE.Fog(0xeee, 111, 750);
     
     geometry = new THREE.CylinderGeometry(120, 100, 200, 6);  //6  //BoxGeometry(120,  120,  34  );
-    material = new THREE.MeshBasicMaterial(  {color: 0xE3EEE4, map: THREE.ImageUtils.loadTexture(  './models/marble.png' ) } ) ;  //MeshBasicMaterial({     color: 0x33EE44 });
+     const texture = tloader.load( './models/marble.png' );//./bluef.png 
+    material = new THREE.MeshBasicMaterial(  //obsol THREE.ImageUtils.loadTexture(  './models/marble.png' )
+    {color: 0xE3EEE4, map: texture } ) ;  //MeshBasicMaterial({     color: 0x33EE44 });
     
     mesh = new THREE.Mesh(geometry, material);
     	 //	
@@ -176,9 +184,7 @@ for (var i in [1,1,1,1,2,2]) {
 	
 	
 	// FLOOR
-	const loader = new THREE.TextureLoader();
-
-	var floorTexture = loader.load("esch4.jpg");  //depr new THREE.ImageUtils.loadTexture( '../../zry.png' );
+	var floorTexture = tloader.load("esch4.jpg");  //depr new THREE.ImageUtils.loadTexture( '../../zry.png' );
 	//floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping; 
 	//floorTexture.repeat.set( 1 , 11);
 	var floorMaterial = new THREE.MeshBasicMaterial( { map: floorTexture, side:THREE.BackSide } );//THREE.BackSide Front
