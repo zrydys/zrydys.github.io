@@ -1,0 +1,85 @@
+
+.image-gallery {
+  	display: flex;
+flex-flow: column wrap;
+
+      height: 500px;
+
+  /*cj    height: 500px;   OK
+
+   * critical for two panes
+    height: 400px;
+    margin: 0 auto;
+    height: 300px;
+    too low
+    // shows below not rightside
+   * */
+    margin:  0 auto;
+
+}
+.image-gallery section {
+    display: none;
+    margin-left: 20px;
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.image-gallery section img {
+    height: auto;
+    width: 68%;
+	max-width:520px;
+}
+
+.image-gallery input {
+  display: none;   
+   width: 18%;
+ /* 18%*/
+}
+
+.image-gallery label {
+    border: 1px solid #3184ee;
+    margin: 0 0 10px;
+    padding: 5px;
+    text-align: center;
+    /* width: 14%;
+    HEIGHT: 11%; %makes max6 max7 per column before wrap 
+    * max-HEIGHT: 38px;HEIGHT: 14%;
+
+
+     */
+     width: 7%;
+min-width: 39px;
+max-HEIGHT: 39px;
+}
+
+.image-gallery label:hover {
+  cursor: pointer;
+}
+
+.image-gallery label img {
+  /*  height: AUTO;
+    width: 100%; WAS auto*/
+     width: 90%;  
+         height: 90%; 
+
+}
+
+.image-gallery input:checked + label {
+  border: 1px solid #004481;
+  padding: 5px;
+}
+
+.image-gallery #tab1:checked ~ #content1,
+.image-gallery #tab2:checked ~ #content2,
+.image-gallery #tab4:checked ~ #content4,
+.image-gallery #tab5:checked ~ #content5,
+.image-gallery #tab6:checked ~ #content6,
+.image-gallery #tab7:checked ~ #content7,
+.image-gallery #tab8:checked ~ #content8,
+.image-gallery #tab3:checked ~ #content3 {
+  display: block;
+}
+
+@media only screen and (min-width:240px) and (max-width: 768px){
+	
+}

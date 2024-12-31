@@ -34,14 +34,19 @@ function STLViewerEnable(classname) {
 	//const ModDIR o HTTP y 
     var models = document.getElementsByClassName(classname);
     for (var i = 0; i < models.length; i++) {
-      STLViewer(models[i], models[i].getAttribute("data-src"));
+      STLViewer(models[i], models[i].getAttribute("data-src"), models[i].getAttribute("data-color"));       //ff385c
             //cj debug    STLViewer( models[i],  './models/'+document.getElementById('cj2').innerHTML+'.stl'   );
             //cj debug     console.debug(" stlvie "+i + "  " + models[i] );
     }
 }
 
 // ==========================================
-function STLViewer(elem, model) {
+function STLViewer(elem, model,colo) {
+    var col=0x5f38ff; //;    var col=0xff385c; //;
+
+    if (colo === undefined) { col=0xff385c } else {col=colo; //col=0x5577ff
+		 };
+        console.log('col'+colo,col,colo+1, (colo));
 
     //if (!WEBGL.isWebGLAvailable()) {    elem.appendChild(WEBGL.getWebGLErrorMessage());   return;   }  //cj if err err
 
@@ -61,11 +66,11 @@ function STLViewer(elem, model) {
     controls.enableDamping = true;
     controls.rotateSpeed = 0.05;
     controls.dampingFactor = 0.1;
-    controls.enableZoom = false;
-    controls.enablePan = false;
+    //!! controls.enableZoom = false;
+    //controls.enablePan = false;
     controls.autoRotate = true;
     controls.autoRotateSpeed = 0.75;
-    controls.autoRotateSpeed = 0.55; //cj slow down
+    controls.autoRotateSpeed = 0.25; //cj slow down
 
      //SCENE
     var scene = new THREE.Scene();
@@ -82,15 +87,19 @@ function STLViewer(elem, model) {
         
     //Texture Img  or function magic -- forget it with STL seems take only monocolor monotext  
         const loader = new THREE.TextureLoader();
-        const texture = loader.load( './models/marble.png' );//./bluef.png  
-         const ftexture = magicmatet(); //(ftexture)  map: ftexture, 
+        const texture = loader.load( './thumb/nn.png ' );// ./models/marble.png  ./bluef.png  
+         const ftexture = magicmatet(); //(ftexture)  map: ftexture, queda todo verde!!
  
-    (new THREE.STLLoader()).load(model, function (geometry) {  
-        //var material = new THREE.MeshPhongMaterial({ color: 0xaa55ee, specular: 100, shininess: 100 , transmission:1 , map: texture, thicknes: .8 }); // obso THREE.ImageUtils.loadTexture //  color: 0xaa55ee, specular: 100, shininess: 100  cj 0xff5533  to cyan
-       // var material = new THREE.MeshLambertMaterial({ map: texture }); 
-        //   var material = new THREE.MeshPhysicalMaterial({ color: 0xaa55ee,  transmission:11 , metalness: .8 , roughness: 0.4,  envMapIntensity: 0.5,side: THREE.DoubleSide }); 
-      var material = new THREE.MeshNormalMaterial(  {map: ftexture, } );  //ftexture cool normal changes colors
+ 
+    (new THREE.STLLoader()).load(model, function (geometry) {       //obso THREE.ImageUtils.loadTextu  cj 0xff5533  to cyan
 
+      //    var material = new THREE.MeshPhongMaterial({ color: 0xaa55ee, specular: 100, shininess: 100 , transmission:1 , map:   texture, thicknes: .8 }); // OK but texture saca pixel only nn=rosa marb=whit bluf=dark& crash on 99M
+       //   var material = new THREE.MeshLambertMaterial({ map: texture, side: THREE.DoubleSide  }); //dark on texture!?
+    var material = new THREE.MeshPhysicalMaterial({ color: col,  transmission:11 , metalness: .8 , roughness: 0.4,  envMapIntensity: 0.5,side: THREE.DoubleSide });  //OK Metalic bright 0xaa55ee / not on 99MB! 
+      //cuneiKO var material = new THREE.MeshPhysicalMaterial({ color: 0xee856e,  transmission:11 , metalness: .8 , roughness: 0.4,  envMapIntensity: 0.5,side: THREE.DoubleSide });  //OK Metalic bright / not on 99MB!
+        
+    //    var material = new THREE.MeshNormalMaterial(  {map: ftexture,  } );   //OK  even 99MB //ftexture cool normal changes colors
+  //KO allways inv   var material = new THREE.BasicMaterial(  {side: THREE.BackSide , } );  // no w map:  texture,  (phong rosa, lab=dark,... , wftext green
         var mesh = new THREE.Mesh(geometry, material);
         scene.add(mesh);
 
@@ -118,10 +127,10 @@ function STLViewer(elem, model) {
       scene.add(aLight);
 
 	// LIGHT FOR BRILLOS https://tympanus.net/codrops/2021/10/27/creating-the-effect-of-transparent-glass-and-plastic-in-three-js/
-	const dlight = new THREE.DirectionalLight(0xfff0dd, 1);  //direct to see metal
+	const dlight = new THREE.DirectionalLight(0x8f808d, .1);  //direct to see metal
 	dlight.position.set( 0, -15, -10);
 	scene.add(dlight);
-	const d2light = new THREE.DirectionalLight(0xfff0dd, 1);  //direct to see metal
+	const d2light = new THREE.DirectionalLight(0x8f808d, .1);  //direct to see metal
 	d2light.position.set(0, 15, 10);
 	scene.add(d2light);
 	
