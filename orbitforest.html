@@ -20,6 +20,7 @@
  OLD  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js">//ok</script>
  ERR   <script src="https://threejs.org/examples/jsm/controls/OrbitControls.js"> </script>THREE.OrbitControls is not a constructor
  err <script src="https://threejs.org/examples/jsm/controls/OrbitControls.js"> </script>
+ cdn Orbit.147 fixes r112/importErr <script src="https://unpkg.com/three@0.112/examples/jsm/controls/OrbitControls.js"  >  112 orb let us see if but 112got funny import err </script>
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js" integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA==" crossorigin="anonymous" referrerpolicy="no-referrer"> r155 /cors  in ffx >r153 give webgl issues </script>
 1ST CDN
@@ -27,12 +28,13 @@
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js">try 128 better than r155</script>
 
-  <script src="https://unpkg.com/three@0.112/examples/jsm/controls/OrbitControls.js"  >  112 orb let us see if  </script>
+<script src="https://unpkg.com/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
 
 
- <!-- LOCA 2nd -->
+ <!-- LOCA 2nd 
   <script src="../../2act/a-goa/lib/three.min.js"> lib local3js</script>
 <script  src="./jsm/tn/orbitcontrols.min.js"> orbits well, module or not </script>
+-->
  . . . . .  Forest over snow - by zrydys (customize with your photo soon)  - https://zrydys.github.io/orbitforest.html 
 
 <div id="infoButton" style="z-index: 2; background: none; opacity: 0.7; position: absolute; top: 4px; left: 4px;" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text"><img width="32" height="32" src="bluef.png"></span></div>
@@ -77,14 +79,14 @@
         // controls
         // original: with REMOT IMPORT  works:     import { OrbitControls } from "https://unpkg.com/three@0.112/examples/jsm/controls/OrbitControls.js"   ; //REM ok
 
-        try{  var deb=' orbit try: ';  // ORBIT W/ WO/ THREE imports
+        try{  console.log( THREE.REVISION, ' Alone orbit try: ');  // ORBIT W/ WO/ THREE imports
 			controls = new OrbitControls( camera, renderer.domElement ); 
-			deb+= 'just Orbit... with import -tbd with cdn-';
-        } catch(e) { console.log	 ( THREE.REVISION, " try catc "); 
+			console.log( 'just Orbit... with import -tbd with cdn-');
+        } catch(e) { console.log	 ( THREE.REVISION, " now THREE try "); 
 	        controls = new THREE.OrbitControls( camera, renderer.domElement ); 
-	        deb+= 'adding  THREE.orb... with LOCA & Tony ';
+	        console.log( 'adding  THREE.orb... with LOCA & Tony ');
         } ;  
-         console.log(deb);
+        
         
         
         controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
