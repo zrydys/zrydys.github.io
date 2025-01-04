@@ -105,7 +105,7 @@ function init() {
       scene.fog = new THREE.Fog(0xeee, 111, 750);
     
     geometry = new THREE.CylinderGeometry(120, 100, 200, 6);  //6  //BoxGeometry(120,  120,  34  );
-     const texture = tloader.load( 'hex.jpg' );//  ./sail.jpeg  ./models/marble.png ./bluef.png 
+     const texture = tloader.load( './models/hex.jpg' );//  ./sail.jpeg  ./models/marble.png ./bluef.png 
     material = new THREE.MeshBasicMaterial(  //obsol THREE.ImageUtils.loadTexture(  './models/marble.png' )
     {color: 0xE3EEE4, map: texture } ) ;  //MeshBasicMaterial({     color: 0x33EE44 });
     
@@ -230,5 +230,4 @@ to see <a href=./tile.html> Math tiles</a>
 	  <a href=./tiles.html> <img src=./thumb/alhambra.jpg height=55px> </a>
 <hr>
 </body>
-
 </html>
