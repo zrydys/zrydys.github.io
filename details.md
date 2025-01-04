@@ -36,7 +36,7 @@ Leverage disruptive technologies like **fractals, AI, and automated algorithms**
 ## **Who We Are**  
 
 
- Currently a small, dedicated team continuosly growing through collaborations at Polo Digital. Experiencience in coding, integration, and Agile project management 
+ Currently a seed team yet dedicated and continuosly growing through collaborations at Polo Digital and R&D+i and partners. Experiencience in coding, integration, and Agile project management 
 
 ---
 
@@ -85,11 +85,12 @@ fractals in js d3 ... ![logo](fractalgold.png) zrydys.github.io
 The following a examples of commands you can use in linux to handle images:
 
 Sample command to reduce fractal size. (@ GitHub.com/ZryDys)
-  
+
+```bash  
    (ГЭབད); convert 3d_matlab_by_zrydys.png -adaptive-resize 210x105 zrydysML.png 
    
-identify fractalgold.png   #% will give you the image dimensions
-
+	identify fractalgold.png   #% will give you the image dimensions
+```
 
 TBD: minor support:  3d matlab  http://dribbble.com/zrydys   
 
