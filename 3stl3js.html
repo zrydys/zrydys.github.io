@@ -1,15 +1,22 @@
 <head>
  
- <script src="../../2act/a-goa/lib/three.min.js"> local3js </script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js">//ok</script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js" integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <!--
  fail as mod: <script type="module" src="jsm/loaders/STLLoader.js"></script>
  fail too <script  src="jsm/loaders/STLLoader.js"></script>
 
+ old <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js">//ok</script>
+  Err.FALLA <script  src="https://unpkg.com/three@0.154.0/examples/jsm/loaders/STLLoader.js"> manip_lib to load </script>
+
+LOCAL
+  <script src="../../2act/a-goa/lib/three.min.js"> LOCAL local3js </script>
+ <script  src="jsm/loaders/STLLoader-cj.js"> manip_lib to load </script>
 
 
 -->
- <script  src="jsm/loaders/STLLoader-cj.js"> manip_lib to load </script>
+ <script src=https://tonybox.net/plugins/stl/stlloader.min.js></script>
+
    <script src="https://threejs.org/examples/jsm/controls/OrbitControls.js"> </script>
 
 
@@ -76,7 +83,8 @@ const material = new THREE.MeshStandardMaterial({
      clearcoat: 1.0,
      clearcoatRoughness: 0.25
 });
-const loader = new STLLoader();
+ //patched const loader = new STLLoader();  //patched
+const loader = new THREE.STLLoader();
 //cjJun2024  was OK la clave es solo binario no ascii like '/2prod/stl-jc/cj-demo.stl',
 loader.load(
   //	 '/2prod/stl-jc/demoascii.stl',

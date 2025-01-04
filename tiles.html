@@ -105,7 +105,7 @@ function init() {
       scene.fog = new THREE.Fog(0xeee, 111, 750);
     
     geometry = new THREE.CylinderGeometry(120, 100, 200, 6);  //6  //BoxGeometry(120,  120,  34  );
-     const texture = tloader.load( './models/marble.png' );//./bluef.png 
+     const texture = tloader.load( 'hex.jpg' );//  ./sail.jpeg  ./models/marble.png ./bluef.png 
     material = new THREE.MeshBasicMaterial(  //obsol THREE.ImageUtils.loadTexture(  './models/marble.png' )
     {color: 0xE3EEE4, map: texture } ) ;  //MeshBasicMaterial({     color: 0x33EE44 });
     
@@ -120,7 +120,7 @@ function init() {
 	//		mes2.position.x = 0; //242; 		mes2.rotation.z = 3.14159/2; 		mes2.rotation.z = 3.14159/4;
 
     g3 = new THREE.CylinderGeometry(30, 30, 100, 3);  //3 TRIANG  
-    m3 = new THREE.MeshBasicMaterial(  {color: 0x63EE64  } ) ;  //MeshBasicMaterial({     color: 0x33EE44 });
+    m3 = new THREE.MeshBasicMaterial(  {color: 0x13EE14  } ) ;  //MeshBasicMaterial({     color: 0x33EE44 });
 
 var a,mes=[];
 const R=260;
@@ -150,7 +150,7 @@ for (var i in [1,1,1,1,2,2]) {
   //mes2.position= (488,188,-188);
   //  scene.add(mes2); 
     
-    renderer = new THREE.WebGLRenderer();
+    renderer = new THREE.WebGLRenderer( {antialias : false} ); //falk fail if  {antialias : true}
     
     renderer.setSize(window.innerWidth/6, window.innerHeight/4); //pequen
         renderer.setSize(355, 355); //pequen
@@ -184,15 +184,21 @@ for (var i in [1,1,1,1,2,2]) {
 	
 	
 	// FLOOR
-	var floorTexture = tloader.load("esch4.jpg");  //depr new THREE.ImageUtils.loadTexture( '../../zry.png' );
+	var floorTexture = tloader.load("sail.jpeg"); //esch4.jpg //depr new THREE.ImageUtils.loadTexture( '../../zry.png' );
 	//floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping; 
 	//floorTexture.repeat.set( 1 , 11);
-	var floorMaterial = new THREE.MeshBasicMaterial( { map: floorTexture, side:THREE.BackSide } );//THREE.BackSide Front
+	var floorMaterial = new THREE.MeshBasicMaterial( { map: floorTexture, side:THREE.DoubleSide } );//THREE.BackSide Front
 	var floorGeometry = new THREE.PlaneGeometry(1000, 1000, 10, 10);
 	var floor = new THREE.Mesh(floorGeometry, floorMaterial);
-	floor.position.y = -500;
-	floor.rotation.x =  Math.PI / 2;
+	//floor.position.y = -500;
+	//floor.rotation.x =  Math.PI / 2;
+	//	 	floor.rotation.y =  Math.PI / 2;
 	scene.add(floor); 
+	
+	
+
+	
+	
 }
 
 function animate() {

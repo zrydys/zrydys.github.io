@@ -20,19 +20,38 @@ TypeError: THREE.TextDecoder is not a constructor
  many van con o sin type="module" 
 <script src="/examples/js/controls/OrbitControls.js"></script>
   <script src="https://github.com/mrdoob/three.js/blob/dev/examples/js/loaders/STLLoader.js">//tbd</script>
-
+ <script type=module src="https://cdn.skypack.dev/three@0.132.2/examples/jsm/loaders/STLLoader.js">//tbd</script>
  -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js">//ok</script>
-  <script src="https://cdn.skypack.dev/three@0.132.2/examples/jsm/loaders/STLLoader.js">//tbd</script>
- <!-- or local -->
+ 
+    <script type=module src="https://unpkg.com/three@0.154.0/examples/jsm/loaders/STLLoader.js">//tbd</script>
+Copyright © 2024, Anthony Biondo. Licensed under CC-BY-SA 4.0 for the text and image content of posts, and the MIT license for source code
+ - References: Thanks to code Copyright © 2024, Anthony Biondo CC-BY-SA 4.0 & MIT license for code
+ - another https://manu.ninja/webgl-3d-model-viewer-using-three-js/
+ <!-- or local 
  <script src="/2act/a-goa/lib/three.min.js">console.debug("local3js")</script>
  <script  src="/2prod/js3d/A Simple STL Viewer with Three.js_files/stlloader.min.js"></script>
+-->
 
-
-  
+     <script type="importmap">
+        {
+            "imports": {
+               // "three": "./build/three.module.js",
+                "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js",
+       //   The file STLLoader.min.js is no ES6 module so you can't import it via ES6 import syntax. The file should have the same structure like the STLLoader from the three npm package:  
+             "stl-loader": "https://cdn.skypack.dev/three@0.132.2/examples/jsm/loaders/STLLoader.js",
+               // "three/examples/jsm/controls/OrbitControls":"./jsm/controls/OrbitControls.js",
+               // "three/examples/jsm/libs/stats.module":"./jsm/libs/stats.module.js",
+            }
+        }
+    </script>
+     
 <script type="module">
 //   arriba import * as THREE from "/2prod/js3d/jsm/three.min.js"; 
 const uu=1;
+//import * as THREE from "three";var STLLoader = require('three-stl-loader')(THREE)
+
+
 
 
 //import * as THREE from "/2prod/js3d/A Simple STL Viewer with Three.js_files/three.min.js"; 
@@ -85,7 +104,9 @@ const material = new THREE.MeshStandardMaterial({
      clearcoatRoughness: 0.25
 });
 // const loader = new STLLoader(); need patched /2prod/js3d/jsm/loaders/STLLoader-cj.js o quizas venia de import { STLLoader } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/loaders/STLLoader.js";
-const loader = new THREE.STLLoader(); //with real library unpatched
+
+//local: const loader = new THREE.STLLoader(); //with local library unpatched
+const loader = new  STLLoader(); //with cdt library importmap
 loader.load(
   //	 '/2prod/stl-jc/demoascii.stl',
    //   'models/3DModel.stl',
