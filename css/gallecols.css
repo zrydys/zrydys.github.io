@@ -45,13 +45,15 @@ section {
     font-size: 0.69em;
     font-weight: 600;
     line-height: 2.2;
-    padding: 12px 0;
+    padding: 7px 0;  /* cj  was 12px 0;*/
     text-transform: uppercase;
     width: 100%;   
 
 }
-
- 
+.ScriptTop img {
+height:10px;
+width:11px;
+ }
 
 /* Header*/
 .ScriptHeader {
@@ -81,7 +83,7 @@ section {
     color: #296397;
     font-size: 18px;
     font-weight: 400;
-    margin: 5px 0 0;
+    margin: 2px 0 0;
     line-height: normal;
 	text-transform:uppercase;
 }
@@ -99,7 +101,7 @@ section {
     padding: 0;
     font-size: 22px;
     opacity: 0.7;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
  

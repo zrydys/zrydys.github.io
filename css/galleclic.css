@@ -25,9 +25,10 @@ flex-flow: column wrap;
 	margin-bottom: 0;
 }
 .image-gallery section img {
-    height: auto;
-    width: 68%;
+    /* cj was height: auto; */
+    width: 68%; height: auto;
 	max-width:520px;
+	max-height: 68%;
 }
 
 .image-gallery input {
@@ -38,8 +39,8 @@ flex-flow: column wrap;
 
 .image-gallery label {
     border: 1px solid #3184ee;
-    margin: 0 0 10px;
-    padding: 5px;
+    margin: 0 0 2px; /*cj from 0 0 10px */
+    padding: 1px; /*cj from 5*/
     text-align: center;
     /* width: 14%;
     HEIGHT: 11%; %makes max6 max7 per column before wrap 
@@ -49,7 +50,7 @@ flex-flow: column wrap;
      */
      width: 7%;
 min-width: 39px;
-max-HEIGHT: 39px;
+max-HEIGHT: 40px;
 }
 
 .image-gallery label:hover {
@@ -66,7 +67,7 @@ max-HEIGHT: 39px;
 
 .image-gallery input:checked + label {
   border: 1px solid #004481;
-  padding: 5px;
+  padding: 0px;
 }
 
 .image-gallery #tab1:checked ~ #content1,
@@ -78,6 +79,9 @@ max-HEIGHT: 39px;
 .image-gallery #tab8:checked ~ #content8,
 .image-gallery #tab9:checked ~ #content9,
 .image-gallery #taba:checked ~ #contenta,
+.image-gallery #tabb:checked ~ #contentb,
+.image-gallery #tabc:checked ~ #contentc,
+.image-gallery #tabd:checked ~ #contentd,
 .image-gallery #tab3:checked ~ #content3 {
   display: block;
 }
