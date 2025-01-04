@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ES" xml:lang="ES">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="EN" xml:lang="EN">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -13,7 +13,8 @@
     <title id=t1>cj 3d cubo</title>
 
  
-	<!-- sin paged el 3d va y la impresion pasable 
+	<!-- sin paged el 3d va y la impresion pasable
+	  breaks <!DOCTYPE html>
 	-->
  
 <style> 
@@ -87,7 +88,9 @@
 
 		  
 		  
- <div id="scene-container" cj="for 3d canvas fine on li too but pagejs killed canvas"  style="width: 100%; height: auto;" > </div>
+ <div id="scene-container"
+  cj="for 3d canvas fine on li too but pagejs killed canvas" 
+   style="width: 80%; height: auto;" > </div>
 
 	- ZryDys created this 3D model inspired in the Icy World planet - Soon you can display your picture and url here
 	  <center>		  </center>
@@ -159,9 +162,9 @@ var myimg='http://localhost:8000/k.png'; //python3 -m http.server #%Cross-Origin
 
  myimg='../../2prod/elk-proxy/proxy-by-url.PNG';
  myimg='cubE.png';
- myimg='esch4cc.jpg'; //Escher Next Dimension
  myimg='cafe2.jpg'; 
  myimg='./models/marble.png'; 
+ myimg='esch4cc.jpg'; //Escher Next Dimension
 // this fails also falkon wo/ msg: var texture = loader.load( myimg ); var material5 = new THREE.MeshLambertMaterial({ map: texture });  //mat5 text image k.png
 
 //const  blob:file:///a3ef88d3-eac1-46de-abeb-08a3fe62ce38
@@ -169,15 +172,54 @@ var myimg='http://localhost:8000/k.png'; //python3 -m http.server #%Cross-Origin
    //5 new THREE.PlaneGeometry( 1, 1, 1, 1 ),
    //5 older deprecated. but better cors  FALKON OK 'jsm/k.png'  yet FFX cors KO
 material5 = new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture( myimg ) }) ;
+   //normalMat es color by pos no se ve rotar! y physical too dark
    
     mesh = new THREE.Mesh(geometry, material5 );
-
     scene.add(mesh);
     
+        // 2+ lights 1 1 1 or 151 151 151 ?
+        const dirLight1 = new THREE.DirectionalLight( 0xffffff );//ffffff   //no gree 5aff5a
+        dirLight1.position.set( 151, 151, 151 );
+        scene.add( dirLight1 );
+
+        const dirLight2 = new THREE.DirectionalLight( 0xa022a8 ); //002288  //no gree
+        dirLight2.position.set( - 151, - 151, - 151 );
+        scene.add( dirLight2 );
+
+        const ambientLight = new THREE.AmbientLight( 0x222222 );
+        scene.add( ambientLight );    
+    
+    // GLOW glow
+	const haloVertexShader = /*glsl*/`
+      varying vec3 vertexNormal;
+      void main() {
+		 vertexNormal = normal;
+		 gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);   
+	  }  `;
+
+	const haloFragmentShader = /*glsl*/`
+      varying vec3 vertexNormal;
+	  void main() {
+		float intensity = pow(0.9 - dot(vertexNormal, vec3(0, 0, 1.0)), 2.0);
+		gl_FragColor = vec4(0.8, 1.0, 0.6, 0.2) * intensity;
+	  }	`;
+
+	const halo = new THREE.Mesh(
+		 new THREE.SphereGeometry(160, 20, 20),
+		 new THREE.ShaderMaterial(
+			{  vertexShader:haloVertexShader,   fragmentShader:haloFragmentShader,
+			  blending: THREE.AdditiveBlending,   side: THREE.BackSide }
+		 )
+	)
+
+	//scene.add(sphere);
+	halo.scale.set(1.2, 1.2, 1.2);
+	scene.add(halo);
+	
+   // renderer.setSize(326, 324); // medium
     renderer = new THREE.WebGLRenderer();
     renderer.setSize(126, 124); //pequen
-   // renderer.setSize(326, 324); // medium
-    renderer.setSize(window.innerWidth/1.2, window.innerHeight/1.2); // fit
+    renderer.setSize(window.innerWidth/1.6, window.innerHeight/1.2); // fit /1.2 or /1.6
     
     // EITHER, OR document.body.appendChild(renderer.domElement);  //pon the created <canvas>
     const container = document.querySelector('#scene-container'); // the container that will hold scene
@@ -195,8 +237,8 @@ material5 = new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture( myi
 
  function animate() {
     requestAnimationFrame(animate );
-    mesh.rotation.x += 0.01;
-    mesh.rotation.y += 0.02;
+    mesh.rotation.x += 0.003;
+    mesh.rotation.y += 0.002;
 //            uniforms.u_time.value += clock.getDelta(); //from otr
     renderer.render(scene, camera);
  } // cj: end of moving logo img 3D ==========================================
@@ -204,7 +246,8 @@ material5 = new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture( myi
          function onWindowResize( event ) {
 			  console.debug (uniforms , material, material2);
 		//	  console.debug (uniforms , material);
-            renderer.setSize( window.innerWidth, window.innerHeight );
+		// OJITO WIDTH y SCROLL keyr & planet OK but  Tiles falla scroll
+            renderer.setSize( window.innerWidth *.8, window.innerHeight );
             uniforms.u_resolution.value.x = renderer.domElement.width;
             uniforms.u_resolution.value.y = renderer.domElement.height;
         }
