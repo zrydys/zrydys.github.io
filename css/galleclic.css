@@ -76,6 +76,8 @@ max-HEIGHT: 39px;
 .image-gallery #tab6:checked ~ #content6,
 .image-gallery #tab7:checked ~ #content7,
 .image-gallery #tab8:checked ~ #content8,
+.image-gallery #tab9:checked ~ #content9,
+.image-gallery #taba:checked ~ #contenta,
 .image-gallery #tab3:checked ~ #content3 {
   display: block;
 }
