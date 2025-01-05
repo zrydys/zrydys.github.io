@@ -10,6 +10,11 @@
     <meta name="copyright" content="CC-BY ZryDys Cj. M. 2024" />
     <meta name="license" content="CC-BY ZryDys Cj. M. 2024" />
     <meta name="date" content="2024-05-31" />
+    <link rel="icon" type="image/png" href="zrydysML.png"  title="ZRyDys" >
+ <link rel="fluid-icon" href="zrydysML.png" title="ZryDys">
+ <link rel="alternate icon" class="js-site-favicon" type="image/png" href="zrydysML.png">
+ <link rel="noicon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+
     <title id=t1>3D-Lens browse Images as 3D moving Scenes</title>
   <!--  ojo=" sombra capaba el scrol"   y missing <!DOCTYPE html> rompia los css+
      -->
@@ -30,7 +35,8 @@ div.stlviewer {
 }
  
   .image-gallery #tabC:checked ~ #content6,
-  .image-gallery #tabT:checked ~ #content6,
+  .image-gallery #tabT:checked ~ #content6,  .image-gallery #tab2:checked ~ #content6,
+
  .image-gallery #tabI:checked ~ #content6,
 .image-gallery #tabN:checked ~ #content6 {
   display: block;
@@ -76,7 +82,7 @@ no loc <!DOCTYPE html>
    &nbsp; <img  src="./forest.jpg"><a href=./mvpc.html>MovPic</a>    
   
     &nbsp; <img  src="./thumb/dsci-byUrl.jpg" height=11px><a href=./visual-plotly.html>R&D+i</a> 
-    &nbsp;   <a href=./details.html>we ZryDys</a>  
+    &nbsp;   <a href=./details.html>we<img src=zrydysML.png height=11px>ZryDys</a>  
    <span style="color: grey; halign: left">  &nbsp; >>explore right pane</span> 
     </div>
 </div>
@@ -100,7 +106,7 @@ no loc <!DOCTYPE html>
                     <!-- just change checked! -->
                   <label for="tab6"><img  src="./thumb/wingfoil3.jpg"></label> 
                 <input id="tabC" type="radio" name="tabs" onclick=' see("tetra",0xa1a12a ); '> 
-                  <label for="tabC"><img  src="./thumb/cune3b.jpg"></label> 
+                  <label for="tabC"><img  src="./thumb/tetra3.jpg"></label> 
                  <input id="tabN" type="radio" name="tabs"  onclick=' see("noc",0x1111aa,"")' > 
                   <label for="tabN"><img  src="./thumb/noc3.jpg"></label>		  
    
@@ -112,8 +118,8 @@ no loc <!DOCTYPE html>
                   
            	           <input id="tab3" type="radio" name="tabs">
                   <label for="tab3"> <center>Try!</center>  </label> 
-                             <input id="tab2" type="radio" name="tabs">
-                  <label for="tab2"><img  src="./thumb/alhambra.jpg"></label> 
+                             <input id="tab2" type="radio" name="tabs" onclick=' see("broach",0xa1611a ); '>
+                  <label for="tab2"><img  src="./thumb/cune3b.jpg"></label> 
             
                    <input id="tab4" type="radio" name="tabs">
                   <label for="tab4"><img  src="./thumb/esch3.jpg"></label> 
@@ -222,10 +228,10 @@ ZryDys R&D boosted by Agile, CI, and Symmetry-Model </span></small>
 </section>        <!-- cj2024 ==================GALLERY=====ENDS======================= -->                         
  
 <script>
-const mens={ 'ink' : 'inkup.io', 'noc': 'noceanous.com', 'keyring-noc': 'noceanous.com', 'wingfoil': 'printables.com/social/141224' , 'kite': 'printables.com/@samster395',  'tactile': 'Zrydys.github.io', };
+const mens={ 'ink' : 'inkup.io', 'noc': 'noceanous.com', 'keyring-noc': 'noceanous.com', 'wingfoil': 'printables.com/social/141224' , 'kite': 'printables.com/@samster395',  'tactile': 'Zrydys.github.io', 'broach':'printables.com/@John_56680', };
 const lic={ 'ink' : 'Proprietary inkup.io logo', 'noc': 'Proprietary noceanous.com logo', 'keyring-noc': 'noceanous.com', 
    'wingfoil': 'WingFoil belt Hook - CC NC SA BY Creavertor 2022 @Printables tested PETG infill 80% for less than 74Kg', 
-   'sch': 'Sailing Schooner - Artistic view CC SA NC BY ZryDys 2024', 'kite': 'Water Sports CC-BY samster395 based on  Kite Winder Wider by ToXIcG thingiverse.com/thing:4277334 & /thing:2545697 ! Tested with 500ft of 200lb line.',  'tactile': 'Braille for Acessibility CC-BY Zrydys 2024, free to Print or modify. Register free to customize Braile models from your message.', };
+   'sch': 'Sailing Schooner - Artistic view CC SA NC BY ZryDys 2024', 'kite': 'Water Sports CC-BY samster395 based on  Kite Winder Wider by ToXIcG thingiverse.com/thing:4277334 & /thing:2545697 ! Tested with 500ft of 200lb line.',  'tactile': 'Braille for Acessibility CC-BY Zrydys 2024, free to Print or modify. Register free to customize Braile models from your message.', 'broach':'Brooch CC-BY John_56680 better print with 100% infill.  Concentric top fill pattern or default monotonic pattern' };
     const params = new URLSearchParams(document.location.search);
   let  q = params.get("q");    q = q? q.replace(/\+/g," ")  : 'ink'  ;  //cj or + esp
   let  c = params.get("c");    c = c? c.replace(/\+/g," ")  : '0xaa55dd'  ;  //cj or + esp
