@@ -46,9 +46,9 @@ function STLViewerEnable(classname) {
 function STLViewer(elem, model,colo) {
     var col=0x5f38ff; //;    var col=0xff385c; //;
 
-    if (colo === undefined) { col=0xff385c } else {col=colo; //col=0x5577ff
+    if (colo === undefined) { col=0xff385c } else {col=Number(colo) ; //col=0x5577ff //Number or HexInt  or WRONGSTRING for SILVER
 		 };
-        console.log('col'+colo,col,colo+1, (colo));
+        console.log('col'+colo,col,colo+1, Number(colo)); //Number or HexInt
         console.log('el'+elem, (model));
     //if (!WEBGL.isWebGLAvailable()) {    elem.appendChild(WEBGL.getWebGLErrorMessage());   return;   }  //cj if err err
 
