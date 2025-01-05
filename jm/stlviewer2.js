@@ -54,13 +54,13 @@ function STLViewer(elem, model,colo) {
     var camera = new THREE.PerspectiveCamera(50, elem.clientWidth / elem.clientHeight, 1, 1000);
     
     //renderer.setSize(elem.clientWidth, elem.clientHeight);
-      renderer.setSize( window.innerWidth *.8, window.innerHeight *.8 );
+      renderer.setSize( window.innerWidth *.7, window.innerHeight *.7 );
 
     elem.appendChild(renderer.domElement);
 
     window.addEventListener('resize', function () {
         //renderer.setSize(elem.clientWidth, elem.clientHeight);
-              renderer.setSize( window.innerWidth *.8, window.innerHeight *.8);
+              renderer.setSize( window.innerWidth *.7, window.innerHeight *.7);
 
         camera.aspect = elem.clientWidth / elem.clientHeight;
         camera.updateProjectionMatrix();
