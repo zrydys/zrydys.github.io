@@ -1,5 +1,5 @@
-body {     overflow: hidden;
-        background-color: lightcyan; 
+body {      /* esto mata el scroll overflow: hidden; */
+        background-color: lightcyan;  
  }
 
 #canvas {     /* OJO      width: 20%;  //height: 50%;  */
