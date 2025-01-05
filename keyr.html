@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html  xmlns="http://www.w3.org/1999/xhtml" lang="EN" xml:lang="EN">
   <head>
     <meta charset="utf-8" />
@@ -10,17 +11,21 @@
     <meta name="license" content="CC-BY ZryDys Cj. M. 2024" />
     <meta name="date" content="2024-05-31" />
     <title id=t1>3D-Lens browse Images as 3D moving Scenes</title>
-     <link rel="stylesheet" type="text/css" href="./css/gallecols.css">
- <link rel="stylesheet" type="text/css" href="./css/galleclic.css"> 
-      <link rel="stylesheet" type="text/css" href="./css/sombra.css" ojo="capa el scrol">
+  <!--  ojo=" sombra capaba el scrol"   y missing <!DOCTYPE html> rompia los css+
+     -->
+      <link rel="stylesheet" type="text/css" href="./css/gallecols.css">
+      <link rel="stylesheet" type="text/css" href="./css/galleclic.css"> 
+      <link rel="stylesheet" type="text/css" href="./css/sombra.css" >
+   
 <style>
 body {     background:#f4eBdB none repeat scroll 0 0; 
-	/* esto mata el scroll overflow: hidden; */
-
+	/* esto mata el scroll   overflow: hidden; */
 	}
+     #content3 img,  #contentd img{     width:  4%; height: auto; max-height: 4%; }    /* works but do not end in ; */    
+ 
 div.stlviewer {
     width: 100%;
-    height: 70%;
+    height: auto;
   /* height: 250px;  */
 }
  
@@ -53,51 +58,155 @@ no loc <!DOCTYPE html>
 </script>
 </head>
 
-
 <body>
-	
-	
-	
-	
-	<h2 id="movpic-free-transform-your-images-into-clips">3DLens – Transform your images into 3D objects - free by ZryDys</h2>
+<div class="ScriptTop">  <!-- cj2024 ==================GALLERY=====TOP======================= -->
+  <div class="rt-container">
+     <span style="color: grey">gallery<<   &nbsp; </span>
+    &nbsp; <img  src="./thumb/wingfoil3.jpg"><a href=./keyr.html>Solid</a>  
+    &nbsp; <img  src="./thumb/planet.jpg"><a href=./planet.html>Planet</a> 
+        &nbsp;  <img src="./thumb/tiles.jpg"><a href=./tile.html>Math</a>  
+      &nbsp; <img  src="./forest.jpg"><a href=./orbitforest.html>Scene</a> 
+   &nbsp;   <img  src="./thumb/esch3.jpg"><a href=./escher3D.html>Cubes</a>  
+   &nbsp; <img  src="./forest.jpg"><a href=./mvpc.html>MovPic</a>    
+  
+    &nbsp; <img  src="./thumb/dsci-byUrl.jpg" height=11px><a href=./visual-plotly.html>R&D+i</a> 
+    &nbsp;   <a href=./details.html>we ZryDys</a>  
+   <span style="color: grey; halign: left">  &nbsp; >>explore right pane</span> 
+    </div>
+</div>
+
+<header class="ScriptHeader">
+    <div class="rt-container">
+    	<div class="col-rt-12">
+        	<div class="rt-heading"><!-- cj2024 ---------------head----> 
+	<h2 id="movpic-free-transform-your-images-into-clips">Solid – Transform images into 3D volumes - free by ZryDys</h2>
+             </div>
+        </div>
+    </div>
+ </header>
+
+
+<section>
+    <div class="rt-container">
+          <div class="col-rt-12">
+              <div class="image-gallery"> 
+               <input id="tab6" type="radio" name="tabs" checked=""> <!-- jusch change checked! -->
+                  <label for="tab6"><img  src="./thumb/wingfoil3.jpg"></label> 
+                <input id="tab9" type="radio" name="tabs"> 
+                  <label for="tab9"><img  src="./thumb/cune3b.jpg"></label> 
+                 <input id="tabb" type="radio" name="tabs"> 
+                  <label for="tabb"><img  src="./thumb/noc3.jpg"></label>		  
+   
+         <input id="tab7" type="radio" name="tabs"> 
+                  <label for="tab7"><img  src="./thumb/mvpc.jpg"></label> 
+         <input id="tab1" type="radio" name="tabs"> 
+                  <label for="tab1"><img src="./thumb/tiles.jpg"></label>  
+           	           <input id="tab3" type="radio" name="tabs">
+                  <label for="tab3"> <center>Try!</center>  </label> 
+                             <input id="tab2" type="radio" name="tabs">
+                  <label for="tab2"><img  src="./thumb/alhambra.jpg"></label> 
+            
+                   <input id="tab4" type="radio" name="tabs">
+                  <label for="tab4"><img  src="./thumb/esch3.jpg"></label> 
+                   <input id="tab5" type="radio" name="tabs">
+                  <label for="tab5"><img  src="./thumb/planet.jpg"></label> 
+           
+        
+              <input id="tab8" type="radio" name="tabs"> 
+                  <label for="tab8"><img  src="./forest.jpg"></label> 
+                             
+      
+                   <input id="tabc" type="radio" name="tabs"> 
+                  <label for="tabc"><img  src="./wall/tofractal.jpg"></label>   
+                  
+                               <input id="taba" type="radio" name="tabs"> 
+                  <label for="taba"><img  src="./thumb/dsci-byUrl.jpg"></label> 
+              <input id="tabd" type="radio" name="tabs"> 
+                  <label for="tabd"> </label>   
+                  
+             
+                               <!-- END of labels 1 to 9 a b c          
+   tabc only with margin: 0 0 2px; and max-hei 40
+                      -->   
+  <section id="content1"> <a href=./mvpc.html>ZryDys' Maths: click the image to visit live  <br/>  
+	     	   <a href=./tile.html>   <img src=./thumb/tiles.jpg height=55px> </a>  
+      </section>                 
+    <section id="content6"><!-- cj2024 ---------------SECT1main----> 
+  
 <p>
-	Below, you are seeing internet content through our <b>3D-lens</b>, browsing with moving 3D effects !</p>
-<!--<a href="https://ZryDys.github.io"> ZryDys.github.io </a> - Computer-aided Artistic Creation:
-	<a href="https://ZryDys.github.io/stl3.html"> demos: </a> 	 
-    <a href="https://ZryDys.github.io/escher3D.html"> MCEscher in 3D </a> 	 
+	Below, you are seeing internet content through <b>3D-lens</b>, browsing with volume 3D effects !</p>
 
- old script src=./refs/Reflection%20(Three.js)_files/Three.js> orbit no'LEFT' of undefined</script
-<script src="jsm/three.min.js"></script> stl raised THREE.FileLoader is not a constructor
- tony came w/ 104dev pero se bajaba cosas de red, no iva
- 
- no need?<script src=./jsm/tn/webgl.min.js></script>
- 
-python3 ~/Jua/2prod/stl-jc/img_to_stl.py ~/inkup.jpg ink.stl --scale 1 --base-height 1 --max-height 1 --invert  --threshold 144
-
--->
-
+<!--
 <div id="infoButton" style="z-index: 2; background: none; opacity: 0.7; position: absolute; top: 124px; left: 14px;" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><a href="javascript:alert('This by ZryDys')"><span class="ui-button-text"><img width="32" height="32" src="bluef.png"></span></a></div>
-
+-->
 
 <!--div class=stlviewer data-src=https://tonybox.net//objects/keystone/keystone.stl data-rotate=x data-zdistance=12 -->
  
-<div id="cj" class=stlviewer dsrc=00 data-src=keyr.stl  data-rotate=c data-zdistance=2.2 style="width=70%">
-	<span id=cj2></span>
+<div id="cj" class=stlviewer dsrc=00 data-src=wingfoil.stl  data-rotate=c data-zdistance=2.2 NOstyle="width:70%; height: 50%;">
+
 </div>
 
-<p>
-Before saving to video or building, check the publisher <a id=cj3 target=_new href=noceanous.com>noceanous.com</a> copyrights.   
- 
- <p id=cj4>  </p>  
- 
+<p>Before saving to video or printing,
+ check the author & publisher <a id=cj3 target=_new href=noceanous.com>noceanous.com</a> copyrights.   
+  <span id=cj4>  </span>  	<span id=cj2></span>
+ </p>
  
 <small>
 - The free  visualisation might miss details; you can register or email to ZryDys @gmail to enquire about fine quality. </br> 
 - This web visualisation is possible Thanks to Three.js (Ricardo Cabello aka MrDoob and team) and browsing code MIT licensed 2024 by Anthony Biondo, with CC-BY-SA 4.0 notes.
 </small> 
 
+ </section> <!-- cj2024 ---------------SECT1main----> 
+      
+    <section id="content2"> <a href=./tiles.html>ZryDys' Tiles: click this screenshot to visit live <br/>
+    <img src=./thumb/alhambra.jpg height=55px> </a> ..
+   </section> 
 
+  <section id="content3"><!-- cj2024 ---------------SECT3TRY---->  
 
+<small> &nbsp;   &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <span style='align: right;'>
+ZryDys R&D boosted by Agile, CI, and Symmetry-Model </span></small>
+   </section>  <!-- cj2024 ---------------SECT3TRY---->    
+<section id="content4"> <a href=./escher3D.html>ZryDys' Cubes: click this screenshot to visit live <br/>
+	   <img src=./thumb/esch3.jpg height=55px> </a> 
+   </section> 
+ <section id="content5"> <a href=./planet.html>ZryDys' Planet: click this screenshot to visit live   <br/> 
+	   <img  src="./thumb/planet.jpg"> </a> 
+   </section>   
+               
+
+   <section id="content1"> <a href=./mvpc.html>ZryDys' Maths: click the image to visit live  <br/>  
+	     	   <a href=./tile.html>   <img src=./thumb/tiles.jpg height=55px> </a>  
+      </section>   
+         <section id="content7"> <a href=./mvpc.html>ZryDys' MovePic: click the image to visit live  <br/>  
+	                <img  src="./thumb/mvpc.jpg">  </a> 
+      </section>  
+         <section id="content8"> <a href=./orbitforest.html>ZryDys' Scenes: click the image to explore live   <br/> 
+	                <img  src="./forest.jpg">  </a> 
+      </section>   
+ 		 
+         <section id="content9"> <a href=./keyr.html>ZryDys' Solids: click the image to explore live   <br/> 
+	                <img  src="./thumb/cune3b.jpg">  </a> 
+      </section>   
+ 		  
+         <section id="contenta"> <a href=./visual-plotly.html>ZryDys' R&D+i Data science: click the image to know more <br/>  
+	                <img  src="./thumb/dsci-byUrl.jpg">  </a> 
+      </section>   
+      
+         <section id="contentb"> <a href=./keyr.html?q=noc>ZryDys' Solid: click the image to explore live   <br/> 
+	            <img  src="./thumb/noc3.jpg">  </a> 
+         </section>   	
+         <section id="contentc"> <a href=./tofractal.html>ZryDys' Fractal: click the image to explore live   <br/> 
+            <img  src="./wall/tofractal.jpg">  </a> 
+         </section>   <!-- cj2024 ------------------------------------------tiny----> 
+            <section id="contentd">  free ZryDys' browsing with effects,      
+            </section>  <!-- cj2024 ------------------------------------------tiny---->  
+ 		   </div>
+
+		</div>
+    </div>
+</section>        <!-- cj2024 ==================GALLERY=====ENDS======================= -->                         
+ 
 <script>
 const mens={ 'ink' : 'inkup.io', 'noc': 'noceanous.com', 'keyring-noc': 'noceanous.com', 'wingfoil': 'printables.com/social/141224' ,  };
 const lic={ 'ink' : 'inkup.io', 'noc': 'noceanous.com', 'keyring-noc': 'noceanous.com', 
@@ -119,8 +228,10 @@ e.href= 'https://'+msg;
 
   let li=lic[ q ]; 
   if (li) { e= document.getElementById("cj4"); 
-	  e.innerHTML = 'Note by the publisher or author: ' +li;  } ;
+	  e.innerHTML = '(who noted: ' +li +')';  } ;
 
 </script>
 
 <script src=./jm/stlviewer2.js?v24a></script>
+</body>
+</html>

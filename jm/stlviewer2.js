@@ -53,11 +53,15 @@ function STLViewer(elem, model,colo) {
     var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     var camera = new THREE.PerspectiveCamera(50, elem.clientWidth / elem.clientHeight, 1, 1000);
     
-    renderer.setSize(elem.clientWidth, elem.clientHeight);
+    //renderer.setSize(elem.clientWidth, elem.clientHeight);
+      renderer.setSize( window.innerWidth *.8, window.innerHeight *.8 );
+
     elem.appendChild(renderer.domElement);
 
     window.addEventListener('resize', function () {
-        renderer.setSize(elem.clientWidth, elem.clientHeight);
+        //renderer.setSize(elem.clientWidth, elem.clientHeight);
+              renderer.setSize( window.innerWidth *.8, window.innerHeight *.8);
+
         camera.aspect = elem.clientWidth / elem.clientHeight;
         camera.updateProjectionMatrix();
     }, false);
@@ -134,11 +138,14 @@ function STLViewer(elem, model,colo) {
 	d2light.position.set(0, 15, 10);
 	scene.add(d2light);
 	
+	
+
         var animate = function () {
             requestAnimationFrame(animate);
             controls.update();
             renderer.render(scene, camera);
-        }; animate();
+        };
+        animate();
 
     });
 }
