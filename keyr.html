@@ -24,11 +24,17 @@ body {     background:#f4eBdB none repeat scroll 0 0;
      #content3 img,  #contentd img{     width:  4%; height: auto; max-height: 4%; }    /* works but do not end in ; */    
  
 div.stlviewer {
- 
+ /*
     height: 100% ;   width: auto;
-  /* height: 250px;  */
+   height: 250px;  */
 }
  
+  .image-gallery #tabC:checked ~ #content6,
+
+ .image-gallery #tabI:checked ~ #content6,
+.image-gallery #tabN:checked ~ #content6 {
+  display: block;
+}
 </style> 
 
 <!--
@@ -90,12 +96,13 @@ no loc <!DOCTYPE html>
     <div class="rt-container">
           <div class="col-rt-12">
               <div class="image-gallery"> 
-               <input id="tab6" type="radio" name="tabs" checked=""> <!-- jusch change checked! -->
+               <input id="tab6" type="radio" name="tabs" checked="" onclick=' see("wingfoil",0xa1a1a2 ); ' > 
+                    <!-- just change checked! -->
                   <label for="tab6"><img  src="./thumb/wingfoil3.jpg"></label> 
-                <input id="tab9" type="radio" name="tabs"> 
-                  <label for="tab9"><img  src="./thumb/cune3b.jpg"></label> 
-                 <input id="tabb" type="radio" name="tabs"> 
-                  <label for="tabb"><img  src="./thumb/noc3.jpg"></label>		  
+                <input id="tabC" type="radio" name="tabs" onclick=' see("tetra",0xa1a12a ); '> 
+                  <label for="tabC"><img  src="./thumb/cune3b.jpg"></label> 
+                 <input id="tabN" type="radio" name="tabs"  onclick=' see("noc",0x1111aa,"")' > 
+                  <label for="tabN"><img  src="./thumb/noc3.jpg"></label>		  
    
          <input id="tab7" type="radio" name="tabs"> 
                   <label for="tab7"><img  src="./thumb/mvpc.jpg"></label> 
@@ -111,7 +118,7 @@ no loc <!DOCTYPE html>
                    <input id="tab5" type="radio" name="tabs">
                   <label for="tab5"><img  src="./thumb/planet.jpg"></label> 
            
-        
+           
               <input id="tab8" type="radio" name="tabs"> 
                   <label for="tab8"><img  src="./forest.jpg"></label> 
                              
@@ -137,9 +144,12 @@ no loc <!DOCTYPE html>
 	Below, you are seeing internet content through <b>3D-lens</b>, browsing with volume 3D effects !</p>
 
 <!--
+OK tested <small onclick=' document.getElementById("cj").innerHTML = ""  ;  alert("vv");    document.getElementById("cj").setAttribute("data-src", "./models/tetra.stl" ) ; alert("uuu"+document.getElementById("cj").getAttribute("data-src"));    STLViewerEnable("stlviewer"); '>tetra</small>
+
+
 <div id="infoButton" style="z-index: 2; background: none; opacity: 0.7; position: absolute; top: 124px; left: 14px;" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><a href="javascript:alert('This by ZryDys')"><span class="ui-button-text"><img width="32" height="32" src="bluef.png"></span></a></div>
 -->
-
+<small onclick='cjuu("./models/tetra.stl","");' >tr</small>
 <!--div class=stlviewer data-src=https://tonybox.net//objects/keystone/keystone.stl data-rotate=x data-zdistance=12 -->
  
 <div id="cj" class=stlviewer dsrc=00 data-src=wingfoil.stl  data-rotate=c data-zdistance=2.2 NOstyle="width:70%; height: 50%;">
@@ -187,6 +197,7 @@ ZryDys R&D boosted by Agile, CI, and Symmetry-Model </span></small>
  		 
          <section id="content9"> <a href=./keyr.html>ZryDys' Solids: click the image to explore live   <br/> 
 	                <img  src="./thumb/cune3b.jpg">  </a> 
+	                <div id="cjcune" class=stlviewer dsrc=00 data-src=./models/keyr.stl  data-rotate=c data-zdistance=2.2></div>
       </section>   
  		  
          <section id="contenta"> <a href=./visual-plotly.html>ZryDys' R&D+i Data science: click the image to know more <br/>  
@@ -209,29 +220,48 @@ ZryDys R&D boosted by Agile, CI, and Symmetry-Model </span></small>
  
 <script>
 const mens={ 'ink' : 'inkup.io', 'noc': 'noceanous.com', 'keyring-noc': 'noceanous.com', 'wingfoil': 'printables.com/social/141224' ,  };
-const lic={ 'ink' : 'inkup.io', 'noc': 'noceanous.com', 'keyring-noc': 'noceanous.com', 
+const lic={ 'ink' : 'Proprietary inkup.io logo', 'noc': 'Proprietary noceanous.com logo', 'keyring-noc': 'noceanous.com', 
    'wingfoil': 'WingFoil belt Hook - CC NC SA BY Creavertor 2022 @Printables tested PETG infill 80% for less than 74Kg', 
    'sch': 'Sailing Schooner - Artistic view CC SA NC BY ZryDys 2024', };
     const params = new URLSearchParams(document.location.search);
   let  q = params.get("q");    q = q? q.replace(/\+/g," ")  : 'ink'  ;  //cj or + esp
   let  c = params.get("c");    c = c? c.replace(/\+/g," ")  : '0xaa55dd'  ;  //cj or + esp
-  let msg=mens[ q ]; msg = msg ? msg : "ZryDys.github.io/keyr.html" ;  // ZryDys.github.io
   
-var e= document.getElementById("cj");  //old cj2 e.innerHTML =q;
+function setCanv( q,c ) {
+	var e= document.getElementById("cj");  //old cj2 e.innerHTML =q;
 e.setAttribute("data-src",  './models/'+q+'.stl'  );
 e.setAttribute("data-color",  c  );
-e = document.getElementById("cj3");
-e.innerHTML =msg;
-e.href= 'https://'+msg;
-//console.debug(q,c,msg,mens['ink'],mens[q]); 
-//NEXT WILL VISUALISE
+}
+ setCanv( q,c );
+ 
+function setMsg( q  ) {
+ let msg=mens[ q ]; msg = msg ? msg : "ZryDys.github.io/keyr.html" ;  // ZryDys.github.io
+   e = document.getElementById("cj3");
+	e.innerHTML =msg;
+	e.href= 'https://'+msg;
+	//console.debug(q,c,msg,mens['ink'],mens[q]); 
+	 
+  let li=lic[ q ]; e= document.getElementById("cj4");
+  if (li) 	  e.innerHTML = '(who noted: ' +li +')';   
+   else   e.innerHTML = '';
+	  
+}
+setMsg( q  );
 
-  let li=lic[ q ]; 
-  if (li) { e= document.getElementById("cj4"); 
-	  e.innerHTML = '(who noted: ' +li +')';  } ;
-
+//==================================see put in the main window
+function see( mod,colo) {
+	let model= './models/'+mod+'.stl' ;
+	let el = document.getElementById("cj");
+	el.innerHTML = ""  ; // alert("cleaned"); 
+ 	  el.setAttribute("data-src",  model  ) ;
+	 // alert("u"+el.getAttribute("data-src"));  	   //noneed: STLViewerEnable("stlviewer"); 
+	  if (colo)
+	      STLViewer(el, model, colo) ;
+	  else
+	      STLViewer(el, model, 0x3941a1) ;	   // STLViewer(el, model, 0x991111) ; //OK
+     setMsg( mod )  
+}
 </script>
-
 <script src=./jm/stlviewer2.js?v24a></script>
 </body>
 </html>

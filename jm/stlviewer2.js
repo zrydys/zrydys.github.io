@@ -40,6 +40,8 @@ function STLViewerEnable(classname) {
     }
 }
 
+
+	
 // ==========================================
 function STLViewer(elem, model,colo) {
     var col=0x5f38ff; //;    var col=0xff385c; //;
@@ -47,24 +49,16 @@ function STLViewer(elem, model,colo) {
     if (colo === undefined) { col=0xff385c } else {col=colo; //col=0x5577ff
 		 };
         console.log('col'+colo,col,colo+1, (colo));
-
+        console.log('el'+elem, (model));
     //if (!WEBGL.isWebGLAvailable()) {    elem.appendChild(WEBGL.getWebGLErrorMessage());   return;   }  //cj if err err
 
     var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     var camera = new THREE.PerspectiveCamera(50, elem.clientWidth / elem.clientHeight, 1, 1000);
     
-    //renderer.setSize(elem.clientWidth, elem.clientHeight);
-      renderer.setSize( window.innerWidth *.7, window.innerHeight *.7 );
 
     elem.appendChild(renderer.domElement);
 
-    window.addEventListener('resize', function () {
-        //renderer.setSize(elem.clientWidth, elem.clientHeight);
-              renderer.setSize( window.innerWidth *.7, window.innerHeight *.7);
-
-        camera.aspect = elem.clientWidth / elem.clientHeight;
-        camera.updateProjectionMatrix();
-    }, false);
+ //event resize was here    
 
     var controls = new THREE.OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
@@ -138,8 +132,20 @@ function STLViewer(elem, model,colo) {
 	d2light.position.set(0, 15, 10);
 	scene.add(d2light);
 	
-	
+        //RESIZE SET// 
+	// ==========================================
+	function cjfit( event ) {
+	   // function () {
+			//renderer.setSize(elem.clientWidth, elem.clientHeight);
+				  renderer.setSize( window.innerWidth *.7, window.innerHeight *.7);
 
+			camera.aspect = elem.clientWidth / elem.clientHeight;
+			camera.updateProjectionMatrix();
+	   // }
+	}
+	cjfit();
+    window.addEventListener('resize', cjfit, false);
+  
         var animate = function () {
             requestAnimationFrame(animate);
             controls.update();
@@ -155,5 +161,4 @@ window.onload = function () {
 
     STLViewerEnable("stlviewer");
 }
-
 
