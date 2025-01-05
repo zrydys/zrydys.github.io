@@ -30,7 +30,7 @@ div.stlviewer {
 }
  
   .image-gallery #tabC:checked ~ #content6,
-
+  .image-gallery #tabT:checked ~ #content6,
  .image-gallery #tabI:checked ~ #content6,
 .image-gallery #tabN:checked ~ #content6 {
   display: block;
@@ -104,10 +104,12 @@ no loc <!DOCTYPE html>
                  <input id="tabN" type="radio" name="tabs"  onclick=' see("noc",0x1111aa,"")' > 
                   <label for="tabN"><img  src="./thumb/noc3.jpg"></label>		  
    
-         <input id="tab7" type="radio" name="tabs"> 
-                  <label for="tab7"><img  src="./thumb/mvpc.jpg"></label> 
-         <input id="tab1" type="radio" name="tabs"> 
-                  <label for="tab1"><img src="./thumb/tiles.jpg"></label>  
+         <input id="tab7" type="radio" name="NOtabs" onclick=' see("kite",0x41a19a ); '>  <!-- noTabs save us link to content BUT is best to link to return to tab - when other tabs are linked -->
+                  <label for="tab7"><img  src="./thumb/kite3.jpg"></label> 
+                  
+         <input id="tabT" type="radio" name="tabs" onclick=' see("tactile",0x41a19a ); '> 
+                  <label for="tab1"><img src="./thumb/tactile3.jpg"></label>  
+                  
            	           <input id="tab3" type="radio" name="tabs">
                   <label for="tab3"> <center>Try!</center>  </label> 
                              <input id="tab2" type="radio" name="tabs">
@@ -134,10 +136,10 @@ no loc <!DOCTYPE html>
              
                                <!-- END of labels 1 to 9 a b c          
    tabc only with margin: 0 0 2px; and max-hei 40
+                 
+                 AVOID REPEAT section content or break   <section id="content1">   <a href=./tile.html>
                       -->   
-  <section id="content1">   <a href=./tile.html> ZryDys' Maths: click the image to visit live  <br/>  
-	     	   <img src=./thumb/tiles.jpg height=55px> </a>  
-      </section>                 
+                 
     <section id="content6"><!-- cj2024 ---------------SECT1main----> 
   
 <p>
@@ -145,11 +147,11 @@ no loc <!DOCTYPE html>
 
 <!--
 OK tested <small onclick=' document.getElementById("cj").innerHTML = ""  ;  alert("vv");    document.getElementById("cj").setAttribute("data-src", "./models/tetra.stl" ) ; alert("uuu"+document.getElementById("cj").getAttribute("data-src"));    STLViewerEnable("stlviewer"); '>tetra</small>
+<small onclick='cjuu("./models/tetra.stl","");' >tr</small>
 
 
 <div id="infoButton" style="z-index: 2; background: none; opacity: 0.7; position: absolute; top: 124px; left: 14px;" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><a href="javascript:alert('This by ZryDys')"><span class="ui-button-text"><img width="32" height="32" src="bluef.png"></span></a></div>
 -->
-<small onclick='cjuu("./models/tetra.stl","");' >tr</small>
 <!--div class=stlviewer data-src=https://tonybox.net//objects/keystone/keystone.stl data-rotate=x data-zdistance=12 -->
  
 <div id="cj" class=stlviewer dsrc=00 data-src=wingfoil.stl  data-rotate=c data-zdistance=2.2 NOstyle="width:70%; height: 50%;">
@@ -162,6 +164,7 @@ OK tested <small onclick=' document.getElementById("cj").innerHTML = ""  ;  aler
  </p>
  
 <small>
+- Committed to protecting viewers and authors: Kudos or donate to original authors above. Or <a href="mailto:zrydys@G mail .com?subject=report">Report</a> any misuse.
 - The free  visualisation might miss details; you can register or email to ZryDys @gmail to enquire about fine quality. </br> 
 - This web visualisation is possible Thanks to Three.js (Ricardo Cabello aka MrDoob and team) and browsing code MIT licensed 2024 by Anthony Biondo, with CC-BY-SA 4.0 notes.
 </small> 
@@ -219,10 +222,10 @@ ZryDys R&D boosted by Agile, CI, and Symmetry-Model </span></small>
 </section>        <!-- cj2024 ==================GALLERY=====ENDS======================= -->                         
  
 <script>
-const mens={ 'ink' : 'inkup.io', 'noc': 'noceanous.com', 'keyring-noc': 'noceanous.com', 'wingfoil': 'printables.com/social/141224' ,  };
+const mens={ 'ink' : 'inkup.io', 'noc': 'noceanous.com', 'keyring-noc': 'noceanous.com', 'wingfoil': 'printables.com/social/141224' , 'kite': 'printables.com/@samster395',  'tactile': 'Zrydys.github.io', };
 const lic={ 'ink' : 'Proprietary inkup.io logo', 'noc': 'Proprietary noceanous.com logo', 'keyring-noc': 'noceanous.com', 
    'wingfoil': 'WingFoil belt Hook - CC NC SA BY Creavertor 2022 @Printables tested PETG infill 80% for less than 74Kg', 
-   'sch': 'Sailing Schooner - Artistic view CC SA NC BY ZryDys 2024', };
+   'sch': 'Sailing Schooner - Artistic view CC SA NC BY ZryDys 2024', 'kite': 'Water Sports CC-BY samster395 based on  Kite Winder Wider by ToXIcG thingiverse.com/thing:4277334 & /thing:2545697 ! Tested with 500ft of 200lb line.',  'tactile': 'Braille for Acessibility CC-BY Zrydys 2024, free to Print or modify. Register free to customize Braile models from your message.', };
     const params = new URLSearchParams(document.location.search);
   let  q = params.get("q");    q = q? q.replace(/\+/g," ")  : 'ink'  ;  //cj or + esp
   let  c = params.get("c");    c = c? c.replace(/\+/g," ")  : '0xaa55dd'  ;  //cj or + esp
