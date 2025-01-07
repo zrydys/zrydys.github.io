@@ -52,7 +52,7 @@ function STLViewer(elem, model,colo) {
         console.log('el'+elem, (model));
     //if (!WEBGL.isWebGLAvailable()) {    elem.appendChild(WEBGL.getWebGLErrorMessage());   return;   }  //cj if err err
 
-    var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    var renderer = new THREE.WebGLRenderer({ antialias: true,  }); //carefull detect before forcing: alpha: true
     var camera = new THREE.PerspectiveCamera(50, elem.clientWidth / elem.clientHeight, 1, 1000);
     
 
