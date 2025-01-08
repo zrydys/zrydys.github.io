@@ -132,6 +132,11 @@ function STLViewer(elem, model,colo) {
 	d2light.position.set(0, 15, 10);
 	scene.add(d2light);
 	
+	//FOG
+	scene.background = new THREE.Color(0xf4eBdB) ; // ;
+	//scene.fog = new THREE.FogExp2( 0xcccccc, 0.02 ) all white
+	//scene.fog = new THREE.Fog(0x8e8e8e, 150, 161 ); //parte niebla orcura gris no good
+	
         //RESIZE SET// 
 	// ==========================================
 	function cjfit( event ) {
