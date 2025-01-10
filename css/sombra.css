@@ -25,7 +25,7 @@ label {
   font-weight: bold;
   display: inline-block;
   margin-top: 10px;
-          width: 350px; /* Adjust as needed */
+          width: 44%; /* 350pxAdjust as needed */
   text-align: right; /* Aligns label text to the right for better form layout */
   margin-right: 5px; /* Optional: Adds spacing between the label and input */
 }
