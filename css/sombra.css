@@ -22,15 +22,18 @@ h2, .css-3d-text {
 }
 
 label {
-  font-weight: bold;
+  /*font-weight: bold;*/
   display: inline-block;
   margin-top: 10px;
-          width: 55%; /* 350pxAdjust as needed */
+    flex: 0 0 45%;
+        width: 45%; /* 350pxAdjust as needed */
   text-align: right; /* Aligns label text to the right for better form layout */
   margin-right: 5px; /* Optional: Adds spacing between the label and input */
 }
 
 input {
+        flex: 1;
+        
   display: block;
   width: 45%;
   margin-top: 5px;
