@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="EN" xml:lang="EN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta name="generator" content="cj.cvs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="ZryDys Cj " />
+    <meta name="copyright" content="CC-BY-NC-SA ZryDys Cj. M. 2024" />
+    <meta name="license" content="MIT License +CC-BY-NC ZryDys Cj. M. 2024" />
+    <meta name="date" content="2024-08-08" />
+    <title id=t1>cj zry demo</title>
+
+ <script src="../../2act/a-goa/lib/three.min.js"> local3js REV127 no transmi no thickn ! </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js">ojo q pilla 128 de cache</script>
+
+<!-- DO NOT // NOR /**/ on importmap JSON !! 
+carefull delete olds 122 jsm/three.module.js' doesn't provide an export named: 'SRGBColorSpace'
+<script type=module src=./jsm/loaders/SVGLoader.js> local http  </script>
+OBJ: 2act/a-goa/lib/three.min.js' doesn't provide an export named: 'LineBasicMaterial' OBJLoader.js:6:2
+a-goa/lib/three.module.js:nst REVISION = '156
+
+-->
+<script type="importmap"> 
+ {
+				"imports": { 
+					"0three": "../../2act/a-goa/lib/three.min.js",
+					"1three": "./jsm/three.module.js", 
+					"three": "../../2act/a-goa/lib//three.module.js", 
+					"three/addons/": "./jsm/"
+				}
+			}
+ </script>
+
+       <script src=https://tonybox.net/plugins/stl/stlloader.min.js></script>
+       <script src=./jsm/tn/stlloader.min.js>  func o no? solo cach?</script>
+
+<script src=https://tonybox.net/plugins/stl/orbitcontrols.min.js></script>
+<script src=./jsm/tn/orbitcontrols.min.js> local orbit  </script>
+ 
+<!--LOC
+ <script src="https://unpkg.com/three@0.147.0/examples/js/controls/OrbitControls.js" referrerpolicy="no-referrer">3js/127 +orb/147 gave cannot read style of undef</script>
+
+
+-->
+<style> 
+      canvas { width: 100%; height: 100% ; touch-action: none;}
+ 
+   /* colors */
+   .sepia { filter: sepia(100%); }
+.huerotate { filter: hue-rotate(180deg); }
+
+   h2,    .css-3d-text {
+    font-size: 26px;
+   color: #075d9f;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 
+        0px 0px 2px rgba(255, 255, 255,  0.6),  
+        1px 1px 3px rgba(255, 255, 255, 0.4),  /* White shadow */
+        2px 2px 5px rgba(122, 110, 239, 0.6),   /* Dark blue shadow */
+         5px 5px 10px rgba(122, 110, 239, 0.3);
+  
+ }
+
+</style> 
+  </head>
+  
+  
+<body>
+
+<h2> 3DSCENE: Navigating internet content in a 3D  world </h2>
+
+Use your mouse, VR, or keyboard in the 3D scene below in order to 3D-browse the following internet content:
+ 
+<ul>
+<li>
+ - Jelly Fish by thingiverse.com/Wynn-3D  CC BY-SA  thingiverse.com/thing:6900627
+</li> <!--  cach:models/Jelly_Fish.stl https://creativecommons.org/licenses/by-sa/3.0/) -->
+<li>
+ - Underwater 360 by Stock.Adobe.com/es/search?k=360+underwater 
+</li> 
+  <!--  https://t3.ftcdn.net/jpg/11/35/65/78/240_F_1135657835_gZSeL43LSMpZSj6ACRrZq90hgBT94LPs.jpg -->
+  </ul>
+Check the copyrights of original authors and publishers above  before saving your browsing of their content.
+	
+	<div id="cjcontainer" cj="for 3d canvas fine #cjconta=id.cjco"  style="width: 60%; height: auto;" > </div>
+		 
+
+  <video id="video" playsinline webkit-playsinline muted loop autoplay width="120" height="120" src="../../2act/a-goa/c4cube.mp4"   style="display: none;"> ffmpeg -i ./2act/a-goa/c4cube.gif ./2act/a-goa/c4cube.mp4
+  </video>
+
+
+<script type=module>
+ 	 //	 import { STLLoader } from "./jsm/loaders/STLLoader.js" ; // works FINE & loads FFX CHROME but now on CDN above to support FALKON brwser too
+ 	const sloader = new THREE.STLLoader();	// instantiate a loader  no Three. when import E6 inside
+ 	
+ 	
+ 	
+// Apply VR stereo rendering to renderer var effect = new THREE.VREffect(renderer);  //search lib, not used yet
+//effect.setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
+
+/*import('./jsm/tnn/orbitcontrols.min.js'); //allways true
+try {
+	new THREE.OrbitControls();
+	console.log( "cj24-A impo" );
+  } catch(e) {
+		console.log( "cj24-A els impo",e );
+         import ("./jsm/tn/orbitcontrols.min.js")    ;
+		//import('./jsm/tn/orbitcontrols.min.js'); //allways true
+		try {
+			//new  THREE.OrbitControls(); Failed to fetch dynamically imported module
+			console.log(  "cj24-B impo" );
+		  } catch(e) {
+				console.log( "cj24-B els impo",e );
+
+			 } //catchB
+
+	  }; //catchA
+*/
+	console.log( THREE.REVISION );
+
+
+      var scene = new THREE.Scene();
+      var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 3, 1000 );          var controls = new THREE.OrbitControls(camera);
+      var renderer = new THREE.WebGLRenderer();
+      renderer.setSize( window.innerWidth, window.innerHeight );
+      
+    //DONDE
+   try {     const container = document.querySelector('#cjcontainer'); // the container that will hold scene
+    container.append(renderer.domElement); // add the created <canvas> element to the cont
+   } catch {
+      document.body.appendChild( renderer.domElement );   //pon the created <canvas>
+   }
+//Standard vs Phys
+      var material = new THREE.MeshPhysicalMaterial( { color: 0x00af00 , roughness: .3,   metalness: 0.7,   transmission: .5 ,} );
+      var geometry = new THREE.DodecahedronBufferGeometry(1 ,0);
+      var mesh = new THREE.Mesh(geometry, material);
+      scene.add(mesh);
+
+      var wireframe = new THREE.WireframeGeometry( geometry );
+
+      var line = new THREE.LineSegments( wireframe );
+      scene.add( line );
+
+      var aLight = new THREE.AmbientLight(0x808080, 5);
+      scene.add(aLight);
+
+      camera.position.z = 15;
+      camera.position.x = 10;
+      camera.position.y = 10;
+camera.lookAt(0, 0, 0); //cj
+
+      var render = function () {
+		  //ANIM
+		  
+        requestAnimationFrame( render );
+        controls.update();
+        renderer.render(scene, camera);
+      };
+
+
+ 
+	
+	// LIGHT FOR BRILLOS https://tympanus.net/codrops/2021/10/27/creating-the-effect-of-transparent-glass-and-plastic-in-three-js/
+	const light = new THREE.DirectionalLight(0xfff0dd, 1);  //direct to see metal
+light.position.set(0, 25, 20);
+scene.add(light);
+	/* 
+      
+      
+      */
+      
+     render(); 
+      
+
+ //BG ENV =====================================================
+ scene.background = 0x5577aa;
+   const bgloader = new THREE.CubeTextureLoader();
+  const bg0texture = bgloader.load([ //NO WARN WITH 512X512 BUT BLACK
+ 	   './thumb/s.png',  //s x- sou must be 512x or more
+		   './thumb/nn.png', //n x+ nort
+		   './kk.png',// ceil  y+ all must be square
+ 		   './thumb/floo.png',  // floo  y-
+		   './thumb/e.png', //e z+ 
+		'./thumb/w.png', //o z- 
+    ]); //
+      const bgtexture = bgloader.load([ 
+   './cubead/px.png',  //s x- sou must be 512x or more  ADOB x+
+		   './cubead/nx.png', //n x+ nort   AD x-
+		   './cubead/py.png',// ceil  y+ all must be square
+ 		   './cubead/ny.png',  // floo  y-
+		   './cubead/pz.png', //e z+ 
+		'./cubead/nz.png', //o z- 
+    ]); //
+    
+      scene.background = bgtexture; 
+      // all 6 512x512 './bluef.png',FUNCIONA !! was dark in tiles REV127
+ 
+ console.log( THREE.REVISION );
+ 
+
+   // MATER
+	const col=0xffd0ef;
+    var material = new THREE.MeshPhysicalMaterial({ color: col,  transmission:11 , metalness: .8 , roughness: 0.4,  envMapIntensity: 0.5,side: THREE.DoubleSide });  //OK Metalic bright 0xaa55ee / not on 99MB! 
+    var m2 = new THREE.MeshPhysicalMaterial({ color: 0xE0d0Ff,  transmission:11 , metalness: .8 , roughness: 0.4,  envMapIntensity: 0.5,side: THREE.DoubleSide });  //OK Metalic bright 0xaa55ee / not on 99MB! 
+   
+// func  medusa  new THREE.Color('hsl(30, 100%, 75%)'), 1.0);
+function cjmedu(g) {
+	var co=new THREE.Color(.5+Math.random()*.5 , .2+Math.random()*.8, .4+Math.random()*.6);
+    var mc = new THREE.MeshPhysicalMaterial({ color: co,  transmission:11 , metalness: .8 , roughness: 0.4,  envMapIntensity: 0.5,side: THREE.DoubleSide });  //OK Metalic bright 0xaa55ee / not on 99MB! 
+
+	     	var ms = new THREE.Mesh( g, mc);    
+      ms.position.set( -156+Math.random()*111  ,-160+Math.random()*111  , -45+Math.random()*111   ) ;
+     ms.scale.set(.1+Math.random() ,  .1+Math.random() , .1+Math.random()  );
+     ms.rotation.x = -Math.PI / 2 + 3.14*Math.random();  // 3/14 /2  1.6
+     ms.rotation.y = -Math.PI / 2 + 3.14*Math.random();  //up
+     ms.rotation.z = -Math.PI / 2 + 3.14*Math.random();  //up
+	  scene.add(ms);
+	  
+}   
+	//STL slo ===================== async 
+	sloader.load( 		'./models/Jelly_Fish.stl',	// model resource URL to load
+		function ( g ) {	// when resource is loaded STLcalls on geometry // OBJ calls on object!
+			// STL difers from OBJ: in STL is geom! THREE.Object3D.add: object not an instance of THREE.Object3D. 
+			var omesh = new THREE.Mesh( g, material);
+            scene.add(omesh);
+            g.computeBoundingBox();                      console.log(  g.boundingBox);
+
+            //ko var midd; g.boundingBox.getCenter(midd); //A load error happened: TypeError: target is undefined
+                   //     omesh.position.set(-g.boundingBox.min.x , -g.boundingBox.min.y, g.boundingBox.min.z)
+  //ko omesh.geometry.applyMatrix(new THREE.Matrix4().makeTranslation( -126,-130, 55 ) ); //Center it omesh.geometry.applyMatrix is not a function
+ omesh.position.set( -126,-130, 55 ) ;
+  //omesh.geometry.applyMatrix(new THREE.Matrix4().makeTranslation(-midd.x,-midd.y,-midd.z ) ); \\Center it
+            omesh.rotation.y = +Math.PI / 2;  //up
+            //omesh.rotation.z = -Math.PI / 2;  //up
+
+
+            	var omesh2 = new THREE.Mesh( g, m2);    
+      omesh.position.set( -116,-120, 35 ) ;
+     omesh2.scale.set(0.5, 0.6, 0.7 );
+     omesh2.rotation.y = -Math.PI / 2;  //up
+	  scene.add(omesh2);
+	  
+            	var omesh3 = new THREE.Mesh( g, m2);    
+      omesh.position.set( -106,-110, 25 ) ;
+     omesh3.scale.set(1.5, 0.6, 0.7 );
+     omesh3.rotation.z = -Math.PI / 2;  //up
+	  scene.add(omesh3);
+	  
+	     for ( let i=0; i<40; i++ ) {
+                   cjmedu(g) 
+
+	}
+
+ 		},
+		function ( xhr ) {	// when loading is in progress  //renamed to THREE.FileLoader.
+			console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+		},
+		function ( error ) {	// called when loading has errors
+			console.log( 'STL load error happened: ' + error);
+		}
+	);
+	 
+ 
+  /*
+	// Get group's size
+	const box = new THREE.Box3().setFromObject(svgGroup);
+	const size = new THREE.Vector3();
+	box.getSize(size);
+
+	const yOffset = size.y / -2;
+	const xOffset = size.x / -2;
+
+	// Offset all of group's elements, to center them
+	svgGroup.children.forEach(item => {
+	  item.position.x = xOffset;
+	  item.position.y = yOffset;
+	});
+
+	//   Finally we add   group to the scene
+  */
+
+//VIDEO 
+console.log( 'vidd '  );
+const video = document.getElementById("video"); //Get   video element:
+// opt  video.onloadeddata = function () {     video.play(); };
+ 
+const videoTexture = new THREE.VideoTexture(video); //Create   video texture:
+videoTexture.needsUpdate = true;
+const videoMaterial = new THREE.MeshBasicMaterial({
+    map: videoTexture,     side: THREE.FrontSide,      toneMapped: false,
+});
+videoMaterial.needsUpdate = true;  //added 2021
+ 
+ 
+
+// VID SPHER
+const sphereGeom =  new THREE.SphereGeometry( 2, 22, 22 ); // radius, segmentsWidth, segmentsHeight
+const vSphere = new THREE.Mesh( sphereGeom,  videoMaterial);
+scene.add(vSphere);  
+vSphere.position.z = -10;
+
+console.log( 'vidd '  );
+
+  //3MF Uncaught ReferenceError: assignment to undeclared variable triangleNode
+  var loader3 = new THREE.ThreeMFLoader();
+  //loader3.addExtension( THREE.ThreeMFLoader.MaterialsAndPropertiesExtension );
+//  loader3.load( './3mf/tetrahedron.3mf'  , function ( object3mf ) {  //Uncaught ReferenceError: assignment to undeclared variable triangleNode
+ loader3.load( './hull.3mf'  , function ( object3mf ) { // Uncaught TypeError: meshData is undefined
+  // loader3.load( './fishyfishy.3mf'  , function ( object3mf ) { //ReferenceError: assignment to undeclared variable triangleNode  
+		scene.add( object3mf );
+		//render();
+  } );  
+
+</script>
+ 
+ 3D-SCENE-browsing provided free by ZryDys. software CC-BY ZryDys 2024 with parts of code under MIT License.
+ <li>- Audio: disabled at the moment for unregistered browsing 
+  <li>- releasing next... options to add your URLs of creations and scenes to navigate
+
+</body>
+</html>
