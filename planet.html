@@ -10,7 +10,7 @@
     <meta name="copyright" content="CC-BY ZryDys Cj. M. 2024" />
     <meta name="license" content="CC-BY ZryDys Cj. M. 2024" />
     <meta name="date" content="2024-05-31" />
-    <title id=t1>cj 3d cubo</title>
+    <title id=t1>Planet: Browse internet content in a rotating sphere</title>
 
  
 	<!-- sin paged el 3d va y la impresion pasable
@@ -76,11 +76,40 @@
 
     </script>
 
-  </head>
-  <body>
- <h2 id="movpic-free-transform-your-images-into-clips">Planet Lens – Transform your images into 3D objects - free by ZryDys</h2>
-<p>
-	Below, you are seeing internet content through our <b>Planet-Lens</b>, letting you browse with moving 3D effects:</p>
+      <link rel="stylesheet" type="text/css" href="./css/gallecols.css">
+      <link rel="stylesheet" type="text/css" href="./css/galleclic.css"> 
+      <link rel="stylesheet" type="text/css" href="./css/sombra.css" >
+     </head>
+<body>
+<div class="ScriptTop">  <!-- cj2024 ==================GALLERY=====TOP======================= -->
+  <div class="rt-container">
+     <span style="color: grey">gallery((   &nbsp; </span>
+    &nbsp; <img  src="./thumb/wingfoil3.jpg"><a href=./keyr.html>Solid</a>  
+    &nbsp; <img  src="./thumb/planet.jpg"><a href=./planet.html>Planet</a> 
+        &nbsp;  <img src="./thumb/tiles.jpg"><a href=./tile.html>Math</a>  
+      &nbsp; <img  src="./forest.jpg"><a href=./orbitforest.html>Scene</a> 
+   &nbsp;   <img  src="./thumb/esch3.jpg"><a href=./escher3D.html>Cubes</a>  
+&nbsp; <img  src="./forest.jpg"><a href=./mvpc.html>MovPic</a>    
+  
+    &nbsp; <img  src="./thumb/dsci-byUrl.jpg" height=11px><a href=./visual-plotly.html>R&D+i</a> 
+    &nbsp;   <a href=./details.html>we ZryDys</a>  
+   <span style="color: grey; halign: left">  &nbsp; ))explore right pane</span> 
+    </div>
+</div>
+<header class="ScriptHeader">
+    <div class="rt-container">
+    	<div class="col-rt-12">
+        	<div class="rt-heading">
+				<h2 id="alhambra-by-zrydys">
+<h2>Planet: Browse internet content in a rotating sphere </h2>
+
+             </div>
+        </div>
+    </div>
+ </header>
+
+ <p>
+	Below, you are seeing internet content through <b>Planet-Lens</b>, letting you browse with moving 3D effects:</p>
  
 		 <!-- FALKON OK 'jsm/k.png'  yet FFX cors KO  !! <li id="scene-container0" cj="for 3d canvas fine on li too but pagejs killed canvas"> 
 		  <a href="https://ZryDys.github.io"> ZryDys.github.io </a> - Computer-aided Artistic Creation:
@@ -98,11 +127,79 @@
 - This animation also made thanks to the team of Three.js developers and Ricardo Cabello aka MrDoob.
 <br>- Most 3D demos published at ZryDys.Github.io were released CC-BY-SA-NC 4.0 except if stated otherwise 
 <br> 
+
+
+
+
+<p>
+	The above shows internet images (“<span style="color: green;" id="bq" >esch4cc.jpg</span>“ ,
+optional  “<span style="color: green;" id="bbg">sail.jpeg</span>“) through animated lenses.</p>
+
+	 ( last given :  <img src="esch4.jpg" id=iq alt="q" crossorigin='anonymous' width=88 />   <span style="color: red;" id=eq></span> )
+     ( last bg was:      <img src="sail.jpeg" id=ibg alt="bg" crossorigin='anonymous' width=88/>   )
+
+   <p id=cc >ZryDys.github.io/planet.html </p>  
+
  <!-- 3d ========================================== img -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js">//ok</script>
         <!--script src="/2act/a-goa/lib/three.min.js">console.debug("local3js")</script-->
         <script src="jsm/three.min.js">cjlocal3js</script>
  <script>// cj: this rotating img 3D !
+//main: 
+ var q,bg; //trans vars outside funct
+ 
+ 
+//=============================================================
+  cj_params()  ;
+
+
+//=============================================================
+function cargaq() { //cj CC-BY @2024  ZryDys & CrlHyn
+ 
+   loader.load(  q, // "esch4c.jpg"
+        (texture) => {
+            texture1 = texture;
+            start(); animate();
+            capt_scr()  ;           
+            escucha();
+        },
+        undefined, // onProgress 
+        (err) => { 
+            //const ee="Please check if URL is reacheable: "+q ;
+            const ee= "free Zrydys allows images from authors at UppBeat.io X(twimg.com) Vimeo ArtList.io(imgix.net)  facebook(fbcdn.net) PixABay TuneTank GettyImages Linkedin(licdn.com) Dribble WikiMedia.org Deezer FreeToUse PrintAble Pexels DeviantArt ImGur DropBox ...  \n or just gmail us to ZryDys suggesting new domain.\n You attempted: "+q ;
+            alert( ee ) ; document.getElementById("eq").innerHTML = ee;
+            q="esch4c.jpg";cargaq();
+         }
+    );    //loader cool 
+ 
+};
+
+var q,bg; //trans vars outside funct
+//=============================================================
+function cj_params() { //cj CC-BY @2024  ZryDys & CrlHyn
+
+    const params = new URLSearchParams(document.location.search);
+    q = params.get("q"); //if (q) { q= q.replace(/ /g,"+") } else {q='esch4cc.jpg'} ; // o
+    q = q? q.replace(/ /g,"+")  : 'esch4cc.jpg'  ;
+    bg = params.get("bg");if (bg) { } else {bg='sail.jpeg'} ; 
+    document.getElementById("bq").innerHTML = q; // <p id=bbg></p>
+    document.getElementById("bbg").innerHTML = bg;  
+    document.getElementById("iq").src=q; // update image src not content !
+    document.getElementById("ibg").src=bg; // update image src not content !  
+  const host = "https://zrydys.github.io"; 
+    const urlpa = `/planet.html?q=${q}&v1`;  //uses ${q} variable
+
+    const url = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=002&bgcolor=eff&data="+ encodeURIComponent(host+urlpa);
+
+    document.getElementById("cc").innerHTML = `Tool code 2024 CC-BY-NC-SA ZryDys.Github.io/${urlpa} &url`;
+
+} //func cj params
+	 
+	 
+	 
+	 
+	 
+	 
  var camera, scene, renderer;
  var geometry, material, mesh;
  var  material2;
@@ -165,6 +262,7 @@ var myimg='http://localhost:8000/k.png'; //python3 -m http.server #%Cross-Origin
  myimg='cafe2.jpg'; 
  myimg='./models/marble.png'; 
  myimg='esch4cc.jpg'; //Escher Next Dimension
+ myimg=q; //param!!
 // this fails also falkon wo/ msg: var texture = loader.load( myimg ); var material5 = new THREE.MeshLambertMaterial({ map: texture });  //mat5 text image k.png
 
 //const  blob:file:///a3ef88d3-eac1-46de-abeb-08a3fe62ce38
@@ -205,7 +303,7 @@ material5 = new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture( myi
 	  }	`;
 
 	const halo = new THREE.Mesh(
-		 new THREE.SphereGeometry(160, 20, 20),
+		 new THREE.SphereGeometry(180, 20, 20),
 		 new THREE.ShaderMaterial(
 			{  vertexShader:haloVertexShader,   fragmentShader:haloFragmentShader,
 			  blending: THREE.AdditiveBlending,   side: THREE.BackSide }
@@ -254,6 +352,7 @@ material5 = new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture( myi
 
  </script>
   
+
   </body>
   
 </html>
