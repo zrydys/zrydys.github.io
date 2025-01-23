@@ -121,14 +121,9 @@
   cj="for 3d canvas fine on li too but pagejs killed canvas" 
    style="width: 80%; height: auto;" > </div>
 
-	- ZryDys created this 3D model inspired in the Icy World planet - Soon you can display your picture and url here
-	  <center>		  </center>
 
-- This animation also made thanks to the team of Three.js developers and Ricardo Cabello aka MrDoob.
-<br>- Most 3D demos published at ZryDys.Github.io were released CC-BY-SA-NC 4.0 except if stated otherwise 
-<br> 
-
-
+Before saving to video or printing kindly check the authors' copyrights: 
+<a id=cj3 target="_blank" href="">...</a> 
 
 
 <p>
@@ -139,6 +134,11 @@ optional  “<span style="color: green;" id="bbg">sail.jpeg</span>“) through a
      ( last bg was:      <img src="sail.jpeg" id=ibg alt="bg" crossorigin='anonymous' width=88/>   )
 
    <p id=cc >ZryDys.github.io/planet.html </p>  
+
+
+<hr>
+
+
 
  <!-- 3d ========================================== img -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js">//ok</script>
@@ -151,7 +151,25 @@ optional  “<span style="color: green;" id="bbg">sail.jpeg</span>“) through a
  
 //=============================================================
   cj_params()  ;
+ const mens={ 'MD.jpg' : 'Merge with Darkness by (QR in img / here soon)', 
+	  'NS.jpg' : 'The Next Stop by X.com/paranoiddlusion?s=21&t=Y7Vkz-5FGGbo814UUxh4mw ', 
+	  'SR.jpg': 'SeaRangers by NOceaNoUs.com', 
+	  'SG.jpg': 'Sigillum by @ClosedRoomStudio X.com/closedroomstudio',
+	   'CA.jpg': 'Portfolio by MarianCustomArt.com' , 
+	   'kite': 'printables.com/@samster395', 
+	   	   'elvis-always.jpg': "Elvis' Always for Piano at MuseScore.com ", 
 
+	   'ar.jpg': 'Arrival 2016 - review at reelgood.com/search?q=arrival ',
+	    'esch4cc.jpg': 'MCEscher original 1953, with colors added by Zrydys', 
+	   '4d4d88f02aba3559a8ecd7e4498def05.jpg': 'Camper Van: Make it Home - Review at taptap.io/app/33677784 ',
+	   'header.jpg': 'Camper Van: Make it Home - Review at  steamcommunity.com/app/2843190 ',
+	   'broach':'printables.com/@John_56680', };
+ let last= q.replace(/.*\//,''); 
+ let msg=mens[ last ]; msg = msg ? msg : "to display here soon"+last+ mens[ last ];  // ZryDys.github.io
+  let msgurl=msg.replace(/.*\s(\S+\.[io,com,org,*])/gi, "https://$1");
+   e = document.getElementById("cj3");
+	e.innerHTML =msg.replace(/\?.*/,''); //remove ?....
+	 e.href= msgurl; //'https://'+msg;
 
 //=============================================================
 function cargaq() { //cj CC-BY @2024  ZryDys & CrlHyn
@@ -354,7 +372,104 @@ material5 = new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture( myi
 
  </script>
   
+<!--    st        galll   -->
 
+. A gallery of recent animated effects will show here in a few days ...
+
+ <div class=icons style='width:32;'>
+	 ZryDys let You browse images from many supported sources:
+
+ <a href="https://taptap.io" target="_blank"> <!-- taptap.io   -->
+  <img src="https://icons.duckduckgo.com/ip3/taptap.io.ico" alt=" " style="width: 24px; height: auto;"/>  Taptap
+</a>
+
+	 <a href="https://steamcommunity.com" target="_blank"> <!-- Steam  -->
+  <img src="https://icons.duckduckgo.com/ip3/steamcommunity.com.ico" alt=" " style="width: 24px; height: auto;"/> Steam 
+</a>
+
+
+ <a href="https://www.pexels.com" target="_blank"> <!-- static/img/pexels-logo.svg -->
+  <img src="https://www.pexels.com/assets/static/images/meta/pexels-icon.png" alt="Pexels" style="width: 24px; height: auto;"/> Pexels
+</a>
+
+<a href="https://x.com" target="_blank">
+  <img src="https://icons.duckduckgo.com/ip3/x.com.ico" alt=" x" style="width: 24px; height: auto;"/> Dropbox
+</a>
+<a href="https://artlist.io" target="_blank">  <!-- images/logo.svg -->
+  <img src="https://artlist.io/favicon.ico" alt="ArtList.io" style="width: 24px; height: auto;"/> ArtList.io
+</a>
+
+<a href="https://www.thingiverse.com" target="_blank"><!-- www.thingiverse.com/images/thingiverse-logo.svg  -->
+  <img src="https://thingiverse.com/favicon.ico" alt="Thingiverse" style="width: 24px; height: auto;"/> Thingiverse
+</a>
+ 
+<a href="https://www.deviantart.com" target="_blank">
+  <img src="https://www.deviantart.com/favicon.ico" alt="DeviantArt" style="width: 24px; height: auto;"/> DeviantArt
+</a>
+
+ 
+<a href="https://pixabay.com" target="_blank">
+  <img src="https://pixabay.com/favicon-32x32.png" alt="DeviantArt" style="width: 24px; height: auto;"/> pixabay  
+</a>
+
+<a href="https://cdn.uppbeat.io" target="_blank">
+  <img src="https://cdn.uppbeat.io/images/logo/apple-touch-icon.png" alt="uppbeat" style="width: 24px; height: auto;"/>
+   uppbeat  
+</a> 
+<a href="https://www.flickr.com" target="_blank">
+  <img src="https://www.flickr.com/favicon.ico" alt="Flickr" style="width: 24px; height: auto;"/> Flickr
+</a>
+
+<!-- Vimeo upload.wikimedia.org/wikipedia/commons/6/6d/Vimeo_Logo_2019.svg-->
+<a href="https://www.vimeo.com" target="_blank">
+  <img src="https://vimeo.com/favicon.ico" alt="Vimeo" style="width: 24px; height: auto;"/> Vimeo
+</a>
+
+<!-- GettyImages https://media.gettyimages.com/gi-resources/images/Homepage/gi-logo.svg-->
+<a href="https://www.gettyimages.com" target="_blank">
+  <img src="https://www.gettyimages.es/favicon.ico" alt="GettyImages" style="width: 24px; height: auto;"/> GettyImages
+</a>
+
+<!-- Deezer -->
+<a href="https://www.deezer.com" target="_blank">
+  <img src="https://www.deezer.com/favicon.ico" alt="Deezer" style="width: 24px; height: auto;"/> Deezer
+</a>
+
+<!-- Dropbox 
+https://www.dropbox.com/favicon.ico-->
+<a href="https://www.dropbox.com" target="_blank">
+  <img src="https://cfl.dropboxstatic.com/static/metaserver/static/images/favicon.ico" alt="Dropbox" style="width: 24px; height: auto;"/> Dropbox
+</a>
+
+<!-- ImGur -->
+<a href="https://imgur.com" target="_blank">
+  <img src="https://i.imgur.com/favicon.ico" alt="ImGur" style="width: 24px; height: auto;"/> ImGur
+</a>
+
+<a href="https://musescore.org" target="_blank">
+  <img src="https://musescore.org/themes/musescore_theme/favicon.ico " alt="musescore" 
+  style="width: 24px; height: auto;"/> musescore
+</a>
+  
+
+<a href="https://facebook.com" target="_blank">
+  <img src="https://cdn2.iconfinder.com/data/icons/social-media-2189/48/1-Facebook-128.png" alt="facebook"
+   style="width: 24px; height: auto;"/> facebook
+</a>
+</div>
+
+<!--    en        galll   -->
+  
+  <hr>
+<small>
+<p>This MovPic effect is <strong>AI-free</strong>, allowing authentic artistic creations! simply shown in Moving Clips</p>
+<ul>
+<li>Keep as Video? When you hold the source image rights, you could save your creation using a video tool like <a href="https://chromewebstore.google.com/detail/canvas-capture/pnhaaddlgbpchligciolcdjgndcpelee">chrome canvas-capture</a>. Soon registered and beta users could get a GIF (animated picture) or MovieClip here. ZryDys helps you add effects.</li>
+</ul>
+	- ZryDys created this 3D model inspired in the Icy World planet, animation uses Three.js (thanks Ricardo Cabello aka MrDoob and developers) 
+<br>- ZryDys.Github.io  browser code under CC-BY-SA-NC 4.0 has no guarantee: your device GPU could consume extra power on animations.  
+<br> 
+</small>
   </body>
   
 </html>
