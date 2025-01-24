@@ -58,7 +58,7 @@ CDN 1st
 <script src="./refs/Reflection%20(Three.js)_files/OrbitControls.js"></script>
 no loc <!DOCTYPE html>
 -->
-  <script src="../../2act/a-goa/lib/three.min.js">need  3js >r127 ok for orbi & stl but multivers</script>
+  <script src="../../2act/a-goa/lib/three.min.js">need  3js >r127 ok for orbi & stl but multivers</script>                         
 <script src=./jsm/tn/stlloader.min.js>  func o no? solo cach?</script>
  <script src="./jsm/tn/orbitcontrols.min.js?what"> func o no? Uncaught TypeError: THREE.OrbitControls is not a constructor</script>
 
@@ -73,7 +73,7 @@ no loc <!DOCTYPE html>
 <body>
 <div class="ScriptTop">  <!-- cj2024 ==================GALLERY=====TOP======================= -->
   <div class="rt-container">
-     <span style="color: grey">gallery<<   &nbsp; </span>
+     <span style="color: grey">gallery❮  &nbsp; </span>
     &nbsp; <img  src="./thumb/wingfoil3.jpg"><a href=./keyr.html>Solid</a>  
     &nbsp; <img  src="./thumb/planet.jpg"><a href=./planet.html>Planet</a> 
         &nbsp;  <img src="./thumb/tiles.jpg"><a href=./tile.html>Math</a>  
@@ -83,7 +83,7 @@ no loc <!DOCTYPE html>
   
     &nbsp; <img  src="./thumb/dsci-byUrl.jpg" height=11px><a href=./visual-plotly.html>R&D+i</a> 
     &nbsp;   <a href=./details.html>we<img src=zrydysML.png height=11px>ZryDys</a>  
-   <span style="color: grey; halign: left">  &nbsp; >>explore right pane</span> 
+   <span style="color: grey; halign: left">  &nbsp; ❯explore right pane</span> 
     </div>
 </div>
 
@@ -260,6 +260,7 @@ function setMsg( q  ) {
 setMsg( q  );
 
 //==================================see put in the main window
+// error found 1/23  (since 1/15): a reentry in see()/setMsg/stlv in wind-browser that redefine q!
 function see( mod,colo) {
 	let model= './models/'+mod+'.stl' ;
 	let el = document.getElementById("cj");
