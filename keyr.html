@@ -15,13 +15,12 @@
  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="zrydysML.png">
  <link rel="noicon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
 
-    <title id=t1>3D-Lens browse Images as 3D moving Scenes</title>
+    <title id=t1>Discover & Make 3D deco from 2D images </title>
   <!--  ojo=" sombra capaba el scrol"   y missing <!DOCTYPE html> rompia los css+
      -->
-      <link rel="stylesheet" type="text/css" href="./css/gallecols.css">
-      <link rel="stylesheet" type="text/css" href="./css/galleclic.css"> 
       <link rel="stylesheet" type="text/css" href="./css/sombra.css" >
-   
+        <link rel="stylesheet" type="text/css" href="css/gal.css" >
+
 <style>
 body {     background:#f4eBdB none repeat scroll 0 0; 
 	/* esto mata el scroll   overflow: hidden; */
@@ -71,9 +70,8 @@ no loc <!DOCTYPE html>
 </head>
 
 <body>
-<div class="ScriptTop">  <!-- cj2024 ==================GALLERY=====TOP======================= -->
-  <div class="rt-container">
-     <span style="color: grey">gallery❮  &nbsp; </span>
+ <!-- cj2024 ==================MENU=====TOP=======================
+ 
     &nbsp; <img  src="./thumb/wingfoil3.jpg"><a href=./keyr.html>Solid</a>  
     &nbsp; <img  src="./thumb/planet.jpg"><a href=./planet.html>Planet</a> 
         &nbsp;  <img src="./thumb/tiles.jpg"><a href=./tile.html>Math</a>  
@@ -83,75 +81,17 @@ no loc <!DOCTYPE html>
   
     &nbsp; <img  src="./thumb/dsci-byUrl.jpg" height=11px><a href=./visual-plotly.html>R&D+i</a> 
     &nbsp;   <a href=./details.html>we<img src=zrydysML.png height=11px>ZryDys</a>  
-   <span style="color: grey; halign: left">  &nbsp; ❯explore right pane</span> 
-    </div>
-</div>
+  -->
 
-<header class="ScriptHeader">
-    <div class="rt-container">
-    	<div class="col-rt-12">
-        	<div class="rt-heading"><!-- cj2024 ---------------head----> 
-	<h2 id="movpic-free-transform-your-images-into-clips">Solid – Transform images into 3D volumes - free by ZryDys</h2>
-             </div>
-        </div>
-    </div>
- </header>
-
-
-<section>
-    <div class="rt-container">
-          <div class="col-rt-12">
-              <div class="image-gallery"> 
-               <input id="tab6" type="radio" name="tabs" checked="" onclick=' see("wingfoil",0xa1a1a2 ); ' > 
-                    <!-- just change checked! -->
-                  <label for="tab6"><img  src="./thumb/wingfoil3.jpg"></label> 
-                <input id="tabC" type="radio" name="tabs" onclick=' see("tetra",0xa1a12a ); '> 
-                  <label for="tabC"><img  src="./thumb/tetra3.jpg"></label> 
-                 <input id="tabN" type="radio" name="tabs"  onclick=' see("noc",0x1111aa,"")' > 
-                  <label for="tabN"><img  src="./thumb/noc3.jpg"></label>		  
-   
-         <input id="tab7" type="radio" name="NOtabs" onclick=' see("kite",0x41a19a ); '>  <!-- noTabs save us link to content BUT is best to link to return to tab - when other tabs are linked -->
-                  <label for="tab7"><img  src="./thumb/kite3.jpg"></label> 
-                  
-         <input id="tabT" type="radio" name="tabs" onclick=' see("tactile",0x41a19a ); '> 
-                  <label for="tabT"><img src="./thumb/tactile3.jpg"></label>  
-                  
-           	           <input id="tab3" type="radio" name="tabs">
-                  <label for="tab3"> <center>Try!</center>  </label> 
-                             <input id="tab2" type="radio" name="tabs" onclick=' see("broach",0xa1611a ); '>
-                  <label for="tab2"><img  src="./thumb/cune3b.jpg"></label> 
-            
-                   <input id="tabI" type="radio" name="tabs" onclick=' see("inkkey",0xff385c ); '>
-                  <label for="tabI"><img  src="./thumb/ink3.jpg"></label> 
-                   <input id="tab5" type="radio" name="tabs">
-                  <label for="tab5"><img  src="./thumb/planet.jpg"></label> 
-           
-           
-              <input id="tab8" type="radio" name="tabs"> 
-                  <label for="tab8"><img  src="./forest.jpg"></label> 
-                             
-      
-                   <input id="tabc" type="radio" name="tabs"> 
-                  <label for="tabc"><img  src="./wall/tofractal.jpg"></label>   
-                  
-                               <input id="taba" type="radio" name="tabs"> 
-                  <label for="taba"><img  src="./thumb/dsci-byUrl.jpg"></label> 
-              <input id="tabd" type="radio" name="tabs"> 
-                  <label for="tabd"> </label>   
-                  
-             
-                               <!-- END of labels 1 to 9 a b c          
-   tabc only with margin: 0 0 2px; and max-hei 40
-                 
-                 AVOID REPEAT section content or break   <section id="content1">   <a href=./tile.html>
-                      -->   
-                 
-    <section id="content6"><!-- cj2024 ---------------SECT1main----> 
+ 
+	<h2 id="movpic-free-transform-your-images-into-clips">Discover & Make 3D deco from 2D images </h2>
+ 
   
 <p>
 You are browsing internet content through <b>3D-lenses</b> with volume effects !
 <small>Navigate the 3D scene with VR, mouse, or keyboard</small>
 </p>
+	              
 <!--
 OK tested <small onclick=' document.getElementById("cj").innerHTML = ""  ;  alert("vv");    document.getElementById("cj").setAttribute("data-src", "./models/tetra.stl" ) ; alert("uuu"+document.getElementById("cj").getAttribute("data-src"));    STLViewerEnable("stlviewer"); '>tetra</small>
 <small onclick='cjuu("./models/tetra.stl","");' >tr</small>
@@ -160,7 +100,8 @@ OK tested <small onclick=' document.getElementById("cj").innerHTML = ""  ;  aler
 <div id="infoButton" style="z-index: 2; background: none; opacity: 0.7; position: absolute; top: 124px; left: 14px;" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><a href="javascript:alert('This by ZryDys')"><span class="ui-button-text"><img width="32" height="32" src="bluef.png"></span></a></div>
 -->
 <!--div class=stlviewer data-src=https://tonybox.net//objects/keystone/keystone.stl data-rotate=x data-zdistance=12 -->
- 
+   <div id="cjcune" class=nostlviewer dsrc=00 data-src=./models/nocr.stl  data-rotate=c data-zdistance=2.2></div>
+
 <div id="cj" class=stlviewer dsrc=00 data-src=wingfoil.stl  data-rotate=c data-zdistance=2.2 NOstyle="width:70%; height: 50%;">
 
 </div>
@@ -169,65 +110,10 @@ OK tested <small onclick=' document.getElementById("cj").innerHTML = ""  ;  aler
  check the author & publisher <a id=cj3 target=_new href=noceanous.com>noceanous.com</a> copyrights.   
   <span id=cj4>  </span>  	<span id=cj2></span>
  </p>
- 
-<small>
-<li> Send your Kudos or donate to  authors and original publishers. Protect viewers and original authors: <a href="mailto:zrydys@G mail .com?subject=report">Report</a> </li>
-<li> The free  visualisation might miss details; you can register or email to ZryDys @gmail to enquire about fine quality. </li>
-<li> Web rendering Thanks to Three.js sw (Ricardo Cabello aka MrDoob & all) and MIT licensed browsing code  by Anthony Biondo, with CC-BY-SA 4.0 notes.</li>
-</small> 
 
- </section> <!-- cj2024 ---------------SECT1main----> 
-      
-    <section id="content2"> <a href=./tiles.html>ZryDys' Tiles: click this screenshot to visit live <br/>
-    <img src=./thumb/alhambra.jpg height=55px> </a> ..
-   </section> 
 
-  <section id="content3"><!-- cj2024 ---------------SECT3TRY---->  
-
-<small> &nbsp;   &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <span style='align: right;'>
-ZryDys R&D boosted by Agile, CI, and Symmetry-Model </span></small>
-   </section>  <!-- cj2024 ---------------SECT3TRY---->    
-<section id="content4"> <a href=./escher3D.html>ZryDys' Cubes: click this screenshot to visit live <br/>
-	   <img src=./thumb/esch3.jpg height=55px> </a> 
-   </section> 
- <section id="content5"> <a href=./planet.html>ZryDys' Planet: click this screenshot to visit live   <br/> 
-	   <img  src="./thumb/planet.jpg"> </a> 
-   </section>   
-               
-
-   <section id="content1"> <a href=./mvpc.html>ZryDys' Maths: click the image to visit live  <br/>  
-	     	   <a href=./tile.html>   <img src=./thumb/tiles.jpg height=55px> </a>  
-      </section>   
-         <section id="content7"> <a href=./mvpc.html>ZryDys' MovePic: click the image to visit live  <br/>  
-	                <img  src="./thumb/mvpc.jpg">  </a> 
-      </section>  
-         <section id="content8"> <a href=./orbitforest.html>ZryDys' Scenes: click the image to explore live   <br/> 
-	                <img  src="./forest.jpg">  </a>   <br/><a href=./diving.html>ZryDys' Underwater: click the video to explore live   <br/> 
-	                <img  src="./anim/diving.gif">  </a> 
-      </section>   
- 		 
-         <section id="content9"> <a href=./keyr.html>ZryDys' Solids: click the image to explore live   <br/> 
-	                <img  src="./thumb/cune3b.jpg">  </a> 
-	                <div id="cjcune" class=stlviewer dsrc=00 data-src=./models/nocr.stl  data-rotate=c data-zdistance=2.2></div>
-      </section>   
- 		  
-         <section id="contenta"> <a href=./visual-plotly.html>ZryDys' R&D+i Data science: click the image to know more <br/>  
-	                <img  src="./thumb/dsci-byUrl.jpg">  </a> 
-      </section>   
-      
-         <section id="contentb"> <a href=./keyr.html?q=noc>ZryDys' Solid: click the image to explore live   <br/> 
-	            <img  src="./thumb/noc3.jpg">  </a> 
-         </section>   	
-         <section id="contentc"> <a href=./tofractal.html>ZryDys' Fractal: click the image to explore live   <br/> 
-            <img  src="./wall/tofractal.jpg">  </a> 
-         </section>   <!-- cj2024 ------------------------------------------tiny----> 
-            <section id="contentd">  free ZryDys' browsing with effects,      
-            </section>  <!-- cj2024 ------------------------------------------tiny---->  
- 		   </div>
-
-		</div>
-    </div>
-</section>        <!-- cj2024 ==================GALLERY=====ENDS======================= -->                         
+ <hr>
+                      
  
 <script>
 const mens={ 'ink' : 'inkup.io',  'inkkey' : 'inkup.io', 'noc': 'noceanous.com', 'nocr': 'noceanous.com', 'wingfoil': 'printables.com/social/141224' , 'kite': 'printables.com/@samster395',  'tactile': 'Zrydys.github.io', 'broach':'printables.com/@John_56680', };
@@ -253,7 +139,7 @@ function setMsg( q  ) {
 	//console.debug(q,c,msg,mens['ink'],mens[q]); 
 	 
   let li=lic[ q ]; e= document.getElementById("cj4");
-  if (li) 	  e.innerHTML = '(who noted: ' +li +')';   
+  if (li) 	  e.innerHTML = '(: ' +li +')';   
    else   e.innerHTML = '';
 	  
 }
@@ -275,5 +161,88 @@ function see( mod,colo) {
 }
 </script>
 <script src=./jm/stlviewer2.js?v24a></script>
+
+ 
+ 
+<!-- Gallery Section -->
+<div class="gallery-container">
+ <button class="scroll-btn left-btn">&#10094;</button>
+   <div class="gallery">
+
+MAKE
+TOUCH 
+DECO:
+    <!-- best div  li> titul by aut   ?q=   thumb<img src="thumb1.jpg"  alt="Thumbnail 2"> </li>
+    <li> titul2 by aut2   ?q=2   thumb2</li -->
+    <div   onclick="goTo('keyr.html?q=wingfoil&c=0xadadad')">  <img src="thumb/wingfoil3.jpg" > 
+    </div>
+    <div   onclick="goTo('keyr.html?q=tetra&c=0xa1a12a')">  <img src="thumb/tetra3.jpg" > 
+    </div>
+    <div   onclick="goTo('keyr.html?q=noc&c=0x1111aa')">  <img src="thumb/noc3.jpg" > 
+    </div>
+    <div   onclick="goTo('keyr.html?q=kite&c=0x41a19a')">  <img src="thumb/kite3.jpg" > 
+    </div>   
+    <div   onclick="goTo('keyr.html?q=tactile&c=0x41a19a')">  <img src="thumb/tactile3.jpg" > 
+    </div>   
+    <div   onclick="goTo('keyr.html?q=broach&c=0x1111aa')">  <img src="thumb/cune3b.jpg" > 
+    </div>   
+    <div   onclick="goTo('keyr.html?q=inkkey&c=0xff385c')">  <img src="thumb/ink3.jpg" > 
+    </div>   
+ 
+THINK
+TILES    
+MATH:
+   <div   onclick="goTo('tiles.html');">  <img src="thumb/alhambra.jpg" > Tile 
+    </div>
+    <div   onclick="goTo('tofractal.html')"> <img src="wall/tofractal.jpg"  >   Fractal 
+ </div> 
+    <div   onclick="goTo('tile.html')"> <img src="thumb/tiles.jpg "  > tiles
+          </div>
+ 
+SEE: 
+MOVE
+PICS 
+    <div   onclick="goTo('planet.html?q=cach/NS.jpg')"> <img src="cach/NS.jpg" > Next Stop
+    </div>  
+        <div   onclick="goTo('mvpc.html')"> <img src="thumb/mvpc.jpg" > MovePic shader
+    </div> 
+     <div   onclick="goTo('escher3D.html')"> <img src="thumb/esch3.jpg" > Pics in Cubes
+    </div>
+ 
+R&amp;D 
+BI  
+US:
+   <div   onclick="goTo('details.html')">       <img src="thumb/dsci-byUrl.jpg" >about us Agile +CI +Symmetry
+    </div>
+     <div   onclick="goTo('visual-plotly.html')">       <img src="thumb/dsci-byUrl.jpg" >R&D+i Data science
+    </div>  
+ <!--  
+           
+          
+  	    <a href=./planet.html>ZryDys' Planet: click this screenshot to visit live   <br/> 
+	   <img  src="./thumb/planet.jpg"> </a> 
+   
+   TRY
+ ZryDys R&D boosted by Agile, CI, and Symmetry-Model 
+ 
+  
+             -->
+              <!-- cj2024 ==================GALLERY=====ENDS======================= -->    
+DIVE INTO SCENES: 
+     <div   onclick="goTo('diving.html')"> <img src="anim/diving.gif" >diving
+    </div>
+     <div   onclick="goTo('orbitforest.html')"> <img src="anim/forest.gif" >forest
+    </div>
+</div>   <button class="scroll-btn right-btn">&#10095;</button>
+</div> 
+ 
+<script type="text/javascript" src="css/gal.js?v2">smaller safer run gal 1st yet page horizontal scroll widens too much chk overflow etc </script>
+
+<hr/> 
+<small>
+<li> Send your Kudos or donate to  authors and original publishers. Protect viewers and original authors: <a href="mailto:zrydys@G mail .com?subject=report">Report</a> </li>
+<li> The free  visualisation might miss details; you can register or email to ZryDys @gmail to enquire about fine quality. </li>
+<li> Web rendered Thanks to Three.js (R Cabello MrDoob & all) & MIT licensed code by A Biondo with CC-BY-SA 4.0 notes.</li>
+</small> 
 </body>
 </html>
