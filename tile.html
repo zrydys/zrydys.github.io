@@ -13,14 +13,16 @@
     <meta name="license" content="CC-BY ZryDys Cj. M. 2024" />
     <meta name="date" content="2024-05-31" />
     <title id=t1>Alhambra: Play with math & 3D to build tiles tesellations</title>
+ <link rel="Shortcut icon" type="image/png" href="zrydysML.png"  title="ZRyDys" >
+ <link rel="fluid-icon" href="zrydysML.png" title="ZryDys">
+ <link rel="alternate icon" class="js-site-favicon" type="image/png" href="zrydysML.png"> 
 <!--
 
 -->
     <!--  demo=blue cols - styl=click -->
-    <link rel="stylesheet" type="text/css" href="./css/gallecols.css">
-    <link rel="stylesheet" type="text/css" href="./css/galleclic.css">
+     <link rel="stylesheet" type="text/css" href="css/gal.css" > 
     <link rel="stylesheet" type="text/css" href="./css/sombra.css">
-
+<style> .icons img {width: 24px; height: auto;} </style>
  
 	<!--broken script src="//cdn.rawgit.com/mrdoob/three.js/master/build/three.min.js"></scripti
 	<script src="refs/Reflection%20(Three.js)_files/Stats.js"></script>
@@ -58,134 +60,19 @@ refs/Reflection (Three.js)_files/Three.js rev60
  </head>
 
 <body>
-	
-<div class="ScriptTop">  <!-- cj2024 ==================GALLERY=====TOP======================= -->
-  <div class="rt-container">
-     <span style="color: grey">gallery<<   &nbsp; </span>
-    &nbsp; <img  src="./thumb/wingfoil3.jpg"><a href=./keyr.html>Solid</a>  
-    &nbsp; <img  src="./thumb/planet.jpg"><a href=./planet.html>Planet</a> 
-        &nbsp;  <img src="./thumb/tiles.jpg"><a href=./tile.html>Math</a>  
-      &nbsp; <img  src="./forest.jpg"><a href=./orbitforest.html>Scene</a> 
-   &nbsp;   <img  src="./thumb/esch3.jpg"><a href=./escher3D.html>Cubes</a>  
-&nbsp; <img  src="./forest.jpg"><a href=./mvpc.html>MovPic</a>    
-  
-    &nbsp; <img  src="./thumb/dsci-byUrl.jpg" height=11px><a href=./visual-plotly.html>R&D+i</a> 
-    &nbsp;   <a href=./details.html>we ZryDys</a>  
-   <span style="color: grey; halign: left">  &nbsp; >>explore right pane</span> 
-    </div>
-</div>
-<header class="ScriptHeader">
-    <div class="rt-container">
-    	<div class="col-rt-12">
-        	<div class="rt-heading">
+
 				<h2 id="alhambra-by-zrydys">Alhambra: Play with maths to build tiles & 3D tesellations   </h2>
-
-             </div>
-        </div>
-    </div>
- </header>
-
-
-<section>
-    <div class="rt-container">
-          <div class="col-rt-12">
- 
-              <div class="image-gallery"> 
-                  <input id="tab1" type="radio" name="tabs" checked=""> <!-- jusch change checked! -->
-                  <label for="tab1"><img src="./thumb/tiles.jpg"></label>  
-           	           <input id="tab3" type="radio" name="tabs">
-                  <label for="tab3">  try </label> 
-                             <input id="tab2" type="radio" name="tabs">
-                  <label for="tab2"><img  src="./thumb/alhambra.jpg"></label> 
-            
-                   <input id="tab4" type="radio" name="tabs">
-                  <label for="tab4"><img  src="./thumb/esch3.jpg"></label> 
-                   <input id="tab5" type="radio" name="tabs">
-                  <label for="tab5"><img  src="./thumb/planet.jpg"></label> 
-                   <input id="tab6" type="radio" name="tabs">
-                  <label for="tab6"><img  src="./thumb/wingfoil3.jpg"></label> 
-            <input id="tab7" type="radio" name="tabs"> 
-                  <label for="tab7"><img  src="./thumb/mri.jpg"></label> 
-              <input id="tab8" type="radio" name="tabs"> 
-                  <label for="tab8"><img  src="./forest.jpg"></label> 
-                               <input id="tab9" type="radio" name="tabs"> 
-                  <label for="tab9"><img  src="./thumb/cune3b.jpg"></label> 
-                  
-                                   <input id="tabb" type="radio" name="tabs"> 
-                  <label for="tabb"><img  src="./thumb/noc3.jpg"></label>
-                   <input id="tabc" type="radio" name="tabs"> 
-                  <label for="tabc"><img  src="./wall/tofractal.jpg"></label>   
-                  
-                               <input id="taba" type="radio" name="tabs"> 
-                  <label for="taba"><img  src="./thumb/dsci-byUrl.jpg"></label> 
-              <input id="tabd" type="radio" name="tabs"> 
-                  <label for="tabd"> </label>   
-                  
-             
+     
                                <!-- END of labels 1 to 9 a b c          
    tabc only with margin: 0 0 2px; and max-hei 40
                       -->   
+ Zoom & Navigate with your mouse, VR, or keyboard to discover a 3D world behind the first view. 
                
-    <section id="content1"><!-- cj2024 ---------------SECT1main----> 
- ZryDys' math: play with 3D boxes & maths: create <a href=./tile.html> Tiles</a>, <a href=./tiles.html> Alhambra tesellations</a>,.. <br/>
-
+ 
 	<div id="scene-container"  cj="uu" style="width: 80%; height: auto;" >   </div> 
 	<!-- Our <canvas> will be inserted here 	 ( Orbit with your mousewheel to change distance/color )
  <canvas id="canvas"></canvas> tampoco era el fallo width=80% height=70% sin style -->
-   </section> <!-- cj2024 ---------------SECT1main----> 
-      
-        <section id="content2"> <a href=./tiles.html>ZryDys' Tiles: click this screenshot to visit live <br/>
-	   <img src=./thumb/alhambra.jpg height=55px> </a> ..
-	   <a href=./tile.html>   <img src=./thumb/tiles.jpg height=55px> </a>
-	       </section> 
-	   <section id="content3"><!-- cj2024 ---------------SECT3TRY---->    <p>ZryDys brings here free effect and image browsing with special effects: </p> 
-	   <li>   Some Controls over the clips are visited by Premium (+Beta) first,</li> 
-	    <li>    Registered users have more controls , and   </li> 
-	   <li>   gradually more functionalities are realeased to free browsing (check soon)  </li> 
-   </section>  <!-- cj2024 ---------------SECT3TRY---->       
-<section id="content4"> <a href=./escher3D.html>ZryDys' Cubes: click this screenshot to visit live <br/>
-	   <img src=./thumb/esch3.jpg height=55px> </a> 
-   </section> 
- <section id="content5"> <a href=./planet.html>ZryDys' Planet: click this screenshot to visit live   <br/> 
-	   <img  src="./anim/planet.gif"> </a> 
-   </section>   
-   <section id="content6"> <a href=./keyr.html>ZryDys' Solid: click the image to visit live   <br/>  
-	                <img  src="./thumb/wingfoil3.jpg">  </a> 
-      </section>                  
-
-   <section id="content7"> <a href=./mvpc.html>ZryDys' MovePic: click the image to visit live  <br/>  
-	                <img  src="./thumb/mri.jpg">  </a> 
-      </section>   
-      
-         <section id="content8"> <a href=./orbitforest.html>ZryDys' Scenes: click the image to explore live   <br/> 
-	                <img  src="./anim/forest.gif">  </a> 
-	                <a href=./diving.html>ZryDys' Scenes: click the video to explore live   <br/> 
-	                <img  src="./anim/diving.gif">  </a> 
-      </section>   
- 		 
-         <section id="content9"> <a href=./keyr.html>ZryDys' Solids: click the image to explore live   <br/> 
-	                <img  src="./thumb/cune3b.jpg">  </a> 
-      </section>   
- 		  
-         <section id="contenta"> <a href=./visual-plotly.html>ZryDys' R&D+i Data science: click the image to know more <br/>  
-	                <img  src="./thumb/dsci-byUrl.jpg">  </a> 
-      </section>   
-      
-         <section id="contentb"> <a href=./keyr.html?q=noc>ZryDys' Solid: click the image to explore live   <br/> 
-	            <img  src="./thumb/noc3.jpg">  </a> 
-         </section>   	
-         <section id="contentc"> <a href=./tofractal.html>ZryDys' Fractal: click the image to explore live   <br/> 
-            <img  src="./wall/tofractal.jpg">  </a> 
-         </section>   <!-- cj2024 ------------------------------------------tiny----> 	
-        <section id="contentd">  free ZryDys' browsing with effects,      
-                    </section>  <!-- cj2024 ------------------------------------------tiny---->  
- 			  </div>
-
-		</div>
-    </div>
-</section>        <!-- cj2024 ==================GALLERY=====ENDS======================= -->                         
-
-<small> &nbsp;   &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <span style='align: right;'>
+  <small> &nbsp;   &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <span style='align: right;'>
 ZryDys R&D boosted by Agile, CI, and Symmetry-Model </span></small>
 
 <script type=module>
@@ -383,7 +270,98 @@ camera.rotation.z += 0.003;   // or cam.rot or controls  or auto rot or .01 fast
  
 }
 </script>
+<hr>
+<!--    st        galll   -->
+ 
+<!-- Gallery Section -->
+<div class="gallery-container">
+ <button class="scroll-btn left-btn">&#10094;</button>
+  <div class="gallery">
+SEE: 
+MOVE
+PICS 
+    <div   onclick="goTo('planet.html?q=https://img.tapimg.net/market/images/4d4d88f02aba3559a8ecd7e4498def05.jpg')">   <img src="thumb/camp.jpg">Camper Van
+    </div>
+    <div   onclick="goTo('planet.html?q=cach/CA.jpg')"> <img src="cach/CA.jpg"  > MariamCA
+    </div>
+    <div  onclick="goTo('planet.html?q=cach/MD.jpg')"> <img src=thumb/merge.jpg  > Merge
+    </div>
+    <div  onclick="goTo('planet.html?q=thumb/elvis-always.jpg')"> <img src='anim/elvis.gif'  > Elvis Piano
+    </div>   
 
+    <div   onclick="goTo('planet.html?q=cach/M.jpg')"> <img src="cach/M.jpg"  > Museums
+    </div>
+    <div   onclick="goTo('planet.html?q=cach/NS.jpg')"> <img src="cach/NS.jpg" > Next Stop
+    </div>
+    <div  onclick="goTo('planet.html?q=cach/SG.jpg')">     <img src="cach/SG.jpg" alt="9">Sigillum
+        </div>
+DIVE INTO SCENES: 
+    <!-- Add more thumbnails here -->
+    <div   onclick="goTo('diving.html')"> <img src="anim/diving.gif" >diving
+    </div>
+     <div   onclick="goTo('orbitforest.html')"> <img src="anim/forest.gif" >forest
+    </div>
+ 
+MAKE
+TOUCH
+DECO:
+    <!-- best div  li> titul by aut   ?q=   thumb<img src="thumb1.jpg"  alt="Thumbnail 2"> </li>
+    <li> titul2 by aut2   ?q=2   thumb2</li -->
+    <div   onclick="goTo('keyr.html?q=wingfoil&c=0xadadad')">  <img src="thumb/wingfoil3.jpg" > 
+    </div>
+    <div   onclick="goTo('keyr.html?q=tetra&c=0xa1a12a')">  <img src="thumb/tetra3.jpg" > 
+    </div>
+    <div   onclick="goTo('keyr.html?q=noc&c=0x1111aa')">  <img src="thumb/noc3.jpg" > 
+    </div>
+    <div   onclick="goTo('keyr.html?q=kite&c=0x41a19a')">  <img src="thumb/kite3.jpg" > 
+    </div>   
+    <div   onclick="goTo('keyr.html?q=tactile&c=0x41a19a')">  <img src="thumb/tactile3.jpg" > 
+    </div>   
+    <div   onclick="goTo('keyr.html?q=broach&c=0x1111aa')">  <img src="thumb/cune3b.jpg" > 
+    </div>   
+    <div   onclick="goTo('keyr.html?q=inkkey&c=0xff385c')">  <img src="thumb/ink3.jpg" > 
+    </div>   
+ 
+THINK
+TILES
+FRACT
+MATH:
+   <div   onclick="goTo('tiles.html');">  <img src="thumb/alhambra.jpg" > Tile 
+    </div>
+    <div   onclick="goTo('tofractal.html')"> <img src="wall/tofractal.jpg"  >   Fractal 
+ </div>
+    <div   onclick="goTo('tile.html')"> <img src="thumb/tiles.jpg "  > tiles
+          </div>    
+    <div   onclick="goTo('glsl-fractal.html')"> <img src="anim/glslfract.gif"  >   Fractal shader
+ </div>          
+          
+R&amp;D
+BI
+US:
+   <div   onclick="goTo('details.html')">       <img src="thumb/dsci-byUrl.jpg" >about us Agile +CI +Symmetry
+    </div>
+     <div   onclick="goTo('visual-plotly.html')">       <img src="wall/z-datsci.jpg" >R&D+i Data science
+    </div>  
+ 
+<!--beware small over div broke all scrolls !! -->
+</div>   <button class="scroll-btn right-btn">&#10095;</button>
+</div>
+<script type="text/javascript" src="css/gal.js">smaller safer run gal 1st yet beware not small across divs </script>
+
+
+<hr>
+<div class="icons">  <!-- cj2024 ==================GALLERY=====TOP======================= -->
+    &nbsp; <img  src="./thumb/wingfoil3.jpg"><a href=./keyr.html>Solid</a>  
+    &nbsp; <img  src="./thumb/planet.jpg"><a href=./planet.html>Planet</a> 
+        &nbsp;  <img src="./thumb/tiles.jpg"><a href=./tile.html>Math</a>  
+      &nbsp; <img  src="./forest.jpg"><a href=./orbitforest.html>Scene</a> 
+   &nbsp;   <img  src="./thumb/esch3.jpg"><a href=./escher3D.html>Cubes</a>  
+&nbsp; <img  src="./forest.jpg"><a href=./mvpc.html>MovPic</a>    
+  
+    &nbsp; <img  src="./thumb/dsci-byUrl.jpg" height=11px><a href=./visual-plotly.html>R&D+i</a> 
+    &nbsp;   <a href=./details.html>we ZryDys</a>  
+</div>
+ 
 </body>
 </html>
 
