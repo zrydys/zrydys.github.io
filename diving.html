@@ -168,7 +168,11 @@ camera.lookAt(0, 0, 0); //cj
 light.position.set(0, 25, 20);
 scene.add(light);
 	/* 
-      
+ 
+  |y        Zen
+  | /z S? N   E.   Forw
+  |/___x  W? E  N.  Strbr
+            Nad      
       
       */
       
@@ -177,7 +181,7 @@ scene.add(light);
 
  //BG ENV =====================================================
  scene.background = 0x5577aa;
- const bgdir='cubdiv/'; //cubsgx/ cubead/
+ const bgdir='cubmau/'; //cubsgx/ cubead/ cubcon cubmau
    const bgloader = new THREE.CubeTextureLoader();
   const bg0texture = bgloader.load([ //NO WARN WITH 512X512 BUT BLACK
  	   './thumb/s.png',  //s x- sou must be 512x or more
