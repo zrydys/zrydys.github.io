@@ -177,6 +177,7 @@ scene.add(light);
 
  //BG ENV =====================================================
  scene.background = 0x5577aa;
+ const bgdir='cubegx/'; //cubegx/ cubead/
    const bgloader = new THREE.CubeTextureLoader();
   const bg0texture = bgloader.load([ //NO WARN WITH 512X512 BUT BLACK
  	   './thumb/s.png',  //s x- sou must be 512x or more
@@ -187,12 +188,12 @@ scene.add(light);
 		'./thumb/w.png', //o z- 
     ]); //
       const bgtexture = bgloader.load([ 
-   './cubead/px.png',  //s x- sou must be 512x or more  ADOB x+
-		   './cubead/nx.png', //n x+ nort   AD x-
-		   './cubead/py.png',// ceil  y+ all must be square
- 		   './cubead/ny.png',  // floo  y-
-		   './cubead/pz.png', //e z+ 
-		'./cubead/nz.png', //o z- 
+   bgdir+'px.png',  //s x- sou must be 512x or more  ADOB x+
+		   bgdir+'nx.png', //n x+ nort   AD x-
+		  bgdir+'py.png',// ceil  y+ all must be square
+ 		  bgdir+'ny.png',  // floo  y-
+		  bgdir+'pz.png', //e z+ 
+		bgdir+'nz.png', //o z- 
     ]); //
     
       scene.background = bgtexture; 
@@ -282,7 +283,7 @@ function cjmedu(g) {
 	//   Finally we add   group to the scene
   */
 
-//VIDEO 
+//VIDEO  FalkonOK chrome/r127 raised WebGL: INVALID_VALUE: texImage2D: no video
 console.log( 'vidd '  );
 const video = document.getElementById("video"); //Get   video element:
 // opt  video.onloadeddata = function () {     video.play(); };
