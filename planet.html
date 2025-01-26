@@ -82,8 +82,6 @@
      </head>
 <body>
 <h2>Discover peoples' creations through 3D moving lens</h2>
- <p>
-	Below, you are seeing internet content through <b>Planet-Lens</b>, letting you browse with moving 3D effects:</p>
  
 		 <!-- FALKON OK 'jsm/k.png'  yet FFX cors KO  !! <li id="scene-container0" cj="for 3d canvas fine on li too but pagejs killed canvas"> 
 		  <a href="https://ZryDys.github.io"> ZryDys.github.io </a> - Computer-aided Artistic Creation:
@@ -93,9 +91,16 @@
   cj="for 3d canvas fine on li too but pagejs killed canvas" 
    style="width: 100%; height: auto;" > </div>
 
+- <b>Credits</b> on <b>Image</b>: you are browsing <a id=cj3 target="_blank" href="">...</a> above.  <br/>
+- on <b>Audio</b>: optional independent audio <a id=cja target="_blank" href="//freesound.org/people/numerocuatro">Ancient Mystery sound CC0 by Numero4 @freesound 🔴</a> 
+  <audio  crossorigin="anonymous"  id="audio" controls style="height: 22px;" > 
+	   <source  crossorigin="anonymous"  src="//cdn.freesound.org/previews/747/747154_1694253-lq.mp3" type="audio/mp3">check your browser  audio  </audio>
+ <br/>  <script src="fft-volume-detect.js"></script>
 
-Before saving to video or printing kindly check the authors' copyrights: 
-<a id=cj3 target="_blank" href="">...</a> 
+ 
+
+<small>Before saving into video clip or printing kindly check all authors' copyrights above. (These effects used the online Planet-browser by ZryDys)
+</small>
 
 
 <p>
@@ -104,7 +109,6 @@ Before saving to video or printing kindly check the authors' copyrights:
 optional  “<span style="color: green;" id="bbg">sail.jpeg</span>“  <img src="sail.jpeg" id=ibg alt="bg" crossorigin='anonymous' width=88/> ) through animated lenses.</p>
  
 <hr>
-
 <!--    st        galll   -->
  
 <!-- Gallery Section -->
@@ -178,6 +182,7 @@ US:
 <!--beware small over div broke all scrolls !! -->
 </div>   <button class="scroll-btn right-btn">&#10095;</button>
 </div>
+<script type="text/javascript" src="css/gal.js">smaller safer run gal 1st yet beware not small across divs </script>
 
   <hr>
   
@@ -187,7 +192,6 @@ US:
         <!--script src="/2act/a-goa/lib/three.min.js">console.debug("local3js")</script-->
         <script src="jsm/three.min.js">cjlocal3js</script>
 
-<script type="text/javascript" src="css/gal.js">smaller safer run gal 1st yet page horizontal scroll widens too much</script>
 
  <div class=icons  >
  <span id=cc >ZryDys.github.io/planet.html </span> to navigate⚙️ creations🎼📸 from supported publishers:
@@ -199,10 +203,10 @@ US:
  
 //=============================================================
   cj_params()  ;
- const mens={ 'MD.jpg' : 'Merge with Darkness by (QR in img / here soon)', 
-	  'NS.jpg' : 'The Next Stop by X.com/paranoiddlusion?s=21&t=Y7Vkz-5FGGbo814UUxh4mw ', 
-	  'SR.jpg': 'SeaRangers by NOceaNoUs.com', 
-	  'SG.jpg': 'Sigillum by @ClosedRoomStudio X.com/closedroomstudio',
+ const mens={ 'MD.jpg' : 'game Merge with Darkness by (QR in image)', 
+	  'NS.jpg' : 'game The Next Stop by X.com/paranoiddlusion?s=21&t=Y7Vkz-5FGGbo814UUxh4mw 🐦', 
+	  'SR.jpg': 'game SeaRangers by NOceaNoUs.com', 
+	  'SG.jpg': 'game Sigillum by X.com/closedroomstudio 🐦',
 	   'CA.jpg': 'Portfolio by MarianCustomArt.com' , 
 	   'kite': 'printables.com/@samster395', 
 	   	   'elvis-always.jpg': "Elvis' Always for Piano at MuseScore.com ", 
@@ -234,7 +238,7 @@ function cargaq() { //cj CC-BY @2024  ZryDys & CrlHyn
             //const ee="Please check if URL is reacheable: "+q ;
           //  const ee= "free Zrydys allows images from authors at UppBeat.io X(twimg.com) Vimeo ArtList.io(imgix.net)  facebook(fbcdn.net) PixABay TuneTank GettyImages Linkedin(licdn.com) Dribble WikiMedia.org Deezer FreeToUse PrintAble Pexels DeviantArt ImGur DropBox ...  \n or just gmail us to ZryDys suggesting new domain.\n You attempted: "+q ;
             
-              const ee= "Zrydys navigates authors' creations🎼📸 from supported publishers 🟢Taptap  🔵@Steam  🅿️Pexels 🐦X   ⚠ArtList   🟦Thingiverse  🍀DeviantArt  🟩pixabay   🎵uppBeat    🔵🔴Flickr  🔷Vimeo 🅲GettyImages  💜Deezer   🡥ImGur  🔴FreeSound  🎶musescore  🅕facebook  📘Dropbox... TuneTank Linkdin Dribble WikiMedia FreeToUse PrintAble \n (gmail to ZryDys@ suggesting new sites).\n unavailable: "+q ;
+              const ee= "Zrydys navigates authors' creations🎼📸 from supported publishers 🟢Taptap  🔵@Steam  🅿️Pexels 🐦X   ⚠ArtList   🟦Thingiverse  🍀DeviantArt  🟩pixabay   🎵uppBeat    🔵🔴Flickr  🔷Vimeo 🅲GettyImages  💜Deezer   🡥ImGur  🔴FreeSound  🎶musescore  🅕facebook  📘Dropbox... TuneTank Linkdin Dribble WikiMedia FreeToUse PrintAble 🅰Adobe\n (gmail to ZryDys@ suggesting new sites).\n unavailable: "+q ;
             alert( ee ) ; document.getElementById("eq").innerHTML = ee;
             q="esch4c.jpg";cargaq();
          }
@@ -469,7 +473,7 @@ material5 = new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture( myi
 <a href="https://www.dropbox.com" target="_blank">  <img src="https://cfl.dropboxstatic.com/static/metaserver/static/images/favicon.ico" alt="Dx" /> 📘Dropbox
 </a>
 
-Db Li Wk tk fr pa
+  tk TuneTank Li Linkdin Db Dribble Wk WikiMedia fr FreeToUse  pa PrintAble 🅰Adobe 
 </div>
 
 <!--    en        galll   -->
