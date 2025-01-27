@@ -1,16 +1,29 @@
+// params-cj.js
+// auth: CJ & ZryDys & 
 // license: cc-by ZryDys/CJ 2024 
 // goal: ensures const ui,uv,uo,ue,ua defined and set to defaults or URL !
 // usage: <script src="params-cj.js">cc-by ZryDys/CJ 2024 ensures u* set by url or default</script> 
+// how: devops with agile git node js http server
 
 console.log( 'loading: params-cj.js' );
 
 let ui,uv,uo,ue,ua; //vars
-const umsg={
-	 'MD.jpg' : 'game Merge with Darkness by (QR in image)', //just MD js search txt in a string?
-	'Jelly_Fish' : ' Jelly_Fish @Pr',
+const uMsg={
+	 'MD.jpg' : 'game Merge with Darkness by (QR in image)', //just \bMD\b js search txt in a string?
+	'Jelly_Fish' : ' Jelly_Fish  by Wynn-3D  @T  CC BY-SA thing:6900627',
 	'cubdiv' : ' cubdiv @A',
+		'tetra' : 'Tetrahedron basic object @Pr',
+	'cubcon' : 'Concert 360 scenario by yganko @Ve @Pi free CC-BY AI-gen',
+
 }; 
 
+const uPub={
+	'@Ve':  'vecteezy.com/members/',
+	'@Pi': 'Pinterest',
+		'@T': 'thingiverse.com/',
+
+};
+	
 
 ur = { 'i': ui, 'v': uv, 'o': uo, 'e': ue, 'a': ua };  //key 
 urdef = { 'i': 'ui', 'v': 'v', 'o': 'Jelly_Fish','e': 'cubdiv', 'a': 'ua' };  //key  & bg=e/py.png
