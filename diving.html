@@ -16,7 +16,7 @@
  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="zrydysML.png"> 
  <script src="../../2act/a-goa/lib/three.min.js"> local3js REV127 no transmi no thickn ! </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js">ojo q pilla 128 de cache</script>
-
+<script src="params-cj.js">cc-by ZryDys/CJ 2024 ensures u* set by url or default</script> 
 <!-- DO NOT // NOR /**/ on importmap JSON !! 
 carefull delete olds 122 jsm/three.module.js' doesn't provide an export named: 'SRGBColorSpace'
 <script type=module src=./jsm/loaders/SVGLoader.js> local http  </script>
@@ -181,7 +181,8 @@ scene.add(light);
 
  //BG ENV =====================================================
  scene.background = 0x5577aa;
- const bgdir='cubdiv/'; //cubsgx/ cubdiv/ cubcon cubmau
+ const bgdir=ur.e+'/'; // requires ur from params-cj.js   // bgdir='cubdiv/'; //or cubsgx/ cubdiv/ cubcon cubmau
+
    const bgloader = new THREE.CubeTextureLoader();
   const bg0texture = bgloader.load([ //NO WARN WITH 512X512 BUT BLACK
  	   './thumb/s.png',  //s x- sou must be 512x or more
@@ -226,7 +227,8 @@ function cjmedu(g) {
 	  
 }   
 	//STL slo ===================== async 
-	sloader.load( 		'./models/Jelly_Fish.stl',	// model resource URL to load
+	//sloader.load( 		'./models/Jelly_Fish.stl',	// model resource URL to load
+	sloader.load( 		'./models/'	+ur.o+'.stl',	// requires ur from params-cj.js
 		function ( g ) {	// when resource is loaded STLcalls on geometry // OBJ calls on object!
 			// STL difers from OBJ: in STL is geom! THREE.Object3D.add: object not an instance of THREE.Object3D. 
 			var omesh = new THREE.Mesh( g, material);
@@ -288,7 +290,7 @@ function cjmedu(g) {
   */
 
 //VIDEO  FalkonOK chrome/r127 raised WebGL: INVALID_VALUE: texImage2D: no video
-console.log( 'vidd '  );
+console.log( 'vidd ' ,ur );
 const video = document.getElementById("video"); //Get   video element:
 // opt  video.onloadeddata = function () {     video.play(); };
  
@@ -399,6 +401,6 @@ US:
 <script type="text/javascript" src="css/gal.js">smaller safer run gal 1st yet beware not small across divs </script>
 
 
-
+<span id=cc>protected against copyrighte infringments</span>
 </body>
 </html>
