@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="EN" xml:lang="EN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta name="generator" content="cj.cvs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="ZryDys Cj " />
+    <meta name="copyright" content="CC-BY ZryDys Cj. M. 2024" />
+    <meta name="license" content="CC-BY ZryDys Cj. M. 2024" />
+    <meta name="date" content="2024-05-31" />
+    <title id=t1>Discover peoples' creations through 3D moving lens</title>
+ <link rel="Shortcut icon" type="image/png" href="zrydysML.png"  title="ZRyDys" >
+ <link rel="fluid-icon" href="zrydysML.png" title="ZryDys">
+ <link rel="alternate icon" class="js-site-favicon" type="image/png" href="zrydysML.png"> 
+	<!-- sin paged el 3d va y la impresion pasable
+ 	Planet: Browse internet content under Lens effect .... Lens effect - prev rotating sphere
+ 	-->
+ 
+<style> 
+   /* colors */
+   .sepia { filter: sepia(100%); }
+.huerotate { filter: hue-rotate(180deg); }
+
+   h2,    .css-3d-text {
+    font-size: 26px;
+   color: #075d9f;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 
+        0px 0px 2px rgba(255, 255, 255,  0.6),  
+        1px 1px 3px rgba(255, 255, 255, 0.4),  /* White shadow */
+        2px 2px 5px rgba(122, 110, 239, 0.6),   /* Dark blue shadow */
+         5px 5px 10px rgba(122, 110, 239, 0.3);
+  
+ }
+    .icons img {width: 24px; height: auto;}
+
+</style> 
+    <script id="vertexShader" type="x-shader/x-vertex"> // cj for transforming the vertices.
+				 
+		//layout (std140) 		uniform Matrices {     mat4 pvm;  } ;
+		//in vec4 position;
+		//out vec4 color;  //differ from https://www.lighthouse3d.com/tutorials/glsl-tutorial/hello-world/
+		 
+        void main() { // gl_Position = vec4( position, 1) ;  // faltaba rotat for non flat
+			 gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1) ; 
+			// gl_Position = projectionMatrix * modelViewMatrix * vec4(  projectionMatrix * modelViewMatrix * position, 1) ;
+			 }
+    </script>
+        <script id="fragmentShader" type="x-shader/x-fragment"> // cj all fragments color:
+		       uniform vec2 u_resolution;
+        uniform float u_time;
+
+ 		vec4  cjImage( in vec2 fragCoord ) // out  fragColor,
+		{
+			// Normalized pixel coordinates (from 0 to 1)
+			vec2 R = u_resolution.xy;
+			vec2 uv = (2.*fragCoord - R) / R.y;
+
+			// color as a vector of 3 components: red, green, blue.
+			vec3 col = vec3(uv.x, uv.y, 0.);
+
+			// draw crosshair
+			if(abs(uv.x) < 0.01 || abs(uv.y) < 0.01) col = vec3(.5);
+
+			// draw circle
+			if(dot(uv, uv) < 0.001) col = vec3(1);
+
+			return vec4(col,1.0);
+		}
+
+        void main() {
+            vec2 st = gl_FragCoord.xy/u_resolution.xy;
+			gl_FragColor = cjImage  (   gl_FragCoord.xy  );  //cjImag on absolut
+        }
+
+    </script>
+
+     <link rel="stylesheet" type="text/css" href="css/gal.css" >
+  <link rel="stylesheet" type="text/css" href="./css/sombra.css" >
+     </head>
+<body>
+<h2>Discover peoples' creations through 3D moving lens</h2>
+ 
+		 <!-- FALKON OK 'jsm/k.png'  yet FFX cors KO  !! <li id="scene-container0" cj="for 3d canvas fine on li too but pagejs killed canvas"> 
+		  <a href="https://ZryDys.github.io"> ZryDys.github.io </a> - Computer-aided Artistic Creation:
+	 </li>-->
+
+ <div id="scene-container"
+  cj="for 3d canvas fine on li too but pagejs killed canvas" 
+   style="width: 100%; height: auto;" > </div>
+
+- <b>Credits</b> on <b>Image</b>: you are browsing <a id=cj3 target="_blank" href="">...</a> above.  <br/>
+- on <b>Audio</b>: optional independent audio <a id=cja target="_blank" href="//freesound.org/people/numerocuatro">Ancient Mystery sound CC0 by Numero4 @freesound 🔴</a> 
+  <audio  crossorigin="anonymous"  id="audio" controls style="height: 22px;" > 
+	   <source  crossorigin="anonymous"  src="//cdn.freesound.org/previews/747/747154_1694253-lq.mp3" type="audio/mp3">check your browser  audio  </audio>
+ <br/>  <script src="fft-volume-detect.js"></script>
+
+ 
+
+<small>Before saving into video clip or printing kindly check all authors' copyrights above. (These effects used the online Planet-browser by ZryDys)
+</small>
+
+
+<p>
+	The above shows internet images (“<span style="color: green;" id="bq" >esch4cc.jpg</span>“ 
+ <img src="esch4.jpg" id=iq alt="q" crossorigin='anonymous' width=88 />   <span style="color: red;" id=eq></span>,
+optional  “<span style="color: green;" id="bbg">sail.jpeg</span>“  <img src="sail.jpeg" id=ibg alt="bg" crossorigin='anonymous' width=88/> ) through animated lenses.</p>
+ 
+<hr>
+<!--    st        galll   -->
+ 
+<!-- Gallery Section -->
+<div class="gallery-container">
+ <button class="scroll-btn left-btn">&#10094;</button>
+  <div class="gallery">
+SEE: 
+MOVE
+PICS 
+    <div   onclick="goTo('?q=https://img.tapimg.net/market/images/4d4d88f02aba3559a8ecd7e4498def05.jpg')">   <img src="thumb/camp.jpg">Camper Van
+    </div>
+    <div   onclick="goTo('?q=cach/CA.jpg')"> <img src="cach/CA.jpg"  > MariamCA
+    </div>
+    <div  onclick="goTo('?q=cach/MD.jpg')"> <img src=thumb/merge.jpg  > Merge
+    </div>
+    <div  onclick="goTo('planet.html?q=thumb/elvis-always.jpg')"> <img src='anim/elvis.gif'  > Elvis Piano
+    </div>   
+    <div   onclick="goTo('?q=cach/M.jpg')"> <img src="cach/M.jpg"  > Museums
+    </div>
+    <div   onclick="goTo('?q=cach/NS.jpg')"> <img src="cach/NS.jpg" > Next Stop
+
+    </div>
+    <div  onclick="goTo('?q=cach/SG.jpg')">     <img src="cach/SG.jpg" alt="9">Sigillum
+        </div>
+DIVE INTO SCENES: 
+    <!-- Add more thumbnails here -->
+    <div   onclick="goTo('diving.html')"> <img src="anim/diving.gif" >diving
+    </div>
+     <div   onclick="goTo('orbitforest.html')"> <img src="anim/forest.gif" >forest
+    </div>
+      <div   onclick="goTo('diving.html?o=tetra&e=cubcon')"> <img src="anim/concert.gif" >Pyramids & Concert
+    </div>
+     <div   onclick="goTo('diving.html?o=menger&e=cubmau')"> <img src="anim/maunakea.gif" >Geometry & Galaxy
+    </div> 
+MAKE
+TOUCH
+DECO:
+    <!-- best div  li> titul by aut   ?q=   thumb<img src="thumb1.jpg"  alt="Thumbnail 2"> </li>
+    <li> titul2 by aut2   ?q=2   thumb2</li -->
+    <div   onclick="goTo('keyr.html?q=wingfoil&c=0xadadad')">  <img src="thumb/wingfoil3.jpg" > 
+    </div>
+    <div   onclick="goTo('keyr.html?q=tetra&c=0xa1a12a')">  <img src="thumb/tetra3.jpg" > 
+    </div>
+    <div   onclick="goTo('keyr.html?q=noc&c=0x1111aa')">  <img src="thumb/noc3.jpg" > 
+    </div>
+    <div   onclick="goTo('keyr.html?q=kite&c=0x41a19a')">  <img src="thumb/kite3.jpg" > 
+    </div>   
+    <div   onclick="goTo('keyr.html?q=tactile&c=0x41a19a')">  <img src="thumb/tactile3.jpg" > 
+    </div>   
+    <div   onclick="goTo('keyr.html?q=broach&c=0x1111aa')">  <img src="thumb/cune3b.jpg" > 
+    </div>   
+    <div   onclick="goTo('keyr.html?q=inkkey&c=0xff385c')">  <img src="thumb/ink3.jpg" > 
+    </div>   
+ 
+THINK
+TILES
+FRACT
+MATH:
+   <div   onclick="goTo('tiles.html');">  <img src="thumb/alhambra.jpg" > Tile 
+    </div>
+    <div   onclick="goTo('tofractal.html')"> <img src="wall/tofractal.jpg"  >   Fractal 
+ </div>
+    <div   onclick="goTo('tile.html')"> <img src="thumb/tiles.jpg "  > tiles
+          </div>    
+    <div   onclick="goTo('glsl-fractal.html')"> <img src="anim/glslfract.gif"  >   Fractal shader
+ </div> 
+ 
+Sci   
+R&amp;D
+BI
+US:
+   <div   onclick="goTo('details.html')">       <img src="thumb/dsci-byUrl.jpg" >about us Agile +CI +Symmetry
+    </div>
+     <div   onclick="goTo('visual-plotly.html')">       <img src="wall/z-datsci.jpg" >R&D+i Data science
+    </div>  
+
+
+
+<!--beware small over div broke all scrolls !! -->
+</div>   <button class="scroll-btn right-btn">&#10095;</button>
+</div>
+<script type="text/javascript" src="css/gal.js">smaller safer run gal 1st yet beware not small across divs </script>
+
+  <hr>
+  
+
+ <!-- 3d ========================================== img -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js">//ok</script>
+        <!--script src="/2act/a-goa/lib/three.min.js">console.debug("local3js")</script-->
+        <script src="jsm/three.min.js">cjlocal3js</script>
+
+
+ <div class=icons  >
+ <span id=cc >ZryDys.github.io/planet.html </span> to navigate⚙️ creations🎼📸 from supported publishers:
+
+ <script>// cj: this rotating img 3D !
+//main: 
+ var q,bg; //trans vars outside funct
+ 
+ 
+//=============================================================
+  cj_params()  ;
+ const mens={ 'MD.jpg' : 'game Merge with Darkness by (QR in image)', 
+	  'NS.jpg' : 'game The Next Stop by X.com/paranoiddlusion?s=21&t=Y7Vkz-5FGGbo814UUxh4mw 🐦', 
+	  'SR.jpg': 'game SeaRangers by NOceaNoUs.com', 
+	  'SG.jpg': 'game Sigillum by X.com/closedroomstudio 🐦',
+	   'CA.jpg': 'Portfolio by MarianCustomArt.com' , 
+	   'kite': 'printables.com/@samster395', 
+	   	   'elvis-always.jpg': "Elvis' Always for Piano at MuseScore.com ", 
+
+	   'ar.jpg': 'Arrival 2016 - review at reelgood.com/search?q=arrival ',
+	    'esch4cc.jpg': 'MCEscher original 1953, with colors added by Zrydys', 
+	   '4d4d88f02aba3559a8ecd7e4498def05.jpg': 'Camper Van: Make it Home - Review at taptap.io/app/33677784 ',
+	   'header.jpg': 'Camper Van: Make it Home - Review at  steamcommunity.com/app/2843190 ',
+	   'broach':'printables.com/@John_56680', };
+ let last= q.replace(/.*\//,''); 
+ let msg=mens[ last ]; msg = msg ? msg : "to display here soon"+last+ mens[ last ];  // ZryDys.github.io
+  let msgurl=msg.replace(/.*\s(\S+\.[io,com,org,*])/gi, "https://$1");
+   e = document.getElementById("cj3");
+	e.innerHTML =msg.replace(/\?.*/,''); //remove ?....
+	 e.href= msgurl; //'https://'+msg;
+
+//=============================================================
+function cargaq() { //cj CC-BY @2024  ZryDys & CrlHyn
+ 
+   loader.load(  q, // "esch4c.jpg"
+        (texture) => {
+            texture1 = texture;
+            start(); animate();
+            capt_scr()  ;           
+            escucha();
+        },
+        undefined, // onProgress 
+        (err) => { 
+            //const ee="Please check if URL is reacheable: "+q ;
+          //  const ee= "free Zrydys allows images from authors at UppBeat.io X(twimg.com) Vimeo ArtList.io(imgix.net)  facebook(fbcdn.net) PixABay TuneTank GettyImages Linkedin(licdn.com) Dribble WikiMedia.org Deezer FreeToUse PrintAble Pexels DeviantArt ImGur DropBox ...  \n or just gmail us to ZryDys suggesting new domain.\n You attempted: "+q ;
+            
+              const ee= "Zrydys navigates authors' creations🎼📸 from supported publishers 🟢Taptap  🔵@Steam  🅿️Pexels 🐦X   ⚠ArtList   🟦Thingiverse  🍀DeviantArt  🟩pixabay   🎵uppBeat    🔵🔴Flickr  🔷Vimeo 🅲GettyImages  💜Deezer   🡥ImGur  🔴FreeSound  🎶musescore  🅕facebook  📘Dropbox... TuneTank Linkdin Dribble WikiMedia FreeToUse PrintAble 🅰Adobe\n (gmail to ZryDys@ suggesting new sites).\n unavailable: "+q ;
+            alert( ee ) ; document.getElementById("eq").innerHTML = ee;
+            q="esch4c.jpg";cargaq();
+         }
+    );    //loader cool 
+ 
+};
+
+var q,bg; //trans vars outside funct
+//=============================================================
+function cj_params() { //cj CC-BY @2024  ZryDys & CrlHyn
+
+    const params = new URLSearchParams(document.location.search);
+    q = params.get("q"); //if (q) { q= q.replace(/ /g,"+") } else {q='esch4cc.jpg'} ; // o
+    q = q? q.replace(/ /g,"+")  : 'esch4cc.jpg'  ;
+    bg = params.get("bg");if (bg) { } else {bg='sail.jpeg'} ; 
+    document.getElementById("bq").innerHTML = q; // <p id=bbg></p>
+    document.getElementById("bbg").innerHTML = bg;  
+    document.getElementById("iq").src=q; // update image src not content !
+    document.getElementById("ibg").src=bg; // update image src not content !  
+  const host = "https://zrydys.github.io"; 
+    const urlpa = `/planet.html?q=${q}&v1`;  //uses ${q} variable
+
+    const url = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&color=002&bgcolor=eff&data="+ encodeURIComponent(host+urlpa);
+
+    document.getElementById("cc").innerHTML = `Tool code 2024 CC-BY-NC-SA ZryDys.Github.io/${urlpa} &url`;
+
+} //func cj params
+	 
+	 
+	 
+	 
+	 
+	 
+ var camera, scene, renderer;
+ var geometry, material, mesh;
+ var  material2;
+ init(); animate();
+
+ function init() {
+
+    camera = new THREE. PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 10000); // cj: 
+    camera.position.z = 210;
+    
+    scene = new THREE. Scene(); // bkgd?
+     scene.background = new THREE.Color('lightcyan');
+    //scene.fog = new THREE.Fog(0xededde, 0, 750); //ededde whites ok // scene.fog = new THREE.Fog(0xeee, 0, 750); //blueish inside
+    
+    //boxgeometry = new THREE.BoxGeometry(100, 120, 150);
+    geometry = new THREE.SphereGeometry(100, 120, 150);  //sphe
+    //antes:
+		  material = new THREE.MeshBasicMaterial({     color: 0xee0044 });
+
+            uniforms = {
+                u_time: { type: "f", value: 1.0 },
+                u_resolution: { type: "v2", value: new THREE.Vector2() },
+                u_mouse: { type: "v2", value: new THREE.Vector2() }
+            }; 
+
+            material2 = new THREE.ShaderMaterial( {  //undef?
+                uniforms: uniforms,
+                vertexShader: document.getElementById( 'vertexShader' ).textContent,
+                fragmentShader: document.getElementById( 'fragmentShader' ).textContent
+            } );
+
+const vertexShader = /*glsl*/`//el 2 necesitaba igual projec y model el matw y 3 ok
+void main() {
+  gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+}
+`;
+
+const fragmentShader = /*glsl*/` //el 2 y mat3 ok
+void main() {
+  gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+}
+`;
+
+const material3 = new THREE.ShaderMaterial({
+  fragmentShader: fragmentShader,
+  vertexShader: vertexShader
+});
+
+const loader = new THREE.TextureLoader(); //texture
+  //fail  loader.setCrossOrigin( 'anonymous' );  //cors
+  //fail  loader.crossOrigin = 'anonymous';PERHAPS Disabling HTTPS-Only Mode in Firefox solve...
+      loader.crossOrigin = '';
+ // anyway ffx fails loader.crossOrigin = null  ; 
+var myimg='http://localhost:8000/k.png'; //python3 -m http.server #%Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:8000/k.png. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing). 
+  myimg='jsm/k.png';  myimg='sail.jpeg'; //#%not same dir//hmm CORS in local
+ myimg='../../2prod/elk-proxy/ProxyHits-2day-byNetwork.PNG';
+
+ myimg='../../2prod/elk-proxy/proxy-by-url.PNG';
+ myimg='cubE.png';
+ myimg='cafe2.jpg'; 
+ myimg='./models/marble.png'; 
+ myimg='esch4cc.jpg'; //Escher Next Dimension
+ myimg=q; //param!!
+// this fails also falkon wo/ msg: var texture = loader.load( myimg ); var material5 = new THREE.MeshLambertMaterial({ map: texture });  //mat5 text image k.png
+
+//const  blob:file:///a3ef88d3-eac1-46de-abeb-08a3fe62ce38
+   
+   //5 new THREE.PlaneGeometry( 1, 1, 1, 1 ),
+   //5 older deprecated. but better cors  FALKON OK 'jsm/k.png'  yet FFX cors KO
+material5 = new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture( myimg ) }) ;
+   //normalMat es color by pos no se ve rotar! y physical too dark
+   
+    mesh = new THREE.Mesh(geometry, material5 );
+    mesh.scale.x = -1;   // cj insid out
+    mesh.scale.x = -2; mesh.scale.y = 2; mesh.scale.z = 2; // cj big ssignificant effect
+    scene.add(mesh);
+    
+        // 2+ lights 1 1 1 or 151 151 151 ?
+        const dirLight1 = new THREE.DirectionalLight( 0xffffff );//ffffff   //no gree 5aff5a
+        dirLight1.position.set( 151, 151, 151 );
+        scene.add( dirLight1 );
+
+        const dirLight2 = new THREE.DirectionalLight( 0xa022a8 ); //002288  //no gree
+        dirLight2.position.set( - 151, - 151, - 151 );
+        scene.add( dirLight2 );
+
+        const ambientLight = new THREE.AmbientLight( 0x222222 );
+        scene.add( ambientLight );    
+    
+    // GLOW glow
+	const haloVertexShader = /*glsl*/`
+      varying vec3 vertexNormal;
+      void main() {
+		 vertexNormal = normal;
+		 gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);   
+	  }  `;
+
+	const haloFragmentShader = /*glsl*/`
+      varying vec3 vertexNormal;
+	  void main() {
+		float intensity = pow(0.9 - dot(vertexNormal, vec3(0, 0, 1.0)), 2.0);
+		gl_FragColor = vec4(0.8, 1.0, 0.6, 0.2) * intensity;
+	  }	`;
+
+	const halo = new THREE.Mesh(
+		 new THREE.SphereGeometry(180, 20, 20),
+		 new THREE.ShaderMaterial(
+			{  vertexShader:haloVertexShader,   fragmentShader:haloFragmentShader,
+			  blending: THREE.AdditiveBlending,   side: THREE.BackSide }
+		 )
+	)
+
+	//scene.add(sphere);
+	halo.scale.set(1.2, 1.2, 1.2);
+	scene.add(halo);
+	
+   // renderer.setSize(326, 324); // medium
+    renderer = new THREE.WebGLRenderer();
+    renderer.setSize(126, 124); //pequen
+    renderer.setSize(window.innerWidth/1.6, window.innerHeight/1.2); // fit /1.2 or /1.6
+        renderer.setSize(window.innerWidth, window.innerHeight); // fit /1.2 or /1.6
+
+    // EITHER, OR document.body.appendChild(renderer.domElement);  //pon the created <canvas>
+    const container = document.querySelector('#scene-container'); // the container that will hold scene
+    container.append(renderer.domElement); // add the created <canvas> element to the cont
+
+            onWindowResize();
+            window.addEventListener( 'resize', onWindowResize, false ); //add onwind
+
+            document.onmousemove = function(e){
+              uniforms.u_mouse.value.x = e.pageX
+              uniforms.u_mouse.value.y = e.pageY
+            }
+
+ }
+
+ function animate() {
+    requestAnimationFrame(animate );
+    mesh.rotation.x += 0.003;
+    mesh.rotation.y += 0.002;
+//            uniforms.u_time.value += clock.getDelta(); //from otr
+    renderer.render(scene, camera);
+ } // cj: end of moving logo img 3D ==========================================
+
+         function onWindowResize( event ) {
+			  console.debug (uniforms , material, material2);
+		//	  console.debug (uniforms , material);
+		// OJITO WIDTH y SCROLL keyr & planet OK but  Tiles falla scroll
+            renderer.setSize( window.innerWidth *1., window.innerHeight );
+            uniforms.u_resolution.value.x = renderer.domElement.width;
+            uniforms.u_resolution.value.y = renderer.domElement.height;
+        }
+
+ </script>
+   
+
+
+<a href="https://taptap.io" target="_blank"><img src="https://icons.duckduckgo.com/ip3/taptap.io.ico" alt="tt " />🟢Taptap
+</a>
+
+<a href="https://steamcommunity.com" target="_blank"><img src="https://icons.duckduckgo.com/ip3/steamcommunity.com.ico" alt="S" /> 🔵@Steam</a>
+
+ <a href="https://www.pexels.com" target="_blank">
+  <img src="//pexels.com/assets/static/images/meta/pexels-icon.png" alt="P" /> 🅿️Pexels
+</a>
+
+<a href="https://x.com" target="_blank"><img src="https://icons.duckduckgo.com/ip3/x.com.ico" alt="X" /> 🐦X
+</a>
+<a href="https://artlist.io" target="_blank">  <img src="https://artlist.io/favicon.ico" alt="A" />  ⚠ArtList 
+</a>
+
+<a href="https://www.thingiverse.com" target="_blank"> <img src="https://thingiverse.com/favicon.ico" alt="T" />  🟦Thingiverse</a>
+ 
+<a href="https://www.deviantart.com" target="_blank">  <img src="https://www.deviantart.com/favicon.ico" alt="dv" /> 🍀DeviantArt</a>
+
+ 
+<a href="https://pixabay.com" target="_blank">  <img src="https://pixabay.com/favicon-32x32.png" alt="px" /> 🟩pixabay </a>
+
+<a href="//uppbeat.io" target="_blank">  <img src="https://cdn.uppbeat.io/images/logo/apple-touch-icon.png" alt="ub" />    🎵uppBeat  </a> 
+<a href="https://flickr.com" target="_blank">  <img src="https://flickr.com/favicon.ico" alt="Fl" /> 🔵🔴Flickr
+</a>
+
+<a href="https://vimeo.com" target="_blank"> <img src="https://vimeo.com/favicon.ico" alt="v" /> 🔷Vimeo
+</a>
+
+ <a href="https://gettyimages.com" target="_blank">  <img src="https://gettyimages.es/favicon.ico" alt="G" /> 🅲GettyImages
+</a>
+
+<a href="https://deezer.com" target="_blank"><img src="//deezer.com/favicon.ico" alt="Dz" /> 💜Deezer</a>
+ 
+<a href="https://imgur.com" target="_blank"><img src="https://i.imgur.com/favicon.ico" alt="I" />  🡥ImGur</a>
+
+<a href="//freesound.org" target="_blank"><img src="//freesound.org/favicon-16x16.png" alt="fs"  /> 🔴FreeSound</a>
+
+<a href="https://musescore.org" target="_blank"> <img src="https://musescore.org/themes/musescore_theme/favicon.ico " alt="ms" /> 🎶musescore</a>
+  
+<a href="https://facebook.com" target="_blank"> <img src="https://cdn2.iconfinder.com/data/icons/social-media-2189/48/1-Facebook-128.png" alt="f" /> 🅕facebook</a>
+ 
+<a href="https://www.dropbox.com" target="_blank">  <img src="https://cfl.dropboxstatic.com/static/metaserver/static/images/favicon.ico" alt="Dx" /> 📘Dropbox
+</a>
+
+  tk TuneTank Li 🟦Linkdin Db Dribble Wk WikiMedia fu FreeToUse  pa 🟧PrintAble 🅰Adobe 
+</div>
+
+<!--    en        galll   -->
+   
+<small>
+
+<p>This MovPic effect is <strong>AI-free</strong>, allowing authentic artistic creations! simply shown in Moving Clips</p>
+<ul>
+<li>Keep as Video? When you hold the source image rights, you could save your creation using a video tool like <a href="https://chromewebstore.google.com/detail/canvas-capture/pnhaaddlgbpchligciolcdjgndcpelee">chrome canvas-capture</a>. Soon registered and beta users could get a GIF (animated picture) or MovieClip here. ZryDys helps you add effects.</li>
+</ul>
+	- ZryDys created this 3D model inspired in the Icy World planet, animation uses Three.js (thanks Ricardo Cabello aka MrDoob and developers) 
+<br>- ZryDys.Github.io  browser code under CC-BY-SA-NC 4.0 has no guarantee: your device GPU could consume extra power on animations.  
+<br> 
+</small>
+
+
+  </body>
+  
+</html>
