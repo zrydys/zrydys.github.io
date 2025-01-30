@@ -26,8 +26,8 @@ const uPub={
 	
 
 ur = { 'i': ui, 'v': uv, 'o': uo, 'e': ue, 'a': ua };  //key 
-urdef = { 'i': 'ui', 'v': 'v', 'o': 'Jelly_Fish','e': 'cubdiv', 'a': 'ua' };  //key  & bg=e/py.png
-urk		=[ 'i', 'v', 'o', 'e', 'a' ]; //Object.keys(ur)
+urdef = { 'i': 'ui', 'v': 'v', 'o': 'Jelly_Fish','e': 'cubdiv', 'a': 'ua', 'q': 'esch4cc.jpg', 'x':-2};  //key  & bg=e/py.png
+urk		=[ 'i', 'v', 'o', 'e', 'a','q','x' ]; //Object.keys(ur)
 urv		=[ undefined, undefined, undefined, undefined, undefined ]; //Object.values(ur)
 
 const u_ = new URLSearchParams(document.location.search); //only used once // js document.location.search fro POST?

@@ -1,10 +1,22 @@
 console.log('gal st parent.');
 
+const parprefix=window.parent.location.href.replace(/\?.*/,'').replace(/.*\//,'');
+
     // Simple navigation function <a href="#" target="_parent">Link Text</a>
     function goTo(page) {
+        if ('?' !== page[0]) {
         //window.location.href = page; // Navigate to the selected page
         window.parent.location.href = page; // Navigate to the selected page
+	    } else {window.parent.location.href = parprefix+page; } 
+        
     }
+
+    function goIn() {
+
+        window.parent.location.href.replace(/\?/,'?x=-2&');
+        
+    }
+
     
     //scroll arrows
     const leftBtn = document.querySelector('.left-btn');

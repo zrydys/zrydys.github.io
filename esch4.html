@@ -10,9 +10,12 @@
     <meta name="copyright" content="CC-BY ZryDys Cj. M. 2024" />
     <meta name="license" content="CC-BY ZryDys Cj. M. 2024" />
     <meta name="date" content="2024-05-31" />
-    <title id=t1>cj 3d cubo</title>
+    <title id=t1>ZryDys browse Images in a 3D rotating cube</title>
+ <link rel="Shortcut icon" type="image/png" href="zrydysML.png"  title="ZRyDys" >
+ <link rel="fluid-icon" href="zrydysML.png" title="ZryDys">
+ <link rel="alternate icon" class="js-site-favicon" type="image/png" href="zrydysML.png"> 
+ <script src="params-cj.js">cc-by ZryDys/CJ 2024 ensures u* set by url or default</script> 
 
- 
 	<!-- sin paged el 3d va y la impresion pasable 
 	-->
  
@@ -77,17 +80,16 @@
 
   </head>
   <body>
-  
 	  <center>
 		 <!-- FALKON OK 'jsm/k.png'  yet FFX cors KO  !! <li id="scene-container0" cj="for 3d canvas fine on li too but pagejs killed canvas"> </li>-->
  <a href="https://ZryDys.github.io"> ZryDys.github.io </a> - Computer-aided Artistic Creation:
-		  </center>
-- 		  
+	 browse Images in a 3D rotating cube	  </center>
+<!--
 - ZryDys created this 3D model inspired in the art of M.C.Escher named "Path of life II" woodcut printed in 1958 
-		  
+	-->	  
  <div id="scene-container" cj="for 3d canvas fine on li too but pagejs killed canvas"  style="width: 100%; height: auto;" > </div>
-
-
+CONTROLS: <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=-2&');}" >inside</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=1&');}" >outside</a>
+| <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'planet.html');}" >planet</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'esch4.html');}" >cubes</a>  | 
 - This animation also made thanks to the team of Three.js developers and Ricardo Cabello aka MrDoob.
 <br>- Most 3D demos published at ZryDys.Github.io were released CC-BY-SA-NC 4.0 except if stated otherwise 
 <br> 
@@ -155,7 +157,7 @@ var myimg='http://localhost:8000/k.png'; //python3 -m http.server #%Cross-Origin
  myimg='../../2prod/elk-proxy/proxy-by-url.PNG';
  myimg='cubE.png';
  myimg='esch4cc.jpg'; //Escher Next Dimension
-
+myimg=ur.q; //params
 // this fails also falkon wo/ msg: var texture = loader.load( myimg ); var material5 = new THREE.MeshLambertMaterial({ map: texture });  //mat5 text image k.png
 
 //const  blob:file:///a3ef88d3-eac1-46de-abeb-08a3fe62ce38
@@ -165,6 +167,8 @@ var myimg='http://localhost:8000/k.png'; //python3 -m http.server #%Cross-Origin
 material5 = new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture( myimg ) }) ;
    
     mesh = new THREE.Mesh(geometry, material5 );
+    mesh.scale.x = 1.5; mesh.scale.y = 1.5; mesh.scale.z = 1.5; // cj big ssignificant effect
+   if (ur.x<0) { mesh.scale.x = -2; mesh.scale.y = 2; mesh.scale.z = 2;} // cj big ssignificant effect
 
     scene.add(mesh);
     
@@ -189,8 +193,8 @@ material5 = new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture( myi
 
  function animate() {
     requestAnimationFrame(animate );
-    mesh.rotation.x += 0.01;
-    mesh.rotation.y += 0.02;
+    mesh.rotation.x += 0.002;
+    mesh.rotation.y += 0.003;
 //            uniforms.u_time.value += clock.getDelta(); //from otr
     renderer.render(scene, camera);
  } // cj: end of moving logo img 3D ==========================================
@@ -204,7 +208,15 @@ material5 = new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture( myi
         }
 
  </script>
-  
+  <hr>
+<p>Explore the Gallery of recent effects / and Click over to visit :
+
+ <iframe id="frameID" src="gallery.html" width=100%  height=40% allowtransparency="true" frameborder="0" allowfullscreen noscroll>
+./ab.html:    </iframe>
+ <iframe id="frameID" src="css/sources.html" width=100%  allowtransparency="true" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+./ab.html:    </iframe> 
+
+
   </body>
   
 </html>

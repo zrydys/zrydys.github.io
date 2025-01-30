@@ -17,7 +17,8 @@
 	<!-- sin paged el 3d va y la impresion pasable
  	Planet: Browse internet content under Lens effect .... Lens effect - prev rotating sphere
  	-->
- 
+  <script src="params-cj.js">cc-by ZryDys/CJ 2024 ensures u* set by url or default</script> 
+
 <style> 
    /* colors */
    .sepia { filter: sepia(100%); }
@@ -96,8 +97,8 @@
   <audio  crossorigin="anonymous"  id="audio" controls style="height: 22px;" > 
 	   <source  crossorigin="anonymous"  src="//cdn.freesound.org/previews/747/747154_1694253-lq.mp3" type="audio/mp3">check your browser  audio  </audio>
  <br/>  <script src="fft-volume-detect.js"></script>
-
- 
+ <br/>
+- CONTROLS: <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=-2&');}" >inside</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=1&');}" >outside</a>| <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'planet.html');}" >planet</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'esch4.html');}" >cubes</a>  | 
 
 <small>Before saving into video clip or printing kindly check all authors' copyrights above. (These effects used the online Planet-browser by ZryDys)
 </small>
@@ -353,8 +354,11 @@ material5 = new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture( myi
    //normalMat es color by pos no se ve rotar! y physical too dark
    
     mesh = new THREE.Mesh(geometry, material5 );
-    mesh.scale.x = -1;   // cj insid out
-    mesh.scale.x = -2; mesh.scale.y = 2; mesh.scale.z = 2; // cj big ssignificant effect
+  mesh.scale.x = 1.5;   // cj insid out
+  //  mesh.scale.x = -2; mesh.scale.y = 2; mesh.scale.z = 2; // cj big ssignificant effect
+       if (ur.x<0) { mesh.scale.x = -2; mesh.scale.y = 2; mesh.scale.z = 2;} // cj big ssignificant effect
+
+    
     scene.add(mesh);
     
         // 2+ lights 1 1 1 or 151 151 151 ?

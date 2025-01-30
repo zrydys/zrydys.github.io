@@ -126,6 +126,9 @@ try {
  
       var scene = new THREE.Scene();
       var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 3, 1000 );          var controls = new THREE.OrbitControls(camera);
+       controls.autoRotate = true; //   requires  controls.update()  // flight
+       controls.autoRotateSpeed = 0.21; //cj slow down
+
       var renderer = new THREE.WebGLRenderer();
       renderer.setSize( window.innerWidth, window.innerHeight );
       
@@ -392,7 +395,7 @@ MATH:
     <div   onclick="goTo('tile.html')"> <img src="thumb/tiles.jpg "  > tiles
           </div>    
 Sci
-R&amp;D
+cR&amp;D
 BI
 US:
    <div   onclick="goTo('details.html')">       <img src="thumb/dsci-byUrl.jpg" >about us Agile +CI +Symmetry
