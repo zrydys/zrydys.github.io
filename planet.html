@@ -101,16 +101,16 @@
  <script>//document.querySelector('source').src=ur.a ; //cj audio options 
  var sound      = document.createElement('audio');
 sound.id       = 'audio';
+sound['crossorigin']= 'anonymous';
 sound.controls = 'controls';
-sound.crossorigin="anonymous"; 
-sound.src      = ur.a;
-sound.type     = 'audio/mpeg';
+sound.src = ur.a;
+sound.type = 'audio/mpeg';
 if (ur.a.includes('g',-1)) sound.type     = 'audio/ogg';
 if (ur.a.includes('3',-1)) sound.type     = 'audio/mpeg';
-sound.innerHTML= '<source  crossorigin="anonymous"  src="${sound.src}" type="${sound.type}">check browser audio';
+sound.innerHTML= "<source  crossorigin='anonymous'  src='${ur.a}' type='${sound.type}'>check browser audio";
 sound.style="height: 22px;";
 document.getElementById('song').appendChild(sound);
- console.log("snd");
+ console.log("snd"+ur.a);
  
   </script>
   <script src="fft-volume-detect.js">cj fft dynamic detection</script>
