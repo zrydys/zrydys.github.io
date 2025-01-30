@@ -96,8 +96,18 @@
 - on <b>Audio</b>: optional independent audio <a id=cja target="_blank" href="//freesound.org/people/numerocuatro">Ancient Mystery sound CC0 by Numero4 @freesound 🔴</a> 
   <audio  crossorigin="anonymous"  id="audio" controls style="height: 22px;" > 
 	   <source  crossorigin="anonymous"  src="//cdn.freesound.org/previews/747/747154_1694253-lq.mp3" type="audio/mp3">check your browser  audio  </audio>
+	   <div id=song></div>
  <br/> 
- <script>document.querySelector('source').src=ur.a ; //cj audio options  </script>
+ <script>document.querySelector('source').src=ur.a ; //cj audio options 
+ var sound      = document.createElement('audio');
+sound.id       = 'audio-player';
+sound.controls = 'controls';
+sound.src      = ur.a;
+sound.type     = 'audio/mpeg';
+document.getElementById('song').appendChild(sound);
+ console.log("snd");
+ 
+  </script>
   <script src="fft-volume-detect.js">cj fft dynamic detection</script>
  <br/>
 - CONTROLS: <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=-2&');}" >inside</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=1&');}" >outside</a>| <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'planet.html');}" >planet</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'esch4.html');}" >cubes</a>  | 
@@ -205,7 +215,7 @@ US:
 
 
  <div class=icons  >
- <span id=cc >ZryDys.github.io/planet.html </span> to navigate⚙️ creations🎼📸 from supported publishers:
+ <span id="cc" >ZryDys.github.io/planet.html </span> to navigate⚙️ creations🎼📸 from supported publishers:
 
  <script>// cj: this rotating img 3D !
 //main: 
