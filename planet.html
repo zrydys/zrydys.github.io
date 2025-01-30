@@ -94,16 +94,22 @@
 
 - <b>Credits</b> on <b>Image</b>: you are browsing <a id=cj3 target="_blank" href="">...</a> above.  <br/>
 - on <b>Audio</b>: optional independent audio <a id=cja target="_blank" href="//freesound.org/people/numerocuatro">Ancient Mystery sound CC0 by Numero4 @freesound 🔴</a> 
-<span id=song></span>
+	   <div id=song></div>
   <audio  crossorigin="anonymous"  id="audio22" controls style="height: 22px;" > 
-	   <source  crossorigin="anonymous"  src="//cdn.freesound.org/previews/747/747154_1694253-lq.mp3" type="audio/mp3">check your browser  audio  </audio>  <div id=song2></div>
+	   <source  crossorigin="anonymous"  src="//cdn.freesound.org/previews/747/747154_1694253-lq.mp3" type="audio/mp3">check your browser  audio  </audio>
  <br/> 
  <script>//document.querySelector('source').src=ur.a ; //cj audio options 
  var sound      = document.createElement('audio');
-let autype     = 'audio/mpeg';
-if (ur.a.includes('g',-1)) autype     = 'audio/ogg';
-if (ur.a.includes('3',-1)) autype     = 'audio/mpeg';
-document.getElementById('song').innerHTML ='<audio crossorigin="anonymous" id="audio" controls style="height: 22px;" ><source crossorigin="anonymous" src="${ur.a}" type="${autype}">check browser audio</audio>"; //appendChild(sound);
+sound.id       = 'audio';
+sound.controls = 'controls';
+sound.crossorigin="anonymous"; 
+sound.src      = ur.a;
+sound.type     = 'audio/mpeg';
+if (ur.a.includes('g',-1)) sound.type     = 'audio/ogg';
+if (ur.a.includes('3',-1)) sound.type     = 'audio/mpeg';
+sound.innerHTML= '<source  crossorigin="anonymous"  src="${sound.src}" type="${sound.type}">check browser audio';
+sound.style="height: 22px;";
+document.getElementById('song').appendChild(sound);
  console.log("snd");
  
   </script>
