@@ -94,13 +94,15 @@
 
 - <b>Credits</b> on <b>Image</b>: you are browsing <a id=cj3 target="_blank" href="">...</a> above.  <br/>
 - on <b>Audio</b>: optional independent audio <a id=cja target="_blank" href="//freesound.org/people/numerocuatro">Ancient Mystery sound CC0 by Numero4 @freesound 🔴</a> 
-	   <div id=song></div>
+	   <div id=song><audio  crossorigin="anonymous"  id="audio" controls controlsList="nodownload" style="height: 22px;" > 
+	   <source  crossorigin="anonymous"  src="https://archive.org/download/elvis-presley_elvis-presley/01%20-%20Are%20You%20Lonesome%20Tonight%20.mp3" type="audio/mp3">check browser audio </audio></div>
   <audio  crossorigin="anonymous"  id="audio22" controls controlsList="nodownload" style="height: 22px;" > 
 	   <source  crossorigin="anonymous"  src="//cdn.freesound.org/previews/747/747154_1694253-lq.mp3" type="audio/mp3">check your browser  audio  </audio>
-	<div >      <audio   id="audio3"  src="//cdn.freesound.org/previews/747/747154_1694253-lq.mp3" controls style="height: 22px;" > 
+	<div style='display:none; visibility: hidden;'>      <audio   id="audio3"  src="//cdn.freesound.org/previews/747/747154_1694253-lq.mp3" controls style="height: 22px;" > 
 	 <source  crossorigin="anonymous"  src="//cdn.freesound.org/previews/747/747154_1694253-lq.mp3" type="audio/mp3">check your browser  audio  </audio></div> 
  <br/> 
  <script>//document.querySelector('source').src=ur.a ; //cj audio options 
+/*
  var sound      = document.createElement('audio');
 sound.id       = 'audio';
 sound['crossorigin']= 'anonymous';
@@ -113,6 +115,7 @@ if (ur.a.includes('3',-1)) sound.type     = 'audio/mp3';
 sound.innerHTML= `<source  crossorigin='anonymous'  src='${ur.a}' type='${sound.type}'>check browser audio`;  // backticks for string interpolation.
 sound.style="height: 22px;";
 document.getElementById('song').appendChild(sound);
+*/
  console.log("snd"+ur.a);
  
   </script>
