@@ -106,7 +106,7 @@ sound.controls = 'controls';
 sound.src = ur.a;
 sound.type = 'audio/mpeg';
 if (ur.a.includes('g',-1)) sound.type     = 'audio/ogg';
-if (ur.a.includes('3',-1)) sound.type     = 'audio/mpeg';
+if (ur.a.includes('3',-1)) sound.type     = 'audio/mp3';
 sound.innerHTML= `<source  crossorigin='anonymous'  src='${ur.a}' type='${sound.type}'>check browser audio`;  // backticks for string interpolation.
 sound.style="height: 22px;";
 document.getElementById('song').appendChild(sound);
