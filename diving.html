@@ -298,6 +298,17 @@ video.addEventListener('error', () => {
  console.log('Error loading the video.'); 
  });// handle errors like video not loading
 
+var playingVideo;    // when true we could call gl.texImage2D
+//var video = document.createElement("video"); video.src = someVideoUrl;
+
+video.addEventListener("playing", function() {
+  playingVideo = true;
+}, true);
+video.addEventListener("ended", function() {
+  video.currentTime = 0;   video.play(); //loop
+}, true);
+ 
+
 function cjvid(g) { //VIDEO  FalkonOK chrome/r127 raised WebGL: INVALID_VALUE: texImage2D: no video - before load console.log( 'vidd ' ,ur );
 
 const videoTexture = new THREE.VideoTexture(video); //Create   video texture:
