@@ -89,10 +89,10 @@ a-goa/lib/three.module.js:nst REVISION = '156
 	<small>Zoom & Dive into this 3D scene with your mouse, VR, or keyboard.</small>
  <div id="cjcontainer" cj="for 3d canvas fine #cjconta=id.cjco"  style="width: 60%; height: auto;" > </div>
  
-
   <video id="video" playsinline webkit-playsinline muted loop autoplay width="120" height="120" 
 	  src="./anim/tonga.mp4"
 	  style="display: none;"> ffmpeg -i ./2act/a-goa/c4cube.gif ./2act/a-goa/c4cube.mp4
+	  shown video: 
   </video>
 
  You are browsing <a id=cj3 target="_blank" href="">3D-SCENE </a> above, online by ZryDys software CC-BY ZryDys 2024 with parts of code under MIT License.
@@ -127,7 +127,7 @@ try {
       var scene = new THREE.Scene();
       var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 3, 1000 );          var controls = new THREE.OrbitControls(camera);
        controls.autoRotate = true; //   requires  controls.update()  // flight
-       controls.autoRotateSpeed = 0.21; //cj slow down
+       controls.autoRotateSpeed = 0.41; //cj slow down
 
       var renderer = new THREE.WebGLRenderer();
       renderer.setSize( window.innerWidth, window.innerHeight );
@@ -187,14 +187,7 @@ scene.add(light);
  const bgdir=ur.e+'/'; // requires ur from params-cj.js   // bgdir='cubdiv/'; //or cubsgx/ cubdiv/ cubcon cubmau
 
    const bgloader = new THREE.CubeTextureLoader();
-  const bg0texture = bgloader.load([ //NO WARN WITH 512X512 BUT BLACK
- 	   './thumb/s.png',  //s x- sou must be 512x or more
-		   './thumb/nn.png', //n x+ nort
-		   './kk.png',// ceil  y+ all must be square
- 		   './thumb/floo.png',  // floo  y-
-		   './thumb/e.png', //e z+ 
-		'./thumb/w.png', //o z- 
-    ]); //
+    //NO WARN WITH 512X512 BUT BLACK
       const bgtexture = bgloader.load([ 
    bgdir+'px.png',  //s x- sou must be 512x or more  ADOB x+
 		   bgdir+'nx.png', //n x+ nort   AD x-
@@ -292,13 +285,27 @@ function cjmedu(g) {
 	//   Finally we add   group to the scene
   */
 
-//VIDEO  FalkonOK chrome/r127 raised WebGL: INVALID_VALUE: texImage2D: no video
-console.log( 'vidd ' ,ur );
 const video = document.getElementById("video"); //Get   video element:
 // opt  video.onloadeddata = function () {     video.play(); };
  
+video.addEventListener('loadeddata', () => {// Wait until the video is loaded and ready to play
+ console.log('Video has loaded and is ready to play.');
+ video.play(); // Automatically play the video when ready
+ cjvid();
+ });
+
+video.addEventListener('error', () => { 
+ console.log('Error loading the video.'); 
+ });// handle errors like video not loading
+
+function cjvid(g) { //VIDEO  FalkonOK chrome/r127 raised WebGL: INVALID_VALUE: texImage2D: no video - before load console.log( 'vidd ' ,ur );
+
 const videoTexture = new THREE.VideoTexture(video); //Create   video texture:
 videoTexture.needsUpdate = true;
+//texture.minFilter = THREE.LinearFilter;
+//texture.magFilter = THREE.LinearFilter;
+//texture.format = THREE.RGBFormat;
+
 const videoMaterial = new THREE.MeshBasicMaterial({
     map: videoTexture,     side: THREE.FrontSide,      toneMapped: false,
 });
@@ -313,7 +320,9 @@ scene.add(vSphere);
 vSphere.position.z = -10;
 
 console.log( 'vidd '  );
+}//cjvid
 
+function cj3mf(g) {
   //3MF Uncaught ReferenceError: assignment to undeclared variable triangleNode
   var loader3 = new THREE.ThreeMFLoader();
   //loader3.addExtension( THREE.ThreeMFLoader.MaterialsAndPropertiesExtension );
@@ -323,6 +332,8 @@ console.log( 'vidd '  );
 		scene.add( object3mf );
 		//render();
   } );  
+}//cj3mf
+
 
 </script>
 
