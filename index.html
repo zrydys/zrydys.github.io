@@ -17,7 +17,8 @@
 	<!-- sin paged el 3d va y la impresion pasable
  	Planet: Browse internet content under Lens effect .... Lens effect - prev rotating sphere
  	-->
- 
+  <script src="params-cj.js">cc-by ZryDys/CJ 2024 ensures u* set by url or default</script> 
+
 <style> 
    /* colors */
    .sepia { filter: sepia(100%); }
@@ -93,11 +94,34 @@
 
 - <b>Credits</b> on <b>Image</b>: you are browsing <a id=cj3 target="_blank" href="">...</a> above.  <br/>
 - on <b>Audio</b>: optional independent audio <a id=cja target="_blank" href="//freesound.org/people/numerocuatro">Ancient Mystery sound CC0 by Numero4 @freesound 🔴</a> 
-  <audio  crossorigin="anonymous"  id="audio" controls style="height: 22px;" > 
+	   <div id=song><audio  crossorigin="anonymous"  id="audio" controls controlsList="nodownload" style="height: 22px;" > 
+	   <source  crossorigin="anonymous"  src="https://archive.org/download/elvis-presley_elvis-presley/01%20-%20Are%20You%20Lonesome%20Tonight%20.mp3" type="audio/mp3">check browser audio </audio></div>
+  <audio  crossorigin="anonymous"  id="audio22" controls controlsList="nodownload" style="height: 22px;" > 
 	   <source  crossorigin="anonymous"  src="//cdn.freesound.org/previews/747/747154_1694253-lq.mp3" type="audio/mp3">check your browser  audio  </audio>
- <br/>  <script src="fft-volume-detect.js"></script>
-
+	<div style='display:none; visibility: hidden;'>      <audio   id="audio3"  src="//cdn.freesound.org/previews/747/747154_1694253-lq.mp3" controls style="height: 22px;" > 
+	 <source  crossorigin="anonymous"  src="//cdn.freesound.org/previews/747/747154_1694253-lq.mp3" type="audio/mp3">check your browser  audio  </audio></div> 
+ <br/> 
+ <script>document.querySelector('source').src=ur.a ; //cj audio options 
+/*
+ var sound      = document.createElement('audio');
+sound.id       = 'audio';
+sound['crossorigin']= 'anonymous';
+sound.controls = 'controls';
+sound.controlsList="nodownload";
+//no sound.src = ur.a;
+sound.type = 'audio/mpeg';
+if (ur.a.includes('g',-1)) sound.type     = 'audio/ogg';
+if (ur.a.includes('3',-1)) sound.type     = 'audio/mp3';
+sound.innerHTML= `<source  crossorigin='anonymous'  src='${ur.a}' type='${sound.type}'>check browser audio`;  // backticks for string interpolation.
+sound.style="height: 22px;";
+document.getElementById('song').appendChild(sound);
+*/
+ console.log("snd"+ur.a);
  
+  </script>
+  <script src="fft-volume-detect.js">cj fft dynamic detection</script>
+ <br/>
+- CONTROLS: <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=-2&');}" >inside</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=1&');}" >outside</a>| <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'planet.html');}" >planet</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'esch4.html');}" >cubes</a>  | 
 
 <small>Before saving into video clip or printing kindly check all authors' copyrights above. (These effects used the online Planet-browser by ZryDys)
 </small>
@@ -202,7 +226,7 @@ US:
 
 
  <div class=icons  >
- <span id=cc >ZryDys.github.io/planet.html </span> to navigate⚙️ creations🎼📸 from supported publishers:
+ <span id="cc" >ZryDys.github.io/planet.html </span> to navigate⚙️ creations🎼📸 from supported publishers:
 
  <script>// cj: this rotating img 3D !
 //main: 
@@ -353,8 +377,11 @@ material5 = new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture( myi
    //normalMat es color by pos no se ve rotar! y physical too dark
    
     mesh = new THREE.Mesh(geometry, material5 );
-    mesh.scale.x = -1;   // cj insid out
-    mesh.scale.x = -2; mesh.scale.y = 2; mesh.scale.z = 2; // cj big ssignificant effect
+  mesh.scale.x = 1.5;   // cj insid out
+  //  mesh.scale.x = -2; mesh.scale.y = 2; mesh.scale.z = 2; // cj big ssignificant effect
+       if (ur.x<0) { mesh.scale.x = -2; mesh.scale.y = 2; mesh.scale.z = 2;} // cj big ssignificant effect
+
+    
     scene.add(mesh);
     
         // 2+ lights 1 1 1 or 151 151 151 ?
