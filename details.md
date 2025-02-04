@@ -95,8 +95,19 @@ Sample command to reduce fractal size. (@ GitHub.com/ZryDys)
 TBD: minor support:  3d matlab  http://dribbble.com/zrydys   
 
 
+### ZryDys contacts
 
-##### Table of Contents  
+<!--
+- [Facebook ](https://facebook.com/zrydys)
+- [Tiktok ](https://tiktok.com/@zrydys)
+- [YouTube ](https://youtube.com/channel/zrydys)
+- [Instagram ](https://instagram.com/zrydys/)
+-->
+
+- [Discord ](https://discord.com/invite/zrydys)
+
+##### Table of Contents 
+
 [Fractal](#fractal)  
 [Links](#links)  
 
