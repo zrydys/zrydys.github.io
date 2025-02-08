@@ -20,7 +20,25 @@
 <style> 
  
     .iconss img {width: 20px; height: auto;}
-// or style='.iconss img {width: 24px; height: auto;} ' 
+.iconss a {
+  display: inline-block;
+  padding: 2px 3px;
+  background-color: rgba(211, 211, 211, 0.4); /* Light semi-transparent gray */
+  color: #333; /* Dark text for contrast */
+  text-decoration: none; /* Remove the underline */
+  border-radius: 2px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.iconss a:hover {
+  background-color: rgba(169, 169, 169, 0.7); /* Slightly darker gray on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.iconss a:active {
+  background-color: rgba(169, 169, 169, 1); /* Fully solid gray when clicked */
+}    
+/* or style='.iconss img {width: 24px; height: auto;} ' */
 </style>  
  <div class=iconss  >
  <span id=cc ></span>
