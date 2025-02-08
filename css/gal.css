@@ -11,6 +11,7 @@ iover-x auto?
     .gallery {
         display: flex;
         overflow-x: scroll;
+        overflow-y: hidden;
         gap: 8px;
         padding: 8px;
        /* padding-left: 10px; */
@@ -31,10 +32,15 @@ iover-x auto?
         transition: transform 0.2s, opacity 0.2s, border 0.2s;
         border-radius: 8px;
     }
-
+    
+.text-under-image {
+    padding-top: 10px;  /* Adjust as needed */
+    font-size: 1.2em;
+}
   .gallery div img,   .gallery   img,  .NOthumbnail img {
         width: 100%;
-        height: 100%;  /*  60px;*/
+    max-width: 100%;  /* Ensure images don't overflow horizontally */        
+        height: 90%;  /*  60px;*/
         object-fit: cover; /* Ensures images maintain aspect ratio */
         border-radius: 8px;
     }
