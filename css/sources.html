@@ -38,11 +38,25 @@
 .iconss a:active {
   background-color: rgba(169, 169, 169, 1); /* Fully solid gray when clicked */
 }    
+
+.iconsl a:hover::after {
+  content: attr(href); /* CJ after hover show href value */
+  position: absolute;
+  bottom: -25px; /* Position the text below the button */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: #555; /* Gray text color */
+  background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+  padding: 5px;
+  border-radius: 5px;
+}
+
 /* or style='.iconss img {width: 24px; height: auto;} ' */
 </style>  
- <div class=iconss  >
+ <div class="iconss iconsl"  >
  <span id=cc ></span>
-ZryDys.github.io browse⚙️ publishers🎼📸 in 3D:
+ZryDys.github browses⚙️  in 3D content from open publishers🎼📸:
 
 <a href="https://taptap.io" target="_blank"> <img src="https://icons.duckduckgo.com/ip3/taptap.io.ico" alt="tt" />🟢Taptap</a>
 
