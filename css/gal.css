@@ -33,10 +33,13 @@ iover-x auto?
         border-radius: 8px;
     }
     
-.text-under-image {
-    padding-top: 10px;  /* Adjust as needed */
-    font-size: 1.2em;
-}
+ .gallery  { /* .text-under-image*/
+    padding-top: 0px;  /* Adjust as needed .text-under-image*/
+    font-size: 0.7em;
+    line-height: 1;   /* Optional: Makes text spacing more readable */
+    }
+
+
   .gallery div img,   .gallery   img,  .NOthumbnail img {
         width: 100%;
     max-width: 100%;  /* Ensure images don't overflow horizontally */        
