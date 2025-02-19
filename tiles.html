@@ -172,7 +172,16 @@ for (var i in [1,1,1,1,2,2]) {
     // EITHER, OR  document.body.appendChild(renderer.domElement);  //pon the created <canvas>
     const container = document.querySelector('#scene-container'); // Get a reference to the container element that will hold our scene
     container.append(renderer.domElement); // add the created <canvas> element to the cont
-       
+        
+    //RESIZE SET
+        function onWindowResize( event ) {
+            camera.aspect = window.innerWidth / window.innerHeight;
+              camera.updateProjectionMatrix();
+            renderer.setSize( window.innerWidth *.8, window.innerHeight *.7 );
+        }
+    onWindowResize();
+    window.addEventListener('resize', onWindowResize , false);
+      
 	// STATS
 	// stats = new Stats();
 	// stats.domElement.style.position = 'absolute';
