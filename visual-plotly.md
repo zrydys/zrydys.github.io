@@ -13,7 +13,7 @@ ZryDys works on Research, Development, and Innovation (R&D+i), delivering result
 -   e.g. Navigate the 3D world below with your VR or **mouse** to browse data!
      
 
-[2024 Customers' Data in 3 Dimensions  [![](anim/bi.gif){width="19%"}](vis-bi-plotly.html) 
+[   3D-navigate Customers' Data  [![](anim/bi.gif){width="19%"}](vis-bi-plotly.html) 
 
 2025 Operational environment to run Medical MRI image analysis
 [![](https://github.com/dipterix/threeBrain/blob/master/adhoc/demo.gif?raw=true){width="19%"}](https://youtu.be/dSxJqBiw3sk) open sources as https://dipterix.org/threeBrain/
@@ -39,4 +39,4 @@ Discover it live at [ZryDys.github.io/planet.html](//ZryDys.github.io/planet.htm
 
 ------------------------------------------------------------------------
 
-![](zrydysML.png) *ZryDys leverages extensive experience and cutting-edge technologies, committed to providing reliable and efficient solutions to meet clients\' monitoring, service, and recovery needs.*
+*[ZryDys ![](zrydysML.png) ](mailto:zrydys@gmail?subject=visual) leverages extensive experience and cutting-edge technologies, committed to providing reliable and efficient solutions to meet clients\' monitoring, service, and recovery needs.*
