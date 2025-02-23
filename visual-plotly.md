@@ -15,10 +15,9 @@ At **ZryDys**, we transform complex data into intuitive, actionable visual solut
 -   e.g. Navigate the 3D world below with your VR or **mouse** to browse data!
      
 
-[   3D-navigate Customers' Data  [![](anim/bi.gif){width="19%"}](vis-bi-plotly.html) 
+- [3D-navigate Customers Data ![](anim/bi.gif)](vis-bi-plotly.html) 
 
-2025 Operational environment to run Medical MRI image analysis
-[![](https://github.com/dipterix/threeBrain/blob/master/adhoc/demo.gif?raw=true){width="19%"}](https://youtu.be/dSxJqBiw3sk) open sources as https://dipterix.org/threeBrain/
+- Deploy Operational environment for Medical MRI image analysis ![](https://github.com/dipterix/threeBrain/blob/master/adhoc/demo.gif?raw=true) open sources as https://dipterix.org/threeBrain/
 
 
 
