@@ -36,7 +36,16 @@
                  5px 5px 4px rgba(0,0,0,0.31),
                  0px 0px 4px rgba(0,0,0,.2);
  }
-
+    .icons img {width: 24px; height: auto;}
+.iconss a {
+  display: inline-block;
+  padding: 2px 3px;
+  background-color: rgba(211, 211, 211, 0.4); /* Light semi-transparent gray */
+  color: #333; /* Dark text for contrast */
+  text-decoration: none; /* Remove the underline */
+  border-radius: 2px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
 </style> 
     <script id="vertexShader" type="x-shader/x-vertex"> // cj for transforming the vertices.
 				 
@@ -88,10 +97,14 @@
 - ZryDys created this 3D model inspired in the art of M.C.Escher named "Path of life II" woodcut printed in 1958 
 	-->	  
  <div id="scene-container" cj="for 3d canvas fine on li too but pagejs killed canvas"  style="width: 100%; height: auto;" > </div>
-CONTROLS: <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=-2&');}" >inside</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=1&');}" >outside</a>
-| <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'planet.html');}" >planet</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'esch4.html');}" >cubes</a>  | 
-- This animation also made thanks to the team of Three.js developers and Ricardo Cabello aka MrDoob.
-<br>- Most 3D demos published at ZryDys.Github.io were released CC-BY-SA-NC 4.0 except if stated otherwise 
+ <div class="iconss iconsl"  >
+CONTROLS: <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=-2&');}" >inside</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=1&');}" >outside</a>| <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'planet.html');}" >planet</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'esch4.html');}" >cubes</a>  | 
+</div>
+<small>You are Browsing Internet Content: please kindly check original authors' copyrights above Before saving into video clip or printing.  
+</br>- These animations at ZryDys effects-browser also thanks to the team of Three.js developers and Ricardo Cabello aka MrDoob.
+<!--br>- Most 3D demos published at ZryDys.Github.io were released CC-BY-SA-NC 4.0 except if stated otherwise -->
+</small>
+
 <br> 
  <!-- 3d ========================================== img -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js">//ok</script>
