@@ -36,7 +36,15 @@
   
  }
     .icons img {width: 24px; height: auto;}
-
+.iconss a {
+  display: inline-block;
+  padding: 2px 3px;
+  background-color: rgba(211, 211, 211, 0.4); /* Light semi-transparent gray */
+  color: #333; /* Dark text for contrast */
+  text-decoration: none; /* Remove the underline */
+  border-radius: 2px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
 </style> 
     <script id="vertexShader" type="x-shader/x-vertex"> // cj for transforming the vertices.
 				 
@@ -120,9 +128,9 @@ document.getElementById('song').appendChild(sound);
  
   </script>
   <script src="fft-volume-detect.js">cj fft dynamic detection</script>
- <br/>
-- CONTROLS: <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=-2&');}" >inside</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=1&');}" >outside</a>| <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'planet.html');}" >planet</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'esch4.html');}" >cubes</a>  | 
-
+<div class="iconss iconsl"  >
+CONTROLS: <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=-2&');}" >inside</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=1&');}" >outside</a>| <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'planet.html');}" >planet</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'esch4.html');}" >cubes</a>  | 
+</div>
 <small>Before saving into video clip or printing kindly check all authors' copyrights above. (These effects used the online Planet-browser by ZryDys)
 </small>
 
@@ -462,57 +470,8 @@ material5 = new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture( myi
 
  </script>
    
+  <iframe id="iSources" src="css/sources.html" width=100%  allowtransparency="true" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> iSources  </iframe> 
 
-
-<a href="https://taptap.io" target="_blank"><img src="https://icons.duckduckgo.com/ip3/taptap.io.ico" alt="tt " />🟢Taptap
-</a>
-
-<a href="https://steamcommunity.com" target="_blank"><img src="https://icons.duckduckgo.com/ip3/steamcommunity.com.ico" alt="S" /> 🔵@Steam</a>
-
- <a href="https://www.pexels.com" target="_blank">
-  <img src="//pexels.com/assets/static/images/meta/pexels-icon.png" alt="P" /> 🅿️Pexels
-</a>
-
-<a href="https://x.com" target="_blank"><img src="https://icons.duckduckgo.com/ip3/x.com.ico" alt="X" /> 🐦X
-</a>
-<a href="https://artlist.io" target="_blank">  <img src="https://artlist.io/favicon.ico" alt="A" />  ⚠ArtList 
-</a>
-
-<a href="https://www.thingiverse.com" target="_blank"> <img src="https://thingiverse.com/favicon.ico" alt="T" />  🟦Thingiverse</a>
- 
-<a href="https://www.deviantart.com" target="_blank">  <img src="https://www.deviantart.com/favicon.ico" alt="dv" /> 🍀DeviantArt</a>
-
- 
-<a href="https://pixabay.com" target="_blank">  <img src="https://pixabay.com/favicon-32x32.png" alt="px" /> 🟩pixabay </a>
-
-<a href="//uppbeat.io" target="_blank">  <img src="https://cdn.uppbeat.io/images/logo/apple-touch-icon.png" alt="ub" />    🎵uppBeat  </a> 
-<a href="https://flickr.com" target="_blank">  <img src="https://flickr.com/favicon.ico" alt="Fl" /> 🔵🔴Flickr
-</a>
-
-<a href="https://vimeo.com" target="_blank"> <img src="https://vimeo.com/favicon.ico" alt="v" /> 🔷Vimeo
-</a>
-
- <a href="https://gettyimages.com" target="_blank">  <img src="https://gettyimages.es/favicon.ico" alt="G" /> 🅲GettyImages
-</a>
-
-<a href="https://deezer.com" target="_blank"><img src="//deezer.com/favicon.ico" alt="Dz" /> 💜Deezer</a>
- 
-<a href="https://imgur.com" target="_blank"><img src="https://i.imgur.com/favicon.ico" alt="I" />  🡥ImGur</a>
-
-<a href="//freesound.org" target="_blank"><img src="//freesound.org/favicon-16x16.png" alt="fs"  /> 🔴FreeSound</a>
-
-<a href="https://musescore.org" target="_blank"> <img src="https://musescore.org/themes/musescore_theme/favicon.ico " alt="ms" /> 🎶musescore</a>
-  
-<a href="https://facebook.com" target="_blank"> <img src="https://cdn2.iconfinder.com/data/icons/social-media-2189/48/1-Facebook-128.png" alt="f" /> 🅕facebook</a>
- 
-<a href="https://www.dropbox.com" target="_blank">  <img src="https://cfl.dropboxstatic.com/static/metaserver/static/images/favicon.ico" alt="Dx" /> 📘Dropbox
-</a>
-
-  tk TuneTank Li 🟦Linkdin Db Dribble Wk WikiMedia fu FreeToUse  pa 🟧PrintAble 🅰Adobe 
-</div>
-
-<!--    en        galll   -->
-   
 <small>
 
 <p>This MovPic effect is <strong>AI-free</strong>, allowing authentic artistic creations! simply shown in Moving Clips</p>
