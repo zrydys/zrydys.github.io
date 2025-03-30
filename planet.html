@@ -36,7 +36,15 @@
   
  }
     .icons img {width: 24px; height: auto;}
-
+.iconss a {
+  display: inline-block;
+  padding: 2px 3px;
+  background-color: rgba(211, 211, 211, 0.4); /* Light semi-transparent gray */
+  color: #333; /* Dark text for contrast */
+  text-decoration: none; /* Remove the underline */
+  border-radius: 2px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
 </style> 
     <script id="vertexShader" type="x-shader/x-vertex"> // cj for transforming the vertices.
 				 
@@ -120,9 +128,10 @@ document.getElementById('song').appendChild(sound);
  
   </script>
   <script src="fft-volume-detect.js">cj fft dynamic detection</script>
- <br/>
-- CONTROLS: <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=-2&');}" >inside</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=1&');}" >outside</a>| <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'planet.html');}" >planet</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'esch4.html');}" >cubes</a>  | 
+ <br/> <div class="iconss iconsl"  >
 
+- CONTROLS: <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=-2&');}" >inside</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=1&');}" >outside</a>| <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'planet.html');}" >planet</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'esch4.html');}" >cubes</a>  | 
+</div
 <small>Before saving into video clip or printing kindly check all authors' copyrights above. (These effects used the online Planet-browser by ZryDys)
 </small>
 
