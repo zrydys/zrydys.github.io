@@ -5,53 +5,82 @@
   <title>ZryDys Viewer</title>  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
   <!-- Use a modern CSS framework like Bootstrap or use custom styles -->  
-  <link href="[https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css](https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css)" rel="stylesheet">  
+  <ilink href="[https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css](https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css)" rel="stylesheet">  
   <style>  
-    body {  
+    html,body {  
       background: #f8f9fa;  
+        height: 100vh;
+        margin: 0;
     }  
+    NOVAiframe {  
+   /*   height: 100%;  */
+  height: 100vh; /* 100% of the viewport height */
+      width: 100%;  
+      border: none;  
+     display: block;
+    }  
+h2 {
+	color: red;
+}
     header {  
       background: #343a40;  
-      color: white;  
+      color: pink;  
       padding: 1rem 2rem;  
     }  
 
     .iframe-container {  
       position: relative;  
       width: 100%;  
-      height: 90vh;  
+      /* iheight: 90vh;  */
+      height: 100%;  
       border: none;  
       margin-top: 1rem;  
     }  
 
-    iframe {  
-      width: 100%;  
-      height: 100%;  
-      border: none;  
+    header {  
+      background: #343a40;  
+      color: pink;  
+      padding: 1rem 2rem;  
     }  
 
   </style>  
 </head>  
 <body>  
-  <header class="d-flex justify-content-between align-items-center">  
-    <h2 class="m-0">🔍 ZryDys Business Explorer</h2>  
-    <nav>  
-      <a href="det.html?pg=details.html" class="text-light me-3">Details</a>  
-      <a href="det.html?pg=visual-plotly.html" class="text-light me-3">Visual</a>  
-      <a href="det.html?pg=planet.html" class="text-light">Planet</a>  
-    </nav>  
-  </header>  
-
-  <div class="container-fluid iframe-container">  
-    <iframe id="contentFrame" src=""></iframe>  
-  </div>  
-
+      <a href="?pg=index.html" class="text-light me-3">🔍ZryDys</a> |
+      <a href="?pg=details.html" class="text-light me-3">Details</a> |  
+      <a href="?pg=visual-plotly.html" class="text-light me-3">Visual</a> |  
+      <a href="?pg=planet.html" class="text-light">Planet</a> |  
+    <iframe id="contentFrame" src="" style="h2{color:green;};  width: 100%; h2 {color: green} #h2-menu { position: fixed; top: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 10px; border-radius: 6px; font-family: sans-serif; max-width: 200px; z-index: 999; } #h2-menu a { display: block; color: #00f7ff; text-decoration: none; margin-bottom: 5px; font-size: 14px; } #h2-menu a:hover { text-decoration: underline; } /* Style for h2 elements */ h2 { color: #005577; font-family: 'Georgia', serif; font-weight: bold; border-left: 4px solid #00f7ff; padding-left: 10px; margin-top: 40px; }; height: 100vh; "></iframe>  
   <script>  
     const params = new URLSearchParams(window.location.search);  
     //const page = params.get("pg") || "details.html";  
     const page = params.get("pg") || "index.html";  
     document.getElementById("contentFrame").src = page;  
   </script>  
+
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const h2s = document.querySelectorAll('h2');
+    //const h2s = document.getElementById('contentFrame').contentWindow.document.querySelectorAll('h2');
+    if (!h2s.length) return;
+
+    const menu = document.createElement('div');
+    menu.id = 'h2-menu';
+
+    h2s.forEach((h2, index) => {
+      const id = 'h2-' + index;
+      h2.id = id;
+
+      const link = document.createElement('a');
+      link.href = '#' + id;
+      link.textContent = h2.textContent;
+      menu.appendChild(link);
+    });
+
+    document.body.appendChild(menu);
+  });
+</script>
 
 </body>  
 </html>  
