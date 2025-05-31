@@ -81,6 +81,23 @@ h2 {
     document.body.appendChild(menu);
   });
 </script>
+<script> //CJ25: Wait for the iframe to fully load to insert CSS
+    document.getElementById('contentFrame').addEventListener('load', function() {
+      const iframe = document.getElementById('contentFrame');
+      const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+      // Option 1: Inject a style tag
+      const style = iframeDoc.createElement('style');
+      style.textContent = 'h2 { color: purple; }';
+      iframeDoc.head.appendChild(style);
+
+      // Option 2: Inject a link to an external stylesheet 
+      // const link = iframeDoc.createElement('link');
+      // link.rel = 'stylesheet';
+      // link.href = 'style-injection.css'; // must be accessible and contain "h...2
+      // iframeDoc.head.appendChild(link);
+    });
+  </script>
 
 </body>  
 </html>  
