@@ -63,6 +63,8 @@ h2 {
   window.addEventListener('DOMContentLoaded', () => {
     const h2s = document.querySelectorAll('h2');
     //const h2s = document.getElementById('contentFrame').contentWindow.document.querySelectorAll('h2');
+  const iframe = document.getElementById('contentFrame');
+
     if (!h2s.length) return;
 
     const menu = document.createElement('div');
@@ -96,6 +98,28 @@ h2 {
       // link.rel = 'stylesheet';
       // link.href = 'style-injection.css'; // must be accessible and contain "h...2
       // iframeDoc.head.appendChild(link);
+
+
+ const h2s = iframeDoc.querySelectorAll('h2'); // cj build h2-menu     console.debug(h2s);
+	        if (!h2s.length) return;
+
+    const menu = document.createElement('div');
+    menu.id = 'h2-menu';
+
+    h2s.forEach((h2, index) => {
+      const id = 'h2-' + index;
+      h2.id = id;
+
+      const link = document.createElement('a');
+      link.href = '#' + id;
+      link.textContent = h2.textContent;
+      menu.appendChild(link);
+    });
+
+    // parent document.body.appendChild(menu);
+    iframeDoc.body.appendChild(menu);
+
+
     });
   </script>
 
