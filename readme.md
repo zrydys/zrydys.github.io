@@ -1,7 +1,7 @@
 
  [ZryDys](https://zrydys.github.io) 🚀 Transforming the Modern Enterprise in key fronts: 
 
-*Integrate Techs |Warning Data |  Resilient Secure  | Efficient Scale | Digital Value*
+*Integrate Techs | Warning Data |  Resilient Secure  | Efficient Scale | Digital Value*
 ## Integrate Techs
 
 ### Large Technology Integrations
