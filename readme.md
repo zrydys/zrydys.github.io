@@ -6,12 +6,13 @@
 
 ### Large Technology Integrations
 
-Experienced developing large information systems & advanced telecom applications with partners like Catapult, serving Silicon Valley-grade performance needs.  🔗 https://zrydys.github.io  
+Experienced developing large information systems and applications and advanced telecom with partners and enterprise-grade performance needs.  🔗 https://zrydys.github.io  
 
 We help you empower your organization by seamlessly integrating cutting-edge technologies.
 
-* Tailored software applications and infrastructures in large production environments: including manufacturing plants to automotive robots and critical embedded systems.
+* Tailored software applications and infrastructures in large production environments: including  manufacturing robots, international automotive plants, or critical embedded systems.
 - **Client Success:** Engineered telecom applications at **Catapult** serving cutting-edge clients in Silicon Valley, helping develop state-of-the-art systems ahead in a competitive market.
+
 
 ## Warning Data 
 
@@ -72,7 +73,7 @@ These tools and solutions have empowered organizations across various sectors to
 - **Nissan-Renault:** Provided remote operational technology support for global manufacturing plants.
 - **Zurich:** Secured operations of over 200 finance sites through identity federation and SSO solutions.
 - **University Labs:** Conducted pioneering research in security and malware intelligence. 
-
+- We keep using the latest technology [Evolution, following advances from AI 3GPP2 ...](https://zrydys.github.io/mvpc.html?q=https://i.ytimg.com/vi/TJK1PvfAgQU/hq720.jpg)
  
 Our approach has consistently delivered measurable results, including:
 
