@@ -11,7 +11,8 @@ Experienced developing large information systems and applications and advanced t
 We help you empower your organization by seamlessly integrating cutting-edge technologies.
 
 * Tailored software applications and infrastructures in large production environments: including  manufacturing robots, international automotive plants, or critical embedded systems.
-- **Client Success:** Engineered telecom applications at **Catapult** serving cutting-edge clients in Silicon Valley, helping develop state-of-the-art systems ahead in a competitive market.
+- **Client Success:** Engineered telecom applications at Catapult IPO serving cutting-edge clients in Silicon Valley, helping develop state-of-the-art systems ahead in a competitive market.
+- We integrated latest technologies (AI with Cloud n8n logic) and follow advances ([6G communications 3GPP2](https://zrydys.github.io/planet.html?q=https://i.ytimg.com/vi/O6AVpA5GTxA/hq720.jpg) ..) that can help clients.
 
 
 ## Warning Data 
@@ -22,8 +23,9 @@ We help you empower your organization by seamlessly integrating cutting-edge tec
 Leverage advanced data analytics to drive informed decision-making and uncover actionable insights. Experienced automating business intelligence to optimize from complex operational data.  
 - **Client Success:** Delivering Full monitoring and Early-Warning systems  in critical sectors (e.g., Nuclear-Information),  https://zrydys.github.io/visual-plotly.html  
 
-- Delivered [complex BI analyses![](anim/bi.gif)](visual-plotly.html) navigate **complex data** integrating tools like n8n logic and pandas.
+- Delivered [complex BI analyses![](anim/bi.gif)](visual-plotly.html) navigate **complex data** integrating latest tools (Splunk, Grafana, Notebooks pandas..)
  - Real-time data monitoring and predictive analytics can enhance production planning, reduce downtime, and improve component lifecycle management in smart factories.  
+ - Examples of [Sankey Chart connecting investments](https://zrydys.github.io/adapt.html) and our Data Visualisation online [chord](https://zrydys.github.io/chord.html)
 
 
 ## Resilient Secure
@@ -73,7 +75,6 @@ These tools and solutions have empowered organizations across various sectors to
 - **Nissan-Renault:** Provided remote operational technology support for global manufacturing plants.
 - **Zurich:** Secured operations of over 200 finance sites through identity federation and SSO solutions.
 - **University Labs:** Conducted pioneering research in security and malware intelligence. 
-- We keep using the latest technology [Evolution, following advances from AI 3GPP2 ...](https://zrydys.github.io/mvpc.html?q=https://i.ytimg.com/vi/TJK1PvfAgQU/hq720.jpg)
  
 Our approach has consistently delivered measurable results, including:
 
