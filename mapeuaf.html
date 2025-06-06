@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Incentive Housing Locations Map</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <link rel="stylesheet" href="2prod/geo-gis/leaflet/Leaflet-portus-TimeDimension_files//leaflet.css" />
+  <style>
+    #map { height: 600px; }
+  </style>
+</head>
+<body>
+  <h3>Exploring Project Locations for Sailing Guides & Landscape Cameras</h3>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <script src="2prod/geo-gis/leaflet/Leaflet-portus-TimeDimension_files//leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([52.0, 10.0], 5);
+// L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}', {
+//   attribution: '&copy; <a href="https://www.usgs.gov/">USGS</a>',
+//   maxZoom: 16
+// }).addTo(map);
+
+    //L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    L.tileLayer('tiles/{z}-{x}-{y}.png', {
+      maxZoom: 4,
+      minZoom: 4,
+      attribution: 'CC0 Flags World Map zoom out'
+    }).addTo(map);
+
+    // Marker icons
+    const coastalIcon = L.icon({
+      iconUrl: 'https://cdn-icons-png.flaticon.com/512/684/684908.png',
+      iconSize: [25, 25],
+      iconAnchor: [12, 25],
+      popupAnchor: [0, -25]
+    });
+
+    const inlandIcon = L.icon({
+      iconUrl: 'https://cdn-icons-png.flaticon.com/512/854/854878.png',
+      iconSize: [25, 25],
+      iconAnchor: [12, 25],
+      popupAnchor: [0, -25]
+    });
+
+    const locations = [
+      // Italy
+      {name: 'Sambuca di Sicilia, IT', coords: [37.626, 13.514], coastal: false},
+      {name: 'Mussomeli, IT', coords: [37.484, 14.141], coastal: false},
+      {name: 'Penne, IT', coords: [42.363, 14.138], coastal: true},
+      
+      // Croatia
+      {name: 'Legrad, HR', coords: [46.257, 16.853], coastal: false},
+      {name: 'Pula, HR', coords: [44.866, 13.849], coastal: true},
+      {name: 'Split, HR', coords: [43.508, 16.440], coastal: true},
+      
+      // Portugal
+      {name: 'São João da Pesqueira, PT', coords: [41.187, -7.713], coastal: false},
+      {name: 'Belmonte, PT', coords: [40.346, -7.260], coastal: false},
+      {name: 'Penedono, PT', coords: [40.950, -7.413], coastal: false},
+
+      // Slovenia
+      {name: 'Murska Sobota, SI', coords: [46.656, 16.163], coastal: false},
+
+      // Belgium
+      {name: 'Viroinval, BE', coords: [50.097, 4.710], coastal: false},
+      {name: 'Dohan, BE', coords: [50.091, 4.686], coastal: false},
+
+      // Ireland (example central coast)
+      {name: 'Dublin Area, IE', coords: [53.349, -6.260], coastal: true},
+
+      // Sweden
+      {name: 'Götene Municipality, SE', coords: [58.500, 13.200], coastal: true},
+
+      // Germany (Eastern rural)
+      {name: 'Saxony-Anhalt (Elbe River), DE', coords: [51.933, 11.585], coastal: true},
+      {name: 'Brandenburg (Oder River), DE', coords: [52.416, 14.550], coastal: true},
+
+      // Scotland
+      {name: 'Oban, Scotland, GB', coords: [56.414, -5.470], coastal: true},
+      {name: 'Lochcarron, Scotland, GB', coords: [57.430, -5.520], coastal: true}
+    ];
+
+    locations.forEach(loc => {
+      const icon = loc.coastal ? coastalIcon : inlandIcon;
+      L.marker(loc.coords, {icon: icon})
+        .addTo(map)
+        .bindPopup(`<b>${loc.name}</b><br>${loc.coastal ? 'sailing-guides' : 'landscapes'}`);
+    });
+  </script>
+  zrydys.github.io/mapeuaf.html  <a href=https://zrydys.github.io/>ZryDys Home</a>
+</body>
+</html>

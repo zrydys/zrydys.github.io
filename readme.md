@@ -55,7 +55,7 @@ Customer oriented: Providing practical Value from R&D+i innovations or known tec
  
 - **Client Success:** Collaborated with Tourism and Creative communities via an interactive SaaS digital platform with a gallery of **Local Art & Tours** as virtual 3D showrooms
 - 🔗 [zrydys.github.io/planet.html](https://zrydys.github.io/planet.html]](planet.html): ![](anim/forest.gif)
-- Helping customers with open-source tools: supported data recovery from damaged devices, delivered connectivity in isolated areas,...
+- Simple open-source solutions that help customers: e.g. Data recovery from damaged devices, Connect people & landscapes in isolated [areas](mapeuaf.html), Add AIS Navigation guides ...
 
 
 
