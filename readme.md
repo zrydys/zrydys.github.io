@@ -1,6 +1,7 @@
  [ZryDys](https://zrydys.github.io) 🚀 Transforming the Modern Enterprise in key fronts: 
 
-   ***Integrate Techs  |  Warning Data  |  Resilient Secure  |  Efficient Scale  |  Digital Value***
+| Integrate Techs | Warning Data | Resilient Secure | Efficient Scale | Digital Value |
+| --------------- | ------------ | ---------------- | --------------- | ------------- |
    
 ## Integrate Techs
 
@@ -55,7 +56,7 @@ Customer oriented: Providing practical Value from R&D+i innovations or known tec
  
 - **Client Success:** Collaborated with Tourism and Creative communities via an interactive SaaS digital platform with a gallery of **Local Art & Tours** as virtual 3D showrooms
 - 🔗 [zrydys.github.io/planet.html](https://zrydys.github.io/planet.html]](planet.html): ![](anim/forest.gif)
-- Simple open-source solutions that help customers: e.g. Data recovery from damaged devices, Connect people & landscapes in isolated [areas](mapeuaf.html), Add AIS Navigation guides ...
+- [Faster Simpler solutions](EzTech.html) help customers: e.g. Data recovery from damaged devices, Connect people & landscapes in isolated [areas](mapeuaf.html), Open-source for AIS Navigation guides ...
 
 
 
