@@ -2,11 +2,11 @@
 
 | Integrate Techs | Warning Data | Resilient Secure | Efficient Scale | Digital Value |
 | --------------- | ------------ | ---------------- | --------------- | ------------- |
-|  |  |  |  |  |
+| 🌟              | 📈           | 🌐               | 🌀              | ✅             |
    
 ## Integrate Techs
 
-### Large Technology Integrations 💡⚙️
+### Large Technology Integrations 💡🌟
 
 Experienced operating & developing large information systems, applications, and telecom with advanced partners and enterprise-grade performance.  🔗 https://zrydys.github.io  
 
@@ -20,7 +20,7 @@ This experience helps you empower your organization by integrating cutting-edge 
 ## Warning Data 
 
 
-### Data Visualization & Early-warnings 📈🌡
+### Data Visualization & Early-warnings 📈🎯
 
 Discover actionable insights, Drive informed decision-making, and Optimize through automated business intelligence. Experienced in data analytics and gathering complex operational data.  
 - **Client Success:** Delivered Full monitoring and Early-Warning system integrations for critical sectors (Nuclear, BTC Splunk, Grafana, pandas..)  https://zrydys.github.io/visual-plotly.html  
@@ -42,7 +42,7 @@ Grow carefully. Harness modern technologies to deliver and operate secure ICT in
 
 ## Efficient Scale
 
-### Agile Scale Efficiently 🌀 
+### Agile Scale Efficiently 🌀🧭
 
 Background delivering Agile results, growing business ideas with progressive cost & value control. Enabled win-win cross-sector innovation projects with modular and gradual tech deployments.  
 
