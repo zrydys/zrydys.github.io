@@ -2,7 +2,7 @@
 
 - 10+ years ago small business were overwhelmed by the costs of web, computing, comms...
 - **Today many issues have easy affordable solutions** using open source + off the shell techs
-- EzTech shows you how! with first orientations free (under a limited Dissemination budget)
+- EzTech shows you how! with first orientations free (under a limited Di[EzTech](EzTech.md)ssemination budget)
  
 ## 🎯 We help nearby businesses solve small but nagging issues — fast, affordably, and with open tools available.
 
@@ -24,7 +24,7 @@ We turn your business logo into a 3D-printed key-ring, badge, or branded item �
 
 ### 🔹 **Confused by Sailing or Navigation Apps?**
 
-We simplify sailing with open-source digital tools for non-critical navigation — so your adventure stays fun, not frustrating.
+We simplify sailing with open-source digital tools for non-critical [navigation](ais.html) — so your sailing or kayaking adventure stays fun, not frustrating.
 
 ### 🔹 **Need More Eyes on Your Systems?**
 
@@ -45,6 +45,6 @@ In today’s world, reaching [remote](remote.html) villages and providing on-sit
 ## 🌟 Let’s make your work _simpler_ and _smarter_ — starting with sharing what worries you.
 
  📍 We might be already Serving businesses in Your Local Area 
-📞 Contact us:  | ✉️ ZryDys@gmail | 🌐 ZryDys.github.IO 
+📞 Contact us:  | ✉️ [ZryDys@gmail](mailto:ZryDys@gmail) | 🌐 ZryDys.github.IO 
 
  

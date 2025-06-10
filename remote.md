@@ -3,9 +3,9 @@
 
 What used to be a complex and costly challenge—connecting with remote locations for service quality —is now easier and more affordable than ever. 
 
-With modern technologies off-the-shelves devices, and integration expertise, I help businesses extend their reach, solve problems remotely, and serve customers at a fraction of the cost. 
+With modern technologies off-the-shelves devices, and integration expertise, businesses extend their reach, solve problems remotely, and serve customers at a fraction of the cost. 
 
-No complexity, just simple steps and technology to grow and support anywhere.
+No complexity, just [simple steps and technology](EzTech.html) to grow and support anywhere.
 
 
 
