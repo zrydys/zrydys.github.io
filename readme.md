@@ -1,8 +1,9 @@
-🚀 Transforming the Modern Enterprise and End Users in key fronts: starting with Data & Value:
+**Making powerful tech affordable and accessible for all** — so even the smallest village or association can use tools once reserved for big corporations !
 
 | [Warning Data](#Warning-Data) | Integrate Techs | Digital Value | Resilient Secure | Efficient Scale |
 | :---------------------------: | :-------------: | :-----------: | :--------------: | :-------------: |
 |              🎯               |       💡        |       ✅       |        🌐        |       🟣        |
+🚀 Transforming the Modern Enterprise and End Users in key fronts: starting with Data & Value:
 
 ## Integrate Techs
 
