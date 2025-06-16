@@ -8,7 +8,7 @@ This project aims at **increasing safety of sailing and water sports** even in [
 
 Suitable for sailing in coast or rivers and lakes (few small spots [areas](mapeuaf.html) under consideration now).
 
-Overall the project relies in using existing devices and know-how to reach [remote](remote.html) [areas](mapeuaf.html),
+Overall the project relies in using existing devices and know-how to support all in [remote](remote.html) [areas](mapeuaf.html),
 
 *ONGOING JUNE 2025 ...* 
 want to join or collaborate?:  📞 Contact us:  | ✉️ [ZryDys@gmail](mailto:ZryDys@gmail) | 🌐 [ZryDys.github.IO](https://zrydys.github.io) 
