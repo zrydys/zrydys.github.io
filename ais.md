@@ -1,4 +1,4 @@
-## Safe sailing or kayaking even in remote areas 
+## Safe marine business, sail, kayak even in remote areas 
 
 This project aims at **increasing safety of sailing and water sports** even in [remote](remote.html) communities.
 
