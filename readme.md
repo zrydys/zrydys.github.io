@@ -3,6 +3,7 @@
 | [Warning Data](#Warning-Data) | Integrate Techs | Digital Value | Resilient Secure | Efficient Scale |
 | :---------------------------: | :-------------: | :-----------: | :--------------: | :-------------: |
 |              🎯               |       💡        |       ✅       |        🌐        |       🟣        |
+
 🚀 Transforming the Modern Enterprise and End Users in key fronts: starting with Data & Value:
 
 ## Integrate Techs
@@ -59,6 +60,7 @@ Background delivering Agile results, growing business ideas with progressive cos
 Customer oriented: **Providing practical value** leveraging R&D, innovation, and known technologies:
 
 - **Affordable**: [Faster Simpler solutions](EzTech.html) help customers: e.g. Data recovery of damaged devices, Connect people & landscapes in remote [areas](mapeuaf.html), Open-source for [AIS sailing](ais.html) navigation ...
+- Green by using €90 solutions instead of large €900 per GPS equipment, or replacing $1000 marine tools by $150 DIY sustainable kits.
 - **Client Success:** Gallery of digital 3D showrooms by Tourism and Artistic communities, SaaS  platform:   [forest](orbitforest.html)  ![](anim/forest.gif) or 🔗 [zrydys.github.io/planet.html](https://zrydys.github.io/planet.html) 
 
 
