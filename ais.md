@@ -6,8 +6,10 @@ This project aims at **increasing safety of sailing and water sports** even in [
 
 **Why**: Many hours in sea rescue patrols, free kayaking initiatives, and apparently-calm waters led to helping non-profit for the sustainable and safe tourism & community use of water sports.
 
+**Where**
 Suitable for sailing in coast or rivers and lakes (few small spots [areas](mapeuaf.html) under consideration now).
 
+**Affordable**
 Overall the project relies in using existing devices and know-how to support all in [remote](remote.html) [areas](mapeuaf.html),
 
 *ONGOING JUNE 2025 ...* 
@@ -15,6 +17,14 @@ want to join or collaborate?:  📞 Contact us:  | ✉️ [ZryDys@gmail](mailto:
 
 ---
 
+Mission: to bridge the tech gap using open-source tools, training, and low-cost innovation — so even small associations or villages can benefit from solutions once reserved for corporations.
+
+Examples of affordable simple solutions:
+- instead of €900 GPS investment we build €90 solutions, (less precise than commercial yet 9 times its price) 
+- Small sets democratize use and also allow faster recovery of remote or abandoned sites
+- Replace $1000 marine tools by $150 DIY kits. simple green AIS (this page https://zrydys.github.io/ais.html)
+
+---
 -- next tech references will be added below:  #ais #gps #raspb #pi
 
 # Technical AIS GPS PI references below 
