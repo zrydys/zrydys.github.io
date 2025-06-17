@@ -25,7 +25,7 @@ Examples of affordable simple solutions:
 - Replace $1000 marine tools by $150 DIY kits. simple green AIS (this page https://zrydys.github.io/ais.html)
 
 Promoting **circular economy** solutions where we can share, reuse, repair, refurbish existing devices. (contributing also to diminish pollution on disposal of old cellular or laptops)
-
+![](https://upload.wikimedia.org/wikipedia/commons/archive/6/67/20210807143407%21Linia_kontra%C5%AD_Cirkulero.svg)
 ---
 -- next tech references will be added below:  #ais #gps #raspb #pi
 
