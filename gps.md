@@ -1,0 +1,38 @@
+## Safe redundant geo location reusing devices 
+
+This project aims at **increasing safety of redundant location for rescue** 
+
+**What**: Simple GPS signals to display locations.
+
+**How**: Building tiny systems to track locations, based on affordable hardware and know-howr. [Circular](circular.html) reusing simple devices. 
+
+**Why**: Conscious about safety in rescue and finding missions.
+
+**Where**: Suitable for local rescue k9 demo under consideration now.
+
+**Status**: TRL4 x CRL3 . Lab demo of integrated system x Validate the Market hypotheses
+
+**Affordable**
+Overall the project relies in using existing devices and know-how 
+
+*ONGOING JULY AUG 2025 ...* 
+want to join or collaborate?:  📞 Contact us:  | ✉️ [ZryDys@gmail](mailto:ZryDys@gmail) | 🌐 [ZryDys.github.IO](https://zrydys.github.io) 
+
+---
+
+Mission: to bridge the tech gap using open-source tools, training, and low-cost innovation — so even small associations or villages can benefit from solutions once reserved for corporations.
+
+Examples of affordable simple solutions:
+
+- Instead of €900 GPS investment we build €90 [simple locations](gps.html), (less precise than commercial yet 9 times its price) zrydys.github.io/gps.html
+- Small sets democratize use and also allow faster recovery of remote or abandoned sites
+- Replace $1000 marine tools by $150 DIY kits. [simple green AIS](ais.html) (ais = zrydys.github.io/ais.html)
+
+Promoting **circular economy** solutions where we can share, reuse, repair, refurbish existing devices. (contributing also to diminish pollution on disposal of old cellular or laptops)
+![](https://upload.wikimedia.org/wikipedia/commons/archive/6/67/20210807143407%21Linia_kontra%C5%AD_Cirkulero.svg)
+---
+-- next tech references will be added below:  #ais #gps #raspb #pi
+
+# Technical GPS PI references below 
+
+tbd 

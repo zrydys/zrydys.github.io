@@ -2,9 +2,12 @@
 
 This project aims at **increasing safety of sailing and water sports** even in [remote](remote.html) communities.
 
-**How**: Building tiny systems at villages to track ships, based on affordable hardware and know-how, to capture live Automatic Identification System (AIS) signals from vessels and display traffic.
+**What**: Capture live Automatic Identification System (AIS) signals from vessels and display maritime traffic.
+
+**How**: Building tiny systems at villages to track ships, based on affordable hardware and know-howr. [Circular](circular.html) reusing of simple devices. 
 
 **Why**: Many hours in sea rescue patrols, free kayaking initiatives, and apparently-calm waters led to helping non-profit for the sustainable and safe tourism & community use of water sports.
+Conscious about safety in rivers and sea for navigation, fishing, sports.
 
 **Where**
 Suitable for sailing in coast or rivers and lakes (few small spots [areas](mapeuaf.html) under consideration now).
@@ -20,9 +23,10 @@ want to join or collaborate?:  📞 Contact us:  | ✉️ [ZryDys@gmail](mailto:
 Mission: to bridge the tech gap using open-source tools, training, and low-cost innovation — so even small associations or villages can benefit from solutions once reserved for corporations.
 
 Examples of affordable simple solutions:
-- instead of €900 GPS investment we build €90 solutions, (less precise than commercial yet 9 times its price) 
+
+- instead of €900 GPS investment we build €90 [simple locations](gps.html), (less precise than commercial yet 9 times its price) 
 - Small sets democratize use and also allow faster recovery of remote or abandoned sites
-- Replace $1000 marine tools by $150 DIY kits. simple green AIS (this page https://zrydys.github.io/ais.html)
+- Replace $1000 marine tools by $150 DIY kits. [simple green AIS](ais.html) (ais = zrydys.github.io/ais.html)
 
 Promoting **circular economy** solutions where we can share, reuse, repair, refurbish existing devices. (contributing also to diminish pollution on disposal of old cellular or laptops)
 ![](https://upload.wikimedia.org/wikipedia/commons/archive/6/67/20210807143407%21Linia_kontra%C5%AD_Cirkulero.svg)
