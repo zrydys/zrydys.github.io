@@ -22,11 +22,11 @@ want to join or collaborate?:  📞 Contact us:  | ✉️ [ZryDys@gmail](mailto:
 
 Mission: to bridge the tech gap using open-source tools, training, and low-cost innovation — so even small associations or villages can benefit from solutions once reserved for corporations.
 
-Examples of affordable simple solutions:
+**Examples of affordable solutions:** adding demo or redundancy:
 
 - Instead of €900 GPS investment we build €90 [simple locations](gps.html), (less precise than commercial yet 9 times its price) zrydys.github.io/gps.html
-- Small sets democratize use and also allow faster recovery of remote or abandoned sites
-- Replace $1000 marine tools by $150 DIY kits. [simple green AIS](ais.html) (ais = zrydys.github.io/ais.html)
+- Small sets democratize usage and allow faster reusing of existing elements
+- Replace $1000 marine tools by $150 DIY kits. [simple green AIS](ais.html) zrydys.github.io/ais.html 
 
 Promoting **circular economy** solutions where we can share, reuse, repair, refurbish existing devices. (contributing also to diminish pollution on disposal of old cellular or laptops)
 ![](https://upload.wikimedia.org/wikipedia/commons/archive/6/67/20210807143407%21Linia_kontra%C5%AD_Cirkulero.svg)

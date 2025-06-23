@@ -13,7 +13,7 @@ Conscious about green economy, reducing waste, reusing electronic devices...
 **references**:
 
 - [CircleMade.brusells](https://circlemade.brussels/en/) 
-- Technical Maturity [TRL3-TRL8](https://www.cto.mil/wp-content/uploads/2023/07/TRA-Guide-Jun2023.pdf)
+- Technical Maturity [TRL3-TRL8](https://www.cto.mil/wp-content/uploads/2023/07/TRA-Guide-Jun2023.pdf) [^TRL]
 - Commercial Maturity [CRL2-CRL6](https://matmax.wsl.be/en)
 
 
@@ -24,7 +24,18 @@ want to join or collaborate?:  📞 Contact us:  | ✉️ [ZryDys@gmail](mailto:
 ---
 **Examples of affordable solutions:** providing demo or redundancy:
 
-- Instead of €900 GPS investment we build €90 [simple locations](gps.html), (less precise than commercial yet 9 times its price) 
+- Instead of €900 GPS investment we build €90 [simple locations](gps.html), (less precise than commercial yet 9 times its price) zrydys.github.io/gps.html
 - Small sets democratize usage and allow fast reusing of elements
 - Replace $1000 marine tools by $150 DIY kits. [simple green AIS](ais.html) (ais = zrydys.github.io/ais.html)
 
+
+--- 
+
+[^TRL]: Original NASA TRL Definitions (1989) https://www.nasa.gov/pdf/458490main_TRL_Definitions.pdf https://www.nasa.gov/aeronautics/technology-readiness-levels-demystified/
+    Level 1 – Basic Principles Observed and Reported
+    Level 2 – Potential Application Validated
+    Level 3 – Proof-of-Concept Demonstrated, Analytically or Experimentally
+    Level 4 – Component / prototype Laboratory Validated
+    Level 5 – Component / prototype Validated in Simulated or Real Environment
+    Level 6 – System Adequacy Validated in Simulated Environment
+    Level 7 – System Adequacy Validated in Real Environment 
