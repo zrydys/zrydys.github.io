@@ -1,4 +1,4 @@
-## Circular solutions 
+ ## Circular solutions 
 
 Promoting **circular economy** solutions where we can share, reuse, repair, refurbish existing devices. (contributing also to diminish pollution on disposal of old cellular or laptops)
 ![](https://upload.wikimedia.org/wikipedia/commons/archive/6/67/20210807143407%21Linia_kontra%C5%AD_Cirkulero.svg)
@@ -11,6 +11,7 @@ Building tiny integrated systems based on affordable hardware and know-how. [Cir
 Conscious about green economy, reducing waste, reusing electronic devices...
 
 **references**:
+
 
 - [CircleMade.brusells](https://circlemade.brussels/en/) 
 - Technical Maturity [TRL3-TRL8](https://www.cto.mil/wp-content/uploads/2023/07/TRA-Guide-Jun2023.pdf) [^TRL]
