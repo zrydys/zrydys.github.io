@@ -39,5 +39,8 @@ Promoting **circular economy** solutions where we can share, reuse, repair, refu
 ### NMEA
 NMEA 0183 is a communication standard used for transmitting data between marine electronics, such as GPS receivers and sonar devices, using a simple ASCII serial protocol. It allows one device (the talker) to send data to multiple devices (listeners) and is gradually being replaced by the newer NMEA 2000 standard in leisure marine applications.
 
+### Project Method 
+
+Project Definition Rating Index (PDRI) measures scope definition, identify gaps, and take actions to reduce risk during front end planning. The PDRI facilitator shares  a summary report with all project stakeholders.
 
 tbd 
