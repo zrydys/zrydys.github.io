@@ -41,6 +41,17 @@ NMEA 0183 is a communication standard used for transmitting data between marine 
 
 ### Project Method 
 
-Project Definition Rating Index (PDRI) measures scope definition, identify gaps, and take actions to reduce risk during front end planning. The PDRI facilitator shares  a summary report with all project stakeholders.
+Project Definition Rating Index (PDRI) measures scope definition, identify gaps, and take actions to reduce risk during front end planning. The PDRI facilitator shares  a summary report with all project stakeholders. [^rm] [^doe]
 
 tbd 
+
+
+[^rm]: Wang, Y.-R. & Gibson, G. E. (2002). Using PDRI for project risk management. Paper presented at PMI® Research Conference 2002: Frontiers of Project Management Research and Applications, Seattle, Washington. Newtown Square, PA: Project Management Institute.
+
+[^doe]: DOE G 413.3-12, U.S. Department of Energy Project Definition Rating Index Guide https://www.directives.doe.gov/directives-documents/400-series/0413.3-EGuide-12 (2010
+
+
+### Refs
+
+References to other projects such as arduino with operational amplifiers for Intelligent Hearing Aid https://www.instructables.com/Intelligent-Hearing-Aid/ by  Ojoshi ![](https://content.instructables.com/F5D/JQVI/HOUFWUWY/F5DJQVIHOUFWUWY.jpg?auto=webp&frame=1&width=525&height=1024&fit=bounds&md=MjAxMy0xMi0yNSAwMTo0MjoxOC4w) 
+)
