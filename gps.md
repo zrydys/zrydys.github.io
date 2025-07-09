@@ -55,3 +55,4 @@ tbd
 
 References to other projects such as arduino with operational amplifiers for Intelligent Hearing Aid https://www.instructables.com/Intelligent-Hearing-Aid/ by  Ojoshi ![](https://content.instructables.com/F5D/JQVI/HOUFWUWY/F5DJQVIHOUFWUWY.jpg?auto=webp&frame=1&width=525&height=1024&fit=bounds&md=MjAxMy0xMi0yNSAwMTo0MjoxOC4w) 
 )
+- https://consumer.hearingreview.com/hearing-reviews-top-10-diy-hearing-aids-and-psap-guide/
