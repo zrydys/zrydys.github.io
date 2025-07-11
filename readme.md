@@ -1,6 +1,6 @@
 **Making powerful tech affordable and accessible for all** — so even the smallest village or association can use tools once reserved for big corporations !
 
-languages:   [DE🇦🇹🇩🇪](https://translate.google.com/translate?hl=de&sl=auto&u=https://zrydys.github.io)    [FR🇨🇦🇧🇪](https://translate.google.com/translate?hl=fr&sl=auto&u=https://zrydys.github.io)    [NL🇳🇱](https://zrydys-github-io.translate.goog/?_x_tr_sl=auto&_x_tr_tl=nl&_x_tr_hl=nl)     [ES🇪🇸🇨🇷](https://translate.google.com/translate?hl=es&sl=auto&u=https://zrydys.github.io)    [EN🇺🇸🇮🇪](https://zrydys.github.io)   
+languages:   [DE🇦🇹🇩🇪](https://translate.google.com/translate?hl=de&sl=auto&u=https://zrydys.github.io)    [FR🇨🇦🇧🇪](https://translate.google.com/translate?hl=fr&sl=auto&u=https://zrydys.github.io)   [NL🇳🇱🇧🇪](https://zrydys-github-io.translate.goog/?_x_tr_sl=auto&_x_tr_tl=nl&_x_tr_hl=nl)    [ES🇪🇸🇨🇷](https://translate.google.com/translate?hl=es&sl=auto&u=https://zrydys.github.io)    [EN🇺🇸🇮🇪](https://zrydys.github.io)   
 
 | [Warning Data](#Warning-Data) | Integrate Techs | Digital Value | Resilient Secure | Efficient Scale |
 | :---------------------------: | :-------------: | :-----------: | :--------------: | :-------------: |
@@ -32,6 +32,7 @@ Discover actionable insights, Drive informed decision-making, and Optimize throu
 -  [![](anim/bi.gif)](visual-plotly.html) navigate **complex data** with latest tools (Splunk, D3js, 3D...)
  - Real-time data monitoring and predictive analytics can enhance production planning, reduce downtime, and improve component lifecycle management in smart factories.  
  - Examples of Data Visualizations  [Sankey Chart connecting investments](https://zrydys.github.io/adapt.html) and [chord](https://zrydys.github.io/chord.html) 
+ - [Geographical and Satellite imagery analysis](gis.html) of multiple open and commercial sources (electro-optical, radar, infrared,...) to produce warning indicators 
 
 
 ## Resilient Secure

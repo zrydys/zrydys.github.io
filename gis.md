@@ -95,8 +95,8 @@ References include
 ---
 
 🌐languages:  
- [DE🇦🇹🇩🇪](https://translate.google.com/translate?hl=de&sl=auto&u=https://zrydys.github.io)
- [FR🇨🇦🇧🇪](https://translate.google.com/translate?hl=fr&sl=auto&u=https://zrydys.github.io)
- [NL🇳🇱🇧🇪](https://zrydys-github-io.translate.goog/?_x_tr_sl=auto&_x_tr_tl=nl&_x_tr_hl=nl)
- [ES🇪🇸🇨🇷](https://zrydys-github-io.translate.goog/?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=es)
- [EN🇺🇸🇮🇪](https://zrydys.github.io)
+ [DE🇦🇹🇩🇪](https://translate.google.com/translate?hl=de&sl=auto&u=https://zrydys.github.io/gis.html)
+ [FR🇨🇦🇧🇪](https://translate.google.com/translate?hl=fr&sl=auto&u=https://zrydys.github.io/gis.html)
+ [NL🇳🇱🇧🇪](https://zrydys-github-io.translate.goog/gis.html?_x_tr_sl=auto&_x_tr_tl=nl&_x_tr_hl=nl)
+ [ES🇪🇸🇨🇷](https://zrydys-github-io.translate.goog/gis.html?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=es)
+ [EN🇺🇸🇮🇪](https://zrydys.github.io/gis.html)
