@@ -31,27 +31,27 @@ Promoting **circular economy** solutions where we can share, reuse, repair, refu
 ---
 -- refs gradually added below:  #map #gis #raspb #pi
 
-### 🌱 Practical Solutions for SMEs
+### 🌱 Practical Solutions 
 
-With an open and agile mindset, we deliver smart, reusable solutions for small businesses in today’s circular economy.
-
-The know how on GIS below are freely shared — and we’re here to support you with implementation, training, and guidance every step of the way.
-
-
+An open and agile mindset delivers smart, reusable solutions in today’s circular economy. This GIS summary is freely shared — and we’re here to support you with implementation, training, and guidance every step of the way.
 
 
 # Technical GIS tools 
 
-Satellite imagery analysis, processing software and techniques as electronic light table (ELT) capabilities.
-
+Satellite imagery analysis, processing software and techniques as electronic light table (ELT) capabilities. 
 
 **[QGIS](https://qgis.org/en/site/)** supports a variety of **open source data formats** and plugins to explore and integrate geospatial data from diverse sources.
 
 **[GRASS GIS](https://grass.osgeo.org/)** work with time series data for geospatial data management and analysis, image processing, graphics and map production.
 
+[Opticks](https://www.opticks.org/#history-of-opticks) is open source yet alike commercial ERDAS IMAGINE, RemoteView, ENVI, or SOCET GXP, we can add extensions similar to other remote sensing tool. Used at NASIC for for non-literal exploitation https://github.com/opticks-org.
+
 **[Whitebox GAT](https://www.whiteboxgeo.com/)**  visualize data in 3D, used in the environmental field and academic.
 
 [**gVSIG**](http://www.gvsig.com/en) has various data formats (Shapefiles, GeoTIFFs...) and the **geospatial data management** includes vector and raster data analysis, network analysis, and 3D.
+
+Formats NITF 2.0/2.1, GeoTIFF, ENVI, ASPAM/PAR, CGM, DTED, Generic RAW, ESRI Shapefile, HDF5, AVI, MPEG, JPEG, GIF, PNG, BMP
+
 
 [rem]: ..
 
