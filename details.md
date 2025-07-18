@@ -94,6 +94,7 @@ Sample command to reduce fractal size. (@ GitHub.com/ZryDys)
 
 TBD: minor support:  3d matlab  http://dribbble.com/zrydys   
 
+![](cicd.jpg)
 
 ### ZryDys contacts
 
