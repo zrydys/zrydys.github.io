@@ -11,9 +11,9 @@ theme: jekyll-theme-tactile
 remote_theme: pages-themes/tactile@v0.2.0
 
 sass:
-  style: compressed
   quiet_deps: true
   silence_deprecations: [import]
+#  style: compressed
 #% GitHub Pages will: Build your Sass Include the theme Apply your overrides
 
 
@@ -26,14 +26,14 @@ defaults:
       type: "pages"
     values:
       layout: "default"
-      css: "/assets/css/style.css"
+        #%      css: "/assets/css/style.css"
 #%# style.scss will be compiled to style.css stylesheet key tells GitHub Pages to use your compiled CSS
 
-locale                   : "en-US"
-title: zrydys page gis
+locale: "en-US"
+title: Zrydys page 
 
 description: Open Source zrydys tools 
-url   : "https://zrydys.github.io/"
+url: "https://zrydys.github.io/"
 
 # Site Author
 author:
@@ -48,7 +48,7 @@ author:
       url: mailto:zrydys@gmail.
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url   : "https://zrydys.github.io/"
+      url: "https://zrydys.github.io/"
 
 
 github:
