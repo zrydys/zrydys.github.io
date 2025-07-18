@@ -1,5 +1,13 @@
 /* Make container full-width or wider */
-.container {
+.wrapper {
+  max-width: 100%;
+
+    margin: 0 auto;
+    /*max-width: 900px;*/
+
+}
+
+.NOcontainer {
   max-width: 110%  !important ; 
   width: 110% !important ;
   padding: 0 1rem !important ; /* optional spacing */

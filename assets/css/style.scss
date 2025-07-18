@@ -11,7 +11,7 @@
 
 
 /* Make container full-width or wider */
-.container {
+.NOcontainer {
   max-width: 110%  !important ; 
   width: 110% !important ;
   padding: 0 1rem !important ; /* optional spacing */
@@ -29,5 +29,6 @@ a:focus {
   color: #3dbcbc !important ;
   text-decoration: none !important ; /* optional */
 }
+
 
 
