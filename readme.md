@@ -1,8 +1,7 @@
 **Making powerful tech affordable and accessible for all** — so even the smallest village or association can use tools once reserved for big corporations !
 
-languages:   [DE🇦🇹🇩🇪](https://translate.google.com/translate?hl=de&sl=auto&u=https://zrydys.github.io)    [FR🇨🇦🇧🇪](https://translate.google.com/translate?hl=fr&sl=auto&u=https://zrydys.github.io)   [NL🇳🇱🇧🇪](https://zrydys-github-io.translate.goog/?_x_tr_sl=auto&_x_tr_tl=nl&_x_tr_hl=nl)    [ES🇪🇸🇨🇷](https://translate.google.com/translate?hl=es&sl=auto&u=https://zrydys.github.io)    [EN🇺🇸🇮🇪](https://zrydys.github.io)   
 
-| [Warning Data](#Warning-Data) | Integrate Techs | Digital Value | Resilient Secure | Efficient Scale |
+| [Warning Data](#Warning-Data) | [Integrate Techs]() | [Digital Value]() | [Resilient Secure]() | [Efficient Scale]() |
 | :---------------------------: | :-------------: | :-----------: | :--------------: | :-------------: |
 |              🎯               |       💡        |       ✅       |        🌐        |       🟣        |
 

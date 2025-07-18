@@ -1,14 +1,14 @@
-sass:
-  style: compressed
+# sass:
+#   style: compressed
 
-minima:
-  skin: auto
+# minima:
+#   skin: auto
     
 
     #% theme: minima
     
 theme: jekyll-theme-tactile
-minimal_mistakes_skin    : "aqua" #, "dark" # "air", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+  # minimal_mistakes_skin    : "aqua" #, "dark" # "air", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 locale                   : "en-US"
 title: zrydys page gis
@@ -48,7 +48,7 @@ sass:
   quiet_deps: true
   silence_deprecations: [import]
 
-minima:
+0minima:
   # Minima skin selection. Available skins are:
   #   Available skins:
   #     * classic            Default, light color scheme.
