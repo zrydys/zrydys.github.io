@@ -4,8 +4,19 @@
 
     margin: 0 auto;
     /*max-width: 900px;*/
-
+  background-color: #e0f7f7; /* light aquamarine-grey */
+  padding: 2rem;
+  border-radius: 10px; /* optional, to soften edges */
 }
+
+/* Dark grey for footer */
+footer,
+.site-footer {
+  background-color: #333;    /* dark grey */
+  color: #f0f0f0;            /* light text for contrast */
+  padding: 1rem 2rem;
+}
+
 
 .NOcontainer {
   max-width: 110%  !important ; 
