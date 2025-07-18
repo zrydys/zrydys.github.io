@@ -1,7 +1,10 @@
 
 ## Electronic Light Table features - and free Tiles Demo 
 
-This is a demo of using open-source to explore ELT GIS imagery from any modern web browser: https://ZryDys.github.io/tiles/ based on https://infchg.github.io/ProtecInt.html
+This is a demo of using open-source to explore ELT GIS imagery from any modern web browser:
+
+  [https://ZryDys.github.io/elt.html](https://ZryDys.github.io/elt.html)
+
 
 1. **Layering Imagery:** from multiple sources on top of each other, for Electronic Light Table.
     
@@ -14,8 +17,13 @@ This is a demo of using open-source to explore ELT GIS imagery from any modern w
 
 
 ---
+### Further reading
 
-The layered labelled some countries and DMZs and UN zones according to ISO2 codes:
+ https://ZryDys.github.io/tiles/ based on https://infchg.github.io/ProtecInt.html
+
+### Additional notes
+
+The layers label countries and DMZs and UN zones according to ISO2 codes:
 
 
 - **Ireland** (`.ie`): 🇮🇪
@@ -55,14 +63,14 @@ Borders based on UN international documents,
 
 Adding Flags according to img magik tools:
 
-convert 4-8-4.png -font Symbola   -gravity Northwest -pointsize 18 -annotate +85+70 "🇳🇴"   -gravity Northwest -pointsize 18 -annotate +190+60 "🇸🇪"   -gravity Northwest -pointsize 18 -annotate +70+220 "🇩🇰"   flagged_4-8-4.png #% for CC ISO2 codes only
+        convert 4-8-4.png -font Symbola   -gravity Northwest -pointsize 18 -annotate +85+70 "🇳🇴"   -gravity Northwest -pointsize 18 -annotate +190+60 "🇸🇪"   -gravity Northwest -pointsize 18 -annotate +70+220 "🇩🇰"   flagged_4-8-4.png #% for CC ISO2 codes only
 
 
 
-convert 4-8-4.png -font Symbola  -pointsize 8 -annotate +85+130 "🇳🇴" -annotate +190+160 "🇸🇪"  -annotate +110+240 "🇩🇰"   flagged_4-8-4.png #% simpler symbols on CCs
+        convert 4-8-4.png -font Symbola  -pointsize 8 -annotate +85+130 "🇳🇴" -annotate +190+160 "🇸🇪"  -annotate +110+240 "🇩🇰"   flagged_4-8-4.png #% simpler symbols on CCs
 
 
-convert -background white -fill black  -density 32 -pointsize 32 -gravity center  "pango:<span font='DejaVu-Sans'> flags🇸🇪 ⌁ Electricity\n🔌 Chargers\n🔋 Powerbanks</span>"  out.png #%usage pango for UTF8 flags
+        convert -background white -fill black  -density 32 -pointsize 32 -gravity center  "pango:<span font='DejaVu-Sans'> flags🇸🇪 ⌁ Electricity\n🔌 Chargers\n🔋 Powerbanks</span>"  out.png #%usage pango for UTF8 flags
 
 
 examples of flag combination when pango not available
@@ -79,4 +87,8 @@ and of flag generation with embedded pango:
 Sucessfully overlap flags over map tiles: 
 
         convert input.png   \( se.png -thumbnail x12 \)  -geometry  +160+130 -composite  \( no.png -thumbnail x12 \)  -geometry +80+130 -composite  \( se.png -thumbnail x12 \)  -geometry  +140+210 -composite   output.png #% overlap flags over map Ok
+
+
+CC-BY ZryDys & CJ 2025
+
 
