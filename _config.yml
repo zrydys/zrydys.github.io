@@ -1,3 +1,12 @@
+sass:
+  style: compressed
+
+minima:
+  skin: auto
+    
+
+theme: minima
+    
 #% theme: jekyll-theme-tactile
 minimal_mistakes_skin    : "aqua" #, "dark" # "air", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
@@ -30,8 +39,6 @@ github:
   owner_url: https://github.com/zrydys
 
 mermaid: true
-
-theme: minima
 
 plugins:
   - jekyll-feed
