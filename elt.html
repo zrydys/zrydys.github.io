@@ -62,7 +62,7 @@
   var USGS_USImageryTopo = L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryTopo/MapServer/tile/{z}/{y}/{x}', {
 	maxZoom: 20,
 	attribution: 'Tiles courtesy of the <a href="https://usgs.gov/"  target="_blank">U.S. Geological Survey</a>'
-}).addTo(map);
+}); // add to base INSTEAD OF USGS .addTo(map);
 
    var unbase = L.tileLayer(
    "https://geoservices.un.org/arcgis/rest/services/ClearMap_WebTopo/MapServer/tile/{z}/{y}/{x}", {
