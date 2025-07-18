@@ -8,7 +8,16 @@
     #% theme: minima
     
 theme: jekyll-theme-tactile
-  # minimal_mistakes_skin    : "aqua" #, "dark" # "air", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+remote_theme: pages-themes/tactile@v0.2.0
+
+sass:
+  style: compressed
+  quiet_deps: true
+  silence_deprecations: [import]
+#% GitHub Pages will: Build your Sass Include the theme Apply your overrides
+
+
+    # minimal_mistakes_skin    : "aqua" #, "dark" # "air", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 defaults:
   -
@@ -17,7 +26,8 @@ defaults:
       type: "pages"
     values:
       layout: "default"
-      css: "/assets/css/nostyle.css"
+      css: "/assets/css/style.css"
+#%# style.scss will be compiled to style.css stylesheet key tells GitHub Pages to use your compiled CSS
 
 locale                   : "en-US"
 title: zrydys page gis
@@ -53,9 +63,6 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-sass:
-  quiet_deps: true
-  silence_deprecations: [import]
 
 0minima:
   # Minima skin selection. Available skins are:
