@@ -2,7 +2,8 @@
 ---
 
 //@import "minima";
-@import "jekyll-theme-tactile";
+//@import "jekyll-theme-tactile";
+@import "{{ site.theme }}";
 
 .wrapper {
   max-width: 100%; // adjust this as needed
