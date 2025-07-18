@@ -4,3 +4,17 @@
   width: 110%;
   padding: 0 1rem; /* optional spacing */
 }
+/* Aqua/marine colored links */
+a {
+  color: #2ca1a1; /* marine/aqua shade */
+  text-decoration: underline; /* optional */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect to a lighter or darker shade */
+a:hover,
+a:focus {
+  color: #3dbcbc;
+  text-decoration: none; /* optional */
+}
+
