@@ -82,7 +82,7 @@ Formats NITF 2.0/2.1, GeoTIFF, ENVI, ASPAM/PAR, CGM, DTED, Generic RAW, ESRI Sha
  
 [rem]: ..
 
-You can visualize the folloiwng charts in github source codes:
+You can visualize the folloiwng charts in github source documents: https://github.com/zrydys/zrydys.github.io/blob/master/gis.md
 
 
 ```mermaid
@@ -117,7 +117,7 @@ References include
 - https://gis.harvard.edu/github-repositories The Center for Geographic Analysis, a member of the [Institute for Quantitative Social Science (IQSS)](http://www.iq.harvard.edu/)
 - [Python for GIS Data Science](https://github.com/RGreinacher/python-workshop-gis-big-data)
 - Geopandas and Viktor for GIS-analysis.  https://github.com/viktor-platform/gis-analysis/ , also   on [demo.viktor.ai](https://demo.viktor.ai/public/gis-analysis).
-
+- Jekil Mermaid https://antonheitz.github.io/xBRL-Forge/ _ _config.yml
 
 ---
 

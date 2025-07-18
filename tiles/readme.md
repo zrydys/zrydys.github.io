@@ -21,45 +21,43 @@ This is a demo of using open-source to explore ELT GIS imagery from any modern w
 
  https://ZryDys.github.io/tiles/ based on https://infchg.github.io/ProtecInt.html
 
+
+## Custom ELT labelling and custom tiles
+
+Borders based on UN international documents, 
+
 ### Additional notes
 
 The layers label countries and DMZs and UN zones according to ISO2 codes:
 
-
 - **Ireland** (`.ie`): 🇮🇪
-    
 - **Djibouti** (`.dj`): 🇩🇯
-    
 - **Liechtenstein** (`.li`): 🇱🇮
-    
 - **Switzerland** (`.ch`): 🇨🇭
-    
 - **Portugal** (`.pt`): 🇵🇹
-    
 - **Sweden** (`.se`): 🇸🇪
-    
 - **Western Sahara** (`.eh`): 🇪🇭
-    
 - **Croatia** (`.hr`): 🇭🇷
-    
 - **Algeria** (`.dz`): 🇩🇿
-    
 - **Tunisia** (`.tn`): 🇹🇳
-    
 - **Italy** (`.it`): 🇮🇹
-    
 - **Norway** (`.no`): 🇳🇴
-    
 - **Romania** (`.ro`): 🇷🇴
-    
 - **Turkey** (`.tr`): 🇹🇷
 
-## Custom ELT labaling and custom tiles
+## Borders of EU considering EU and its outermost regions (OR)
 
-Borders based on UN international documents, 
+North: Nuorgam, Finland Latitude: 70°05′N
+South: La Restinga, Canary Islands (Spain) at 27°38′ N (OR)
+West: Monchique Islet, Azores (Portugal) at 31°16′30″ W (OR)
+East: (de jure, Northern Cyprus – EU law suspended) de facto Cape Greco, Cyprus (34°05′ E)
+
+From OR official EU listing: French Guiana, Guadeloupe, Martinique, Mayotte, Réunion, Saint‑Martin (France) Azores, Madeira (Portugal) Canary Islands (Spain)
 
 
-### exampes of usefull Technical commands
+
+--
+### examples of useful technical commands
 
 Adding Flags according to img magik tools:
 
@@ -88,7 +86,20 @@ Sucessfully overlap flags over map tiles:
 
         convert input.png   \( se.png -thumbnail x12 \)  -geometry  +160+130 -composite  \( no.png -thumbnail x12 \)  -geometry +80+130 -composite  \( se.png -thumbnail x12 \)  -geometry  +140+210 -composite   output.png #% overlap flags over map Ok
 
+---
 
-CC-BY ZryDys & CJ 2025
+_CC-BY ZryDys & CJ 2025_
 
+
+
+
+---
+
+Tokelao example L1=T; L2=K; printf -v FL  $(printf '\\U%08X\\U%08X' $((0x1F1E6 + $(printf '%d' "'$L1") - 65))  $((0x1F1E6 + $(printf '%d' \'$L2) - 65)) )
+echo $FL
+
+
+a='EH'
+L1=${a:0:1}  # First character
+L2=${a:1:1}  # Second character
 

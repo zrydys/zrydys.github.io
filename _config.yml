@@ -1,0 +1,13 @@
+theme: jekyll-theme-tactile
+
+title: zrydys page gis
+
+description: Open Source zrydys tools 
+
+github:
+  public: true
+  is_project_page: true
+  repository_url: https://github.com/zrydys/zrydys.github.io
+  owner_url: https://github.com/zrydys
+
+mermaid: true
