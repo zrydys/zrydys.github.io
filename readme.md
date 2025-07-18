@@ -1,7 +1,7 @@
 **Making powerful tech affordable and accessible for all** — so even the smallest village or association can use tools once reserved for big corporations !
 
 
-| [Warning Data](#Warning-Data) | [Integrate Techs]() | [Digital Value]() | [Resilient Secure]() | [Efficient Scale]() |
+| [Warning Data](#Warning-Data)   |   [Integrate Techs]() |   [Digital Value]() |   [Resilient Secure]() | [Efficient Scale]() |
 | :---------------------------: | :-------------: | :-----------: | :--------------: | :-------------: |
 |              🎯               |       💡        |       ✅       |        🌐        |       🟣        |
 
