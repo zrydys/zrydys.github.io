@@ -96,12 +96,6 @@
     };
 
 //unbase.addTo(map);
-  var overlays = {
-           "USGS Topo Imag": USGS_USImageryTopo, // dice WS-disp  ---> best2
-           "United Nations": unbase,
-           "Lunatic World": lunar,
-           "NASA at Night": NASAGIBS_ViirsEarthAtNight2012 , //  ---> cool
-    };
 //  L.control.layers(null,overlays).addTo(map);
     L.control.layers(baseLayers, overlayLayers).addTo(map);
 
