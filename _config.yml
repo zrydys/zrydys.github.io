@@ -10,6 +10,15 @@
 theme: jekyll-theme-tactile
   # minimal_mistakes_skin    : "aqua" #, "dark" # "air", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      css: "/assets/css/nostyle.css"
+
 locale                   : "en-US"
 title: zrydys page gis
 

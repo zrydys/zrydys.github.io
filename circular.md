@@ -33,10 +33,10 @@ want to join or collaborate?:  📞 Contact us:  | ✉️ [ZryDys@gmail](mailto:
 --- 
 
 [^TRL]: Original NASA TRL Definitions (1989) https://www.nasa.gov/pdf/458490main_TRL_Definitions.pdf https://www.nasa.gov/aeronautics/technology-readiness-levels-demystified/
-    Level 1 – Basic Principles Observed and Reported
-    Level 2 – Potential Application Validated
-    Level 3 – Proof-of-Concept Demonstrated, Analytically or Experimentally
-    Level 4 – Component / prototype Laboratory Validated
-    Level 5 – Component / prototype Validated in Simulated or Real Environment
-    Level 6 – System Adequacy Validated in Simulated Environment
-    Level 7 – System Adequacy Validated in Real Environment 
+ -  Level 1 – Basic Principles Observed and Reported
+ -  Level 2 – Potential Application Validated
+ -  Level 3 – Proof-of-Concept Demonstrated, Analytically or Experimentally
+ -  Level 4 – Component / prototype Laboratory Validated
+ -  Level 5 – Component / prototype Validated in Simulated or Real Environment
+ -  Level 6 – System Adequacy Validated in Simulated Environment
+ -  Level 7 – System Adequacy Validated in Real Environment 
