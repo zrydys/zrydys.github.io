@@ -88,7 +88,6 @@ Empowered organizations in various sectors, achieved operational excellence and 
 
 # 📞 **Let's Drive Your Success Together**
 
-Ready to transform your organization's capabilities? 
+Ready to transform your organization's capabilities?  Contact ZryDys@gmail today to discuss how we can help you achieve your goals.
 
-- Contact ZryDys@gmail today to discuss how we can help you achieve your goals.
- 📞 Contact us:  | ✉️ [ZryDys@gmail](mailto:ZryDys@gmail) | 🌐 [ZryDys.github.IO](https://zrydys.github.io) 
+- 📞 Contact us:  | ✉️ [ZryDys@gmail](mailto:ZryDys@gmail) | 🌐 [ZryDys.github.IO](https://zrydys.github.io) 
