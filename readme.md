@@ -32,7 +32,7 @@ Discover actionable insights, Drive informed decision-making, and Optimize throu
 -  [![](anim/bi.gif)](visual-plotly.html) navigate **complex data** with latest tools (Splunk, D3js, 3D...)
  - Real-time data monitoring and predictive analytics can enhance production planning, reduce downtime, and improve component lifecycle management in smart factories.  
  - Examples of Data Visualizations  [Sankey Chart connecting investments](https://zrydys.github.io/adapt.html) and [chord](https://zrydys.github.io/chord.html) 
- - [Geographical and Satellite imagery analysis](gis.html) of multiple open and commercial sources (electro-optical, radar, infrared,...) to produce warning indicators 
+ - [Geographical and Satellite imagery analysis](gis.html) of multiple open and commercial sources (electro-optical, radar, infrared,...) to produce warning indicators as in [Electronic Light Table](https://zrydys.github.io/elt.html) 
 
 
 ## Resilient Secure
