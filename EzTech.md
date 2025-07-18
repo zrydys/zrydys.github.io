@@ -2,7 +2,7 @@
 
 - 10+ years ago small business were overwhelmed by the costs of web, computing, comms...
 - **Today many issues have easy affordable solutions** using open source + off the shell techs
-- EzTech shows you how! with first orientations free (under a limited Di[EzTech](EzTech.md)ssemination budget)
+- EzTech shows you how! with first orientations free (under a limited Dissemination budget)[EzTech](EzTech.md)
  
 ## 🎯 We help nearby businesses solve small but nagging issues — fast, affordably, and with open tools available.
 

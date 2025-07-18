@@ -1,8 +1,27 @@
 theme: jekyll-theme-tactile
+minimal_mistakes_skin    : "aqua" #, "dark" # "air", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
+locale                   : "en-US"
 title: zrydys page gis
 
 description: Open Source zrydys tools 
+url   : "https://zrydys.github.io/"
+
+# Site Author
+author:
+  name             : "WebProTime Jekyll Theme"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Lets Make A Blog."
+  location         : "Earth"
+  email            :
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:zrydys@gmail.
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url   : "https://zrydys.github.io/"
+
 
 github:
   public: true
