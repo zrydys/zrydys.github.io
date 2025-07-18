@@ -1,4 +1,4 @@
- ## Circular solutions 
+## Circular solutions 
 
 Promoting **circular economy** solutions where we can share, reuse, repair, refurbish existing devices. (contributing also to diminish pollution on disposal of old cellular or laptops)
 ![](https://upload.wikimedia.org/wikipedia/commons/archive/6/67/20210807143407%21Linia_kontra%C5%AD_Cirkulero.svg)
