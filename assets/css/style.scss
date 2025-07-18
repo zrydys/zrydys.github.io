@@ -2,13 +2,25 @@
 ---
 
 //@import "minima";
-//@import "jekyll-theme-tactile";
-@import "{{ site.theme }}";
+@import "{{ site.theme }}";  //was wrong
+@import "jekyll-theme-tactile";
 
 .wrapper {
   max-width: 100%; // adjust this as needed
 }
 
+
+.wrapper {
+  max-width: 1000px;
+  background-color: #e0f7f7;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.site-footer {
+  background-color: #333;
+  color: #f0f0f0;
+}
 
 /* Make container full-width or wider */
 .NOcontainer {
