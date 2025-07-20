@@ -18,7 +18,7 @@ At **ZryDys**, we transform complex data into intuitive, actionable visual solut
 - [3D-navigate Customers Data ![](anim/bi.gif)](vis-bi-plotly.html) 
 
 - Deploy Operational environment for Medical MRI image analysis ![](https://github.com/dipterix/threeBrain/blob/master/adhoc/demo.gif?raw=true) open sources as https://dipterix.org/threeBrain/
-- AI organization page at https://huggingface.co/zrydysORG in Hugging Face's ML https://huggingface.co/spaces/zrydys/ml-demo ![](hugg.jpg)
+- Leading AI research both on Voice Whisper (Torch py) and published ML demos online Hugging https://huggingface.co/spaces/zrydys/ml-demo ![](hugg.jpg) https://huggingface.co/zrydysORG 
 
 
 ### Full Early Warning: From Telemetry to Remote Operation
