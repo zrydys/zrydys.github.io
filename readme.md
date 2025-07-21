@@ -32,7 +32,8 @@ Discover actionable insights, Drive informed decision-making, and Optimize throu
  - Real-time data monitoring and predictive analytics can enhance production planning, reduce downtime, and improve component lifecycle management in smart factories.  
  - Examples of Data Visualizations  [Sankey Chart connecting investments](https://zrydys.github.io/adapt.html) and [chord](https://zrydys.github.io/chord.html) 
  - [Geographical and Satellite imagery analysis](gis.html) of multiple open and commercial sources (electro-optical, radar, infrared,...) to produce warning indicators as in [Electronic Light Table](https://zrydys.github.io/elt.html) 
-
+ - Leading AI research both on Voice Whisper (Torch py) and published ML demos online Hugging https://huggingface.co/spaces/zrydys/ml-demo ![](hugg.jpg) https://huggingface.co/zrydysORG 
+   
 
 ## Resilient Secure
 
