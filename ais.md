@@ -46,12 +46,12 @@ Thank you to SARCNET (School Amateur Radio Club Network) for [submitting news ab
 
 AIS stands for Automatic Identification System and is used by ships to broadcast their GPS locations in order to help avoid collisions and aide with rescues. An RTL-SDR with the right software can be used to receive and decode these signals, and plot ship positions on a map.
 
-> The School Amateur Radio Club Network publishes a simple project aimed at promoting the deployment of maritime Automatic Information System (AIS) receiving stations around the world using cheap RTL-SDR dongles and Raspberry Pi computers. The purpose of the project is to improve the existing terrestrial AIS receiving network by encouraging enthusiasts to setup their own AIS receiving stations and to disseminate their local vessel traffic data freely to AIS Servers. This data can then be used by many organisations involved in monitoring and improving the safety and security of shipping.
-> 
-> The SARCNET project, which works on all models of Raspberry Pi, makes building the AIS receiving station simple by providing pictorial construction details with a pre-packaged Raspberry Pi image to download. The free project uses open-source software and a bootable Raspberry Pi image which has been updated to use the latest Raspbian Lite operating system.
-> 
-> One of the attractions of building your own AIS receiving station is that some AIS servers reward you when you freely upload your local vessel tracking data. They publish your station information, showing your station position on a map and your receiving statistics like messages per hour and coverage in nautical miles. Some give you free, premium access to their AIS data, which can be viewed on their mobile apps. Even so, by operating one of these AIS receiving stations, you will have the satisfaction of making the world a safer place.
-d+
+The School Amateur Radio Club Network publishes a simple project aimed at promoting the deployment of maritime Automatic Information System (AIS) receiving stations around the world using cheap RTL-SDR dongles and Raspberry Pi computers. The purpose of the project is to improve the existing terrestrial AIS receiving network by encouraging enthusiasts to setup their own AIS receiving stations and to disseminate their local vessel traffic data freely to AIS Servers. This data can then be used by many organisations involved in monitoring and improving the safety and security of shipping.
+ 
+ The SARCNET project, which works on all models of Raspberry Pi, makes building the AIS receiving station simple by providing pictorial construction details with a pre-packaged Raspberry Pi image to download. The free project uses open-source software and a bootable Raspberry Pi image which has been updated to use the latest Raspbian Lite operating system.
+ 
+ One of the attractions of building your own AIS receiving station is that some AIS servers reward you when you freely upload your local vessel tracking data. They publish your station information, showing your station position on a map and your receiving statistics like messages per hour and coverage in nautical miles. Some give you free, premium access to their AIS data, which can be viewed on their mobile apps. Even so, by operating one of these AIS receiving stations, you will have the satisfaction of making the world a safer place.
+
 
 ![](rtl-sdr.jpg)
 

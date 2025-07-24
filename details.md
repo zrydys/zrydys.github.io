@@ -91,6 +91,15 @@ Sample command to reduce fractal size. (@ GitHub.com/ZryDys)
    
 	identify fractalgold.png   #% will give you the image dimensions
 ```
+Or to handle song and music AI recognition: let us talk for further support:
+
+```bash  
+wget -qO- 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x6888550b2fc77d09' | sudo tee /etc/apt/trusted.gpg.d/songrec.asc
+sudo apt-add-repository ppa:marin-m/songrec -y -u
+sudo apt install songrec -y
+songrec
+```
+
 
 TBD: minor support:  3d matlab  http://dribbble.com/zrydys   
 
