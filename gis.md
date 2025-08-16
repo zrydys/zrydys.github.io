@@ -36,6 +36,7 @@ want to join or collaborate?:  📞 Contact us:  | ✉️ [ZryDys@gmail](mailto:
 
 An open and agile mindset delivers smart, reusable solutions in today’s circular economy. This GIS summary is freely shared — and we’re here to support you with implementation, training, and guidance every step of the way.
 
+References of powerfull GIS solutions that our customers can use, profit of our experience with: NOAA AIS Data (ESRI https://marinecadastre.gov/accessais/ https://marinecadastre.gov/accessais/ https://coast.noaa.gov/arcgis/rest/services/MarineCadastre/AISVesselTransitCounts2024/MapServer  https://github.com/ocm-marinecadastre/ais-vessel-traffic )
 
 # Technical GIS tools 
 
