@@ -250,15 +250,17 @@ US:
 	   'CA.jpg': 'Portfolio by MarianCustomArt.com' , 
 	   'kite': 'printables.com/@samster395', 
 	   	   'elvis-always.jpg': "Elvis' Always for Piano at MuseScore.com ", 
-
+'promalaga.jpg': 'Impulso funds by promalaga.es' ,
 	   'ar.jpg': 'Arrival 2016 - review at reelgood.com/search?q=arrival ',
 	    'esch4cc.jpg': 'MCEscher original 1953, with colors added by Zrydys', 
 	   '4d4d88f02aba3559a8ecd7e4498def05.jpg': 'Camper Van: Make it Home - Review at taptap.io/app/33677784 ',
 	   'header.jpg': 'Camper Van: Make it Home - Review at  steamcommunity.com/app/2843190 ',
 	   'broach':'printables.com/@John_56680', };
  let last= q.replace(/.*\//,''); 
- let msg=mens[ last ]; msg = msg ? msg : "to display here soon"+last+ mens[ last ];  // ZryDys.github.io
-  let msgurl=msg.replace(/.*\s(\S+\.[io,com,org,*])/gi, "https://$1");
+// let msg=mens[ last ]; msg = msg ? msg : "to display here soon"+last+ mens[ last ];  // ZryDys.github.io
+let msg=mens[ last ] || 'planet.html? . '+last+" (pending infos)";  //cj 2025Oct for undefined & msgurl
+  msg=msg.replace(/zrydys/i,'zryDys.Github.io'); //cj 2025Oct for no params or just own
+  let msgurl=msg.replace(/.*\s(\S+\.[io,es,com,org,*])/gi, "https://$1");
    e = document.getElementById("cj3");
 	e.innerHTML =msg.replace(/\?.*/,''); //remove ?....
 	 e.href= msgurl; //'https://'+msg;
