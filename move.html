@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ES" xml:lang="ES">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta name="generator" content="cj.cvs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="ZryDys Cj " />
+    <meta name="copyright" content="CC-BY ZryDys Cj. M. 2024" />
+    <meta name="license" content="CC-BY ZryDys Cj. M. 2024" />
+    <meta name="date" content="2024-05-31" />
+    <title id=t1>ZryDys browse Images in a 3D rotating cube</title>
+ <link rel="Shortcut icon" type="image/png" href="zrydysML.png"  title="ZRyDys" >
+ <link rel="fluid-icon" href="zrydysML.png" title="ZryDys">
+ <link rel="alternate icon" class="js-site-favicon" type="image/png" href="zrydysML.png"> 
+ <script src="params-cj.js">cc-by ZryDys/CJ 2024 ensures u* set by url or default</script> 
+
+	<!-- sin paged el 3d va y la impresion pasable 
+	-->
+ 
+<style> 
+   
+   /* colors */
+   .sepia { filter: sepia(100%); }
+.huerotate { filter: hue-rotate(180deg); }
+
+   h2,    .css-3d-text {
+    font-size: 26px;
+    color: #07cdff;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(-1,197,247),
+                 1px 1px 0 rgb(-9,189,239),
+                 2px 2px 0 rgb(-18,180,230),
+                 4px 4px  0 rgb(-34,164,214),
+                 5px 5px 4px rgba(0,0,0,0.31),
+                 0px 0px 4px rgba(0,0,0,.2);
+ }
+    .icons img {width: 24px; height: auto;}
+.iconss a {
+  display: inline-block;
+  padding: 2px 3px;
+  background-color: rgba(211, 211, 211, 0.4); /* Light semi-transparent gray */
+  color: #333; /* Dark text for contrast */
+  text-decoration: none; /* Remove the underline */
+  border-radius: 2px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+</style> 
+    <script id="vertexShader" type="x-shader/x-vertex"> // cj for transforming the vertices.
+				 
+		//layout (std140) 		uniform Matrices {     mat4 pvm;  } ;
+		//in vec4 position;
+		//out vec4 color;  //differ from https://www.lighthouse3d.com/tutorials/glsl-tutorial/hello-world/
+		 
+        void main() { // gl_Position = vec4( position, 1) ;  // faltaba rotat for non flat
+			 gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1) ; 
+			// gl_Position = projectionMatrix * modelViewMatrix * vec4(  projectionMatrix * modelViewMatrix * position, 1) ;
+			 }
+    </script>
+        <script id="fragmentShader" type="x-shader/x-fragment"> // cj all fragments color:
+		       uniform vec2 u_resolution;
+        uniform float u_time;
+
+ 		vec4  cjImage( in vec2 fragCoord ) // out  fragColor,
+		{
+			// Normalized pixel coordinates (from 0 to 1)
+			vec2 R = u_resolution.xy;
+			vec2 uv = (2.*fragCoord - R) / R.y;
+
+			// color as a vector of 3 components: red, green, blue.
+			vec3 col = vec3(uv.x, uv.y, 0.);
+
+			// draw crosshair
+			if(abs(uv.x) < 0.01 || abs(uv.y) < 0.01) col = vec3(.5);
+
+			// draw circle
+			if(dot(uv, uv) < 0.001) col = vec3(1);
+
+			return vec4(col,1.0);
+		}
+
+        void main() {
+            vec2 st = gl_FragCoord.xy/u_resolution.xy;
+			gl_FragColor = cjImage  (   gl_FragCoord.xy  );  //cjImag on absolut
+        }
+
+    </script>
+
+  </head>
+  <body>
+	  <center>
+		 <!-- FALKON OK 'jsm/k.png'  yet FFX cors KO  !! <li id="scene-container0" cj="for 3d canvas fine on li too but pagejs killed canvas"> </li>-->
+ <a href="https://ZryDys.github.io"> ZryDys.github.io </a> - Computer-aided Artistic Creation:
+	 browse Images in a 3D rotating cube	  </center>
+<!--
+- ZryDys created this 3D model inspired in the art of M.C.Escher named "Path of life II" woodcut printed in 1958 
+	-->	  
+ <div id="scene-container" cj="for 3d canvas fine on li too but pagejs killed canvas"  style="width: 100%; height: auto;" > </div>
+ <div class="iconss iconsl"  >
+ <!--
+CONTROLS: <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=-2&');}" >inside</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\?/,'?x=1&');}" >outside</a>| <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'planet.html');}" >planet</a> vs <a href="javascript:{window.location.href=window.location.href.replace(/\/\S+html/,'esch4.html');}" >cubes</a>  | 
+-->
+Controls:  <a href="#" class="x-link" data-x="-1"> Inside/out </a> Length/Wide <a href="#" class="x-link" data-x="1.25">+</a> <a href="#" class="x-link" data-x=".8">-</a>  <!--cj25nov controls x in out -->
+ Scale <a href="#" class="x-link" data-s="1.25">-</a> <a href="#" class="x-link" data-s=".8">+</a> 
+  Shape <a href="#" class="x-link" data-g="0">cube</a> <a href="#" class="x-link" data-g="1">sphere</a> <!--a href="#" class="x-link" data-g="2">dode</a--> 
+Gallery or your-Image: <input type="file" id="fileInput" accept="image/*" /> <img id="cachedImage" alt="Uploaded image will appear here" style="max-width: 300px; display: none;" /><!-- cj2510 evListen upload img      
+ <a href="#" class="x-link" data-q="tiles/4-7-5.png">q</a>  Fast <a href="#" class="x-link" data-f="-2"> fast + --2</a>
+ -->
+</div>
+<small>You are Browsing Internet Content: please kindly check original authors' copyrights above Before saving into video clip or printing.  
+Or order your firsts generated videos free ! 
+</br>- These animations at ZryDys effects-browser also thanks to the team of Three.js developers and Ricardo Cabello aka MrDoob.
+<!--br>- Most 3D demos published at ZryDys.Github.io were released CC-BY-SA-NC 4.0 except if stated otherwise -->
+</small>
+
+<br> 
+ <!-- 3d ========================================== img -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js">//ok</script>
+        <!--script src="/2act/a-goa/lib/three.min.js">console.debug("local3js")</script-->
+        <script src="jsm/three.min.js">cjlocal3js</script>
+ <script>// cj: this rotating img 3D !
+ var camera, scene, renderer;
+ var geometry, material, mesh;
+ var  material2;
+ 
+// cj2511 controls ------------------------- 
+var mxx=1.5; // or -1.5 starts equilib  ---- mat geo etc
+var mqq=ur.q;
+  const geos = [ // ARRay OF GEOMETRIES
+   new THREE.BoxGeometry(120, 120, 120) //cj2511 works and flexible re-shaping fast!! const  geoCube =  ;
+   ,  new THREE.SphereGeometry(120, 120, 120) //1 spher   const  geoSphe =  ;
+  //see dive ,  new THREE.DodecahedronBufferGeometry(111 ,0)
+   ] ;
+ 
+var mgg=0; 'cube';
+   console.info( geos, 0, geos[1] );
+//<!-- cj2510 evListen upload img
+    document.getElementById('fileInput').addEventListener('change', function(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      if (!file.type.startsWith('image/')) {
+        alert('Please upload an image file.');
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        cachedImageDataUrl = e.target.result; // data:image/jpeg;base64,... etc
+        const img = document.getElementById('cachedImage');
+        img.src = cachedImageDataUrl;
+        img.style.display = 'block';
+
+       updateAnimation(1 , 1, cachedImageDataUrl , mgg ) ; // update like newQ  forgot newG and raised Uncaught TypeError: can't access property "boundingSphere", c is undefined  three.min.js:601
+      // Enable the button since we now have an image cached
+        //document.getElementById('useImageBtn').disabled = false;
+      };
+      reader.readAsDataURL(file);  //aqui llamo al looad
+    });
+
+ // <!-- doesNOt needs same js chunk 
+//<!-- cj2511 evListen to rx postMsg from iframe -->
+window.addEventListener('message', (event) => {
+  // Optionally check event.origin for security
+  if (event.data === 'callParentFunction') {
+    parentFunction();  // Your function in the parent to be called
+  }
+});
+
+function parentFunction() {
+  alert('Parent function called from iframe!');
+}
+//then in iframe: <a href="#" onclick="window.parent.postMessage('callParentFunction', '*'); return false;">Call Parent</a>
+
+//<!-- cj2510 evListen to update anim -->
+function updateAnimation(newX,newS,newQ,newG  ) {
+  mxx = mxx*newX;    //  console.info(mesh,1, newX,mxx );
+  mesh.scale.x = mxx; 
+    camera.position.z *= newS;  //inc dec distance
+
+  if ( mqq != newQ ) {
+      newM=   new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture( newQ || 'cach/MD.jpg' ) }) ;  //pls release newM memory first !
+      mesh.material=newM;  //AMAZING changes img in msec! .material  then .geo
+  }
+    if ( mgg != newG ) {  
+        mgg = newG ;
+       mesh.geometry = geos[newG];
+      } //cj2511 works and flexible re-shaping fast!!
+  //console.info(mqq,newQ, newX,00 );
+  // Redraw or update animation here, for example:
+  // drawScene(x); or similar function used in your code
+}
+
+document.querySelectorAll('a.x-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const newX = parseFloat(this.getAttribute('data-x') || 1.0 );
+        const newS = parseFloat(this.getAttribute('data-s') || 1.0 );
+          const newQ =  (this.getAttribute('data-q') || mqq );
+       const newG = parseInt (this.getAttribute('data-g') || mgg );
+    updateAnimation(newX,newS,newQ,newG );
+  });
+}); //cj25nov controls x in out 
+
+ init(); animate();
+
+ function init() {
+
+    camera = new THREE. PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 10000); // cj: 
+    camera.position.z = 210;
+    
+    scene = new THREE. Scene(); // bkgd?
+     scene.background = new THREE.Color('lightcyan');
+      scene.fog = new THREE.Fog(0xeee, 0, 750);
+    
+    geometry = new THREE.BoxGeometry(100, 120, 150);
+    //antes:
+		  material = new THREE.MeshBasicMaterial({     color: 0xee0044 });
+
+            uniforms = {
+                u_time: { type: "f", value: 1.0 },
+                u_resolution: { type: "v2", value: new THREE.Vector2() },
+                u_mouse: { type: "v2", value: new THREE.Vector2() }
+            }; 
+
+            material2 = new THREE.ShaderMaterial( {  //undef?
+                uniforms: uniforms,
+                vertexShader: document.getElementById( 'vertexShader' ).textContent,
+                fragmentShader: document.getElementById( 'fragmentShader' ).textContent
+            } );
+
+const vertexShader = /*glsl*/`//el 2 necesitaba igual projec y model el matw y 3 ok
+void main() {
+  gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+}
+`;
+
+const fragmentShader = /*glsl*/` //el 2 y mat3 ok
+void main() {
+  gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+}
+`;
+
+const material3 = new THREE.ShaderMaterial({
+  fragmentShader: fragmentShader,
+  vertexShader: vertexShader
+});
+
+const loader = new THREE.TextureLoader(); //texture
+  //fail  loader.setCrossOrigin( 'anonymous' );  //cors
+  //fail  loader.crossOrigin = 'anonymous';PERHAPS Disabling HTTPS-Only Mode in Firefox solve...
+      loader.crossOrigin = '';
+ // anyway ffx fails loader.crossOrigin = null  ; 
+var myimg='http://localhost:8000/k.png'; //python3 -m http.server #%Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:8000/k.png. (Reason: CORS header ‘Access-Control-Allow-Origin’ missing). 
+  myimg='jsm/k.png';  myimg='sail.jpeg'; //#%not same dir//hmm CORS in local
+ myimg='../../2prod/elk-proxy/ProxyHits-2day-byNetwork.PNG';
+
+ myimg='../../2prod/elk-proxy/proxy-by-url.PNG';
+ myimg='cubE.png';
+ myimg='esch4cc.jpg'; //Escher Next Dimension
+myimg=ur.q; //params
+// this fails also falkon wo/ msg: var texture = loader.load( myimg ); var material5 = new THREE.MeshLambertMaterial({ map: texture });  //mat5 text image k.png
+
+//const  blob:file:///a3ef88d3-eac1-46de-abeb-08a3fe62ce38
+   
+   //5 new THREE.PlaneGeometry( 1, 1, 1, 1 ),
+   //5 older deprecated. but better cors  FALKON OK 'jsm/k.png'  yet FFX cors KO
+material5 = new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture( myimg ) }) ;
+   
+    mesh = new THREE.Mesh(geometry, material5 );
+    mesh.scale.x = 1.5; mesh.scale.y = 1.5; mesh.scale.z = 1.5; // cj big ssignificant effect
+   if (ur.x<0) { mesh.scale.x = -2; mesh.scale.y = 2; mesh.scale.z = 2;} // cj big ssignificant effect
+
+    scene.add(mesh);
+    
+    renderer = new THREE.WebGLRenderer();
+    renderer.setSize(126, 124); //pequen
+   // renderer.setSize(326, 324); // medium
+    renderer.setSize(window.innerWidth/1.2, window.innerHeight/1.2); // fit
+    
+    // EITHER, OR document.body.appendChild(renderer.domElement);  //pon the created <canvas>
+    const container = document.querySelector('#scene-container'); // the container that will hold scene
+    container.append(renderer.domElement); // add the created <canvas> element to the cont
+
+            onWindowResize();
+            window.addEventListener( 'resize', onWindowResize, false ); //add onwind
+
+            document.onmousemove = function(e){
+              uniforms.u_mouse.value.x = e.pageX
+              uniforms.u_mouse.value.y = e.pageY
+            }
+
+ }
+
+ function animate() {
+//  console.info( 7,5,3, newX, mxx );
+ //  mesh.scale.x = -1;
+  
+
+    requestAnimationFrame(animate );
+    mesh.rotation.x += 0.002;
+    mesh.rotation.y += 0.003;
+//            uniforms.u_time.value += clock.getDelta(); //from otr
+    renderer.render(scene, camera);
+ } // cj: end of moving logo img 3D ==========================================
+
+         function onWindowResize( event ) {
+			  console.debug (uniforms , material, material2);
+		//	  console.debug (uniforms , material);
+            renderer.setSize( window.innerWidth, window.innerHeight );
+            uniforms.u_resolution.value.x = renderer.domElement.width;
+            uniforms.u_resolution.value.y = renderer.domElement.height;
+        }
+
+ </script>
+  <hr>
+<p>Explore the Gallery of recent effects / and Click over to visit :
+
+ <iframe id="iGallery" src="gallery.html" width=100%  height=40% allowtransparency="true" frameborder="0" allowfullscreen noscroll style="border:none; width:100%; overflow:hidden;" >
+iGallery no height:100vh;  </iframe>
+
+ <iframe id="iSources" src="css/sources.html" width=100%  allowtransparency="true" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> iSources  </iframe> 
+
+  </body>
+</html>
