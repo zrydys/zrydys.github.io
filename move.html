@@ -103,7 +103,7 @@ CONTROLS: <a href="javascript:{window.location.href=window.location.href.replace
 -->
 Controls:  <a href="#" class="x-link" data-x="-1"> Inside/out </a> Length/Wide <a href="#" class="x-link" data-x="1.25">+</a> <a href="#" class="x-link" data-x=".8">-</a>  <!--cj25nov controls x in out -->
  Scale <a href="#" class="x-link" data-s="1.25">-</a> <a href="#" class="x-link" data-s=".8">+</a> 
-  Shape <a href="#" class="x-link" data-g="0">cube</a> <a href="#" class="x-link" data-g="1">sphere</a> <!--a href="#" class="x-link" data-g="2">dode</a--> 
+  Shape <a href="#" class="x-link" data-g="0">cube</a> <a href="#" class="x-link" data-g="1">sphere</a> <a href="#" class="x-link" data-g="2">cylinder</a> <a href="#" class="x-link" data-g="3">hexo</a> <a href="#" class="x-link" data-g="5">torus</a> <a href="#" class="x-link" data-g="4">ico</a>  <!--a href="#" class="x-link" data-g="2">dode</a--> 
 Gallery or your-Image: <input type="file" id="fileInput" accept="image/*" /> <img id="cachedImage" alt="Uploaded image will appear here" style="max-width: 300px; display: none;" /><!-- cj2510 evListen upload img      
  <a href="#" class="x-link" data-q="tiles/4-7-5.png">q</a>  Fast <a href="#" class="x-link" data-f="-2"> fast + --2</a>
  -->
@@ -130,6 +130,10 @@ var mqq=ur.q;
   const geos = [ // ARRay OF GEOMETRIES
    new THREE.BoxGeometry(120, 120, 120) //cj2511 works and flexible re-shaping fast!! const  geoCube =  ;
    ,  new THREE.SphereGeometry(120, 120, 120) //1 spher   const  geoSphe =  ;
+   , new THREE.CylinderGeometry( 120, 120, 120, 60) //no;
+  ,  new THREE.CylinderGeometry( 120, 60, 120, 6) //no;
+  ,  new THREE.IcosahedronGeometry(120, 0)
+  , new THREE.TorusGeometry( 120, 40 , 16 , 60)
   //see dive ,  new THREE.DodecahedronBufferGeometry(111 ,0)
    ] ;
  
@@ -312,6 +316,8 @@ material5 = new THREE.MeshBasicMaterial({ map: THREE.ImageUtils.loadTexture( myi
             uniforms.u_resolution.value.x = renderer.domElement.width;
             uniforms.u_resolution.value.y = renderer.domElement.height;
         }
+// true console.log("IcosahedronGeometry:", !!THREE.IcosahedronGeometry); console.log("CylinderGeometry:", !!THREE.CylinderGeometry); console.log("TorusGeometry:", !!THREE.TorusGeometry); //new shapes
+
 
  </script>
   <hr>
