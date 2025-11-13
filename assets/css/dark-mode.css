@@ -1,0 +1,11 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #16161a !important;
+    color: #eee !important;
+  }
+  a, h1, h2, h3, h4, h5, h6 {
+    color: #e9e9f2 !important;
+  }
+  /* perplex rules, cj 25.11 zrydys CC-CY */
+}
+
