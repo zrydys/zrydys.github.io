@@ -1,8 +1,8 @@
     
 
 #% from local gems:   theme: jekyll-theme-tactile
-remote_theme: pages-themes/tactile@v0.2.0
-theme: jekyll-theme-chirpy
+#%fine till25.11.11 remote_theme: pages-themes/tactile@v0.2.0
+remote_theme: cotes2020/jekyll-theme-chirpy
 
 sass:
   style: compressed
