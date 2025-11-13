@@ -33,12 +33,14 @@
 #content, main ,
 /* cj25.11 was forgeting !imp */
 .container, .site, .wrapper {
+min-width: 80% !important; 
 max-width: 1400px !important;  /* wider than default */
 width: 92% !important; /* responsive */
 margin-left: auto;
 margin-right: auto;
 padding-left: 0 !important;
 padding-right: 0 !important;
+outline: 2px dashed red !important; /*debug*/
 }
 
 
