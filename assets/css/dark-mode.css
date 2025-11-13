@@ -32,5 +32,15 @@ body {
   border: 5px solid orange !important;
 }
 
+body::before {
+  background-image: none !important;
+  content: none !important;
 }
 
+
+}
+
+
+:root {
+  --highlight-bg: none !important;
+}
