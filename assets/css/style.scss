@@ -29,6 +29,7 @@
   padding: 0 1rem !important ; /* optional spacing */
 }
 
+#container,
 .container {
   max-width: 1200px; /* wider than default */
   width: 90%; /* responsive */
@@ -58,14 +59,17 @@ a:focus {
 
 /* or for a specific element CJ25.11 for dark mode to avoid tactile /assets/images/highlight-bg.jpg
  ' fixing background imag: there was a wrong // and missed .container #container '
- */
 body,
 .header,
 .page,
 .site-header,
-/* .container, #container, */
+ */
+
+.container, #container, 
+/* 
 .header::before,
 .page::before,
+*/
 .site-header::before {
   background-image: none !important;
   background: none !important;
