@@ -43,11 +43,14 @@ a:focus {
 }
 
 
-// or for a specific element CJ25.11 for dark mode to avoid tactile /assets/images/highlight-bg.jpg
+/* or for a specific element CJ25.11 for dark mode to avoid tactile /assets/images/highlight-bg.jpg
+ ' fixing background imag: there was a wrong // and missed .container #container '
+ */
 body,
 .header,
 .page,
 .site-header,
+.container, #container, 
 .header::before,
 .page::before,
 .site-header::before {
