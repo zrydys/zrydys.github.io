@@ -15,9 +15,9 @@
   .header,
   .page,
   .site-header,
-  .header::before,
+/*  .header::before,
   .page::before,
-  .site-header::before {
+*/  .site-header::before {
     background-image: none !important;
     background: none !important;
     content: none !important; /* for pseudo-elements */
