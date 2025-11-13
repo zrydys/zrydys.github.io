@@ -28,6 +28,19 @@
   width: 110% !important ;
   padding: 0 1rem !important ; /* optional spacing */
 }
+
+.container {
+  max-width: 1200px; /* wider than default */
+  width: 90%; /* responsive */
+  margin: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 /* Aqua/marine colored links */
 a {
   color: #2ca1a1 !important ; /* marine/aqua shade */
@@ -50,7 +63,7 @@ body,
 .header,
 .page,
 .site-header,
-.container, #container, 
+/* .container, #container, */
 .header::before,
 .page::before,
 .site-header::before {
