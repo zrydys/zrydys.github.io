@@ -22,6 +22,20 @@ body,
   content: none !important; /* for pseudo-elements */
 }
 
+body, .header, .page, .site-header,
+body::before, body::after,
+.header::before, .header::after,
+.page::before, .page::after,
+.site-header::before, .site-header::after {
+  background-image: none !important;
+  background: none !important;
+  content: none !important; /* Remove pseudo content */
+  opacity: 0 !important;    /* Hide if background image is on pseudo-element */
+  pointer-events: none !important; /* Prevent interaction */
+}
+
+
+
 @media (prefers-color-scheme: dark) {
   body,
   .header,
