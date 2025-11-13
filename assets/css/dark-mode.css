@@ -9,3 +9,34 @@
   /* perplex rules, cj 25.11 zrydys CC-CY */
 }
 
+/* cj try 25.11 no image-bg 3rd try */
+body,
+.header,
+.page,
+.site-header,
+.header::before,
+.page::before,
+.site-header::before {
+  background-image: none !important;
+  background: none !important;
+  content: none !important; /* for pseudo-elements */
+}
+
+@media (prefers-color-scheme: dark) {
+  body,
+  .header,
+  .page,
+  .site-header,
+  .header::before,
+  .page::before,
+  .site-header::before {
+    background-image: none !important;
+    background: none !important;
+    content: none !important; /* for pseudo-elements */
+  }
+}
+
+body {
+  background-color: #222 !important;
+  border: 5px solid red !important;
+}
