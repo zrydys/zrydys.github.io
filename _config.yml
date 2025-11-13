@@ -2,8 +2,9 @@
 
 #% from local gems:   theme: jekyll-theme-tactile
 #%fine till25.11.1 remote_theme: pages-themes/tactile@v0.2.0
+remote_theme: pages-themes/tactile@v0.2.0
 #%mistral.ail failed on remote_theme: cotes2020/jekyll-theme-chirpy
-remote_theme: pages-themes/minimal@v0.2.0
+#% fails 2troubleshoot remote_theme: pages-themes/minimal@v0.2.0
 
 sass:
   style: compressed
