@@ -43,10 +43,15 @@ a:focus {
 }
 
 
-body {
-  background-image: none !important;
-}
 // or for a specific element CJ25.11 for dark mode to avoid tactile /assets/images/highlight-bg.jpg
-.header, .page {
+body,
+.header,
+.page,
+.site-header,
+.header::before,
+.page::before,
+.site-header::before {
   background-image: none !important;
+  background: none !important;
+  content: none !important; /* for pseudo-elements */
 }
