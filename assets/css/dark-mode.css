@@ -10,32 +10,6 @@
 }
 
 /* cj try 25.11 no image-bg 3rd try */
-body,
-.header,
-.page,
-.site-header,
-.header::before,
-.page::before,
-.site-header::before {
-  background-image: none !important;
-  background: none !important;
-  content: none !important; /* for pseudo-elements */
-}
-
-body, .header, .page, .site-header,
-body::before, body::after,
-.header::before, .header::after,
-.page::before, .page::after,
-.site-header::before, .site-header::after {
-  background-image: none !important;
-  background: none !important;
-  content: none !important; /* Remove pseudo content */
-  opacity: 0 !important;    /* Hide if background image is on pseudo-element */
-  pointer-events: none !important; /* Prevent interaction */
-}
-
-
-
 @media (prefers-color-scheme: dark) {
   body,
   .header,
@@ -48,9 +22,15 @@ body::before, body::after,
     background: none !important;
     content: none !important; /* for pseudo-elements */
   }
+
+body, .header, .page {
+  background: #121212 !important; /* or your desired bg color */
 }
 
 body {
   background-color: #222 !important;
-  border: 5px solid red !important;
+  border: 5px solid orange !important;
 }
+
+}
+
