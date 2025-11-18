@@ -65,7 +65,7 @@ audioElement.addEventListener('pause', () => {
 
   });
 });
-
+/* ---------------------- need a try {} err
 // Microphone Input Handling
 const startMicButton = document.getElementById('start-microphone');
 startMicButton.addEventListener('click', () => {
@@ -79,4 +79,4 @@ startMicButton.addEventListener('click', () => {
       console.error('Microphone error:', err);
     });
 });
-
+*/
