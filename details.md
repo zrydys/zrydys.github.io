@@ -124,6 +124,13 @@ TBD: minor support:  3d matlab  http://dribbble.com/zrydys
 
 - [Discord ](https://discord.com/invite/zrydys)
 
+### Thanks
+
+Thank you to Technology Promoters for their generous funding.
+
+This business project has benefited from the "Impulso" Grant of the Promalaga Development Program.
+![](cach/promalaga.jpg)
+
 ##### Table of Contents 
 
 [Fractal](#fractal)  
