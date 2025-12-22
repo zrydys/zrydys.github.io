@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Tree on GitHub Pages</title>
+    
+    <!-- React and React-DOM from CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- Babel for JSX transformation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Lucide React Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <style>
+        :root {
+            --background: #2e2e4b;
+            --foreground: #ededed;
+            --text-secondary: #96a3b7;
+            --text-tertiary: #64748b;
+            --accent-color: #a390f5;
+            --accent-hover: rgba(167, 139, 255, 0.2);
+            --background-bg-card: #323046;
+            --background-bg-secondary: #2a2a38;
+            --border-color: #334155;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: var(--background);
+            color: var(--foreground);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #a390f5, #8366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+        
+        .card {
+            background: var(--background-bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--foreground);
+        }
+        
+        .tree-container {
+            background: var(--background-bg-secondary);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            min-height: 300px;
+        }
+        
+        .tree-node {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+            cursor: pointer;
+            border-radius: 0.5rem;
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+        
+        .tree-node:hover {
+            background: var(--accent-hover);
+        }
+        
+        .tree-node-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 0.5rem;
+            flex-shrink: 0;
+        }
+        
+        .tree-node-chevron {
+            width: 16px;
+            height: 16px;
+            margin-right: 0.5rem;
+            transition: transform 0.2s ease;
+            flex-shrink: 0;
+        }
+        
+        .tree-node-chevron.rotated {
+            transform: rotate(90deg);
+        }
+        
+        .tree-node-text {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        .tree-node.root .tree-node-text {
+            color: var(--foreground);
+            font-weight: 600;
+        }
+        
+        .tree-node.folder .tree-node-text {
+            color: var(--text-tertiary);
+        }
+        
+        .tree-children {
+            margin-left: 1.5rem;
+            overflow: hidden;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: var(--accent-hover);
+            color: var(--accent-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        
+        .steps {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .steps li {
+            counter-increment: step-counter;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-left: 3rem;
+        }
+        
+        .steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: var(--accent-color);
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+        
+        .code-block {
+            background: #1a1a2e;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            padding: 1rem;
+            overflow-x: auto;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.9rem;
+            margin: 1rem 0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-tertiary);
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState } = React;
+        
+        // Tree data structure
+        const treeData = {
+            id: 'root',
+            name: 'my-website',
+            type: 'root',
+            children: [
+                {
+                    id: 'src',
+                    name: 'src',
+                    type: 'folder',
+                    children: [
+                        {
+                            id: 'components',
+                            name: 'components',
+                            type: 'folder',
+                            children: [
+                                { id: 'header', name: 'Header.jsx', type: 'file' },
+                                { id: 'footer', name: 'Footer.jsx', type: 'file' },
+                                { id: 'tree', name: 'Tree.jsx', type: 'file' }
+                            ]
+                        },
+                        {
+                            id: 'styles',
+                            name: 'styles',
+                            type: 'folder',
+                            children: [
+                                { id: 'main', name: 'main.css', type: 'file' },
+                                { id: 'theme', name: 'theme.css', type: 'file' }
+                            ]
+                        },
+                        { id: 'app', name: 'App.jsx', type: 'file' },
+                        { id: 'index', name: 'index.js', type: 'file' }
+                    ]
+                },
+                {
+                    id: 'public',
+                    name: 'public',
+                    type: 'folder',
+                    children: [
+                        { id: 'index-html', name: 'index.html', type: 'file' },
+                        { id: 'favicon', name: 'favicon.ico', type: 'file' }
+                    ]
+                },
+                { id: 'package', name: 'package.json', type: 'file' },
+                { id: 'readme', name: 'README.md', type: 'file' }
+            ]
+        };
+        
+        // Tree Node Component
+        const TreeNode = ({ node, level = 0 }) => {
+            const [isExpanded, setIsExpanded] = useState(level < 2);
+            const hasChildren = node.children && node.children.length > 0;
+            
+            const toggleExpand = () => {
+                if (hasChildren) {
+                    setIsExpanded(!isExpanded);
+                }
+            };
+            
+            const getIcon = () => {
+                if (node.type === 'root') return '🌐';
+                if (node.type === 'folder') return isExpanded ? '📂' : '📁';
+                return '📄';
+            };
+            
+            return (
+                <div>
+                    <div 
+                        className={`tree-node ${node.type}`}
+                        onClick={toggleExpand}
+                        style={{ paddingLeft: `${level * 24}px` }}
+                    >
+                        {hasChildren && (
+                            <span className={`tree-node-chevron ${isExpanded ? 'rotated' : ''}`}>
+                                ▶
+                            </span>
+                        )}
+                        {!hasChildren && <span style={{ width: '16px', display: 'inline-block' }} />}
+                        <span className="tree-node-icon">{getIcon()}</span>
+                        <span className="tree-node-text">{node.name}</span>
+                    </div>
+                    {hasChildren && isExpanded && (
+                        <div className="tree-children">
+                            {node.children.map(child => (
+                                <TreeNode key={child.id} node={child} level={level + 1} />
+                            ))}
+                        </div>
+                    )}
+                </div>
+            );
+        };
+        
+        // Main App Component
+        const App = () => {
+            return (
+                <div className="container">
+                    <header className="header">
+                        <h1>React Tree Component</h1>
+                        <p>Interactive file tree built with React and deployed on GitHub Pages</p>
+                    </header>
+                    
+                    <div className="card">
+                        <div className="badge">🚀 Live Demo</div>
+                        <h2 className="card-title">File Structure</h2>
+                        <div className="tree-container">
+                            <TreeNode node={treeData} />
+                        </div>
+                    </div>
+                    
+                    <div className="card">
+                        <h2 className="card-title">How This Works</h2>
+                        <p style={{ marginBottom: '1rem', color: 'var(--text-secondary)' }}>
+                            This React tree component is running entirely in the browser using CDN libraries. 
+                            No build step required - perfect for GitHub Pages!
+                        </p>
+                        <ul className="steps">
+                            <li>
+                                <strong>Create index.html</strong> - Add React, React-DOM, and Babel from CDN
+                            </li>
+                            <li>
+                                <strong>Write React Components</strong> - Use JSX syntax in script tags with type="text/babel"
+                            </li>
+                            <li>
+                                <strong>Push to GitHub</strong> - Commit the HTML file to your repository
+                            </li>
+                            <li>
+                                <strong>Enable GitHub Pages</strong> - Go to Settings → Pages and select the main branch
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <footer className="footer">
+                        <p>Built with ❤️ using React CDN on GitHub Pages</p>
+                    </footer>
+                </div>
+            );
+        };
+        
+        // Render the app
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
