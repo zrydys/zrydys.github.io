@@ -1,10 +1,21 @@
 usage: yq . products.yaml > products.json
 products:
+- n: Fractal tree
+  p: fractal
+  i: zrydys.png   
+  d: fractal javascript
+  k: fractal
+- n: maps
+  p: maps
+  i: tiles/4-8-4.png
+  d: CET Berlin area
+  k: travel,timezone
+
 - o: 1
   n: Wireless Mouse
   p: 29.99
   k: Electronics
-  i: cach/MD.jpg
+  i: zrydys.png   
   d: Ergonomic wireless mouse
   a: 50
 - o: 2
@@ -40,7 +51,7 @@ products:
   i: thumb/camp.jpg
   n: Camper
   d: Camper Van, Make it Home
-  k: game
+  k: game,travel
   p: mvp
   a: Review at  steamcommunity.com/app/2843190 
 - u: planet.html?q=cach/CA.jpg
@@ -50,18 +61,25 @@ products:
   k: 
   p: mvp
   a: 
-- u: planet.html?q=cach/MD.jpg
+- u: move.html?q=cach/MD.jpg
   i: thumb/merge.jpg
-  n: Merge
-  d: 
-  k: 
+  n: Merge game moving
+  d: Merge with darkness - 3d effect
+  k: game
   p: mvp
-  a: 
+  a: E.
+- u: planet.html?q=cach/MD.jpg
+  n: Merge game 
+  p: 29.99
+  k: game
+  i: cach/MD.jpg
+  d: Merge with darkness 
+  a: E. (QR in pic)
 - u: planet.html?q=thumb/elvis-always.jpg
   i: anim/elvis.gif
   n: Elvis Piano
   d: 
-  k: 
+  k: music
   p: mvp
   a: 
 - u: mvpc.html
@@ -70,14 +88,14 @@ products:
   d: 
   k: 
   p: mvp
-  a: 
+  a: ZryDys
 - u: escher3D.html
   i: thumb/esch3.jpg
   n: 3D Escher
   d: 
   k: 
   p: mvp
-  a: 
+  a: ZryDys inspired in Escher
 - u: ?q=cach/M.jpg
   i: cach/M.jpg
   n: Museums
@@ -103,35 +121,35 @@ products:
   i: anim/diving.gif
   n: diving
   d: 
-  k: 
+  k: dive3D
   p: mvp
-  a: 
+  a: ZryDys
 - u: orbitforest.html
   i: anim/forest.gif
   n: forest
   d: 
-  k: 
+  k: dive3D
   p: mvp
-  a: 
+  a: ZryDys
 - u: diving.html?o=tetra&e=cubcon
   i: anim/concert.gif
   n: Pyramids & Concert
   d: 
-  k: 
+  k: dive3D
   p: mvp
-  a: 
+  a: ZryDys
 - u: diving.html?o=menger&e=cubmau
   i: anim/maunakea.gif
   n: Geometry & Galaxy
-  d: 
-  k: 
+  d: Night sky at Maunakea
+  k: dive3D
   p: mvp
-  a: 
+  a: ZryDys
 - u: keyr.html?q=wingfoil&c=0xadadad
   i: thumb/wingfoil3.jpg
-  n: Nautic
-  d: 
-  k: keyring
+  n: Nautic Solid
+  d: wingfoil for sailing
+  k: nautic,keyring
   p: mvp
   a: 
 - u: keyr.html?q=tetra&c=0xa1a12a
@@ -144,8 +162,8 @@ products:
 - u: keyr.html?q=noc&c=0x1111aa
   i: thumb/noc3.jpg
   n: NOceaNoUs
-  d: 
-  k: keyring
+  d: NOceaNoUs Keyring
+  k: keyring,nautic
   p: mvp
   a: 
 - u: keyr.html?q=kite&c=0x41a19a
@@ -219,6 +237,17 @@ products:
   p: mvp
   a: zryDys 
 - i: cach/promalaga.jpg
-  n: Impulso funds
-  a: promalaga.es
-  k: funds
+  u: esch4.html?q=cach/promalaga.jpg
+  p: box
+  d: Impulso promotive funding
+  n: Impulso funding
+  a: promalaga.es 
+  k: funding
+
+- i: forest.jpg 
+  u: move.html?q=forest.jpg 
+  p: box
+  d: cofinanciado por la union europea
+  n: EU funding
+  a: europe.eu
+  k: funding

@@ -2,11 +2,25 @@
   "usage": "yq . products.yaml > products.json",
   "products": [
     {
+      "n": "Fractal tree",
+      "p": "fractal",
+      "i": "zrydys.png",
+      "d": "fractal javascript",
+      "k": "fractal"
+    },
+    {
+      "n": "maps",
+      "p": "maps",
+      "i": "tiles/4-8-4.png",
+      "d": "CET Berlin area",
+      "k": "travel,timezone"
+    },
+    {
       "o": 1,
       "n": "Wireless Mouse",
       "p": 29.99,
       "k": "Electronics",
-      "i": "cach/MD.jpg",
+      "i": "zrydys.png",
       "d": "Ergonomic wireless mouse",
       "a": 50
     },
@@ -47,11 +61,12 @@
       "a": 2
     },
     {
-      "u": "?q=https://img.tapimg.net/market/images/4d4d88f02aba3559a8ecd7e4498def05.jpg",
+      "u": "https://img.tapimg.net/market/images/4d4d88f02aba3559a8ecd7e4498def05.jpg",
+      "g": "?q=https://img.tapimg.net/market/images/4d4d88f02aba3559a8ecd7e4498def05.jpg",
       "i": "thumb/camp.jpg",
       "n": "Camper",
       "d": "Camper Van, Make it Home",
-      "k": "game",
+      "k": "game,travel",
       "p": "mvp",
       "a": "Review at  steamcommunity.com/app/2843190"
     },
@@ -65,20 +80,29 @@
       "a": null
     },
     {
-      "u": "planet.html?q=cach/MD.jpg",
+      "u": "move.html?q=cach/MD.jpg",
       "i": "thumb/merge.jpg",
-      "n": "Merge",
-      "d": null,
-      "k": null,
+      "n": "Merge game moving",
+      "d": "Merge with darkness - 3d effect",
+      "k": "game",
       "p": "mvp",
-      "a": null
+      "a": "E."
+    },
+    {
+      "u": "planet.html?q=cach/MD.jpg",
+      "n": "Merge game",
+      "p": 29.99,
+      "k": "game",
+      "i": "cach/MD.jpg",
+      "d": "Merge with darkness",
+      "a": "E. (QR in pic)"
     },
     {
       "u": "planet.html?q=thumb/elvis-always.jpg",
       "i": "anim/elvis.gif",
       "n": "Elvis Piano",
       "d": null,
-      "k": null,
+      "k": "music",
       "p": "mvp",
       "a": null
     },
@@ -89,7 +113,7 @@
       "d": null,
       "k": null,
       "p": "mvp",
-      "a": null
+      "a": "ZryDys"
     },
     {
       "u": "escher3D.html",
@@ -98,7 +122,7 @@
       "d": null,
       "k": null,
       "p": "mvp",
-      "a": null
+      "a": "ZryDys inspired in Escher"
     },
     {
       "u": "?q=cach/M.jpg",
@@ -132,43 +156,43 @@
       "i": "anim/diving.gif",
       "n": "diving",
       "d": null,
-      "k": null,
+      "k": "dive3D",
       "p": "mvp",
-      "a": null
+      "a": "ZryDys"
     },
     {
       "u": "orbitforest.html",
       "i": "anim/forest.gif",
       "n": "forest",
       "d": null,
-      "k": null,
+      "k": "dive3D",
       "p": "mvp",
-      "a": null
+      "a": "ZryDys"
     },
     {
       "u": "diving.html?o=tetra&e=cubcon",
       "i": "anim/concert.gif",
       "n": "Pyramids & Concert",
       "d": null,
-      "k": null,
+      "k": "dive3D",
       "p": "mvp",
-      "a": null
+      "a": "ZryDys"
     },
     {
       "u": "diving.html?o=menger&e=cubmau",
       "i": "anim/maunakea.gif",
       "n": "Geometry & Galaxy",
-      "d": null,
-      "k": null,
+      "d": "Night sky at Maunakea",
+      "k": "dive3D",
       "p": "mvp",
-      "a": null
+      "a": "ZryDys"
     },
     {
       "u": "keyr.html?q=wingfoil&c=0xadadad",
       "i": "thumb/wingfoil3.jpg",
-      "n": "Nautic",
-      "d": null,
-      "k": "keyring",
+      "n": "Nautic Solid",
+      "d": "wingfoil for sailing",
+      "k": "nautic,keyring",
       "p": "mvp",
       "a": null
     },
@@ -185,8 +209,8 @@
       "u": "keyr.html?q=noc&c=0x1111aa",
       "i": "thumb/noc3.jpg",
       "n": "NOceaNoUs",
-      "d": null,
-      "k": "keyring",
+      "d": "NOceaNoUs Keyring",
+      "k": "keyring,nautic",
       "p": "mvp",
       "a": null
     },
@@ -282,9 +306,21 @@
     },
     {
       "i": "cach/promalaga.jpg",
-      "n": "Impulso funds",
+      "u": "esch4.html?q=cach/promalaga.jpg",
+      "p": "box",
+      "d": "Impulso promotive funding",
+      "n": "Impulso funding",
       "a": "promalaga.es",
-      "k": "funds"
+      "k": "funding"
+    },
+    {
+      "i": "forest.jpg",
+      "u": "move.html?q=forest.jpg",
+      "p": "box",
+      "d": "cofinanciado por la union europea",
+      "n": "EU funding",
+      "a": "europe.eu",
+      "k": "funding"
     }
   ]
 }

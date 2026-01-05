@@ -10,7 +10,7 @@
     <div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
         <h4> ZryDys Catalog - from  most visited effects last 2025   </h4>
         <div class="filters">
-            <input type="text" id="search" placeholder="Search results...">
+            <input type="text" id="search" placeholder="Search results ...  ⇄ ">
               <!-- Buttons generated dynamically here
             <button class="filter-btn  " data-category="all">Toos</button> 
             <button class="filter-btn" data-category="Cyb" id="b-Cyb">Cyber</button>-->
@@ -25,16 +25,29 @@
     <script>
         let products = [];
         let filteredProducts = [];
+        let ell = null;
+        
+		window.onload = function() {  // to make sure the footer is loaded
+			  ell = document.getElementById('current-url');
+              if (ell) {            //console.info( `  sss=${ell} ` );
+				ell.href = window.location.href;
+				ell.textContent = window.location.href;
+			  }
+		}
+
 
         // Load JSON data
         async function loadProducts() {
             try {
-                const response = await fetch('catalog/products.json?v=.6');
+                const response = await fetch('catalog/products.json?v=.7');
                 const data = await response.json();
                 products = data.products;
+                                   console.info(   'load' ,  products );  //TO SET AFTER LOAD
+
 				 // Get unique categories from JSON  arr.filter(item => item != null);  or   .filter(Boolean);
-				const categories = ['all', ...new Set(products.map(p => p.k))]  .filter( Boolean ); //no nulls
-                console.info( categories );
+				var categories = ['all', ...new Set(products.map(p =>  (p.k)   )  )]  .filter( Boolean ); //no nulls
+				categories = categories .map ( cada => String(cada).split(",") )  .flat() ; // enhanced to , separated  ,, then must search by .includes(  )
+				categories = [...new Set(categories)] ;
 
   // Generate buttons HTML
   const filtersContainer = document.querySelector('.filters');
@@ -48,7 +61,10 @@
     const k = params.get('k') || 'all'  ; // e.g. "Home" or all (if null)
 
     // 2) If k  , filter by category == k, else show all
-    filteredProducts = (k === 'all') ? [...products] :  products.filter(p => String(p.k) === String(k));  //toos vs filtered
+    // filteredProducts = (k === 'all') ? [...products] :  products.filter(p => String(p.k) === String(k));  //toos vs filtered
+        filteredProducts = (k === 'all') ? [...products] :  products.filter(p => String(p.k).includes( String(k) ) );  //toos vs filtered  ENHANCED to , separated
+        
+    
     //if (k === 'all') {      filteredProducts = [...products]; //toos
     // } else {      filteredProducts = products.filter(p => String(p.category) === String(k));      }      
            
@@ -57,7 +73,7 @@
  
                 renderCatalog();
                 attachFilterListeners() ;
-                
+                attachSearchListeners() 
             } catch (error) {
                 console.error('Error loading products:', error);
                 document.getElementById('catalog').innerHTML = '<p>Error loading catalog</p>';
@@ -79,16 +95,25 @@
             `).join('');
         }
  
-        // Search functionality
+        // Search functionality 
+ function attachSearchListeners() {
+                  console.info(   'search' ,  products );  //TO SET AFTER LOAD  so inside if load async
         document.getElementById('search').addEventListener('input', (e) => {
             const term = e.target.value.toLowerCase();
             filteredProducts = products.filter(p => 
-                p.n.toLowerCase().includes(term) || //name
-                p.d.toLowerCase().includes(term) || //desc
-                p.a.toLowerCase().includes(term)  // author
+                p.n.toLowerCase().includes(term) //name
+                 ||  p.d && p.d.toLowerCase().includes(term) //desc
+                 ||  p.a && String(p.a).toLowerCase().includes(term)  // author
             );
-            renderCatalog();
-        });
+ 
+		// ell 
+		ell.href =   `/catalog.html?s=${term} `  ;
+		ell.textContent =   `/catalog.html?s=${term} ` ;
+ 
+				renderCatalog();
+			});
+	
+}
  
 //attachFilterListeners
 function attachFilterListeners() {
@@ -101,15 +126,17 @@ function attachFilterListeners() {
       
 		
   // console.log ( window.location.href+"?&k="+category  );
-  const el = document.getElementById('current-url');
-  if (el) {
-    el.href =  "/catalog.html?k="+category  ;
-    el.textContent =   "/catalog.html?k="+category  ;
-  }	
+  //const el = document.getElementById('current-url');
+  // if (ell) {
+    ell.href =  "/catalog.html?k="+category  ;
+    ell.textContent =   "/catalog.html?k="+category  ;
+  // }	
+   
       if (category === 'all') {
         filteredProducts = [...products];
       } else {
-        filteredProducts = products.filter(p => p.k === category);
+        // filteredProducts = products.filter(p => p.k === category);
+        filteredProducts = products.filter(p => p.k ?  p.k.includes(category) : false ); //also searches , separated
       }
       renderCatalog();
     });
@@ -129,13 +156,7 @@ function attachFilterListeners() {
   </small>
 </footer>   
 
-<script>
-  const el = document.getElementById('current-url');
-  if (el) {
-    el.href = window.location.href;
-    el.textContent = window.location.href;
-  }
-</script>
+ 
 
 </body>
 </html>
