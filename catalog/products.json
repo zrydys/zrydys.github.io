@@ -1,0 +1,290 @@
+{
+  "usage": "yq . products.yaml > products.json",
+  "products": [
+    {
+      "o": 1,
+      "n": "Wireless Mouse",
+      "p": 29.99,
+      "k": "Electronics",
+      "i": "cach/MD.jpg",
+      "d": "Ergonomic wireless mouse",
+      "a": 50
+    },
+    {
+      "o": 2,
+      "n": "Coffee Mug",
+      "p": 12.5,
+      "k": "Home",
+      "i": "cach/M.jpg",
+      "d": "Ceramic 12oz mug",
+      "a": 120
+    },
+    {
+      "o": 22,
+      "n": "CyberSSSMMMT",
+      "p": 4412.5,
+      "k": "SM",
+      "i": "cach/cor.jpg",
+      "d": "t jj ra",
+      "a": 2
+    },
+    {
+      "o": 12,
+      "n": "CyberT",
+      "p": 1412.5,
+      "k": "Tel",
+      "i": "cach/col.jpg",
+      "d": "cyn tera",
+      "a": 0
+    },
+    {
+      "o": 21,
+      "n": "CyberInT",
+      "p": 4411.1,
+      "k": "Cyb",
+      "i": "cach/SG.jpg",
+      "d": "tera",
+      "a": 2
+    },
+    {
+      "u": "?q=https://img.tapimg.net/market/images/4d4d88f02aba3559a8ecd7e4498def05.jpg",
+      "i": "thumb/camp.jpg",
+      "n": "Camper",
+      "d": "Camper Van, Make it Home",
+      "k": "game",
+      "p": "mvp",
+      "a": "Review at  steamcommunity.com/app/2843190"
+    },
+    {
+      "u": "planet.html?q=cach/CA.jpg",
+      "i": "cach/CA.jpg",
+      "n": "MariamCA",
+      "d": null,
+      "k": null,
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "planet.html?q=cach/MD.jpg",
+      "i": "thumb/merge.jpg",
+      "n": "Merge",
+      "d": null,
+      "k": null,
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "planet.html?q=thumb/elvis-always.jpg",
+      "i": "anim/elvis.gif",
+      "n": "Elvis Piano",
+      "d": null,
+      "k": null,
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "mvpc.html",
+      "i": "thumb/mvpc.jpg",
+      "n": "MovePic shader",
+      "d": null,
+      "k": null,
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "escher3D.html",
+      "i": "thumb/esch3.jpg",
+      "n": "3D Escher",
+      "d": null,
+      "k": null,
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "?q=cach/M.jpg",
+      "i": "cach/M.jpg",
+      "n": "Museums",
+      "d": null,
+      "k": null,
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "planet.html?q=cach/NS.jpg",
+      "i": "cach/NS.jpg",
+      "n": "Next Stop",
+      "d": null,
+      "k": null,
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "planet.html?q=cach/SG.jpg",
+      "i": "cach/SG.jpg",
+      "n": "Sigillum",
+      "d": null,
+      "k": null,
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "diving.html",
+      "i": "anim/diving.gif",
+      "n": "diving",
+      "d": null,
+      "k": null,
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "orbitforest.html",
+      "i": "anim/forest.gif",
+      "n": "forest",
+      "d": null,
+      "k": null,
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "diving.html?o=tetra&e=cubcon",
+      "i": "anim/concert.gif",
+      "n": "Pyramids & Concert",
+      "d": null,
+      "k": null,
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "diving.html?o=menger&e=cubmau",
+      "i": "anim/maunakea.gif",
+      "n": "Geometry & Galaxy",
+      "d": null,
+      "k": null,
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "keyr.html?q=wingfoil&c=0xadadad",
+      "i": "thumb/wingfoil3.jpg",
+      "n": "Nautic",
+      "d": null,
+      "k": "keyring",
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "keyr.html?q=tetra&c=0xa1a12a",
+      "i": "thumb/tetra3.jpg",
+      "n": "Pyramid",
+      "d": null,
+      "k": "keyring",
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "keyr.html?q=noc&c=0x1111aa",
+      "i": "thumb/noc3.jpg",
+      "n": "NOceaNoUs",
+      "d": null,
+      "k": "keyring",
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "keyr.html?q=kite&c=0x41a19a",
+      "i": "thumb/kite3.jpg",
+      "n": "Kite",
+      "d": null,
+      "k": "keyring",
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "keyr.html?q=tactile&c=0x41a19a",
+      "i": "thumb/tactile3.jpg",
+      "n": "Braille",
+      "d": "keyring",
+      "k": null,
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "keyr.html?q=broach&c=0x1111aa",
+      "i": "thumb/cune3b.jpg",
+      "n": "Broach",
+      "d": null,
+      "k": "keyring",
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "keyr.html?q=inkkey&c=0xff385c",
+      "i": "thumb/ink3.jpg",
+      "n": "InkUp",
+      "d": null,
+      "k": "keyring",
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "tiles.html",
+      "i": "thumb/alhambra.jpg",
+      "n": "Tile",
+      "d": null,
+      "k": "maths",
+      "p": "mvp",
+      "a": "ZryDys"
+    },
+    {
+      "u": "tofractal.html",
+      "i": "wall/tofractal.jpg",
+      "n": "Fractal",
+      "d": null,
+      "k": null,
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "tile.html",
+      "i": "thumb/tiles.jpg",
+      "n": "tiles",
+      "d": null,
+      "k": "maths",
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "glsl-fractal.html",
+      "i": "anim/glslfract.gif",
+      "n": "Fractal shader",
+      "d": null,
+      "k": null,
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "details.html",
+      "i": "thumb/dsci-byUrl.jpg",
+      "n": "Us & Symmetry",
+      "d": null,
+      "k": null,
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "visual-plotly.html",
+      "i": "wall/z-datsci.jpg",
+      "n": "R&D+i DatSci",
+      "d": null,
+      "k": null,
+      "p": "mvp",
+      "a": "zryDys"
+    },
+    {
+      "i": "cach/promalaga.jpg",
+      "n": "Impulso funds",
+      "a": "promalaga.es",
+      "k": "funds"
+    }
+  ]
+}

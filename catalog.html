@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>ZryDys Catalog - from  most visited effects last 2025</title>
+ <link rel="stylesheet" type="text/css" href="catalog/products.css?v=.2" />
+</head>
+<body>
+    <div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+        <h4> ZryDys Catalog - from  most visited effects last 2025   </h4>
+        <div class="filters">
+            <input type="text" id="search" placeholder="Search results...">
+              <!-- Buttons generated dynamically here
+            <button class="filter-btn  " data-category="all">Toos</button> 
+            <button class="filter-btn" data-category="Cyb" id="b-Cyb">Cyber</button>-->
+         </div>
+        
+        <div id="catalog" class="catalog"></div>
+    </div>
+
+
+
+
+    <script>
+        let products = [];
+        let filteredProducts = [];
+
+        // Load JSON data
+        async function loadProducts() {
+            try {
+                const response = await fetch('catalog/products.json?v=.6');
+                const data = await response.json();
+                products = data.products;
+				 // Get unique categories from JSON  arr.filter(item => item != null);  or   .filter(Boolean);
+				const categories = ['all', ...new Set(products.map(p => p.k))]  .filter( Boolean ); //no nulls
+                console.info( categories );
+
+  // Generate buttons HTML
+  const filtersContainer = document.querySelector('.filters');
+  const buttonsHtml = categories.map(cat => 
+    `<button class="filter-btn" data-category="${cat}" id="b-${cat}" >${cat}</button>`
+  ).join('');
+  filtersContainer.innerHTML += buttonsHtml; // Append after search input
+         
+      // 1) Read "k" from query string: index.html?k=Home
+    const params = new URLSearchParams(window.location.search);
+    const k = params.get('k') || 'all'  ; // e.g. "Home" or all (if null)
+
+    // 2) If k  , filter by category == k, else show all
+    filteredProducts = (k === 'all') ? [...products] :  products.filter(p => String(p.k) === String(k));  //toos vs filtered
+    //if (k === 'all') {      filteredProducts = [...products]; //toos
+    // } else {      filteredProducts = products.filter(p => String(p.category) === String(k));      }      
+           
+    const myk = document.getElementById(`b-${k}`);   // activate the category buttom     
+    if (myk) { myk.classList.add('active') 	} else { console.info( myk, k, `b-${k}` ) } ;
+ 
+                renderCatalog();
+                attachFilterListeners() ;
+                
+            } catch (error) {
+                console.error('Error loading products:', error);
+                document.getElementById('catalog').innerHTML = '<p>Error loading catalog</p>';
+            }
+        }
+
+        function renderCatalog() {
+            const catalog = document.getElementById('catalog');
+            catalog.innerHTML = filteredProducts.map(product => `
+                <div class="product">
+                   <a href="${product.u || ''}" >
+                    <img src="${product.i}" alt="${product.n}" loading="lazy">
+                    <h3>${product.n}</h3>
+                   </a> 
+                    <p>${product.d || ""}</p>
+                    <div class="engine">${ product.p? product.p.toLocaleString('en-US', {style: 'currency', currency: 'USD'}) :"-" }</div>
+                    <p class="author"> ${ product.a ? product.a : '<span class="out-stock">..</span>'}</p>
+                </div>
+            `).join('');
+        }
+ 
+        // Search functionality
+        document.getElementById('search').addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase();
+            filteredProducts = products.filter(p => 
+                p.n.toLowerCase().includes(term) || //name
+                p.d.toLowerCase().includes(term) || //desc
+                p.a.toLowerCase().includes(term)  // author
+            );
+            renderCatalog();
+        });
+ 
+//attachFilterListeners
+function attachFilterListeners() {
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      
+      const category = btn.dataset.category;
+      
+		
+  // console.log ( window.location.href+"?&k="+category  );
+  const el = document.getElementById('current-url');
+  if (el) {
+    el.href =  "/catalog.html?k="+category  ;
+    el.textContent =   "/catalog.html?k="+category  ;
+  }	
+      if (category === 'all') {
+        filteredProducts = [...products];
+      } else {
+        filteredProducts = products.filter(p => p.k === category);
+      }
+      renderCatalog();
+    });
+  });
+}
+ 
+        // Initialize
+        loadProducts();
+    </script>
+    
+
+    
+    
+ <footer class="page-footer">
+  <small>
+    Current ZryDys.Github.IO page URL:   <a id="current-url" href=" "> </a>
+  </small>
+</footer>   
+
+<script>
+  const el = document.getElementById('current-url');
+  if (el) {
+    el.href = window.location.href;
+    el.textContent = window.location.href;
+  }
+</script>
+
+</body>
+</html>
