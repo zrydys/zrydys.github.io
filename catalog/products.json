@@ -3,13 +3,31 @@
   "pipe0": "detecting images g \"\\!\\[.+\\([^)]+)\" details.md -o ais.md  gps.md",
   "products": [
     {
-      "u": "ais.html",
-      "i": "https://www.rtl-sdr.com/wp-content/uploads/2020/05/sarcnet_ais.jpg",
-      "n": "Safe marine AIS",
-      "d": "Portable Raspberry Pi and RTL-SDR Based NOAA Weather Satellite & AIS receiver projects",
-      "k": "sci,telecom,nautic",
-      "p": "info",
-      "a": "authors from NOAA, rtl-sdr.com, zryDys"
+      "u": "diving.html?o=menger&e=cubmau",
+      "i": "anim/maunakea.gif",
+      "n": "Geometry & Galaxy",
+      "d": "Night sky at Maunakea",
+      "k": "dive3D",
+      "p": "dive,sci",
+      "a": "CC BY-SA ZryDys"
+    },
+    {
+      "u": "keyr.html?q=broach&c=0x1111aa",
+      "i": "thumb/cune3b.jpg",
+      "n": "Broach",
+      "d": null,
+      "k": "solid,deco",
+      "p": "solid",
+      "a": "printables.com/@John_56680"
+    },
+    {
+      "u": "glsl-fractal.html",
+      "i": "anim/glslfract.gif",
+      "n": "Fractal shader",
+      "d": null,
+      "k": "fractal",
+      "p": "fractal",
+      "a": "CC BY-SA ZryDys"
     },
     {
       "n": "Fractal tree",
@@ -30,44 +48,37 @@
       "u": "details.html",
       "n": "Agile CI/CD",
       "p": "info",
-      "k": "cicd,pm,us",
+      "k": "pm,develop",
       "i": "cicd.jpg",
       "d": "CI/CD Agile",
       "a": "Zrydys"
     },
     {
-      "o": 2,
-      "n": "Coffee Mug",
-      "p": 12.5,
-      "k": "Home",
-      "i": "cach/M.jpg",
-      "d": "Ceramic 12oz mug",
-      "a": 120
+      "u": "planet.html?q=cach/cor.jpg",
+      "n": "3D Corridor",
+      "k": "3D",
+      "i": "cach/cor.jpg"
     },
     {
-      "o": 22,
-      "n": "CyberSSSMMMT",
-      "p": 4412.5,
-      "k": "SM",
-      "i": "cach/cor.jpg",
-      "d": "t jj ra",
-      "a": 2
+      "u": "planet.html?q=cach/col.jpg",
+      "n": "Cyber Corridor",
+      "k": "cyber,3D",
+      "i": "cach/col.jpg"
     },
     {
-      "o": 12,
-      "n": "CyberT",
-      "p": 1412.5,
-      "k": "Tel",
-      "i": "cach/col.jpg",
-      "d": "cyn tera",
-      "a": 0
+      "u": "planet.html?q=thumb/humerus.jpg",
+      "i": "thumb/humerus.jpg",
+      "n": "Bones 3D Replica",
+      "d": "Humerous 3D",
+      "k": "medic,sci,solid",
+      "p": "info"
     },
     {
       "u": "ais.html",
-      "i": "rtl-sdr.jpg",
-      "n": "Safe Cyber Marine AIS",
-      "d": "Portable Raspberry Pi and RTL-SDR Based NOAA Weather Satellite & AIS receiver projects",
-      "k": "cyber,telecom,nautic",
+      "i": "https://www.rtl-sdr.com/wp-content/uploads/2020/05/sarcnet_ais.jpg",
+      "n": "Safe Marine AIS",
+      "d": "Cyber Raspberry Pi and RTL-SDR Based NOAA Weather Satellite & AIS receiver projects",
+      "k": "cyber,telco,nautic",
       "p": "info",
       "a": "authors from NOAA, rtl-sdr.com, zryDys"
     },
@@ -111,7 +122,6 @@
     {
       "u": "planet.html?q=cach/MD.jpg",
       "n": "Merge game",
-      "p": 29.99,
       "k": "game",
       "i": "cach/MD.jpg",
       "d": "Merge with darkness",
@@ -131,7 +141,7 @@
       "i": "thumb/mvpc.jpg",
       "n": "MovePic shader",
       "d": null,
-      "k": null,
+      "k": "3D",
       "p": "mvp",
       "a": "ZryDys"
     },
@@ -145,10 +155,10 @@
       "a": "MCEscher original 1953 + colors added by Zrydys"
     },
     {
-      "u": "?q=cach/M.jpg",
+      "u": "planet.html?q=cach/M.jpg",
       "i": "cach/M.jpg",
-      "n": "Museums",
-      "d": null,
+      "n": "Museums Workshop",
+      "d": "Bringing cultural near the digital natives",
       "k": "art,culture",
       "p": "mvp",
       "a": null
@@ -208,15 +218,6 @@
       "a": "CC BY-SA ZryDys"
     },
     {
-      "u": "diving.html?o=menger&e=cubmau",
-      "i": "anim/maunakea.gif",
-      "n": "Geometry & Galaxy",
-      "d": "Night sky at Maunakea",
-      "k": "dive3D",
-      "p": "dive,sci",
-      "a": "CC BY-SA ZryDys"
-    },
-    {
       "u": "keyr.html?q=wingfoil&c=0xadadad",
       "i": "thumb/wingfoil3.jpg",
       "n": "Nautic Solid",
@@ -231,8 +232,7 @@
       "n": "Pyramid",
       "d": "decorative",
       "k": "solid",
-      "p": "solid",
-      "a": null
+      "p": "solid"
     },
     {
       "u": "keyr.html?q=noc&c=0x1111aa",
@@ -244,7 +244,7 @@
       "a": "by NOceaNoUs.com"
     },
     {
-      "u": "planet.html?q=",
+      "u": "planet.html?q=cach/SR.jpg",
       "i": "cach/SR.jpg",
       "n": "NOceaNoUs' SeaRangers",
       "d": "NOceaNoUs' SeaRangers game",
@@ -271,13 +271,10 @@
       "a": "ZryDys csr"
     },
     {
-      "u": "keyr.html?q=broach&c=0x1111aa",
-      "i": "thumb/cune3b.jpg",
-      "n": "Broach",
-      "d": null,
-      "k": "solid",
-      "p": "solid",
-      "a": "printables.com/@John_56680"
+      "u": "planet.html?q=cach/F.jpg",
+      "i": "cach/F.jpg",
+      "n": "Las Futbolistas",
+      "k": "game,csr"
     },
     {
       "u": "keyr.html?q=inkkey&c=0xff385c",
@@ -316,20 +313,18 @@
       "a": "CC BY-SA ZryDys"
     },
     {
-      "u": "glsl-fractal.html",
-      "i": "anim/glslfract.gif",
-      "n": "Fractal shader",
-      "d": null,
-      "k": "fractal",
-      "p": "fractal",
-      "a": "CC BY-SA ZryDys"
+      "u": "planet.html?q=https://d2v9mhsiek5lbq.cloudfront.net/eyJidWNrZXQiOiJsb21hLW1lZGlhLWl0Iiwia2V5IjoiZG1heHNwYWluLWVzLWltYWdlLWM2NmFiZjAzLWU3ZWItNDcyZi1hOWQ2LTkxZTQ1NGFkZGNjNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJoZWlnaHQiOjI0MH0sIndlYnAiOnsicXVhbGl0eSI6ODB9fX0=",
+      "i": "https://d2v9mhsiek5lbq.cloudfront.net/eyJidWNrZXQiOiJsb21hLW1lZGlhLWl0Iiwia2V5IjoiZG1heHNwYWluLWVzLWltYWdlLWM2NmFiZjAzLWU3ZWItNDcyZi1hOWQ2LTkxZTQ1NGFkZGNjNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJoZWlnaHQiOjI0MH0sIndlYnAiOnsicXVhbGl0eSI6ODB9fX0=",
+      "a": "dmax",
+      "n": "machu-pichu peru",
+      "k": "travel,art"
     },
     {
       "u": "details.html",
       "i": "thumb/dsci-byUrl.jpg",
       "n": "Us & Symmetry",
       "d": null,
-      "k": "us",
+      "k": "cyber",
       "p": "info",
       "a": "CC BY-SA ZryDys"
     },
@@ -338,7 +333,7 @@
       "i": "wall/z-datsci.jpg",
       "n": "R&D+i DatSci",
       "d": null,
-      "k": "us",
+      "k": "sci,cyber",
       "p": "info",
       "a": "zryDys"
     },
@@ -366,7 +361,7 @@
       "u": "planet.html?q=cach/ar.jpg",
       "n": "Arrival 2016",
       "a": "review at reelgood.com/search?q=arrival",
-      "k": "art,movie,music"
+      "k": "art,music"
     },
     {
       "i": "fractalgold.png",
