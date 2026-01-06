@@ -1,23 +1,35 @@
 usage: yq . products.yaml > products.json
+pipe0: detecting images g "\!\[.+\([^)]+)" details.md -o ais.md  gps.md 
+ 
 products:
+- u: ais.html
+  i: https://www.rtl-sdr.com/wp-content/uploads/2020/05/sarcnet_ais.jpg
+  n: Safe marine AIS  
+  d: Portable Raspberry Pi and RTL-SDR Based NOAA Weather Satellite & AIS receiver projects
+  k: sci,telecom,nautic
+  p: info
+  a: authors from NOAA, rtl-sdr.com, zryDys 
+  
+
 - n: Fractal tree
   p: fractal
   i: zrydys.png   
   d: fractal javascript
   k: fractal
-- n: maps
+- n: Geo maps
   p: maps
-  i: tiles/4-8-4.png
-  d: CET Berlin area
-  k: travel,timezone
-
-- o: 1
-  n: Wireless Mouse
-  p: 29.99
-  k: Electronics
-  i: zrydys.png   
-  d: Ergonomic wireless mouse
-  a: 50
+  i: tiles/4-8-5.png
+  d: CET Berlin area 🇨🇭
+  k: travel,gis 
+  d: GDAL GeoServers 🌐 Tiles
+  u: gis.html
+- u: details.html
+  n: Agile CI/CD  
+  p: info
+  k: cicd,pm,us
+  i: cicd.jpg
+  d: CI/CD Agile
+  a: Zrydys
 - o: 2
   n: Coffee Mug
   p: 12.5
@@ -39,13 +51,16 @@ products:
   i: cach/col.jpg
   d: cyn tera
   a: 0
-- o: 21
-  n: CyberInT
-  p: 4411.1
-  k: Cyb
-  i: cach/SG.jpg
-  d: tera
-  a: 2
+  
+- u: ais.html
+  i: rtl-sdr.jpg 
+  n: Safe Cyber Marine AIS  
+  d: Portable Raspberry Pi and RTL-SDR Based NOAA Weather Satellite & AIS receiver projects
+  k: cyber,telecom,nautic
+  p: info
+  a: authors from NOAA, rtl-sdr.com, zryDys 
+    
+ 
 - u: https://img.tapimg.net/market/images/4d4d88f02aba3559a8ecd7e4498def05.jpg
   g: ?q=https://img.tapimg.net/market/images/4d4d88f02aba3559a8ecd7e4498def05.jpg
   i: thumb/camp.jpg
@@ -53,14 +68,14 @@ products:
   d: Camper Van, Make it Home
   k: game,travel
   p: mvp
-  a: Review at  steamcommunity.com/app/2843190 
+  a: Reviews taptap.io/app/33677784  + header by  steamcommunity.com/app/2843190 
 - u: planet.html?q=cach/CA.jpg
   i: cach/CA.jpg
-  n: MariamCA
-  d: 
-  k: 
+  n: MarianCA
+  d: Portfolio 
+  k: art,deco
   p: mvp
-  a: 
+  a: by MarianCustomArt.com 
 - u: move.html?q=cach/MD.jpg
   i: thumb/merge.jpg
   n: Merge game moving
@@ -68,6 +83,14 @@ products:
   k: game
   p: mvp
   a: E.
+  
+- u: vis-bi-plotly.html
+  i: https://github.com/dipterix/threeBrain/blob/master/adhoc/demo.gif?raw=true
+  n: R&D+i DatSci ML
+  d: cutting-edge technologies
+  k: ml,medic,sci
+  p: info
+  a: zryDys  
 - u: planet.html?q=cach/MD.jpg
   n: Merge game 
   p: 29.99
@@ -78,10 +101,10 @@ products:
 - u: planet.html?q=thumb/elvis-always.jpg
   i: anim/elvis.gif
   n: Elvis Piano
-  d: 
+  d: Elvis' Always for Piano  
   k: music
   p: mvp
-  a: 
+  a: at MuseScore.com 
 - u: mvpc.html
   i: thumb/mvpc.jpg
   n: MovePic shader
@@ -92,162 +115,190 @@ products:
 - u: escher3D.html
   i: thumb/esch3.jpg
   n: 3D Escher
-  d: 
-  k: 
-  p: mvp
-  a: ZryDys inspired in Escher
+  d: Tiling
+  k: escher,tiles
+  p: escher
+  a: MCEscher original 1953 + colors added by Zrydys
 - u: ?q=cach/M.jpg
   i: cach/M.jpg
   n: Museums
   d: 
-  k: 
+  k: art,culture
   p: mvp
   a: 
 - u: planet.html?q=cach/NS.jpg
   i: cach/NS.jpg
   n: Next Stop
-  d: 
-  k: 
+  d: game The Next Stop 
+  k: game
   p: mvp
-  a: 
+  a: by X.com/paranoiddlusion?s=21&t=Y7Vkz-5FGGbo814UUxh4mw 🐦
+  
+- u: circular.html
+  i: https://upload.wikimedia.org/wikipedia/commons/archive/6/67/20210807143407%21Linia_kontra%C5%AD_Cirkulero.svg
+  n: Ciscular economy
+  d: circular 🌱 economy Tech, NASA TRL aligned 
+  k: csr,pm
+  p: info
+  a: ZryDys csr
+  
 - u: planet.html?q=cach/SG.jpg
   i: cach/SG.jpg
   n: Sigillum
   d: 
-  k: 
+  k: game
   p: mvp
-  a: 
+  a: by X.com/closedroomstudio 🐦
 - u: diving.html
   i: anim/diving.gif
   n: diving
   d: 
   k: dive3D
-  p: mvp
-  a: ZryDys
+  p: dive
+  a: CC BY-SA ZryDys
 - u: orbitforest.html
   i: anim/forest.gif
   n: forest
   d: 
   k: dive3D
-  p: mvp
-  a: ZryDys
+  p: dive
+  a: CC BY-SA ZryDys
 - u: diving.html?o=tetra&e=cubcon
   i: anim/concert.gif
   n: Pyramids & Concert
   d: 
   k: dive3D
-  p: mvp
-  a: ZryDys
+  p: dive
+  a: CC BY-SA ZryDys
 - u: diving.html?o=menger&e=cubmau
   i: anim/maunakea.gif
   n: Geometry & Galaxy
   d: Night sky at Maunakea
   k: dive3D
-  p: mvp
-  a: ZryDys
+  p: dive,sci
+  a: CC BY-SA ZryDys
 - u: keyr.html?q=wingfoil&c=0xadadad
   i: thumb/wingfoil3.jpg
   n: Nautic Solid
   d: wingfoil for sailing
-  k: nautic,keyring
-  p: mvp
+  k: nautic,solid
+  p: solid
   a: 
 - u: keyr.html?q=tetra&c=0xa1a12a
   i: thumb/tetra3.jpg
   n: Pyramid
-  d: 
-  k: keyring
-  p: mvp
+  d: decorative
+  k: solid
+  p: solid
   a: 
 - u: keyr.html?q=noc&c=0x1111aa
   i: thumb/noc3.jpg
   n: NOceaNoUs
   d: NOceaNoUs Keyring
-  k: keyring,nautic
-  p: mvp
-  a: 
+  k: solid,nautic
+  p: solid
+  a: by NOceaNoUs.com
+- u: planet.html?q= 
+  i: cach/SR.jpg
+  n: NOceaNoUs' SeaRangers
+  d: NOceaNoUs' SeaRangers game
+  k: game,nautic
+  p: mvpc
+  a: by NOceaNoUs.com
+ 
 - u: keyr.html?q=kite&c=0x41a19a
   i: thumb/kite3.jpg
   n: Kite
-  d: 
-  k: keyring
-  p: mvp
-  a: 
+  d: for kite surfing
+  k: solid,nautic
+  p: solid
+  a: printables.com/@samster395
 - u: keyr.html?q=tactile&c=0x41a19a
   i: thumb/tactile3.jpg
   n: Braille
-  d: keyring
-  k: 
-  p: mvp
-  a: 
+  d: Facilitating diversity & inclusion 
+  k: solid
+  p: solid,csr
+  a: ZryDys csr
 - u: keyr.html?q=broach&c=0x1111aa
   i: thumb/cune3b.jpg
   n: Broach
   d: 
-  k: keyring
-  p: mvp
-  a: 
+  k: solid
+  p: solid
+  a: printables.com/@John_56680
 - u: keyr.html?q=inkkey&c=0xff385c
   i: thumb/ink3.jpg
-  n: InkUp
+  n: InkUp key
   d: 
-  k: keyring
-  p: mvp
-  a: 
+  k: solid
+  p: solid
+  a: InkUp
 - u: tiles.html
   i: thumb/alhambra.jpg
-  n: Tile 
-  d: 
-  k: maths 
-  p: mvp
-  a: ZryDys 
+  n: Alhambra Tile 
+  d: Tiles Alhambra style - use mouse to 3D navigate
+  k: maths,tiles
+  p: tile
+  a: CC BY-SA ZryDys 
 - u: tofractal.html
   i: wall/tofractal.jpg
-  n: Fractal 
+  n: Moving Fractal 
   d: 
-  k: 
+  k: fractal
   p: mvp
-  a: 
+  a: CC BY-SA ZryDys 
 - u: tile.html
   i: thumb/tiles.jpg
-  n: tiles
-  d: 
-  k: maths 
-  p: mvp
-  a: 
+  n: tiles 3D
+  d: Group Recurrent 3D Tiling
+  k: maths,tiles
+  p: tile
+  a: CC BY-SA ZryDys 
 - u: glsl-fractal.html
   i: anim/glslfract.gif
   n: Fractal shader
   d: 
-  k: 
-  p: mvp
-  a: 
+  k: fractal
+  p: fractal
+  a: CC BY-SA ZryDys 
 - u: details.html
   i: thumb/dsci-byUrl.jpg
   n: Us & Symmetry
   d: 
-  k: 
-  p: mvp
-  a: 
+  k: us
+  p: info
+  a: CC BY-SA ZryDys 
 - u: visual-plotly.html
   i: wall/z-datsci.jpg
   n: R&D+i DatSci
   d: 
-  k: 
-  p: mvp
+  k: us
+  p: info
   a: zryDys 
 - i: cach/promalaga.jpg
   u: esch4.html?q=cach/promalaga.jpg
   p: box
-  d: Impulso promotive funding
-  n: Impulso funding
-  a: promalaga.es 
-  k: funding
+  d: Impulso funding
+  n: co-funded by the Impulso Program
+  a: by promalaga.es 
+  k: funds,acks
 
-- i: forest.jpg 
+- i: https://ec.europa.eu/regional_policy/images/information-sources/logo-download-center/stickers.png
+  r: https://ec.europa.eu/regional_policy/information-sources/logo-download-center_en?cjreferenc
   u: move.html?q=forest.jpg 
   p: box
-  d: cofinanciado por la union europea
+  d: co-funded by the European Union 
   n: EU funding
-  a: europe.eu
-  k: funding
+  a: by europe.eu FSE
+  k: funds,acks
+- i: cach/ar.jpg
+  u: planet.html?q=cach/ar.jpg
+  n: Arrival 2016 
+  a: review at reelgood.com/search?q=arrival   
+  k: art,movie,music
+- i: fractalgold.png
+  k: acks,sci
+  n: Arc thanks
+  d: Acknoledge NASA Arc Resources
+  a: by nasa.gov/ 

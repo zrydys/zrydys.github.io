@@ -39,7 +39,7 @@
         // Load JSON data
         async function loadProducts() {
             try {
-                const response = await fetch('catalog/products.json?v=.7');
+                const response = await fetch('catalog/products.json?v=.8');
                 const data = await response.json();
                 products = data.products;
                                    console.info(   'load' ,  products );  //TO SET AFTER LOAD
@@ -84,12 +84,12 @@
             const catalog = document.getElementById('catalog');
             catalog.innerHTML = filteredProducts.map(product => `
                 <div class="product">
-                   <a href="${product.u || ''}" >
+                   <a href="${product.u || ''}"  target=_new >
                     <img src="${product.i}" alt="${product.n}" loading="lazy">
                     <h3>${product.n}</h3>
                    </a> 
                     <p>${product.d || ""}</p>
-                    <div class="engine">${ product.p? product.p.toLocaleString('en-US', {style: 'currency', currency: 'USD'}) :"-" }</div>
+                    <div class="engine"> ${ product.k? product.k : '*'}  ${ product.p? product.p.toLocaleString('en-US', {style: 'currency', currency: 'USD'}) :"-" }</div>
                     <p class="author"> ${ product.a ? product.a : '<span class="out-stock">..</span>'}</p>
                 </div>
             `).join('');
