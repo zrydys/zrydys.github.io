@@ -25,7 +25,7 @@
       "i": "anim/glslfract.gif",
       "n": "Fractal shader",
       "d": null,
-      "k": "fractal",
+      "k": "fractal,develop",
       "p": "fractal",
       "a": "CC BY-SA ZryDys"
     },
@@ -34,7 +34,7 @@
       "p": "fractal",
       "i": "zrydys.png",
       "d": "fractal javascript",
-      "k": "fractal"
+      "k": "fractal,ml"
     },
     {
       "n": "Geo maps",
@@ -132,7 +132,7 @@
       "i": "anim/elvis.gif",
       "n": "Elvis Piano",
       "d": "Elvis' Always for Piano",
-      "k": "music",
+      "k": "music,3D",
       "p": "mvp",
       "a": "at MuseScore.com"
     },
@@ -140,7 +140,7 @@
       "u": "mvpc.html",
       "i": "thumb/mvpc.jpg",
       "n": "MovePic shader",
-      "d": null,
+      "d": "watermark",
       "k": "3D",
       "p": "mvp",
       "a": "ZryDys"
@@ -175,7 +175,7 @@
     {
       "u": "circular.html",
       "i": "https://upload.wikimedia.org/wikipedia/commons/archive/6/67/20210807143407%21Linia_kontra%C5%AD_Cirkulero.svg",
-      "n": "Ciscular economy",
+      "n": "Circular economy",
       "d": "circular 🌱 economy Tech, NASA TRL aligned",
       "k": "csr,pm",
       "p": "info",
@@ -196,7 +196,7 @@
       "n": "diving",
       "d": null,
       "k": "dive3D",
-      "p": "dive",
+      "p": "dive,nautic",
       "a": "CC BY-SA ZryDys"
     },
     {
@@ -204,7 +204,7 @@
       "i": "anim/forest.gif",
       "n": "forest",
       "d": null,
-      "k": "dive3D",
+      "k": "dive3D,csr",
       "p": "dive",
       "a": "CC BY-SA ZryDys"
     },
@@ -214,24 +214,23 @@
       "n": "Pyramids & Concert",
       "d": null,
       "k": "dive3D",
-      "p": "dive",
+      "p": "dive,music",
       "a": "CC BY-SA ZryDys"
     },
     {
       "u": "keyr.html?q=wingfoil&c=0xadadad",
       "i": "thumb/wingfoil3.jpg",
-      "n": "Nautic Solid",
-      "d": "wingfoil for sailing",
+      "n": "Nautic parts",
+      "d": "wingfoil for sailing Manufacturing water-sports parts",
       "k": "nautic,solid",
-      "p": "solid",
-      "a": null
+      "a": "CC-BY-NC-SA Creavertor @Printables.com"
     },
     {
       "u": "keyr.html?q=tetra&c=0xa1a12a",
       "i": "thumb/tetra3.jpg",
       "n": "Pyramid",
       "d": "decorative",
-      "k": "solid",
+      "k": "solid,maths",
       "p": "solid"
     },
     {
@@ -281,8 +280,7 @@
       "i": "thumb/ink3.jpg",
       "n": "InkUp key",
       "d": null,
-      "k": "solid",
-      "p": "solid",
+      "k": "solid,art",
       "a": "InkUp"
     },
     {
@@ -299,7 +297,7 @@
       "i": "wall/tofractal.jpg",
       "n": "Moving Fractal",
       "d": null,
-      "k": "fractal",
+      "k": "fractal,develop",
       "p": "mvp",
       "a": "CC BY-SA ZryDys"
     },
@@ -369,6 +367,21 @@
       "n": "Arc thanks",
       "d": "Acknoledge NASA Arc Resources",
       "a": "by nasa.gov/"
+    },
+    {
+      "i": "https://cdn-ikphdcf.nitrocdn.com/iWWPCWIhKvbRsOjJZAYfaYqrvBIRQglP/assets/images/optimized/rev-d709aea/www.resemble.ai/wp-content/uploads/2025/07/image1-3.png",
+      "u": "esch4.html?q=https://cdn-ikphdcf.nitrocdn.com/iWWPCWIhKvbRsOjJZAYfaYqrvBIRQglP/assets/images/optimized/rev-d709aea/www.resemble.ai/wp-content/uploads/2025/07/image1-3.png",
+      "k": "sci,ml,cyber",
+      "a": "by resemble.ai/linux-text-to-speech-solutions/",
+      "n": "TTS AI solutions",
+      "d": "Linux linux text-to-speech AI solutions"
+    },
+    {
+      "u": "keyr.html?q=hull&c=0xaa5",
+      "i": "thumb/hull.png",
+      "n": "boat hull",
+      "k": "nautic,solid",
+      "a": "CC-BY-NC-SA Creavertor @Printables.com"
     }
   ]
 }
