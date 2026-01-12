@@ -145,7 +145,7 @@ This is a demo of using open-source to explore ELT GIS imagery from any modern w
     <canvas id="canvasOutput"></canvas>
 
         <button onclick="toBlackWhite()">Click to Black & White</button>
-        <button onclick="toPurple()">Click to Purple</button>
+        <button onclick="toPurple()">Click to Change color</button>
     </div>
 <script async src="https://docs.opencv.org/4.x/opencv.js" type="text/javascript"> cc-by-sa CJ2026 OpenCV</script>
 <script>
@@ -168,8 +168,8 @@ This is a demo of using open-source to explore ELT GIS imagery from any modern w
 	let red = channels.get(0);
 	let green = channels.get(1);
 	let blue = channels.get(2);
-	cv.add(red, new cv.Mat(red.rows, red.cols, cv.CV_8U, new cv.Scalar(50)), red);
-	cv.add(blue, new cv.Mat(blue.rows, blue.cols, cv.CV_8U, new cv.Scalar(50)), blue);
+	cv.add(red, new cv.Mat(red.rows, red.cols, cv.CV_8U, new cv.Scalar(0)), red);
+	cv.add(blue, new cv.Mat(blue.rows, blue.cols, cv.CV_8U, new cv.Scalar(0)), blue);
 	cv.merge(channels, dst);
 	cv.imshow('canvasOutput', dst);
 	img.delete(); dst.delete();

@@ -28,3 +28,13 @@
   text-decoration: underline;
 }
 
+/* Turn all images in a container to grayscale */
+.product img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+/* Restore color on hover */
+.product img:hover {
+    filter: grayscale(0%);
+}

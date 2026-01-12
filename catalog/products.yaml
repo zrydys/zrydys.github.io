@@ -48,10 +48,14 @@ products:
   n: 3D Corridor
   k: 3D
   i: cach/cor.jpg
+  
+  
 - n: GIS imagery OpenCv ELT 
   k: gis,ml,vision
   i: tiles/4-8-4.png
   d: GIS Overlay + Electronic Light Table + OpenCV.js process
+  u: elt.html
+  
   
 - u: planet.html?q=cach/col.jpg 
   n: Cyber Corridor
