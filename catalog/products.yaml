@@ -6,7 +6,7 @@ products:
   i: anim/maunakea.gif
   n: Geometry & Galaxy
   d: Night sky at Maunakea
-  k: dive3D,dive,sci,vision
+  k: dive,sci,vision
   a: CC BY-SA ZryDys
 
 - u: keyr.html?q=broach&c=0x1111aa
@@ -16,6 +16,13 @@ products:
   k: solid,deco
   p: solid
   a: printables.com/@John_56680  
+  
+- u:   PNR-yaml.html
+  i: https://www.un.org/counterterrorism/sites/default/files/styles/image_cropped/public/2025-01/ct_travel_tam_programme_webpage_picture_4_-_adobestock_172925126adobestock_275829690.jpeg?h=4da044af&itok=DhkNcRV_%201x
+  k: cyber,pm,travel
+  d: Technology reducing Travel Records cyber risk 
+  a: from github.com/infchg/GeoInt
+  
 - u: glsl-fractal.html
   i: anim/glslfract.gif
   n: Fractal shader
@@ -41,7 +48,7 @@ products:
   p: info
   k: pm,develop
   i: cicd.jpg
-  d: CI/CD Agile
+  d: CI/CD Agile Scrum Kanban
   a: Zrydys
 
 - u: planet.html?q=cach/cor.jpg
@@ -169,14 +176,13 @@ products:
   i: anim/diving.gif
   n: diving
   d: 
-  k: dive3D
-  p: dive,nautic
+  k: dive,nautic
   a: CC BY-SA ZryDys
 - u: orbitforest.html
   i: anim/forest.gif
   n: forest
   d: 
-  k: dive3D,csr
+  k: dive,csr
   p: dive
   a: CC BY-SA ZryDys
   
@@ -190,8 +196,7 @@ products:
   i: anim/concert.gif
   n: Pyramids & Concert
   d: 
-  k: dive3D
-  p: dive,music
+  k: dive,music
   a: CC BY-SA ZryDys
 
 - u: keyr.html?q=wingfoil&c=0xadadad

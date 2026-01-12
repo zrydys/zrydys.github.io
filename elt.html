@@ -155,7 +155,7 @@ This is a demo of using open-source to explore ELT GIS imagery from any modern w
     let dst = new cv.Mat();
     cv.cvtColor(img, dst, cv.COLOR_RGBA2GRAY);
     cv.imshow('canvasOutput', dst);
-    //img.delete(); dst.delete();
+    img.delete(); dst.delete();
   }
   
   async function toPurple() {
@@ -171,8 +171,10 @@ This is a demo of using open-source to explore ELT GIS imagery from any modern w
 	cv.add(red, new cv.Mat(red.rows, red.cols, cv.CV_8U, new cv.Scalar(0)), red);
 	cv.add(blue, new cv.Mat(blue.rows, blue.cols, cv.CV_8U, new cv.Scalar(0)), blue);
 	cv.merge(channels, dst);
-	cv.imshow('canvasOutput', dst);
-	img.delete(); dst.delete();
+	cv.imshow('canvasOutput', dst);	
+	cv.imshow('canvasOutput', green);
+
+//	img.delete(); dst.delete();
 	red.delete(); green.delete(); blue.delete(); channels.delete();
 }
 </script>
