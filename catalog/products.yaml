@@ -6,8 +6,7 @@ products:
   i: anim/maunakea.gif
   n: Geometry & Galaxy
   d: Night sky at Maunakea
-  k: dive3D
-  p: dive,sci
+  k: dive3D,dive,sci,vision
   a: CC BY-SA ZryDys
 
 - u: keyr.html?q=broach&c=0x1111aa
@@ -29,7 +28,7 @@ products:
   p: fractal
   i: zrydys.png   
   d: fractal javascript
-  k: fractal,ml
+  k: fractal,ml,vision
 - n: Geo maps
   p: maps
   i: tiles/4-8-5.png
@@ -49,6 +48,11 @@ products:
   n: 3D Corridor
   k: 3D
   i: cach/cor.jpg
+- n: GIS imagery OpenCv ELT 
+  k: gis,ml,vision
+  i: tiles/4-8-4.png
+  d: GIS Overlay + Electronic Light Table + OpenCV.js process
+  
 - u: planet.html?q=cach/col.jpg 
   n: Cyber Corridor
   k: cyber,3D
@@ -102,7 +106,7 @@ products:
   a: zryDys  
 - u: planet.html?q=cach/MD.jpg
   n: Merge game 
-  k: game
+  k: game,vision
   i: cach/MD.jpg
   d: Merge with darkness 
   a: E. (QR in pic)
@@ -117,14 +121,14 @@ products:
   i: thumb/mvpc.jpg
   n: MovePic shader
   d: watermark
-  k: 3D
+  k: 3D,vision
   p: mvp
   a: ZryDys
 - u: escher3D.html
   i: thumb/esch3.jpg
   n: 3D Escher
   d: Tiling
-  k: escher,tiles
+  k: maths,tiles
   p: escher
   a: MCEscher original 1953 + colors added by Zrydys
 - u: planet.html?q=cach/M.jpg
@@ -171,6 +175,13 @@ products:
   k: dive3D,csr
   p: dive
   a: CC BY-SA ZryDys
+  
+- i:  https://raisely-images.imgix.net/un-crisis-relief/uploads/ukr-112024-unocha-hnrp-19-dsc-09673-jpg-webp-f48e4f.webp 
+  u: esch4.html?q=https://raisely-images.imgix.net/un-crisis-relief/uploads/ukr-112024-unocha-hnrp-19-dsc-09673-jpg-webp-f48e4f.webp
+  k: csr,ml
+  a: visit crisisrelief.un.org
+  n: UN crisis relief
+  d:  Help families survive winter 
 - u: diving.html?o=tetra&e=cubcon
   i: anim/concert.gif
   n: Pyramids & Concert
@@ -217,8 +228,7 @@ products:
   i: thumb/tactile3.jpg
   n: Braille
   d: Facilitating diversity & inclusion 
-  k: solid
-  p: solid,csr
+  k: solid,vision,csr
   a: ZryDys csr
 - u: planet.html?q=cach/F.jpg 
   i: cach/F.jpg
@@ -261,7 +271,7 @@ products:
   i: thumb/dsci-byUrl.jpg
   n: Us & Symmetry
   d: 
-  k: cyber
+  k: cyber,vision
   p: info
   a: CC BY-SA ZryDys 
 - u: visual-plotly.html
@@ -297,6 +307,14 @@ products:
   n: Arc thanks
   d: Acknoledge NASA Arc Resources
   a: by nasa.gov/ 
+
+- i: https://cdn.popupsmart.com/accounts/75764/uploads/UKR_112024_UKRHF_partners__05-7407fa897a357ab694234d04db093e79.jpeg
+  u: esch4.html?q=https://cdn.popupsmart.com/accounts/75764/uploads/UKR_112024_UKRHF_partners__05-7407fa897a357ab694234d04db093e79.jpeg
+  k: csr,pm  
+  n:  crisis relief
+  d:  Help families survive winter 
+  a: visit crisisrelief.un.org
+  
 
 - i: https://cdn-ikphdcf.nitrocdn.com/iWWPCWIhKvbRsOjJZAYfaYqrvBIRQglP/assets/images/optimized/rev-d709aea/www.resemble.ai/wp-content/uploads/2025/07/image1-3.png 
   u: esch4.html?q=https://cdn-ikphdcf.nitrocdn.com/iWWPCWIhKvbRsOjJZAYfaYqrvBIRQglP/assets/images/optimized/rev-d709aea/www.resemble.ai/wp-content/uploads/2025/07/image1-3.png 
