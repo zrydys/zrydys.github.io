@@ -17,7 +17,7 @@ This consulting area empowers your organization by integrating cutting-edge tech
 
 * Tailored software applications and infrastructures in large production environments: security,  manufacturing robots, international automotive plants, or critical embedded systems.
 - Experienced: Engineered telecom applications at Catapult IPO serving cutting-edge clients in Silicon Valley, helping develop state-of-the-art systems ahead in a competitive market.
-- **2025 solutions:** We integrated latest technologies (from AI TTS to Cloud n8n logic) and follow advances (IoT to [6G communications 3GPP2](https://zrydys.github.io/planet.html?q=https://i.ytimg.com/vi/O6AVpA5GTxA/hq720.jpg) watching potential benefits to clients.
+- **Solutions:** ranging from integrating 2026 technologies (AI TTS Cloud n8n logic) to established 2025 [vision processing](catalog.html) or next advances (IoT to [6G communications 3GPP2](https://zrydys.github.io/planet.html?q=https://i.ytimg.com/vi/O6AVpA5GTxA/hq720.jpg) watching potential benefits to clients.
 
 
 ## Warning Data 
