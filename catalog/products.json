@@ -31,8 +31,8 @@
       "u": "glsl-fractal.html",
       "i": "anim/glslfract.gif",
       "n": "Fractal shader",
-      "d": null,
-      "k": "fractal,develop",
+      "d": "Fractal by Shader GLSL c GPU code",
+      "k": "fractal,develop,vision",
       "p": "fractal",
       "a": "CC BY-SA ZryDys"
     },
@@ -74,6 +74,13 @@
       "u": "elt.html"
     },
     {
+      "u": "planet.html?q=https://archive.org/download/bowie-singles/David%20Bowie%20-%20The%20Singles%20Collection.back.jpg",
+      "i": "https://archive.org/download/bowie-singles/David%20Bowie%20-%20The%20Singles%20Collection.back.jpg",
+      "n": "Bowie",
+      "a": "visit Bowie  archive.org/details/bowie-singles",
+      "k": "3D"
+    },
+    {
       "u": "planet.html?q=cach/col.jpg",
       "n": "Cyber Corridor",
       "k": "cyber,3D",
@@ -86,6 +93,25 @@
       "d": "Humerous 3D",
       "k": "medic,sci,solid",
       "p": "info"
+    },
+    {
+      "u": "mapeuaf.html",
+      "n": "Remote Sailing GIS",
+      "k": "gis,csr,travel",
+      "i": "tiles/4-8-4.png",
+      "d": "Reaching Remote Locations, Simplified and Affordable"
+    },
+    {
+      "u": "chord.html",
+      "n": "Chord chart",
+      "k": "sci,math,pm",
+      "d": "Connecting Investments in a Chord chart live"
+    },
+    {
+      "u": "adapt.html",
+      "n": "Sankey chart",
+      "k": "sci,develop,pm",
+      "d": "Sankey adapting budget evolution"
     },
     {
       "u": "ais.html",
@@ -114,6 +140,14 @@
       "k": "art,deco",
       "p": "mvp",
       "a": "by MarianCustomArt.com"
+    },
+    {
+      "u": "mvp.html?q=cach/MD.jpg",
+      "i": "thumb/merge.jpg",
+      "n": "Vision filters",
+      "d": "gpu C shaders effects",
+      "k": "vision,develop",
+      "a": "by ztydys.github.io"
     },
     {
       "u": "move.html?q=cach/MD.jpg",
@@ -315,8 +349,8 @@
       "u": "tofractal.html",
       "i": "wall/tofractal.jpg",
       "n": "Moving Fractal",
-      "d": null,
-      "k": "fractal,develop",
+      "d": "shaders GPU image",
+      "k": "fractal,develop, vision",
       "p": "mvp",
       "a": "CC BY-SA ZryDys"
     },
@@ -349,8 +383,8 @@
       "u": "visual-plotly.html",
       "i": "wall/z-datsci.jpg",
       "n": "R&D+i DatSci",
-      "d": null,
-      "k": "sci,cyber",
+      "d": "R&D+ Data Science analysis",
+      "k": "sci,cyber,math",
       "p": "info",
       "a": "zryDys"
     },
