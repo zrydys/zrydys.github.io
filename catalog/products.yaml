@@ -87,13 +87,17 @@ products:
   n: Chord chart  
   k: sci,math,pm
   d:  Connecting Investments in a Chord chart live  
+  i: zry0.png
+- u: planet.html?q=https://i1.sndcdn.com/avatars-000015016802-hvtbbc-t200x200.jpg
+  n: SoundCloud Bowie  
+  k: music,3D
+  i:  https://i1.sndcdn.com/avatars-000056737102-prx05v-t200x200.jpg
+  a: at soundcloud.com/ davidbowieofficial 
 - u: adapt.html
+  i: bluef.png
   n: Sankey chart  
   k: sci,develop,pm
-  d: adapting tech & budget evolution  
- 
-   
-  
+  d: adapting tech & budget evolution    
 - u: ais.html
   i: https://www.rtl-sdr.com/wp-content/uploads/2020/05/sarcnet_ais.jpg
   n: Safe Marine AIS  
