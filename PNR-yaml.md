@@ -59,6 +59,6 @@ This document listed last ( InfChg/GeoInt for Safe & Security of Personnel & Use
 - yq images from https://betterprogramming.pub/my-yq-cheatsheet-34f2b672ee58
 - C.J.,InfChg, Propose modern improvements (yaml) to Retrieve PNRs from multi-GDS hub Amadeus, Sabre, Travelport, Galileo (1G), Apollo (1V), Worldspan,  ACH , RCH, @ Github.com/InfChg 2020
 
-- ZryDys fork of the [PNR-yaml] demo, Leveraging API/PNR data for stronger border security: gh repo fork infchg/GeoInt --clone --remote  #% [https://github.com/infchg/GeoInt](https://github.com/infchg/GeoInt)
+- ZryDys fork of the [PNR-yaml](PNR-yaml) demo, Leveraging API/PNR data for stronger border security: gh repo fork infchg/GeoInt --clone --remote  #% [https://github.com/infchg/GeoInt](https://github.com/infchg/GeoInt)
 - References on the United Nations Office of Counter-Terrorism (UNOCT)  Threat Assessment Models for Aviation Security [("TAM") Project.]( https://www.un.org/counterterrorism/en/cttravel/Tam-Project) ![](https://www.un.org/counterterrorism/sites/default/files/styles/image_cropped/public/2025-01/ct_travel_tam_programme_webpage_picture_4_-_adobestock_172925126adobestock_275829690.jpeg?h=4da044af&itok=DhkNcRV_%201x)
 - Cyber Technology for global Risks [https://www.interpol.int/How-we-work/Border-management/SLTD-database-travel-and-identity-documents]  [https://www.un.org/counterterrorism/en/countering-terrorist-travel
