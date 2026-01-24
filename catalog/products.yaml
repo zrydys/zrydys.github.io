@@ -1,5 +1,6 @@
 usage: yq . products.yaml > products.json
 pipe0: detecting images g "\!\[.+\([^)]+)" details.md -o ais.md  gps.md 
+notes: yq in py3.13 Fedora 42 v. py3.14 Fedora 43
  
 products:
 - u: diving.html?o=menger&e=cubmau
@@ -31,12 +32,20 @@ products:
   k: fractal,develop,vision
   p: fractal
   a: CC BY-SA ZryDys  
-
+- u: planet.html?q=https://cdn-s-www.ledauphine.com/images/BEC03642-D182-4307-9CDC-73987CDA43AF/NW_detail/la-vedette-du-sauvetage-de-thonon-realise-entre-50-et-70-interventions-sur-le-leman-chaque-annee-archives-photo-le-dl-g-b-1693582839.jpg 
+  n: Search & Rescue
+  i: https://cdn-s-www.ledauphine.com/images/BEC03642-D182-4307-9CDC-73987CDA43AF/NW_detail/la-vedette-du-sauvetage-de-thonon-realise-entre-50-et-70-interventions-sur-le-leman-chaque-annee-archives-photo-le-dl-g-b-1693582839.jpg
+  d: Leman Lake S&R volunteers 
+  k: csr,gis,nautic
+  a: by ledauphine.com/faits-divers-justice/2023/09/01/le-sauvetage-en-eaux-troubles-avec-la-penurie-de-benevoles
+  s: sound
+  g: lat,lon
 - n: Fractal tree
   p: fractal
   i: zrydys.png   
   d: fractal javascript
   k: fractal,ml,vision
+  u: planet.html?q=zrydys.png
 - n: Geo maps
   p: maps
   i: tiles/4-8-5.png
@@ -56,7 +65,12 @@ products:
   n: 3D Corridor
   k: 3D
   i: cach/cor.jpg
-  
+- u: planet.html?q=https://avatars.githubusercontent.com/u/16047363
+  n: GitHub Avatars
+  d: from GH codings
+  k: 3D,develop
+  i: https://avatars.githubusercontent.com/u/16047363
+  a: by github.com/Raydonal
   
 - n: GIS imagery OpenCv ELT 
   k: gis,ml,vision
@@ -78,6 +92,12 @@ products:
   d: Humerous 3D 
   k: medic,sci,solid
   p: info
+- u: planet.html?q=
+  i:     
+  n: 
+  d:   3D 
+  k: nautic,sci,csr
+  a:    🇨🇭
 - u:  mapeuaf.html
   n: Remote Sailing GIS
   k: gis,csr,travel
@@ -206,6 +226,12 @@ products:
   d: 
   k: dive,nautic
   a: CC BY-SA ZryDys
+- u: planet.html?q=https://ichef.bbci.co.uk/news/1536/cpsprodpb/95f8/live/517c0410-f531-11f0-b385-5f48925de19a.jpg.webp  
+  n: newborn chimp 
+  i:  https://ichef.bbci.co.uk/news/1536/cpsprodpb/95f8/live/517c0410-f531-11f0-b385-5f48925de19a.jpg.webp     
+  d:  Zoo welcomes first newborn chimpanzee in 17 years
+  k: csr
+  a: by BBC.com/news/articles/c17zp852wx7o
 - u: orbitforest.html
   i: anim/forest.gif
   n: forest
@@ -246,6 +272,12 @@ products:
   k: solid,nautic
   p: solid
   a: by NOceaNoUs.com
+- u: planet.html?q=https://cdn-s-www.ledauphine.com/images/C9FCFA87-81C4-416F-90B8-54BF01337A81/NW_detail/exercice-pour-les-membres-du-sauvetage-la-victime-sur-son-bateau-est-victime-d-une-insolation-il-faut-vite-le-prendre-en-charge-brancardage-difficile-pour-passer-du-bateau-sur-le-quai-sans-tomber-a-l-eau-ici-c-est-une-victime-d-un-malaise-les-stagiaires-oeuvrent-sous-l-oeil-avise-des-professionnels-1338221016.jp
+  n:  THONON-LES-BAINS Sauvetage
+  i:  https://cdn-s-www.ledauphine.com/images/C9FCFA87-81C4-416F-90B8-54BF01337A81/NW_detail/exercice-pour-les-membres-du-sauvetage-la-victime-sur-son-bateau-est-victime-d-une-insolation-il-faut-vite-le-prendre-en-charge-brancardage-difficile-pour-passer-du-bateau-sur-le-quai-sans-tomber-a-l-eau-ici-c-est-une-victime-d-un-malaise-les-stagiaires-oeuvrent-sous-l-oeil-avise-des-professionnels-1338221016.jpg    
+  d:   des exercices sur le lac 
+  k: csr,gis,nautic  
+  a:   ledauphine.com/haute-savoie/2012/05/29/sauvetage-des-exercices-sur-le-lac-pour-se-rapprocher-de-la-realite
 - u: planet.html?q=cach/SR.jpg 
   i: cach/SR.jpg
   n: NOceaNoUs' SeaRangers
