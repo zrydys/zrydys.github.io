@@ -1,379 +1,510 @@
-usage: yq . products.yaml > products.json
-pipe0: detecting images g "\!\[.+\([^)]+)" details.md -o ais.md  gps.md
-notes: yq in py3.13 Fedora 42 v. py3.14 Fedora 43
-products:
-  - u: diving.html?o=menger&e=cubmau
-    i: anim/maunakea.gif
-    n: Geometry & Galaxy
-    d: Night sky at Maunakea
-    k: dive,sci,vision
-    a: CC BY-SA ZryDys
-  - u: keyr.html?q=broach&c=0x1111aa
-    i: thumb/cune3b.jpg
-    n: Broach
-    d:
-    k: solid,deco
-    p: solid
-    a: printables.com/@John_56680
-  - u: PNR-yaml.html
-    i: https://www.un.org/counterterrorism/sites/default/files/styles/image_cropped/public/2025-01/ct_travel_tam_programme_webpage_picture_4_-_adobestock_172925126adobestock_275829690.jpeg?h=4da044af&itok=DhkNcRV_%201x
-    k: cyber,pm,travel
-    n: PNR Travel Security
-    d: Technology reducing Travel Records cyber risk
-    a: from github.com/infchg/GeoInt
-  - u: glsl-fractal.html
-    i: anim/glslfract.gif
-    n: Fractal shader
-    d: Fractal by Shader GLSL c GPU code
-    k: fractal,develop,vision
-    p: fractal
-    a: CC BY-SA ZryDys
-  - u: planet.html?q=https://cdn-s-www.ledauphine.com/images/BEC03642-D182-4307-9CDC-73987CDA43AF/NW_detail/la-vedette-du-sauvetage-de-thonon-realise-entre-50-et-70-interventions-sur-le-leman-chaque-annee-archives-photo-le-dl-g-b-1693582839.jpg
-    n: Search & Rescue
-    i: https://cdn-s-www.ledauphine.com/images/BEC03642-D182-4307-9CDC-73987CDA43AF/NW_detail/la-vedette-du-sauvetage-de-thonon-realise-entre-50-et-70-interventions-sur-le-leman-chaque-annee-archives-photo-le-dl-g-b-1693582839.jpg
-    d: Leman Lake S&R volunteers
-    k: csr,gis,nautic
-    a: by ledauphine.com/faits-divers-justice/2023/09/01/le-sauvetage-en-eaux-troubles-avec-la-penurie-de-benevoles
-    s: sound
-    g: lat,lon
-  - n: Fractal tree
-    p: fractal
-    i: zrydys.png
-    d: fractal javascript
-    k: fractal,ml,vision
-    u: planet.html?q=zrydys.png
-  - n: Geo maps
-    p: maps
-    i: tiles/4-8-5.png
-    d: "CET Berlin area \U0001F1E8\U0001F1ED"
-    k: travel,gis
-    d: "GDAL GeoServers \U0001F310 Tiles"
-    u: gis.html
-  - u: details.html
-    n: Agile CI/CD
-    p: info
-    k: pm,develop
-    i: cicd.jpg
-    d: CI/CD Agile Scrum Kanban
-    a: Zrydys
-  - u: planet.html?q=cach/cor.jpg
-    n: 3D Corridor
-    k: 3D
-    i: cach/cor.jpg
-  - u: planet.html?q=https://avatars.githubusercontent.com/u/16047363
-    n: GitHub Avatars
-    d: from GH codings
-    k: 3D,develop
-    i: https://avatars.githubusercontent.com/u/16047363
-    a: by github.com/Raydonal
-  - n: GIS imagery OpenCv ELT
-    k: gis,ml,vision
-    i: tiles/4-8-4.png
-    d: GIS Overlay + Electronic Light Table + OpenCV.js process
-    u: elt.html
-  - u: planet.html?q=https://archive.org/download/bowie-singles/David%20Bowie%20-%20The%20Singles%20Collection.back.jpg
-    i: https://archive.org/download/bowie-singles/David%20Bowie%20-%20The%20Singles%20Collection.back.jpg
-    n: Bowie
-    a: visit Bowie  archive.org/details/bowie-singles
-    k: 3D
-  - u: planet.html?q=cach/col.jpg
-    n: Cyber Corridor
-    k: cyber,3D
-    i: cach/col.jpg
-  - u: planet.html?q=thumb/humerus.jpg
-    i: thumb/humerus.jpg
-    n: Bones 3D Replica
-    d: Humerous 3D
-    k: medic,sci,solid
-    p: info
-  - u: planet.html?q=
-    i:
-    n:
-    d: 3D
-    k: nautic,sci,csr
-    a: "\U0001F1E8\U0001F1ED"
-  - u: mapeuaf.html
-    n: Remote Sailing GIS
-    k: gis,csr,travel
-    i: tiles/4-8-4.png
-    d: Reaching Remote Locations, Simplified and Affordable
-  - u: chord.html
-    n: Chord chart
-    k: sci,math,pm
-    d: Connecting Investments in a Chord chart live
-    i: zry0.png
-  - u: planet.html?q=https://i1.sndcdn.com/avatars-000015016802-hvtbbc-t200x200.jpg
-    n: SoundCloud Bowie
-    k: music,3D
-    i: https://i1.sndcdn.com/avatars-000056737102-prx05v-t200x200.jpg
-    a: at soundcloud.com/ davidbowieofficial
-  - u: adapt.html
-    i: bluef.png
-    n: Sankey chart
-    k: sci,develop,pm
-    d: adapting tech & budget evolution
-  - u: ais.html
-    i: https://www.rtl-sdr.com/wp-content/uploads/2020/05/sarcnet_ais.jpg
-    n: Safe Marine AIS
-    d: Cyber Raspberry Pi and RTL-SDR Based NOAA Weather Satellite & AIS receiver projects
-    k: cyber,telco,nautic
-    p: info
-    a: authors from NOAA, rtl-sdr.com, zryDys
-  - u: https://img.tapimg.net/market/images/4d4d88f02aba3559a8ecd7e4498def05.jpg
-    g: ?q=https://img.tapimg.net/market/images/4d4d88f02aba3559a8ecd7e4498def05.jpg
-    i: thumb/camp.jpg
-    n: Camper
-    d: Camper Van, Make it Home
-    k: game,travel
-    p: mvp
-    a: Reviews taptap.io/app/33677784  + header by  steamcommunity.com/app/2843190
-  - u: planet.html?q=cach/CA.jpg
-    i: cach/CA.jpg
-    n: MarianCA
-    d: Portfolio
-    k: art,deco
-    p: mvp
-    a: by MarianCustomArt.com
-  - u: mvp.html?q=cach/MD.jpg
-    i: thumb/merge.jpg
-    n: Vision filters
-    d: gpu C shaders effects
-    k: vision,develop
-    a: by ztydys.github.io
-  - u: move.html?q=cach/MD.jpg
-    i: thumb/merge.jpg
-    n: Merge game moving
-    d: Merge with darkness - 3d effect
-    k: game
-    p: mvp
-    a: E.
-  - u: vis-bi-plotly.html
-    i: https://github.com/dipterix/threeBrain/blob/master/adhoc/demo.gif?raw=true
-    n: R&D+i DatSci ML
-    d: cutting-edge technologies
-    k: ml,medic,sci
-    p: info
-    a: zryDys
-  - u: planet.html?q=cach/MD.jpg
-    n: Merge game
-    k: game,vision
-    i: cach/MD.jpg
-    d: Merge with darkness
-    a: E. (QR in pic)
-  - u: planet.html?q=thumb/elvis-always.jpg
-    i: anim/elvis.gif
-    n: Elvis Piano
-    d: Elvis' Always for Piano
-    k: music,3D
-    p: mvp
-    a: at MuseScore.com
-  - u: mvpc.html
-    i: thumb/mvpc.jpg
-    n: MovePic shader
-    d: watermark
-    k: 3D,vision
-    p: mvp
-    a: ZryDys
-  - u: escher3D.html
-    i: thumb/esch3.jpg
-    n: 3D Escher
-    d: Tiling
-    k: maths,tiles
-    p: escher
-    a: MCEscher original 1953 + colors added by Zrydys
-  - u: planet.html?q=cach/M.jpg
-    i: cach/M.jpg
-    n: Museums Workshop
-    d: Bringing cultural near the digital natives
-    k: art,culture
-    p: mvp
-    a:
-  - u: planet.html?q=cach/NS.jpg
-    i: cach/NS.jpg
-    n: Next Stop
-    d: game The Next Stop
-    k: game
-    p: mvp
-    a: "by X.com/paranoiddlusion?s=21&t=Y7Vkz-5FGGbo814UUxh4mw \U0001F426"
-  - u: circular.html
-    i: https://upload.wikimedia.org/wikipedia/commons/archive/6/67/20210807143407%21Linia_kontra%C5%AD_Cirkulero.svg
-    n: Circular economy
-    d: "circular \U0001F331 economy Tech, NASA TRL aligned"
-    k: csr,pm
-    p: info
-    a: ZryDys csr
-  - u: planet.html?q=cach/SG.jpg
-    i: cach/SG.jpg
-    n: Sigillum
-    d:
-    k: game
-    p: mvp
-    a: "by X.com/closedroomstudio \U0001F426"
-  - u: diving.html
-    i: anim/diving.gif
-    n: diving
-    d:
-    k: dive,nautic
-    a: CC BY-SA ZryDys
-  - u: planet.html?q=https://ichef.bbci.co.uk/news/1536/cpsprodpb/95f8/live/517c0410-f531-11f0-b385-5f48925de19a.jpg.webp
-    n: newborn chimp
-    i: https://ichef.bbci.co.uk/news/1536/cpsprodpb/95f8/live/517c0410-f531-11f0-b385-5f48925de19a.jpg.webp
-    d: Zoo welcomes first newborn chimpanzee in 17 years
-    k: csr
-    a: by BBC.com/news/articles/c17zp852wx7o
-  - u: orbitforest.html
-    i: anim/forest.gif
-    n: forest
-    d:
-    k: dive,csr
-    p: dive
-    a: CC BY-SA ZryDys
-  - i: https://raisely-images.imgix.net/un-crisis-relief/uploads/ukr-112024-unocha-hnrp-19-dsc-09673-jpg-webp-f48e4f.webp
-    u: esch4.html?q=https://raisely-images.imgix.net/un-crisis-relief/uploads/ukr-112024-unocha-hnrp-19-dsc-09673-jpg-webp-f48e4f.webp
-    k: csr,gis
-    a: visit crisisrelief.un.org
-    n: UN crisis relief
-    d: Help families survive winter
-  - u: diving.html?o=tetra&e=cubcon
-    i: anim/concert.gif
-    n: Pyramids & Concert
-    d:
-    k: dive,music
-    a: CC BY-SA ZryDys
-  - u: keyr.html?q=wingfoil&c=0xadadad
-    i: thumb/wingfoil3.jpg
-    n: Nautic parts
-    d: wingfoil for sailing Manufacturing water-sports parts
-    k: nautic,solid
-    a: CC-BY-NC-SA Creavertor @Printables.com
-  - u: keyr.html?q=tetra&c=0xa1a12a
-    i: thumb/tetra3.jpg
-    n: Pyramid
-    d: decorative
-    k: solid,maths
-    p: solid
-  - u: keyr.html?q=noc&c=0x1111aa
-    i: thumb/noc3.jpg
-    n: NOceaNoUs
-    d: NOceaNoUs Keyring
-    k: solid,nautic
-    p: solid
-    a: by NOceaNoUs.com
-  - u: planet.html?q=https://cdn-s-www.ledauphine.com/images/C9FCFA87-81C4-416F-90B8-54BF01337A81/NW_detail/exercice-pour-les-membres-du-sauvetage-la-victime-sur-son-bateau-est-victime-d-une-insolation-il-faut-vite-le-prendre-en-charge-brancardage-difficile-pour-passer-du-bateau-sur-le-quai-sans-tomber-a-l-eau-ici-c-est-une-victime-d-un-malaise-les-stagiaires-oeuvrent-sous-l-oeil-avise-des-professionnels-1338221016.jp
-    n: THONON-LES-BAINS Sauvetage
-    i: https://cdn-s-www.ledauphine.com/images/C9FCFA87-81C4-416F-90B8-54BF01337A81/NW_detail/exercice-pour-les-membres-du-sauvetage-la-victime-sur-son-bateau-est-victime-d-une-insolation-il-faut-vite-le-prendre-en-charge-brancardage-difficile-pour-passer-du-bateau-sur-le-quai-sans-tomber-a-l-eau-ici-c-est-une-victime-d-un-malaise-les-stagiaires-oeuvrent-sous-l-oeil-avise-des-professionnels-1338221016.jpg
-    d: des exercices sur le lac
-    k: csr,gis,nautic
-    a: ledauphine.com/haute-savoie/2012/05/29/sauvetage-des-exercices-sur-le-lac-pour-se-rapprocher-de-la-realite
-  - u: planet.html?q=cach/SR.jpg
-    i: cach/SR.jpg
-    n: NOceaNoUs' SeaRangers
-    d: NOceaNoUs' SeaRangers game
-    k: game,nautic
-    p: mvpc
-    a: by NOceaNoUs.com
-  - u: keyr.html?q=kite&c=0x41a19a
-    i: thumb/kite3.jpg
-    n: Kite
-    d: for kite surfing
-    k: solid,nautic
-    p: solid
-    a: printables.com/@samster395
-  - u: keyr.html?q=tactile&c=0x41a19a
-    i: thumb/tactile3.jpg
-    n: Braille
-    d: Facilitating diversity & inclusion
-    k: solid,vision,csr
-    a: ZryDys csr
-  - u: planet.html?q=cach/F.jpg
-    i: cach/F.jpg
-    n: Las Futbolistas
-    k: game,csr
-  - u: keyr.html?q=inkkey&c=0xff385c
-    i: thumb/ink3.jpg
-    n: InkUp key
-    d:
-    k: solid,art
-    a: InkUp
-  - u: tiles.html
-    i: thumb/alhambra.jpg
-    n: Alhambra Tile
-    d: Tiles Alhambra style - use mouse to 3D navigate
-    k: maths,tiles
-    p: tile
-    a: CC BY-SA ZryDys
-  - u: tofractal.html
-    i: wall/tofractal.jpg
-    n: Moving Fractal
-    d: shaders GPU image
-    k: fractal,develop, vision
-    p: mvp
-    a: CC BY-SA ZryDys
-  - u: tile.html
-    i: thumb/tiles.jpg
-    n: tiles 3D
-    d: Group Recurrent 3D Tiling
-    k: maths,tiles
-    p: tile
-    a: CC BY-SA ZryDys
-  - u: planet.html?q=https://d2v9mhsiek5lbq.cloudfront.net/eyJidWNrZXQiOiJsb21hLW1lZGlhLWl0Iiwia2V5IjoiZG1heHNwYWluLWVzLWltYWdlLWM2NmFiZjAzLWU3ZWItNDcyZi1hOWQ2LTkxZTQ1NGFkZGNjNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJoZWlnaHQiOjI0MH0sIndlYnAiOnsicXVhbGl0eSI6ODB9fX0=
-    i: https://d2v9mhsiek5lbq.cloudfront.net/eyJidWNrZXQiOiJsb21hLW1lZGlhLWl0Iiwia2V5IjoiZG1heHNwYWluLWVzLWltYWdlLWM2NmFiZjAzLWU3ZWItNDcyZi1hOWQ2LTkxZTQ1NGFkZGNjNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJoZWlnaHQiOjI0MH0sIndlYnAiOnsicXVhbGl0eSI6ODB9fX0=
-    a: dmax
-    n: machu-pichu peru
-    k: travel,art
-  - u: details.html
-    i: thumb/dsci-byUrl.jpg
-    n: Us & Symmetry
-    d:
-    k: cyber,vision
-    p: info
-    a: CC BY-SA ZryDys
-  - u: visual-plotly.html
-    i: wall/z-datsci.jpg
-    n: R&D+i DatSci
-    d: R&D+ Data Science analysis
-    k: sci,cyber,math
-    p: info
-    a: zryDys
-  - i: cach/promalaga.jpg
-    u: esch4.html?q=cach/promalaga.jpg
-    p: box
-    d: Impulso funding
-    n: co-funded by the Impulso Program
-    a: by promalaga.es
-    k: funds,acks
-  - i: https://ec.europa.eu/regional_policy/images/information-sources/logo-download-center/stickers.png
-    r: https://ec.europa.eu/regional_policy/information-sources/logo-download-center_en?cjreferenc
-    u: move.html?q=forest.jpg
-    p: box
-    d: co-funded by the European Union
-    n: EU funding
-    a: by europe.eu FSE
-    k: funds,acks
-  - i: cach/ar.jpg
-    u: planet.html?q=cach/ar.jpg
-    n: Arrival 2016
-    a: review at reelgood.com/search?q=arrival
-    k: art,music
-  - i: fractalgold.png
-    k: acks,sci
-    n: Arc thanks
-    d: Acknoledge NASA Arc Resources
-    a: by nasa.gov/
-  - i: https://cdn.popupsmart.com/accounts/75764/uploads/UKR_112024_UKRHF_partners__05-7407fa897a357ab694234d04db093e79.jpeg
-    u: esch4.html?q=https://cdn.popupsmart.com/accounts/75764/uploads/UKR_112024_UKRHF_partners__05-7407fa897a357ab694234d04db093e79.jpeg
-    k: csr,pm
-    n: crisis relief
-    d: Help families survive winter
-    a: visit crisisrelief.un.org
-  - i: https://cdn-ikphdcf.nitrocdn.com/iWWPCWIhKvbRsOjJZAYfaYqrvBIRQglP/assets/images/optimized/rev-d709aea/www.resemble.ai/wp-content/uploads/2025/07/image1-3.png
-    u: esch4.html?q=https://cdn-ikphdcf.nitrocdn.com/iWWPCWIhKvbRsOjJZAYfaYqrvBIRQglP/assets/images/optimized/rev-d709aea/www.resemble.ai/wp-content/uploads/2025/07/image1-3.png
-    k: sci,ml,cyber
-    a: by resemble.ai/linux-text-to-speech-solutions/
-    n: TTS AI solutions
-    d: Linux linux text-to-speech AI solutions
-  - u: keyr.html?q=hull&c=0xaa5
-    i: thumb/hull.png
-    n: boat hull
-    k: nautic,solid
-    a: CC-BY-NC-SA Creavertor @Printables.com
+{
+  "usage": "yq . products.yaml > products.json  -o=json",
+  "pipe0": "detecting images g \"\\!\\[.+\\([^)]+)\" details.md -o ais.md  gps.md",
+  "notes": "yq in py3.13 Fedora 42 v. py3.14 Fedora 43",
+  "products": [
+    {
+      "u": "diving.html?o=menger&e=cubmau",
+      "i": "anim/maunakea.gif",
+      "n": "Geometry & Galaxy",
+      "d": "Night sky at Maunakea",
+      "k": "dive,sci,vision",
+      "a": "CC BY-SA ZryDys"
+    },
+    {
+      "u": "keyr.html?q=broach&c=0x1111aa",
+      "i": "thumb/cune3b.jpg",
+      "n": "Broach",
+      "d": null,
+      "k": "solid,deco",
+      "p": "solid",
+      "a": "printables.com/@John_56680"
+    },
+    {
+      "u": "PNR-yaml.html",
+      "i": "https://www.un.org/counterterrorism/sites/default/files/styles/image_cropped/public/2025-01/ct_travel_tam_programme_webpage_picture_4_-_adobestock_172925126adobestock_275829690.jpeg?h=4da044af&itok=DhkNcRV_%201x",
+      "k": "cyber,pm,travel",
+      "n": "PNR Travel Security",
+      "d": "Technology reducing Travel Records cyber risk",
+      "a": "from github.com/infchg/GeoInt"
+    },
+    {
+      "u": "glsl-fractal.html",
+      "i": "anim/glslfract.gif",
+      "n": "Fractal shader",
+      "d": "Fractal by Shader GLSL c GPU code",
+      "k": "fractal,develop,vision",
+      "p": "fractal",
+      "a": "CC BY-SA ZryDys"
+    },
+    {
+      "u": "planet.html?q=https://cdn-s-www.ledauphine.com/images/BEC03642-D182-4307-9CDC-73987CDA43AF/NW_detail/la-vedette-du-sauvetage-de-thonon-realise-entre-50-et-70-interventions-sur-le-leman-chaque-annee-archives-photo-le-dl-g-b-1693582839.jpg",
+      "n": "Search & Rescue",
+      "i": "https://cdn-s-www.ledauphine.com/images/BEC03642-D182-4307-9CDC-73987CDA43AF/NW_detail/la-vedette-du-sauvetage-de-thonon-realise-entre-50-et-70-interventions-sur-le-leman-chaque-annee-archives-photo-le-dl-g-b-1693582839.jpg",
+      "d": "Leman Lake S&R volunteers",
+      "k": "csr,gis,nautic",
+      "a": "by ledauphine.com/faits-divers-justice/2023/09/01/le-sauvetage-en-eaux-troubles-avec-la-penurie-de-benevoles",
+      "s": "sound",
+      "g": "lat,lon"
+    },
+    {
+      "n": "Fractal tree",
+      "p": "fractal",
+      "i": "zrydys.png",
+      "d": "fractal javascript",
+      "k": "fractal,ml,vision",
+      "u": "planet.html?q=zrydys.png"
+    },
+    {
+      "n": "Geo maps",
+      "p": "maps",
+      "i": "tiles/4-8-5.png",
+      "d": "CET Berlin area 🇨🇭",
+      "k": "travel,gis",
+      "d": "GDAL GeoServers 🌐 Tiles",
+      "u": "gis.html"
+    },
+    {
+      "u": "details.html",
+      "n": "Agile CI/CD",
+      "p": "info",
+      "k": "pm,develop",
+      "i": "cicd.jpg",
+      "d": "CI/CD Agile Scrum Kanban",
+      "a": "Zrydys"
+    },
+    {
+      "u": "planet.html?q=cach/cor.jpg",
+      "n": "3D Corridor",
+      "k": "3D",
+      "i": "cach/cor.jpg"
+    },
+    {
+      "u": "planet.html?q=https://avatars.githubusercontent.com/u/16047363",
+      "n": "GitHub Avatars",
+      "d": "from GH codings",
+      "k": "3D,develop",
+      "i": "https://avatars.githubusercontent.com/u/16047363",
+      "a": "by github.com/Raydonal"
+    },
+    {
+      "n": "GIS imagery OpenCv ELT",
+      "k": "gis,ml,vision",
+      "i": "tiles/4-8-4.png",
+      "d": "GIS Overlay + Electronic Light Table + OpenCV.js process",
+      "u": "elt.html"
+    },
+    {
+      "u": "planet.html?q=https://archive.org/download/bowie-singles/David%20Bowie%20-%20The%20Singles%20Collection.back.jpg",
+      "i": "https://archive.org/download/bowie-singles/David%20Bowie%20-%20The%20Singles%20Collection.back.jpg",
+      "n": "Bowie",
+      "a": "visit Bowie  archive.org/details/bowie-singles",
+      "k": "3D"
+    },
+    {
+      "u": "planet.html?q=cach/col.jpg",
+      "n": "Cyber Corridor",
+      "k": "cyber,3D",
+      "i": "cach/col.jpg"
+    },
+    {
+      "u": "planet.html?q=thumb/humerus.jpg",
+      "i": "thumb/humerus.jpg",
+      "n": "Bones 3D Replica",
+      "d": "Humerous 3D",
+      "k": "medic,sci,solid",
+      "p": "info"
+    },
+    {
+      "u": "planet.html?q=https://static.wixstatic.com/media/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg/v1/fill/w_924,h_616,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg",
+      "i": "https://static.wixstatic.com/media/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg/v1/fill/w_924,h_616,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg",
+      "n": "Championnat Judo",
+      "d": "🥉 Une médaille historique pour le club",
+      "k": "sport,csr",
+      "a": "judo-club-carouge.ch  🇨🇭"
+    },
+    {
+      "u": "planet.html?q=https://i3.ytimg.com/vi/zDLOvlBVNng/maxresdefault.jpg",
+      "i": "https://i3.ytimg.com/vi/zDLOvlBVNng/maxresdefault.jpg",
+      "n": "IPSAS 45 Depreciation",
+      "d": "IPSAS international accounting",
+      "k": "pm,csr",
+      "a": "IPSASb youtube zDLOvlBVNng"
+    },
+    {
+      "u": "mapeuaf.html",
+      "n": "Remote Sailing GIS",
+      "k": "gis,csr,travel",
+      "i": "tiles/4-8-4.png",
+      "d": "Reaching Remote Locations, Simplified and Affordable"
+    },
+    {
+      "u": "chord.html",
+      "n": "Chord chart",
+      "k": "sci,math,pm",
+      "d": "Connecting Investments in a Chord chart live",
+      "i": "zry0.png"
+    },
+    {
+      "u": "planet.html?q=https://i1.sndcdn.com/avatars-000015016802-hvtbbc-t200x200.jpg",
+      "n": "SoundCloud Bowie",
+      "k": "music,3D",
+      "i": "https://i1.sndcdn.com/avatars-000056737102-prx05v-t200x200.jpg",
+      "a": "at soundcloud.com/ davidbowieofficial"
+    },
+    {
+      "u": "adapt.html",
+      "i": "bluef.png",
+      "n": "Sankey chart",
+      "k": "sci,develop,pm",
+      "d": "adapting tech & budget evolution"
+    },
+    {
+      "u": "ais.html",
+      "i": "https://www.rtl-sdr.com/wp-content/uploads/2020/05/sarcnet_ais.jpg",
+      "n": "Safe Marine AIS",
+      "d": "Cyber Raspberry Pi and RTL-SDR Based NOAA Weather Satellite & AIS receiver projects",
+      "k": "cyber,telco,nautic",
+      "p": "info",
+      "a": "authors from NOAA, rtl-sdr.com, zryDys"
+    },
+    {
+      "u": "https://img.tapimg.net/market/images/4d4d88f02aba3559a8ecd7e4498def05.jpg",
+      "g": "?q=https://img.tapimg.net/market/images/4d4d88f02aba3559a8ecd7e4498def05.jpg",
+      "i": "thumb/camp.jpg",
+      "n": "Camper",
+      "d": "Camper Van, Make it Home",
+      "k": "game,travel",
+      "p": "mvp",
+      "a": "Reviews taptap.io/app/33677784  + header by  steamcommunity.com/app/2843190"
+    },
+    {
+      "u": "planet.html?q=cach/CA.jpg",
+      "i": "cach/CA.jpg",
+      "n": "MarianCA",
+      "d": "Portfolio",
+      "k": "art,deco",
+      "p": "mvp",
+      "a": "by MarianCustomArt.com"
+    },
+    {
+      "u": "mvp.html?q=cach/MD.jpg",
+      "i": "thumb/merge.jpg",
+      "n": "Vision filters",
+      "d": "gpu C shaders effects",
+      "k": "vision,develop",
+      "a": "by ztydys.github.io"
+    },
+    {
+      "u": "move.html?q=cach/MD.jpg",
+      "i": "thumb/merge.jpg",
+      "n": "Merge game moving",
+      "d": "Merge with darkness - 3d effect",
+      "k": "game",
+      "p": "mvp",
+      "a": "E."
+    },
+    {
+      "u": "vis-bi-plotly.html",
+      "i": "https://github.com/dipterix/threeBrain/blob/master/adhoc/demo.gif?raw=true",
+      "n": "R&D+i DatSci ML",
+      "d": "cutting-edge technologies",
+      "k": "ml,medic,sci",
+      "p": "info",
+      "a": "zryDys"
+    },
+    {
+      "u": "planet.html?q=cach/MD.jpg",
+      "n": "Merge game",
+      "k": "game,vision",
+      "i": "cach/MD.jpg",
+      "d": "Merge with darkness",
+      "a": "E. (QR in pic)"
+    },
+    {
+      "u": "planet.html?q=thumb/elvis-always.jpg",
+      "i": "anim/elvis.gif",
+      "n": "Elvis Piano",
+      "d": "Elvis' Always for Piano",
+      "k": "music,3D",
+      "p": "mvp",
+      "a": "at MuseScore.com"
+    },
+    {
+      "u": "mvpc.html",
+      "i": "thumb/mvpc.jpg",
+      "n": "MovePic shader",
+      "d": "watermark",
+      "k": "3D,vision",
+      "p": "mvp",
+      "a": "ZryDys"
+    },
+    {
+      "u": "escher3D.html",
+      "i": "thumb/esch3.jpg",
+      "n": "3D Escher",
+      "d": "Tiling",
+      "k": "maths,tiles",
+      "p": "escher",
+      "a": "MCEscher original 1953 + colors added by Zrydys"
+    },
+    {
+      "u": "planet.html?q=cach/M.jpg",
+      "i": "cach/M.jpg",
+      "n": "Museums Workshop",
+      "d": "Bringing cultural near the digital natives",
+      "k": "art,culture",
+      "p": "mvp",
+      "a": null
+    },
+    {
+      "u": "planet.html?q=cach/NS.jpg",
+      "i": "cach/NS.jpg",
+      "n": "Next Stop",
+      "d": "game The Next Stop",
+      "k": "game",
+      "p": "mvp",
+      "a": "by X.com/paranoiddlusion?s=21&t=Y7Vkz-5FGGbo814UUxh4mw 🐦"
+    },
+    {
+      "u": "circular.html",
+      "i": "https://upload.wikimedia.org/wikipedia/commons/archive/6/67/20210807143407%21Linia_kontra%C5%AD_Cirkulero.svg",
+      "n": "Circular economy",
+      "d": "circular 🌱 economy Tech, NASA TRL aligned",
+      "k": "csr,pm",
+      "p": "info",
+      "a": "ZryDys csr"
+    },
+    {
+      "u": "planet.html?q=cach/SG.jpg",
+      "i": "cach/SG.jpg",
+      "n": "Sigillum",
+      "d": null,
+      "k": "game",
+      "p": "mvp",
+      "a": "by X.com/closedroomstudio 🐦"
+    },
+    {
+      "u": "diving.html",
+      "i": "anim/diving.gif",
+      "n": "diving",
+      "d": null,
+      "k": "dive,nautic",
+      "a": "CC BY-SA ZryDys"
+    },
+    {
+      "u": "planet.html?q=https://ichef.bbci.co.uk/news/1536/cpsprodpb/95f8/live/517c0410-f531-11f0-b385-5f48925de19a.jpg.webp",
+      "n": "newborn chimp",
+      "i": "https://ichef.bbci.co.uk/news/1536/cpsprodpb/95f8/live/517c0410-f531-11f0-b385-5f48925de19a.jpg.webp",
+      "d": "Zoo welcomes first newborn chimpanzee in 17 years",
+      "k": "csr",
+      "a": "by BBC.com/news/articles/c17zp852wx7o"
+    },
+    {
+      "u": "orbitforest.html",
+      "i": "anim/forest.gif",
+      "n": "forest",
+      "d": null,
+      "k": "dive,csr",
+      "p": "dive",
+      "a": "CC BY-SA ZryDys"
+    },
+    {
+      "i": "https://raisely-images.imgix.net/un-crisis-relief/uploads/ukr-112024-unocha-hnrp-19-dsc-09673-jpg-webp-f48e4f.webp",
+      "u": "esch4.html?q=https://raisely-images.imgix.net/un-crisis-relief/uploads/ukr-112024-unocha-hnrp-19-dsc-09673-jpg-webp-f48e4f.webp",
+      "k": "csr,gis",
+      "a": "visit crisisrelief.un.org",
+      "n": "UN crisis relief",
+      "d": "Help families survive winter"
+    },
+    {
+      "u": "diving.html?o=tetra&e=cubcon",
+      "i": "anim/concert.gif",
+      "n": "Pyramids & Concert",
+      "d": null,
+      "k": "dive,music",
+      "a": "CC BY-SA ZryDys"
+    },
+    {
+      "u": "keyr.html?q=wingfoil&c=0xadadad",
+      "i": "thumb/wingfoil3.jpg",
+      "n": "Nautic parts",
+      "d": "wingfoil for sailing Manufacturing water-sports parts",
+      "k": "nautic,solid",
+      "a": "CC-BY-NC-SA Creavertor @Printables.com"
+    },
+    {
+      "u": "keyr.html?q=tetra&c=0xa1a12a",
+      "i": "thumb/tetra3.jpg",
+      "n": "Pyramid",
+      "d": "decorative",
+      "k": "solid,maths",
+      "p": "solid"
+    },
+    {
+      "u": "keyr.html?q=noc&c=0x1111aa",
+      "i": "thumb/noc3.jpg",
+      "n": "NOceaNoUs",
+      "d": "NOceaNoUs Keyring",
+      "k": "solid,nautic",
+      "p": "solid",
+      "a": "by NOceaNoUs.com"
+    },
+    {
+      "u": "planet.html?q=https://cdn-s-www.ledauphine.com/images/C9FCFA87-81C4-416F-90B8-54BF01337A81/NW_detail/exercice-pour-les-membres-du-sauvetage-la-victime-sur-son-bateau-est-victime-d-une-insolation-il-faut-vite-le-prendre-en-charge-brancardage-difficile-pour-passer-du-bateau-sur-le-quai-sans-tomber-a-l-eau-ici-c-est-une-victime-d-un-malaise-les-stagiaires-oeuvrent-sous-l-oeil-avise-des-professionnels-1338221016.jp",
+      "n": "THONON-LES-BAINS Sauvetage",
+      "i": "https://cdn-s-www.ledauphine.com/images/C9FCFA87-81C4-416F-90B8-54BF01337A81/NW_detail/exercice-pour-les-membres-du-sauvetage-la-victime-sur-son-bateau-est-victime-d-une-insolation-il-faut-vite-le-prendre-en-charge-brancardage-difficile-pour-passer-du-bateau-sur-le-quai-sans-tomber-a-l-eau-ici-c-est-une-victime-d-un-malaise-les-stagiaires-oeuvrent-sous-l-oeil-avise-des-professionnels-1338221016.jpg",
+      "d": "des exercices sur le lac",
+      "k": "csr,gis,nautic",
+      "a": "ledauphine.com/haute-savoie/2012/05/29/sauvetage-des-exercices-sur-le-lac-pour-se-rapprocher-de-la-realite"
+    },
+    {
+      "u": "planet.html?q=cach/SR.jpg",
+      "i": "cach/SR.jpg",
+      "n": "NOceaNoUs' SeaRangers",
+      "d": "NOceaNoUs' SeaRangers game",
+      "k": "game,nautic",
+      "p": "mvpc",
+      "a": "by NOceaNoUs.com"
+    },
+    {
+      "u": "keyr.html?q=kite&c=0x41a19a",
+      "i": "thumb/kite3.jpg",
+      "n": "Kite",
+      "d": "for kite surfing",
+      "k": "solid,nautic",
+      "p": "solid",
+      "a": "printables.com/@samster395"
+    },
+    {
+      "u": "keyr.html?q=tactile&c=0x41a19a",
+      "i": "thumb/tactile3.jpg",
+      "n": "Braille",
+      "d": "Facilitating diversity & inclusion",
+      "k": "solid,vision,csr",
+      "a": "ZryDys csr"
+    },
+    {
+      "u": "planet.html?q=cach/F.jpg",
+      "i": "cach/F.jpg",
+      "n": "Las Futbolistas",
+      "k": "game,csr"
+    },
+    {
+      "u": "keyr.html?q=inkkey&c=0xff385c",
+      "i": "thumb/ink3.jpg",
+      "n": "InkUp key",
+      "d": null,
+      "k": "solid,art",
+      "a": "InkUp"
+    },
+    {
+      "u": "tiles.html",
+      "i": "thumb/alhambra.jpg",
+      "n": "Alhambra Tile",
+      "d": "Tiles Alhambra style - use mouse to 3D navigate",
+      "k": "maths,tiles",
+      "p": "tile",
+      "a": "CC BY-SA ZryDys"
+    },
+    {
+      "u": "tofractal.html",
+      "i": "wall/tofractal.jpg",
+      "n": "Moving Fractal",
+      "d": "shaders GPU image",
+      "k": "fractal,develop, vision",
+      "p": "mvp",
+      "a": "CC BY-SA ZryDys"
+    },
+    {
+      "u": "tile.html",
+      "i": "thumb/tiles.jpg",
+      "n": "tiles 3D",
+      "d": "Group Recurrent 3D Tiling",
+      "k": "maths,tiles",
+      "p": "tile",
+      "a": "CC BY-SA ZryDys"
+    },
+    {
+      "u": "planet.html?q=https://d2v9mhsiek5lbq.cloudfront.net/eyJidWNrZXQiOiJsb21hLW1lZGlhLWl0Iiwia2V5IjoiZG1heHNwYWluLWVzLWltYWdlLWM2NmFiZjAzLWU3ZWItNDcyZi1hOWQ2LTkxZTQ1NGFkZGNjNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJoZWlnaHQiOjI0MH0sIndlYnAiOnsicXVhbGl0eSI6ODB9fX0=",
+      "i": "https://d2v9mhsiek5lbq.cloudfront.net/eyJidWNrZXQiOiJsb21hLW1lZGlhLWl0Iiwia2V5IjoiZG1heHNwYWluLWVzLWltYWdlLWM2NmFiZjAzLWU3ZWItNDcyZi1hOWQ2LTkxZTQ1NGFkZGNjNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJoZWlnaHQiOjI0MH0sIndlYnAiOnsicXVhbGl0eSI6ODB9fX0=",
+      "a": "dmax",
+      "n": "machu-pichu peru",
+      "k": "travel,art"
+    },
+    {
+      "u": "details.html",
+      "i": "thumb/dsci-byUrl.jpg",
+      "n": "Us & Symmetry",
+      "d": null,
+      "k": "cyber,vision",
+      "p": "info",
+      "a": "CC BY-SA ZryDys"
+    },
+    {
+      "u": "visual-plotly.html",
+      "i": "wall/z-datsci.jpg",
+      "n": "R&D+i DatSci",
+      "d": "R&D+ Data Science analysis",
+      "k": "sci,cyber,math",
+      "p": "info",
+      "a": "zryDys"
+    },
+    {
+      "i": "cach/promalaga.jpg",
+      "u": "esch4.html?q=cach/promalaga.jpg",
+      "p": "box",
+      "d": "Impulso funding",
+      "n": "co-funded by the Impulso Program",
+      "a": "by promalaga.es",
+      "k": "funds,acks"
+    },
+    {
+      "i": "https://ec.europa.eu/regional_policy/images/information-sources/logo-download-center/stickers.png",
+      "r": "https://ec.europa.eu/regional_policy/information-sources/logo-download-center_en?cjreferenc",
+      "u": "move.html?q=forest.jpg",
+      "p": "box",
+      "d": "co-funded by the European Union",
+      "n": "EU funding",
+      "a": "by europe.eu FSE",
+      "k": "funds,acks"
+    },
+    {
+      "i": "cach/ar.jpg",
+      "u": "planet.html?q=cach/ar.jpg",
+      "n": "Arrival 2016",
+      "a": "review at reelgood.com/search?q=arrival",
+      "k": "art,music"
+    },
+    {
+      "i": "fractalgold.png",
+      "k": "acks,sci",
+      "n": "Arc thanks",
+      "d": "Acknoledge NASA Arc Resources",
+      "a": "by nasa.gov/"
+    },
+    {
+      "i": "https://cdn.popupsmart.com/accounts/75764/uploads/UKR_112024_UKRHF_partners__05-7407fa897a357ab694234d04db093e79.jpeg",
+      "u": "esch4.html?q=https://cdn.popupsmart.com/accounts/75764/uploads/UKR_112024_UKRHF_partners__05-7407fa897a357ab694234d04db093e79.jpeg",
+      "k": "csr,pm",
+      "n": "crisis relief",
+      "d": "Help families survive winter",
+      "a": "visit crisisrelief.un.org"
+    },
+    {
+      "i": "https://cdn-ikphdcf.nitrocdn.com/iWWPCWIhKvbRsOjJZAYfaYqrvBIRQglP/assets/images/optimized/rev-d709aea/www.resemble.ai/wp-content/uploads/2025/07/image1-3.png",
+      "u": "esch4.html?q=https://cdn-ikphdcf.nitrocdn.com/iWWPCWIhKvbRsOjJZAYfaYqrvBIRQglP/assets/images/optimized/rev-d709aea/www.resemble.ai/wp-content/uploads/2025/07/image1-3.png",
+      "k": "sci,ml,cyber",
+      "a": "by resemble.ai/linux-text-to-speech-solutions/",
+      "n": "TTS AI solutions",
+      "d": "Linux linux text-to-speech AI solutions"
+    },
+    {
+      "u": "keyr.html?q=hull&c=0xaa5",
+      "i": "thumb/hull.png",
+      "n": "boat hull",
+      "k": "nautic,solid",
+      "a": "CC-BY-NC-SA Creavertor @Printables.com"
+    }
+  ]
+}
