@@ -1,5 +1,5 @@
 usage: yq . products.yaml > products.json  -o=json  #%  since Fed 43 dnf yq
-
+note0: yq '.products[4,8]' catalog/products.yaml
 pipe0: detecting images g "\!\[.+\([^)]+)" details.md -o ais.md  gps.md 
 notes: yq in py3.13 Fedora 42 v. py3.14 Fedora 43
  
@@ -10,7 +10,6 @@ products:
   d: Night sky at Maunakea
   k: dive,sci,vision
   a: CC BY-SA ZryDys
-
 - u: keyr.html?q=broach&c=0x1111aa
   i: thumb/cune3b.jpg
   n: Broach
@@ -19,7 +18,7 @@ products:
   p: solid
   a: printables.com/@John_56680  
   
-- u:   PNR-yaml.html
+- u: PNR-yaml.html
   i: https://www.un.org/counterterrorism/sites/default/files/styles/image_cropped/public/2025-01/ct_travel_tam_programme_webpage_picture_4_-_adobestock_172925126adobestock_275829690.jpeg?h=4da044af&itok=DhkNcRV_%201x
   k: cyber,pm,travel
   n: PNR Travel Security
@@ -30,14 +29,14 @@ products:
   i: anim/glslfract.gif
   n: Fractal shader
   d: Fractal by Shader GLSL c GPU code
-  k: fractal,develop,vision
-  p: fractal
+  k: math,develop,vision
+  s: fractal
   a: CC BY-SA ZryDys  
 - u: planet.html?q=https://cdn-s-www.ledauphine.com/images/BEC03642-D182-4307-9CDC-73987CDA43AF/NW_detail/la-vedette-du-sauvetage-de-thonon-realise-entre-50-et-70-interventions-sur-le-leman-chaque-annee-archives-photo-le-dl-g-b-1693582839.jpg 
   n: Search & Rescue
   i: https://cdn-s-www.ledauphine.com/images/BEC03642-D182-4307-9CDC-73987CDA43AF/NW_detail/la-vedette-du-sauvetage-de-thonon-realise-entre-50-et-70-interventions-sur-le-leman-chaque-annee-archives-photo-le-dl-g-b-1693582839.jpg
   d: Leman Lake S&R volunteers 
-  k: csr,gis,nautic
+  k: csr,sport,nautic
   a: by ledauphine.com/faits-divers-justice/2023/09/01/le-sauvetage-en-eaux-troubles-avec-la-penurie-de-benevoles
   s: sound
   g: lat,lon
@@ -45,7 +44,7 @@ products:
   p: fractal
   i: zrydys.png   
   d: fractal javascript
-  k: fractal,ml,vision
+  k: math,ml,vision
   u: planet.html?q=zrydys.png
 - n: Geo maps
   p: maps
@@ -54,6 +53,14 @@ products:
   k: travel,gis 
   d: GDAL GeoServers 🌐 Tiles
   u: gis.html
+  
+- u: https://huggingface.co/zrydysORG
+  d: published ML demos online 
+  a: huggingface.co/spaces/zrydys/ml-demo 
+  i: hugg.jpg
+  n: some ML demos  
+  k: ml,telco,pm
+  
 - u: details.html
   n: Agile CI/CD  
   p: info
@@ -107,7 +114,7 @@ products:
   a:  IPSASb youtube zDLOvlBVNng 
 - u:  mapeuaf.html
   n: Remote Sailing GIS
-  k: gis,csr,travel
+  k: gis,telco,travel
   i: tiles/4-8-4.png
   d:  Reaching Remote Locations, Simplified and Affordable  
 - u: chord.html
@@ -128,7 +135,7 @@ products:
 - u: planet.html?q=https://static.wixstatic.com/media/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg/v1/fill/w_924,h_616,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg 
   n: Volunteers
   d: kindness, collab, compassion make a difference   
-  k: csr
+  k: csr,sport
   i:   https://static.wixstatic.com/media/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg/v1/fill/w_924,h_616,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg
   a:   volunteerhub.ch 🇨🇭
 - u: ais.html
@@ -200,7 +207,7 @@ products:
   i: thumb/esch3.jpg
   n: 3D Escher
   d: Tiling
-  k: maths,tiles
+  k: math,tiles,art
   p: escher
   a: MCEscher original 1953 + colors added by Zrydys
 - u: planet.html?q=cach/M.jpg
@@ -243,7 +250,7 @@ products:
   n: newborn chimp 
   i:  https://ichef.bbci.co.uk/news/1536/cpsprodpb/95f8/live/517c0410-f531-11f0-b385-5f48925de19a.jpg.webp     
   d:  Zoo welcomes first newborn chimpanzee in 17 years
-  k: csr
+  k: csr,travel
   a: by BBC.com/news/articles/c17zp852wx7o
 - u: orbitforest.html
   i: anim/forest.gif
@@ -276,7 +283,7 @@ products:
   i: thumb/tetra3.jpg
   n: Pyramid
   d: decorative
-  k: solid,maths
+  k: solid,math
   p: solid
 - u: keyr.html?q=noc&c=0x1111aa
   i: thumb/noc3.jpg
@@ -315,8 +322,7 @@ products:
 - u: planet.html?q=cach/F.jpg 
   i: cach/F.jpg
   n: Las Futbolistas
-  k: game,csr
- 
+  k: game,csr,sport
 - u: keyr.html?q=inkkey&c=0xff385c
   i: thumb/ink3.jpg
   n: InkUp key
@@ -327,21 +333,21 @@ products:
   i: thumb/alhambra.jpg
   n: Alhambra Tile 
   d: Tiles Alhambra style - use mouse to 3D navigate
-  k: maths,tiles
+  k: math,tiles,art
   p: tile
   a: CC BY-SA ZryDys 
 - u: tofractal.html
   i: wall/tofractal.jpg
   n: Moving Fractal 
   d: shaders GPU image
-  k: fractal,develop, vision
+  k: math,develop,vision
   p: mvp
   a: CC BY-SA ZryDys 
 - u: tile.html
   i: thumb/tiles.jpg
   n: tiles 3D
   d: Group Recurrent 3D Tiling
-  k: maths,tiles
+  k: math,tiles
   p: tile
   a: CC BY-SA ZryDys 
 - u: planet.html?q=https://d2v9mhsiek5lbq.cloudfront.net/eyJidWNrZXQiOiJsb21hLW1lZGlhLWl0Iiwia2V5IjoiZG1heHNwYWluLWVzLWltYWdlLWM2NmFiZjAzLWU3ZWItNDcyZi1hOWQ2LTkxZTQ1NGFkZGNjNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJoZWlnaHQiOjI0MH0sIndlYnAiOnsicXVhbGl0eSI6ODB9fX0=
@@ -360,7 +366,7 @@ products:
   i: wall/z-datsci.jpg
   n: R&D+i DatSci
   d: R&D+ Data Science analysis
-  k: sci,cyber,math
+  k: sci,cyber,telco
   p: info
   a: zryDys 
 - i: cach/promalaga.jpg
