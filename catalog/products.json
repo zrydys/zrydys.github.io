@@ -261,7 +261,7 @@
       "i": "thumb/esch3.jpg",
       "n": "3D Escher",
       "d": "Tiling",
-      "k": "math,tiles,art",
+      "k": "math,sci,art",
       "p": "escher",
       "a": "MCEscher original 1953 + colors added by Zrydys"
     },
@@ -270,9 +270,8 @@
       "i": "cach/M.jpg",
       "n": "Museums Workshop",
       "d": "Bringing cultural near the digital natives",
-      "k": "art,culture",
-      "p": "mvp",
-      "a": null
+      "k": "art,pm",
+      "p": "mvp"
     },
     {
       "u": "planet.html?q=cach/NS.jpg",
@@ -331,7 +330,7 @@
       "i": "thumb/sp3-silicon.png",
       "n": "Silicon Molecule bonds",
       "d": "Additive Manufacturing of Molecule bonds",
-      "k": "solid,art",
+      "k": "solid,sci",
       "a": "see original at printables & thingiverse"
     },
     {
@@ -363,7 +362,7 @@
       "i": "thumb/tetra3.jpg",
       "n": "Pyramid",
       "d": "decorative",
-      "k": "solid,math",
+      "k": "solid,math,deco",
       "p": "solid"
     },
     {
@@ -427,8 +426,7 @@
       "i": "thumb/alhambra.jpg",
       "n": "Alhambra Tile",
       "d": "Tiles Alhambra style - use mouse to 3D navigate",
-      "k": "math,tiles,art",
-      "p": "tile",
+      "k": "math,deco,art",
       "a": "CC BY-SA ZryDys"
     },
     {
@@ -454,7 +452,7 @@
       "i": "https://m.media-amazon.com/images/I/716ReBVYSsL._AC_UY218_.jpg",
       "a": "amazon.com CISA Exam Prep book",
       "n": "CISA Audits",
-      "k": "biz,pm,cyber",
+      "k": "sci,pm,cyber",
       "d": "CISA Exam Prep, Simplified Study Guide"
     },
     {
@@ -542,7 +540,7 @@
     {
       "u": "keyr.html?q=hull&c=0xa0a057",
       "i": "thumb/hull.png",
-      "n": "boat hu",
+      "n": "boat hull",
       "k": "nautic,solid",
       "a": "CC-BY-NC-SA Creavertor @Printables.com",
       "d": "Additive Manufacturing"

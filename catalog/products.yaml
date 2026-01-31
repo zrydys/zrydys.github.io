@@ -207,16 +207,15 @@ products:
   i: thumb/esch3.jpg
   n: 3D Escher
   d: Tiling
-  k: math,tiles,art
+  k: math,sci,art
   p: escher
   a: MCEscher original 1953 + colors added by Zrydys
 - u: planet.html?q=cach/M.jpg
   i: cach/M.jpg
   n: Museums Workshop
   d: Bringing cultural near the digital natives
-  k: art,culture
+  k: art,pm
   p: mvp
-  a: 
 - u: planet.html?q=cach/NS.jpg
   i: cach/NS.jpg
   n: Next Stop
@@ -263,7 +262,7 @@ products:
   i: thumb/sp3-silicon.png
   n: Silicon Molecule bonds
   d: Additive Manufacturing of Molecule bonds
-  k: solid,art
+  k: solid,sci
   a: see original at printables & thingiverse 
 - i:  https://raisely-images.imgix.net/un-crisis-relief/uploads/ukr-112024-unocha-hnrp-19-dsc-09673-jpg-webp-f48e4f.webp 
   u: esch4.html?q=https://raisely-images.imgix.net/un-crisis-relief/uploads/ukr-112024-unocha-hnrp-19-dsc-09673-jpg-webp-f48e4f.webp
@@ -288,7 +287,7 @@ products:
   i: thumb/tetra3.jpg
   n: Pyramid
   d: decorative
-  k: solid,math
+  k: solid,math,deco
   p: solid
 - u: keyr.html?q=noc&c=0x1111aa
   i: thumb/noc3.jpg
@@ -337,8 +336,7 @@ products:
   i: thumb/alhambra.jpg
   n: Alhambra Tile 
   d: Tiles Alhambra style - use mouse to 3D navigate
-  k: math,tiles,art
-  p: tile
+  k: math,deco,art
   a: CC BY-SA ZryDys 
 - u: tofractal.html
   i: wall/tofractal.jpg
@@ -358,7 +356,7 @@ products:
   i: https://m.media-amazon.com/images/I/716ReBVYSsL._AC_UY218_.jpg
   a: amazon.com CISA Exam Prep book
   n: CISA Audits
-  k: biz,pm,cyber
+  k: sci,pm,cyber
   d: CISA Exam Prep, Simplified Study Guide
 - u: planet.html?q=https://d2v9mhsiek5lbq.cloudfront.net/eyJidWNrZXQiOiJsb21hLW1lZGlhLWl0Iiwia2V5IjoiZG1heHNwYWluLWVzLWltYWdlLWM2NmFiZjAzLWU3ZWItNDcyZi1hOWQ2LTkxZTQ1NGFkZGNjNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJoZWlnaHQiOjI0MH0sIndlYnAiOnsicXVhbGl0eSI6ODB9fX0=
   i: https://d2v9mhsiek5lbq.cloudfront.net/eyJidWNrZXQiOiJsb21hLW1lZGlhLWl0Iiwia2V5IjoiZG1heHNwYWluLWVzLWltYWdlLWM2NmFiZjAzLWU3ZWItNDcyZi1hOWQ2LTkxZTQ1NGFkZGNjNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJoZWlnaHQiOjI0MH0sIndlYnAiOnsicXVhbGl0eSI6ODB9fX0=
@@ -430,7 +428,7 @@ products:
   d: Linux linux text-to-speech AI solutions
 - u: keyr.html?q=hull&c=0xa0a057
   i: thumb/hull.png
-  n: boat hu
+  n: boat hull
   k: nautic,solid
   a: CC-BY-NC-SA Creavertor @Printables.com 
   d: Additive Manufacturing
