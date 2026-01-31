@@ -321,10 +321,18 @@
       "u": "orbitforest.html",
       "i": "anim/forest.gif",
       "n": "forest",
-      "d": null,
+      "d": "3D Scene with Additive Printable trees",
       "k": "dive,csr",
       "p": "dive",
       "a": "CC BY-SA ZryDys"
+    },
+    {
+      "u": "keyr.html?q=sp3-silicon&c=0x3f386c",
+      "i": "thumb/sp3-silicon.png",
+      "n": "Silicon Molecule bonds",
+      "d": "Additive Manufacturing of Molecule bonds",
+      "k": "solid,art",
+      "a": "see original at printables & thingiverse"
     },
     {
       "i": "https://raisely-images.imgix.net/un-crisis-relief/uploads/ukr-112024-unocha-hnrp-19-dsc-09673-jpg-webp-f48e4f.webp",
@@ -388,9 +396,8 @@
       "u": "keyr.html?q=kite&c=0x41a19a",
       "i": "thumb/kite3.jpg",
       "n": "Kite",
-      "d": "for kite surfing",
+      "d": "Additive Manufacturing for kite surf 添加电镀",
       "k": "solid,nautic",
-      "p": "solid",
       "a": "printables.com/@samster395"
     },
     {
@@ -467,6 +474,14 @@
       "a": "CC BY-SA ZryDys"
     },
     {
+      "u": "keyr.html?q=Jelly_Fish&c=0xd09090",
+      "i": "thumb/Jelly_Fish.png",
+      "n": "Jelly Fish",
+      "k": "3D,solid",
+      "a": "by thingiverse.com/Wynn-3D  CC BY-SA",
+      "d": "for Additive Manufacturing or 3D scenes"
+    },
+    {
       "u": "visual-plotly.html",
       "i": "wall/z-datsci.jpg",
       "n": "R&D+i DatSci",
@@ -525,11 +540,12 @@
       "d": "Linux linux text-to-speech AI solutions"
     },
     {
-      "u": "keyr.html?q=hull&c=0xaa5",
+      "u": "keyr.html?q=hull&c=0xa0a057",
       "i": "thumb/hull.png",
-      "n": "boat hull",
+      "n": "boat hu",
       "k": "nautic,solid",
-      "a": "CC-BY-NC-SA Creavertor @Printables.com"
+      "a": "CC-BY-NC-SA Creavertor @Printables.com",
+      "d": "Additive Manufacturing"
     }
   ]
 }
