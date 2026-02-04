@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+        p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>404 - Page Not Found</h1>
+    <p>Sorry, the page you are looking for does not exist.</p>
+    <p>Requested URL: <span id="requested-url"></span></p>
+
+suggestions:
+      <div id="suggestions">
+        <a href="https://ZryDys.github.io"> ZryDys.GitHub.io </a> —
+      </div>
+
+
+
+
+    <small><a href="/">Go back to the homepage</a></small>
+
+    <script>
+        // Get the current URL
+        const requestedPage = window.location.pathname;
+
+        // Check if the requested URL starts with '/c/'
+        if (requestedPage.startsWith('/c/')) {
+            // Redirect to /static-js-page.html?k=world
+            window.location.href = '/catalog.html?k=world';
+        } else {
+            // Display the requested URL
+            document.getElementById("requested-url").textContent = requestedPage;
+        }
+    </script>
+</body>
+</html>
+

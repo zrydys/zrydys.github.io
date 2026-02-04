@@ -39,7 +39,7 @@
         // Load JSON data
         async function loadProducts() {
             try {
-                const response = await fetch('catalog/products.json?v=1.31j');
+                const response = await fetch('catalog/products.json?v=2.3');
                 const data = await response.json();
                 products = data.products;
                                    console.info(   'load' ,  products );  //TO SET AFTER LOAD
@@ -130,6 +130,10 @@ function attachFilterListeners() {
   // if (ell) {
     ell.href =  "/catalog.html?k="+category  ;
     ell.textContent =   "/catalog.html?k="+category  ;
+    
+	  // This will replace the current URL without affecting the browser history
+	  window.history.replaceState(null, null,  "/catalog.html?k="+category      );   //after click rewrite
+
   // }	
    
       if (category === 'all') {

@@ -53,14 +53,23 @@ products:
   k: travel,gis 
   d: GDAL GeoServers 🌐 Tiles
   u: gis.html
-  
+- u:  planet.html?q=https://zrydys.github.io/mvpc.html?q=https%3A%2F%2Fspectrum.ieee.org%2Fmedia-library%2Ftwo-telecommunications-workers-in-hardhats-working-on-a-cell-phone-tower.jpg%3Fid%3D60143376
+  i:  https://zrydys.github.io/mvpc.html?q=https%3A%2F%2Fspectrum.ieee.org%2Fmedia-library%2Ftwo-telecommunications-workers-in-hardhats-working-on-a-cell-phone-tower.jpg%3Fid%3D60143376
+  n: IEEE Telecom AI
+  k: telco,pm
+  a:  by pectrum.ieee.org/computer-memory-ai  
 - u: https://huggingface.co/zrydysORG
   d: published ML demos online 
   a: huggingface.co/spaces/zrydys/ml-demo 
   i: hugg.jpg
   n: some ML demos  
   k: ml,telco,pm
-  
+   
+- u: https://zrydys.github.io/planet.html?q=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F211204189%252F161230038918%252F1%252Foriginal.20200821-161426%3Fw%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26rect%3D0%252C341%252C3240%252C1620%26s%3Deac60385c2b9b0b1632ee002d62a3843
+  i:  planet.html?q=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F211204189%252F161230038918%252F1%252Foriginal.20200821-161426%3Fw%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26rect%3D0%252C341%252C3240%252C1620%26s%3Deac60385c2b9b0b1632ee002d62a3843
+  n: Tours
+  k: sport,travel
+  a: see evbuc.com on MALAGA SOUTH EXPERIENCES  
 - u: details.html
   n: Agile CI/CD  
   p: info
@@ -99,7 +108,7 @@ products:
   n: Bones 3D Replica
   d: Humerous 3D 
   k: medic,sci,solid
-  p: info
+  a: shoulder rotator thingiverse.com/thing:5373760  
 - u: planet.html?q=https://static.wixstatic.com/media/6b2d95_a8ed24c55b7441d484b112c25ac121c0~mv2.jpg/v1/fill/w_719,h_478,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/team-14.jpg
   i: https://static.wixstatic.com/media/6b2d95_a8ed24c55b7441d484b112c25ac121c0~mv2.jpg/v1/fill/w_719,h_478,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/team-14.jpg   
   n: Championnat Judo
@@ -245,11 +254,18 @@ products:
   d: 
   k: dive,nautic
   a: CC BY-SA ZryDys
+- u: https://infchg.github.io/ProtecInt.html 
+  i: anim/diving.gif
+  n: CUSTOMS AND BORDER PROTECTION
+  d: GIS & Customs Infos
+  k: gis,csr,travel
+  a: CC BY-SA 
+  
 - u: planet.html?q=https://ichef.bbci.co.uk/news/1536/cpsprodpb/95f8/live/517c0410-f531-11f0-b385-5f48925de19a.jpg.webp  
   n: newborn chimp 
   i:  https://ichef.bbci.co.uk/news/1536/cpsprodpb/95f8/live/517c0410-f531-11f0-b385-5f48925de19a.jpg.webp     
   d:  Zoo welcomes first newborn chimpanzee in 17 years
-  k: csr,travel
+  k: csr,medic
   a: by BBC.com/news/articles/c17zp852wx7o
 - u: orbitforest.html
   i: anim/forest.gif
