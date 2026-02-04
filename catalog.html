@@ -79,12 +79,13 @@
                 document.getElementById('catalog').innerHTML = '<p>Error loading catalog</p>';
             }
         }
+                  // <a href="${product.u || ''}"  target=_new >
 
         function renderCatalog() {
             const catalog = document.getElementById('catalog');
             catalog.innerHTML = filteredProducts.map(product => `
                 <div class="product">
-                   <a href="${product.u || ''}"  target=_new >
+                   <a href="${ product.u.startsWith('http') &&  '/' +  product.u ||  product.u || '' }"  target='_new' >
                     <img src="${product.i}" alt="${product.n}" loading="lazy">
                     <h3>${product.n}</h3>
                    </a> 
