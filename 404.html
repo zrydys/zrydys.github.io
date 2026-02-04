@@ -46,8 +46,9 @@ suggestions:
 
         // Check if the requested URL starts with '/c/'
         if (requestedPage.startsWith('/c/')) {
+            const kValue = requestedPage.substring(3);
             // Redirect to /static-js-page.html?k=world
-            window.location.href = '/catalog.html?k=world';
+            window.location.href = '/catalog.html?k='+kValue ;
         } else {
             // Display the requested URL
             document.getElementById("requested-url").textContent = requestedPage;
