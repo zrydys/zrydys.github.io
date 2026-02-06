@@ -266,6 +266,13 @@ products:
   d:  Zoo welcomes first newborn chimpanzee in 17 years
   k: csr,medic
   a: by BBC.com/news/articles/c17zp852wx7o
+  
+- u: esch4.html?q=https://www.itlos.org/fileadmin/_processed_/0/2/csm_2721329_1__9c737b291a.jpg
+  i: https://www.itlos.org/fileadmin/_processed_/0/2/csm_2721329_1__9c737b291a.jpg
+  d: Saint Vincent & the Grenadines v. Guinea hearing, Hamburg - SAIGA case - 
+  n: Case Saint Vincent & The Grenadines 
+  a: by itlos.org
+  k: nautic,csr,law  
 - u: orbitforest.html
   i: anim/forest.gif
   n: forest
@@ -426,8 +433,8 @@ products:
   n: Arc thanks
   d: Acknowledging NASA Arc Resources
   a: by nasa.gov/ 
-- u: esch4.html?q=https://www.itlos.org/fileadmin/assets/images/itlos_logo_frutiger_en.png 
-  i:  https://www.itlos.org/fileadmin/assets/images/itlos_logo_frutiger_en.png 
+- u: planet.html?q=https://www.itlos.org/fileadmin/assets/images/slider/slider4.jpg
+  i: https://www.itlos.org/fileadmin/assets/images/slider/slider4.jpg
   d: The International Tribunal for the Law of the Sea, Hamburg, DE
   n: Law of the Sea 
   a: see itlos.org
