@@ -19,10 +19,7 @@
         <div id="catalog" class="catalog"></div>
     </div>
 
-
-
-
-    <script>
+<script>
         let products = [];
         let filteredProducts = [];
         let ell = null;
@@ -35,14 +32,13 @@
 			  }
 		}
 
-
         // Load JSON data
         async function loadProducts() {
             try {
-                const response = await fetch('catalog/products.json?v=2.3');
+                const response = await fetch('catalog/products.json?v=2.4');
                 const data = await response.json();
                 products = data.products;
-                                   console.info(   'load' ,  products );  //TO SET AFTER LOAD
+                //                   console.debug(   'load' ,  products );  //TO SET AFTER LOAD
 
 				 // Get unique categories from JSON  arr.filter(item => item != null);  or   .filter(Boolean);
 				var categories = ['all', ...new Set(products.map(p =>  (p.k)   )  )]  .filter( Boolean ); //no nulls
@@ -151,10 +147,8 @@ function attachFilterListeners() {
  
         // Initialize
         loadProducts();
-    </script>
-    
+</script>
 
-    
     
  <footer class="page-footer">
   <small>

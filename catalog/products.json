@@ -66,11 +66,11 @@
       "u": "gis.html"
     },
     {
-      "u": "planet.html?q=https://zrydys.github.io/mvpc.html?q=https%3A%2F%2Fspectrum.ieee.org%2Fmedia-library%2Ftwo-telecommunications-workers-in-hardhats-working-on-a-cell-phone-tower.jpg%3Fid%3D60143376",
-      "i": "https://zrydys.github.io/mvpc.html?q=https%3A%2F%2Fspectrum.ieee.org%2Fmedia-library%2Ftwo-telecommunications-workers-in-hardhats-working-on-a-cell-phone-tower.jpg%3Fid%3D60143376",
+      "u": "planet.html?q=https%3A%2F%2Fspectrum.ieee.org%2Fmedia-library%2Ftwo-telecommunications-workers-in-hardhats-working-on-a-cell-phone-tower.jpg%3Fid%3D60143376",
+      "i": "https://spectrum.ieee.org/media-library/two-telecommunications-workers-in-hardhats-working-on-a-cell-phone-tower.jpg?id=60143376",
       "n": "IEEE Telecom AI",
       "k": "telco,pm",
-      "a": "by pectrum.ieee.org/computer-memory-ai"
+      "a": "by spectrum.ieee.org/computer-memory-ai"
     },
     {
       "u": "https://huggingface.co/zrydysORG",
@@ -81,8 +81,16 @@
       "k": "ml,telco,pm"
     },
     {
-      "u": "https://zrydys.github.io/planet.html?q=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F211204189%252F161230038918%252F1%252Foriginal.20200821-161426%3Fw%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26rect%3D0%252C341%252C3240%252C1620%26s%3Deac60385c2b9b0b1632ee002d62a3843",
-      "i": "planet.html?q=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F211204189%252F161230038918%252F1%252Foriginal.20200821-161426%3Fw%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26rect%3D0%252C341%252C3240%252C1620%26s%3Deac60385c2b9b0b1632ee002d62a3843",
+      "u": "https://infchg.github.io/ProtecInt.html",
+      "i": "anim/diving.gif",
+      "n": "Customs & Protection",
+      "d": "GIS & Customs Infos",
+      "k": "gis,csr,travel",
+      "a": "CC BY-SA"
+    },
+    {
+      "i": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F211204189%2F161230038918%2F1%2Foriginal.20200821-161426?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C341%2C3240%2C1620&s=eac60385c2b9b0b1632ee002d62a3843",
+      "u": "planet.html?q=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F211204189%252F161230038918%252F1%252Foriginal.20200821-161426%3Fw%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26rect%3D0%252C341%252C3240%252C1620%26s%3Deac60385c2b9b0b1632ee002d62a3843",
       "n": "Tours",
       "k": "sport,travel",
       "a": "see evbuc.com on MALAGA SOUTH EXPERIENCES"
@@ -219,12 +227,12 @@
       "a": "by MarianCustomArt.com"
     },
     {
-      "u": "mvp.html?q=cach/MD.jpg",
-      "i": "thumb/merge.jpg",
+      "u": "mvpc.html?q=",
+      "i": "anim/glslfract.gif",
       "n": "Vision filters",
       "d": "gpu C shaders effects",
       "k": "vision,develop",
-      "a": "by ztydys.github.io"
+      "a": "by zrydys.github.io"
     },
     {
       "u": "move.html?q=cach/MD.jpg",
@@ -321,14 +329,6 @@
       "d": null,
       "k": "dive,nautic",
       "a": "CC BY-SA ZryDys"
-    },
-    {
-      "u": "https://infchg.github.io/ProtecInt.html",
-      "i": "anim/diving.gif",
-      "n": "CUSTOMS AND BORDER PROTECTION",
-      "d": "GIS & Customs Infos",
-      "k": "gis,csr,travel",
-      "a": "CC BY-SA"
     },
     {
       "u": "planet.html?q=https://ichef.bbci.co.uk/news/1536/cpsprodpb/95f8/live/517c0410-f531-11f0-b385-5f48925de19a.jpg.webp",
@@ -540,8 +540,16 @@
       "i": "fractalgold.png",
       "k": "acks,sci",
       "n": "Arc thanks",
-      "d": "Acknoledge NASA Arc Resources",
+      "d": "Acknowledging NASA Arc Resources",
       "a": "by nasa.gov/"
+    },
+    {
+      "u": "esch4.html?q=https://www.itlos.org/fileadmin/assets/images/itlos_logo_frutiger_en.png",
+      "i": "https://www.itlos.org/fileadmin/assets/images/itlos_logo_frutiger_en.png",
+      "d": "The International Tribunal for the Law of the Sea, Hamburg, DE",
+      "n": "Law of the Sea",
+      "a": "see itlos.org",
+      "k": "nautic,csr,law"
     },
     {
       "i": "https://cdn.popupsmart.com/accounts/75764/uploads/UKR_112024_UKRHF_partners__05-7407fa897a357ab694234d04db093e79.jpeg",
