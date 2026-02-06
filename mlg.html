@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Guadalhorce Inundaciones - REDIAM T500 ✓</title>
+    <title>Guadalhorce Inundaciones - REDIAM T500 + PNOA ✓</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -17,22 +17,26 @@
     </style>
 </head>
 <body>
-    <h1>🗺️ Guadalhorce Inundaciones <span class="status">REDIAM T500 ✓</span></h1>
+    <h1>🗺️ Guadalhorce Inundaciones <span class="status">T500 + PNOA ✓</span></h1>
     <div class="info">
-        ✅ <strong>Junta Andalucía T=500</strong> | IGN CNIG | Esri | Centrado Málaga/Guadalhorce
+        ✅ <strong>REDIAM T500</strong> | <strong>PNOA Ortofoto CORREGIDA</strong> | IGN CNIG | Esri
     </div>
     <div id="map"></div>
 
     <script>
-        // Mapa centrado Guadalhorce (confirmado con tu curl #3)
+        // Mapa centrado Guadalhorce (36.72, -4.42) zoom 12
         var map = L.map('map').setView([36.72, -4.42], 12);
 
         // BASEMAPS estables
-        var esriWorld = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}');
-        var ignCNIG = L.tileLayer('https://www.cnig.es/mapas/tileserver/tms/{z}/{x}/{-y}.png');
+        var esriWorld = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+            attribution: '© Esri'
+        });
+        var ignCNIG = L.tileLayer('https://www.cnig.es/mapas/tileserver/tms/{z}/{x}/{-y}.png', {
+            attribution: '© CNIG'
+        });
         esriWorld.addTo(map);
 
-        // WMS REDIAM FUNCIONANDO (curl #3 confirmado)
+        // ✅ REDIAM T500 (FUNCIONANDO - tu curl #3)
         var rediamT500 = L.tileLayer.wms('https://www.juntadeandalucia.es/medioambiente/mapwms/REDIAM_zonas_inundables_Andalucia', {
             layers: 'zonas_inundables_andalucia',
             format: 'image/png',
@@ -41,18 +45,23 @@
             opacity: 0.85
         });
 
-        // PNOA WMTS (estable)
-        var pnoaWMTS = L.tileLayer('https://www.ign.es/wmts/pnoa-ma?layer=OI.OrthoimageCoverage.PNOA.MA&style=default&tilematrixset=GoogleMapsCompatible&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/jpeg&TileMatrix={z}&TileRow={y}&TileCol={x}');
+        // ✅ PNOA CORREGIDO (XML analizado: OI.OrthoimageCoverage)
+        var pnoaOrto = L.tileLayer.wms('https://www.ign.es/wms-inspire/pnoa-ma', {
+            layers: 'OI.OrthoimageCoverage',
+            format: 'image/jpeg',
+            transparent: false,
+            version: '1.3.0'
+        });
 
-        // CONTROLES
+        // CONTROLES DE CAPAS
         var baseMaps = {
             "🌍 Esri World": esriWorld,
             "🇪🇸 IGN CNIG": ignCNIG
         };
 
         var overlayMaps = {
-            "🚨 Zonas T500 Andalucía ✓": rediamT500,
-            "📸 PNOA Ortofoto": pnoaWMTS
+            "📸 PNOA Ortofoto ✓": pnoaOrto,
+            "🚨 REDIAM T500 ✓": rediamT500
         };
 
         L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(map);
@@ -63,16 +72,17 @@
         var legend = L.control({position: 'bottomright'});
         legend.onAdd = function() {
             var div = L.DomUtil.create('div', 'legend', {
-                padding: '10px', width: '160px', background: 'rgba(255,255,255,0.95)'
+                padding: '12px', width: '180px', background: 'rgba(255,255,255,0.95)'
             });
-            div.innerHTML = '<strong>REDIAM T=500</strong><br>' +
-                           '<i style="background:#ff6600;width:25px;height:20px;display:inline-block;opacity:0.85;margin-right:8px;float:left;"></i>Zonas Inundables<br>' +
-                           '<small>Junta Andalucía (hasta 2017)</small>';
+            div.innerHTML = '<strong>🗺️ Guadalhorce</strong><br>' +
+                           '<i style="background:#ff6600;width:25px;height:20px;display:inline-block;opacity:0.85;margin-right:8px;float:left;"></i>REDIAM T=500<br>' +
+                           '<i style="background:#4488cc;width:25px;height:20px;display:inline-block;margin-right:8px;float:left;"></i>PNOA Ortofoto';
             return div;
         };
         legend.addTo(map);
 
-        // Activar T500 por defecto
+        // Activar capas por defecto
+        pnoaOrto.addTo(map);
         rediamT500.addTo(map);
     </script>
 </body>
