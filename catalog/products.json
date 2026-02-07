@@ -326,8 +326,15 @@
       "u": "diving.html",
       "i": "anim/diving.gif",
       "n": "diving",
-      "d": null,
       "k": "dive,nautic",
+      "a": "CC BY-SA ZryDys"
+    },
+    {
+      "u": "mlg.html",
+      "i": "tiles/4-7-6.png",
+      "n": "Flood Risks",
+      "d": "Mlg Disaster Risk Reduction",
+      "k": "gis,pm,nautic",
       "a": "CC BY-SA ZryDys"
     },
     {
