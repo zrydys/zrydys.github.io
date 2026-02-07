@@ -127,10 +127,10 @@ products:
   k: pm,csr
   a:  IPSASb youtube zDLOvlBVNng 
 - u:  mapeuaf.html
-  n: Remote Sailing GIS
-  k: gis,telco,travel
+  n: Connect Remote Locations
+  k: gis,telco,nautic
   i: tiles/4-8-4.png
-  d:  Reaching Remote Locations, Simplified and Affordable  
+  d:  Reaching Remote Locations, Sailing bases, Simplified & Affordable  
 - u: chord.html
   n: Chord chart  
   k: sci,math,pm
@@ -143,9 +143,9 @@ products:
   a: at soundcloud.com/ davidbowieofficial 
 - u: adapt.html
   i: bluef.png
-  n: Sankey chart  
+  n: adapting to budget & tech 
   k: sci,develop,pm
-  d: adapting tech & budget evolution    
+  d: Tech & budget evolution Sankey chart 
 - u: planet.html?q=https://static.wixstatic.com/media/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg/v1/fill/w_924,h_616,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg 
   n: Volunteers
   d: kindness, collab, compassion make a difference   
@@ -264,6 +264,7 @@ products:
   d: Mlg Disaster Risk Reduction
   k: gis,pm,nautic
   a: CC BY-SA ZryDys
+    
     
 - u: planet.html?q=https://ichef.bbci.co.uk/news/1536/cpsprodpb/95f8/live/517c0410-f531-11f0-b385-5f48925de19a.jpg.webp  
   n: newborn chimp 
