@@ -98,6 +98,7 @@ var wmsInundacionMiteco  = L.tileLayer.wms('https://wms.mapama.gob.es/sig/Agua/Z
 	format: 'image/png',
 	transparent: true,
 	version: '1.3.0',
+    tiled: true,   // Modo tiled (evita warnings pesados de minit	
     attribution: "© Ministerio para la Transición Ecológica",
 	opacity: 0.9
 });
