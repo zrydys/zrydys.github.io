@@ -50,7 +50,7 @@ Capas de datos sobre riesgos multiples en Andalucía
 	attribution: 'by GIBS, operated by the NASA/GSFC/Earth Science Data and Information System (<a href="https://earthdata.nasa.gov"  target="_blank">ESDIS</a>);',
 	bounds: [[-85.0511287776, -179.999999975], [85.0511287776, 179.999999975]],
 	minZoom: 1,
-	maxZoom: 8,
+	maxZoom: 12, //era 8 .. sino mira maxNative 8...
 	format: 'jpg',
 	time: '',
 	tilematrixset: 'GoogleMapsCompatible_Level'
@@ -99,6 +99,8 @@ var wmsInundacionMiteco  = L.tileLayer.wms('https://wms.mapama.gob.es/sig/Agua/Z
 	transparent: true,
 	version: '1.3.0',
     tiled: true,   // Modo tiled (evita warnings pesados de minit	
+    styles: '',              // ✅ Sin texto overlay (tiled no evitó
+    crs: L.CRS.EPSG3857,     // ✅ Proyección estándar
     attribution: "© Ministerio para la Transición Ecológica",
 	opacity: 0.9
 });
