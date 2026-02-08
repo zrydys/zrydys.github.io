@@ -82,7 +82,8 @@ Capas de datos sobre riesgos multiples en Andalucía
     // Custom ZryDys FLAGS tile layer for comparison 
     var flagsTileLayer = L.tileLayer('https://zrydys.github.io/tiles/{z}-{x}-{y}.png', {
         attribution: 'Custom ELT FLAG Tiles from zrydys.github.io',
-        maxZoom: 10,
+        maxZoom: 18,       //  permite zoom hasta 18
+        maxNativeZoom: 4,      //  PNG reales están solo en Z4 x ahora
         minZoom: 4,
         tileSize: 256,
         subdomains: 'abc',	
