@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaflet ELT Demo</title>
+    <title>Andalucía GIS</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <style>
         #map {
@@ -17,13 +17,10 @@
     </style>
 </head>
 <body>
-   ZryDys'   🔍<a href="/?pg=index.html" class="text-light me-3">Technology Services</a> |
-<img src="/zrydysML.png"><a href="/details.html" class="text-light me-3">Who</a> |  
-<img src="/thumb/dsci-byUrl.jpg"><a href="/visual-plotly.html" class="text-light me-3">Visual BI</a> |  
-<h2> Electronic Light Table features - free Demo </h2>
 
-This is a demo of using open-source to explore ELT GIS imagery from any modern web browser:
+<h2> Andalucía GIS </h2>
 
+Capas de datos sobre riesgos multiples en Andalucía 
 <div id="map"></div>
 
 <!-- Slider to control opacity -->
@@ -72,7 +69,6 @@ This is a demo of using open-source to explore ELT GIS imagery from any modern w
    attribution:"\u003Ca href=\u0022https:\/\/geoportal.un.org\/arcgis\/home\/item.html?id=541557fd0d4d42efb24449be614e6887\u0022 target=\u0022blank\u0022 style=\u0022text-decoration: none;\u0022\u003EProduced by: UN Geospatial\u003C\/a\u003E"
 }) ;
 
-
     // Custom ZryDys tile layer for comparison 
     var customTileLayer = L.tileLayer('https://zrydys.github.io/tiles/{z}-{x}-{y}.png', {
         attribution: 'Custom ELT MAP Tiles from zrydys.github.io',
@@ -89,7 +85,8 @@ This is a demo of using open-source to explore ELT GIS imagery from any modern w
         maxZoom: 10,
         minZoom: 4,
         tileSize: 256,
-        subdomains: 'abc',
+        subdomains: 'abc',	
+        opacity: 0.6,
         noWrap: true
     });
 
@@ -142,11 +139,14 @@ var wmsInundacionJunta = L.tileLayer.wms('https://www.juntadeandalucia.es/medioa
         var opacity = parseFloat(opacitySlider.value);
         satelliteLayer.setOpacity(opacity);
        // osmLayer.setOpacity(opacity);
+       //     wmsInundacionMiteco.setOpacity(opacity);  // if u want the slider to change its opacity
         customTileLayer.setOpacity(opacity);
     });
 
     // Add initial custom tile layer to map (but it's not visible by default)
     customTileLayer.addTo(map);
+    wmsInundacionJunta.addTo(map); // default before controls 
+    flagsTileLayer.addTo(map); // default despite controls 
 </script>
 
  <iframe id="contentFrame" src="" style="h2{color:green;};  width: 100%; h2 {color: green} #h2-menu { position: fixed; top: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 10px; border-radius: 6px; font-family: sans-serif; max-width: 200px; z-index: 999; } #h2-menu a { display: block; color: #00f7ff; text-decoration: none; margin-bottom: 5px; font-size: 14px; } #h2-menu a:hover { text-decoration: underline; } /* Style for h2 elements */ h2 { color: #005577; font-family: 'Georgia', serif; font-weight: bold; border-left: 4px solid #00f7ff; padding-left: 10px; margin-top: 40px; }; height: 100vh; " allowtransparency="true" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
@@ -157,43 +157,9 @@ var wmsInundacionJunta = L.tileLayer.wms('https://www.juntadeandalucia.es/medioa
   </script>  
 
 <hr/>
-    <div>+ OpenCV.js Image Processing <img  id="imageElement" src="zrydysML.png">
-
-    <canvas id="canvasOutput"></canvas>
-
-        <button onclick="toBlackWhite()">Click to Black & White</button>
-        <button onclick="toPurple()">Click to Change color</button>
-    </div>
-<script async src="https://docs.opencv.org/4.x/opencv.js" type="text/javascript"> cc-by-sa CJ2026 OpenCV</script>
-<script>
-  async function toBlackWhite() {  //main
-    await cv.ready;
-    let img = cv.imread('imageElement');
-    let dst = new cv.Mat();
-    cv.cvtColor(img, dst, cv.COLOR_RGBA2GRAY);
-    cv.imshow('canvasOutput', dst);
-    img.delete(); dst.delete();
-  }
-  
-  async function toPurple() {
-	await cv.ready;
-	let img = cv.imread('imageElement');
-	let dst = new cv.Mat();
-	// Convert to purple: increase red and blue channels
-	let channels = new cv.MatVector();
-	cv.split(img, channels);
-	let red = channels.get(0);
-	let green = channels.get(1);
-	let blue = channels.get(2);
-	cv.add(red, new cv.Mat(red.rows, red.cols, cv.CV_8U, new cv.Scalar(0)), red);
-	cv.add(blue, new cv.Mat(blue.rows, blue.cols, cv.CV_8U, new cv.Scalar(0)), blue);
-	cv.merge(channels, dst);
-	cv.imshow('canvasOutput', dst);	
-	cv.imshow('canvasOutput', green);
-
-//	img.delete(); dst.delete();
-	red.delete(); green.delete(); blue.delete(); channels.delete();
-}
-</script>
+   ZryDys'   🔍<a href="/?pg=index.html" class="text-light me-3">Technology Services</a> |
+<img src="/zrydysML.png"><a href="/details.html" class="text-light me-3">Who</a> |  
+<img src="/thumb/dsci-byUrl.jpg"><a href="/visual-plotly.html" class="text-light me-3">Visual BI</a> |  
+ <a href="/c/" class="text-light me-3">Catalog</a> <a href="/mlg.html" class="text-light me-3">Andalucía Guadalhorce</a> 
 </body>
 </html>
