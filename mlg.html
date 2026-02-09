@@ -44,6 +44,21 @@
 	time: '',
 	tilematrixset: 'GoogleMapsCompatible_Level'
 });
+
+// ✅ USGS (CORS OK) 
+var usgsImagery = L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}', {
+    attribution: '© USGS', maxZoom: 16
+});
+
+// ✅ Stamen Terrain (CORS OK)
+var stamenTerrain = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}{r}.{ext}', {
+    attribution: '© Stamen', 
+    subdomains: 'abcd',
+    minZoom: 0,
+    maxZoom: 20,
+    ext: 'png'
+});
+
         esriWorld.addTo(map);
 
         // ✅ MITECO Q100 (XML: NZ.RiskZone)
@@ -73,9 +88,10 @@
         });
 
         // CONTROLES
-        var baseMaps = {"🌍 Esri": esriWorld, //"🇪🇸 IGN CNIG": ignCNIG
-			 "🇪🇸 CNIG Orto": cnigOrto,
-			 "🌍 Zonas Pobladas, Noche (sin Zoom)": NASAGIBS_ViirsEarthAtNight2012 ,
+        var baseMaps = {"🌍 Esri Mapa Base": esriWorld, //"🇪🇸 IGN CNIG": ignCNIG
+			"Mapa de USGS": usgsImagery,
+		    "Mapa Alternativo": stamenTerrain,
+			 "🌍 Poblaciones Noche (Zoom out)": NASAGIBS_ViirsEarthAtNight2012 ,
 			};
         var overlayMaps = {
             "📸 PNOA Ortofoto": pnoaOrto,
