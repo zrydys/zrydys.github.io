@@ -56,11 +56,9 @@ Capas de datos sobre riesgos multiples en Andalucía
 	tilematrixset: 'GoogleMapsCompatible_Level'
 })
 
-var nightLights = L.tileLayer.wms('https://gibs.earthdata.nasa.gov/wms/epsg4326/best/VIIRS_CityLights_2012/wms.cgi?', {
-    layers: 'VIIRS_CityLights_2012',
-    format: 'image/png',
-    transparent: true,
-    attribution: 'NASA GIBS / VIIRS Nighttime Lights'
+var nightLights = L.tileLayer.wms('https://cartodb-basemaps-c.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', {
+        maxZoom: 20, attribution: '© CartoDB'
+    }
 }) ;
 
  // L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png',  // wrong map non-iso osm
@@ -138,7 +136,8 @@ var wmsInundacionJunta = L.tileLayer.wms('https://www.juntadeandalucia.es/medioa
            "USGS Topo Imag": USGS_USImageryTopo, // dice WS-disp  ---> best2
            "United Nations": unbase,
            "NASA at Night": NASAGIBS_ViirsEarthAtNight2012 , //  ---> cool
-      // mistral-fallo en   "NASA NightL":     nightLights,
+      // mistral-fallo en   "NASA NightL"
+        "Noche CartoDB":     nightLights,
 //OSM changed legal international borders so need USGS or UN or NASA maps instead "OpenStreetMap": osmLayer
     };
 
