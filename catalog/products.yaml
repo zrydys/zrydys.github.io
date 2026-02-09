@@ -259,7 +259,7 @@ products:
   k: dive,nautic
   a: CC BY-SA ZryDys
 - u: mlg.html
-  i: tiles/4-7-6.png 
+  i: thumb/mlg.png
   n: Flood Risks
   d: Mlg Disaster Risk Reduction
   k: gis,pm,nautic
@@ -337,7 +337,12 @@ products:
   k: game,nautic
   p: mvpc
   a: by NOceaNoUs.com
- 
+- u: and.html
+  i: thumb/and.png
+  n: Andalucia Risks
+  d: Regional Disaster Risk Reduction
+  k: gis,pm,nautic
+  a: CC BY-SA ZryDys + Miteco + Junta + Nasa Images
 - u: keyr.html?q=kite&c=0x41a19a
   i: thumb/kite3.jpg
   n: Kite
@@ -366,6 +371,12 @@ products:
   d: Tiles Alhambra style - use mouse to 3D navigate
   k: math,deco,art
   a: CC BY-SA ZryDys 
+- u: https://pubchem.ncbi.nlm.nih.gov/compound/epinephrine#section=Structures
+  i: thumb/Epine.png
+  n: Epinefrine Molecule
+  d: Adrenaline C₉H₁₃NO₃ Molecule bonds 
+  k: solid,sci,medic
+  a: 3D by ncbi.nlm.nih.gov
 - u: tofractal.html
   i: wall/tofractal.jpg
   n: Moving Fractal 
@@ -452,7 +463,12 @@ products:
   n:  crisis relief
   d:  Help families survive winter 
   a: visit crisisrelief.un.org
-  
+- u: https://pubchem.ncbi.nlm.nih.gov/compound/norepinephrine#section=Structures
+  i: thumb/Epine.png
+  n: NorEpinefrine NorAdre
+  d: C₈H₁₁NO₃ Molecule bonds 
+  k: solid,sci,medic
+  a: 3D by ncbi.nlm.nih.gov  
 
 - i: https://cdn-ikphdcf.nitrocdn.com/iWWPCWIhKvbRsOjJZAYfaYqrvBIRQglP/assets/images/optimized/rev-d709aea/www.resemble.ai/wp-content/uploads/2025/07/image1-3.png 
   u: esch4.html?q=https://cdn-ikphdcf.nitrocdn.com/iWWPCWIhKvbRsOjJZAYfaYqrvBIRQglP/assets/images/optimized/rev-d709aea/www.resemble.ai/wp-content/uploads/2025/07/image1-3.png 
