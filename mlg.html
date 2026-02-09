@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-    <h1>🗺️ Guadalhorce Completo <span class="status">3 CAPAS ✓</span></h1>
+    <h1>🗺️ Zonas Inundables <span class="status">3 CAPAS ✓ Junta T500 + MITECO Q100 + LiDAR PNOA </span></h1>
     <div class="info">
         ✅ <strong>MITECO Q100</strong> | <strong>REDIAM T500</strong> | <strong>PNOA Ortofoto</strong>
     </div>
@@ -47,16 +47,8 @@
 
 // ✅ USGS (CORS OK) 
 var usgsImagery = L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}', {
+	maxNativeZoom: 12,      //  menores // no tiene detalles +16
     attribution: '© USGS', maxZoom: 16
-});
-
-// ✅ Stamen Terrain (CORS OK)
-var stamenTerrain = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}{r}.{ext}', {
-    attribution: '© Stamen', 
-    subdomains: 'abcd',
-    minZoom: 0,
-    maxZoom: 20,
-    ext: 'png'
 });
 
         esriWorld.addTo(map);
@@ -90,8 +82,7 @@ var stamenTerrain = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terra
         // CONTROLES
         var baseMaps = {"🌍 Esri Mapa Base": esriWorld, //"🇪🇸 IGN CNIG": ignCNIG
 			"Mapa de USGS": usgsImagery,
-		    "Mapa Alternativo": stamenTerrain,
-			 "🌍 Poblaciones Noche (Zoom out)": NASAGIBS_ViirsEarthAtNight2012 ,
+			 "🌍 Poblaciones (menos Zoom)": NASAGIBS_ViirsEarthAtNight2012 ,
 			};
         var overlayMaps = {
             "📸 PNOA Ortofoto": pnoaOrto,
