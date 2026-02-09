@@ -30,6 +30,20 @@
         // BASEMAPS
         var esriWorld = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}');
         var ignCNIG = L.tileLayer('https://www.cnig.es/mapas/tileserver/tms/{z}/{x}/{-y}.png');
+        var cnigOrto = L.tileLayer('https://www.cnig.es/mapas/tileserver/ortofoto/tile/{z}/{x}/{y}.png', {
+    attribution: '© CNIG Ortofoto',
+    maxZoom: 18
+});
+        
+        var NASAGIBS_ViirsEarthAtNight2012 = L.tileLayer('https://map1.vis.earthdata.nasa.gov/wmts-webmerc/VIIRS_CityLights_2012/default/{time}/{tilematrixset}{maxZoom}/{z}/{y}/{x}.{format}', {
+	attribution: 'by GIBS, operated by the NASA/GSFC/Earth Science Data and Information System (<a href="https://earthdata.nasa.gov"  target="_blank">ESDIS</a>);',
+	bounds: [[-85.0511287776, -179.999999975], [85.0511287776, 179.999999975]],
+	minZoom: 1,
+	maxZoom: 8, // >8 NS errors 
+	format: 'jpg',
+	time: '',
+	tilematrixset: 'GoogleMapsCompatible_Level'
+});
         esriWorld.addTo(map);
 
         // ✅ MITECO Q100 (XML: NZ.RiskZone)
@@ -59,7 +73,10 @@
         });
 
         // CONTROLES
-        var baseMaps = {"🌍 Esri": esriWorld, "🇪🇸 IGN CNIG": ignCNIG};
+        var baseMaps = {"🌍 Esri": esriWorld, //"🇪🇸 IGN CNIG": ignCNIG
+			 "🇪🇸 CNIG Orto": cnigOrto,
+			 "🌍 Zonas Pobladas, Noche (sin Zoom)": NASAGIBS_ViirsEarthAtNight2012 ,
+			};
         var overlayMaps = {
             "📸 PNOA Ortofoto": pnoaOrto,
             "🇪🇸 MITECO Q100": mitecoQ100,
