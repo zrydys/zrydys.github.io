@@ -69,10 +69,19 @@ Capas de datos sobre riesgos multiples en Andalucía
    attribution:"\u003Ca href=\u0022https:\/\/geoportal.un.org\/arcgis\/home\/item.html?id=541557fd0d4d42efb24449be614e6887\u0022 target=\u0022blank\u0022 style=\u0022text-decoration: none;\u0022\u003EProduced by: UN Geospatial\u003C\/a\u003E"
 }) ;
 
+var s2Cloudless = L.tileLayer(
+  'https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2020_3857/default/g/{z}/{y}/{x}.jpg',
+  {
+    maxZoom: 18,
+    attribution: 'Sentinel-2 cloudless © EOX / Copernicus'
+  }
+);
+
     // Custom ZryDys tile layer for comparison 
     var customTileLayer = L.tileLayer('https://zrydys.github.io/tiles/{z}-{x}-{y}.png', {
         attribution: 'Custom ELT MAP Tiles from zrydys.github.io',
-        maxZoom: 10,
+        maxZoom: 18,
+        maxNativeZoom: 4,      //  PNG reales están solo en Z4 x ahora
         minZoom: 4,
         tileSize: 256,
         subdomains: 'abc',
@@ -118,6 +127,7 @@ var wmsInundacionJunta = L.tileLayer.wms('https://www.juntadeandalucia.es/medioa
     // Add a Layer Control to switch between base layers
     var baseLayers = {
         "Satellite Imagery": satelliteLayer,
+        "Sentinel2 2020": s2Cloudless,
            "USGS Topo Imag": USGS_USImageryTopo, // dice WS-disp  ---> best2
            "United Nations": unbase,
            "NASA at Night": NASAGIBS_ViirsEarthAtNight2012 , //  ---> cool
@@ -148,7 +158,7 @@ var wmsInundacionJunta = L.tileLayer.wms('https://www.juntadeandalucia.es/medioa
     });
 
     // Add initial custom tile layer to map (but it's not visible by default)
-    customTileLayer.addTo(map);
+  //no default  customTileLayer.addTo(map);
     wmsInundacionJunta.addTo(map); // default before controls 
     flagsTileLayer.addTo(map); // default despite controls 
 </script>
