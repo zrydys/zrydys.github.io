@@ -96,7 +96,7 @@ products:
   
 - n: GIS imagery OpenCv ELT 
   k: gis,ml,vision
-  i: tiles/4-8-4.png
+  i: thumb/elt.png
   d: GIS Overlay + Electronic Light Table + OpenCV.js process
   u: elt.html
 - u: planet.html?q=https://archive.org/download/bowie-singles/David%20Bowie%20-%20The%20Singles%20Collection.back.jpg
