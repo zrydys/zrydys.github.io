@@ -82,19 +82,21 @@ This is a demo of using open-source to explore ELT GIS imagery from any modern w
     var customTileLayer = L.tileLayer('https://zrydys.github.io/tiles/{z}-{x}-{y}.png', {
         attribution: 'Custom ELT MAP Tiles from zrydys.github.io',
         maxZoom: 10,
-        minZoom: 4,
+        minZoom: 2,
         tileSize: 256,
         subdomains: 'abc',
+        opacity: 0.7,
         noWrap: true
     });
 
     // Custom ZryDys FLAGS tile layer for comparison 
-    var flagsTileLayer = L.tileLayer('https://zrydys.github.io/tiles/{z}-{x}-{y}.png', {
-        attribution: 'Custom ELT FLAG Tiles from zrydys.github.io',
+    var flagsTileLayer = L.tileLayer('https://infchg.github.io/GeoInt/wms/tflag/{z}-{x}-{y}.png', {
+        attribution: 'Custom ELT FLAG Tiles from infchg.github.io',
         maxZoom: 10,
-        minZoom: 4,
+        minZoom: 2,
         tileSize: 256,
         subdomains: 'abc',
+        opacity: 0.7,
         noWrap: true
     });
 
