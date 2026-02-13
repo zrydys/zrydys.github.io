@@ -81,6 +81,14 @@
       "k": "ml,telco,pm"
     },
     {
+      "u": "planet.html?q=https://e4k4c4x9.delivery.rocketcdn.me/en/wp-content/uploads/sites/15/2026/01/Bird_Biodiversity_Image-696x444.png.webp",
+      "i": "https://e4k4c4x9.delivery.rocketcdn.me/en/wp-content/uploads/sites/15/2026/01/Bird_Biodiversity_Image-696x444.png.webp",
+      "n": "biodiversity",
+      "d": "Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES)",
+      "k": "sci,csr",
+      "a": "at unric.org"
+    },
+    {
       "u": "https://infchg.github.io/ProtecInt.html",
       "i": "anim/diving.gif",
       "n": "Customs & Protection",
@@ -208,7 +216,7 @@
       "a": "authors from NOAA, rtl-sdr.com, zryDys"
     },
     {
-      "u": "https://img.tapimg.net/market/images/4d4d88f02aba3559a8ecd7e4498def05.jpg",
+      "u": "planet.html?q=https://img.tapimg.net/market/images/4d4d88f02aba3559a8ecd7e4498def05.jpg",
       "g": "?q=https://img.tapimg.net/market/images/4d4d88f02aba3559a8ecd7e4498def05.jpg",
       "i": "thumb/camp.jpg",
       "n": "Camper",
@@ -242,6 +250,14 @@
       "k": "game",
       "p": "mvp",
       "a": "E."
+    },
+    {
+      "u": "planet.html?q=https://e4k4c4x9.delivery.rocketcdn.me/en/wp-content/uploads/sites/15/2025/11/ml-and-ai-696x418.jpg.webp",
+      "i": "https://e4k4c4x9.delivery.rocketcdn.me/en/wp-content/uploads/sites/15/2025/11/ml-and-ai-696x418.jpg.webp",
+      "n": "Call on AI & ML",
+      "d": "World Meteorological Organization Call on AI and Machine Learning",
+      "k": "ml,csr,gis",
+      "a": "unric.org/en/world-meteorological-organization-call-on-ai-and-machine-learning-is-out"
     },
     {
       "u": "vis-bi-plotly.html",
