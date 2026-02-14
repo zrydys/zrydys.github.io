@@ -35,7 +35,7 @@
         // Load JSON data
         async function loadProducts() {
             try {
-                const response = await fetch('catalog/products.json?v=2.11');
+                const response = await fetch('catalog/products.json?v=2.12');
                 const data = await response.json();
                 products = data.products;
                 //                   console.debug(   'load' ,  products );  //TO SET AFTER LOAD
