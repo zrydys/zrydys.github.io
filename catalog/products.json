@@ -508,12 +508,19 @@
       "a": "CC BY-SA ZryDys"
     },
     {
+      "u": "planet.html?q=https://www.opentext.com/assets/images/products-solutions/solution-industry-category/opentext-image-industry-cards-legal-416x234-en.png",
+      "i": "https://www.opentext.com/assets/images/products-solutions/solution-industry-category/opentext-image-industry-cards-legal-416x234-en.png",
+      "a": "by opentext.com/",
+      "n": "Industry Legal",
+      "k": "law,pm,risk",
+      "d": "opentext legal tools for industry"
+    },
+    {
       "u": "tile.html",
       "i": "thumb/tiles.jpg",
       "n": "tiles 3D",
       "d": "Group Recurrent 3D Tiling",
-      "k": "math,tiles",
-      "p": "tile",
+      "k": "math,art",
       "a": "CC BY-SA ZryDys"
     },
     {
@@ -547,6 +554,14 @@
       "k": "3D,solid",
       "a": "by thingiverse.com/Wynn-3D  CC BY-SA",
       "d": "for Additive Manufacturing or 3D scenes"
+    },
+    {
+      "u": "planet.html?q=https://www.opentext.com/assets/images/products-solutions/product-details/opentext-image-ediscovery-whats-next-en.png",
+      "i": "https://www.opentext.com/assets/images/products-solutions/product-details/opentext-image-ediscovery-whats-next-en.png",
+      "a": "by opentext.com/products/ediscovery",
+      "n": "eDiscovery",
+      "k": "law,pm,risk",
+      "d": "opentext  ediscovery  (former axelerate)"
     },
     {
       "u": "visual-plotly.html",
