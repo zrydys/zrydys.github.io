@@ -101,6 +101,27 @@ This is a demo of using open-source to explore ELT GIS imagery from any modern w
         noWrap: true
     });
 
+var cj1 = L.tileLayer( "https://thredds.socib.es/thredds/wms/observational/hf_radar/hf_radar_ibiza-scb_codarssproc001_aggregation/dep0001_hf-radar-ibiza_scb-codarssproc001_L1_agg.nc",
+   { layers: 'sea_water_velocity',
+    format: 'image/png',
+    transparent: true,
+    attribution: 'SOCIB HF RADAR | sea_water_velocity'
+  });
+
+var cj2 = L.tileLayer( 'http://data.azgs.az.gov/arizona/wms',   {
+layers: 'azgs:mapunitpolys',
+transparent: true,
+format: 'image/png'
+}) ;
+
+var cj3 = L.tileLayer( 'https://geo.weather.gc.ca/geomet?', {     layers: 'RADAR_1KM_RRAI' });
+
+var cj4 = L.tileLayer( 'http://{s}.tiles.mapbox.com/v3/rclark.map-wm3i8w1a/{z}/{x}/{y}.png' , {    });
+var cj5 = L.tileLayer( 'http://ovc.catastro.meh.es/Cartografia/WMS/ServidorWMS.aspx?request=GetCapabilities&service=WMS' , {    layers: 'Spain_Catastro' });
+var cj6 = L.tileLayer( 'http://www.callejerodeandalucia.es/servicios/cdau/wms?request=GetCapabilities&service=WMS' , {   layers: 'Andalucia_CDAUBase'  });
+//var cj6 = L.tileLayer( ' ' , {   layers: ''  });
+//https://view.eumetsat.int/geoserver/wfs  layer named copernicus:sentinel3a_slstr_level2_frp)
+var cj7 = L.tileLayer( 'https://view.eumetsat.int/geoserver/wfs' , {   layers: 'copernicus:sentinel3a_slstr_level2_frp'  });
 
     // Add a Layer Control to switch between base layers
     var baseLayers = {
@@ -114,7 +135,14 @@ This is a demo of using open-source to explore ELT GIS imagery from any modern w
     var overlayLayers = {
         "ELT Custom labels": customTileLayer,
         "ELT Custom flags": flagsTileLayer,
-    };
+        " 1 ": cj1,
+         " 2 ": cj2,
+        " 3 ": cj3,
+        " 4 ": cj4,
+        " 5 ": cj5,
+        " 6 ": cj6,
+         " 7 ": cj7,
+   };
 
 //unbase.addTo(map);
 //  L.control.layers(null,overlays).addTo(map);
