@@ -18,7 +18,7 @@ products:
   p: solid
   a: printables.com/@John_56680  
   
-- u: PNR-yaml.html
+- u: /GeoInt/PNR-yaml.html
   i: https://www.un.org/counterterrorism/sites/default/files/styles/image_cropped/public/2025-01/ct_travel_tam_programme_webpage_picture_4_-_adobestock_172925126adobestock_275829690.jpeg?h=4da044af&itok=DhkNcRV_%201x
   k: cyber,pm,travel
   n: PNR Travel Security
@@ -32,6 +32,12 @@ products:
   k: math,develop,vision
   s: fractal
   a: CC BY-SA ZryDys  
+- n: Risks & Meteo
+  k: gis,risk,sci
+  i: bluef.png
+  d: Faults, Floods, Climate risks GIS 
+  u: elt.html  
+  
 - u: planet.html?q=https://cdn-s-www.ledauphine.com/images/BEC03642-D182-4307-9CDC-73987CDA43AF/NW_detail/la-vedette-du-sauvetage-de-thonon-realise-entre-50-et-70-interventions-sur-le-leman-chaque-annee-archives-photo-le-dl-g-b-1693582839.jpg 
   n: Search & Rescue
   i: https://cdn-s-www.ledauphine.com/images/BEC03642-D182-4307-9CDC-73987CDA43AF/NW_detail/la-vedette-du-sauvetage-de-thonon-realise-entre-50-et-70-interventions-sur-le-leman-chaque-annee-archives-photo-le-dl-g-b-1693582839.jpg
@@ -153,7 +159,6 @@ products:
   a: at soundcloud.com/ davidbowieofficial 
 - u: adapt.html
   i: thumb/sankey.png
-  j: bluef.png
   n: adapting to budget & tech 
   k: sci,develop,pm
   d: Tech & budget evolution Sankey chart 
