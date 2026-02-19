@@ -131,7 +131,8 @@ function attachFilterListeners() {
     ell.textContent =   "/catalog.html?k="+category  ;
     
 	  // This will replace the current URL without affecting the browser history
-	  window.history.replaceState(null, null,  "/catalog.html?k="+category      );   //after click rewrite
+	 // window.history.replaceState(null, null,  "/catalog.html?k="+category      );   //after click rewrite
+	 console.info(723);
 	  window.history.replaceState(null, null,  '/c/'+category      );   // history showing caconical /c/ url
 
   // }	
