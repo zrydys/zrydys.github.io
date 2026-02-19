@@ -96,7 +96,7 @@
  
         // Search functionality 
  function attachSearchListeners() {
-                  console.info(   'search' ,  products );  //TO SET AFTER LOAD  so inside if load async
+        //          console.info(   'search' ,  products );  //TO SET AFTER LOAD  so inside if load async
         document.getElementById('search').addEventListener('input', (e) => {
             const term = e.target.value.toLowerCase();
             filteredProducts = products.filter(p => 
