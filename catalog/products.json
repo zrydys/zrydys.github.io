@@ -194,6 +194,14 @@
       "a": "by ZryDys charts"
     },
     {
+      "u": "planet.html?q=https://d3mxt5v3yxgcsr.cloudfront.net/courses/3484/course_3484_image.jpg",
+      "i": "https://d3mxt5v3yxgcsr.cloudfront.net/courses/3484/course_3484_image.jpg",
+      "n": "OpenCV computer vision",
+      "d": "library of programming functions, real-time computer vision, Intel",
+      "k": "develop,sci,vision",
+      "a": "by  https://market.tutorialspoint.com/course/learn-computer-vision-with-opencv-and-python"
+    },
+    {
       "u": "planet.html?q=https://i1.sndcdn.com/avatars-000015016802-hvtbbc-t200x200.jpg",
       "n": "SoundCloud Bowie",
       "k": "music,3D",
@@ -356,12 +364,29 @@
       "a": "CC BY-SA ZryDys"
     },
     {
+      "u": "planet.html?q=https://ichef.bbci.co.uk/images/ic/320xn/p02m6cw0.jpg",
+      "i": "https://ichef.bbci.co.uk/images/ic/320xn/p02m6cw0.jpg",
+      "n": "Orion",
+      "d": "BBC Stargazing",
+      "k": "sci,3D,vision",
+      "a": "by bbc.co.uk/programmes/articles/2pZFdnsPGl1DDwH6pZbJKkh",
+      "marsearth": "https://ichef.bbci.co.uk/images/ic/320xn/p013fx1t.jpg"
+    },
+    {
       "u": "mlg.html",
       "i": "thumb/mlg.png",
       "n": "Flood Risks",
       "d": "Mlg Disaster Risk Reduction",
       "k": "gis,pm,nautic",
       "a": "CC BY-SA ZryDys"
+    },
+    {
+      "u": "planet.html?q=https://img-c.udemycdn.com/user/200_H/75391750_5441.jpg",
+      "i": "https://img-c.udemycdn.com/user/200_H/75391750_5441.jpg",
+      "n": "AI ML OpenCV",
+      "d": "Udemy instructore led training ML",
+      "k": "develop,ml,vision",
+      "a": "by udemy.com/user/lazy-programmer-team/"
     },
     {
       "u": "planet.html?q=https://ichef.bbci.co.uk/news/1536/cpsprodpb/95f8/live/517c0410-f531-11f0-b385-5f48925de19a.jpg.webp",
@@ -540,6 +565,13 @@
       "n": "CISA Audits",
       "k": "sci,pm,cyber",
       "d": "CISA Exam Prep, Simplified Study Guide"
+    },
+    {
+      "u": "planet.html?q=https://branding.files.bbci.co.uk/branding/live/images/0df25a17d5c72afbee1e210be4e11d7b.jpg",
+      "i": "https://branding.files.bbci.co.uk/branding/live/images/0df25a17d5c72afbee1e210be4e11d7b.jpg",
+      "n": "BBC Stargazing",
+      "k": "sci,3D",
+      "a": "by bbc.co.uk/programmes/articles/2pZFdnsPGl1DDwH6pZbJKkh"
     },
     {
       "u": "planet.html?q=https://d2v9mhsiek5lbq.cloudfront.net/eyJidWNrZXQiOiJsb21hLW1lZGlhLWl0Iiwia2V5IjoiZG1heHNwYWluLWVzLWltYWdlLWM2NmFiZjAzLWU3ZWItNDcyZi1hOWQ2LTkxZTQ1NGFkZGNjNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJoZWlnaHQiOjI0MH0sIndlYnAiOnsicXVhbGl0eSI6ODB9fX0=",
