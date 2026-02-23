@@ -2,7 +2,7 @@ usage: yq . products.yaml > products.json  -o=json  #%  since Fed 43 dnf yq
 note0: yq '.products[4,8]' catalog/products.yaml
 pipe0: detecting images g "\!\[.+\([^)]+)" details.md -o ais.md  gps.md 
 notes: yq in py3.13 Fedora 42 v. py3.14 Fedora 43
- 
+affil: from /c/n/name takes you to the v clip o html in 1 step
 products:
 - u: diving.html?o=menger&e=cubmau
   i: anim/maunakea.gif
@@ -13,7 +13,6 @@ products:
 - u: keyr.html?q=broach&c=0x1111aa
   i: thumb/cune3b.jpg
   n: Broach
-  d: 
   k: solid,deco
   p: solid
   a: printables.com/@John_56680  
@@ -52,6 +51,13 @@ products:
   d: fractal javascript
   k: math,ml,vision
   u: planet.html?q=zrydys.png
+- u: mvpc.html?q=https://oceanweb.com/wp-content/uploads/2023/05/Iridium-GMDSS.png  
+  i: https://oceanweb.com/wp-content/uploads/2023/05/Iridium-GMDSS.png
+  j: had www.
+  n: GMDSS Safety
+  k: telco,cyber,nautic
+  a:  by   oceanweb.com/safety-at-sea-inmarsat-c-vs-iridium-gmdss/  
+  d: Safety at sea Inmarsat vs Iridium
 - n: Geo maps
   p: maps
   i: tiles/4-8-5.png
@@ -59,7 +65,7 @@ products:
   k: travel,gis 
   d: GDAL GeoServers 🌐 Tiles
   u: gis.html
-- u:  planet.html?q=https%3A%2F%2Fspectrum.ieee.org%2Fmedia-library%2Ftwo-telecommunications-workers-in-hardhats-working-on-a-cell-phone-tower.jpg%3Fid%3D60143376
+- u: planet.html?q=https://spectrum.ieee.org/media-library/two-telecommunications-workers-in-hardhats-working-on-a-cell-phone-tower.jpg%3Fid%3D60143376
   i: https://spectrum.ieee.org/media-library/two-telecommunications-workers-in-hardhats-working-on-a-cell-phone-tower.jpg?id=60143376
   n: IEEE Telecom AI
   k: telco,pm
@@ -100,6 +106,12 @@ products:
   n: 3D Corridor
   k: 3D
   i: cach/cor.jpg
+- u: mvpc.html?q=https://www.fcc.gov/themes/custom/fcc/assets/images/fcc-seal.png   
+  i:  https://www.fcc.gov/themes/custom/fcc/assets/images/fcc-seal.png
+  n: GMDSS at Sea
+  k: telco,risk,nautic
+  a:  by  fcc.gov/wireless/bureau-divisions/mobility-division/maritime-mobile/ship-radio-stations/global-maritime
+  d: Satellite Emergency Distress  
 - u: planet.html?q=https://avatars.githubusercontent.com/u/16047363
   n: GitHub Avatars
   d: from GH codings
@@ -121,6 +133,7 @@ products:
   n: Cyber Corridor
   k: cyber,3D
   i: cach/col.jpg
+  
 - u: planet.html?q=thumb/humerus.jpg  
   i: thumb/humerus.jpg   
   n: Bones 3D Replica
@@ -257,6 +270,7 @@ products:
   d: Bringing cultural near the digital natives
   k: art,pm
   p: mvp
+  
 - u: planet.html?q=cach/NS.jpg
   i: cach/NS.jpg
   n: Next Stop
@@ -349,6 +363,12 @@ products:
   d: wingfoil for sailing Manufacturing water-sports parts
   k: nautic,solid
   a: CC-BY-NC-SA Creavertor @Printables.com 
+- u: https://bbc.co.uk/programmes/p00zxy0t
+  i: https://ichef.bbci.co.uk/images/ic/480xn/p00yydzw.jpg
+  n: Short guide to stars
+  k: sci,music
+  d: how stars shine, why we're all made of star stuff
+  a: by bbc.co.uk/programmes/p00zxy0t
 - u: keyr.html?q=tetra&c=0xa1a12a
   i: thumb/tetra3.jpg
   n: Pyramid
