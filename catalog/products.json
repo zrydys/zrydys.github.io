@@ -22,6 +22,22 @@
       "a": "printables.com/@John_56680"
     },
     {
+      "u": "planet.html?q=https://img.youtube.com/vi/AvQxaYqoJts/hqdefault.jpg",
+      "i": "https://img.youtube.com/vi/AvQxaYqoJts/hqdefault.jpg",
+      "n": "Sendai Framework",
+      "d": "Disaster Risk Reduction, Prevention",
+      "k": "pm,risk,csr",
+      "a": "by preventionweb.net/sendai-framework/"
+    },
+    {
+      "u": "https://zrydys.github.io/GeoInt/DRR.html",
+      "i": "https://reliefweb.int/sites/default/files/styles/large/public/previews/9e/b8/9eb8f958-b007-378f-b42a-a701cb57d631.png.webp?1769890-1-0",
+      "n": "DRR Sendai Framework🌀",
+      "d": "Disaster Risk Reduction 4+🎯⭐🍀🌏 view🟣",
+      "k": "pm,risk,csr",
+      "a": "by ZryDys + OS reliefweb.int/report/world/disaster-risk-reduction-drr-diagram"
+    },
+    {
       "u": "https://infchg.github.io/GeoInt/PNR-yaml.html",
       "i": "https://www.un.org/counterterrorism/sites/default/files/styles/image_cropped/public/2025-01/ct_travel_tam_programme_webpage_picture_4_-_adobestock_172925126adobestock_275829690.jpeg?h=4da044af&itok=DhkNcRV_%201x",
       "k": "cyber,pm,travel",
@@ -394,7 +410,7 @@
       "i": "thumb/mlg.png",
       "n": "Flood Risks",
       "d": "Mlg Disaster Risk Reduction",
-      "k": "gis,pm,nautic",
+      "k": "gis,pm,nautic,risk",
       "a": "CC BY-SA ZryDys"
     },
     {
@@ -728,7 +744,7 @@
       "d": "OpenText™ EnCase™ Forensic  Evidence Viewer"
     },
     {
-      "u": "/GeoInt/PNR-yaml.html",
+      "u": "https://zrydys.github.io//GeoInt/PNR-yaml.html",
       "i": "https://www.un.org/counterterrorism/sites/default/files/styles/image_cropped/public/2025-01/ct_travel_tam_programme_webpage_picture_4_-_adobestock_172925126adobestock_275829690.jpeg?h=4da044af&itok=DhkNcRV_%201x",
       "k": "cyber,pm,travel",
       "n": "PNR Travel Security",
