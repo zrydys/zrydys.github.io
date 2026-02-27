@@ -22,12 +22,7 @@ products:
   d: Disaster Risk Reduction, Prevention
   k: pm,risk,csr
   a: by preventionweb.net/sendai-framework/ 
-- u: https://zrydys.github.io/GeoInt/DRR.html 
-  i: https://reliefweb.int/sites/default/files/styles/large/public/previews/9e/b8/9eb8f958-b007-378f-b42a-a701cb57d631.png.webp?1769890-1-0
-  n: DRR Sendai Framework🌀 
-  d: Disaster Risk Reduction 4+🎯⭐🍀🌏 view🟣 
-  k: pm,risk,csr
-  a: by ZryDys + OS reliefweb.int/report/world/disaster-risk-reduction-drr-diagram
+
 - u: https://infchg.github.io/GeoInt/PNR-yaml.html
   i: https://www.un.org/counterterrorism/sites/default/files/styles/image_cropped/public/2025-01/ct_travel_tam_programme_webpage_picture_4_-_adobestock_172925126adobestock_275829690.jpeg?h=4da044af&itok=DhkNcRV_%201x
   k: cyber,pm,travel
@@ -472,12 +467,30 @@ products:
   n: CISA Audits
   k: sci,pm,cyber
   d: CISA Exam Prep, Simplified Study Guide
+- u: https://zrydys.github.io/GeoInt/DRR.html 
+  i: https://reliefweb.int/sites/default/files/styles/large/public/previews/9e/b8/9eb8f958-b007-378f-b42a-a701cb57d631.png.webp?1769890-1-0
+  n: DRR Sendai Framework🌀 
+  d: Disaster Risk Reduction 4+🎯⭐🍀🌏 view🟣 
+  k: pm,risk,csr
+  a: by ZryDys + OS reliefweb.int/report/world/disaster-risk-reduction-drr-diagram  
 - u: planet.html?q=https://branding.files.bbci.co.uk/branding/live/images/0df25a17d5c72afbee1e210be4e11d7b.jpg
   i: https://branding.files.bbci.co.uk/branding/live/images/0df25a17d5c72afbee1e210be4e11d7b.jpg
   n: BBC Stargazing
   k: sci,3D
   a: by bbc.co.uk/programmes/articles/2pZFdnsPGl1DDwH6pZbJKkh
-   
+- u: https://hungermap.wfp.org/
+  i: https://static.hungermapdata.org/hungermap/img/menu_fcs.png
+  a: WFP / PMA    
+  n: The Hunger map
+  k: gis,csr,risk
+  
+- u: https://printables.com/model/681338-shoulder-blade-scan-scapula
+  i: https://f4.bcbits.com/img/a2960923617_5.jpg
+  n: Shoulder Blade Scan - Scapula
+  k: medic,sci,3D
+  a: cc-by-nc printables.com/@KubiV
+  
+
 - u: planet.html?q=https://d2v9mhsiek5lbq.cloudfront.net/eyJidWNrZXQiOiJsb21hLW1lZGlhLWl0Iiwia2V5IjoiZG1heHNwYWluLWVzLWltYWdlLWM2NmFiZjAzLWU3ZWItNDcyZi1hOWQ2LTkxZTQ1NGFkZGNjNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJoZWlnaHQiOjI0MH0sIndlYnAiOnsicXVhbGl0eSI6ODB9fX0=
   i: https://d2v9mhsiek5lbq.cloudfront.net/eyJidWNrZXQiOiJsb21hLW1lZGlhLWl0Iiwia2V5IjoiZG1heHNwYWluLWVzLWltYWdlLWM2NmFiZjAzLWU3ZWItNDcyZi1hOWQ2LTkxZTQ1NGFkZGNjNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJoZWlnaHQiOjI0MH0sIndlYnAiOnsicXVhbGl0eSI6ODB9fX0=
   a: dmax   
@@ -527,6 +540,13 @@ products:
   n: EU funding
   a: by europe.eu FSE
   k: funds,acks
+- u: https://sketchfab.com/3d-models/shoulder-joint-94489e01f40548b5a0b4f0a6477c36a7
+  i: https://media.sketchfab.com/models/94489e01f40548b5a0b4f0a6477c36a7/thumbnails/133b9e17e48e4e9ba9b8d961c4380dcb/904dfaeff0b446d7bd81b3862e6d9607.jpeg
+  n: Shoulder Joint
+  d: detailled 3D parts
+  k: medic,sci,3D
+  a: by  sketchfab.com/anatomy_dundee   Univ.  
+
 - i: cach/ar.jpg
   u: planet.html?q=cach/ar.jpg
   n: Arrival 2016 
@@ -573,7 +593,13 @@ products:
   k: nautic,solid
   a: CC-BY-NC-SA Creavertor @Printables.com 
   d: Additive Manufacturing
-  
+- u: https://sketchfab.com/3d-models/bones-of-the-foot-copy-36d0a9d34fd54a48940d4dccffecdb43 
+  i: https://media.sketchfab.com/models/36d0a9d34fd54a48940d4dccffecdb43/thumbnails/0083950e4f1948c0bb9ba24666d08c60/c3f019830e844763bfe0229988bdd10e.jpeg
+  n: foot bones
+  d: 3D parts
+  k: medic,sci,3D
+  a: sketchfab.com/anatomy_dundee   University  
+ 
 - u: planet.html?q=https://blogs.opentext.com/wp-content/uploads/2023/02/shutterstock_1020106273-1200x675-1-1024x576.png
   i: https://blogs.opentext.com/wp-content/uploads/2023/02/shutterstock_1020106273-1200x675-1-1024x576.png
   a:  blogs.opentext.com/the-encase-evidence-viewer
@@ -586,9 +612,17 @@ products:
   n: IFRC Disaster Law 
   d: IFRC Disaster Law worldwide map
   a: by IFRC disasterlaw.ifrc.org/where-we-work 
-- u: https://zrydys.github.io//GeoInt/PNR-yaml.html
-  i: https://www.un.org/counterterrorism/sites/default/files/styles/image_cropped/public/2025-01/ct_travel_tam_programme_webpage_picture_4_-_adobestock_172925126adobestock_275829690.jpeg?h=4da044af&itok=DhkNcRV_%201x
+ 
+- u: /GeoInt/PNR-yaml.html
+  i: https://www.un.org/counterterrorism/sites/default/files/styles/16_9_xl/public/2026-02/260114_PVE_Day_Main_Brand_2026_EN.jpg
   k: cyber,pm,travel
   n: PNR Travel Security
   d: Technology reducing Travel Records cyber risk 
   a: from github.com/infchg/GeoInt
+
+- u: https://www.embodi3d.com/blogs/entry/408-3d-free-scapula-clavicle-and-humerus-models-in-3d-printable-stl-format/  
+  i: https://media.invisioncic.com/r248939/monthly_2019_11/gallery_4_5_13580.jpg.a65a953f254802ead319c4f23a513067.jpg 
+  k: medic,csr,3D
+  d: 3D Scapula, Clavicle, Humerus
+  n: Clavicle 
+  a: by embodi3d.com/profile/8734-angel-sosa 

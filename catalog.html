@@ -61,7 +61,8 @@
     // 2) If k  , filter by category == k, else show all
     // filteredProducts = (k === 'all') ? [...products] :  products.filter(p => String(p.k) === String(k));  //toos vs filtered
         filteredProducts = (k === 'all') ? [...products] :  products.filter(p => String(p.k).includes( String(k) ) );  //toos vs filtered  ENHANCED to , separated
-        
+    window.history.replaceState(null, null,  '/c/'+k      );   // history rewrite from param k=  /c/k  IF NOT s=  RE-ARCHITECTING TBDone
+   
     
     //if (k === 'all') {      filteredProducts = [...products]; //toos
     // } else {      filteredProducts = products.filter(p => String(p.category) === String(k));      }      
@@ -75,8 +76,11 @@
             } catch (error) {
                 console.error('Error loading products:', error);
                 document.getElementById('catalog').innerHTML = '<p>Error loading catalog</p>';
+                //cj2025 RESILIENCY & DRR advice to load recovery json here instead from a DIVERSIFIED source, 
+                // load Src2 
             }
         }
+        //end-load
                   // <a href="${product.u || ''}"  target=_new >  missed http v. / urls
 
         function renderCatalog() {
@@ -108,7 +112,8 @@
 		// ell 
 		ell.href =   `/catalog.html?s=${term} `  ;
 		ell.textContent =   `/catalog.html?s=${term} ` ;
- 
+ 	    window.history.replaceState(null, null,  '/s/'+term      );   // history showing   /s/ url
+
 				renderCatalog();
 			});
 	
@@ -132,7 +137,6 @@ function attachFilterListeners() {
     
 	  // This will replace the current URL without affecting the browser history
 	 // window.history.replaceState(null, null,  "/catalog.html?k="+category      );   //after click rewrite
-	 console.info(723);
 	  window.history.replaceState(null, null,  '/c/'+category      );   // history showing caconical /c/ url
 
   // }	
