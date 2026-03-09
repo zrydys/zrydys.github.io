@@ -94,7 +94,8 @@ var s2Cloudless = L.tileLayer(
     });
 
     // Custom ZryDys FLAGS tile layer for comparison 
-    var flagsTileLayer = L.tileLayer('https://zrydys.github.io/tiles/{z}-{x}-{y}.png', {
+// updated to use WMS flags GeoInt/wms/tflag
+    var flagsTileLayer = L.tileLayer('https://zrydys.github.io/GeoInt/wms/tflag/{z}-{x}-{y}.png', {
         attribution: 'Custom ELT FLAG Tiles from zrydys.github.io',
         maxZoom: 18,       //  permite zoom hasta 18
         maxNativeZoom: 4,      //  PNG reales están solo en Z4 x ahora
