@@ -46,7 +46,7 @@ suggestions:
             const kValue = requestedPage.substring(3);
             // Redirect to /static-js-page.html?k=world
             window.location.href = '/catalog.html?k='+kValue ;
-        } elsif (requestedPage.startsWith('/s/')) { // search
+        } else if (requestedPage.startsWith('/s/')) { // search
             const kValue = requestedPage.substring(3);
             window.location.href = '/catalog.html?s='+kValue
         } else {
