@@ -63,7 +63,10 @@
         filteredProducts = (k === 'all') ? [...products] :  products.filter(p => String(p.k).includes( String(k) ) );  //toos vs filtered  ENHANCED to , separated
     window.history.replaceState(null, null,  '/c/'+k      );   // history rewrite from param k=  /c/k  IF NOT s=  RE-ARCHITECTING TBDone
    
-    
+     
+if (k === 'all' && params.get('s')) mySearch(params.get('s')); // Get the value of the 's' parameter from the URL 
+
+
     //if (k === 'all') {      filteredProducts = [...products]; //toos
     // } else {      filteredProducts = products.filter(p => String(p.category) === String(k));      }      
            
@@ -97,11 +100,9 @@
                 </div>
             `).join('');
         }
- 
-        // Search functionality 
- function attachSearchListeners() {
-        //          console.info(   'search' ,  products );  //TO SET AFTER LOAD  so inside if load async
-        document.getElementById('search').addEventListener('input', (e) => {
+
+//mySearch
+ function mySearch(e) {
             const term = e.target.value.toLowerCase();
             filteredProducts = products.filter(p => 
                 p.n.toLowerCase().includes(term) //name
@@ -115,10 +116,17 @@
  	    window.history.replaceState(null, null,  '/s/'+term      );   // history showing   /s/ url
 
 				renderCatalog();
-			});
+			} 
+//fin mySearch
+ 
+        // Search functionality 
+ function attachSearchListeners() {
+        //          console.info(   'search' ,  products );  //TO SET AFTER LOAD  so inside if load async
+        document.getElementById('search').addEventListener('input', (e) => mySearch(e) );
 	
 }
- 
+//fin attach search
+
 //attachFilterListeners
 function attachFilterListeners() {
   document.querySelectorAll('.filter-btn').forEach(btn => {
