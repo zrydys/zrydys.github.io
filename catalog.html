@@ -62,17 +62,15 @@
     // filteredProducts = (k === 'all') ? [...products] :  products.filter(p => String(p.k) === String(k));  //toos vs filtered
         filteredProducts = (k === 'all') ? [...products] :  products.filter(p => String(p.k).includes( String(k) ) );  //toos vs filtered  ENHANCED to , separated
     window.history.replaceState(null, null,  '/c/'+k      );   // history rewrite from param k=  /c/k  IF NOT s=  RE-ARCHITECTING TBDone
-   
-     
-if (k === 'all' && params.get('s')) mySearch(params.get('s')); // Get the value of the 's' parameter from the URL 
-
-
+ 
     //if (k === 'all') {      filteredProducts = [...products]; //toos
     // } else {      filteredProducts = products.filter(p => String(p.category) === String(k));      }      
            
     const myk = document.getElementById(`b-${k}`);   // activate the category buttom     
     if (myk) { myk.classList.add('active') 	} else { console.info( myk, k, `b-${k}` ) } ;
  
+		    if (k === 'all' && params.get('s')) mySearch(params.get('s')); // Get the value of the 's' parameter from the URL 
+
                 renderCatalog();
                 attachFilterListeners() ;
                 attachSearchListeners() 
