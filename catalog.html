@@ -100,8 +100,8 @@
         }
 
 //mySearch
- function mySearch(e) {
-            const term = e.target.value.toLowerCase();
+ function mySearch(term) {
+           // const term = e.target.value.toLowerCase();
             filteredProducts = products.filter(p => 
                 p.n.toLowerCase().includes(term) //name
                  ||  p.d && p.d.toLowerCase().includes(term) //desc
@@ -120,7 +120,7 @@
         // Search functionality 
  function attachSearchListeners() {
         //          console.info(   'search' ,  products );  //TO SET AFTER LOAD  so inside if load async
-        document.getElementById('search').addEventListener('input', (e) => mySearch(e) );
+        document.getElementById('search').addEventListener('input', (e) => mySearch( e.target.value.toLowerCase() ) );
 	
 }
 //fin attach search
