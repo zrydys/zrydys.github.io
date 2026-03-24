@@ -110,6 +110,80 @@ sequenceDiagram
 ```
 
 
+## 🥇 QGIS GUI Linux practical alignment:
+
+Sucess cases: We align (georeference) mapping images:
+ 
+- qGIS  **transparent overlay** let us visually match borders
+- see our **clip/export tiles** in a 6-piece map demo WMS
+ 
+
+### Example Workflow
+
+1. Open QGIS
+2. Load your **6-tile political map**
+    - If they’re separate PNGs, load them all (or merge them first)
+3. Load the **satellite image** to align
+4. Use **Georeferencer tool**:
+    - Pick common points (coastlines, borders, corners)
+    - Match satellite map → political map
+    - Use simple transform (Affine or Polynomial 1)
+5. Once aligned:
+    - Use **Raster → Extraction → Clip Raster by Extent**
+    - Define the same extents as your 6 tiles
+    - Export into 6 matching PNGs
+
+👉 This gives you **perfect overlap** (same pixel grid, same bounds)
+
+### 🥈 Semi-automatic coding approach   Jupyter 
+
+Scripting this using   OpenCV (feature matching) and  rasterio (cropping/tiling)
+
+See basic example which: Detects matching features between maps (edges, coastlines),  Compute transformation (homography), Warp satellite image, ...
+
+```python
+import cv2  
+import numpy as np  
+  
+img1 = cv2.imread("political.png", 0)  
+img2 = cv2.imread("satellite.png", 0)  
+  
+orb = cv2.ORB_create()  
+kp1, des1 = orb.detectAndCompute(img1, None)  
+kp2, des2 = orb.detectAndCompute(img2, None)  
+  
+bf = cv2.BFMatcher(cv2.NORM_HAMMING)  
+matches = bf.match(des1, des2)  
+  
+#% cj compute homography  
+src_pts = np.float32([kp1[m.queryIdx].pt for m in matches]).reshape(-1,1,2)  
+dst_pts = np.float32([kp2[m.trainIdx].pt for m in matches]).reshape(-1,1,2)  
+  
+H, _ = cv2.findHomography(dst_pts, src_pts, cv2.RANSAC)  
+aligned = cv2.warpPerspective(img2, H, (img1.shape[1], img1.shape[0]))
+```
+
+above required in RHEL type linux:
+
+- sudo dnf install python3-opencv
+
+Regarding AI & openCv: OpenCV _can_  Load neural networks (DNN module) and  Run models from TensorFlow / PyTorch, So:
+
+- Using ORB / Canny / homography → classical OpenCv ❌ not AI
+- Running a neural net through OpenCV → related to ✅ AI/ML 
+
+| Concept | What it is                                     | Example (Linux / Python / Web)  |
+| ------- | ---------------------------------------------- | ------------------------------- |
+| **AI**  | Broad goal: machines doing “intelligent” tasks | Chatbots, planning systems      |
+| **ML**  | Subset of AI: systems learn from data          | Training a classifier in Python |
+| **DL**  | Subset of ML: neural networks                  | PyTorch CNN detecting objects   |
+### Our charts in this page
+
+- Quick & portable → **Mermaid**
+- optional: Precise shapes (triangles etc.) → **SVG**
+- Future-looking → **D2**
+
+
 ### Refs
 
 References include 

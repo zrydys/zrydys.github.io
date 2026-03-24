@@ -60,10 +60,10 @@ products:
 - u: mvpc.html?q=https://oceanweb.com/wp-content/uploads/2023/05/Iridium-GMDSS.png  
   i: https://oceanweb.com/wp-content/uploads/2023/05/Iridium-GMDSS.png
   j: had www.
-  n: GMDSS Safety
-  k: telco,cyber,nautic
+  n: Maritime Distress & Safety
+  k: telco,nautic,risk
   a:  by   oceanweb.com/safety-at-sea-inmarsat-c-vs-iridium-gmdss/  
-  d: Safety at sea Inmarsat vs Iridium
+  d: Safety at sea Inmarsat vs Iridium GMDSS
 - n: Geo maps
   p: maps
   i: tiles/4-8-5.png
@@ -344,6 +344,13 @@ products:
   k: dive,csr
   p: dive
   a: CC BY-SA ZryDys
+- u: env.html
+  i: https://www.ocean-ops.org/board/img/backgrounds/map-background-min.png  
+  n: Ocean Meteo Environment  
+  d: Observation buoys, Marpol, Doppler Argos, Rafos, Orbcomm..  
+  k: risk,telco,nautic
+  p: info
+  a: notes ocean-ops.org   & zryDys 
 - u: keyr.html?q=sp3-silicon&c=0x3f386c
   i: thumb/sp3-silicon.png
   n: Silicon Molecule bonds
