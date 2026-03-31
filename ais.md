@@ -4,7 +4,7 @@ This project aims at **increasing safety of sailing and water sports** even in [
 
 **What**: Capture live Automatic Identification System (AIS) signals from vessels and display maritime traffic.
 
-**How**: Building tiny systems at villages to track ships, based on affordable hardware and know-howr. [Circular](circular.html) reusing of simple devices. 
+**How**: Building tiny systems at villages to track ships, based on affordable hardware and know-how. [Circular](circular.html) reusing of simple devices. 
 
 **Why**: Many hours in sea rescue patrols, free kayaking initiatives, and apparently-calm waters led to helping non-profit for the sustainable and safe tourism & community use of water sports.
 Conscious about safety in rivers and sea for navigation, fishing, sports.
@@ -15,7 +15,7 @@ Suitable for sailing in coast or rivers and lakes (few small spots [areas](mapeu
 **Affordable**
 Overall the project relies in using existing devices and know-how to support all in [remote](remote.html) [areas](mapeuaf.html),
 
-*ONGOING JUNE 2025 ...* 
+*ONGOING Projects with SAR teams, NMEA VHF GMDD 2026 ...* 
 want to join or collaborate?:  📞 Contact us:  | ✉️ [ZryDys@gmail](mailto:ZryDys@gmail) | 🌐 [ZryDys.github.IO](https://zrydys.github.io) 
 
 ---
@@ -63,9 +63,7 @@ The School Amateur Radio Club Network publishes a simple project aimed at promot
  
  One of the attractions of building your own AIS receiving station is that some AIS servers reward you when you freely upload your local vessel tracking data. They publish your station information, showing your station position on a map and your receiving statistics like messages per hour and coverage in nautical miles. Some give you free, premium access to their AIS data, which can be viewed on their mobile apps. Even so, by operating one of these AIS receiving stations, you will have the satisfaction of making the world a safer place.
 
-
-![](rtl-sdr.jpg)
-
+ 
 [![AIS Received with a Raspberry Pi and RTL-SDR Dongle.](https://www.rtl-sdr.com/wp-content/uploads/2020/05/sarcnet_ais.jpg)](https://www.rtl-sdr.com/wp-content/uploads/2020/05/sarcnet_ais.jpg)
 
 ### Related Sources and posts:
@@ -208,4 +206,21 @@ Then consider uppload [AIS](https://www.cruisersforum.com/forums/tags/ais.html "
 
 Best AIS-tx if transmission to the 87B and 88B channels restricted to FCC approved equipment?
 
+
+# SAR GMDSS
+
+
+Global Maritime Distress & Safety System ( navcen.uscg.gov/?pageName=gmdssFaq ) by the International Maritime Organization (IMO.org UN ![]( https://www.shinemicro.com/wp-content/uploads/2018/10/IMO-logo150.png)  ) 
+
+Commercial priv References:  [ST162-T1 Portable, Rugged AIS Test Set](https://www.shinemicro.com/wp-content/uploads/2017/02/AIS-TESTSETS-1.jpg) 
+  at  (https://www.shinemicro.com/product/st162-t1/)
+
+detail on the format for US MMSI numbers on navcen.uscg.gov/maritime-mobile-service-identity (by USCG ![](  https://www.shinemicro.com/wp-content/uploads/2018/03/CoastGuardEmblem-150x150.jpg )
+
+One MMSI number is assigned for all applicable VHF electronics on the vessel, such as: 
+
+- AIS transponder
+- DSC (Digital Selective Calling) Radio
+- EPIRB (Emergency Position Indicating Repeater Beacon)
+- AIS MOB (Man Over Board)
 

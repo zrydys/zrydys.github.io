@@ -188,5 +188,10 @@ var wmsInundacionJunta = L.tileLayer.wms('https://www.juntadeandalucia.es/medioa
  | <a href="https://zrydys.github.io/GeoInt/DRR.html">on Disaster Risk Reduction</a>
 <div class="pic">  <a href="/cach/promalaga.jpg" target="_new"><img src="/cach/promalaga.jpg" > site built partially with funds from ProMalaga.es </a> 
 </div>
+..
+<script>document.addEventListener("copy", function () { const selection = window.getSelection().toString(); if (!selection) return;
+const url = document.location.href; const text = selection + "\n\nSource: " + url; const temp = document.createElement("textarea");
+temp.value = text; document.body.appendChild(temp); temp.select();  document.execCommand("copy"); temp.remove(); });
+</script> 
 </body>
 </html>
