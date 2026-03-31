@@ -23,6 +23,13 @@ defaults:
     values:
       layout: "default"
         #%      css: "/assets/css/style.css"
+
+#% cj 36.3 added 2nd path
+  - scope:
+      path: wall
+    values:
+      layout: watermarked
+
 #%# style.scss will be compiled to style.css stylesheet key tells GitHub Pages to use your compiled CSS
 
 locale: "en-US"
