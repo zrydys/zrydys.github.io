@@ -29,6 +29,10 @@ defaults:
       path: wall
     values:
       layout: watermarked
+  - scope:
+      path: new 
+    values:
+      layout: watermarked
 
 #%# style.scss will be compiled to style.css stylesheet key tells GitHub Pages to use your compiled CSS
 
@@ -85,6 +89,10 @@ plugins:
   #   should be rendered.
   nav_pages:
     - about.md
+    - ais.md
+    - env.md
+    - and.html
+    - mlg.html
 
   # Set to `true` to show excerpts on the homepage.
   show_excerpts: false

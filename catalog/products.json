@@ -540,10 +540,18 @@
     {
       "u": "keyr.html?q=tactile&c=0x41a19a",
       "i": "thumb/tactile3.jpg",
-      "n": "Braille",
-      "d": "Facilitating diversity & inclusion",
+      "n": "Diversity Inclusion ⠁⠃ab ⠉⠙cd",
+      "d": "Braille ⠁a ⠃b ⠉c ⠙d ⠑e ⠼num ⠋f ⠛g7  ⠓h ⠊i  ⠚j0 Facilitate",
       "k": "solid,vision,csr",
       "a": "ZryDys csr"
+    },
+    {
+      "u": "//gitlab.com/crlhyn/covid",
+      "n": "Health Informatics",
+      "d": "epidemiology data science COVID-19",
+      "i": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3b90/12427955/5a00a5bb8f0c/healthcare-13-02154-g003.jpg",
+      "k": "csr,sci,medic",
+      "a": "gitlab.com/crlhyn & https://pmc.ncbi.nlm.nih.gov/articles/PMC12427955/"
     },
     {
       "u": "planet.html?q=cach/F.jpg",
@@ -592,6 +600,14 @@
       "d": "opentext legal tools for industry"
     },
     {
+      "u": "https://github.com/repos/infchg/COVID-19",
+      "n": "Open Health science",
+      "d": "epidemiology Informatics ML risk matrix",
+      "i": "https://hispagua.cedex.es/sites/default/files/presa_sur.jpg",
+      "k": "csr,sci,medic",
+      "a": "github.com/infchg"
+    },
+    {
       "u": "tile.html",
       "i": "thumb/tiles.jpg",
       "n": "tiles 3D",
@@ -606,6 +622,20 @@
       "n": "CISA Audits",
       "k": "sci,pm,cyber",
       "d": "CISA Exam Prep, Simplified Study Guide"
+    },
+    {
+      "u": "planet.html?q=https://hispagua.cedex.es/sites/default/files/presa_sur.jpg",
+      "n": "Water Risk science",
+      "i": "https://hispagua.cedex.es/sites/default/files/presa_sur.jpg",
+      "k": "csr,sci,risk"
+    },
+    {
+      "u": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12427955/",
+      "n": "AI in Clinical Decision",
+      "i": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3b90/12427955/5a00a5bb8f0c/healthcare-13-02154-g003.jpg",
+      "k": "ml,sci,medic",
+      "d": "AI in Clinical Decision Support Systems",
+      "a": "Q.Abbas, W.Jeong, S. Won Lee"
     },
     {
       "u": "https://zrydys.github.io/GeoInt/DRR.html",
