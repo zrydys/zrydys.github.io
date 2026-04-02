@@ -91,9 +91,11 @@
             
             // if 0 prods do check alternative
             // if (ell && (k||category)) {   ell.textContent += (k||category)+alternat;  			  }
-            if ([] === filteredProducts ) { filteredProducts = products.filter(p => p.k ?  p.k.includes(alternat) : false );  }
-            if (ell  ) {   ell.textContent +=  alternat;    }
-
+          if ( filteredProducts.length === 0) {
+				 filteredProducts = products.filter(p => p.k ?  p.k.includes(alternat) : false ); 
+            if (ell  ) {   ell.textContent +=  alternat;    }				 
+		  }
+		  
             catalog.innerHTML = filteredProducts.map(product => `
                 <div class="product">
                    <a href="${ product.u && product.u.startsWith('http') && product.u ||  '/' +  product.u || '' }"  target='_new' >
