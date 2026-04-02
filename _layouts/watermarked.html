@@ -5,9 +5,23 @@
   <link rel="stylesheet" href="/assets/css/style.scss">
 </head>
 <body>
+<header> 
+ <a href=https://zrydys.github.io><img height=12px src=https://zrydys.github.io/zrydysML.png> ZryDys</a>
+ <small>{{ page.title | default: site.title | default: site.github.repository_name }}  -- 
+         {{ page.description | default: site.description | default: site.github.project_tagline }} 
+ </small> 
+</header>
+	
   <div class="watermark-wrapper">
     {{ content }}
     {% include watermark.html %}
   </div>
+  
+<footer>
+<hr>
+<div translate="no"> <p>🌐Languages: EN🇺🇸🇮🇪 NL🇳🇱🇧🇪 DE🇦🇹🇩🇪 ES🇪🇸🇨🇷 FR🇨🇦🇧🇪 </p>
+<a href=https://zrydys.github.io/c><img height=12px src=https://zrydys.github.io/zrydysML.png> ZryDys/c</a>
+</div>
+</footer>
 </body>
 </html>

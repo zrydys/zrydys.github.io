@@ -90,8 +90,9 @@
             
             
             // if 0 prods do check alternative
-            if (ell && (k||category)) {   ell.textContent += (k||category)+alternat;  			  }
+            // if (ell && (k||category)) {   ell.textContent += (k||category)+alternat;  			  }
             if ([] === filteredProducts ) { filteredProducts = products.filter(p => p.k ?  p.k.includes(alternat) : false );  }
+            if (ell  ) {   ell.textContent +=  alternat;    }
 
             catalog.innerHTML = filteredProducts.map(product => `
                 <div class="product">

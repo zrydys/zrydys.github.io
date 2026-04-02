@@ -1,4 +1,5 @@
 usage: yq . products.yaml > products.json  -o=json  #%  since Fed 43 dnf yq
+usman: yq . catalog/products.yaml > catalog/products.json  -o=json
 note0: yq '.products[4,8]' catalog/products.yaml
 pipe0: detecting images g "\!\[.+\([^)]+)" details.md -o ais.md  gps.md 
 notes: yq in py3.13 Fedora 42 v. py3.14 Fedora 43
@@ -548,6 +549,13 @@ products:
   k: 3D,solid
   a: by thingiverse.com/Wynn-3D  CC BY-SA  
   d: for Additive Manufacturing or 3D scenes
+   
+- u: https://linkedin.com/learning/machine-learning-fundamentals-for-healthcare/machine-learning-models-and-algorithms-in-healthcare  
+  n: AI Colab Clinical  
+  i: https://media.licdn.com/dms/image/v2/D560DAQEVAN76mOQ6lw/learning-public-crop_144_256/learning-public-crop_144_256/0/1708990552481 
+  k: ml,sci,medic
+  d: AI ML optimize healthcare processes, tabular clinical datasets in Google Colab jupyter, classification, predictions,  clustering, localization.  
+  a: linkedin course  
 - u: planet.html?q=https://www.opentext.com/assets/images/products-solutions/product-details/opentext-image-ediscovery-whats-next-en.png 
   i: https://www.opentext.com/assets/images/products-solutions/product-details/opentext-image-ediscovery-whats-next-en.png 
   a: by opentext.com/products/ediscovery   
