@@ -1,0 +1,19 @@
+/* Target all images in HTML */
+img {
+  position: relative;
+  display: inline-block;
+}
+
+/* Add watermark using pseudo-element */
+img::after {
+  content: "ZryDys.github.io/c";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 2px 5px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  pointer-events: none; /* Allows clicks to pass through to the image */
+}
