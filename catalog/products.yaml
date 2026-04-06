@@ -672,3 +672,14 @@ products:
   d: 3D Scapula, Clavicle, Humerus
   n: Clavicle 
   a: by embodi3d.com/profile/8734-angel-sosa 
+- u: esch4.html?q=https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3b90/12427955/1f3a40d6a707/healthcare-13-02154-g001.jpg 
+  n: Explainable AI CDSS
+  d: Frequency of XAI methods, model-agnostic or specific, LIME SHAP and saliency Grad-CAM, attention ... 
+  i: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3b90/12427955/1f3a40d6a707/healthcare-13-02154-g001.jpg
+  k: csr,ml,medic
+  a: Q.Abbas et al. pmc.ncbi.nlm.nih.gov/articles/PMC12427955/
+- u: //eppo.int 
+  k: csr
+  i: https://www.eppo.int/media/images/eppo/forest.jpg
+  cors: no
+  n: Plant Protection 
