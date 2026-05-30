@@ -5,6 +5,16 @@ pipe0: detecting images g "\!\[.+\([^)]+)" details.md -o ais.md  gps.md
 notes: yq in py3.13 Fedora 42 v. py3.14 Fedora 43
 affil: from /c/n/name takes you to the v clip o html in 1 step
 products:
+- n: Visiting Faro 
+  u: planet.html?q=https://s7g10.scene7.com/is/image/barcelo/que-ver-y-hacer-en-faro-portugal-Arco-da-Vila
+  i: https://s7g10.scene7.com/is/image/barcelo/que-ver-y-hacer-en-faro-portugal-Arco-da-Vila
+  ii: ?&&fmt=webp-alpha&qlt=75&wid=1200&fit=crop,1
+  j: https://partiupelomundo.com/wp-content/uploads/2017/02/Pontos-turisticos-em-Faro.jpg 
+  jj: https://a.travel-assets.com/findyours-php/viewfinder/images/res70/232000/232231-Faro-District.jpg
+  d: Visitar faro portugal
+  k: pt,art,world
+  a: by arsecultur.com/blog/visitar-faro-portugal
+  
 - u: diving.html?o=menger&e=cubmau
   i: anim/maunakea.gif
   n: Geometry & Galaxy
@@ -37,7 +47,15 @@ products:
   d: Fractal by Shader GLSL c GPU code
   k: math,develop,vision
   s: fractal
-  a: CC BY-SA ZryDys  
+  a: CC BY-SA ZryDys
+- n: Kitesurfing in Algarve, Portugal 
+  u: planet.html?q=https://cdn.shortpixel.ai/spai/q_lossless+w_1066+h_711+to_auto+ret_img/kiterr.com/wp-content/uploads/ws-form/1/dropzonejs/27/Passaro-Kitesurf-School-10.jpg
+  i: https://cdn.shortpixel.ai/spai/q_lossless+w_1066+h_711+to_auto+ret_img/kiterr.com/wp-content/uploads/ws-form/1/dropzonejs/27/Passaro-Kitesurf-School-10.jpg
+  j: https://cdn.shortpixel.ai/spai/q_lossless+w_1066+h_712+to_auto+ret_img/kiterr.com/wp-content/uploads/2019/01/kitesurfing-lagos-algarve-ria-formosa-natural-park-kiterrcom.jpg
+  d: Ilha de Armona & Ilha de Tavira - Sandbars Ria Formosa
+  k: pt,coast,sport
+  a: by kiterr.com/kitespots/europe/kitesurfing-algarve-portugal
+
 - n: Risks & Meteo
   k: gis,risk,sci
   i: bluef.png
@@ -72,6 +90,13 @@ products:
   k: travel,gis 
   d: GDAL GeoServers 🌐 Tiles
   u: gis.html
+- n: Obidos Peniche Kite
+  u: planet.html?q=hhttps://360-kite.com/wp-content/uploads/2023/02/KitesurfingObidoslagoon-Portugal-KiteControl-e1675374548554.jpg
+  i: https://360-kite.com/wp-content/uploads/2023/02/KitesurfingObidoslagoon-Portugal-KiteControl-e1675374548554.jpg
+  d: 360  Kite  portugal
+  k: pt,coast,sport
+  a: by 360-kite.com/kitesurf-camp/obidos
+  
 - u: planet.html?q=https://spectrum.ieee.org/media-library/two-telecommunications-workers-in-hardhats-working-on-a-cell-phone-tower.jpg%3Fid%3D60143376
   i: https://spectrum.ieee.org/media-library/two-telecommunications-workers-in-hardhats-working-on-a-cell-phone-tower.jpg?id=60143376
   n: IEEE Telecom AI
@@ -125,7 +150,14 @@ products:
   k: 3D,develop
   i: https://avatars.githubusercontent.com/u/16047363
   a: by github.com/Raydonal
-  
+- n: Kitesurfing in the Algarve
+  u: planet.html?q=https://boardandwind.com/images/large/kitesurfing-algarve-coast-action_10_28_2025_3c4ff966-b3d6-4245-9b58-204fe1db47d6.webp
+  i: https://boardandwind.com/images/large/kitesurfing-algarve-coast-action_10_28_2025_3c4ff966-b3d6-4245-9b58-204fe1db47d6.webp
+  j: https://boardandwind.com/images/large/kitesurfing-algarve-sunset_10_28_2025_98136ecb-10d1-4719-a10c-2752fdf15053.webp
+  d: In-Depth Kite Guide, faro portugal
+  k: pt,coast,sport
+  a: by boardandwind.com/articles/kitesurfing-algarve-overview 
+    
 - n: GIS imagery OpenCv ELT 
   k: gis,ml,vision
   i: thumb/elt.png
@@ -164,6 +196,14 @@ products:
   k: gis,telco,nautic
   i: tiles/4-8-4.png
   d:  Reaching Remote Locations, Sailing bases, Simplified & Affordable  
+- n: Walking Faro 
+  u: planet.html?q=https://cdn.prod.website-files.com/605baba32d94435376625d33/6617d414fc231469ff92a27f_header.webp
+  i: https://cdn.prod.website-files.com/605baba32d94435376625d33/6617d414fc231469ff92a27f_header.webp
+  j: https://cdn.prod.website-files.com/605baba32d94435376625d33/66266c9d04d6fc0847b2b470_algarve_teambuilding-walkingtour2.webp ppl church  
+  d: Explore Faro, walking tour, Portugal skyview
+  k: pt,art,world
+  a: by surfoffice.com/team-building-activities/walking-tour-in-algarve-region
+
 - u: chord.html
   n: Chord chart  
   k: sci,math,pm
@@ -658,7 +698,14 @@ products:
   n: IFRC Disaster Law 
   d: IFRC Disaster Law worldwide map
   a: by IFRC disasterlaw.ifrc.org/where-we-work 
- 
+- n: Faro Algarve Kite Center
+  u: planet.html?q=https://windsrush.com/images/large/algarve-kite-center-coastline-view.webp
+  i: https://windsrush.com/images/large/algarve-kite-center-coastline-view.webp
+  j: https://windsrush.com/images/large/exploring-wing-sup-boards-kiteboarder-gliding.webp
+  d: Faro Algarve Kite Center  portugal
+  k: pt,coast,sport
+  a: by windsrush.com/articles/algarve-kite-center-kiteboarding
+
 - u: /GeoInt/PNR-yaml.html
   i: https://www.un.org/counterterrorism/sites/default/files/styles/16_9_xl/public/2026-02/260114_PVE_Day_Main_Brand_2026_EN.jpg
   k: cyber,pm,travel
@@ -678,8 +725,20 @@ products:
   i: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3b90/12427955/1f3a40d6a707/healthcare-13-02154-g001.jpg
   k: csr,ml,medic
   a: Q.Abbas et al. pmc.ncbi.nlm.nih.gov/articles/PMC12427955/
+- n: Lagos Obidos Kite
+  u: planet.html?q=https://360-kite.com/wp-content/uploads/2024/03/kitesurf.jpg
+  i: https://360-kite.com/wp-content/uploads/2024/03/kitesurf.jpg
+  d: Lagos Kite  portugal
+  k: pt,coast,sport
+  a: by 360-kite.com/kitesurf-camp/lagos
 - u: //eppo.int 
   k: csr
   i: https://www.eppo.int/media/images/eppo/forest.jpg
   cors: no
   n: Plant Protection 
+- u: planet.html?q=https://www.anyworkanywhere.com/wp-content/uploads/2021/12/Bo-og-arbejde-i-Palma-de-Mallorca-1.jpg
+  n: Seas & World Travel
+  d: Mallorca Nautic jobs
+  i: https://www.anyworkanywhere.com/wp-content/uploads/2021/12/Bo-og-arbejde-i-Palma-de-Mallorca-1.jpg
+  k: nautic,travel
+  a: by anyworkanywhere.com/job-guides/work-in-mallorca/
