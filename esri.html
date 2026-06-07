@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Switch Ocean / GEBCO</title>
+
+  <link
+    rel="stylesheet"
+    href="https://js.arcgis.com/4.34/esri/themes/light/main.css"
+  />
+  <script src="https://js.arcgis.com/4.34/"></script>
+
+  <style>
+    html, body, #viewDiv {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #5switcher {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 99;
+      background: white;
+      padding: 5px;
+      border-radius: 4px;
+    }
+    
+    #switcher {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  background: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+    
+  </style>
+</head>
+
+<body>
+  <div id="switcher">
+    <label for="mapSelect">ZryDys demo: Select ocean data from ESRI public:</label>
+    <select id="mapSelect">
+      <option value="ocean">Ocean Basemap</option>
+      <option value="gebco">GEBCO Bathymetry</option>
+    </select>
+  </div>
+
+  <div id="viewDiv"></div>
+
+  <script>
+    require([
+      "esri/WebMap",
+      "esri/views/MapView"
+    ], (WebMap, MapView) => {
+
+      // Portal IDs
+      const maps = {
+        ocean: "67ab7f7c535c4687b6518e6d2343e8a2",
+        gebco: "635cc1a5b3f041be97f8e4d55e67ffe0"
+      };
+
+      // Initial map
+      let webmap = new WebMap({ portalItem: { id: maps.ocean } });
+      let view = new MapView({
+        container: "viewDiv",
+        map: webmap,
+        center: [-28, 32],
+        zoom: 4
+      });
+
+      // Dropdown change
+      const select = document.getElementById("mapSelect");
+      select.addEventListener("change", () => {
+        const id = select.value;
+        // Swap WebMap
+        const newMap = new WebMap({ portalItem: { id: maps[id] } });
+        view.map = newMap;
+        webmap = newMap; // update reference
+      });
+
+    });
+  </script>
+
+<hr/>
+   ZryDys'   🔍<a href="/?pg=index.html" class="text-light me-3">Technology Services</a> |
+<img src="/zrydysML.png"><a href="/details.html" class="text-light me-3">Who</a> |  
+<img src="/thumb/dsci-byUrl.jpg"><a href="/visual-plotly.html" class="text-light me-3">Visual BI</a> |  
+ <a href="/c/" class="text-light me-3">Catalog</a> |
+ <a href="/mlg.html" class="text-light me-3">Andalucía Guadalhorce</a> 
+🇺🇿
+ | <a href="https://zrydys.github.io/GeoInt/DRR.html">on Disaster Risk Reduction</a>
+<div class="pic">  <a href="/cach/promalaga.jpg" target="_new"><img src="/cach/promalaga.jpg" > site built partially with funds from ProMalaga.es </a> 
+</div>
+..
+<script>document.addEventListener("copy", function () { const selection = window.getSelection().toString(); if (!selection) return;
+const url = document.location.href; const text = selection + "\n\nSource: " + url; const temp = document.createElement("textarea");
+temp.value = text; document.body.appendChild(temp); temp.select();  document.execCommand("copy"); temp.remove(); });
+// ZryDys demo: Select ocean data from ESRI public: Live vs GEBCO
+
+</script> 
+
+</body>
+</html>
