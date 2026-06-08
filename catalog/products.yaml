@@ -16,7 +16,7 @@ products:
   a: by arsecultur.com/blog/visitar-faro-portugal
 - n: Ocean GIS & Bathymetry
   k: gis,nautic,sci
-  i: thumb/EsriOcean.png
+  i: thumb/EsriGEBCO.png
   d: public ESRI Online & GEBCO data
   u: geo/esri.html
   a: by zrydys.github.io/geo & public ESRI Online maps  
@@ -546,7 +546,13 @@ products:
   n: CISA Audits
   k: sci,pm,cyber
   d: CISA Exam Prep, Simplified Study Guide
-  
+- u: geo/buoy.html
+  i: https://www.ocean-ops.org/board/img/backgrounds/map-background-min.png  
+  n: Ocean Buoys NOAA  
+  d: Observation buoys, NOAA, GIS, Atlantic  
+  k: sci,gis,nautic
+  p: info
+  a: by NOAA , demo by zryDys   
 - u: planet.html?q=https://hispagua.cedex.es/sites/default/files/presa_sur.jpg
   n: Water Risk science
   i: https://hispagua.cedex.es/sites/default/files/presa_sur.jpg
@@ -765,4 +771,4 @@ products:
   i: thumb/EsriGeojson.png
   d: public ESRI Online Ocean + GeoJson data
   u: geo/oceanGeo.html
-  a: by zrydys.github.io/geo & public ESRI Online maps  
+  a: by zrydys.github.io/geo & public ESRI Online maps

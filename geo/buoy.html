@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ocean GIS Demo</title>
+
+<link rel="stylesheet"
+      href="https://js.arcgis.com/4.34/esri/themes/light/main.css">
+
+<script src="https://js.arcgis.com/4.34/"></script>
+
+<style>
+html, body, #viewDiv {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#title {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+
+  background: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,.2);
+}
+</style>
+</head>
+
+<body>
+
+<div id="title">
+🌊 Ocean GIS Demo — Ocean Basemap + Countries + Buoys
+</div>
+
+<div id="viewDiv"></div>
+
+<script>
+
+require([
+  "esri/Map",
+  "esri/views/MapView",
+  "esri/layers/GeoJSONLayer",
+  "esri/layers/FeatureLayer",
+  "esri/widgets/LayerList"
+], (
+  Map,
+  MapView,
+  GeoJSONLayer,
+  FeatureLayer,
+  LayerList
+) => {
+
+  // Ocean basemap
+  const map = new Map({
+    basemap: "oceans"
+  });
+
+  // Atlantic view
+  const view = new MapView({
+    container: "viewDiv",
+    map: map,
+    center: [-68, 40],
+    zoom: 4
+  });
+
+  // Countries layer
+  const countries = new GeoJSONLayer({
+    url: "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson",
+    title: "Countries"
+  });
+
+  map.add(countries);
+
+  // Demo buoy locations
+  const buoyData = [
+
+    {
+      geometry: {
+        type: "point",
+        longitude: -70.5,
+        latitude: 41.5
+      },
+      attributes: {
+        ObjectID: 1,
+        Name: "Buoy 41001"
+      }
+    },
+
+    {
+      geometry: {
+        type: "point",
+        longitude: -69.2,
+        latitude: 40.0
+      },
+      attributes: {
+        ObjectID: 2,
+        Name: "Buoy 41002"
+      }
+    },
+
+    {
+      geometry: {
+        type: "point",
+        longitude: -66.0,
+        latitude: 38.5
+      },
+      attributes: {
+        ObjectID: 3,
+        Name: "Buoy 41004"
+      }
+    }
+
+  ];
+
+  const buoys = new FeatureLayer({
+    title: "Ocean Buoys",
+
+    source: buoyData,
+
+    objectIdField: "ObjectID",
+
+    fields: [
+      {
+        name: "ObjectID",
+        type: "oid"
+      },
+      {
+        name: "Name",
+        type: "string"
+      }
+    ],
+
+    renderer: {
+      type: "simple",
+      symbol: {
+        type: "simple-marker",
+        style: "circle",
+        color: "orange",
+        size: 10,
+        outline: {
+          color: "black",
+          width: 1
+        }
+      }
+    },
+
+    popupTemplate: {
+      title: "{Name}",
+      content: "Ocean observation buoy"
+    }
+  });
+
+  map.add(buoys);
+
+  // Layer menu
+  view.when(() => {
+
+    const layerList = new LayerList({
+      view: view
+    });
+
+    view.ui.add(layerList, "top-right");
+
+  });
+
+});
+
+</script>
+
+</body>
+</html>
