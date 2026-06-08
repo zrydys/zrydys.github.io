@@ -18,6 +18,14 @@
       "a": "by arsecultur.com/blog/visitar-faro-portugal"
     },
     {
+      "n": "Ocean GIS & Bathymetry",
+      "k": "gis,nautic,sci",
+      "i": "thumb/EsriOcean.png",
+      "d": "public ESRI Online & GEBCO data",
+      "u": "geo/esri.html",
+      "a": "by zrydys.github.io/geo & public ESRI Online maps"
+    },
+    {
       "u": "diving.html?o=menger&e=cubmau",
       "i": "anim/maunakea.gif",
       "n": "Geometry & Galaxy",
@@ -70,9 +78,10 @@
     {
       "n": "Risks & Meteo",
       "k": "gis,risk,sci",
-      "i": "bluef.png",
-      "d": "Faults, Floods, Climate risks GIS",
-      "u": "elt.html"
+      "i": "thumb/OceanMeteo.png",
+      "d": "Faults, Floods, Climate risks, Ocean & Land GIS",
+      "u": "elt.html",
+      "a": "by zrydys.github.io/geo Ocean GIS"
     },
     {
       "u": "planet.html?q=https://cdn-s-www.ledauphine.com/images/BEC03642-D182-4307-9CDC-73987CDA43AF/NW_detail/la-vedette-du-sauvetage-de-thonon-realise-entre-50-et-70-interventions-sur-le-leman-chaque-annee-archives-photo-le-dl-g-b-1693582839.jpg",
@@ -110,7 +119,7 @@
       "a": "by ngedonmonastery.org & guhyamantrika.org/actividades"
     },
     {
-      "n": "Geo maps",
+      "n": "Geo map servers",
       "p": "maps",
       "i": "tiles/4-8-5.png",
       "d": "CET Berlin area 🇨🇭",
@@ -151,7 +160,7 @@
     },
     {
       "u": "https://infchg.github.io/ProtecInt.html",
-      "i": "anim/diving.gif",
+      "i": "thumb/protec.png",
       "n": "Customs & Protection",
       "d": "GIS & Customs Infos",
       "k": "gis,csr,travel",
@@ -354,7 +363,7 @@
       "i": "https://e4k4c4x9.delivery.rocketcdn.me/en/wp-content/uploads/sites/15/2025/11/ml-and-ai-696x418.jpg.webp",
       "n": "Call on AI & ML",
       "d": "World Meteorological Organization Call on AI and Machine Learning",
-      "k": "ml,csr,gis",
+      "k": "ml,csr,world",
       "a": "unric.org/en/world-meteorological-organization-call-on-ai-and-machine-learning-is-out"
     },
     {
@@ -521,7 +530,7 @@
     {
       "i": "https://raisely-images.imgix.net/un-crisis-relief/uploads/ukr-112024-unocha-hnrp-19-dsc-09673-jpg-webp-f48e4f.webp",
       "u": "esch4.html?q=https://raisely-images.imgix.net/un-crisis-relief/uploads/ukr-112024-unocha-hnrp-19-dsc-09673-jpg-webp-f48e4f.webp",
-      "k": "csr,gis",
+      "k": "csr,world",
       "a": "visit crisisrelief.un.org",
       "n": "UN crisis relief",
       "d": "Help families survive winter"
@@ -572,7 +581,7 @@
       "n": "THONON-LES-BAINS Sauvetage",
       "i": "https://cdn-s-www.ledauphine.com/images/C9FCFA87-81C4-416F-90B8-54BF01337A81/NW_detail/exercice-pour-les-membres-du-sauvetage-la-victime-sur-son-bateau-est-victime-d-une-insolation-il-faut-vite-le-prendre-en-charge-brancardage-difficile-pour-passer-du-bateau-sur-le-quai-sans-tomber-a-l-eau-ici-c-est-une-victime-d-un-malaise-les-stagiaires-oeuvrent-sous-l-oeil-avise-des-professionnels-1338221016.jpg",
       "d": "des exercices sur le lac",
-      "k": "csr,gis,nautic",
+      "k": "csr,medic,nautic",
       "a": "ledauphine.com/haute-savoie/2012/05/29/sauvetage-des-exercices-sur-le-lac-pour-se-rapprocher-de-la-realite"
     },
     {
@@ -955,6 +964,14 @@
       "i": "https://www.anyworkanywhere.com/wp-content/uploads/2021/12/Bo-og-arbejde-i-Palma-de-Mallorca-1.jpg",
       "k": "nautic,travel",
       "a": "by anyworkanywhere.com/job-guides/work-in-mallorca/"
+    },
+    {
+      "n": "Ocean + Country Maps",
+      "k": "gis,nautic,sci",
+      "i": "thumb/EsriGeojson.png",
+      "d": "public ESRI Online Ocean + GeoJson data",
+      "u": "geo/oceanGeo.html",
+      "a": "by zrydys.github.io/geo & public ESRI Online maps"
     }
   ]
 }
