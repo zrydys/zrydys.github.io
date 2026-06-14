@@ -7,6 +7,14 @@
   "affil": "from /c/n/name takes you to the v clip o html in 1 step",
   "products": [
     {
+      "n": "Stata notebooks",
+      "i": "https://github.com/kylebarron/stata_kernel/raw/master/docs/src/img/jupyter_notebook_example.gif",
+      "u": "https://hugetim.github.io/nbstata/",
+      "d": "A Jupyter kernel for Stata built on pystata",
+      "k": "pm,sci,vision",
+      "a": "by hugetim.github.io"
+    },
+    {
       "n": "Visiting Faro",
       "u": "planet.html?q=https://s7g10.scene7.com/is/image/barcelo/que-ver-y-hacer-en-faro-portugal-Arco-da-Vila",
       "i": "https://s7g10.scene7.com/is/image/barcelo/que-ver-y-hacer-en-faro-portugal-Arco-da-Vila",
@@ -917,6 +925,14 @@
       "n": "IFRC Disaster Law",
       "d": "IFRC Disaster Law worldwide map",
       "a": "by IFRC disasterlaw.ifrc.org/where-we-work"
+    },
+    {
+      "u": "https://github.com/oracle/dotnet-db-samples/discussions/460",
+      "i": "https://www.oracle.com/a/ocom/img/yt-video-thumbnail-o6hbyinomg8.jpg",
+      "k": "ml,sci,gis",
+      "n": "Oracle Spatial",
+      "d": "Best Practices, Oracle Spatial, EF Core",
+      "a": "from github.com/oracle"
     },
     {
       "n": "Faro Algarve Kite Center",
