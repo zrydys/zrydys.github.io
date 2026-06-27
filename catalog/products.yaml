@@ -1,6 +1,7 @@
 usage: yq . products.yaml > products.json  -o=json  #%  since Fed 43 dnf yq
 usman: yq . catalog/products.yaml > catalog/products.json  -o=json
 note0: yq '.products[4,8]' catalog/products.yaml
+demo1: yq '[ .products[]|select(.k == "telco,pm" or .u == "elt.html") | .n ]' 23gits/zrydys.github.io/catalog/products.yaml
 pipe0: detecting images g "\!\[.+\([^)]+)" details.md -o ais.md  gps.md 
 notes: yq in py3.13 Fedora 42 v. py3.14 Fedora 43
 affil: from /c/n/name takes you to the v clip o html in 1 step
@@ -21,7 +22,7 @@ products:
   k: pt,art,world
   a: by arsecultur.com/blog/visitar-faro-portugal
 - n: Ocean GIS & Bathymetry
-  k: gis,nautic,sci
+  k: gis,sea,sci
   i: thumb/EsriGEBCO.png
   d: public ESRI Online & GEBCO data
   u: geo/esri.html
@@ -47,7 +48,7 @@ products:
 
 - u: https://infchg.github.io/GeoInt/PNR-yaml.html
   i: https://www.un.org/counterterrorism/sites/default/files/styles/image_cropped/public/2025-01/ct_travel_tam_programme_webpage_picture_4_-_adobestock_172925126adobestock_275829690.jpeg?h=4da044af&itok=DhkNcRV_%201x
-  k: cyber,pm,travel
+  k: cyber,pm,world
   n: PNR Travel Security
   d: Technology reducing Travel Records cyber risk 
   a: from github.com/infchg/GeoInt
@@ -77,7 +78,7 @@ products:
   n: Search & Rescue
   i: https://cdn-s-www.ledauphine.com/images/BEC03642-D182-4307-9CDC-73987CDA43AF/NW_detail/la-vedette-du-sauvetage-de-thonon-realise-entre-50-et-70-interventions-sur-le-leman-chaque-annee-archives-photo-le-dl-g-b-1693582839.jpg
   d: Leman Lake S&R volunteers 
-  k: csr,sport,nautic
+  k: csr,sport,sea
   a: by ledauphine.com/faits-divers-justice/2023/09/01/le-sauvetage-en-eaux-troubles-avec-la-penurie-de-benevoles
   s: sound
   g: lat,lon
@@ -91,7 +92,7 @@ products:
   i: https://oceanweb.com/wp-content/uploads/2023/05/Iridium-GMDSS.png
   j: had www.
   n: Maritime Distress & Safety
-  k: telco,nautic,risk
+  k: telco,sea,risk
   a:  by   oceanweb.com/safety-at-sea-inmarsat-c-vs-iridium-gmdss/  
   d: Safety at sea Inmarsat vs Iridium GMDSS
 - n: Ngedon monastery
@@ -104,7 +105,7 @@ products:
   p: maps
   i: tiles/4-8-5.png
   d: CET Berlin area 🇨🇭
-  k: travel,gis
+  k: world,gis
   d: GDAL GeoServers 🌐 Tiles
   u: gis.html
 - n: Obidos Peniche Kite
@@ -136,12 +137,12 @@ products:
   i: thumb/protec.png
   n: Customs & Protection
   d: GIS & Customs Infos
-  k: gis,csr,travel
+  k: gis,csr,world
   a: CC BY-SA 
 - i:  https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F211204189%2F161230038918%2F1%2Foriginal.20200821-161426?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C341%2C3240%2C1620&s=eac60385c2b9b0b1632ee002d62a3843
   u:  planet.html?q=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F211204189%252F161230038918%252F1%252Foriginal.20200821-161426%3Fw%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26rect%3D0%252C341%252C3240%252C1620%26s%3Deac60385c2b9b0b1632ee002d62a3843
   n: Tours
-  k: sport,travel
+  k: sport,world
   a: see evbuc.com on MALAGA SOUTH EXPERIENCES  
 - u: details.html
   n: Agile CI/CD  
@@ -158,7 +159,7 @@ products:
 - u: mvpc.html?q=https://www.fcc.gov/themes/custom/fcc/assets/images/fcc-seal.png   
   i:  https://www.fcc.gov/themes/custom/fcc/assets/images/fcc-seal.png
   n: GMDSS at Sea
-  k: telco,risk,nautic
+  k: telco,risk,sea
   a:  by  fcc.gov/wireless/bureau-divisions/mobility-division/maritime-mobile/ship-radio-stations/global-maritime
   d: Satellite Emergency Distress  
 - u: planet.html?q=https://avatars.githubusercontent.com/u/16047363
@@ -210,7 +211,7 @@ products:
   a:  IPSASb youtube zDLOvlBVNng 
 - u:  mapeuaf.html
   n: Connect Remote Locations
-  k: gis,telco,nautic
+  k: gis,telco,sea
   i: tiles/4-8-4.png
   d:  Reaching Remote Locations, Sailing bases, Simplified & Affordable  
 - n: Walking Faro 
@@ -255,7 +256,7 @@ products:
   i: https://www.rtl-sdr.com/wp-content/uploads/2020/05/sarcnet_ais.jpg
   n: Safe Marine AIS  
   d: Cyber Raspberry Pi and RTL-SDR Based NOAA Weather Satellite & AIS receiver projects
-  k: cyber,telco,nautic
+  k: cyber,telco,sea
   p: info
   a: authors from NOAA, rtl-sdr.com, zryDys 
  
@@ -264,7 +265,7 @@ products:
   i: thumb/camp.jpg
   n: Camper
   d: Camper Van, Make it Home
-  k: game,travel
+  k: game,world
   p: mvp
   a: Reviews taptap.io/app/33677784  + header by  steamcommunity.com/app/2843190 
 - u: planet.html?q=cach/CA.jpg
@@ -368,7 +369,7 @@ products:
 - u: diving.html
   i: anim/diving.gif
   n: diving
-  k: dive,nautic
+  k: dive,sea
   a: CC BY-SA ZryDys
 - u: planet.html?q=https://ichef.bbci.co.uk/images/ic/320xn/p02m6cw0.jpg  
   i: https://ichef.bbci.co.uk/images/ic/320xn/p02m6cw0.jpg
@@ -381,7 +382,7 @@ products:
   i: thumb/mlg.png
   n: Flood Risks
   d: Mlg Disaster Risk Reduction
-  k: gis,pm,nautic,risk
+  k: gis,pm,sea,risk
   a: CC BY-SA ZryDys
 - u: planet.html?q=https://img-c.udemycdn.com/user/200_H/75391750_5441.jpg  
   i: https://img-c.udemycdn.com/user/200_H/75391750_5441.jpg  
@@ -401,7 +402,7 @@ products:
   d: Saint Vincent & the Grenadines v. Guinea hearing, Hamburg - SAIGA case - 
   n: Case Saint Vincent & The Grenadines 
   a: by itlos.org
-  k: nautic,csr,law  
+  k: sea,csr,law  
 - u: orbitforest.html
   i: anim/forest.gif
   n: forest
@@ -413,7 +414,7 @@ products:
   i: https://www.ocean-ops.org/board/img/backgrounds/map-background-min.png  
   n: Ocean Meteo Environment  
   d: Observation buoys, Marpol, Doppler Argos, Rafos, Orbcomm..  
-  k: risk,telco,nautic
+  k: risk,telco,sea
   p: info
   a: notes ocean-ops.org   & zryDys 
 - u: keyr.html?q=sp3-silicon&c=0x3f386c
@@ -439,7 +440,7 @@ products:
   i: thumb/wingfoil3.jpg
   n: Nautic parts
   d: wingfoil for sailing Manufacturing water-sports parts
-  k: nautic,solid
+  k: sea,solid
   a: CC-BY-NC-SA Creavertor @Printables.com 
 - u: https://bbc.co.uk/programmes/p00zxy0t
   i: https://ichef.bbci.co.uk/images/ic/480xn/p00yydzw.jpg
@@ -457,33 +458,33 @@ products:
   i: thumb/noc3.jpg
   n: NOceaNoUs
   d: NOceaNoUs Keyring
-  k: solid,nautic
+  k: solid,sea
   p: solid
   a: by NOceaNoUs.com
 - u: planet.html?q=https://cdn-s-www.ledauphine.com/images/C9FCFA87-81C4-416F-90B8-54BF01337A81/NW_detail/exercice-pour-les-membres-du-sauvetage-la-victime-sur-son-bateau-est-victime-d-une-insolation-il-faut-vite-le-prendre-en-charge-brancardage-difficile-pour-passer-du-bateau-sur-le-quai-sans-tomber-a-l-eau-ici-c-est-une-victime-d-un-malaise-les-stagiaires-oeuvrent-sous-l-oeil-avise-des-professionnels-1338221016.jp
   n:  THONON-LES-BAINS Sauvetage
   i:  https://cdn-s-www.ledauphine.com/images/C9FCFA87-81C4-416F-90B8-54BF01337A81/NW_detail/exercice-pour-les-membres-du-sauvetage-la-victime-sur-son-bateau-est-victime-d-une-insolation-il-faut-vite-le-prendre-en-charge-brancardage-difficile-pour-passer-du-bateau-sur-le-quai-sans-tomber-a-l-eau-ici-c-est-une-victime-d-un-malaise-les-stagiaires-oeuvrent-sous-l-oeil-avise-des-professionnels-1338221016.jpg    
   d:   des exercices sur le lac 
-  k: csr,medic,nautic  
+  k: csr,medic,sea  
   a:   ledauphine.com/haute-savoie/2012/05/29/sauvetage-des-exercices-sur-le-lac-pour-se-rapprocher-de-la-realite
 - u: planet.html?q=cach/SR.jpg 
   i: cach/SR.jpg
   n: NOceaNoUs' SeaRangers
   d: NOceaNoUs' SeaRangers game
-  k: game,nautic
+  k: game,sea
   p: mvpc
   a: by NOceaNoUs.com
 - u: and.html
   i: thumb/and.png
   n: Andalucia Risks
   d: Regional Disaster Risk Reduction
-  k: gis,risk,nautic
+  k: gis,risk,sea
   a: CC BY-SA ZryDys + Miteco + Junta + Nasa Images
 - u: keyr.html?q=kite&c=0x41a19a
   i: thumb/kite3.jpg
   n: Kite
   d: Additive Manufacturing for kite surf 添加电镀
-  k: solid,nautic
+  k: solid,sea
   a: printables.com/@samster395
 - u: keyr.html?q=tactile&c=0x41a19a
   i: thumb/tactile3.jpg
@@ -556,7 +557,7 @@ products:
   i: https://www.ocean-ops.org/board/img/backgrounds/map-background-min.png  
   n: Ocean Buoys NOAA  
   d: Observation buoys, NOAA, GIS, Atlantic  
-  k: sci,gis,nautic
+  k: sci,gis,sea
   p: info
   a: by NOAA , demo by zryDys   
 - u: planet.html?q=https://hispagua.cedex.es/sites/default/files/presa_sur.jpg
@@ -604,7 +605,7 @@ products:
   i: https://d2v9mhsiek5lbq.cloudfront.net/eyJidWNrZXQiOiJsb21hLW1lZGlhLWl0Iiwia2V5IjoiZG1heHNwYWluLWVzLWltYWdlLWM2NmFiZjAzLWU3ZWItNDcyZi1hOWQ2LTkxZTQ1NGFkZGNjNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJoZWlnaHQiOjI0MH0sIndlYnAiOnsicXVhbGl0eSI6ODB9fX0=
   a: dmax   
   n: machu-pichu peru
-  k: travel,art
+  k: world,art
 - u: details.html
   i: thumb/dsci-byUrl.jpg
   n: Us & Symmetry
@@ -678,7 +679,7 @@ products:
   d: The International Tribunal for the Law of the Sea, Hamburg, DE
   n: Law of the Sea 
   a: see itlos.org
-  k: nautic,csr,law
+  k: sea,csr,law
 
 - i: https://cdn.popupsmart.com/accounts/75764/uploads/UKR_112024_UKRHF_partners__05-7407fa897a357ab694234d04db093e79.jpeg
   u: esch4.html?q=https://cdn.popupsmart.com/accounts/75764/uploads/UKR_112024_UKRHF_partners__05-7407fa897a357ab694234d04db093e79.jpeg
@@ -706,7 +707,7 @@ products:
 - u: keyr.html?q=hull&c=0xa0a057
   i: thumb/hull.png
   n: boat hull
-  k: nautic,solid
+  k: sea,solid
   a: CC-BY-NC-SA Creavertor @Printables.com 
   d: Additive Manufacturing
 - u: https://sketchfab.com/3d-models/bones-of-the-foot-copy-36d0a9d34fd54a48940d4dccffecdb43 
@@ -742,10 +743,14 @@ products:
   d: Faro Algarve Kite Center  portugal
   k: pt,coast,sport
   a: by windsrush.com/articles/algarve-kite-center-kiteboarding
-
+- n: Formentor
+  i: https://www.formenteraexpress.com/documents/25611860/29132428/Slide_fx.jpg/c8b0f866-30f1-4b26-64a3-a6dc07a34687?t=1717069720822
+  u: planet.html?q=https://www.formenteraexpress.com/documents/25611860/29132428/Slide_fx.jpg/c8b0f866-30f1-4b26-64a3-a6dc07a34687?t=1717069720822
+  a: by formenteraexpress.com
+  k: world,sea
 - u: /GeoInt/PNR-yaml.html
   i: https://www.un.org/counterterrorism/sites/default/files/styles/16_9_xl/public/2026-02/260114_PVE_Day_Main_Brand_2026_EN.jpg
-  k: cyber,pm,travel
+  k: cyber,pm,world
   n: PNR Travel Security
   d: Technology reducing Travel Records cyber risk 
   a: from github.com/infchg/GeoInt
@@ -777,10 +782,10 @@ products:
   n: Seas & World Travel
   d: Mallorca Nautic jobs
   i: https://www.anyworkanywhere.com/wp-content/uploads/2021/12/Bo-og-arbejde-i-Palma-de-Mallorca-1.jpg
-  k: nautic,travel
+  k: sea,world
   a: by anyworkanywhere.com/job-guides/work-in-mallorca/
 - n: Ocean + Country Maps
-  k: gis,nautic,sci
+  k: gis,sea,sci
   i: thumb/EsriGeojson.png
   d: public ESRI Online Ocean + GeoJson data
   u: geo/oceanGeo.html
