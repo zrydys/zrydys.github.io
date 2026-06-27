@@ -26,33 +26,62 @@ products:
   i: thumb/EsriGEBCO.png
   d: public ESRI Online & GEBCO data
   u: geo/esri.html
-  a: by zrydys.github.io/geo & public ESRI Online maps  
+  a: by zrydys.github.io/geo & public ESRI Online maps
+  
+- n: Spotted seal locations 
+  k: gis,sea,bio,sci
+  d: Phoca-largha satellite telemetry GBIF
+  u: //www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0305189
+  a: cc-by-nc ipt-obis.gbif.us/resource?r=atn_141929_spotted-seal_trajectory_20160425-20160514
+ 
 - u: diving.html?o=menger&e=cubmau
   i: anim/maunakea.gif
   n: Geometry & Galaxy
   d: Night sky at Maunakea
   k: dive,sci,vision
   a: CC BY-SA ZryDys
+  
+- n: Marine animal satellite telemetry 
+  k: gis,sea,bio,sci
+  d: locations from the U.S. Animal Telemetry Network (ATN)  
+  u: //ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:IOOS-ATN-STP     
+  a: by https://www.ncei.noaa.gov/data/oceans/ioos/atn/
+ 
 - u: keyr.html?q=broach&c=0x1111aa
   i: thumb/cune3b.jpg
   n: Broach
   k: solid,deco
   p: solid
   a: printables.com/@John_56680
+- n: Deep Seabed Mining 
+  k: sea,env,sci
+  d: ISA Polymetallic sulfides, copper, cobalt, nickel, manganese, lead, lithium, titanium, platinum, gold, zinc. 
+  u: https://www.pew.org/en/research-and-analysis/fact-sheets/2017/02/deep-sea-mining-the-basics
+  a: by NOAA OFFICE OF OCEAN EXPLORATION AND RESEARCH 
+  i: https://www.pew.org/-/media/post-launch-images/2017/02/sea_deep_sea_mining_the_basics_3/sea_deep_sea_mining_the_basics_3_16x9.jpg?mw=900&hash=97CB06B55252AD84B7BAA4FCBAD94851  
+ 
 - u: planet.html?q=https://img.youtube.com/vi/AvQxaYqoJts/hqdefault.jpg
   i: https://img.youtube.com/vi/AvQxaYqoJts/hqdefault.jpg
   n: Sendai Framework 
   d: Disaster Risk Reduction, Prevention
   k: pm,risk,csr
   a: by preventionweb.net/sendai-framework/ 
-
+ 
 - u: https://infchg.github.io/GeoInt/PNR-yaml.html
-  i: https://www.un.org/counterterrorism/sites/default/files/styles/image_cropped/public/2025-01/ct_travel_tam_programme_webpage_picture_4_-_adobestock_172925126adobestock_275829690.jpeg?h=4da044af&itok=DhkNcRV_%201x
+  i: //un.org/counterterrorism/sites/default/files/styles/image_cropped/public/2025-01/ct_travel_tam_programme_webpage_picture_4_-_adobestock_172925126adobestock_275829690.jpeg?h=4da044af&itok=DhkNcRV_%201x
+  token: 
   k: cyber,pm,world
   n: PNR Travel Security
   d: Technology reducing Travel Records cyber risk 
   a: from github.com/infchg/GeoInt
   
+- u: planet.html?q=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Location_of_the_Clarion_Clipperton_Zone.png/250px-Location_of_the_Clarion_Clipperton_Zone.png
+  k: sea,env,sci
+  a: cc-by Image Wikipedia
+  n: Clarion–Clipperton ocean floor mine
+  d: 1.7 million square miles (Hawaii to Mexico) mining cobalt, nickel, manganese, copper..  
+  i: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Location_of_the_Clarion_Clipperton_Zone.png/250px-Location_of_the_Clarion_Clipperton_Zone.png
+ 
 - u: glsl-fractal.html
   i: anim/glslfract.gif
   n: Fractal shader
@@ -108,6 +137,16 @@ products:
   k: world,gis
   d: GDAL GeoServers 🌐 Tiles
   u: gis.html
+  
+- u: planet.html?q=https://www.pew.org/-/media/data-visualizations/infographics/2018/07/seabedmining_figure1_990.jpg
+  k: sea,env,sci
+  a: by PEW.org 
+  n: International Seabed Authority minerals
+  d: ISA types of mineral seabed resources  
+  i: https://www.pew.org/-/media/data-visualizations/infographics/2018/07/seabedmining_figure1_990.jpg?mw=990&hash=7EA732E2C9EFBDE41324AEE326379B4F
+  
+ 
+  
 - n: Obidos Peniche Kite
   u: planet.html?q=https://360-kite.com/wp-content/uploads/2023/02/KitesurfingObidoslagoon-Portugal-KiteControl-e1675374548554.jpg
   i: https://360-kite.com/wp-content/uploads/2023/02/KitesurfingObidoslagoon-Portugal-KiteControl-e1675374548554.jpg
