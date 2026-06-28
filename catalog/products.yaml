@@ -31,9 +31,10 @@ products:
 - n: Spotted seal locations 
   k: gis,sea,bio,sci
   d: Phoca-largha satellite telemetry GBIF
-  u: //www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0305189
+  i: https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0305189
   a: cc-by-nc ipt-obis.gbif.us/resource?r=atn_141929_spotted-seal_trajectory_20160425-20160514
- 
+  u: //ipt-obis.gbif.us/resource?r=atn_141929_spotted-seal_trajectory_20160425-20160514
+  
 - u: diving.html?o=menger&e=cubmau
   i: anim/maunakea.gif
   n: Geometry & Galaxy
@@ -44,9 +45,9 @@ products:
 - n: Marine animal satellite telemetry 
   k: gis,sea,bio,sci
   d: locations from the U.S. Animal Telemetry Network (ATN)  
-  u: //ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:IOOS-ATN-STP     
-  a: by https://www.ncei.noaa.gov/data/oceans/ioos/atn/
- 
+  i: https://ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:IOOS-ATN-STP     
+  a: by ncei.noaa.gov/data/oceans/ioos/atn/
+  u: //www.ncei.noaa.gov/data/oceans/ioos/atn/
 - u: keyr.html?q=broach&c=0x1111aa
   i: thumb/cune3b.jpg
   n: Broach
@@ -57,7 +58,7 @@ products:
   k: sea,env,sci
   d: ISA Polymetallic sulfides, copper, cobalt, nickel, manganese, lead, lithium, titanium, platinum, gold, zinc. 
   u: https://www.pew.org/en/research-and-analysis/fact-sheets/2017/02/deep-sea-mining-the-basics
-  a: by NOAA OFFICE OF OCEAN EXPLORATION AND RESEARCH 
+  a: by PEW.org Image on NOAA.gov OFFICE OF OCEAN EXPLORATION AND RESEARCH 
   i: https://www.pew.org/-/media/post-launch-images/2017/02/sea_deep_sea_mining_the_basics_3/sea_deep_sea_mining_the_basics_3_16x9.jpg?mw=900&hash=97CB06B55252AD84B7BAA4FCBAD94851  
  
 - u: planet.html?q=https://img.youtube.com/vi/AvQxaYqoJts/hqdefault.jpg
