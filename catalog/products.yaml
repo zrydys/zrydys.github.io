@@ -46,9 +46,9 @@ products:
 - n: Marine animal satellite telemetry 
   k: gis,sea,bio,sci
   d: locations from the U.S. Animal Telemetry Network (ATN)  
-  i: https://ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:IOOS-ATN-STP 
+  i: https://ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:IOOS-ATN-STP
   a: by ncei.noaa.gov/data/oceans/ioos/atn/
-  u: //www.ncei.noaa.gov/data/oceans/ioos/atn/
+  u: //ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:IOOS-ATN-STP
 - u: keyr.html?q=broach&c=0x1111aa
   i: thumb/cune3b.jpg
   n: Broach
