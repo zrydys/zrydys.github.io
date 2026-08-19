@@ -2,11 +2,21 @@
   "usage": "yq . products.yaml > products.json  -o=json",
   "usman": "yq . catalog/products.yaml > catalog/products.json  -o=json",
   "note0": "yq '.products[4,8]' catalog/products.yaml",
+  "note1": "yq e '.products[] | select(.k | contains(\"env\")) '",
+  "clave": "yq   '.products[] | .k ' zrydys.github.io/catalog/products.yaml |g '\\w+' -o|sort |uniq -c|sort -n",
   "demo1": "yq '[ .products[]|select(.k == \"telco,pm\" or .u == \"elt.html\") | .n ]' 23gits/zrydys.github.io/catalog/products.yaml",
   "pipe0": "detecting images g \"\\!\\[.+\\([^)]+)\" details.md -o ais.md  gps.md",
   "notes": "yq in py3.13 Fedora 42 v. py3.14 Fedora 43",
   "affil": "from /c/n/name takes you to the v clip o html in 1 step",
   "products": [
+    {
+      "n": "Federated States of Micronesia DR",
+      "d": "Disaster Risk Management - resilience through information - FSM Recovery",
+      "k": "db,pac,risk,recov",
+      "i": "https://fsm-data.sprep.org/themes/custom/inform_fsm/assets/images/hero-image.jpg",
+      "u": "https://fsm-data.sprep.org/",
+      "a": "by fsm-data.sprep.org"
+    },
     {
       "n": "Stata notebooks",
       "i": "https://github.com/kylebarron/stata_kernel/raw/master/docs/src/img/jupyter_notebook_example.gif",
@@ -210,6 +220,14 @@
       "a": "at unric.org"
     },
     {
+      "n": "Digital Atlas of Micronesia",
+      "d": "FSM Maps & Biodiversity",
+      "k": "db,pac,bio,gis,env",
+      "i": "https://islands.fm/assets/images/4-min.png",
+      "u": "https://islands.fm/about",
+      "a": "by islands.fm government"
+    },
+    {
       "u": "https://infchg.github.io/ProtecInt.html",
       "i": "thumb/protec.png",
       "n": "Customs & Protection",
@@ -325,6 +343,14 @@
       "a": "by surfoffice.com/team-building-activities/walking-tour-in-algarve-region"
     },
     {
+      "n": "Languages of Micronesia",
+      "d": "FSM Dictionary Pohnpeian  500+ entries",
+      "k": "db,lang,pac",
+      "i": "https://islands.fm/assets/images/3-min.png",
+      "u": "https://talkingdictionary.swarthmore.edu/pohnpeian/",
+      "a": "by  talkingdictionary.swarthmore.edu"
+    },
+    {
       "u": "chord.html",
       "n": "Chord chart",
       "k": "sci,math,pm",
@@ -391,6 +417,14 @@
       "k": "art,deco",
       "p": "mvp",
       "a": "by MarianCustomArt.com"
+    },
+    {
+      "n": "Languages Chuuk spelling",
+      "d": "FSM dictionary Pwpwuken itechikin fóósun",
+      "k": "db,lang,pac",
+      "i": "https://islands.fm/assets/images/5-min.png",
+      "u": "https://scholarspace.manoa.hawaii.edu/items/f341cc8e-b20d-4a9d-8e21-7ac4e1035ca5",
+      "a": "by scholarspace.manoa.hawaii.edu"
     },
     {
       "u": "mvpc.html?q=",
@@ -590,7 +624,7 @@
       "u": "diving.html?o=tetra&e=cubcon",
       "i": "anim/concert.gif",
       "n": "Pyramids & Concert",
-      "d": null,
+      "d": "3D Immersive",
       "k": "dive,music",
       "a": "CC BY-SA ZryDys"
     },
@@ -690,6 +724,14 @@
       "a": "InkUp"
     },
     {
+      "n": "FIBA Micronesian Cup 2026",
+      "k": "pac,sport,env",
+      "u": "planet.html?q=https://assets.fiba.basketball/image/upload/w_700,h_394,c_fill,g_auto/q_auto/f_auto/v1786834487/ssoq337w2jksinbolfxt",
+      "cors": 1,
+      "d": "Basket Tahiti Palau FSM...",
+      "a": "by fiba.basketball/en/events/fiba-micronesian-cup-2026/news/fsm-move-closer-to-tahiti-dream-with-composed-win-over-palau"
+    },
+    {
       "u": "tiles.html",
       "i": "thumb/alhambra.jpg",
       "n": "Alhambra Tile",
@@ -729,6 +771,14 @@
       "i": "https://hispagua.cedex.es/sites/default/files/presa_sur.jpg",
       "k": "csr,sci,medic",
       "a": "github.com/infchg"
+    },
+    {
+      "u": "planet.html?q=https://miro.medium.com/0%2A9lyy3MHQBKL3-nL7",
+      "i": "https://miro.medium.com/0%2A9lyy3MHQBKL3-nL7",
+      "a": "by miro.medium.com",
+      "n": "Pohnpei Nan Madol",
+      "k": "pac,env,recov",
+      "d": "FSM Environment constructions"
     },
     {
       "u": "tile.html",
@@ -858,6 +908,23 @@
       "a": "zryDys"
     },
     {
+      "u": "planet.html?q=https://cdn.popupsmart.com/accounts/75764/uploads/AFP_20260810_C4CD4CR_v1_HighRes_ColombiaEarthquake-9b28ec85dda8df7b5dd15ad33ccd2aa6.jpeg",
+      "i": "https://cdn.popupsmart.com/accounts/75764/uploads/AFP_20260810_C4CD4CR_v1_HighRes_ColombiaEarthquake-9b28ec85dda8df7b5dd15ad33ccd2aa6.jpeg",
+      "a": "by unocha.org OCHA popups",
+      "n": "Disaster Recovery Earthquake",
+      "k": "risk,env,recov",
+      "d": "Earthquake Colombia"
+    },
+    {
+      "u": "https://www.unocha.org/publications/report/micronesia-federated-states/ocha-flash-update-fsm-palau-tropical-storm-haiyan-31w-0",
+      "ii": "https://www.unocha.org/themes/custom/common_design_subtheme/img/logos/ocha-lockup-blue.svg",
+      "i": "https://www.unocha.org/sites/default/files/styles/full_width_3_2_25/public/2026-03/WF1912022%2020240710_BGD_Mehedi-Rahman_Sirajganj-1008562.jpg.webp",
+      "a": "by OCHA unocha.org",
+      "n": "Disaster Recovery Palau",
+      "k": "pac,risk,env,recov",
+      "d": "Palau Tropical Storm Haiyan"
+    },
+    {
       "i": "cach/promalaga.jpg",
       "u": "esch4.html?q=cach/promalaga.jpg",
       "p": "box",
@@ -909,8 +976,8 @@
     {
       "i": "https://cdn.popupsmart.com/accounts/75764/uploads/UKR_112024_UKRHF_partners__05-7407fa897a357ab694234d04db093e79.jpeg",
       "u": "esch4.html?q=https://cdn.popupsmart.com/accounts/75764/uploads/UKR_112024_UKRHF_partners__05-7407fa897a357ab694234d04db093e79.jpeg",
-      "k": "csr,pm",
-      "n": "crisis relief",
+      "k": "csr,pm,recov",
+      "n": "Crisis relief",
       "d": "Help families survive winter",
       "a": "visit crisisrelief.un.org"
     },
@@ -1027,7 +1094,7 @@
     },
     {
       "u": "//eppo.int",
-      "k": "csr",
+      "k": "csr,env,world",
       "i": "https://www.eppo.int/media/images/eppo/forest.jpg",
       "cors": "no",
       "n": "Plant Protection"
