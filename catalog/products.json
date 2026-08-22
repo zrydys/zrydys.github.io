@@ -18,6 +18,15 @@
       "a": "by fsm-data.sprep.org"
     },
     {
+      "u": "//infchg.github.io/GeoInt/DRR.html",
+      "i": "//unocha.org/sites/default/files/styles/full_width_3_2_25/public/2025-01/Anna%20at%20her%20home%20with%20an%20allamanda%20flower..jpg.webp",
+      "ii": "del pacifico h unocha.org/news/crisis-recovery-how-cerf-helped-communities-vanuatu",
+      "n": "Forest🌲 reduce landslide risks",
+      "d": "Costa Rica's success in Disaster Risk Reduction",
+      "k": "bio,risk,csr,recov",
+      "a": "by ZryDys + 🇺🇳UNDRR.org/publication/infographics-disaster-risk-reduction + OCHA image"
+    },
+    {
       "n": "Stata notebooks",
       "i": "https://github.com/kylebarron/stata_kernel/raw/master/docs/src/img/jupyter_notebook_example.gif",
       "u": "https://hugetim.github.io/nbstata/",
@@ -368,6 +377,14 @@
       "a": "by  https://market.tutorialspoint.com/course/learn-computer-vision-with-opencv-and-python"
     },
     {
+      "i": "//unocha.org/sites/default/files/styles/full_width_2_1_123/public/2023-06/AdobeStock_525489369.jpeg.webp",
+      "u": "//unocha.org/pacific",
+      "k": "csr,world,recov,pac",
+      "a": "by unOCHA.org with Majuro atoll in the Marshall Islands",
+      "n": "🇺🇳OCHA Pacific Islands",
+      "d": "One of the most disaster-prone regions in the world"
+    },
+    {
       "u": "planet.html?q=https://i1.sndcdn.com/avatars-000015016802-hvtbbc-t200x200.jpg",
       "n": "SoundCloud Bowie",
       "k": "music,3D",
@@ -512,6 +529,14 @@
       "p": "mvp"
     },
     {
+      "i": "//unocha.org/sites/default/files/styles/full_width_3_2_50/public/2026-06/Erosion%20%281%29-gigpix-standard-scale-2_00x.jpg.webp",
+      "u": "//unocha.org/anticipatory-action",
+      "k": "csr,world,recov,pac",
+      "a": "by unOCHA.org with Vanuato Climate change unit",
+      "n": "🇺🇳Disaster Assessment and Coordination",
+      "d": "OCHA + UNDAC + Pacific Humanitarian Team (PHT) clusters"
+    },
+    {
       "u": "planet.html?q=cach/NS.jpg",
       "i": "cach/NS.jpg",
       "n": "Next Stop",
@@ -525,9 +550,9 @@
       "i": "https://upload.wikimedia.org/wikipedia/commons/archive/6/67/20210807143407%21Linia_kontra%C5%AD_Cirkulero.svg",
       "n": "Circular economy",
       "d": "circular 🌱 economy Tech, NASA TRL aligned",
-      "k": "csr,pm",
+      "k": "csr,pm,env",
       "p": "info",
-      "a": "ZryDys csr"
+      "a": "ZryDys csr with WikiMedia images"
     },
     {
       "u": "planet.html?q=cach/SG.jpg",
@@ -568,14 +593,22 @@
       "n": "AI ML OpenCV",
       "d": "Udemy instructore led training ML",
       "k": "develop,ml,vision",
-      "a": "by udemy.com/user/lazy-programmer-team/"
+      "a": "by udemy.com/user/lazy-programmer-team"
+    },
+    {
+      "i": "//unocha.org/sites/default/files/styles/full_width_100/public/2023-09/OoP%20Population%20Snapshot_29APR2022.png.webp",
+      "u": "//unocha.org/publications/report/micronesia-federated-states/ocha-flash-update-fsm-palau-tropical-storm-haiyan-31w-0",
+      "k": "sea,risk,recov,pac",
+      "a": "by unOCHA.org Pacific",
+      "n": "Tropical storm Flash update",
+      "d": "🇺🇳Disaster Alerts for FSM & Palau"
     },
     {
       "u": "planet.html?q=https://ichef.bbci.co.uk/news/1536/cpsprodpb/95f8/live/517c0410-f531-11f0-b385-5f48925de19a.jpg.webp",
       "n": "newborn chimp",
-      "i": "https://ichef.bbci.co.uk/news/1536/cpsprodpb/95f8/live/517c0410-f531-11f0-b385-5f48925de19a.jpg.webp",
+      "i": "//ichef.bbci.co.uk/news/1536/cpsprodpb/95f8/live/517c0410-f531-11f0-b385-5f48925de19a.jpg.webp",
       "d": "Zoo welcomes first newborn chimpanzee in 17 years",
-      "k": "csr,medic",
+      "k": "csr,medic,bio",
       "a": "by BBC.com/news/articles/c17zp852wx7o"
     },
     {
@@ -589,9 +622,9 @@
     {
       "u": "orbitforest.html",
       "i": "anim/forest.gif",
-      "n": "forest",
+      "n": "Digital 🌲 Forest",
       "d": "3D Scene with Additive Printable trees",
-      "k": "dive,csr",
+      "k": "dive,csr,bio",
       "p": "dive",
       "a": "CC BY-SA ZryDys"
     },
@@ -615,8 +648,8 @@
     {
       "i": "https://raisely-images.imgix.net/un-crisis-relief/uploads/ukr-112024-unocha-hnrp-19-dsc-09673-jpg-webp-f48e4f.webp",
       "u": "esch4.html?q=https://raisely-images.imgix.net/un-crisis-relief/uploads/ukr-112024-unocha-hnrp-19-dsc-09673-jpg-webp-f48e4f.webp",
-      "k": "csr,world",
-      "a": "visit crisisrelief.un.org",
+      "k": "csr,world,recov",
+      "a": "by crisisrelief.un.org OCHA",
       "n": "UN crisis relief",
       "d": "Help families survive winter"
     },
@@ -825,7 +858,7 @@
       "i": "https://reliefweb.int/sites/default/files/styles/large/public/previews/9e/b8/9eb8f958-b007-378f-b42a-a701cb57d631.png.webp?1769890-1-0",
       "n": "DRR Sendai Framework🌀",
       "d": "Disaster Risk Reduction 4+🎯⭐🍀🌏 view🟣",
-      "k": "pm,risk,csr",
+      "k": "pm,risk,csr,recov",
       "a": "by ZryDys + OS reliefweb.int/report/world/disaster-risk-reduction-drr-diagram"
     },
     {
@@ -975,6 +1008,14 @@
       "k": "sea,csr,law"
     },
     {
+      "u": "//weather.gov/gum/WSOPalau",
+      "i": "//ospo.noaa.gov/Products/imagery/guam/GUAMB.JPG",
+      "a": "by weather.gov and NOAA",
+      "n": "Weather Forecast Office",
+      "d": "Tiyan, GU to  WSO Palau",
+      "k": "pac,sea,risk,recov"
+    },
+    {
       "i": "https://cdn.popupsmart.com/accounts/75764/uploads/UKR_112024_UKRHF_partners__05-7407fa897a357ab694234d04db093e79.jpeg",
       "u": "esch4.html?q=https://cdn.popupsmart.com/accounts/75764/uploads/UKR_112024_UKRHF_partners__05-7407fa897a357ab694234d04db093e79.jpeg",
       "k": "csr,pm,recov",
@@ -1020,6 +1061,15 @@
       "d": "3D parts",
       "k": "medic,sci,3D",
       "a": "sketchfab.com/anatomy_dundee   University"
+    },
+    {
+      "u": "//islapublic.org/news/2025-09-23/tropical-cyclone-alert-issued-heavy-rain-winds-expected-for-palau-yappalaos.org/about-palau/",
+      "i": "//npr-brightspot.s3.amazonaws.com/c8/9b/1c3161004bdfb52cea82ab7e87a2/screenshot-2025-09-23-145929.png",
+      "ii": "https://npr.brightspotcdn.com/dims4/default/50ea680/2147483647/strip/true/crop/950x600+0+0/resize/1760x1112!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc8%2F9b%2F1c3161004bdfb52cea82ab7e87a2%2Fscreenshot-2025-09-23-145929.png",
+      "a": "by islapublic.org & brightspot & Joint Typhoon Warning Center",
+      "n": "Yap🇫🇲 Palau🇵🇼 cyclone alert",
+      "d": "North Pacific   Joint Typhoon Warning Center",
+      "k": "pac,sea,risk,recov"
     },
     {
       "u": "planet.html?q=https://blogs.opentext.com/wp-content/uploads/2023/02/shutterstock_1020106273-1200x675-1-1024x576.png",
@@ -1070,12 +1120,28 @@
       "a": "from github.com/infchg/GeoInt"
     },
     {
+      "u": "//palaos.org/about-palau/",
+      "i": "https://palaos.org/wp-content/uploads/2015/04/micronesia-palau-800-1-1024x640.jpg",
+      "a": "by palaos.org Palau",
+      "n": "RoP Palau Koror",
+      "d": "🇵🇼+300 islands, 196 square miles, over 325 miles of the North Pacific Ocean.",
+      "k": "pac,sea,env,bio"
+    },
+    {
       "u": "https://www.embodi3d.com/blogs/entry/408-3d-free-scapula-clavicle-and-humerus-models-in-3d-printable-stl-format/",
       "i": "https://media.invisioncic.com/r248939/monthly_2019_11/gallery_4_5_13580.jpg.a65a953f254802ead319c4f23a513067.jpg",
       "k": "medic,csr,3D",
       "d": "3D Scapula, Clavicle, Humerus",
       "n": "Clavicle",
       "a": "by embodi3d.com/profile/8734-angel-sosa"
+    },
+    {
+      "i": "https://www.pacific-r2r.org/sites/default/files/styles/news_image/public/2020-03/Group.JPG?itok=OnwM5Nt8",
+      "a": "by pacific-r2r.org projects",
+      "u": "https://www.pacific-r2r.org/news/building-consensus-environmental-governance-through-rapid-application-most-significant-change",
+      "k": "pac,env,risk",
+      "d": "Building consensus in environmental governance through rapid Change techniques",
+      "n": "environmental governance"
     },
     {
       "u": "esch4.html?q=https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3b90/12427955/1f3a40d6a707/healthcare-13-02154-g001.jpg",
@@ -1095,10 +1161,12 @@
     },
     {
       "u": "//eppo.int",
-      "k": "csr,env,world",
+      "k": "csr,env,world,bio",
       "i": "https://www.eppo.int/media/images/eppo/forest.jpg",
       "cors": "no",
-      "n": "Plant Protection"
+      "n": "Plant Protection",
+      "d": "🌲Forest & Plants Protection",
+      "a": "by EPPO"
     },
     {
       "u": "planet.html?q=https://www.anyworkanywhere.com/wp-content/uploads/2021/12/Bo-og-arbejde-i-Palma-de-Mallorca-1.jpg",
@@ -1114,7 +1182,15 @@
       "i": "thumb/EsriGeojson.png",
       "d": "public ESRI Online Ocean + GeoJson data",
       "u": "geo/oceanGeo.html",
-      "a": "by zrydys.github.io/geo & public ESRI Online maps"
+      "a": "by zrydys.github.io/geo with public ESRI Online maps"
+    },
+    {
+      "n": "48 Hour Tropical Cyclone Watch",
+      "k": "gis,sea,pac,risk",
+      "i": "thumb/typhon.png",
+      "d": "Probability as Early-Warning on Disaster Risks",
+      "u": "https://www.ospo.noaa.gov/products/ocean/tropical/storm-map.html",
+      "a": "by ospo.NOAA.gov with Esri, TomTom, FAO, USGS, NRCan data"
     }
   ]
 }
