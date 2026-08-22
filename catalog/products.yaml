@@ -38,6 +38,15 @@ products:
   d: Visitar faro portugal
   k: pt,art,world
   a: by arsecultur.com/blog/visitar-faro-portugal
+  
+- n: Pacific Islands Forum 18+ 
+  k: pac,sea,csr,world
+  i: https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Pacific_Islands_Forum_Logo_WP.svg/120px-Pacific_Islands_Forum_Logo_WP.svg.png
+  d: AU🇦🇺 CK🇨🇰 FJ🇫🇯  PF🇵🇫  KI🇰🇮 MH🇲🇭 FM🇫🇲 NR🇳🇷 NC🇳🇨	 NZ🇳🇿 NU🇳🇺  PW🇵🇼 PG🇵🇬 WS🇼🇸 SB🇸🇧  TO🇹🇴 TV🇹🇻 VU🇻🇺
+
+  u: https://www.forumsec.org/
+  a: by wikipedia.org/wiki/Pacific_Islands_Forum + zrydys.github.io flags
+    
 - n: Ocean GIS & Bathymetry
   k: gis,sea,sci
   i: thumb/EsriGEBCO.png
@@ -59,6 +68,11 @@ products:
   d: Night sky at Maunakea
   k: dive,sci,vision
   a: CC BY-SA ZryDys
+- d: Kapingamarangi climate (FM🇫🇲Carolines v. ES🇪🇸) with heavy rainfall year-round
+  i: https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/USCGC_Oliver_Henry_%28WPC_1140%29_visits_Kapingamarangi_Atoll_%289599459%29.jpg/250px-USCGC_Oliver_Henry_%28WPC_1140%29_visits_Kapingamarangi_Atoll_%289599459%29.jpg
+  n: tropical rainforest climate Af
+  k: pac,sea,env,bio
+  a: by wikipedia.org/wiki/Kapingamarangi + zrydys.github.io flags
   
 - n: Marine animal satellite telemetry 
   k: gis,sea,bio,sci
