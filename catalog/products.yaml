@@ -54,14 +54,15 @@ products:
   u: geo/esri.html
   a: by zrydys.github.io/geo & public ESRI Online maps
   
-- n: Spotted seal locations 
-  k: gis,sea,bio,sci
-  d: Phoca-largha satellite telemetry GBIF
-  i: https://www.ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:0305189
-  a: cc-by-nc ipt-obis.gbif.us/resource?r=atn_141929_spotted-seal_trajectory_20160425-20160514
-  u: https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0305189
-  note: iso? for paper and gfx? for graphic
-  
+- i: //i0.wp.com/ebiilsociety.org/wp-content/uploads/2025/11/487313238_2580594872138518_7362913684575848106_n-1.webp?w=720&ssl=1
+  n: Nurture forests PW🇵🇼
+  d: Connecting people, land, and ocean through knowledge-sharing, restoration
+  a: by ebiilsociety.org
+  u: //ebiilsociety.org
+  k: pac,env,bio,vol
+  e: email
+  b: base
+     
 - u: diving.html?o=menger&e=cubmau
   i: anim/maunakea.gif
   n: Geometry & Galaxy
@@ -147,7 +148,7 @@ products:
 - n: Fractal tree
   p: fractal
   i: zrydys.png   
-  d: fractal javascript
+  d: 3D Moving fractal javascript
   k: math,ml,vision
   u: planet.html?q=zrydys.png
 - u: mvpc.html?q=https://oceanweb.com/wp-content/uploads/2023/05/Iridium-GMDSS.png  
@@ -155,11 +156,11 @@ products:
   j: had www.
   n: Maritime Distress & Safety
   k: telco,sea,risk
-  a:  by   oceanweb.com/safety-at-sea-inmarsat-c-vs-iridium-gmdss/  
+  a: by oceanweb.com/safety-at-sea-inmarsat-c-vs-iridium-gmdss/  
   d: Safety at sea Inmarsat vs Iridium GMDSS
 - n: Ngedon monastery
   u: planet.html?q=https://static.wixstatic.com/media/50124b_093f51da8f64428489e8f2a2352a42e2~mv2_d_4898_3265_s_4_2.jpg/v1/crop/x_1154,y_0,w_3434,h_3265/fill/w_264,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_4830.jpg
-  i: https://static.wixstatic.com/media/50124b_093f51da8f64428489e8f2a2352a42e2~mv2_d_4898_3265_s_4_2.jpg/v1/crop/x_1154,y_0,w_3434,h_3265/fill/w_264,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_4830.jpg
+  i: //static.wixstatic.com/media/50124b_093f51da8f64428489e8f2a2352a42e2~mv2_d_4898_3265_s_4_2.jpg/v1/crop/x_1154,y_0,w_3434,h_3265/fill/w_264,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_4830.jpg
   d: onde o Dharma é transmitido em Portugal Alentejo
   k: pt,world,rel
   a: by ngedonmonastery.org & guhyamantrika.org/actividades
@@ -429,6 +430,15 @@ products:
   k: math,sci,art
   p: escher
   a: MCEscher original 1953 + colors added by Zrydys
+ 
+- n: Spotted seal locations 
+  k: gis,sea,bio,sci
+  d: Phoca-largha satellite telemetry GBIF
+  i: //www.ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:0305189
+  a: cc-by-nc ipt-obis.GBIF.us/resource?r=atn_141929_spotted-seal_trajectory_20160425-20160514
+  u: //ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0305189
+  note: iso? for paper and gfx? for graphic
+    
 - u: planet.html?q=cach/M.jpg
   i: cach/M.jpg
   n: Museums Workshop
@@ -517,6 +527,21 @@ products:
   k: dive,csr,bio
   p: dive
   a: CC BY-SA ZryDys
+  
+- i: //static.wixstatic.com/media/48986c_4fcff2264f9047bcb3059f7aa00b1434.jpg/v1/fill/w_1513,h_406,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/48986c_4fcff2264f9047bcb3059f7aa00b1434.jpg
+  n: Island Environment
+  d: Island Research & Educational Initiative (iREi) NGO FM🇫🇲
+  a: by islandresearch.org and islandresearch.wixsite.com 
+  k: pac,env,bio,vol
+  e: irei@islandresearch.org
+  u: //islandresearch.wixsite.com/irei
+- i: //static.wixstatic.com/media/48986c_4fcff2264f9047bcb3059f7aa00b1434.jpg/v1/fill/w_1513,h_406,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/48986c_4fcff2264f9047bcb3059f7aa00b1434.jpg
+  n: VR Forest Environment 3D
+  d: Island Research & Educational Initiative (iREi) FM🇫🇲
+  a: by islandresearch.org and islandresearch.wixsite.com 
+  k: pac,env,bio,3D
+  u: planet.html?q=//static.wixstatic.com/media/48986c_4fcff2264f9047bcb3059f7aa00b1434.jpg/v1/fill/w_1513,h_406,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/48986c_4fcff2264f9047bcb3059f7aa00b1434.jpg  
+  
 - u: env.html
   i: https://www.ocean-ops.org/board/img/backgrounds/map-background-min.png  
   n: Ocean Meteo Environment  
@@ -574,6 +599,15 @@ products:
   d:   des exercices sur le lac 
   k: csr,medic,sea  
   a:   ledauphine.com/haute-savoie/2012/05/29/sauvetage-des-exercices-sur-le-lac-pour-se-rapprocher-de-la-realite
+  
+- i: https://cdn.prod.website-files.com/667d5de18fe179bce87b2715/69286e430e78f89f4cb74050_Ocean%20Viking%20mit%20Rettung.jpg
+  ii: cors?
+  n: SaR Life-Saving Mission
+  d: maritime humanitarian organization, offices in France, Germany, Italy, Switzerland
+  k: vol,risk,medic,sea
+  u: //www.sosmediterranee.org 
+  a: by sosmediterranee.de and sosmediterranee.org 
+  e: contact.ch@sosmediterranee.org
 - u: planet.html?q=cach/SR.jpg 
   i: cach/SR.jpg
   n: NOceaNoUs' SeaRangers
