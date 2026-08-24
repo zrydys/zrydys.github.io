@@ -31,7 +31,7 @@
       "i": "https://github.com/kylebarron/stata_kernel/raw/master/docs/src/img/jupyter_notebook_example.gif",
       "u": "https://hugetim.github.io/nbstata/",
       "d": "A Jupyter kernel for Stata built on pystata",
-      "k": "pm,sci,vision",
+      "k": "pm,sci,vis",
       "a": "by hugetim.github.io"
     },
     {
@@ -76,7 +76,7 @@
       "i": "anim/maunakea.gif",
       "n": "Geometry & Galaxy",
       "d": "Night sky at Maunakea",
-      "k": "dive,sci,vision",
+      "k": "dive,sci,vis,pac",
       "a": "CC BY-SA ZryDys"
     },
     {
@@ -140,7 +140,7 @@
       "i": "anim/glslfract.gif",
       "n": "Fractal shader",
       "d": "Fractal by Shader GLSL c GPU code",
-      "k": "math,develop,vision",
+      "k": "math,code,vis,art",
       "s": "fractal",
       "a": "CC BY-SA ZryDys"
     },
@@ -176,7 +176,7 @@
       "p": "fractal",
       "i": "zrydys.png",
       "d": "3D Moving fractal javascript",
-      "k": "math,ml,vision",
+      "k": "math,ml,vis,code",
       "u": "planet.html?q=zrydys.png"
     },
     {
@@ -225,8 +225,9 @@
       "u": "planet.html?q=https://spectrum.ieee.org/media-library/two-telecommunications-workers-in-hardhats-working-on-a-cell-phone-tower.jpg%3Fid%3D60143376",
       "i": "https://spectrum.ieee.org/media-library/two-telecommunications-workers-in-hardhats-working-on-a-cell-phone-tower.jpg?id=60143376",
       "n": "IEEE Telecom AI",
-      "k": "telco,pm",
-      "a": "by spectrum.ieee.org/computer-memory-ai"
+      "k": "tel,pm,3D",
+      "a": "by spectrum.ieee.org/computer-memory-ai",
+      "d": "3D Effect"
     },
     {
       "u": "https://huggingface.co/zrydysORG",
@@ -271,7 +272,7 @@
       "u": "details.html",
       "n": "Agile CI/CD",
       "p": "info",
-      "k": "pm,develop",
+      "k": "pm,code,risk",
       "i": "cicd.jpg",
       "d": "CI/CD Agile Scrum Kanban",
       "a": "Zrydys"
@@ -294,7 +295,7 @@
       "u": "planet.html?q=https://avatars.githubusercontent.com/u/16047363",
       "n": "GitHub Avatars",
       "d": "from GH codings",
-      "k": "3D,develop",
+      "k": "3D,code,vis",
       "i": "https://avatars.githubusercontent.com/u/16047363",
       "a": "by github.com/Raydonal"
     },
@@ -389,7 +390,7 @@
       "i": "https://d3mxt5v3yxgcsr.cloudfront.net/courses/3484/course_3484_image.jpg",
       "n": "OpenCV computer vision",
       "d": "library of programming functions, real-time computer vision, Intel",
-      "k": "develop,sci,vision",
+      "k": "code,sci,vis",
       "a": "by  https://market.tutorialspoint.com/course/learn-computer-vision-with-opencv-and-python"
     },
     {
@@ -411,7 +412,7 @@
       "u": "adapt.html",
       "i": "thumb/sankey.png",
       "n": "adapting to budget & tech",
-      "k": "sci,develop,pm",
+      "k": "sci,code,pm,vis",
       "d": "Tech & budget evolution Sankey chart",
       "a": "by ZryDys charts"
     },
@@ -419,9 +420,9 @@
       "u": "planet.html?q=https://static.wixstatic.com/media/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg/v1/fill/w_924,h_616,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg",
       "n": "Volunteers",
       "d": "kindness, collab, compassion make a difference",
-      "k": "csr,sport",
+      "k": "csr,sport,vol",
       "i": "https://static.wixstatic.com/media/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg/v1/fill/w_924,h_616,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg",
-      "a": "volunteerhub.ch 🇨🇭"
+      "a": "by volunteerhub.ch 🇨🇭"
     },
     {
       "u": "ais.html",
@@ -464,7 +465,7 @@
       "i": "anim/glslfract.gif",
       "n": "Vision filters",
       "d": "gpu C shaders effects",
-      "k": "vision,develop",
+      "k": "vis,code,ml",
       "a": "by zrydys.github.io"
     },
     {
@@ -617,7 +618,7 @@
       "i": "https://img-c.udemycdn.com/user/200_H/75391750_5441.jpg",
       "n": "AI ML OpenCV",
       "d": "Udemy instructore led training ML",
-      "k": "develop,ml,vision",
+      "k": "code,ml,vis",
       "a": "by udemy.com/user/lazy-programmer-team"
     },
     {
@@ -728,6 +729,14 @@
       "p": "solid"
     },
     {
+      "i": "https://www.ctbto.org/sites/default/files/styles/large_765_x_340/public/Images/end_nuclear.jpg?itok=ALDoQi72",
+      "a": "by CTBTO",
+      "n": "Ending Nuclear Tests",
+      "d": "..",
+      "k": "pac,sci,env",
+      "u": "https://www.ctbto.org/our-mission/ending-nuclear-tests"
+    },
+    {
       "u": "keyr.html?q=noc&c=0x1111aa",
       "i": "thumb/noc3.jpg",
       "n": "NOceaNoUs",
@@ -746,13 +755,13 @@
     },
     {
       "i": "https://cdn.prod.website-files.com/667d5de18fe179bce87b2715/69286e430e78f89f4cb74050_Ocean%20Viking%20mit%20Rettung.jpg",
-      "ii": "cors?",
+      "ii": "cors? ch https://sosmediterranee.alwaysdata.net/prehome/images/ph1-visuel@2x.jpg",
       "n": "SaR Life-Saving Mission",
       "d": "maritime humanitarian organization, offices in France, Germany, Italy, Switzerland",
       "k": "vol,risk,medic,sea",
       "u": "//www.sosmediterranee.org",
       "a": "by sosmediterranee.de and sosmediterranee.org",
-      "e": "contact.ch@sosmediterranee.org"
+      "e": "contact.ch@sosmediterranee.org  volontari@sosmediterranee.org."
     },
     {
       "u": "planet.html?q=cach/SR.jpg",
@@ -784,7 +793,7 @@
       "i": "thumb/tactile3.jpg",
       "n": "Diversity Inclusion ⠁⠃ab ⠉⠙cd",
       "d": "Braille ⠁a ⠃b ⠉c ⠙d ⠑e ⠼num ⠋f ⠛g7  ⠓h ⠊i  ⠚j0 Facilitate",
-      "k": "solid,vision,csr",
+      "k": "solid,vis,csr",
       "a": "ZryDys csr"
     },
     {
@@ -838,7 +847,7 @@
       "i": "wall/tofractal.jpg",
       "n": "Moving Fractal",
       "d": "shaders GPU image",
-      "k": "math,develop,vision",
+      "k": "math,code,vis",
       "p": "mvp",
       "a": "CC BY-SA ZryDys"
     },
@@ -954,9 +963,9 @@
     {
       "u": "details.html",
       "i": "thumb/dsci-byUrl.jpg",
-      "n": "Us & Symmetry",
+      "n": "ZryDys & Symmetry",
       "d": "from Innovation to Audits",
-      "k": "cyber,vision",
+      "k": "cyber,vis,pm",
       "p": "info",
       "a": "CC BY-SA ZryDys"
     },
@@ -994,12 +1003,29 @@
       "a": "zryDys"
     },
     {
+      "u": "//snsm.org/notre-association/",
+      "n": "Sécurité en mer - Sea Rescue",
+      "d": "Le semi-rigide \"SNS 7-010\"",
+      "a": "© Augustin Navarranne at SNSM.org",
+      "k": "sea,vol,world,csr",
+      "p": "info",
+      "i": "https://www.snsm.org/app/uploads/2026/01/snsm-sns155-augustin-navarranne.jpg"
+    },
+    {
       "u": "planet.html?q=https://cdn.popupsmart.com/accounts/75764/uploads/AFP_20260810_C4CD4CR_v1_HighRes_ColombiaEarthquake-9b28ec85dda8df7b5dd15ad33ccd2aa6.jpeg",
       "i": "https://cdn.popupsmart.com/accounts/75764/uploads/AFP_20260810_C4CD4CR_v1_HighRes_ColombiaEarthquake-9b28ec85dda8df7b5dd15ad33ccd2aa6.jpeg",
       "a": "by unocha.org OCHA popups",
       "n": "Disaster Recovery Earthquake",
       "k": "risk,env,recov",
       "d": "Earthquake Colombia"
+    },
+    {
+      "u": "//itu.int",
+      "i": "//itu.int/en/PublishingImages/slider/2026/Video-coding-slider.jpg",
+      "n": "Next digital coding",
+      "k": "tel,pm,vis",
+      "a": "by ITU.int , ISO and IEC",
+      "d": "future video coding video-compression proposals"
     },
     {
       "u": "https://www.unocha.org/publications/report/micronesia-federated-states/ocha-flash-update-fsm-palau-tropical-storm-haiyan-31w-0",
@@ -1017,7 +1043,7 @@
       "d": "Impulso funding",
       "n": "co-funded by the Impulso Program",
       "a": "by promalaga.es",
-      "k": "funds,acks"
+      "k": "funds,pm"
     },
     {
       "i": "https://ec.europa.eu/regional_policy/images/information-sources/logo-download-center/stickers.png",
@@ -1027,7 +1053,7 @@
       "d": "co-funded by the European Union",
       "n": "EU funding",
       "a": "by europe.eu FSE",
-      "k": "funds,acks"
+      "k": "funds,pm"
     },
     {
       "u": "https://sketchfab.com/3d-models/shoulder-joint-94489e01f40548b5a0b4f0a6477c36a7",
@@ -1046,7 +1072,7 @@
     },
     {
       "i": "fractalgold.png",
-      "k": "acks,sci",
+      "k": "code,ml,sci",
       "n": "Arc thanks",
       "d": "Acknowledging NASA Arc Resources",
       "a": "by nasa.gov/"
@@ -1148,6 +1174,14 @@
       "a": "from github.com/oracle"
     },
     {
+      "i": "//unesco.org/sites/default/files/styles/card_1_column/public/geoparks.jpg.webp?itok=zzgCi5G",
+      "u": "//unesco.org/en/iggp",
+      "n": "Global Geoparks & Forests",
+      "d": "highlights of our shared humanity.",
+      "k": "bio,world,csr",
+      "a": "by UNESCO.org"
+    },
+    {
       "n": "Faro Algarve Kite Center",
       "u": "planet.html?q=https://windsrush.com/images/large/algarve-kite-center-coastline-view.webp",
       "i": "https://windsrush.com/images/large/algarve-kite-center-coastline-view.webp",
@@ -1221,6 +1255,14 @@
       "a": "by EPPO"
     },
     {
+      "i": "https://wmo.int/sites/default/files/styles/hero_featured_content_x1_760x440_/public/2026-07/AdobeStock_372016812.jpeg?h=ccbeede3&itok=0eymy8B2",
+      "a": "by WMO.int",
+      "n": "El Niño",
+      "d": "Strong El Niño expected to intensify",
+      "k": "pac,sci,env",
+      "u": "https://wmo.int/media/news/strong-el-nino-expected-intensify"
+    },
+    {
       "u": "planet.html?q=https://www.anyworkanywhere.com/wp-content/uploads/2021/12/Bo-og-arbejde-i-Palma-de-Mallorca-1.jpg",
       "n": "Seas & World Travel",
       "d": "Mallorca Nautic jobs",
@@ -1243,6 +1285,14 @@
       "d": "Probability as Early-Warning on Disaster Risks",
       "u": "https://www.ospo.noaa.gov/products/ocean/tropical/storm-map.html",
       "a": "by ospo.NOAA.gov with Esri, TomTom, FAO, USGS, NRCan data"
+    },
+    {
+      "u": "//itu.int",
+      "i": "//itu.int/en/PublishingImages/slider/2026/wtpf26-blog-banner-slider.jpg",
+      "n": "WTPF-26 emerging digital future",
+      "k": "tel,pm,world",
+      "a": "by ITU.int",
+      "d": "​​The World Telecommunication/ICT Policy Forum :Nassau"
     }
   ]
 }
