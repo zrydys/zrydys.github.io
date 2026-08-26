@@ -4,7 +4,7 @@
   "note0": "yq '.products[4,8]' catalog/products.yaml",
   "note1": "yq e '.products[] | select(.k | contains(\"env\")) '",
   "clave": "yq   '.products[] | .k ' zrydys.github.io/catalog/products.yaml |g '\\w+' -o|sort |uniq -c|sort -n",
-  "demo1": "yq '[ .products[]|select(.k == \"telco,pm\" or .u == \"elt.html\") | .n ]' 23gits/zrydys.github.io/catalog/products.yaml",
+  "demo1": "yq '[ .products[]|select(.k == \"tel,pm\" or .u == \"elt.html\") | .n ]' 23gits/zrydys.github.io/catalog/products.yaml",
   "pipe0": "detecting images g \"\\!\\[.+\\([^)]+)\" details.md -o ais.md  gps.md",
   "notes": "yq in py3.13 Fedora 42 v. py3.14 Fedora 43",
   "affil": "from /c/n/name takes you to the v clip o html in 1 step",
@@ -98,7 +98,7 @@
       "u": "keyr.html?q=broach&c=0x1111aa",
       "i": "thumb/cune3b.jpg",
       "n": "Broach",
-      "k": "solid,deco",
+      "k": "solid,art",
       "p": "solid",
       "a": "printables.com/@John_56680"
     },
@@ -154,8 +154,15 @@
       "a": "by kiterr.com/kitespots/europe/kitesurfing-algarve-portugal"
     },
     {
+      "i": "//uspto.gov/sites/default/files/styles/medium/public/2020-03/20160613_madison_010.jpg?itok=JlfiNR_m",
+      "u": "//uspto.gov/access-our-free-services",
+      "k": "law,inn,sci,db",
+      "n": "patents & trademarks",
+      "a": "by uspto.gov"
+    },
+    {
       "n": "Risks & Meteo",
-      "k": "gis,risk,sci",
+      "k": "gis,risk,sci,db",
       "i": "thumb/OceanMeteo.png",
       "d": "Faults, Floods, Climate risks, Ocean & Land GIS",
       "u": "elt.html",
@@ -184,7 +191,7 @@
       "i": "https://oceanweb.com/wp-content/uploads/2023/05/Iridium-GMDSS.png",
       "j": "had www.",
       "n": "Maritime Distress & Safety",
-      "k": "telco,sea,risk",
+      "k": "tel,sea,risk",
       "a": "by oceanweb.com/safety-at-sea-inmarsat-c-vs-iridium-gmdss/",
       "d": "Safety at sea Inmarsat vs Iridium GMDSS"
     },
@@ -193,7 +200,7 @@
       "u": "planet.html?q=https://static.wixstatic.com/media/50124b_093f51da8f64428489e8f2a2352a42e2~mv2_d_4898_3265_s_4_2.jpg/v1/crop/x_1154,y_0,w_3434,h_3265/fill/w_264,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_4830.jpg",
       "i": "//static.wixstatic.com/media/50124b_093f51da8f64428489e8f2a2352a42e2~mv2_d_4898_3265_s_4_2.jpg/v1/crop/x_1154,y_0,w_3434,h_3265/fill/w_264,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_4830.jpg",
       "d": "onde o Dharma é transmitido em Portugal Alentejo",
-      "k": "pt,world,rel",
+      "k": "pt,world,mind",
       "a": "by ngedonmonastery.org & guhyamantrika.org/actividades"
     },
     {
@@ -208,10 +215,10 @@
     {
       "u": "planet.html?q=https://www.pew.org/-/media/data-visualizations/infographics/2018/07/seabedmining_figure1_990.jpg",
       "k": "sea,env,sci",
-      "a": "by PEW.org",
+      "a": "by PEW.org on ISA data",
       "n": "International Seabed Authority minerals",
       "d": "ISA types of mineral seabed resources",
-      "i": "https://www.pew.org/-/media/data-visualizations/infographics/2018/07/seabedmining_figure1_990.jpg?mw=990&hash=7EA732E2C9EFBDE41324AEE326379B4F"
+      "i": "//pew.org/-/media/data-visualizations/infographics/2018/07/seabedmining_figure1_990.jpg?mw=990&hash=7EA732E2C9EFBDE41324AEE326379B4F"
     },
     {
       "n": "Obidos Peniche Kite",
@@ -234,15 +241,15 @@
       "d": "published ML demos online",
       "a": "huggingface.co/spaces/zrydys/ml-demo",
       "i": "hugg.jpg",
-      "n": "some ML demos",
-      "k": "ml,telco,pm"
+      "n": "LLM hub",
+      "k": "ml,tel,pm,inn"
     },
     {
-      "u": "planet.html?q=https://e4k4c4x9.delivery.rocketcdn.me/en/wp-content/uploads/sites/15/2026/01/Bird_Biodiversity_Image-696x444.png.webp",
-      "i": "https://e4k4c4x9.delivery.rocketcdn.me/en/wp-content/uploads/sites/15/2026/01/Bird_Biodiversity_Image-696x444.png.webp",
-      "n": "biodiversity",
+      "u": "planet.html?q=//e4k4c4x9.delivery.rocketcdn.me/en/wp-content/uploads/sites/15/2026/01/Bird_Biodiversity_Image-696x444.png.webp",
+      "i": "//e4k4c4x9.delivery.rocketcdn.me/en/wp-content/uploads/sites/15/2026/01/Bird_Biodiversity_Image-696x444.png.webp",
+      "n": "biodiversity 3D",
       "d": "Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES)",
-      "k": "sci,csr",
+      "k": "sci,csr,bio,3D",
       "a": "at unric.org"
     },
     {
@@ -287,7 +294,7 @@
       "u": "mvpc.html?q=https://www.fcc.gov/themes/custom/fcc/assets/images/fcc-seal.png",
       "i": "https://www.fcc.gov/themes/custom/fcc/assets/images/fcc-seal.png",
       "n": "GMDSS at Sea",
-      "k": "telco,risk,sea",
+      "k": "tel,risk,sea",
       "a": "by  fcc.gov/wireless/bureau-divisions/mobility-division/maritime-mobile/ship-radio-stations/global-maritime",
       "d": "Satellite Emergency Distress"
     },
@@ -310,7 +317,7 @@
     },
     {
       "n": "GIS imagery OpenCv ELT",
-      "k": "gis,ml,vision",
+      "k": "gis,ml,vis",
       "i": "thumb/elt.png",
       "d": "GIS Overlay + Electronic Light Table + OpenCV.js process",
       "u": "elt.html"
@@ -323,10 +330,25 @@
       "k": "3D"
     },
     {
+      "i": "//wipo.taleo.net/careersection/theme/1166/1136930090064/en/theme/images/Wipoheader.png",
+      "u": "//wipo.int/",
+      "k": "law,inn,sci,db",
+      "n": "patents & trademarks",
+      "a": "by wipo.int"
+    },
+    {
       "u": "planet.html?q=cach/col.jpg",
       "n": "Cyber Corridor",
       "k": "cyber,3D",
       "i": "cach/col.jpg"
+    },
+    {
+      "i": "//isa.org.jm/wp-content/uploads/2022/03/drone_2_ILLUSTRATION.jpg.webp",
+      "u": "//isa.org.jm",
+      "k": "sea,csr,env,db",
+      "n": "International Seabed Authority",
+      "a": "by  isa.org.jm",
+      "d": "Kingston, Jamaica"
     },
     {
       "u": "planet.html?q=thumb/humerus.jpg",
@@ -355,7 +377,7 @@
     {
       "u": "mapeuaf.html",
       "n": "Connect Remote Locations",
-      "k": "gis,telco,sea",
+      "k": "gis,tel,sea",
       "i": "tiles/4-8-4.png",
       "d": "Reaching Remote Locations, Sailing bases, Simplified & Affordable"
     },
@@ -409,6 +431,13 @@
       "a": "at soundcloud.com/ davidbowieofficial"
     },
     {
+      "i": "//esri.com/arcgis-blog/app/uploads/2024/06/CatalogLayerdynamicfiltering03-ezgif.com-crop.gif",
+      "u": "//esri.com/arcgis-blog/products/arcgis-online/mapping/catalog-layers-in-arcgis-online",
+      "k": "gis,sci,db",
+      "n": "Map Catalog Layers",
+      "a": "by esri.com"
+    },
+    {
       "u": "adapt.html",
       "i": "thumb/sankey.png",
       "n": "adapting to budget & tech",
@@ -429,7 +458,7 @@
       "i": "https://www.rtl-sdr.com/wp-content/uploads/2020/05/sarcnet_ais.jpg",
       "n": "Safe Marine AIS",
       "d": "Cyber Raspberry Pi and RTL-SDR Based NOAA Weather Satellite & AIS receiver projects",
-      "k": "cyber,telco,sea",
+      "k": "cyber,tel,sea",
       "p": "info",
       "a": "authors from NOAA, rtl-sdr.com, zryDys"
     },
@@ -448,7 +477,7 @@
       "i": "cach/CA.jpg",
       "n": "MarianCA",
       "d": "Portfolio",
-      "k": "art,deco",
+      "k": "art,world",
       "p": "mvp",
       "a": "by MarianCustomArt.com"
     },
@@ -497,7 +526,7 @@
     {
       "u": "planet.html?q=cach/MD.jpg",
       "n": "Merge game",
-      "k": "game,vision",
+      "k": "game,vis",
       "i": "cach/MD.jpg",
       "d": "Merge with darkness",
       "a": "E. (QR in pic)"
@@ -516,7 +545,7 @@
       "i": "thumb/mvpc.jpg",
       "n": "MovePic shader",
       "d": "watermark",
-      "k": "3D,vision",
+      "k": "3D,vis,code",
       "p": "mvp",
       "a": "ZryDys"
     },
@@ -525,7 +554,7 @@
       "u": "planet.html?q=https://static.wixstatic.com/media/50124b_a1eb6f3fb92546e3876ba64c9c6af178~mv2.jpg/v1/fill/w_246,h_237,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/465165763_8512443895457763_7647113041119019621_n.jpg",
       "i": "https://static.wixstatic.com/media/50124b_a1eb6f3fb92546e3876ba64c9c6af178~mv2.jpg/v1/fill/w_246,h_237,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/465165763_8512443895457763_7647113041119019621_n.jpg",
       "d": "visitar o Stupa em Portugal Alentejo",
-      "k": "pt,world,rel",
+      "k": "pt,world,mind",
       "a": "by guhyamantrika.org"
     },
     {
@@ -594,7 +623,8 @@
       "u": "//seashepherdglobal.org",
       "n": "Sea Shepherd Merchandise",
       "k": "sea,csr,vol",
-      "e": "finance@seashepherd.nl  post@seashepherd.no  info@seashepherd.pt  info@seashepherd.es  coordinations@seashepherd.ch  australia@seashepherd.org.au  info@seashepherd.org.nz  chile@seashepherdglobal.org  latinamerica@seashepherdglobal.org us info@seashepherd.org"
+      "e": "finance@seashepherd.nl  post@seashepherd.no  info@seashepherd.pt  info@seashepherd.es  coordinations@seashepherd.ch  australia@seashepherd.org.au  info@seashepherd.org.nz  chile@seashepherdglobal.org  latinamerica@seashepherdglobal.org us info@seashepherd.org",
+      "ii": "https://static.seashepherdglobal.org/media/filer_public_thumbnails/filer_public/3f/f0/3ff02e91-6e27-42a1-846b-605655cd9e9d/20160507-ds-dolphins-003-ds000832x1600.jpg__1600x800_q95_crop_subsampling-2.jpg  dolphin?"
     },
     {
       "u": "diving.html",
@@ -608,7 +638,7 @@
       "i": "https://ichef.bbci.co.uk/images/ic/320xn/p02m6cw0.jpg",
       "n": "Orion",
       "d": "BBC Stargazing",
-      "k": "sci,3D,vision",
+      "k": "sci,3D,vis",
       "a": "by bbc.co.uk/programmes/articles/2pZFdnsPGl1DDwH6pZbJKkh",
       "marsearth": "https://ichef.bbci.co.uk/images/ic/320xn/p013fx1t.jpg"
     },
@@ -667,7 +697,7 @@
       "d": "Island Research & Educational Initiative (iREi) NGO FM🇫🇲",
       "a": "by islandresearch.org and islandresearch.wixsite.com",
       "k": "pac,env,bio,vol",
-      "e": "irei@islandresearch.org",
+      "e": "irei@islandresearch.org q nada",
       "u": "//islandresearch.wixsite.com/irei"
     },
     {
@@ -683,7 +713,7 @@
       "i": "https://www.ocean-ops.org/board/img/backgrounds/map-background-min.png",
       "n": "Ocean Meteo Environment",
       "d": "Observation buoys, Marpol, Doppler Argos, Rafos, Orbcomm..",
-      "k": "risk,telco,sea",
+      "k": "risk,tel,sea,db",
       "p": "info",
       "a": "notes ocean-ops.org   & zryDys"
     },
@@ -732,7 +762,7 @@
       "i": "thumb/tetra3.jpg",
       "n": "Pyramid",
       "d": "decorative",
-      "k": "solid,math,deco",
+      "k": "solid,math,art",
       "p": "solid"
     },
     {
@@ -751,6 +781,15 @@
       "k": "solid,sea",
       "p": "solid",
       "a": "by NOceaNoUs.com"
+    },
+    {
+      "i": "//usfs.maps.arcgis.com/sharing/rest/content/items/819e10f101294032b18b7983b45a8f17/data?w=200",
+      "u": "//experience.arcgis.com/experience/326ea1366f9e4210995699667756a5f1/",
+      "k": "gis,law,world",
+      "n": "Tribal Connections",
+      "d": "Geospatial Discovery",
+      "e": "SM.FS.data@usda.gov",
+      "a": "by usda.gov US Forest Service"
     },
     {
       "u": "planet.html?q=https://cdn-s-www.ledauphine.com/images/C9FCFA87-81C4-416F-90B8-54BF01337A81/NW_detail/exercice-pour-les-membres-du-sauvetage-la-victime-sur-son-bateau-est-victime-d-une-insolation-il-faut-vite-le-prendre-en-charge-brancardage-difficile-pour-passer-du-bateau-sur-le-quai-sans-tomber-a-l-eau-ici-c-est-une-victime-d-un-malaise-les-stagiaires-oeuvrent-sous-l-oeil-avise-des-professionnels-1338221016.jp",
@@ -804,6 +843,14 @@
       "a": "ZryDys csr"
     },
     {
+      "i": "//wwwcdn.imo.org/localresources/en/MediaCentre/PublishingImages/AmoniaLandingpic.jpg",
+      "u": "//www.imo.org/en/about/events/pages/technical-seminar-on-the-use-of-ammonia-as-marine-fuel.aspx",
+      "k": "sea,csr,env",
+      "a": "by IMO.org",
+      "n": "Technical Seminar 17 Sep 2026",
+      "d": "Ammonia as marine fuel"
+    },
+    {
       "u": "//gitlab.com/crlhyn/covid",
       "n": "Health Informatics",
       "d": "epidemiology data science COVID-19",
@@ -838,7 +885,7 @@
       "i": "thumb/alhambra.jpg",
       "n": "Alhambra Tile",
       "d": "Tiles Alhambra style - use mouse to 3D navigate",
-      "k": "math,deco,art",
+      "k": "math,world,art",
       "a": "CC BY-SA ZryDys"
     },
     {
@@ -903,7 +950,7 @@
       "i": "https://www.ocean-ops.org/board/img/backgrounds/map-background-min.png",
       "n": "Ocean Buoys NOAA",
       "d": "Observation buoys, NOAA, GIS, Atlantic",
-      "k": "sci,gis,sea",
+      "k": "sci,gis,sea,db",
       "p": "info",
       "a": "by NOAA , demo by zryDys"
     },
@@ -920,6 +967,14 @@
       "k": "ml,sci,medic",
       "d": "AI in Clinical Decision Support Systems",
       "a": "Q.Abbas, W.Jeong, S. Won Lee"
+    },
+    {
+      "i": "//wwwcdn.imo.org/localresources/en/PublishingImages/entry-bg3.jpg",
+      "u": "//imo.org/en/OurWork/IIIS/Pages/Marine-Safety-Investigation-reports.aspx",
+      "k": "sea,law,risk",
+      "a": "by IMO.org",
+      "n": "Maritime Investigation",
+      "d": "Maritime Safety Investigation Reports"
     },
     {
       "u": "https://zrydys.github.io/GeoInt/DRR.html",
@@ -972,7 +1027,7 @@
       "i": "thumb/dsci-byUrl.jpg",
       "n": "ZryDys & Symmetry",
       "d": "from Innovation to Audits",
-      "k": "cyber,vis,pm",
+      "k": "cyber,vis,pm,inn",
       "p": "info",
       "a": "CC BY-SA ZryDys"
     },
@@ -983,6 +1038,15 @@
       "k": "3D,solid",
       "a": "by thingiverse.com/Wynn-3D  CC BY-SA",
       "d": "for Additive Manufacturing or 3D scenes"
+    },
+    {
+      "i": "//instillmindfulness.org/wp-content/uploads/2022/03/InStill-Home-banner-600x613.jpg",
+      "u": "//instillmindfulness.org",
+      "a": "by instillmindfulness.org",
+      "k": "world,mind",
+      "n": "a mindful world",
+      "d": "Cultivating a mindful world for all",
+      "e": "info@instillmindfulness.org"
     },
     {
       "u": "https://linkedin.com/learning/machine-learning-fundamentals-for-healthcare/machine-learning-models-and-algorithms-in-healthcare",
@@ -1005,7 +1069,7 @@
       "i": "wall/z-datsci.jpg",
       "n": "R&D+i DatSci",
       "d": "R&D+ Data Science analysis",
-      "k": "sci,cyber,telco",
+      "k": "sci,cyber,tel",
       "p": "info",
       "a": "zryDys"
     },
@@ -1033,6 +1097,13 @@
       "k": "tel,pm,vis",
       "a": "by ITU.int , ISO and IEC",
       "d": "future video coding video-compression proposals"
+    },
+    {
+      "i": "//salvamentomaritimo.es/statics/multimedia/images/2018/06/26/DSCF0272_3.jpg",
+      "a": "by SASEMAR salvamentomaritimo.es",
+      "u": "//salvamentomaritimo.es",
+      "n": "Maritime Rescue SAR",
+      "k": "sea,risk,medic"
     },
     {
       "u": "https://www.unocha.org/publications/report/micronesia-federated-states/ocha-flash-update-fsm-palau-tropical-storm-haiyan-31w-0",
@@ -1107,6 +1178,23 @@
       "n": "Crisis relief",
       "d": "Help families survive winter",
       "a": "visit crisisrelief.un.org"
+    },
+    {
+      "i": "//usfs.maps.arcgis.com/sharing/rest/content/items/2be5d172f33b4414b59ce9d18718ef99/data",
+      "u": "//fia-usfs.hub.arcgis.com/",
+      "k": "gis,bio,db,env",
+      "n": "Forest Discovery",
+      "d": "Geospatial Discovery",
+      "e": "SM.FS.data@usda.gov",
+      "a": "by usda.gov US Forest Service"
+    },
+    {
+      "i": "//usfs.maps.arcgis.com/sharing/rest/content/items/2be5d172f33b4414b59ce9d18718ef99/data",
+      "u": "planet.html?q=//usfs.maps.arcgis.com/sharing/rest/content/items/2be5d172f33b4414b59ce9d18718ef99/data",
+      "k": "VR,bio,3D,env",
+      "n": "Forest 3D",
+      "d": "VR 3D Effect",
+      "a": "by usda.gov US Forest Service"
     },
     {
       "u": "https://pubchem.ncbi.nlm.nih.gov/compound/norepinephrine#section=Structures",
@@ -1279,7 +1367,7 @@
     },
     {
       "n": "Ocean + Country Maps",
-      "k": "gis,sea,sci",
+      "k": "gis,sea,sci,db",
       "i": "thumb/EsriGeojson.png",
       "d": "public ESRI Online Ocean + GeoJson data",
       "u": "geo/oceanGeo.html",
