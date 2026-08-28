@@ -27,11 +27,11 @@
       "a": "by ZryDys + 🇺🇳UNDRR.org/publication/infographics-disaster-risk-reduction + OCHA image"
     },
     {
-      "n": "Stata notebooks",
+      "n": "Stata notebooks📊",
       "i": "https://github.com/kylebarron/stata_kernel/raw/master/docs/src/img/jupyter_notebook_example.gif",
       "u": "https://hugetim.github.io/nbstata/",
-      "d": "A Jupyter kernel for Stata built on pystata",
-      "k": "pm,sci,vis",
+      "d": "A Jupyter kernel for Stata pystata",
+      "k": "pm,sci,vis,code",
       "a": "by hugetim.github.io"
     },
     {
@@ -129,10 +129,10 @@
     },
     {
       "u": "planet.html?q=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Location_of_the_Clarion_Clipperton_Zone.png/250px-Location_of_the_Clarion_Clipperton_Zone.png",
-      "k": "sea,env,sci",
+      "k": "sea,env,sci,3D",
       "a": "cc-by Image Wikipedia",
-      "n": "Clarion–Clipperton ocean floor mine",
-      "d": "1.7 million square miles (Hawaii to Mexico) mining cobalt, nickel, manganese, copper..",
+      "n": "Clarion–Clipperton ocean floor mine⚒",
+      "d": "1.7M square miles (Hawaii to Mexico) ⚒️mining cobalt, nickel, manganese, copper..",
       "i": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Location_of_the_Clarion_Clipperton_Zone.png/250px-Location_of_the_Clarion_Clipperton_Zone.png"
     },
     {
@@ -172,7 +172,7 @@
       "u": "planet.html?q=https://cdn-s-www.ledauphine.com/images/BEC03642-D182-4307-9CDC-73987CDA43AF/NW_detail/la-vedette-du-sauvetage-de-thonon-realise-entre-50-et-70-interventions-sur-le-leman-chaque-annee-archives-photo-le-dl-g-b-1693582839.jpg",
       "n": "Search & Rescue",
       "i": "https://cdn-s-www.ledauphine.com/images/BEC03642-D182-4307-9CDC-73987CDA43AF/NW_detail/la-vedette-du-sauvetage-de-thonon-realise-entre-50-et-70-interventions-sur-le-leman-chaque-annee-archives-photo-le-dl-g-b-1693582839.jpg",
-      "d": "Leman Lake S&R volunteers",
+      "d": "Leman Lake S&R volunteers 🏊‍",
       "k": "csr,sport,sea",
       "a": "by ledauphine.com/faits-divers-justice/2023/09/01/le-sauvetage-en-eaux-troubles-avec-la-penurie-de-benevoles",
       "s": "sound",
@@ -196,7 +196,7 @@
       "d": "Safety at sea Inmarsat vs Iridium GMDSS"
     },
     {
-      "n": "Ngedon monastery",
+      "n": "Ngedon monastery🏰",
       "u": "planet.html?q=https://static.wixstatic.com/media/50124b_093f51da8f64428489e8f2a2352a42e2~mv2_d_4898_3265_s_4_2.jpg/v1/crop/x_1154,y_0,w_3434,h_3265/fill/w_264,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_4830.jpg",
       "i": "//static.wixstatic.com/media/50124b_093f51da8f64428489e8f2a2352a42e2~mv2_d_4898_3265_s_4_2.jpg/v1/crop/x_1154,y_0,w_3434,h_3265/fill/w_264,h_254,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_4830.jpg",
       "d": "onde o Dharma é transmitido em Portugal Alentejo",
@@ -204,12 +204,12 @@
       "a": "by ngedonmonastery.org & guhyamantrika.org/actividades"
     },
     {
-      "n": "Geo map servers",
+      "n": "GDAL🌐 GeoServers🔩",
       "p": "maps",
       "i": "tiles/4-8-5.png",
-      "d": "CET Berlin area 🇨🇭",
-      "k": "world,gis",
-      "d": "GDAL GeoServers 🌐 Tiles",
+      "a": "by zrydys Berlin CET CH area🇨🇭",
+      "k": "world,gis,code",
+      "d": "Geo map servers Tiles🔧",
       "u": "gis.html"
     },
     {
@@ -348,7 +348,8 @@
       "k": "sea,csr,env,db",
       "n": "International Seabed Authority",
       "a": "by  isa.org.jm",
-      "d": "Kingston, Jamaica"
+      "d": "Kingston, Jamaica",
+      "e": "careers@isa.org.jm"
     },
     {
       "u": "planet.html?q=thumb/humerus.jpg",
@@ -382,12 +383,12 @@
       "d": "Reaching Remote Locations, Sailing bases, Simplified & Affordable"
     },
     {
-      "n": "Walking Faro",
+      "n": "Walking Faro 🌆",
       "u": "planet.html?q=https://cdn.prod.website-files.com/605baba32d94435376625d33/6617d414fc231469ff92a27f_header.webp",
       "i": "https://cdn.prod.website-files.com/605baba32d94435376625d33/6617d414fc231469ff92a27f_header.webp",
       "j": "https://cdn.prod.website-files.com/605baba32d94435376625d33/66266c9d04d6fc0847b2b470_algarve_teambuilding-walkingtour2.webp ppl church",
       "d": "Explore Faro, walking tour, Portugal skyview",
-      "k": "pt,art,world",
+      "k": "pt,art,world,3D",
       "a": "by surfoffice.com/team-building-activities/walking-tour-in-algarve-region"
     },
     {
@@ -400,12 +401,12 @@
     },
     {
       "u": "chord.html",
-      "n": "Chord chart",
+      "n": "Chord chart📈",
       "k": "sci,math,pm",
-      "d": "Connecting Investments in a Chord chart live",
+      "d": "Connecting Investments📈",
       "j": "zry0.png",
       "i": "thumb/chord.png",
-      "a": "by ZryDys charts"
+      "a": "by ZryDys.github.io charts"
     },
     {
       "u": "planet.html?q=https://d3mxt5v3yxgcsr.cloudfront.net/courses/3484/course_3484_image.jpg",
@@ -424,11 +425,37 @@
       "d": "One of the most disaster-prone regions in the world"
     },
     {
+      "e": "headline    iggp@unesco.org",
+      "n": "IGGP Geoscience and Geoparks",
+      "d": "Preserving our Earth’s resources for generations",
+      "j": "//unesco.org/sites/default/files/2022-09/VIet-Nam_10_Phong_Nam_panorama_credit_Pham_Ngoc_Khoa_web.jpg",
+      "a": "by Viet Nam unesco.org/en/iggp",
+      "k": "bio,world,env,csr"
+    },
+    {
       "u": "planet.html?q=https://i1.sndcdn.com/avatars-000015016802-hvtbbc-t200x200.jpg",
       "n": "SoundCloud Bowie",
       "k": "music,3D",
       "i": "https://i1.sndcdn.com/avatars-000056737102-prx05v-t200x200.jpg",
       "a": "at soundcloud.com/ davidbowieofficial"
+    },
+    {
+      "u": "//pangaea.de/?t=Oceans",
+      "ii": "volcan  categories/geophysics.jpg",
+      "i": "//pangaea.de/assets/v.b0840cade77ccae9fb48aacf6e520002/categories/oceans.jpg",
+      "n": "PANGAEA Oceans db",
+      "d": "Data Publisher for Earth & Environmental Science",
+      "k": "sci,sea,env,db",
+      "a": "by doi.org/10.1038/s41597-023-02269-x pangaea.de"
+    },
+    {
+      "u": "planet.html?q=//pangaea.de/assets/v.b0840cade77ccae9fb48aacf6e520002/categories/oceans.jpg",
+      "i": "//pangaea.de/assets/v.b0840cade77ccae9fb48aacf6e520002/categories/oceans.jpg",
+      "n": "PANGAEA Oceans 3D",
+      "d": "Data Publisher for Earth & Environmental Science",
+      "k": "vis,sea,env,3D",
+      "a": "by doi.org/10.1038/s41597-023-02269-x pangaea.de",
+      "e": "jb"
     },
     {
       "i": "//esri.com/arcgis-blog/app/uploads/2024/06/CatalogLayerdynamicfiltering03-ezgif.com-crop.gif",
@@ -440,14 +467,14 @@
     {
       "u": "adapt.html",
       "i": "thumb/sankey.png",
-      "n": "adapting to budget & tech",
+      "n": "adapting tech budget",
       "k": "sci,code,pm,vis",
-      "d": "Tech & budget evolution Sankey chart",
+      "d": "Tech budget evolution Sankey chart",
       "a": "by ZryDys charts"
     },
     {
       "u": "planet.html?q=https://static.wixstatic.com/media/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg/v1/fill/w_924,h_616,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg",
-      "n": "Volunteers",
+      "n": "Volunteers🏔️",
       "d": "kindness, collab, compassion make a difference",
       "k": "csr,sport,vol",
       "i": "https://static.wixstatic.com/media/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg/v1/fill/w_924,h_616,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg",
@@ -544,16 +571,24 @@
       "u": "mvpc.html",
       "i": "thumb/mvpc.jpg",
       "n": "MovePic shader",
-      "d": "watermark",
+      "d": "watermark💧",
       "k": "3D,vis,code",
       "p": "mvp",
       "a": "ZryDys"
     },
     {
+      "u": "https://www.embodi3d.com/blogs/entry/408-3d-free-scapula-clavicle-and-humerus-models-in-3d-printable-stl-format/",
+      "i": "https://media.invisioncic.com/r248939/monthly_2019_11/gallery_4_5_13580.jpg.a65a953f254802ead319c4f23a513067.jpg",
+      "k": "medic,csr,3D",
+      "d": "3D Scapula, Clavicle, Humerus",
+      "n": "Clavicle 🦴",
+      "a": "by embodi3d.com/profile/8734-angel-sosa"
+    },
+    {
       "n": "Stupa Tashi Gomang",
       "u": "planet.html?q=https://static.wixstatic.com/media/50124b_a1eb6f3fb92546e3876ba64c9c6af178~mv2.jpg/v1/fill/w_246,h_237,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/465165763_8512443895457763_7647113041119019621_n.jpg",
       "i": "https://static.wixstatic.com/media/50124b_a1eb6f3fb92546e3876ba64c9c6af178~mv2.jpg/v1/fill/w_246,h_237,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/465165763_8512443895457763_7647113041119019621_n.jpg",
-      "d": "visitar o Stupa em Portugal Alentejo",
+      "d": "visitar o Stupa em Portugal Alentejo🏰",
       "k": "pt,world,mind",
       "a": "by guhyamantrika.org"
     },
@@ -567,9 +602,9 @@
       "a": "MCEscher original 1953 + colors added by Zrydys"
     },
     {
-      "n": "Spotted seal locations",
+      "n": "Spotted seal locations🐳",
       "k": "gis,sea,bio,sci",
-      "d": "Phoca-largha satellite telemetry GBIF",
+      "d": "Phoca-largha satellite telemetry GBIF🐠",
       "i": "//www.ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:0305189",
       "a": "cc-by-nc ipt-obis.GBIF.us/resource?r=atn_141929_spotted-seal_trajectory_20160425-20160514",
       "u": "//ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0305189",
@@ -673,6 +708,15 @@
       "d": "Zoo welcomes first newborn chimpanzee in 17 years",
       "k": "csr,medic,bio",
       "a": "by BBC.com/news/articles/c17zp852wx7o"
+    },
+    {
+      "i": "//isa.org.jm/wp-content/uploads/2022/04/world_map_square.png.webp",
+      "ii": "logo https://isa.org.jm/wp-content/uploads/2022/03/ISA_logo_white.png.webp",
+      "u": "//isa.org.jm/deepdata-database/",
+      "k": "sea,bio,env,db",
+      "n": "Deep Seabed and Ocean DB",
+      "a": "by  isa.org.jm",
+      "d": "213+ cruises and 204K bio🌿 622K geo🌄 samples"
     },
     {
       "u": "esch4.html?q=https://www.itlos.org/fileadmin/_processed_/0/2/csm_2721329_1__9c737b291a.jpg",
@@ -821,7 +865,7 @@
     {
       "u": "and.html",
       "i": "thumb/and.png",
-      "n": "Andalucia Risks",
+      "n": "Andalucia Risks🔥🌊️",
       "d": "Regional Disaster Risk Reduction",
       "k": "gis,risk,sea",
       "a": "CC BY-SA ZryDys + Miteco + Junta + Nasa Images"
@@ -897,6 +941,22 @@
       "a": "3D by ncbi.nlm.nih.gov"
     },
     {
+      "u": "//marine-geo.org/",
+      "i": "//marine-geo.org/images/hawaii.jpg",
+      "n": "Marine Geoscience db",
+      "d": "data repository offering free public access",
+      "k": "sci,sea,env,db",
+      "a": "by marine-geo.org Columbia.edu Nsf.gov"
+    },
+    {
+      "u": "planet.html?q=//marine-geo.org/images/hawaii.jpg",
+      "i": "//marine-geo.org/images/hawaii.jpg",
+      "n": "Marine Geoscience 3D",
+      "d": "Hawai from MGDS repository public",
+      "k": "pac,sea,env,3D",
+      "a": "by marine-geo.org Columbia.edu Nsf.gov"
+    },
+    {
       "u": "tofractal.html",
       "i": "wall/tofractal.jpg",
       "n": "Moving Fractal",
@@ -927,7 +987,7 @@
       "a": "by miro.medium.com",
       "n": "Pohnpei Nan Madol",
       "k": "pac,env,recov",
-      "d": "FSM Environment constructions"
+      "d": "FSM Environment constructions🗿️"
     },
     {
       "u": "tile.html",
@@ -1020,7 +1080,25 @@
       "i": "https://d2v9mhsiek5lbq.cloudfront.net/eyJidWNrZXQiOiJsb21hLW1lZGlhLWl0Iiwia2V5IjoiZG1heHNwYWluLWVzLWltYWdlLWM2NmFiZjAzLWU3ZWItNDcyZi1hOWQ2LTkxZTQ1NGFkZGNjNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJoZWlnaHQiOjI0MH0sIndlYnAiOnsicXVhbGl0eSI6ODB9fX0=",
       "a": "dmax",
       "n": "machu-pichu peru",
-      "k": "world,art"
+      "k": "world,art,3D",
+      "d": "ruins🏰 historic🗿"
+    },
+    {
+      "u": "//pangaea.de/?t=Ecology",
+      "ii": "//pangaea.de/assets/v.b0840cade77ccae9fb48aacf6e520002/layout-images/pangaea-logo.png",
+      "i": "//pangaea.de/assets/v.b0840cade77ccae9fb48aacf6e520002/categories/ecology.jpg",
+      "n": "PANGAEA Ecology Forest db",
+      "d": "Data Publisher for Earth & Environmental Science",
+      "k": "sci,bio,env,db",
+      "a": "by doi.org/10.1038/s41597-023-02269-x pangaea.de"
+    },
+    {
+      "u": "planet.html?q=//pangaea.de/assets/v.b0840cade77ccae9fb48aacf6e520002/categories/ecology.jpg",
+      "i": "//pangaea.de/assets/v.b0840cade77ccae9fb48aacf6e520002/categories/ecology.jpg",
+      "n": "PANGAEA Ecology Forest 3D",
+      "d": "Data Publisher for Earth & Environmental Science",
+      "k": "vis,bio,env,3D",
+      "a": "by doi.org/10.1038/s41597-023-02269-x pangaea.de"
     },
     {
       "u": "details.html",
@@ -1043,7 +1121,7 @@
       "i": "//instillmindfulness.org/wp-content/uploads/2022/03/InStill-Home-banner-600x613.jpg",
       "u": "//instillmindfulness.org",
       "a": "by instillmindfulness.org",
-      "k": "world,mind",
+      "k": "world,mind,vol",
       "n": "a mindful world",
       "d": "Cultivating a mindful world for all",
       "e": "info@instillmindfulness.org"
@@ -1075,12 +1153,13 @@
     },
     {
       "u": "//snsm.org/notre-association/",
-      "n": "Sécurité en mer - Sea Rescue",
-      "d": "Le semi-rigide \"SNS 7-010\"",
+      "n": "Sécurité en mer, SaR",
+      "d": "VHF16 tél196 🏊‍ semi-rigide",
       "a": "© Augustin Navarranne at SNSM.org",
       "k": "sea,vol,world,csr",
-      "p": "info",
-      "i": "https://www.snsm.org/app/uploads/2026/01/snsm-sns155-augustin-navarranne.jpg"
+      "dd": "œuvre sans relâche pour secourir bénévolement 8, cité d’Antin, 75009 Paris + 33 1 56 02 64 64",
+      "i": "https://www.snsm.org/app/uploads/2026/01/snsm-sns155-augustin-navarranne.jpg",
+      "e": "sauveteur embarqué / nageur sauveteur/ bénévole à terre"
     },
     {
       "u": "planet.html?q=https://cdn.popupsmart.com/accounts/75764/uploads/AFP_20260810_C4CD4CR_v1_HighRes_ColombiaEarthquake-9b28ec85dda8df7b5dd15ad33ccd2aa6.jpeg",
@@ -1103,7 +1182,8 @@
       "a": "by SASEMAR salvamentomaritimo.es",
       "u": "//salvamentomaritimo.es",
       "n": "Maritime Rescue SAR",
-      "k": "sea,risk,medic"
+      "k": "sea,risk,medic",
+      "d": "💨🏊‍"
     },
     {
       "u": "https://www.unocha.org/publications/report/micronesia-federated-states/ocha-flash-update-fsm-palau-tropical-storm-haiyan-31w-0",
@@ -1153,7 +1233,15 @@
       "k": "code,ml,sci",
       "n": "Arc thanks",
       "d": "Acknowledging NASA Arc Resources",
-      "a": "by nasa.gov/"
+      "a": "by nasa.gov"
+    },
+    {
+      "i": "//isa.org.jm/wp-content/uploads/2022/03/ISA_logo_white.png.webp",
+      "u": "//isa.org.jm/deepdata-database/deepdata-dashboard/",
+      "k": "sea,bio,env,vis",
+      "n": "Deep Seabed💎 Dashboard",
+      "a": "by  isa.org.jm",
+      "d": "4 to 26 cruises/year in 💎 CRFC PMN PMS contracts"
     },
     {
       "u": "planet.html?q=https://www.itlos.org/fileadmin/assets/images/slider/slider4.jpg",
@@ -1240,7 +1328,7 @@
       "i": "//npr-brightspot.s3.amazonaws.com/c8/9b/1c3161004bdfb52cea82ab7e87a2/screenshot-2025-09-23-145929.png",
       "ii": "https://npr.brightspotcdn.com/dims4/default/50ea680/2147483647/strip/true/crop/950x600+0+0/resize/1760x1112!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc8%2F9b%2F1c3161004bdfb52cea82ab7e87a2%2Fscreenshot-2025-09-23-145929.png",
       "a": "by islapublic.org & brightspot & Joint Typhoon Warning Center",
-      "n": "Yap🇫🇲 Palau🇵🇼 cyclone alert",
+      "n": "Yap🇫🇲 Palau🇵🇼 cyclone💨 alert",
       "d": "North Pacific   Joint Typhoon Warning Center",
       "k": "pac,sea,risk,recov"
     },
@@ -1281,16 +1369,16 @@
       "u": "planet.html?q=https://windsrush.com/images/large/algarve-kite-center-coastline-view.webp",
       "i": "https://windsrush.com/images/large/algarve-kite-center-coastline-view.webp",
       "j": "https://windsrush.com/images/large/exploring-wing-sup-boards-kiteboarder-gliding.webp",
-      "d": "Faro Algarve Kite Center  portugal",
+      "d": "Faro Algarve Kite Center🏞️ portugal",
       "k": "pt,coast,sport",
       "a": "by windsrush.com/articles/algarve-kite-center-kiteboarding"
     },
     {
-      "n": "Formentor",
+      "n": "Formentor🌄",
       "i": "https://www.formenteraexpress.com/documents/25611860/29132428/Slide_fx.jpg/c8b0f866-30f1-4b26-64a3-a6dc07a34687?t=1717069720822",
       "u": "planet.html?q=https://www.formenteraexpress.com/documents/25611860/29132428/Slide_fx.jpg/c8b0f866-30f1-4b26-64a3-a6dc07a34687?t=1717069720822",
       "a": "by formenteraexpress.com",
-      "k": "world,sea"
+      "k": "world,sea,3D"
     },
     {
       "u": "/GeoInt/PNR-yaml.html",
@@ -1307,14 +1395,6 @@
       "n": "RoP Palau Koror",
       "d": "🇵🇼+300 islands, 196 square miles, over 325 miles of the North Pacific Ocean.",
       "k": "pac,sea,env,bio"
-    },
-    {
-      "u": "https://www.embodi3d.com/blogs/entry/408-3d-free-scapula-clavicle-and-humerus-models-in-3d-printable-stl-format/",
-      "i": "https://media.invisioncic.com/r248939/monthly_2019_11/gallery_4_5_13580.jpg.a65a953f254802ead319c4f23a513067.jpg",
-      "k": "medic,csr,3D",
-      "d": "3D Scapula, Clavicle, Humerus",
-      "n": "Clavicle",
-      "a": "by embodi3d.com/profile/8734-angel-sosa"
     },
     {
       "i": "https://www.pacific-r2r.org/sites/default/files/styles/news_image/public/2020-03/Group.JPG?itok=OnwM5Nt8",

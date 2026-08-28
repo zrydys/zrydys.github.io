@@ -896,7 +896,7 @@ products:
 - i: //instillmindfulness.org/wp-content/uploads/2022/03/InStill-Home-banner-600x613.jpg
   u: //instillmindfulness.org
   a: by instillmindfulness.org
-  k: world,mind
+  k: world,mind,vol
   n: a mindful world
   d: Cultivating a mindful world for all
   e: info@instillmindfulness.org
@@ -922,12 +922,13 @@ products:
   p: info
   a: zryDys 
 - u: //snsm.org/notre-association/
-  n: Sécurité en mer - Sea Rescue
-  d: Le semi-rigide "SNS 7-010" 
+  n: Sécurité en mer, SaR
+  d: VHF16 tél196 🏊‍ semi-rigide 
   a: © Augustin Navarranne at SNSM.org
   k: sea,vol,world,csr
-  p: info
+  dd: œuvre sans relâche pour secourir bénévolement 8, cité d’Antin, 75009 Paris + 33 1 56 02 64 64
   i: https://www.snsm.org/app/uploads/2026/01/snsm-sns155-augustin-navarranne.jpg
+  e: sauveteur embarqué / nageur sauveteur/ bénévole à terre
 
 - u: planet.html?q=https://cdn.popupsmart.com/accounts/75764/uploads/AFP_20260810_C4CD4CR_v1_HighRes_ColombiaEarthquake-9b28ec85dda8df7b5dd15ad33ccd2aa6.jpeg
   i: https://cdn.popupsmart.com/accounts/75764/uploads/AFP_20260810_C4CD4CR_v1_HighRes_ColombiaEarthquake-9b28ec85dda8df7b5dd15ad33ccd2aa6.jpeg
@@ -946,6 +947,7 @@ products:
   u: //salvamentomaritimo.es
   n: Maritime Rescue SAR
   k: sea,risk,medic
+  d: 💨🏊‍
 - u: https://www.unocha.org/publications/report/micronesia-federated-states/ocha-flash-update-fsm-palau-tropical-storm-haiyan-31w-0
   ii: https://www.unocha.org/themes/custom/common_design_subtheme/img/logos/ocha-lockup-blue.svg
   i: https://www.unocha.org/sites/default/files/styles/full_width_3_2_25/public/2026-03/WF1912022%2020240710_BGD_Mehedi-Rahman_Sirajganj-1008562.jpg.webp
