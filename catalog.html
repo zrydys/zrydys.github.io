@@ -83,7 +83,7 @@
                 attachFilterListeners() ;
                 attachSearchListeners() 
             } catch (error) {
-                console.error('Error loading products: ', error,product);
+                console.error('Error loading products: ', error);
                 document.getElementById('catalog').innerHTML = '<p>Error loading catalog</p>';
                 //cj2025 RESILIENCY & DRR advice to load recovery json here instead from a DIVERSIFIED source, 
                 // load Src2 
