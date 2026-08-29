@@ -76,7 +76,7 @@
       "i": "anim/maunakea.gif",
       "n": "Geometry & Galaxy",
       "d": "Night sky at Maunakea",
-      "k": "dive,sci,vis,pac",
+      "k": "VR,sci,vis,pac",
       "a": "CC BY-SA ZryDys"
     },
     {
@@ -150,7 +150,7 @@
       "i": "https://cdn.shortpixel.ai/spai/q_lossless+w_1066+h_711+to_auto+ret_img/kiterr.com/wp-content/uploads/ws-form/1/dropzonejs/27/Passaro-Kitesurf-School-10.jpg",
       "j": "https://cdn.shortpixel.ai/spai/q_lossless+w_1066+h_712+to_auto+ret_img/kiterr.com/wp-content/uploads/2019/01/kitesurfing-lagos-algarve-ria-formosa-natural-park-kiterrcom.jpg",
       "d": "Ilha de Armona & Ilha de Tavira - Sandbars Ria Formosa",
-      "k": "pt,coast,sport",
+      "k": "pt,coast,spo",
       "a": "by kiterr.com/kitespots/europe/kitesurfing-algarve-portugal"
     },
     {
@@ -173,7 +173,7 @@
       "n": "Search & Rescue",
       "i": "https://cdn-s-www.ledauphine.com/images/BEC03642-D182-4307-9CDC-73987CDA43AF/NW_detail/la-vedette-du-sauvetage-de-thonon-realise-entre-50-et-70-interventions-sur-le-leman-chaque-annee-archives-photo-le-dl-g-b-1693582839.jpg",
       "d": "Leman Lake S&R volunteers 🏊‍",
-      "k": "csr,sport,sea",
+      "k": "csr,spo,sea",
       "a": "by ledauphine.com/faits-divers-justice/2023/09/01/le-sauvetage-en-eaux-troubles-avec-la-penurie-de-benevoles",
       "s": "sound",
       "g": "lat,lon"
@@ -225,7 +225,7 @@
       "u": "planet.html?q=https://360-kite.com/wp-content/uploads/2023/02/KitesurfingObidoslagoon-Portugal-KiteControl-e1675374548554.jpg",
       "i": "https://360-kite.com/wp-content/uploads/2023/02/KitesurfingObidoslagoon-Portugal-KiteControl-e1675374548554.jpg",
       "d": "360  Kite  portugal",
-      "k": "pt,coast,sport",
+      "k": "pt,coast,spo",
       "a": "by 360-kite.com/kitesurf-camp/obidos"
     },
     {
@@ -272,7 +272,7 @@
       "i": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F211204189%2F161230038918%2F1%2Foriginal.20200821-161426?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C341%2C3240%2C1620&s=eac60385c2b9b0b1632ee002d62a3843",
       "u": "planet.html?q=https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F211204189%252F161230038918%252F1%252Foriginal.20200821-161426%3Fw%3D940%26auto%3Dformat%252Ccompress%26q%3D75%26sharp%3D10%26rect%3D0%252C341%252C3240%252C1620%26s%3Deac60385c2b9b0b1632ee002d62a3843",
       "n": "Tours",
-      "k": "sport,world",
+      "k": "spo,world",
       "a": "see evbuc.com on MALAGA SOUTH EXPERIENCES"
     },
     {
@@ -312,7 +312,7 @@
       "i": "https://boardandwind.com/images/large/kitesurfing-algarve-coast-action_10_28_2025_3c4ff966-b3d6-4245-9b58-204fe1db47d6.webp",
       "j": "https://boardandwind.com/images/large/kitesurfing-algarve-sunset_10_28_2025_98136ecb-10d1-4719-a10c-2752fdf15053.webp",
       "d": "In-Depth Kite Guide, faro portugal",
-      "k": "pt,coast,sport",
+      "k": "pt,coast,spo",
       "a": "by boardandwind.com/articles/kitesurfing-algarve-overview"
     },
     {
@@ -356,7 +356,7 @@
       "i": "thumb/humerus.jpg",
       "n": "Bones 3D Replica",
       "d": "Humerous 3D",
-      "k": "medic,sci,solid",
+      "k": "med,sci,solid",
       "a": "shoulder rotator thingiverse.com/thing:5373760"
     },
     {
@@ -364,7 +364,7 @@
       "i": "https://static.wixstatic.com/media/6b2d95_a8ed24c55b7441d484b112c25ac121c0~mv2.jpg/v1/fill/w_719,h_478,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/team-14.jpg",
       "n": "Championnat Judo",
       "d": "🥉 Une médaille historique pour le club",
-      "k": "sport,csr",
+      "k": "spo,csr",
       "a": "judo-club-carouge.ch  🇨🇭"
     },
     {
@@ -435,7 +435,7 @@
     {
       "u": "planet.html?q=https://i1.sndcdn.com/avatars-000015016802-hvtbbc-t200x200.jpg",
       "n": "SoundCloud Bowie",
-      "k": "music,3D",
+      "k": "A/V,3D",
       "i": "https://i1.sndcdn.com/avatars-000056737102-prx05v-t200x200.jpg",
       "a": "at soundcloud.com/ davidbowieofficial"
     },
@@ -476,7 +476,7 @@
       "u": "planet.html?q=https://static.wixstatic.com/media/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg/v1/fill/w_924,h_616,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg",
       "n": "Volunteers🏔️",
       "d": "kindness, collab, compassion make a difference",
-      "k": "csr,sport,vol",
+      "k": "csr,spo,vol",
       "i": "https://static.wixstatic.com/media/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg/v1/fill/w_924,h_616,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg",
       "a": "by volunteerhub.ch 🇨🇭"
     },
@@ -546,7 +546,7 @@
       "i": "https://github.com/dipterix/threeBrain/blob/master/adhoc/demo.gif?raw=true",
       "n": "R&D+i DatSci ML",
       "d": "cutting-edge technologies",
-      "k": "ml,medic,sci",
+      "k": "ml,med,sci",
       "p": "info",
       "a": "zryDys"
     },
@@ -563,7 +563,7 @@
       "i": "anim/elvis.gif",
       "n": "Elvis Piano",
       "d": "Elvis' Always for Piano",
-      "k": "music,3D",
+      "k": "A/V,3D",
       "p": "mvp",
       "a": "at MuseScore.com"
     },
@@ -579,7 +579,7 @@
     {
       "u": "https://www.embodi3d.com/blogs/entry/408-3d-free-scapula-clavicle-and-humerus-models-in-3d-printable-stl-format/",
       "i": "https://media.invisioncic.com/r248939/monthly_2019_11/gallery_4_5_13580.jpg.a65a953f254802ead319c4f23a513067.jpg",
-      "k": "medic,csr,3D",
+      "k": "med,csr,3D",
       "d": "3D Scapula, Clavicle, Humerus",
       "n": "Clavicle 🦴",
       "a": "by embodi3d.com/profile/8734-angel-sosa"
@@ -665,7 +665,7 @@
       "u": "diving.html",
       "i": "anim/diving.gif",
       "n": "diving",
-      "k": "dive,sea",
+      "k": "VR,sea,vis,inn",
       "a": "CC BY-SA ZryDys"
     },
     {
@@ -706,7 +706,7 @@
       "n": "newborn chimp",
       "i": "//ichef.bbci.co.uk/news/1536/cpsprodpb/95f8/live/517c0410-f531-11f0-b385-5f48925de19a.jpg.webp",
       "d": "Zoo welcomes first newborn chimpanzee in 17 years",
-      "k": "csr,medic,bio",
+      "k": "csr,med,bio",
       "a": "by BBC.com/news/articles/c17zp852wx7o"
     },
     {
@@ -731,8 +731,7 @@
       "i": "anim/forest.gif",
       "n": "Digital 🌲 Forest",
       "d": "3D Scene with Additive Printable trees",
-      "k": "dive,csr,bio",
-      "p": "dive",
+      "k": "VR,csr,bio",
       "a": "CC BY-SA ZryDys"
     },
     {
@@ -782,7 +781,7 @@
       "i": "anim/concert.gif",
       "n": "Pyramids & Concert",
       "d": "3D Immersive",
-      "k": "dive,music",
+      "k": "VR,A/V,code",
       "a": "CC BY-SA ZryDys"
     },
     {
@@ -797,7 +796,7 @@
       "u": "https://bbc.co.uk/programmes/p00zxy0t",
       "i": "https://ichef.bbci.co.uk/images/ic/480xn/p00yydzw.jpg",
       "n": "Short guide to stars",
-      "k": "sci,music",
+      "k": "sci,A/V",
       "d": "how stars shine, why we're all made of star stuff",
       "a": "by bbc.co.uk/programmes/p00zxy0t"
     },
@@ -840,7 +839,7 @@
       "n": "THONON-LES-BAINS Sauvetage",
       "i": "https://cdn-s-www.ledauphine.com/images/C9FCFA87-81C4-416F-90B8-54BF01337A81/NW_detail/exercice-pour-les-membres-du-sauvetage-la-victime-sur-son-bateau-est-victime-d-une-insolation-il-faut-vite-le-prendre-en-charge-brancardage-difficile-pour-passer-du-bateau-sur-le-quai-sans-tomber-a-l-eau-ici-c-est-une-victime-d-un-malaise-les-stagiaires-oeuvrent-sous-l-oeil-avise-des-professionnels-1338221016.jpg",
       "d": "des exercices sur le lac",
-      "k": "csr,medic,sea",
+      "k": "csr,med,sea",
       "a": "ledauphine.com/haute-savoie/2012/05/29/sauvetage-des-exercices-sur-le-lac-pour-se-rapprocher-de-la-realite"
     },
     {
@@ -848,7 +847,7 @@
       "ii": "cors? ch https://sosmediterranee.alwaysdata.net/prehome/images/ph1-visuel@2x.jpg",
       "n": "SaR Life-Saving Mission",
       "d": "maritime humanitarian organization, offices in France, Germany, Italy, Switzerland",
-      "k": "vol,risk,medic,sea",
+      "k": "vol,risk,med,sea",
       "u": "//www.sosmediterranee.org",
       "a": "by sosmediterranee.de and sosmediterranee.org",
       "e": "contact.ch@sosmediterranee.org  volontari@sosmediterranee.org."
@@ -899,14 +898,14 @@
       "n": "Health Informatics",
       "d": "epidemiology data science COVID-19",
       "i": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3b90/12427955/5a00a5bb8f0c/healthcare-13-02154-g003.jpg",
-      "k": "csr,sci,medic",
+      "k": "csr,sci,med",
       "a": "gitlab.com/crlhyn & https://pmc.ncbi.nlm.nih.gov/articles/PMC12427955/"
     },
     {
       "u": "planet.html?q=cach/F.jpg",
       "i": "cach/F.jpg",
       "n": "Las Futbolistas",
-      "k": "game,csr,sport"
+      "k": "game,csr,spo"
     },
     {
       "u": "keyr.html?q=inkkey&c=0xff385c",
@@ -917,7 +916,7 @@
     },
     {
       "n": "FIBA Micronesian Cup 2026",
-      "k": "pac,sport,env",
+      "k": "pac,spo,env",
       "u": "planet.html?q=https://assets.fiba.basketball/image/upload/w_700,h_394,c_fill,g_auto/q_auto/f_auto/v1786834487/ssoq337w2jksinbolfxt",
       "cors": 1,
       "d": "Basket Tahiti Palau FSM...",
@@ -937,7 +936,7 @@
       "i": "thumb/Epine.png",
       "n": "Epinefrine Molecule",
       "d": "Adrenaline C₉H₁₃NO₃ Molecule bonds",
-      "k": "solid,sci,medic",
+      "k": "solid,sci,med",
       "a": "3D by ncbi.nlm.nih.gov"
     },
     {
@@ -978,7 +977,7 @@
       "n": "Open Health science",
       "d": "epidemiology Informatics ML risk matrix",
       "i": "https://hispagua.cedex.es/sites/default/files/presa_sur.jpg",
-      "k": "csr,sci,medic",
+      "k": "csr,sci,med",
       "a": "github.com/infchg"
     },
     {
@@ -1024,7 +1023,7 @@
       "u": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12427955/",
       "n": "AI in Clinical Decision",
       "i": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3b90/12427955/5a00a5bb8f0c/healthcare-13-02154-g003.jpg",
-      "k": "ml,sci,medic",
+      "k": "ml,sci,med",
       "d": "AI in Clinical Decision Support Systems",
       "a": "Q.Abbas, W.Jeong, S. Won Lee"
     },
@@ -1064,7 +1063,7 @@
       "j": "otra protomen https://f4.bcbits.com/img/a2960923617_5.jpg",
       "i": "https://media.printables.com/media/prints/681338/images/5363590_cac2a901-ad42-40a6-af9d-1b995b6311f3_3801b427-031f-4a43-b952-be3a056ea890/thumbs/inside/1280x960/jpg/s.webp",
       "n": "Shoulder Blade Scan - Scapula",
-      "k": "medic,sci,3D",
+      "k": "med,sci,3D",
       "a": "cc-by-nc printables.com/@KubiV"
     },
     {
@@ -1130,7 +1129,7 @@
       "u": "https://linkedin.com/learning/machine-learning-fundamentals-for-healthcare/machine-learning-models-and-algorithms-in-healthcare",
       "n": "AI Colab Clinical",
       "i": "https://media.licdn.com/dms/image/v2/D560DAQEVAN76mOQ6lw/learning-public-crop_144_256/learning-public-crop_144_256/0/1708990552481",
-      "k": "ml,sci,medic",
+      "k": "ml,sci,med",
       "d": "AI ML optimize healthcare processes, tabular clinical datasets in Google Colab jupyter, classification, predictions,  clustering, localization.",
       "a": "linkedin course"
     },
@@ -1182,7 +1181,7 @@
       "a": "by SASEMAR salvamentomaritimo.es",
       "u": "//salvamentomaritimo.es",
       "n": "Maritime Rescue SAR",
-      "k": "sea,risk,medic",
+      "k": "sea,risk,med",
       "d": "💨🏊‍"
     },
     {
@@ -1201,7 +1200,7 @@
       "d": "Impulso funding",
       "n": "co-funded by the Impulso Program",
       "a": "by promalaga.es",
-      "k": "funds,pm"
+      "k": "inn,pm"
     },
     {
       "i": "https://ec.europa.eu/regional_policy/images/information-sources/logo-download-center/stickers.png",
@@ -1211,14 +1210,14 @@
       "d": "co-funded by the European Union",
       "n": "EU funding",
       "a": "by europe.eu FSE",
-      "k": "funds,pm"
+      "k": "inn,pm"
     },
     {
       "u": "https://sketchfab.com/3d-models/shoulder-joint-94489e01f40548b5a0b4f0a6477c36a7",
       "i": "https://media.sketchfab.com/models/94489e01f40548b5a0b4f0a6477c36a7/thumbnails/133b9e17e48e4e9ba9b8d961c4380dcb/904dfaeff0b446d7bd81b3862e6d9607.jpeg",
       "n": "Shoulder Joint",
       "d": "detailled 3D parts",
-      "k": "medic,sci,3D",
+      "k": "med,sci,3D",
       "a": "by  sketchfab.com/anatomy_dundee   Univ."
     },
     {
@@ -1226,7 +1225,7 @@
       "u": "planet.html?q=cach/ar.jpg",
       "n": "Arrival 2016",
       "a": "review at reelgood.com/search?q=arrival",
-      "k": "art,music"
+      "k": "art,A/V"
     },
     {
       "i": "fractalgold.png",
@@ -1289,7 +1288,7 @@
       "i": "thumb/Epine.png",
       "n": "NorEpinefrine NorAdre",
       "d": "C₈H₁₁NO₃ Molecule bonds",
-      "k": "solid,sci,medic",
+      "k": "solid,sci,med",
       "a": "3D by ncbi.nlm.nih.gov"
     },
     {
@@ -1320,7 +1319,7 @@
       "i": "https://media.sketchfab.com/models/36d0a9d34fd54a48940d4dccffecdb43/thumbnails/0083950e4f1948c0bb9ba24666d08c60/c3f019830e844763bfe0229988bdd10e.jpeg",
       "n": "foot bones",
       "d": "3D parts",
-      "k": "medic,sci,3D",
+      "k": "med,sci,3D",
       "a": "sketchfab.com/anatomy_dundee   University"
     },
     {
@@ -1343,7 +1342,7 @@
     {
       "u": "https://disasterlaw.ifrc.org/where-we-work",
       "i": "https://disasterlaw.ifrc.org/sites/default/files/styles/document_card_crop_252_234/public/media/images/2024-10/Screenshot%202024-10-29%20211116.png",
-      "k": "risk,gis,csr",
+      "k": "risk,gis,csr,law",
       "n": "IFRC Disaster Law",
       "d": "IFRC Disaster Law worldwide map",
       "a": "by IFRC disasterlaw.ifrc.org/where-we-work"
@@ -1370,7 +1369,7 @@
       "i": "https://windsrush.com/images/large/algarve-kite-center-coastline-view.webp",
       "j": "https://windsrush.com/images/large/exploring-wing-sup-boards-kiteboarder-gliding.webp",
       "d": "Faro Algarve Kite Center🏞️ portugal",
-      "k": "pt,coast,sport",
+      "k": "pt,coast,spo",
       "a": "by windsrush.com/articles/algarve-kite-center-kiteboarding"
     },
     {
@@ -1409,7 +1408,7 @@
       "n": "Explainable AI CDSS",
       "d": "Frequency of XAI methods, model-agnostic or specific, LIME SHAP and saliency Grad-CAM, attention ...",
       "i": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3b90/12427955/1f3a40d6a707/healthcare-13-02154-g001.jpg",
-      "k": "csr,ml,medic",
+      "k": "csr,ml,med",
       "a": "Q.Abbas et al. pmc.ncbi.nlm.nih.gov/articles/PMC12427955/"
     },
     {
@@ -1417,7 +1416,7 @@
       "u": "planet.html?q=https://360-kite.com/wp-content/uploads/2024/03/kitesurf.jpg",
       "i": "https://360-kite.com/wp-content/uploads/2024/03/kitesurf.jpg",
       "d": "Lagos Kite  portugal",
-      "k": "pt,coast,sport",
+      "k": "pt,coast,spo",
       "a": "by 360-kite.com/kitesurf-camp/lagos"
     },
     {
