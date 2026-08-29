@@ -106,7 +106,10 @@
             catalog.innerHTML = filteredProducts.map(product => `
                 <div class="product">
                    <a href="${ product.u && product.u.startsWith('http') && product.u ||  '/' +  product.u || '' }"  target='_new' >
+                    <!--hmm
                     <img src="${ product.i.startsWith('http') && product.i ||  '/' +  product.i }" alt="${product.n}" loading="lazy">
+->>
+                    <img src="${  product.i && product.i.startsWith('http')&& product.i ||  '/' +  product.i }" alt="${product.n}" loading="lazy">
                     <h3>${product.n}</h3>
                    </a> 
                     <p>${product.d || ""}</p>
