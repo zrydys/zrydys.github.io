@@ -495,7 +495,7 @@
       "i": "thumb/camp.jpg",
       "n": "Camper",
       "d": "Camper Van, Make it Home",
-      "k": "game,world",
+      "k": "ent,world",
       "p": "mvp",
       "a": "Reviews taptap.io/app/33677784  + header by  steamcommunity.com/app/2843190"
     },
@@ -529,7 +529,7 @@
       "i": "thumb/merge.jpg",
       "n": "Merge game moving",
       "d": "Merge with darkness - 3d effect",
-      "k": "game",
+      "k": "ent,3D,code",
       "p": "mvp",
       "a": "E."
     },
@@ -553,7 +553,7 @@
     {
       "u": "planet.html?q=cach/MD.jpg",
       "n": "Merge game",
-      "k": "game,vis",
+      "k": "ent,vis",
       "i": "cach/MD.jpg",
       "d": "Merge with darkness",
       "a": "E. (QR in pic)"
@@ -631,7 +631,7 @@
       "i": "cach/NS.jpg",
       "n": "Next Stop",
       "d": "game The Next Stop",
-      "k": "game",
+      "k": "ent",
       "p": "mvp",
       "a": "by X.com/paranoiddlusion?s=21&t=Y7Vkz-5FGGbo814UUxh4mw 🐦"
     },
@@ -648,7 +648,7 @@
       "u": "planet.html?q=cach/SG.jpg",
       "i": "cach/SG.jpg",
       "n": "Sigillum",
-      "k": "game",
+      "k": "ent",
       "p": "mvp",
       "a": "by X.com/closedroomstudio 🐦"
     },
@@ -857,7 +857,7 @@
       "i": "cach/SR.jpg",
       "n": "NOceaNoUs' SeaRangers",
       "d": "NOceaNoUs' SeaRangers game",
-      "k": "game,sea",
+      "k": "ent,sea",
       "p": "mvpc",
       "a": "by NOceaNoUs.com"
     },
@@ -905,7 +905,7 @@
       "u": "planet.html?q=cach/F.jpg",
       "i": "cach/F.jpg",
       "n": "Las Futbolistas",
-      "k": "game,csr,spo"
+      "k": "ent,csr,spo"
     },
     {
       "u": "keyr.html?q=inkkey&c=0xff385c",

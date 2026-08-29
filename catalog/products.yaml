@@ -396,7 +396,7 @@ products:
   i: thumb/camp.jpg
   n: Camper
   d: Camper Van, Make it Home
-  k: game,world
+  k: ent,world
   p: mvp
   a: Reviews taptap.io/app/33677784  + header by  steamcommunity.com/app/2843190 
 - u: planet.html?q=cach/CA.jpg
@@ -422,7 +422,7 @@ products:
   i: thumb/merge.jpg
   n: Merge game moving
   d: Merge with darkness - 3d effect
-  k: game
+  k: ent,3D,code
   p: mvp
   a: E.
 - u: planet.html?q=https://e4k4c4x9.delivery.rocketcdn.me/en/wp-content/uploads/sites/15/2025/11/ml-and-ai-696x418.jpg.webp 
@@ -440,7 +440,7 @@ products:
   a: zryDys  
 - u: planet.html?q=cach/MD.jpg
   n: Merge game 
-  k: game,vis
+  k: ent,vis
   i: cach/MD.jpg
   d: Merge with darkness 
   a: E. (QR in pic)
@@ -505,7 +505,7 @@ products:
   i: cach/NS.jpg
   n: Next Stop
   d: game The Next Stop 
-  k: game
+  k: ent
   p: mvp
   a: by X.com/paranoiddlusion?s=21&t=Y7Vkz-5FGGbo814UUxh4mw 🐦
   
@@ -520,7 +520,7 @@ products:
 - u: planet.html?q=cach/SG.jpg
   i: cach/SG.jpg
   n: Sigillum
-  k: game
+  k: ent
   p: mvp
   a: by X.com/closedroomstudio 🐦
 - i: //static.seashepherdglobal.org/media/filer_public_thumbnails/filer_public/ad/2a/ad2ab508-3e85-4c54-a343-6c6d214ca040/170210-gl-nature-05-_gnl6084x1600.jpg__3200x1800_q95_crop_subsampling-2.jpg
@@ -689,7 +689,7 @@ products:
   i: cach/SR.jpg
   n: NOceaNoUs' SeaRangers
   d: NOceaNoUs' SeaRangers game
-  k: game,sea
+  k: ent,sea
   p: mvpc
   a: by NOceaNoUs.com
 - u: and.html
@@ -727,7 +727,7 @@ products:
 - u: planet.html?q=cach/F.jpg 
   i: cach/F.jpg
   n: Las Futbolistas
-  k: game,csr,spo
+  k: ent,csr,spo
   
 - u: keyr.html?q=inkkey&c=0xff385c
   i: thumb/ink3.jpg
