@@ -83,7 +83,7 @@
                 attachFilterListeners() ;
                 attachSearchListeners() 
             } catch (error) {
-                console.error('Error loading products:', error,product);
+                console.error(f'Error loading products: {product}', error);
                 document.getElementById('catalog').innerHTML = '<p>Error loading catalog</p>';
                 //cj2025 RESILIENCY & DRR advice to load recovery json here instead from a DIVERSIFIED source, 
                 // load Src2 
@@ -108,7 +108,7 @@
                    <a href="${ product.u && product.u.startsWith('http') && product.u ||  '/' +  product.u || '' }"  target='_new' >
                     <!--hmm
                     <img src="${ product.i.startsWith('http') && product.i ||  '/' +  product.i }" alt="${product.n}" loading="lazy">
-->>
+-->
                     <img src="${  product.i && product.i.startsWith('http')&& product.i ||  '/' +  product.i }" alt="${product.n}" loading="lazy">
                     <h3>${product.n}</h3>
                    </a> 
