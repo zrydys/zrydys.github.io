@@ -72,14 +72,6 @@
       "b": "base"
     },
     {
-      "u": "diving.html?o=menger&e=cubmau",
-      "i": "anim/maunakea.gif",
-      "n": "Geometry & Galaxy",
-      "d": "Night sky at Maunakea",
-      "k": "VR,sci,vis,pac",
-      "a": "CC BY-SA ZryDys"
-    },
-    {
       "d": "Kapingamarangi climate (FM🇫🇲Carolines v. ES🇪🇸) with heavy rainfall year-round",
       "i": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/USCGC_Oliver_Henry_%28WPC_1140%29_visits_Kapingamarangi_Atoll_%289599459%29.jpg/250px-USCGC_Oliver_Henry_%28WPC_1140%29_visits_Kapingamarangi_Atoll_%289599459%29.jpg",
       "n": "tropical rainforest climate Af",
@@ -92,7 +84,8 @@
       "d": "locations from the U.S. Animal Telemetry Network (ATN)",
       "i": "https://ncei.noaa.gov/access/metadata/landing-page/bin/gfx?id=gov.noaa.nodc:IOOS-ATN-STP",
       "a": "by ncei.noaa.gov/data/oceans/ioos/atn/",
-      "u": "//ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:IOOS-ATN-STP"
+      "u": "//ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:IOOS-ATN-STP",
+      "e": "ncei.info@noaa.gov"
     },
     {
       "u": "keyr.html?q=broach&c=0x1111aa",
@@ -1203,6 +1196,23 @@
       "k": "inn,pm"
     },
     {
+      "k": "csr,sea,gis",
+      "u": "//portwatch.imf.org/",
+      "d": "monitor simulate maritime trade flows disruptions",
+      "cors": "ok",
+      "n": "maritime flows changes",
+      "a": "by IMF.org",
+      "i": "//imf.org/-/media/images/imf/data/home/banners/data-full-width-data-portal.png"
+    },
+    {
+      "u": "diving.html?o=menger&e=cubmau",
+      "i": "anim/maunakea.gif",
+      "n": "Geometry & Galaxy",
+      "d": "Night sky at Maunakea",
+      "k": "VR,sci,vis,pac",
+      "a": "CC BY-SA ZryDys"
+    },
+    {
       "i": "https://ec.europa.eu/regional_policy/images/information-sources/logo-download-center/stickers.png",
       "r": "https://ec.europa.eu/regional_policy/information-sources/logo-download-center_en?cjreferenc",
       "u": "move.html?q=forest.jpg",
@@ -1467,6 +1477,18 @@
       "k": "tel,pm,world",
       "a": "by ITU.int",
       "d": "​​The World Telecommunication/ICT Policy Forum :Nassau"
+    },
+    {
+      "i": "//imf.org/-/media/images/imf/home-page/main-slider/2026/08/rotator-md-jackson-hole-aug26-idon-white-stock-2284053527.jpg",
+      "u": "//IMF.org",
+      "uu": "https://portwatch.imf.org/  monitor and simulate disruptions to maritime trade flows.",
+      "cors": "ok",
+      "n": "global economic data",
+      "k": "csr,world",
+      "d": "Jackson Hole Economic Policy Symposium",
+      "a": "by IMF.org Jackson Hole Symposium",
+      "e": "DataHelp@imf.org",
+      "ii": "data mapper https://www.imf.org/-/media/images/imf/data/home/banners/data-full-width-data-mapper.png DataHelp@imf.org."
     }
   ]
 }
