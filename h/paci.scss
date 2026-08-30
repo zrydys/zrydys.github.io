@@ -1,0 +1,30 @@
+#### 26.08.29 at 20:35 
+.product {
+  display: square; /* Changed from text to square */
+}
+
+.product::before {
+  content: '';
+  width: 100%; /* Make it a full block element */
+  height: 100%;
+  background-color: #ccc; /* Add some background color for visual separation */
+}
+
+.m {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px; /* Adjust font size and line height according to your needs */
+}
+
+.m::before {
+  content: '';
+  width: 40px; /* Set a fixed width for the engine icon */
+  height: 20px; /* Set a fixed height for the engine icon */
+  background-color: #2E865F; /* Dark green color */
+  border-radius: 50%; /* Make it a circle */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%); /* Center the icon vertically */
+}

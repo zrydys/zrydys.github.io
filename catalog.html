@@ -158,8 +158,10 @@ function attachFilterListeners() {
   // console.log ( window.location.href+"?&k="+category  );
   //const el = document.getElementById('current-url');
   // if (ell) {
-    ell.href =  "/catalog.html?k="+category  ;
-    ell.textContent =   "/catalog.html?k="+category  ;
+    newURL =  "/catalog.html?k="+category  ; //cj 26.08.30 replaced by the history /c/
+    newURL =  '/c/'+category  ;
+    ell.href =  newURL;
+    ell.textContent = newURL;
     
 	  // This will replace the current URL without affecting the browser history
 	 // window.history.replaceState(null, null,  "/catalog.html?k="+category      );   //after click rewrite
