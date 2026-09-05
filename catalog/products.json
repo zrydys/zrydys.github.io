@@ -292,6 +292,14 @@
       "i": "cach/cor.jpg"
     },
     {
+      "u": "//wikipedia.org/",
+      "i": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Nan_madol.jpg",
+      "a": "by wikimedia.org",
+      "n": "Pohnpei Nan Madol",
+      "k": "pac,env,world",
+      "d": "FSM constructions🗿️"
+    },
+    {
       "u": "mvpc.html?q=https://www.fcc.gov/themes/custom/fcc/assets/images/fcc-seal.png",
       "i": "https://www.fcc.gov/themes/custom/fcc/assets/images/fcc-seal.png",
       "n": "GMDSS at Sea",
@@ -995,9 +1003,9 @@
       "u": "planet.html?q=https://miro.medium.com/0%2A9lyy3MHQBKL3-nL7",
       "i": "https://miro.medium.com/0%2A9lyy3MHQBKL3-nL7",
       "a": "by miro.medium.com",
-      "n": "Pohnpei Nan Madol",
+      "n": "Pohnpei quarry pit",
       "k": "pac,env,recov",
-      "d": "FSM Environment constructions🗿️"
+      "d": "FSM Environment mine🇫🇲"
     },
     {
       "u": "tile.html",
@@ -1447,6 +1455,14 @@
       "i": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3b90/12427955/1f3a40d6a707/healthcare-13-02154-g001.jpg",
       "k": "csr,ml,med",
       "a": "Q.Abbas et al. pmc.ncbi.nlm.nih.gov/articles/PMC12427955/"
+    },
+    {
+      "n": "Languages 🇫🇲Micronesia",
+      "d": "FSM languages notes",
+      "k": "db,lang,pac",
+      "i": "https://islands.fm/assets/images/3-min.png",
+      "u": "/blog/FSM-lang.md",
+      "a": "by ZryDys"
     },
     {
       "n": "Lagos Obidos Kite",

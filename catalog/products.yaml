@@ -240,6 +240,13 @@ products:
   n: 3D Corridor
   k: 3D
   i: cach/cor.jpg
+- u: //wikipedia.org/
+  i: https://upload.wikimedia.org/wikipedia/commons/c/c3/Nan_madol.jpg
+  a: by wikimedia.org
+  n: Pohnpei Nan Madol
+  k: pac,env,world
+  d: FSM constructions🗿️ 
+  
 - u: mvpc.html?q=https://www.fcc.gov/themes/custom/fcc/assets/images/fcc-seal.png   
   i:  https://www.fcc.gov/themes/custom/fcc/assets/images/fcc-seal.png
   n: GMDSS at Sea
@@ -252,6 +259,10 @@ products:
   k: 3D,code,vis
   i: https://avatars.githubusercontent.com/u/16047363
   a: by github.com/Raydonal
+  
+  
+  
+  
 - n: Kitesurfing in the Algarve
   u: planet.html?q=https://boardandwind.com/images/large/kitesurfing-algarve-coast-action_10_28_2025_3c4ff966-b3d6-4245-9b58-204fe1db47d6.webp
   i: https://boardandwind.com/images/large/kitesurfing-algarve-coast-action_10_28_2025_3c4ff966-b3d6-4245-9b58-204fe1db47d6.webp
@@ -798,9 +809,10 @@ products:
 - u: planet.html?q=https://miro.medium.com/0%2A9lyy3MHQBKL3-nL7
   i: https://miro.medium.com/0%2A9lyy3MHQBKL3-nL7
   a: by miro.medium.com
-  n: Pohnpei Nan Madol
+  n: Pohnpei quarry pit
   k: pac,env,recov
-  d: FSM Environment constructions🗿️ 
+  d: FSM Environment mine🇫🇲
+
 - u: tile.html
   i: thumb/tiles.jpg
   n: tiles 3D
@@ -1156,6 +1168,13 @@ products:
   i: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3b90/12427955/1f3a40d6a707/healthcare-13-02154-g001.jpg
   k: csr,ml,med
   a: Q.Abbas et al. pmc.ncbi.nlm.nih.gov/articles/PMC12427955/
+- n: Languages 🇫🇲Micronesia
+  d: FSM languages notes
+  k: db,lang,pac
+  i: https://islands.fm/assets/images/3-min.png 
+  u: /blog/FSM-lang.md
+  a: by ZryDys
+
 - n: Lagos Obidos Kite
   u: planet.html?q=https://360-kite.com/wp-content/uploads/2024/03/kitesurf.jpg
   i: https://360-kite.com/wp-content/uploads/2024/03/kitesurf.jpg
