@@ -150,6 +150,14 @@ products:
   d: 3D Moving fractal javascript
   k: math,ml,vis,code
   u: planet.html?q=zrydys.png
+  
+- i: thumb/ITCcabo.png
+  u: //intracen.org
+  n: Trade Africa Maps
+  k: csr,world,gis
+  d: maps Cabo Verde Western Sahara Tunis...
+  a: by intracen.org 
+ 
 - u: mvpc.html?q=https://oceanweb.com/wp-content/uploads/2023/05/Iridium-GMDSS.png  
   i: https://oceanweb.com/wp-content/uploads/2023/05/Iridium-GMDSS.png
   j: had www.
