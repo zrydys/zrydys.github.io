@@ -342,6 +342,14 @@ products:
   i: //unesco.org/sites/default/files/2022-09/VIet-Nam_10_Phong_Nam_panorama_credit_Pham_Ngoc_Khoa_web.jpg
   a: by Viet Nam unesco.org/en/iggp 
   k: bio,world,env,csr
+  u: //unesco.org/
+- n: disaster resilience cycle🌀
+  d: DRR+Modern-Agile🔻know ✳️️️govern 🔹involve 🔸prepare
+  i: thumb/DRRcycle.png
+  a: by UNDRR with ZryDys' icons
+  k: risk,pac,env,csr
+  u: DRR27.html
+  v: /GeoInt/DRR27.html el otro 
 - u: planet.html?q=https://i1.sndcdn.com/avatars-000015016802-hvtbbc-t200x200.jpg
   n: SoundCloud Bowie  
   k: A/V,3D
@@ -790,7 +798,15 @@ products:
   n: tiles 3D
   d: Group Recurrent 3D Tiling
   k: math,art
-  a: CC BY-SA ZryDys 
+  a: CC BY-SA ZryDys
+- d: humanitarian data collection
+  n: KoboToolbox
+  i: //avatars.githubusercontent.com/u/5543677?s=200&v=4
+  u: //github.com/kobotoolbox
+  k: csr,env
+  hum: hum new. int, sec, dis, ris, res, pro, soc
+  a: by kobotoolbox.org team
+  
 - u: planet.html?q=https://m.media-amazon.com/images/I/716ReBVYSsL._AC_UY218_.jpg
   i: https://m.media-amazon.com/images/I/716ReBVYSsL._AC_UY218_.jpg
   a: amazon.com CISA Exam Prep book
