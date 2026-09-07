@@ -1,10 +1,10 @@
 2027 Results towards Strengthening disaster resilience
 ⬦ Modern-Agile [^1]🌀 aligns DRR objectives: 
 
-- [ ] 1 know understand 🔻
-- [ ] 2 govern manage ✳️
-- [ ] 3 involve -> resilience🔹
-- [ ] 4 prepare -> recover resp🔸
+- [ ] 1 know understand 🔻❓
+- [ ] 2 govern manage ✳️♻️
+- [ ] 3 involve -> resilience🔹🌐
+- [ ] 4 prepare -> recover resp🔸⚡
 
 Agile DRR cycle🔻✳️🔹🔸 [ZryDys.github.io/GeoInt/DRR.html ](https://ZryDys.github.io/GeoInt/DRR.html )
 

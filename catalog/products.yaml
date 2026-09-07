@@ -260,7 +260,39 @@ products:
   i: https://avatars.githubusercontent.com/u/16047363
   a: by github.com/Raydonal
   
-  
+- d: Economic Commission for Europe UNECE
+  n: Statistical Business Process
+  k: hum,csr,sci,pm
+  u: https://unece.org/statistics/gsbpm-v5.2
+  i: thumb/WHOrdc.png
+- n: Indigenous Navigator Consortium
+  d:  Data Portal. IWGIA, et al.
+  k: hum,csr,db
+  u: //indigenousnavigator.org/
+  i: thumb/ISAgis.png
+- i: //wwwcdn.imo.org/localresources/en/PublishingImages/TC%20Dashboard%20thumbnail_updated_medium.jpg
+  u: //tcportal.imo.org/
+  k: sea,csr,pm,world
+  a: by IMO.org
+  n: Tech Cooperation
+  d: Maritime Tech Cooperation 
+            
+- d: Convention . International Labour Organization
+  n: Indigenous and Tribal Peoples
+  i: https://rmkcdn.successfactors.com/1e1aab27/da7638e6-0ed7-423b-94c1-d.jpg
+  a: by ILO.org + img successfactors
+  k: hum,csr,law,db
+  u: //normlex.ilo.org/dyn/nrmlx_en/f?p=NORMLEXPUB:12100:0::NO::P12100_ILO_CODE:C169
+- d: humanitarian data collection
+  n: KoboToolbox Login
+  i: //eu.kobotoolbox.org/static/compiled/signup_photo.jpg 
+  u: //eu.kobotoolbox.org/accounts/login/
+  k: csr,env,hum
+  a: by kobotoolbox.org team
+  i2: thumb/ISAbio.png
+  i3: thumb/seaDB.png
+  i4: thumb/WHObena.png
+   
   
   
 - n: Kitesurfing in the Algarve
@@ -823,7 +855,7 @@ products:
   n: KoboToolbox
   i: //avatars.githubusercontent.com/u/5543677?s=200&v=4
   u: //github.com/kobotoolbox
-  k: csr,env
+  k: csr,env,hum
   hum: hum new. int, sec, dis, ris, res, pro, soc
   a: by kobotoolbox.org team
   
@@ -1230,3 +1262,51 @@ products:
   e: DataHelp@imf.org
   ii: data mapper https://www.imf.org/-/media/images/imf/data/home/banners/data-full-width-data-mapper.png DataHelp@imf.org. 
 
+- d: Of, High Commissioner for Human Rights
+  n: Human Rights–Based Data
+  k: hum,csr,pac,db
+  u: //ohchr.org/en/documents/tools-and-resources/human-rights-based-approach-data-leaving-no-one-behind-2030-agenda 
+  i: thumb/ISAdb.png
+- n: Rights of Indigenous Peoples Declaration 
+  d: Adopted by the UN General Assembly
+  k: hum,csr,pac
+  u: //ohchr.org/en/indigenous-peoples/united-nations-declaration-rights-indigenous-peoples
+  i: thumb/ITCcabo.png
+- n: Indigenous Peoples and UN 
+  d: ohchr for Human Rights
+  k: hum,csr,sus
+  u: //ohchr.org/en/publications/fact-sheets/fact-sheet-no-09-rev-2-indigenous-peoples-and-united-nations-human-rights 
+- n: UN Forum on Indigenous Issues
+  d: Declaration on the Rights of Indigenous Peoples
+  k: hum,csr,pac
+  u: //un.org/esa/socdev/unpfii/documents/faq_drips_en.pdf
+  i: thumb/DRRcycle.png
+
+- d: humanitarian data collection
+  n: KoboToolbox Login
+  i: //kf.kobotoolbox.org/static/compiled/signup_photo.jpg 
+  u: //kf.kobotoolbox.org/accounts/login/
+  k: csr,env,hum
+  a: by kobotoolbox.org team
+ 
+ 
+- il: //imo.org/Content/images/img/English_Colour_RGB_Horizontal.png
+  i: //wwwcdn.imo.org/localresources/en/PublishingImages/entry-bg3.jpg
+  u: //imo.org/en/ourwork/facilitation/pages/imocompendium.aspx
+  k: sea,law,risk
+  a: by IMO.org
+  n: Facilitation and Electronic Business
+  d: Maritime IMO Compendium  model FAL
+- i: //kalimah-center.com/wp-content/uploads/2024/10/Exploring-Arabic-Words_-Meaning-and-Usage-1536x864.webp
+  u: //kalimah-center.com/arabic-words/
+  k: csr,lang,world
+  a: by kalimah-center.com  
+  n: Arabic Words 
+  d: 500+ Arabic Words & Vocabulary 
+ 
+- i: //wwwcdn.imo.org/localresources/en/PublishingImages/SDGs.jpg
+  u: //imo.org/en/MediaCentre/HotTopics/Pages/SustainableDevelopmentGoals.aspx
+  k: sea,law,sus,csr
+  a: by IMO.org
+  n: SDG 2030
+  d: Sustainable Development Goals
