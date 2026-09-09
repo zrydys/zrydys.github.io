@@ -265,17 +265,25 @@ products:
   k: hum,csr,sci,pm
   u: https://unece.org/statistics/gsbpm-v5.2
   i: thumb/WHOrdc.png
+- i: thumb/WHObena.png
+  u: //who.int
+  k: med,risk,gis 
+  a: by who.int
+  n: Epidemic Maps
+  d: WHO GIS data
+    
 - n: Indigenous Navigator Consortium
   d:  Data Portal. IWGIA, et al.
   k: hum,csr,db
   u: //indigenousnavigator.org/
   i: thumb/ISAgis.png
 - i: //wwwcdn.imo.org/localresources/en/PublishingImages/TC%20Dashboard%20thumbnail_updated_medium.jpg
+  icool: //tcportal.imo.org/Content/img/IMO%20maritime%20digitalization_banner.jpg
   u: //tcportal.imo.org/
   k: sea,csr,pm,world
   a: by IMO.org
   n: Tech Cooperation
-  d: Maritime Tech Cooperation 
+  d: Maritime Tech Coop digitalization
             
 - d: Convention . International Labour Organization
   n: Indigenous and Tribal Peoples
@@ -289,9 +297,7 @@ products:
   u: //eu.kobotoolbox.org/accounts/login/
   k: csr,env,hum
   a: by kobotoolbox.org team
-  i2: thumb/ISAbio.png
   i3: thumb/seaDB.png
-  i4: thumb/WHObena.png
    
   
   
@@ -1267,6 +1273,14 @@ products:
   k: hum,csr,pac,db
   u: //ohchr.org/en/documents/tools-and-resources/human-rights-based-approach-data-leaving-no-one-behind-2030-agenda 
   i: thumb/ISAdb.png
+ 
+- i: //cdn.who.int/media/images/default-source/thumbnails-global/10_proposals_cover.tmb-144v.png?sfvrsn=28c55daa_1
+  u: //www.who.int/initiatives/eios
+  k: med,risk,sci 
+  a: by who.int
+  n: Epidemic Intell
+  d:   collect, analyse and interpret data.
+  
 - n: Rights of Indigenous Peoples Declaration 
   d: Adopted by the UN General Assembly
   k: hum,csr,pac
@@ -1275,6 +1289,7 @@ products:
 - n: Indigenous Peoples and UN 
   d: ohchr for Human Rights
   k: hum,csr,sus
+  i: thumb/ISAbio.png
   u: //ohchr.org/en/publications/fact-sheets/fact-sheet-no-09-rev-2-indigenous-peoples-and-united-nations-human-rights 
 - n: UN Forum on Indigenous Issues
   d: Declaration on the Rights of Indigenous Peoples
@@ -1288,8 +1303,6 @@ products:
   u: //kf.kobotoolbox.org/accounts/login/
   k: csr,env,hum
   a: by kobotoolbox.org team
- 
- 
 - il: //imo.org/Content/images/img/English_Colour_RGB_Horizontal.png
   i: //wwwcdn.imo.org/localresources/en/PublishingImages/entry-bg3.jpg
   u: //imo.org/en/ourwork/facilitation/pages/imocompendium.aspx
@@ -1297,6 +1310,14 @@ products:
   a: by IMO.org
   n: Facilitation and Electronic Business
   d: Maritime IMO Compendium  model FAL
+ 
+- i: //iris.who.int/server/api/core/bitstreams/901cda20-c975-4b93-83c2-8e6682740789/content
+  u: //who.int/emergencies/surveillance
+  k: med,risk,recov 
+  a: by who.int
+  n: Early warning + response
+  d: emergencies Early warning alert and response (EWAR) 
+ 
 - i: //kalimah-center.com/wp-content/uploads/2024/10/Exploring-Arabic-Words_-Meaning-and-Usage-1536x864.webp
   u: //kalimah-center.com/arabic-words/
   k: csr,lang,world
@@ -1310,3 +1331,10 @@ products:
   a: by IMO.org
   n: SDG 2030
   d: Sustainable Development Goals
+- i: //iris.who.int/server/api/core/bitstreams/8ebfa948-b1c6-4802-9b77-dacc2e1e9193/content
+  u: //ssa.who.int
+  k: med,risk,cyb
+  a: by who.int
+  n: Attacks Surveillance
+  d: Surveillance of Attacks on Healthcare 
+ 
