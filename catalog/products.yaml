@@ -31,8 +31,8 @@ products:
   a: by hugetim.github.io
 - n: Visiting Faro 
   u: planet.html?q=https://s7g10.scene7.com/is/image/barcelo/que-ver-y-hacer-en-faro-portugal-Arco-da-Vila
-  i: https://s7g10.scene7.com/is/image/barcelo/que-ver-y-hacer-en-faro-portugal-Arco-da-Vila
-  ii: ?&&fmt=webp-alpha&qlt=75&wid=1200&fit=crop,1
+  i: //s7g10.scene7.com/is/image/barcelo/que-ver-y-hacer-en-faro-portugal-Arco-da-Vila?&&fmt=webp-alpha&qlt=75&wid=1200&fit=crop,1
+  ii: failed
   j: https://partiupelomundo.com/wp-content/uploads/2017/02/Pontos-turisticos-em-Faro.jpg 
   jj: https://a.travel-assets.com/findyours-php/viewfinder/images/res70/232000/232231-Faro-District.jpg
   d: Visitar faro portugal
@@ -111,13 +111,7 @@ products:
   d: 1.7M square miles (Hawaii to Mexico) ⚒️mining cobalt, nickel, manganese, copper..  
   i: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Location_of_the_Clarion_Clipperton_Zone.png/250px-Location_of_the_Clarion_Clipperton_Zone.png
  
-- u: glsl-fractal.html
-  i: anim/glslfract.gif
-  n: Fractal shader
-  d: Fractal by Shader GLSL c GPU code
-  k: math,code,vis,art
-  s: fractal
-  a: CC BY-SA ZryDys
+
 - n: Kitesurfing in Algarve, Portugal 
   u: planet.html?q=https://cdn.shortpixel.ai/spai/q_lossless+w_1066+h_711+to_auto+ret_img/kiterr.com/wp-content/uploads/ws-form/1/dropzonejs/27/Passaro-Kitesurf-School-10.jpg
   i: https://cdn.shortpixel.ai/spai/q_lossless+w_1066+h_711+to_auto+ret_img/kiterr.com/wp-content/uploads/ws-form/1/dropzonejs/27/Passaro-Kitesurf-School-10.jpg
@@ -264,14 +258,16 @@ products:
   n: Statistical Business Process
   k: hum,csr,sci,pm
   u: https://unece.org/statistics/gsbpm-v5.2
-  i: thumb/WHOrdc.png
+  i: thumb/seaDB.png
+   
+  
 - i: thumb/WHObena.png
-  u: //who.int
-  k: med,risk,gis 
+  u: //espen.afro.who.int/maps-data/countries
+  k: med,risk,gis,db
   a: by who.int
-  n: Epidemic Maps
-  d: WHO GIS data
-    
+  n: Epidemic Maps🌏 ESPEN
+  d: WHO GIS data maaping
+
 - n: Indigenous Navigator Consortium
   d:  Data Portal. IWGIA, et al.
   k: hum,csr,db
@@ -297,9 +293,7 @@ products:
   u: //eu.kobotoolbox.org/accounts/login/
   k: csr,env,hum
   a: by kobotoolbox.org team
-  i3: thumb/seaDB.png
-   
-  
+
   
 - n: Kitesurfing in the Algarve
   u: planet.html?q=https://boardandwind.com/images/large/kitesurfing-algarve-coast-action_10_28_2025_3c4ff966-b3d6-4245-9b58-204fe1db47d6.webp
@@ -576,7 +570,11 @@ products:
   k: csr,pm,env
   p: info
   a: ZryDys csr with WikiMedia images
-  
+- d: ESPEN Data + Statistics
+  n: 🌡Health Dashboards📈
+  k: med,sus,sci,db
+  u: https://espen.afro.who.int/maps-data/dashboards
+  i: thumb/WHOrdc.png  
 - u: planet.html?q=cach/SG.jpg
   i: cach/SG.jpg
   n: Sigillum
@@ -637,6 +635,7 @@ products:
   a: by  isa.org.jm 
   d:  213+ cruises and 204K bio🌿 622K geo🌄 samples
 
+  
 - u: esch4.html?q=https://www.itlos.org/fileadmin/_processed_/0/2/csm_2721329_1__9c737b291a.jpg
   i: https://www.itlos.org/fileadmin/_processed_/0/2/csm_2721329_1__9c737b291a.jpg
   d: Saint Vincent & the Grenadines v. Guinea hearing, Hamburg - SAIGA case - 
@@ -801,6 +800,12 @@ products:
   d: Basket Tahiti Palau FSM...
   a: by fiba.basketball/en/events/fiba-micronesian-cup-2026/news/fsm-move-closer-to-tahiti-dream-with-composed-win-over-palau
   i: https://assets.fiba.basketball/image/upload/w_700,h_394,c_fill,g_auto/q_auto/f_auto/v1786834487/ssoq337w2jksinbolfxt
+- d: exploring ISA maps data
+  n: Geo Ocean Data
+  k: sea,bio,env,db
+  u:  by  isa.org.jm  
+  i: thumb/seaDB.png
+  u: //isa.org.jm/deepdata-database/ 
 - u: tiles.html
   i: thumb/alhambra.jpg
   n: Alhambra Tile 
@@ -842,7 +847,7 @@ products:
   n: Open Health science
   d: epidemiology Informatics ML risk matrix 
   i: https://hispagua.cedex.es/sites/default/files/presa_sur.jpg
-  k: csr,sci,med
+  k: csr,sci,med,hum
   a: github.com/infchg
 - u: planet.html?q=https://miro.medium.com/0%2A9lyy3MHQBKL3-nL7
   i: https://miro.medium.com/0%2A9lyy3MHQBKL3-nL7
@@ -1275,11 +1280,11 @@ products:
   i: thumb/ISAdb.png
  
 - i: //cdn.who.int/media/images/default-source/thumbnails-global/10_proposals_cover.tmb-144v.png?sfvrsn=28c55daa_1
-  u: //www.who.int/initiatives/eios
+  u: //who.int/initiatives/eios
   k: med,risk,sci 
   a: by who.int
-  n: Epidemic Intell
-  d:   collect, analyse and interpret data.
+  n: Epidemic Intell🌡 
+  d: collect, analyse and interpret data.
   
 - n: Rights of Indigenous Peoples Declaration 
   d: Adopted by the UN General Assembly
@@ -1290,7 +1295,6 @@ products:
   d: ohchr for Human Rights
   k: hum,csr,sus
   i: thumb/ISAbio.png
-  ii: parecia esta
   u: //ohchr.org/en/publications/fact-sheets/fact-sheet-no-09-rev-2-indigenous-peoples-and-united-nations-human-rights 
 - n: UN Forum on Indigenous Issues
   d: Declaration on the Rights of Indigenous Peoples
@@ -1331,7 +1335,14 @@ products:
   k: sea,law,sus,csr
   a: by IMO.org
   n: SDG 2030
-  d: Sustainable Development Goals
+  d: Sustainable Development Goalsç
+- u: glsl-fractal.html
+  i: anim/glslfract.gif
+  n: Fractal shader
+  d: Fractal code Shader GLSL C GPU
+  k: math,code,vis,art
+  s: fractal
+  a: CC BY-SA ZryDys
 - i: //iris.who.int/server/api/core/bitstreams/8ebfa948-b1c6-4802-9b77-dacc2e1e9193/content
   u: //ssa.who.int
   k: med,risk,cyb
