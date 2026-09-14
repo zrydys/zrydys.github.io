@@ -233,6 +233,7 @@
       "d": "published ML demos online",
       "a": "huggingface.co/spaces/zrydys/ml-demo",
       "i": "hugg.jpg",
+      "ii": "https://huggingface.co/front/assets/huggingface_logo.svg",
       "n": "LLM hub",
       "k": "ml,tel,pm,inn"
     },
@@ -970,6 +971,13 @@
       "i": "cach/F.jpg",
       "n": "Las Futbolistas",
       "k": "ent,csr,spo"
+    },
+    {
+      "i": "https://cdn.stabledifffusion.com/assets/temp/outputs/output_1d8ef783-d684-4316-8e81-6884597acc12_512x512_1789375589803.jpg",
+      "n": "Stable Difffusion",
+      "d": "text 2 image AI",
+      "k": "ml,art,vis",
+      "a": "by ZryDys with stabledifffusion.com AI"
     },
     {
       "u": "keyr.html?q=inkkey&c=0xff385c",
