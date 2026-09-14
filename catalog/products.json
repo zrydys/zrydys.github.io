@@ -309,10 +309,10 @@
     },
     {
       "d": "Economic Commission for Europe UNECE",
-      "n": "Statistical Business Process",
+      "n": "Statistical Business Process + Trade Facilitation + eBusiness CEFACT",
       "k": "hum,csr,sci,pm",
       "u": "https://unece.org/statistics/gsbpm-v5.2",
-      "i": "thumb/seaDB.png"
+      "i": "//lms.imo.org/moodle310/pluginfile.php/15187/mod_scorm/content/6/scormcontent/assets/z_9P33fmxpzPYa87_Mbwlb3kJq8IXAs6C.gif"
     },
     {
       "i": "thumb/WHObena.png",
@@ -420,7 +420,7 @@
       "i": "https://i3.ytimg.com/vi/zDLOvlBVNng/maxresdefault.jpg",
       "n": "IPSAS 45 Depreciation",
       "d": "IPSAS international accounting",
-      "k": "pm,csr",
+      "k": "pm,csr,sus",
       "a": "IPSASb youtube zDLOvlBVNng"
     },
     {
@@ -428,7 +428,8 @@
       "n": "Connect Remote Locations",
       "k": "gis,tel,sea",
       "i": "tiles/4-8-4.png",
-      "d": "Reaching Remote Locations, Sailing bases, Simplified & Affordable"
+      "d": "Reaching Remote Locations, Sailing bases, Simplified & Affordable",
+      "a": "by ZryDys"
     },
     {
       "n": "Walking Faro 🌆",
@@ -1332,6 +1333,14 @@
       "n": "Arrival 2016",
       "a": "review at reelgood.com/search?q=arrival",
       "k": "art,A/V"
+    },
+    {
+      "u": "//github.com/aavek/Aeolus-Ocean?",
+      "n": "autonomous collision avoidance",
+      "k": "law,ml,sea",
+      "i": "//user-images.githubusercontent.com/93454699/220564888-52ac4766-b974-4c7b-bc9c-d9ce0feb2b46.gif",
+      "d": "IMO COLREG-maritime navigation simulator",
+      "a": "by github.com/aavek"
     },
     {
       "i": "fractalgold.png",
