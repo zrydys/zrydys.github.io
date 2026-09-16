@@ -1,0 +1,56 @@
+<div class="languages" translate="no">
+  <p>
+    🌐 Languages:
+    <a href="#" data-lang="de">DE 🇦🇹🇩🇪</a>
+    <a href="#" data-lang="fr">FR 🇨🇦🇧🇪</a>
+    <a href="#" data-lang="nl">NL 🇳🇱🇧🇪</a>
+    <a href="#" data-lang="es">ES 🇪🇸🇨🇷</a>
+    <a href="#" data-lang="en">EN 🇺🇸🇮🇪</a>
+    &nbsp;|&nbsp;
+
+    <a class="site-links" href="{{ '/c/sea' | relative_url }}">Ocean</a>
+    <a class="site-links" href="{{ '/c/law' | relative_url }}">Cases</a>
+    <a class="site-links" href="{{ '/c/inn' | relative_url }}">Innovation</a>
+    <a class="site-links" href="{{ '/c/pac' | relative_url }}">Pacific</a>
+  </p>
+</div>
+
+<script>
+(function () {
+  const translatedHost = "zrydys-github-io.translate.goog";
+  const originalHost = "zrydys.github.io";
+
+  document.querySelectorAll(".languages a[data-lang]")
+    .forEach(function (link) {
+
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        const lang = this.dataset.lang;
+        const path = window.location.pathname;
+        const hash = window.location.hash;
+
+        /*
+         * EN = return to the original GitHub Pages site.
+         */
+        if (lang === "en") {
+          window.location.href =
+            "https://" + originalHost + path + hash;
+          return;
+        }
+
+        /*
+         * Other languages = Google translated site.
+         * Keep the current Jekyll path.
+         */
+        window.location.href =
+          "https://" + translatedHost + path +
+          "?_x_tr_sl=auto" +
+          "&_x_tr_tl=" + lang +
+          "&_x_tr_hl=" + lang +
+          hash;
+      });
+
+    });
+})();
+</script>
