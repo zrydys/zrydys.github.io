@@ -616,6 +616,14 @@ products:
   k: sci,3D,vis
   a: by bbc.co.uk/programmes/articles/2pZFdnsPGl1DDwH6pZbJKkh
   marsearth: https://ichef.bbci.co.uk/images/ic/320xn/p013fx1t.jpg
+
+- i: //wipo.int/documents/d/wipo/images-functional-images-manage-pct-application-960.webp
+  u: blog/PCT.html
+  k: law,inn,sci,world
+  n: The Patent Cooperation Treaty
+  d: PCT patent rules, procedures
+  a: by wipo.int with Zrydys summary  
+
 - u: mlg.html
   i: thumb/mlg.png
   n: Flood Risks
