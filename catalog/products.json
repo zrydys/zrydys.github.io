@@ -115,7 +115,7 @@
       "u": "https://infchg.github.io/GeoInt/PNR-yaml.html",
       "i": "//un.org/counterterrorism/sites/default/files/styles/image_cropped/public/2025-01/ct_travel_tam_programme_webpage_picture_4_-_adobestock_172925126adobestock_275829690.jpeg?h=4da044af&itok=DhkNcRV_%201x",
       "token": null,
-      "k": "cyber,pm,world",
+      "k": "cyb,pm,world",
       "n": "PNR Travel Security",
       "d": "Technology reducing Travel Records cyber risk",
       "a": "from github.com/infchg/GeoInt"
@@ -311,8 +311,8 @@
       "d": "Economic Commission for Europe UNECE",
       "n": "Statistical Business Process + Trade Facilitation + eBusiness CEFACT",
       "k": "hum,csr,sci,pm",
-      "u": "https://unece.org/statistics/gsbpm-v5.2",
-      "i": "//lms.imo.org/moodle310/pluginfile.php/15187/mod_scorm/content/6/scormcontent/assets/z_9P33fmxpzPYa87_Mbwlb3kJq8IXAs6C.gif"
+      "u": "//unece.org/statistics/gsbpm-v5.2",
+      "i": "//unece.org/sites/default/files/styles/max_1300x1300/public/2024-10/Unece%20and%20SDGs.png?itok=sbUusRIL"
     },
     {
       "i": "thumb/WHObena.png",
@@ -387,7 +387,7 @@
     {
       "u": "planet.html?q=cach/col.jpg",
       "n": "Cyber Corridor",
-      "k": "cyber,3D",
+      "k": "cyb,3D",
       "i": "cach/col.jpg"
     },
     {
@@ -544,7 +544,7 @@
       "i": "https://www.rtl-sdr.com/wp-content/uploads/2020/05/sarcnet_ais.jpg",
       "n": "Safe Marine AIS",
       "d": "Cyber Raspberry Pi and RTL-SDR Based NOAA Weather Satellite & AIS receiver projects",
-      "k": "cyber,tel,sea",
+      "k": "cyb,tel,sea",
       "p": "info",
       "a": "authors from NOAA, rtl-sdr.com, zryDys"
     },
@@ -792,6 +792,14 @@
       "n": "Deep Seabed and Ocean DB",
       "a": "by  isa.org.jm",
       "d": "213+ cruises and 204K bio🌿 622K geo🌄 samples"
+    },
+    {
+      "u": "//github.com/Paulescu/image-classification-with-local-vlms",
+      "n": "Image classification",
+      "i": "//github.com/Paulescu/image-classification-with-local-vlms/raw/main/media/structured_decoding.gif",
+      "d": "edge Visual model Structured generation",
+      "k": "ml,code,sci,vis",
+      "a": "by github.com/Paulescu"
     },
     {
       "u": "esch4.html?q=https://www.itlos.org/fileadmin/_processed_/0/2/csm_2721329_1__9c737b291a.jpg",
@@ -1100,7 +1108,7 @@
       "i": "https://m.media-amazon.com/images/I/716ReBVYSsL._AC_UY218_.jpg",
       "a": "amazon.com CISA Exam Prep book",
       "n": "CISA Audits",
-      "k": "sci,pm,cyber",
+      "k": "sci,pm,cyb",
       "d": "CISA Exam Prep, Simplified Study Guide"
     },
     {
@@ -1203,7 +1211,7 @@
       "i": "thumb/dsci-byUrl.jpg",
       "n": "ZryDys & Symmetry",
       "d": "from Innovation to Audits",
-      "k": "cyber,vis,pm,inn",
+      "k": "cyb,vis,pm,inn",
       "p": "info",
       "a": "CC BY-SA ZryDys"
     },
@@ -1245,7 +1253,7 @@
       "i": "wall/z-datsci.jpg",
       "n": "R&D+i DatSci",
       "d": "R&D+ Data Science analysis",
-      "k": "sci,cyber,tel",
+      "k": "sci,cyb,tel",
       "p": "info",
       "a": "zryDys"
     },
@@ -1419,13 +1427,13 @@
       "u": "https://zrydys.github.io/mvpc.html?q=https://play.vidyard.com/KiTNDYmQGt5NFShskQ9dcC.jpg",
       "i": "https://play.vidyard.com/KiTNDYmQGt5NFShskQ9dcC.jpg",
       "n": "Video Learning",
-      "k": "cyber,pm,sci",
+      "k": "cyb,pm,sci",
       "a": "vidyard.com on opentext.com/products/core-content-management"
     },
     {
       "i": "https://cdn-ikphdcf.nitrocdn.com/iWWPCWIhKvbRsOjJZAYfaYqrvBIRQglP/assets/images/optimized/rev-d709aea/www.resemble.ai/wp-content/uploads/2025/07/image1-3.png",
       "u": "esch4.html?q=https://cdn-ikphdcf.nitrocdn.com/iWWPCWIhKvbRsOjJZAYfaYqrvBIRQglP/assets/images/optimized/rev-d709aea/www.resemble.ai/wp-content/uploads/2025/07/image1-3.png",
-      "k": "sci,ml,cyber",
+      "k": "sci,ml,cyb",
       "a": "by resemble.ai/linux-text-to-speech-solutions/",
       "n": "TTS AI solutions",
       "d": "Linux linux text-to-speech AI solutions"
@@ -1460,7 +1468,7 @@
       "i": "https://blogs.opentext.com/wp-content/uploads/2023/02/shutterstock_1020106273-1200x675-1-1024x576.png",
       "a": "blogs.opentext.com/the-encase-evidence-viewer",
       "n": "Forensic  Evidence Viewer",
-      "k": "law,pm,cyber",
+      "k": "law,pm,cyb",
       "d": "OpenText™ EnCase™ Forensic  Evidence Viewer"
     },
     {
@@ -1506,7 +1514,7 @@
     {
       "u": "/GeoInt/PNR-yaml.html",
       "i": "https://www.un.org/counterterrorism/sites/default/files/styles/16_9_xl/public/2026-02/260114_PVE_Day_Main_Brand_2026_EN.jpg",
-      "k": "cyber,pm,world",
+      "k": "cyb,pm,world",
       "n": "PNR Travel Security",
       "d": "Technology reducing Travel Records cyber risk",
       "a": "from github.com/infchg/GeoInt"
@@ -1705,6 +1713,14 @@
       "a": "by who.int",
       "n": "Attacks Surveillance",
       "d": "Surveillance of Attacks on Healthcare"
+    },
+    {
+      "n": "Digital Trade",
+      "d": "Trade Facilitation + eBusiness CEFACT",
+      "k": "sus,cyb,pm,tel",
+      "u": "//unece.org/trade/uncefact",
+      "i": "//unece.org/sites/default/files/styles/max_650x650/public/2024-11/CallToActionDigitalTrade_Icon.png?itok=8-rmoDMJ",
+      "a": "by UNECE"
     }
   ]
 }
