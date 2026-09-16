@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -193,5 +195,8 @@ var wmsInundacionJunta = L.tileLayer.wms('https://www.juntadeandalucia.es/medioa
 const url = document.location.href; const text = selection + "\n\nSource: " + url; const temp = document.createElement("textarea");
 temp.value = text; document.body.appendChild(temp); temp.select();  document.execCommand("copy"); temp.remove(); });
 </script> 
+<footer>
+{% include langs.html %}
+</footer>
 </body>
 </html>
