@@ -386,10 +386,11 @@
       "k": "3D"
     },
     {
-      "i": "//wipo.taleo.net/careersection/theme/1166/1136930090064/en/theme/images/Wipoheader.png",
+      "i": "//www.wipo.int/documents/d/wipo/images-global-awards-2026-ceremony-960.webp",
       "u": "//wipo.int/",
       "k": "law,inn,sci,db",
       "n": "patents & trademarks",
+      "d": "WIPO Global Awards 2026",
       "a": "by wipo.int"
     },
     {
@@ -1583,6 +1584,14 @@
       "d": "Strong El Niño expected to intensify",
       "k": "pac,sci,env",
       "u": "https://wmo.int/media/news/strong-el-nino-expected-intensify"
+    },
+    {
+      "i": "//wipo.int/documents/d/wipo/images-functional-images-manage-pct-application-960.webp",
+      "u": "//wipo.int/en/web/pct-system/filing/",
+      "k": "law,inn,sci,db",
+      "n": "patent applications",
+      "d": "WIPO file a PCT application",
+      "a": "by wipo.int"
     },
     {
       "u": "planet.html?q=https://www.anyworkanywhere.com/wp-content/uploads/2021/12/Bo-og-arbejde-i-Palma-de-Mallorca-1.jpg",
