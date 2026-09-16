@@ -144,7 +144,12 @@ products:
   d: 3D Moving fractal javascript
   k: math,ml,vis,code
   u: planet.html?q=zrydys.png
-  
+- u: geo/
+  i: //space.oscar.wmo.int/img/oscar-concept_200.png
+  n: Climate Meteo API
+  d: WMO Wigos Space Oscar DB
+  k: code,sci,sea,db
+  a: by WMO , demo by zryDys     
 - i: thumb/ITCcabo.png
   u: //intracen.org
   n: Trade Africa Maps
@@ -894,8 +899,8 @@ products:
   d: CISA Exam Prep, Simplified Study Guide
 - u: geo/buoy.html
   i: https://www.ocean-ops.org/board/img/backgrounds/map-background-min.png  
-  n: Ocean Buoys NOAA  
-  d: Observation buoys, NOAA, GIS, Atlantic  
+  n: Ocean Buoys NOAA WMO
+  d: Observation Wigos, NOAA, GIS, Atlantic  
   k: sci,gis,sea,db
   p: info
   a: by NOAA , demo by zryDys   
