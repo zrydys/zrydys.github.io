@@ -921,7 +921,7 @@ products:
   i: //desinventar.net/DesInventar/images/icon-grid-menu.gif
   n: Disaster Reduction Burkina 
   d: DesInventar Sendai DRR  
-  k: bio,ris,csr,recov
+  k: bio,ris,csr,res
   a: by desinventar.net  + 🇺🇳UNDRR.org  
   e: undrr-bonn@un.org  
 - u: tofractal.html
@@ -947,7 +947,7 @@ products:
   i: https://miro.medium.com/0%2A9lyy3MHQBKL3-nL7
   a: by miro.medium.com
   n: Pohnpei quarry pit
-  k: pac,env,recov
+  k: pac,env,res
   d: FSM Environment mine🇫🇲
 
 - u: tile.html
@@ -1197,7 +1197,7 @@ products:
   k: pac,sea,ris,res
 - i: https://cdn.popupsmart.com/accounts/75764/uploads/UKR_112024_UKRHF_partners__05-7407fa897a357ab694234d04db093e79.jpeg
   u: esch4.html?q=https://cdn.popupsmart.com/accounts/75764/uploads/UKR_112024_UKRHF_partners__05-7407fa897a357ab694234d04db093e79.jpeg
-  k: csr,pm,recov  
+  k: csr,pm,res  
   n: Crisis relief
   d: Help families survive winter 
   a: visit crisisrelief.un.org
@@ -1285,7 +1285,7 @@ products:
   i: https://www.formenteraexpress.com/documents/25611860/29132428/Slide_fx.jpg/c8b0f866-30f1-4b26-64a3-a6dc07a34687?t=1717069720822
   u: planet.html?q=https://www.formenteraexpress.com/documents/25611860/29132428/Slide_fx.jpg/c8b0f866-30f1-4b26-64a3-a6dc07a34687?t=1717069720822
   a: by formenteraexpress.com
-  k: world,sea,3D
+  k: glo,sea,3D
 - u: /GeoInt/PNR-yaml.html
   i: https://www.un.org/counterterrorism/sites/default/files/styles/16_9_xl/public/2026-02/260114_PVE_Day_Main_Brand_2026_EN.jpg
   k: cyb,pm,glo,cod
