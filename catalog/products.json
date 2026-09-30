@@ -174,7 +174,7 @@
       "p": "fractal",
       "i": "zrydys.png",
       "d": "3D Moving fractal javascript",
-      "k": "mat,ml,vis,cod",
+      "k": "alg,ml,vis,cod",
       "u": "planet.html?q=zrydys.png"
     },
     {
@@ -483,7 +483,7 @@
     {
       "u": "chord.html",
       "n": "Chord chart📈",
-      "k": "sci,math,pm",
+      "k": "sci,alg,pm",
       "d": "Connecting Investments📈",
       "j": "zry0.png",
       "i": "thumb/chord.png",
@@ -586,7 +586,7 @@
       "i": "thumb/camp.jpg",
       "n": "Camper",
       "d": "Camper Van, Make it Home",
-      "k": "ent,glo,cod,3D",
+      "k": "VR,glo,cod,3D",
       "a": "Reviews taptap.io/app/33677784  + header by  steamcommunity.com/app/2843190"
     },
     {
@@ -636,7 +636,7 @@
       "i": "thumb/merge.jpg",
       "n": "Merge game moving",
       "d": "Merge with darkness - 3d effect",
-      "k": "ent,3D,cod",
+      "k": "VR,3D,cod",
       "p": "mvp",
       "a": "E."
     },
@@ -685,7 +685,7 @@
     {
       "u": "planet.html?q=cach/MD.jpg",
       "n": "Merge game",
-      "k": "ent,vis",
+      "k": "VR,vis",
       "i": "cach/MD.jpg",
       "d": "Merge with darkness",
       "a": "E. (QR in pic)"
@@ -746,7 +746,7 @@
       "i": "thumb/esch3.jpg",
       "n": "3D Escher",
       "d": "Tiling",
-      "k": "math,sci,art",
+      "k": "alg,sci,art",
       "p": "escher",
       "a": "MCEscher original 1953 + colors added by Zrydys"
     },
@@ -977,7 +977,7 @@
       "i": "thumb/tetra3.jpg",
       "n": "Pyramid",
       "d": "decorative",
-      "k": "solid,math,art",
+      "k": "solid,alg,art",
       "p": "solid"
     },
     {
@@ -1029,7 +1029,7 @@
       "i": "cach/SR.jpg",
       "n": "NOceaNoUs' SeaRangers",
       "d": "NOceaNoUs' SeaRangers game",
-      "k": "ent,sea",
+      "k": "VR,sea",
       "p": "mvpc",
       "a": "by NOceaNoUs.com"
     },
@@ -1077,7 +1077,7 @@
       "u": "planet.html?q=cach/F.jpg",
       "i": "cach/F.jpg",
       "n": "Las Futbolistas",
-      "k": "ent,csr,spo"
+      "k": "VR,csr,spo"
     },
     {
       "i": "https://cdn.stabledifffusion.com/assets/temp/outputs/output_1d8ef783-d684-4316-8e81-6884597acc12_512x512_1789375589803.jpg",
@@ -1115,7 +1115,7 @@
       "i": "thumb/alhambra.jpg",
       "n": "Alhambra Tile",
       "d": "Tiles Alhambra style - use mouse to 3D navigate",
-      "k": "mat,glo,art",
+      "k": "alg,glo,art",
       "a": "CC BY-SA ZryDys"
     },
     {
@@ -1156,7 +1156,7 @@
       "i": "wall/tofractal.jpg",
       "n": "Moving Fractal",
       "d": "shaders GPU image",
-      "k": "mat,cod,vis",
+      "k": "alg,cod,vis",
       "p": "mvp",
       "a": "CC BY-SA ZryDys"
     },
@@ -1189,7 +1189,7 @@
       "i": "thumb/tiles.jpg",
       "n": "tiles 3D",
       "d": "Group Recurrent 3D Tiling",
-      "k": "math,art",
+      "k": "alg,art",
       "a": "CC BY-SA ZryDys"
     },
     {
@@ -1827,7 +1827,7 @@
       "i": "anim/glslfract.gif",
       "n": "Fractal shader",
       "d": "Fractal code Shader GLSL C GPU",
-      "k": "mat,cod,vis,art",
+      "k": "alg,cod,vis,art",
       "s": "fractal",
       "a": "CC BY-SA ZryDys"
     },
