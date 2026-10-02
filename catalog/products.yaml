@@ -258,6 +258,7 @@ products:
   a: by fcc.gov/wireless/bureau-divisions/mobility-division/maritime-mobile/ship-radio-stations/global-maritime
   d: Satellite Emergency Distress
   
+
 - u: //itu.int/en/ITU-R/terrestrial/mars/Pages/default.aspx
   i: //itu.int/en/ITU-R/terrestrial/mars/PublishingImages/221-350ff67d09.jpg
   n: Maritime mobile radio 
@@ -846,6 +847,14 @@ products:
   d: Additive Manufacturing for kite surf 添加电镀
   k: solid,sea
   a: printables.com/@samster395
+  
+- u: //tools.grss-ieee.org/fars_allocations/frequency_allocations.html
+  i: //tools.grss-ieee.org/fars_allocations/ITU_regions_map_reg1.jpg
+  n: Radio Frequencies
+  k: tel,gis,sea,inn
+  a: by grss-ieee.org
+  d: Database of Frequency Allocations  
+    
 - u: keyr.html?q=tactile&c=0x41a19a
   i: thumb/tactile3.jpg
   n: Diversity Inclusion ⠁⠃ab ⠉⠙cd
@@ -977,10 +986,13 @@ products:
   k: sci,gis,sea,db
   p: info
   a: by NOAA , demo by zryDys   
-- u: planet.html?q=https://hispagua.cedex.es/sites/default/files/presa_sur.jpg
+- uu: //infomar.miteco.es/visor.html
+  u: //visorpde.cedex.es/visor.html?malaga
   n: Water Risk science
-  i: https://hispagua.cedex.es/sites/default/files/presa_sur.jpg
-  k: csr,sci,ris
+  i: //cdn.transportes.gob.es/portal-web-cedex/styles/large/cdn/2022-11/INFOMAR_v2.png.webp?itok=amHlT7g1
+  k: gis,sci,ris,sea
+  d: Costa y Mar. INFOMAR
+  a: by cedex.es GIS
    
 - u: https://pmc.ncbi.nlm.nih.gov/articles/PMC12427955/ 
   n: AI in Clinical Decision 
