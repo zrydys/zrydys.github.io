@@ -825,6 +825,23 @@
       "a": "CC BY-SA ZryDys"
     },
     {
+      "i": "//cc.sj-cdn.net/instructor/3i9xz9js0ipt1-palantir-technologies/courses/3jztjk27sy3pk/promo-image.1720888654.jpeg",
+      "u": "//palantir.com/docs/foundry/contour/getting-started",
+      "k": "sci,law,vis",
+      "n": "Foundry Contour",
+      "d": "Data Geospatial Discovery",
+      "a": "by palantir.com"
+    },
+    {
+      "i": "//images.squarespace-cdn.com/content/v1/6707b1fbbb27c22271c55247/1756810428628-CMIDORV8WDPGSE84RM80/84795C1C-5A29-4956-B914-BA70DC0A5B12.JPG",
+      "u": "//c4d.org",
+      "k": "csr,sus,hum",
+      "n": "Communication 4 Development",
+      "d": "Together Learn, Impact, +Change",
+      "a": "by c4d.org  + UNICEF",
+      "cors": "ok"
+    },
+    {
       "u": "planet.html?q=https://ichef.bbci.co.uk/images/ic/320xn/p02m6cw0.jpg",
       "i": "https://ichef.bbci.co.uk/images/ic/320xn/p02m6cw0.jpg",
       "n": "Orion",
@@ -957,6 +974,14 @@
       "a": "CC BY-SA ZryDys"
     },
     {
+      "i": "//fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/resources/df4701e1-557c-11f0-a9d0-d2b0d2e22f7d/images/57e8c2fc3e74882c398525d5d492fcb2_scans_overview_cvss.png",
+      "n": "vulnerability score",
+      "d": "CVSS Crit to Low",
+      "k": "cod,cyb,ris",
+      "a": "by fortinet.com",
+      "u": "//docs.fortinet.com/document/fortidast/25.2.a/user-guide/986301/cvss-score"
+    },
+    {
       "u": "keyr.html?q=wingfoil&c=0xadadad",
       "i": "thumb/wingfoil3.jpg",
       "n": "Nautic parts",
@@ -1007,6 +1032,14 @@
       "a": "by usda.gov US Forest Service"
     },
     {
+      "i": "//cc.sj-cdn.net/instructor/3i9xz9js0ipt1-palantir-technologies/courses/3jztjk27sy3pk/promo-image.1720888654.jpeg",
+      "u": "//palantir.com/docs/foundry/contour/getting-started",
+      "k": "sci,law,vis",
+      "n": "Foundry Contour",
+      "d": "Data Geospatial Discovery",
+      "a": "by palantir.com"
+    },
+    {
       "u": "planet.html?q=https://cdn-s-www.ledauphine.com/images/C9FCFA87-81C4-416F-90B8-54BF01337A81/NW_detail/exercice-pour-les-membres-du-sauvetage-la-victime-sur-son-bateau-est-victime-d-une-insolation-il-faut-vite-le-prendre-en-charge-brancardage-difficile-pour-passer-du-bateau-sur-le-quai-sans-tomber-a-l-eau-ici-c-est-une-victime-d-un-malaise-les-stagiaires-oeuvrent-sous-l-oeil-avise-des-professionnels-1338221016.jp",
       "n": "THONON-LES-BAINS Sauvetage",
       "i": "https://cdn-s-www.ledauphine.com/images/C9FCFA87-81C4-416F-90B8-54BF01337A81/NW_detail/exercice-pour-les-membres-du-sauvetage-la-victime-sur-son-bateau-est-victime-d-une-insolation-il-faut-vite-le-prendre-en-charge-brancardage-difficile-pour-passer-du-bateau-sur-le-quai-sans-tomber-a-l-eau-ici-c-est-une-victime-d-un-malaise-les-stagiaires-oeuvrent-sous-l-oeil-avise-des-professionnels-1338221016.jpg",
@@ -1022,7 +1055,7 @@
       "k": "vol,ris,med,sea",
       "u": "//www.sosmediterranee.org",
       "a": "by sosmediterranee.de and sosmediterranee.org",
-      "e": "contact.ch@sosmediterranee.org  volontari@sosmediterranee.org."
+      "e": "contact.ch@sosmediterranee.org  volontari@sosmediterranee.org"
     },
     {
       "u": "planet.html?q=cach/SR.jpg",
@@ -1032,6 +1065,14 @@
       "k": "VR,sea",
       "p": "mvpc",
       "a": "by NOceaNoUs.com"
+    },
+    {
+      "i": "//attack.mitre.org/theme/images/ATT&CK_red.png",
+      "n": "ATT&CK knowledge",
+      "d": "adversary tactics + techniques",
+      "k": "cod,cyb,ris",
+      "a": "by mitre.org",
+      "u": "//attack.mitre.org/"
     },
     {
       "u": "and.html",
@@ -1088,11 +1129,20 @@
       "k": "VR,csr,spo"
     },
     {
-      "i": "https://cdn.stabledifffusion.com/assets/temp/outputs/output_1d8ef783-d684-4316-8e81-6884597acc12_512x512_1789375589803.jpg",
+      "i": "//cdn.stabledifffusion.com/assets/temp/outputs/output_1d8ef783-d684-4316-8e81-6884597acc12_512x512_1789375589803.jpg",
       "n": "Stable Difffusion",
       "d": "text 2 image AI",
       "k": "ml,art,vis",
-      "a": "by ZryDys with stabledifffusion.com AI"
+      "a": "by ZryDys with stabledifffusion.com AI",
+      "u": "stabledifffusion.com"
+    },
+    {
+      "i": "//filestore.fortinet.com/fortiguard/static/images/icons_white/outbreakalert.svg?v=54938",
+      "n": "Outbreak Alerts",
+      "d": "FortiGuard CVEs",
+      "k": "cod,cyb,ris",
+      "a": "by fortinet.com",
+      "u": "//fortiguard.com/outbreak-alert"
     },
     {
       "u": "keyr.html?q=inkkey&c=0xff385c",
@@ -1100,6 +1150,14 @@
       "n": "InkUp key",
       "k": "solid,art",
       "a": "InkUp"
+    },
+    {
+      "i": "//oasis-open.github.io/cti-documentation/img/stix2_relationship_example_2.png",
+      "n": "Threat Information",
+      "d": "Structured Threat Information Expression",
+      "k": "cod,cyb,ris",
+      "a": "by STIX oasis-open.github.io",
+      "u": "//oasis-open.github.io/cti-documentation/stix/intro.html"
     },
     {
       "n": "FIBA Micronesian Cup 2026",
@@ -1323,6 +1381,14 @@
       "k": "cyb,vis,pm,inn",
       "p": "info",
       "a": "CC BY-SA ZryDys"
+    },
+    {
+      "i": "//csf.tools/wp-content/uploads/2024/03/csf-functions-300x300.png",
+      "n": "Cybersec Framework",
+      "d": "The NIST CSF 2.0",
+      "k": "cod,cyb,ris,pm",
+      "a": "by NIST and csf.tools",
+      "u": "//csf.tools/reference/nist-cybersecurity-framework/v2-0/"
     },
     {
       "u": "keyr.html?q=Jelly_Fish&c=0xd09090",
