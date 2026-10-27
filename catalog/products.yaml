@@ -8,6 +8,15 @@ pipe0: detecting images g "\!\[.+\([^)]+)" details.md -o ais.md  gps.md
 notes: yq in py3.13 Fedora 42 v. py3.14 Fedora 43
 affil: from /c/n/name takes you to the v clip o html in 1 step
 products:
+
+- i: //cisa.gov/sites/default/files/images/SVG/header_logo_tagline_update.svg
+  u: //cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway
+  a: by CISA.gov
+  k: cyb,ris,tel
+  n: Zero-Day in Citrix NetScaler
+  d: Gateway Vulnerability CVE-2026-107406
+  
+
 - n: Federated States of Micronesia DR
   d: Disaster Risk Management - resilience through information - FSM Recovery
   k: db,pac,ris,res
@@ -598,6 +607,14 @@ products:
   k: pt,glo,cul
   a: by guhyamantrika.org
   
+- i: //cisa.gov/sites/default/files/images/SVG/header_logo_tagline_update.svg
+  u: //cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching
+  a: by CISA.gov
+  k: cyb,ris,tel
+  n: Cybersec + Infrastructure Sec 
+  d: Critical PHP2shell CVE-2026-109618 +19
+  e: 1-844-Say-CISA contact@cisa.dhs.gov  github.com/cisagov
+  
 - u: escher3D.html
   i: thumb/esch3.jpg
   n: 3D Escher
@@ -653,6 +670,21 @@ products:
   k: VR
   p: mvp
   a: by X.com/closedroomstudio 🐦
+
+- i: //media.defense.gov/2026/Oct/21/2004017551/1920/1080/0/261021-D-AB123-1000.PNG
+  u: //nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/4630238/nsa-advisory-critical-patches-recommended-for-php-vulnerabilities/
+  a: by NSA.gov
+  n: Vulnerability Advisory Critical
+  d: CVE Critical Patches for PHP2shell
+  k: cyb,ris,tel
+
+- u: planet.html?q=//media.defense.gov/2026/Oct/21/2004017551/1920/1080/0/261021-D-AB123-1000.PNG
+  i: //media.defense.gov/2026/Oct/21/2004017551/1920/1080/0/261021-D-AB123-1000.PNG
+  a: by defense.gov
+  k: VR
+  n: Def Media Effects
+  d: PHP2shell 3D Image
+
 - i: //static.seashepherdglobal.org/media/filer_public_thumbnails/filer_public/ad/2a/ad2ab508-3e85-4c54-a343-6c6d214ca040/170210-gl-nature-05-_gnl6084x1600.jpg__3200x1800_q95_crop_subsampling-2.jpg
   a: by seashepherdglobal.org
   u: //seashepherdglobal.org
@@ -1427,7 +1459,17 @@ products:
   k: law,inn,sci,db
   n: patent applications
   d: WIPO file a PCT application
-  a: by wipo.int 
+  a: by wipo.int
+  
+  
+- i: //oracle.com/a/ocom/img/sc24-ai-database.webp
+  u: //oracle.com/security-alerts/alert-cve-2026-109618.html
+  a: by Oracle.com
+  k: cyb,ris,db
+  n: Cybersec Oracle CVE 
+  d: 0Day PHP2shell CVE-2026-109618
+ 
+
 - u: planet.html?q=https://www.anyworkanywhere.com/wp-content/uploads/2021/12/Bo-og-arbejde-i-Palma-de-Mallorca-1.jpg
   n: Seas & World Travel
   d: Mallorca Nautic jobs
