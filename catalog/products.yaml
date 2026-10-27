@@ -124,7 +124,6 @@ products:
   d: 1.7M square miles (Hawaii to Mexico) ⚒️mining cobalt, nickel, manganese, copper..  
   i: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Location_of_the_Clarion_Clipperton_Zone.png/250px-Location_of_the_Clarion_Clipperton_Zone.png
  
-
 - n: Kitesurfing in Algarve, Portugal 
   u: planet.html?q=https://cdn.shortpixel.ai/spai/q_lossless+w_1066+h_711+to_auto+ret_img/kiterr.com/wp-content/uploads/ws-form/1/dropzonejs/27/Passaro-Kitesurf-School-10.jpg
   i: https://cdn.shortpixel.ai/spai/q_lossless+w_1066+h_711+to_auto+ret_img/kiterr.com/wp-content/uploads/ws-form/1/dropzonejs/27/Passaro-Kitesurf-School-10.jpg
@@ -266,7 +265,6 @@ products:
   k: tel,ris,sea,3D
   a: by fcc.gov/wireless/bureau-divisions/mobility-division/maritime-mobile/ship-radio-stations/global-maritime
   d: Satellite Emergency Distress
-  
 
 - u: //itu.int/en/ITU-R/terrestrial/mars/Pages/default.aspx
   i: //itu.int/en/ITU-R/terrestrial/mars/PublishingImages/221-350ff67d09.jpg
@@ -320,7 +318,6 @@ products:
   k: csr,env,hum
   a: by kobotoolbox.org team
 
-  
 - n: Kitesurfing in the Algarve
   u: planet.html?q=https://boardandwind.com/images/large/kitesurfing-algarve-coast-action_10_28_2025_3c4ff966-b3d6-4245-9b58-204fe1db47d6.webp
   i: https://boardandwind.com/images/large/kitesurfing-algarve-coast-action_10_28_2025_3c4ff966-b3d6-4245-9b58-204fe1db47d6.webp
@@ -334,6 +331,14 @@ products:
   i: thumb/elt.png
   d: GIS Overlay + Electronic Light Table + OpenCV.js process
   u: elt.html
+  
+- i: //first.org/cvss/identity/CVSS_4.0-complete-signature-RGB.svg
+  n: Common Vulnerability Scoring
+  d: CVSS SIG
+  k: cod,cyb,ris
+  a: by first.com  global Forum of Incident Response 
+  u: //first.org/cvss/
+   
 - u: planet.html?q=https://archive.org/download/bowie-singles/David%20Bowie%20-%20The%20Singles%20Collection.back.jpg
   i: https://archive.org/download/bowie-singles/David%20Bowie%20-%20The%20Singles%20Collection.back.jpg
   n:  Bowie
@@ -806,7 +811,15 @@ products:
   n: Silicon Molecule bonds
   d: Additive Manufacturing of Molecule bonds
   k: solid,sci
-  a: see original at printables & thingiverse 
+  a: see original at printables & thingiverse
+
+- i: //www.sei.cmu.edu/media/images/fullbleed_full_About_Division.max-1920x1920.format-webp.webp
+  n: CERT/CC Response
+  d: Sec Coordination Center
+  k: cod,cyb,ris
+  a: by cert.org & sei.cmu.edu
+  u: //www.kb.cert.org/vuls/ 
+       
 - i:  https://raisely-images.imgix.net/un-crisis-relief/uploads/ukr-112024-unocha-hnrp-19-dsc-09673-jpg-webp-f48e4f.webp 
   u: esch4.html?q=https://raisely-images.imgix.net/un-crisis-relief/uploads/ukr-112024-unocha-hnrp-19-dsc-09673-jpg-webp-f48e4f.webp
   k: csr,glo,res

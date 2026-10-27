@@ -402,6 +402,14 @@
       "u": "elt.html"
     },
     {
+      "i": "//first.org/cvss/identity/CVSS_4.0-complete-signature-RGB.svg",
+      "n": "Common Vulnerability Scoring",
+      "d": "CVSS SIG",
+      "k": "cod,cyb,ris",
+      "a": "by first.com  global Forum of Incident Response",
+      "u": "//first.org/cvss/"
+    },
+    {
       "u": "planet.html?q=https://archive.org/download/bowie-singles/David%20Bowie%20-%20The%20Singles%20Collection.back.jpg",
       "i": "https://archive.org/download/bowie-singles/David%20Bowie%20-%20The%20Singles%20Collection.back.jpg",
       "n": "Bowie",
@@ -989,6 +997,14 @@
       "d": "Additive Manufacturing of Molecule bonds",
       "k": "solid,sci",
       "a": "see original at printables & thingiverse"
+    },
+    {
+      "i": "//www.sei.cmu.edu/media/images/fullbleed_full_About_Division.max-1920x1920.format-webp.webp",
+      "n": "CERT/CC Response",
+      "d": "Sec Coordination Center",
+      "k": "cod,cyb,ris",
+      "a": "by cert.org & sei.cmu.edu",
+      "u": "//www.kb.cert.org/vuls/"
     },
     {
       "i": "https://raisely-images.imgix.net/un-crisis-relief/uploads/ukr-112024-unocha-hnrp-19-dsc-09673-jpg-webp-f48e4f.webp",
