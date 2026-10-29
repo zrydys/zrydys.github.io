@@ -131,10 +131,11 @@
             );
  
 		// ell 
+	if (ell) {
 		ell.href =   `/catalog.html?s=${term} `  ;
 		ell.textContent =   `/catalog.html?s=${term} ` ;
  	    window.history.replaceState(null, null,  '/s/'+term      );   // history showing   /s/ url
-
+    } //likely should get pageurl locally
 				renderCatalog();
 			} 
 //fin mySearch
@@ -171,7 +172,9 @@ function attachFilterListeners() {
 	  window.history.replaceState(null, null,  '/c/'+category      );   // history showing caconical /c/ url
 
   //troubleshooting s/sar ell null
-  }	
+  }	else {
+	   console.info( 'zrydys chk ongoing 11.1' )
+  }
    
       if (category === 'all') {
         filteredProducts = [...products];
