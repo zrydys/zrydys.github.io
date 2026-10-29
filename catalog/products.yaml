@@ -1518,7 +1518,19 @@ products:
   a: by IMF.org Jackson Hole Symposium
   e: DataHelp@imf.org
   ii: data mapper https://www.imf.org/-/media/images/imf/data/home/banners/data-full-width-data-mapper.png DataHelp@imf.org. 
-
+- i: https://sosmediterranee.b-cdn.net/wp-content/uploads/2023/07/20220626_AnthonyJean_SOS-MEDITERRANEE_20220626_AnthonyJean_SOS-MEDITERRANEE_373A2049-copie-2-1024x683.jpg
+  n: 8m SaR Life-Saving
+  d: maritime humanitarian Italy 8m
+  k: vol,csr,med,sea
+  u: //sosmediterranee.it 
+  a: by sosmediterranee.it
+  e: italia@sosmediterranee.org Milano
+- u: planet.html?q=https://sosmediterranee.b-cdn.net/wp-content/uploads/2023/07/20220626_AnthonyJean_SOS-MEDITERRANEE_20220626_AnthonyJean_SOS-MEDITERRANEE_373A2049-copie-2-1024x683.jpg
+  k: VR,sea,ris
+  i: https://sosmediterranee.b-cdn.net/wp-content/uploads/2023/07/20220626_AnthonyJean_SOS-MEDITERRANEE_20220626_AnthonyJean_SOS-MEDITERRANEE_373A2049-copie-2-1024x683.jpg
+  n: 3D Rescue boat
+  a: by sosmediterranee.it
+  ii: https://cdn.prod.website-files.com/667d5de18fe179bce87b2715/66b2402cfde85553ae84fa56_Claire%20Juchat_SOS%20MEDITERRANEE-p-800.avif cors ok sosmediterranee.de/Informieren/ocean-viking
 - d: Of, High Commissioner for Human Rights
   n: Human Rights–Based Data
   k: hum,csr,pac,db
@@ -1601,4 +1613,19 @@ products:
   k: sus,cyb,pm,tel
   u: //unece.org/trade/uncefact
   i: //unece.org/sites/default/files/styles/max_650x650/public/2024-11/CallToActionDigitalTrade_Icon.png?itok=8-rmoDMJ
-  a: by UNECE 
+  a: by UNECE
+
+- i: https://res.cloudinary.com/sea-watch/image/upload/f_auto,q_auto:eco,w_640,h_427,c_limit/v1776766765/210228_Selene_Magnolia_2284249_900x600_cb859fe3c1.jpg
+  n: RHIB SaR Life-Saving
+  d: rigid-hulled inflatable boat
+  k: vol,csr,med,sea
+  u: //sea-watch.org/en/operations/aurora/  
+  a: by sea-watch.org 
+  ii: Hasdrubal gas platform  resc https://sea-watch.org/en/28-survivors-rescued-by-sea-watch-at-least-two-dead/ 
+- u: planet.html?q=https://res.cloudinary.com/sea-watch/image/upload/f_auto,q_auto:eco,w_480,c_limit/v1772462981/250901_Geraldine_Morat_Hofmaier_Sea_Watch_DSC_3115_2048x1024_5d3211fe58.jpg
+  k: VR,sea,ris
+  i: https://res.cloudinary.com/sea-watch/image/upload/f_auto,q_auto:eco,w_480,c_limit/v1772462981/250901_Geraldine_Morat_Hofmaier_Sea_Watch_DSC_3115_2048x1024_5d3211fe58.jpg
+  n: Hasdrubal gas platform 
+  d: Rescue 3D SAR RHIB
+  a: by sea-watch.org 
+  
