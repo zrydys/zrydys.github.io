@@ -159,7 +159,8 @@ function attachFilterListeners() {
 		
   // console.log ( window.location.href+"?&k="+category  );
   //const el = document.getElementById('current-url');
-  // if (ell) {
+  //
+  if (ell) {
     newURL =  "/catalog.html?k="+category  ; //cj 26.08.30 replaced by the history /c/
     newURL =  'https://ZryDys.Github.IO/c/'+category  ;
     ell.href =  newURL;
@@ -169,7 +170,8 @@ function attachFilterListeners() {
 	 // window.history.replaceState(null, null,  "/catalog.html?k="+category      );   //after click rewrite
 	  window.history.replaceState(null, null,  '/c/'+category      );   // history showing caconical /c/ url
 
-  // }	
+  //troubleshooting s/sar ell null
+  }	
    
       if (category === 'all') {
         filteredProducts = [...products];
