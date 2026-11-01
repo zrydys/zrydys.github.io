@@ -52,10 +52,23 @@ products:
   k: pac,sea,csr,glo
   i: https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Pacific_Islands_Forum_Logo_WP.svg/120px-Pacific_Islands_Forum_Logo_WP.svg.png
   d: AU🇦🇺 CK🇨🇰 FJ🇫🇯  PF🇵🇫  KI🇰🇮 MH🇲🇭 FM🇫🇲 NR🇳🇷 NC🇳🇨	 NZ🇳🇿 NU🇳🇺  PW🇵🇼 PG🇵🇬 WS🇼🇸 SB🇸🇧  TO🇹🇴 TV🇹🇻 VU🇻🇺
-
   u: https://www.forumsec.org/
   a: by wikipedia.org/wiki/Pacific_Islands_Forum + zrydys.github.io flags
-    
+  
+- u: planet.html?q=/blog/SAR/sarHeli2.png
+  n: Air-Sea portfolio 
+  d: SAR Helicopter Photo
+  a: by ZryDys/usr/cj
+  k: 3D,VR,A/V
+  i: /blog/SAR/sarHeli2.png
+  
+- u: /blog/SAR
+  n: Search Rescue
+  d: portfolio Helimer‍ semi-rigide RHIB
+  a: by ZryDys/usr/cj
+  k: sea,vol,ris,env
+  i: /blog/SAR/sarHeli2.png
+      
 - n: Ocean GIS & Bathymetry
   k: gis,sea,sci
   i: thumb/EsriGEBCO.png
@@ -90,6 +103,7 @@ products:
   n: Broach
   k: solid,art
   a: printables.com/@John_56680
+ 
 - n: Deep Seabed Mining 
   k: sea,env,sci
   d: ISA Polymetallic sulfides, copper, cobalt, nickel, manganese, lead, lithium, titanium, platinum, gold, zinc. 
@@ -133,7 +147,7 @@ products:
   a: by kiterr.com/kitespots/europe/kitesurfing-algarve-portugal
 - i: //uspto.gov/sites/default/files/styles/medium/public/2020-03/20160613_madison_010.jpg?itok=JlfiNR_m
   u: //uspto.gov/access-our-free-services
-  k: law,inn,sci,db
+  k: law,inn,tra,db
   n: patents & trademarks
   a: by uspto.gov
 - n: Risks & Meteo
@@ -160,12 +174,12 @@ products:
   i: //space.oscar.wmo.int/img/oscar-concept_200.png
   n: Climate Meteo API
   d: WMO Wigos Space Oscar DB
-  k: cod,sci,sea,db
+  k: cod,cli,sea,db
   a: by WMO , demo by zryDys     
 - i: thumb/ITCcabo.png
   u: //intracen.org
   n: Trade Africa Maps
-  k: csr,glo,gis,biz
+  k: csr,glo,gis,tra
   d: maps Cabo Verde Western Sahara Tunis...
   a: by intracen.org 
  
@@ -281,7 +295,7 @@ products:
   
 - d: Economic Commission for Europe UNECE
   n: Statistical Business Process + Trade Facilitation + eBusiness CEFACT
-  k: hum,csr,sci,pm
+  k: hum,tra,sci,pm
   u: //unece.org/statistics/gsbpm-v5.2
   i: //unece.org/sites/default/files/styles/max_1300x1300/public/2024-10/Unece%20and%20SDGs.png?itok=sbUusRIL
 
@@ -462,7 +476,7 @@ products:
   e: jb 
 - i: //esri.com/arcgis-blog/app/uploads/2024/06/CatalogLayerdynamicfiltering03-ezgif.com-crop.gif
   u: //esri.com/arcgis-blog/products/arcgis-online/mapping/catalog-layers-in-arcgis-online
-  k: gis,sci,db
+  k: gis,sci,db,cod
   n: Map Catalog Layers
   a: by esri.com
 - u: adapt.html
@@ -473,17 +487,16 @@ products:
   a: by ZryDys charts
 - u: planet.html?q=https://static.wixstatic.com/media/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg/v1/fill/w_924,h_616,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg 
   n: Volunteers🏔️
-  d: kindness, collab, compassion make a difference   
+  d: kindness, collab, compassion > difference   
   k: csr,spo,vol
-  i:   https://static.wixstatic.com/media/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg/v1/fill/w_924,h_616,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg
+  i: //static.wixstatic.com/media/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg/v1/fill/w_924,h_616,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_77378fc0da68439ebd8fd24a2f51e50cf000.jpg
   a: by volunteerhub.ch 🇨🇭
 - u: ais.html
-  i: https://www.rtl-sdr.com/wp-content/uploads/2020/05/sarcnet_ais.jpg
-  n: Safe Marine AIS  
-  d: Cyber Raspberry Pi and RTL-SDR Based NOAA Weather Satellite & AIS receiver projects
-  k: cyb,tel,sea
-  p: info
-  a: authors from NOAA, rtl-sdr.com, zryDys 
+  i: //rtl-sdr.com/wp-content/uploads/2020/05/sarcnet_ais.jpg
+  n: Marine Weather AIS  
+  d: Cyber Raspberry RTL-SDR receiver
+  k: cyb,tel,sea,cli
+  a: based on NOAA, rtl-sdr.com, zryDys 
  
 - u: planet.html?q=https://img.tapimg.net/market/images/4d4d88f02aba3559a8ecd7e4498def05.jpg
   g: ?q=https://img.tapimg.net/market/images/4d4d88f02aba3559a8ecd7e4498def05.jpg
@@ -777,7 +790,16 @@ products:
   d: Saint Vincent & the Grenadines v. Guinea hearing, Hamburg - SAIGA case - 
   n: Case Saint Vincent & The Grenadines 
   a: by itlos.org
-  k: sea,csr,law  
+  k: sea,csr,law
+- i: //iki-cac.org/sites/default/files/content/mapa_1.svg
+  k: cli,car,env
+  n: International Climate Initiative IKI
+  d: Federal Min. Environment... in Caribe
+  u: //iki-cac.org 
+  a: by iki-cac.org & giz.de
+  ii: rana chula bio  //i.ytimg.com/vi/99E8LWrP3bA/default.jpg ? o https://i.ytimg.com/vi/rhhqeXW6HW8/hqdefault  o bk g  /img/meh7.png 
+  e: iki.interfaz.cac@giz.de (+506) 2100-7015
+
 - u: orbitforest.html
   i: anim/forest.gif
   n: Digital 🌲 Forest
@@ -1081,8 +1103,7 @@ products:
   i: https://www.ocean-ops.org/board/img/backgrounds/map-background-min.png  
   n: Ocean Buoys NOAA WMO
   d: Observation Wigos, NOAA, GIS, Atlantic  
-  k: sci,gis,sea,db
-  p: info
+  k: env,gis,sea,db,cli
   a: by NOAA , demo by zryDys   
 - uu: //infomar.miteco.es/visor.html
   u: //visorpde.cedex.es/visor.html?malaga
@@ -1247,7 +1268,7 @@ products:
   a: by promalaga.es 
   k: inn,pm
 
-- k: csr,sea,gis
+- k: csr,sea,gis,tra
   u: //portwatch.imf.org/  
   d: monitor simulate maritime trade flows disruptions
   cors: ok
@@ -1465,7 +1486,7 @@ products:
   a: by WMO.int
   n: El Niño
   d: Strong El Niño expected to intensify
-  k: pac,sci,env
+  k: pac,sci,env,cli
   u: https://wmo.int/media/news/strong-el-nino-expected-intensify
 - i: //wipo.int/documents/d/wipo/images-functional-images-manage-pct-application-960.webp
   u: //wipo.int/en/web/pct-system/filing/
@@ -1513,7 +1534,7 @@ products:
   uu: https://portwatch.imf.org/  monitor and simulate disruptions to maritime trade flows.	
   cors: ok
   n: global economic data
-  k: csr,glo,sci,db
+  k: tra,glo,sci,db
   d: Jackson Hole Economic Policy Symposium
   a: by IMF.org Jackson Hole Symposium
   e: DataHelp@imf.org
@@ -1601,6 +1622,15 @@ products:
   k: alg,cod,vis,art
   s: fractal
   a: CC BY-SA ZryDys
+
+- n: WMO Marine Services
+  d: World Meteorological Org
+  e: mmo@wmo.int
+  i: //community.wmo.int/themes/custom/server_theme/dist/images/logo_microsite_en.svg?tn7l2j
+  u: //community.wmo.int/site/knowledge-hub/programmes-and-initiatives/marine-services
+  uu: /contact-us
+  k: cli,env,csr,sea
+ 
 - i: //iris.who.int/server/api/core/bitstreams/8ebfa948-b1c6-4802-9b77-dacc2e1e9193/content
   u: //ssa.who.int
   k: med,ris,cyb
@@ -1610,7 +1640,7 @@ products:
  
 - n: Digital Trade
   d: Trade Facilitation + eBusiness CEFACT
-  k: sus,cyb,pm,tel
+  k: sus,cyb,pm,tra
   u: //unece.org/trade/uncefact
   i: //unece.org/sites/default/files/styles/max_650x650/public/2024-11/CallToActionDigitalTrade_Icon.png?itok=8-rmoDMJ
   a: by UNECE
