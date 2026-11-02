@@ -8,7 +8,7 @@ Extract of marine photos taken by Cjm, from events, rescue, aerial exercises ...
 ![sar-night](sar-night.png)
 ![sarHeli2](sarHeli2.png)
 ![sarFire](sarFire.png)
-![sarWrec](sarWreck.png)
+![sarWrec](sarWrec.png)
 
 uploaded low-resolution copies and 3D effects at public site https://zrydys.github.io/s/sar and maps at  https://zrydys.github.io/c/gis 🌎
 
