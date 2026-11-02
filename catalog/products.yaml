@@ -60,14 +60,14 @@ products:
   d: SAR Helicopter Photo
   a: by ZryDys/usr/cj
   k: 3D,VR,A/V
-  i: /blog/SAR/sarHeli2.png
+  i: blog/SAR/sarHeli2.png
   
-- u: /blog/SAR
+- u: //zrydys.github.io/blog/SAR/
   n: Search Rescue
   d: portfolio Helimer‍ semi-rigide RHIB
   a: by ZryDys/usr/cj
   k: sea,vol,ris,env
-  i: /blog/SAR/sarHeli2.png
+  i: //zrydys.github.io/blog/SAR/sarHeli2.png
       
 - n: Ocean GIS & Bathymetry
   k: gis,sea,sci
