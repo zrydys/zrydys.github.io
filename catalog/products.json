@@ -67,15 +67,15 @@
       "d": "SAR Helicopter Photo",
       "a": "by ZryDys/usr/cj",
       "k": "3D,VR,A/V",
-      "i": "/blog/SAR/sarHeli2.png"
+      "i": "blog/SAR/sarHeli2.png"
     },
     {
-      "u": "/blog/SAR",
+      "u": "//zrydys.github.io/blog/SAR/",
       "n": "Search Rescue",
       "d": "portfolio Helimer‍ semi-rigide RHIB",
       "a": "by ZryDys/usr/cj",
       "k": "sea,vol,ris,env",
-      "i": "/blog/SAR/sarHeli2.png"
+      "i": "//zrydys.github.io/blog/SAR/sarHeli2.png"
     },
     {
       "n": "Ocean GIS & Bathymetry",
@@ -177,7 +177,7 @@
     },
     {
       "n": "Risks & Meteo",
-      "k": "gis,ris,sci,db",
+      "k": "gis,ris,cli,db",
       "i": "thumb/OceanMeteo.png",
       "d": "Faults, Floods, Climate risks, Ocean & Land GIS",
       "u": "elt.html",
@@ -310,7 +310,6 @@
     {
       "u": "details.html",
       "n": "Agile CI/CD",
-      "p": "info",
       "k": "pm,cod,ris",
       "i": "cicd.jpg",
       "d": "CI/CD Agile Scrum Kanban",
@@ -320,7 +319,32 @@
       "u": "planet.html?q=cach/cor.jpg",
       "n": "3D Corridor",
       "k": "3D",
-      "i": "cach/cor.jpg"
+      "i": "cach/cor.jpg",
+      "d": "moving images"
+    },
+    {
+      "u": "//netacad.com/resources/lab-downloads",
+      "d": "Kali Linux VM",
+      "n": "Ethical Hacking",
+      "k": "cyb,tel,inn",
+      "i": "//netacad.com/p/ff9e491c-49be-4734-803e-a79e6e83dab1/badges/badge-images/3d5e07f2-ca76-4149-bb55-5aede309b3bf.png",
+      "a": "by Cisco Network Academy netacad.com"
+    },
+    {
+      "n": "Network dCloud",
+      "d": "Cisco dCloud datacentres",
+      "i": "thumb/cisco-dcloud.png",
+      "k": "cyb,tel,glo",
+      "a": "by dCloud2.Cisco.com",
+      "u": "//dCloud2.Cisco.com"
+    },
+    {
+      "i": "thumb/qlik-dashb.png",
+      "a": "by QlikCloud.com w/ and ZryDys code",
+      "n": "Qlik Dashboard 3D",
+      "d": "Cloud Data Science",
+      "k": "sci,csr,inn,3D",
+      "u": "esch4.html?q=/thumb/qlik-dashb.png"
     },
     {
       "u": "//wikipedia.org/",
@@ -683,9 +707,9 @@
       "u": "planet.html?q=https://e4k4c4x9.delivery.rocketcdn.me/en/wp-content/uploads/sites/15/2025/11/ml-and-ai-696x418.jpg.webp",
       "i": "https://e4k4c4x9.delivery.rocketcdn.me/en/wp-content/uploads/sites/15/2025/11/ml-and-ai-696x418.jpg.webp",
       "n": "Call on AI & ML",
-      "d": "World Meteorological Organization Call on AI and Machine Learning",
-      "k": "ml,csr,glo,met",
-      "a": "unric.org/en/world-meteorological-organization-call-on-ai-and-machine-learning-is-out"
+      "d": "WMO Meteo & Machine Learning",
+      "k": "ml,csr,glo,cli",
+      "a": "by unric.org/en/world-meteorological-organization-call-on-ai-and-machine-learning-is-out"
     },
     {
       "i": "//pvblic.maps.arcgis.com/sharing/rest/content/items/eb385ab8aa72472a971324381251cf55/data",
@@ -1051,7 +1075,7 @@
       "i": "//fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/resources/df4701e1-557c-11f0-a9d0-d2b0d2e22f7d/images/57e8c2fc3e74882c398525d5d492fcb2_scans_overview_cvss.png",
       "n": "vulnerability score",
       "d": "CVSS Crit to Low",
-      "k": "cod,cyb,ris",
+      "k": "cod,cyb,ris,tel",
       "a": "by fortinet.com",
       "u": "//docs.fortinet.com/document/fortidast/25.2.a/user-guide/986301/cvss-score"
     },
@@ -1512,8 +1536,9 @@
       "a": "© Augustin Navarranne at SNSM.org",
       "k": "sea,vol,glo,csr",
       "dd": "œuvre sans relâche pour secourir bénévolement 8, cité d’Antin, 75009 Paris + 33 1 56 02 64 64",
-      "i": "https://www.snsm.org/app/uploads/2026/01/snsm-sns155-augustin-navarranne.jpg",
-      "e": "sauveteur embarqué / nageur sauveteur/ bénévole à terre"
+      "i": "//snsm.org/app/uploads/2026/01/snsm-sns155-augustin-navarranne.jpg",
+      "e": "sauveteur embarqué / nageur sauveteur/ bénévole à terre",
+      "ii": "https://cdn.sirdata.io/cmp/images/pa/43295_1733375988.png"
     },
     {
       "u": "planet.html?q=https://cdn.popupsmart.com/accounts/75764/uploads/AFP_20260810_C4CD4CR_v1_HighRes_ColombiaEarthquake-9b28ec85dda8df7b5dd15ad33ccd2aa6.jpeg",
