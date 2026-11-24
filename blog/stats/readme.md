@@ -81,4 +81,3 @@ This is how ZryDys moves forward: analyse trends,  interpret the underlying patt
 6. Interpretation: explaining what the results mean for a business, research or operational decision.
  
 Also each methodology has limitations, not just merely showing numbers.
- 

@@ -26,6 +26,23 @@
       "a": "by fsm-data.sprep.org"
     },
     {
+      "i": "//github.com/fortinet/azure-templates/raw/main/FortiGate/Active-Active-ELB-ILB/images/fgt-aa-az.png",
+      "n": "HA Active-Active LB",
+      "d": "FortiGate Azure ARM",
+      "k": "cod,cyb,ris,tel",
+      "a": "by fortinet.com",
+      "u": "//github.com/fortinet/azure-templates/",
+      "oo": "on github.com/fortinet/fortigate-terraform-deploy aws az gcp oci ibm ostack"
+    },
+    {
+      "i": "//github.com/fortinet/azure-templates/raw/main/FortiGate/Active-Active-ELB-ILB/images/fgt-aa-az.png",
+      "n": "3D on Network Arch",
+      "k": "3D,cyb,tel",
+      "d": "3D Effect on Image",
+      "a": "by fortinet.com +zrydys Effect",
+      "u": "planet.html?q=//github.com/fortinet/azure-templates/raw/main/FortiGate/Active-Active-ELB-ILB/images/fgt-aa-az.png"
+    },
+    {
       "u": "//infchg.github.io/GeoInt/DRR.html",
       "i": "//unocha.org/sites/default/files/styles/full_width_3_2_25/public/2025-01/Anna%20at%20her%20home%20with%20an%20allamanda%20flower..jpg.webp",
       "ii": "del pacifico h unocha.org/news/crisis-recovery-how-cerf-helped-communities-vanuatu",
@@ -781,9 +798,17 @@
       "a": "ZryDys"
     },
     {
-      "u": "https://www.embodi3d.com/blogs/entry/408-3d-free-scapula-clavicle-and-humerus-models-in-3d-printable-stl-format/",
-      "i": "https://media.invisioncic.com/r248939/monthly_2019_11/gallery_4_5_13580.jpg.a65a953f254802ead319c4f23a513067.jpg",
-      "k": "med,csr,3D",
+      "i": "//github.com/infchg/SecOps/raw/master/doc/1113-fw.png",
+      "n": "SecOps Firewall Watch",
+      "d": "Cisco Splunk on PaloAlto",
+      "a": "CC-BY-SA-4.0 by infchg@github,CJ on PA",
+      "k": "cyb,tel,inn,sci",
+      "u": "//github.com/infchg/SecOps"
+    },
+    {
+      "u": "//embodi3d.com/blogs/entry/408-3d-free-scapula-clavicle-and-humerus-models-in-3d-printable-stl-format/",
+      "i": "//media.invisioncic.com/r248939/monthly_2019_11/gallery_4_5_13580.jpg.a65a953f254802ead319c4f23a513067.jpg",
+      "k": "med,csr,3D,add",
       "d": "3D Scapula, Clavicle, Humerus",
       "n": "Clavicle 🦴",
       "a": "by embodi3d.com/profile/8734-angel-sosa"
@@ -2055,6 +2080,14 @@
       "a": "by who.int",
       "n": "Attacks Surveillance",
       "d": "Surveillance of Attacks on Healthcare"
+    },
+    {
+      "i": "//infchg.github.io/qc-queues.png",
+      "n": "Quantum Comp. R&D",
+      "d": "Analyzing QC queues",
+      "a": "CC-BY-SA-4.0 by J, infchg@github,C with IBM QC",
+      "k": "cyb,tel,inn,sci",
+      "u": "//infchg.github.io"
     },
     {
       "n": "Digital Trade",
